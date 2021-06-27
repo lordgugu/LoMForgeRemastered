@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.oocities.org/xo_pitseleh/lom8.html?202127 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script async="" src="./analytics.js.download"></script><script>(function(){function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}hookGeo();})()</script><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.64">
+<meta http-equiv="Cache-control" content="public, min-fresh:2400000">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<style type="text/css"> html { max-width:1024px;overflow:auto;} </style>
+<script language="JavaScript" type="text/javascript">
+if (window == top) { 
+//document.write('<div style="height:30px;"></div><div id="content" style="max-width:1022px;overflow:auto">');
+}
+else {document.write('<div id="content" style="max-width:804px;overflow:auto">');} </script></head><body text="lime" bgcolor="black"><div id="content" style="max-width:804px;overflow:auto">
+
+<script language="JavaScript" src="./geovck08.js.download"></script>
+
+
+
+
+	
+	<meta name="GENERATOR" content="Visual Page 2.0 for Windows">
+	<title>Scratch Pad for LOM Ultimania </title>
+
+
+
+
+
+<p align="CENTER"><img src="./LOMmanager01b.gif" width="82" height="88" align="BOTTOM" border="0"><b><font size="5" color="red">Scratch Pad</font></b><font size="5" color="red"><img src="./LOMmanager01.gif" width="82" height="88" align="BOTTOM" border="0"></font></p>
+<p><br>
+This is just a bunch of miscellaneous information, stuff I've been dinking around with, and tips from Ultimania.
+I don't really know where to put the it so I've just lumped it here.<br>
+<br>
+e-mail: xo_pitseleh@hotmail.com<br>
+<br>
+Other Pages:<br>
+<a href="https://www.oocities.org/xo_pitseleh/lom.html"><b>How to get to essence level 10 using "Mirrored World" card. (not translated)</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+</a><a href="https://www.oocities.org/xo_pitseleh/lom2.html">Translated Ultimania Tempering Charts</a><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+</a></b><a href="https://www.oocities.org/xo_pitseleh/lom3.html"><b>Mystic Card List</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+Relationship Between Weapon/Armor Material, Item Energy, &amp; Essence Levels</a></b><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom5.html"><b>Produce Percentage Chart</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom6.html"><b>Tempering for Bonus Effects and Plunges</b></a><br>
+<b><a href="https://www.oocities.org/xo_pitseleh/lom7.html">Item Search &amp; Shop Rank</a></b><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom9.html"><b>Golem Logic Block Size and Block Strength</b></a><b><i><font size="4"><br>
+</font></i></b><a href="https://www.oocities.org/xo_pitseleh/lom11.html"><b>Best Instruments</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom10.html"><b>Special Techniques</b></a><a href="https://www.oocities.org/xo_pitseleh/lom8.html"><b><br>
+Scratch Pad</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom12.html"><b>How to Choose a Map</b></a><br>
+<br>
+<br>
+
+</p><hr align="CENTER">
+<p></p>
+<p align="CENTER"><b><font size="5" color="#CC0000">Easy Candy From Monsters</font></b></p>
+<p>A fairly easy way to get candy from most any monster is this: Quick Attack x 2, Tackle the monster all the way
+to the other side of the screen.</p>
+<p align="CENTER"><b><font size="5" color="#CC0000">Consecutive Thrust Attacks</font></b></p>
+<p>You can do several Thrust attacks in a row if you toggle between forward on the directional pad and the Square
+button.You have to be fairly quick with your toggling though not so fast that your whole body starts to spasm.
+This is especially nice when you have a special Plunge Attack like "Chaotic Avenger" or "Green Princess"
+as your Thrust.</p>
+<p align="CENTER"><b><font size="5" color="#CC0000">High Stats</font></b></p>
+<p>Ultimania offers two suggestions for developing a character with high stats by using different weapons for a
+certain number of levels.<br>
+<br>
+
+<table border="1" width="85%">
+	<tbody><tr>
+		<td width="32%" bgcolor="gray">
+			<p align="CENTER">Option 1
+		</p></td>
+		<td colspan="4" bgcolor="gray">
+			<p align="CENTER">Stats at Level 99
+		</p></td>
+	</tr>
+	<tr>
+		<td width="32%" rowspan="4">1H Sword : 82 levels<br>
+			Staff : 13 levels<br>
+			Hammer : 3 levels</td>
+		<td width="17%">
+			<p align="CENTER">Power
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Skills
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Defense
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">Magic
+		</p></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER">98
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">99
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">98
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">85
+		</p></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER">HP
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Spirit
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Charm
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">Luck
+		</p></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER">75
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">78
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">85
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">5
+		</p></td>
+	</tr>
+	<tr>
+		<td colspan="5">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="32%" bgcolor="gray">
+			<p align="CENTER">Option 2
+		</p></td>
+		<td colspan="4" bgcolor="gray">
+			<p align="CENTER">Stats at Level 99
+		</p></td>
+	</tr>
+	<tr>
+		<td width="32%" rowspan="4">Staff : 41 levels<br>
+			Bow : 21 levels<br>
+			Hammer : 36 levels</td>
+		<td width="17%">
+			<p align="CENTER">Power
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Skills
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Defense
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">Magic
+		</p></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER">99
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">99
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">69
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">99
+		</p></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER">HP
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Spirit
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">Charm
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">Luck
+		</p></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER">63
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">78
+		</p></td>
+		<td width="18%">
+			<p align="CENTER">99
+		</p></td>
+		<td width="15%">
+			<p align="CENTER">5
+		</p></td>
+	</tr>
+</tbody></table>
+</p>
+<p align="CENTER"><b><font size="5" color="#CC0000">Determining Weapon Strength w/Essences</font></b></p>
+<p>I haven't played around too much with this but it seemed to work pretty accurately the few times I tried it.
+It basically lets you calculate what kind of attack power your weapon will have with any given number of essence
+levels.<br>
+Current Attack Power <b><font size="5">×</font></b> [ (Growth Control # <b><font size="5">+</font></b> Total
+Number of Essences) <b><font size="5">÷</font></b> Growth Control # ]<br>
+Note: this doesn't work so well on rare treasure weapons since they've been enhanced somewhat already.<br>
+
+<table border="1" width="35%">
+	<tbody><tr>
+		<td colspan="3">
+			<p align="CENTER"><b><font color="red">Weapon and Armor Growth Control #</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="6%" bgcolor="gray">
+			<p align="CENTER"><font size="2">Type</font>
+		</p></td>
+		<td width="55%" bgcolor="gray">
+			<p align="CENTER"><font size="2">Name</font>
+		</p></td>
+		<td width="39%" bgcolor="gray">
+			<p align="CENTER"><font size="2">Growth Control #</font>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="11" bgcolor="gray"><font size="2">Metal</font></td>
+		<td width="55%"><font size="2">Menos Bronze</font></td>
+		<td width="39%">18</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Forsena Iron</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Granz Steel</font></td>
+		<td width="39%">24</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Lorant Silver</font></td>
+		<td width="39%">12</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Wendel Silver</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Vizel Gold</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Ishe Platinum</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Lorimar Iron</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Altena Alloy</font></td>
+		<td width="39%">18</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Maia Lead*</font></td>
+		<td width="39%">48</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Orihalcon</font></td>
+		<td width="39%">12</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="8" bgcolor="gray"><font size="2">Wood</font></td>
+		<td width="55%"><font size="2">Oak Wood</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Holly Wood</font></td>
+		<td width="39%">14</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Baobab Wood</font></td>
+		<td width="39%">24</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Ebony Wood</font></td>
+		<td width="39%">24</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Maple Wood</font></td>
+		<td width="39%">12</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Dior Wood</font></td>
+		<td width="39%">10</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Ash Wood</font></td>
+		<td width="39%">11</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Fossil Wood*</font></td>
+		<td width="39%">22</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="4" bgcolor="gray"><font size="2">Stone</font></td>
+		<td width="55%"><font size="2">Marble</font></td>
+		<td width="39%">28</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Obsidian</font></td>
+		<td width="39%">32</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Pedan Stone</font></td>
+		<td width="39%">24</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Gaius's Tears</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="4" bgcolor="gray"><font size="2">Hide</font></td>
+		<td width="55%"><font size="2">Animal Hide</font></td>
+		<td width="39%">8</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Gator Skin</font></td>
+		<td width="39%">12</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Centaur Hide**</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Dragon Skin</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="4" bgcolor="gray"><font size="2">Scales</font></td>
+		<td width="55%"><font size="2">Fish Scales</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Lizard Scales</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Snake Scales</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Dragon Scales</font></td>
+		<td width="39%">14</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="4" bgcolor="gray"><font size="2">Bone</font></td>
+		<td width="55%"><font size="2">Animal Bone</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Ivory</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Cursed Bone**</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Fossil</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="4" bgcolor="gray"><font size="2">Fabric</font></td>
+		<td width="55%"><font size="2">Topple Cotton</font></td>
+		<td width="39%">10</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Sultan's Silk</font></td>
+		<td width="39%">10</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Judd Hemp</font></td>
+		<td width="39%">10</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Altena Felt</font></td>
+		<td width="39%">10</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="8" bgcolor="gray"><font size="2">Rock</font></td>
+		<td width="55%"><font size="2">Jacobini Rock</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Halley Rock</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Ankh Rock</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Vinek Rock</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Tuttle Rock</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Nemesis Rock*</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Biella Rock*</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Swifte Rock*</font></td>
+		<td width="39%">16</td>
+	</tr>
+	<tr>
+		<td width="6%" rowspan="8" bgcolor="gray"><font size="2">Misc. Metal</font></td>
+		<td width="55%"><font size="2">Adamantite</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Fullmetal</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Coral</font></td>
+		<td width="39%">12</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Tortoise Shell</font></td>
+		<td width="39%">20</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Shell</font></td>
+		<td width="39%">14</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Emerald</font></td>
+		<td width="39%">8</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Pearl</font></td>
+		<td width="39%">8</td>
+	</tr>
+	<tr>
+		<td width="55%"><font size="2">Lapis Lazuli</font></td>
+		<td width="39%">8</td>
+	</tr>
+</tbody></table>
+</p>
+<p align="CENTER"><b><font size="5" color="#CC0000">Name Changes in U.S. Version</font></b></p>
+<p>
+<table border="1" width="100%">
+	<tbody><tr>
+		<td width="18%" bgcolor="gray">
+			<p align="CENTER">Item/Place/Monster
+		</p></td>
+		<td width="35%" bgcolor="gray">
+			<p align="CENTER">U.S. Version
+		</p></td>
+		<td width="47%" bgcolor="gray">
+			<p align="CENTER">Japanese Version
+		</p></td>
+	</tr>
+	<tr>
+		<td width="18%" rowspan="6" bgcolor="gray">
+			<p align="CENTER">Places
+		</p></td>
+		<td width="35%">Lumina</td>
+		<td width="47%">Moonlit City Roar</td>
+	</tr>
+	<tr>
+		<td width="35%">Junkyard</td>
+		<td width="47%">Trash Mountain</td>
+	</tr>
+	<tr>
+		<td width="35%">S.S. Buccaneer</td>
+		<td width="47%">Pirate Ship Barudo</td>
+	</tr>
+	<tr>
+		<td width="35%">Geo</td>
+		<td width="47%">Magical City Geo</td>
+	</tr>
+	<tr>
+		<td width="35%">Bejeweled City</td>
+		<td width="47%">Twinkling City</td>
+	</tr>
+	<tr>
+		<td width="35%">Tree of Mana</td>
+		<td width="47%">Holy Land of Mana</td>
+	</tr>
+	<tr>
+		<td width="18%" rowspan="21" bgcolor="gray">
+			<p align="CENTER">Items
+		</p></td>
+		<td width="35%">Flail</td>
+		<td width="47%">Nunuchuk</td>
+	</tr>
+	<tr>
+		<td width="35%">Hauberk</td>
+		<td width="47%">Armor</td>
+	</tr>
+	<tr>
+		<td width="35%">Armor</td>
+		<td width="47%">Full Mail</td>
+	</tr>
+	<tr>
+		<td width="35%">Lorant Silver</td>
+		<td width="47%">Mithril Silver</td>
+	</tr>
+	<tr>
+		<td width="35%">Wendel Silver</td>
+		<td width="47%">Astoria Silver</td>
+	</tr>
+	<tr>
+		<td width="35%">Maple Wood</td>
+		<td width="47%">Ash Wood</td>
+	</tr>
+	<tr>
+		<td width="35%">Ash Wood</td>
+		<td width="47%">Mistletoe</td>
+	</tr>
+	<tr>
+		<td width="35%">Mangolephant</td>
+		<td width="47%">Elephant Mango</td>
+	</tr>
+	<tr>
+		<td width="35%">Pear o'Heels</td>
+		<td width="47%">High-Heel Pear</td>
+	</tr>
+	<tr>
+		<td width="35%">Citrusquid</td>
+		<td width="47%">Squid Lemon</td>
+	</tr>
+	<tr>
+		<td width="35%">Peach Puppy</td>
+		<td width="47%">Dog Peach</td>
+	</tr>
+	<tr>
+		<td width="35%">Applesocks</td>
+		<td width="47%">Santa Apple</td>
+	</tr>
+	<tr>
+		<td width="35%">Boar Melon</td>
+		<td width="47%">Wild Boar Watermelon</td>
+	</tr>
+	<tr>
+		<td width="35%">Garlicrown</td>
+		<td width="47%">Crown Garlic</td>
+	</tr>
+	<tr>
+		<td width="35%">Cabadillo</td>
+		<td width="47%">Armadillo Cabbage</td>
+	</tr>
+	<tr>
+		<td width="35%">Needlettuce</td>
+		<td width="47%">Hedge-Hog Lettuce</td>
+	</tr>
+	<tr>
+		<td width="35%">White Feather</td>
+		<td width="47%">Pegasus Feather</td>
+	</tr>
+	<tr>
+		<td width="35%">Baked Roach</td>
+		<td width="47%">Baked Caterpillar</td>
+	</tr>
+	<tr>
+		<td width="35%">Knockout Dust</td>
+		<td width="47%">Paralysis Powder</td>
+	</tr>
+	<tr>
+		<td width="35%">Hairball</td>
+		<td width="47%">Fluffy Hairball</td>
+	</tr>
+	<tr>
+		<td width="35%">Messy Scroll</td>
+		<td width="47%">Impossible Book</td>
+	</tr>
+	<tr>
+		<td width="18%" rowspan="47" bgcolor="gray">
+			<p align="CENTER">Monsters
+		</p></td>
+		<td width="35%">Rabite</td>
+		<td width="47%">Rabi</td>
+	</tr>
+	<tr>
+		<td width="35%">Howler</td>
+		<td width="47%">Bound Wolf</td>
+	</tr>
+	<tr>
+		<td width="35%">Gray Ox</td>
+		<td width="47%">Great Ox</td>
+	</tr>
+	<tr>
+		<td width="35%">Lullabud</td>
+		<td width="47%">Bud Flower</td>
+	</tr>
+	<tr>
+		<td width="35%">Mushboom</td>
+		<td width="47%">Miconid</td>
+	</tr>
+	<tr>
+		<td width="35%">Shrieknip</td>
+		<td width="47%">Mandrake</td>
+	</tr>
+	<tr>
+		<td width="35%">Malboro</td>
+		<td width="47%">Molbolboro</td>
+	</tr>
+	<tr>
+		<td width="35%">Wooding</td>
+		<td width="47%">Wood Max</td>
+	</tr>
+	<tr>
+		<td width="35%">Stinger Bug</td>
+		<td width="47%">Assassin Bug</td>
+	</tr>
+	<tr>
+		<td width="35%">Hoppin'Tick</td>
+		<td width="47%">Ruster</td>
+	</tr>
+	<tr>
+		<td width="35%">Silkspitter</td>
+		<td width="47%">Mega Crawler</td>
+	</tr>
+	<tr>
+		<td width="35%">Sand Scorpian</td>
+		<td width="47%">Death Scorpio</td>
+	</tr>
+	<tr>
+		<td width="35%">Rattler Boa</td>
+		<td width="47%">Great Boa</td>
+	</tr>
+	<tr>
+		<td width="35%">Iffish</td>
+		<td width="47%">Gall Fish</td>
+	</tr>
+	<tr>
+		<td width="35%">Pincher Crab</td>
+		<td width="47%">Death Crab</td>
+	</tr>
+	<tr>
+		<td width="35%">Big Baby</td>
+		<td width="47%">Radorn</td>
+	</tr>
+	<tr>
+		<td width="35%">Needlebeak</td>
+		<td width="47%">Needle Bird</td>
+	</tr>
+	<tr>
+		<td width="35%">Bloodsucker</td>
+		<td width="47%">Batmu</td>
+	</tr>
+	<tr>
+		<td width="35%">Garuda</td>
+		<td width="47%">Kid Garuda</td>
+	</tr>
+	<tr>
+		<td width="35%">Tezla</td>
+		<td width="47%">Grell</td>
+	</tr>
+	<tr>
+		<td width="35%">Moldy Goo</td>
+		<td width="47%">Rust Mold</td>
+	</tr>
+	<tr>
+		<td width="35%">Ape Mummy</td>
+		<td width="47%">Mummy Ape</td>
+	</tr>
+	<tr>
+		<td width="35%">Imp</td>
+		<td width="47%">Baby Devil</td>
+	</tr>
+	<tr>
+		<td width="35%">Fierce Face</td>
+		<td width="47%">Demon Head</td>
+	</tr>
+	<tr>
+		<td width="35%">Punkster</td>
+		<td width="47%">Spine Devil</td>
+	</tr>
+	<tr>
+		<td width="35%">Chimera Beast</td>
+		<td width="47%">Kako Demon</td>
+	</tr>
+	<tr>
+		<td width="35%">Spiny Cone</td>
+		<td width="47%">Wonder</td>
+	</tr>
+	<tr>
+		<td width="35%">Beholder</td>
+		<td width="47%">Bolder</td>
+	</tr>
+	<tr>
+		<td width="35%">Springball</td>
+		<td width="47%">Spring Jack</td>
+	</tr>
+	<tr>
+		<td width="35%">Cursed Doll</td>
+		<td width="47%">Magical Doll</td>
+	</tr>
+	<tr>
+		<td width="35%">Polter Box</td>
+		<td width="47%">Ogre Box</td>
+	</tr>
+	<tr>
+		<td width="35%">Chess Knight</td>
+		<td width="47%">Unicorn Head</td>
+	</tr>
+	<tr>
+		<td width="35%">Dainslaif</td>
+		<td width="47%">Evil Weapon</td>
+	</tr>
+	<tr>
+		<td width="35%">Chobin Hood</td>
+		<td width="47%">Poron</td>
+	</tr>
+	<tr>
+		<td width="35%">Tomato Man</td>
+		<td width="47%">Dark Priest</td>
+	</tr>
+	<tr>
+		<td width="35%">Succubus</td>
+		<td width="47%">Camilla</td>
+	</tr>
+	<tr>
+		<td width="35%">Narcissos</td>
+		<td width="47%">Cave Man</td>
+	</tr>
+	<tr>
+		<td width="35%">Mad Mallard</td>
+		<td width="47%">Duck</td>
+	</tr>
+	<tr>
+		<td width="35%">Chimera Lord</td>
+		<td width="47%">Humpty Demon</td>
+	</tr>
+	<tr>
+		<td width="35%">Punkmaster</td>
+		<td width="47%">Razor Demon</td>
+	</tr>
+	<tr>
+		<td width="35%">Gorgon's Eye</td>
+		<td width="47%">Gazer</td>
+	</tr>
+	<tr>
+		<td width="35%">Boreal Hound</td>
+		<td width="47%">Granshe</td>
+	</tr>
+	<tr>
+		<td width="35%">Tropicallo</td>
+		<td width="47%">Greido</td>
+	</tr>
+	<tr>
+		<td width="35%">Orc</td>
+		<td width="47%">Shurigel</td>
+	</tr>
+	<tr>
+		<td width="35%">Iron Centaur</td>
+		<td width="47%">Death Pain</td>
+	</tr>
+	<tr>
+		<td width="35%">Deathbringer</td>
+		<td width="47%">Undead Emperor</td>
+	</tr>
+	<tr>
+		<td width="35%">Hitodama</td>
+		<td width="47%">Zable Far</td>
+	</tr>
+	<tr>
+		<td width="18%" rowspan="14" bgcolor="gray">
+			<p align="CENTER">Characters
+		</p></td>
+		<td width="35%">Akravator</td>
+		<td width="47%">Megalord</td>
+	</tr>
+	<tr>
+		<td width="35%">Drakonis</td>
+		<td width="47%">Tiamat</td>
+	</tr>
+	<tr>
+		<td width="35%">Niccolo</td>
+		<td width="47%">Nikita</td>
+	</tr>
+	<tr>
+		<td width="35%">Daena</td>
+		<td width="47%">Danae</td>
+	</tr>
+	<tr>
+		<td width="35%">Lisa</td>
+		<td width="47%">Corona</td>
+	</tr>
+	<tr>
+		<td width="35%">Roger</td>
+		<td width="47%">Congo</td>
+	</tr>
+	<tr>
+		<td width="35%">Skippie</td>
+		<td width="47%">Hason</td>
+	</tr>
+	<tr>
+		<td width="35%">Crystalle</td>
+		<td width="47%">Glaciera</td>
+	</tr>
+	<tr>
+		<td width="35%">Monique</td>
+		<td width="47%">Lumineux</td>
+	</tr>
+	<tr>
+		<td width="35%">Boink</td>
+		<td width="47%">Bunyu</td>
+	</tr>
+	<tr>
+		<td width="35%">Kilroy</td>
+		<td width="47%">Pavlov</td>
+	</tr>
+	<tr>
+		<td width="35%">Florina</td>
+		<td width="47%">Firefly Princess</td>
+	</tr>
+	<tr>
+		<td width="35%">Elazul</td>
+		<td width="47%">Lapis Lazuli (Ruri)</td>
+	</tr>
+	<tr>
+		<td width="35%">Count Dovula</td>
+		<td width="47%">Draculark</td>
+	</tr>
+	<tr>
+		<td width="18%" rowspan="14" bgcolor="gray">
+			<p align="CENTER">&nbsp;Weapons
+		</p></td>
+		<td width="35%">Throatslitter</td>
+		<td width="47%">Manthroater</td>
+	</tr>
+	<tr>
+		<td width="35%">Langseax</td>
+		<td width="47%">Ancient Edge</td>
+	</tr>
+	<tr>
+		<td width="35%">Sweet Revenge</td>
+		<td width="47%">Daughter's Revenge</td>
+	</tr>
+	<tr>
+		<td width="35%">Doombringer</td>
+		<td width="47%">Deathbringer</td>
+	</tr>
+	<tr>
+		<td width="35%">Judge's Gavel</td>
+		<td width="47%">Jundgements</td>
+	</tr>
+	<tr>
+		<td width="35%">Doomhammer (Ebony Wood)</td>
+		<td width="47%">Dark Punish</td>
+	</tr>
+	<tr>
+		<td width="35%">Doomhammer (Cursed Bone)</td>
+		<td width="47%">Dead Hammer</td>
+	</tr>
+	<tr>
+		<td width="35%">Fiery Stabber</td>
+		<td width="47%">Blaze Piercer</td>
+	</tr>
+	<tr>
+		<td width="35%">Caduceus</td>
+		<td width="47%">Keeryuikeon</td>
+	</tr>
+	<tr>
+		<td width="35%">Salesman Glove</td>
+		<td width="47%">Glove of Burning Commercial Spirit :)</td>
+	</tr>
+	<tr>
+		<td width="35%">Elder Bow (Oak Wood)</td>
+		<td width="47%">Poron Bow</td>
+	</tr>
+	<tr>
+		<td width="35%">Elder Bow (Holly Wood)</td>
+		<td width="47%">Poron Bow</td>
+	</tr>
+	<tr>
+		<td width="35%">Archenon</td>
+		<td width="47%">Monaboga</td>
+	</tr>
+	<tr>
+		<td width="35%">Waveruck</td>
+		<td width="47%">Maverick</td>
+	</tr>
+	<tr>
+		<td width="18%" rowspan="8" bgcolor="gray">
+			<p align="CENTER">&nbsp;Armor
+		</p></td>
+		<td width="35%">Iron Pot</td>
+		<td width="47%">Adamaso Pot</td>
+	</tr>
+	<tr>
+		<td width="35%">Pegasus Helm</td>
+		<td width="47%">Plumed Horsehead Helm</td>
+	</tr>
+	<tr>
+		<td width="35%">Jester's Cap</td>
+		<td width="47%">Fool's Crown</td>
+	</tr>
+	<tr>
+		<td width="35%">Jade Band</td>
+		<td width="47%">Sapphire Band</td>
+	</tr>
+	<tr>
+		<td width="35%">Ancient Tiara (Altena Felt)</td>
+		<td width="47%">Sage Ribbon</td>
+	</tr>
+	<tr>
+		<td width="35%">Forbidden Ring</td>
+		<td width="47%">Ring of Encouragement?</td>
+	</tr>
+	<tr>
+		<td width="35%">Rabite Ear</td>
+		<td width="47%">Rabi Ear Hood</td>
+	</tr>
+	<tr>
+		<td width="35%">Destiny Dice</td>
+		<td width="47%">Bad Luck Dice? Maybe "Fate Dice"</td>
+	</tr>
+</tbody></table>
+
+</p><hr align="CENTER">
+<font color="#CC0000"><br>
+</font>Last Update: Oct. 9, 2001
+
+
+
+</div><script>
+<!-- 
+d=document;
+var width  = window.innerWidth || (window.document.documentElement.clientWidth ||  window.document.body.clientWidth);
+var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+if (width>=806 && height>=445 || top.location.href == window.location.href) {
+d.write('<div id="archive" onMouseOver="className=\'zoomin\';this.style.zIndex=\'99\'"  onMouseOut="className=\'zoomout\';this.style.zIndex=\'5\'" style="padding-left:25px;background-image:url(//www.oocities.org/d.jpg); background-repeat:repeat-x; filter:alpha(opacity=88); -moz-opacity:0.88 ; opacity:0.88; position:fixed; background-color:#FFFFFF; width:100%; min-width:970px;  overflow:hidden; left:0px; top:0px; font-family:times; font-size:9px; border-bottom:5px solid #f7f7f7; color:#000000;background-color:#ffffe0;z-Index:5;"><font style="font-size:16px" color="#000000"> This Page is an outdated, user-generated website brought to you by an archive</font><font style="font-family:times; font-size:9px" color="#000000">.It was mirrored from Geocities at the end of October, 2009.<br>For any questions concerning this page try to contact the respective author. (To report any malicious content send the URL to oocities(at gmail dot com). For question about the archive visit: <a style="color:#005577" href="//oocities.org" target="_new" title="geocities archive">OoCities.org</a>.</font><div onClick="archive.style.display=\'none\'"  onMouseOver="style.cursor=\'pointer\'" style="font-size:17px;position:absolute;left:3px;top:3px;color:#999;line-height:20px">[x]</div><div onClick="archive.style.display=\'none\';footer.style.display=\'none\'"  onMouseOver="style.cursor=\'pointer\'" style="font-size:19px;position:absolute;right:35px;top:0px;color:#777;line-height:20px">[x]</div></div>');
+x = d.getElementById('content').offsetWidth;
+d.write('<div id="foot" style="position:fixed;left:1010px;top:31px;z-index:11;padding-bottom:3px"><div id="ft72">');
+d.write('<script language="JavaScript" type="text/javascript src="//static.criteo.net/js/ld/publishertag.js">');
+d.write('<\/scr'+'ipt>');
+d.write('<script type="text/javascript">');
+d.write('Criteo.DisplayAd({ "zoneid": 35999, "async": false});');
+d.write('<\/scr'+'ipt><\/div><div id="ft73">');
+d.write('<script language="JavaScript" type="text/javascript src="//static.criteo.net/js/ld/publishertag.js">');
+d.write('<\/scr'+'ipt>');
+d.write('<script type="text/javascript">');
+d.write('Criteo.DisplayAd({ "zoneid": 35999, "async": false});');
+d.write('<\/scr'+'ipt><\/div><span onClick="foot.style.display=\'none\'"  style="font-size:16px;position:relative;left:7px;color:#555;background-color:ccc;line-height:19px"> \[x\]close <\/span><\/div>');
+
+if ( width-x>=440 || width>=1425){
+d.write('<div id="footer" style="position:fixed;left:1300px;top:31px;z-index:10;padding-bottom:3px"><div id="ft74">');
+d.write('<script language="JavaScript" type="text/javascript src="//static.criteo.net/js/ld/publishertag.js">');
+d.write('<\/scr'+'ipt>');
+d.write('<script type="text/javascript">');
+d.write('Criteo.DisplayAd({ "zoneid": 35999, "async": false});');
+d.write('<\/scr'+'ipt><\/div><div id="ft75">');
+d.write('<script language="JavaScript" type="text/javascript src="//static.criteo.net/js/ld/publishertag.js">');
+d.write('<\/scr'+'ipt>');
+d.write('<script type="text/javascript">');
+d.write('Criteo.DisplayAd({ "zoneid": 35999, "async": false});');
+d.write('<\/scr'+'ipt><\/div><\/div>');
+}
+}
+-->
+</script>
+<script>
+
+if (x<=1015){d.getElementById('foot').style.left = x + "px";}
+d.getElementById('footer').style.left = x + d.getElementById('foot').offsetWidth + "px";
+</script>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-45243945-1', 'oocities.org');
+  ga('send', 'pageview');
+</script>
+
+
+
+</body></html>

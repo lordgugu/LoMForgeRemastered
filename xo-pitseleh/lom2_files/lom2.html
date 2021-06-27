@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.oocities.org/xo_pitseleh/lom6.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" async="" src="./ga.js.download"></script><script>(function(){function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}hookGeo();})()</script><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.64">
+<meta http-equiv="Cache-control" content="public, min-fresh:2400000">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<style type="text/css"> html { max-width:1024px;overflow:auto;} </style>
+<script language="JavaScript" type="text/javascript">
+if (window == top) { 
+//document.write('<div style="height:30px;"></div><div id="content" style="max-width:1022px;overflow:auto">');
+}
+else {document.write('<div id="content" style="max-width:804px;overflow:auto">');} </script></head><body text="lime" bgcolor="black"><div id="content" style="max-width:804px;overflow:auto">
+
+<script language="JavaScript" src="./geovck08.js.download"></script>
+
+
+
+
+	
+	<meta name="GENERATOR" content="Visual Page 2.0 for Windows">
+	<title>Tempering for Bonus Effects and Plunges</title>
+
+
+
+
+
+<p align="CENTER"><b><font size="5" color="red"> </font></b><font size="5" color="red"><img src="./LOMmatilda01.gif" width="64" height="68" align="BOTTOM" border="0"></font><b><font size="5" color="red">Tempering for Bonus Effects
+and Plunges</font></b><font size="5" color="red"><img src="./LOMirwinYoung01.gif" width="74" height="74" align="BOTTOM" border="0"></font></p>
+<p>e-mail: xo_pitseleh@hotmail.com<br>
+<br>
+Other Pages:<br>
+<a href="https://www.oocities.org/xo_pitseleh/lom.html"><b>How to get to essence level 10 using "Mirrored World" card. (not translated)</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+</a><a href="https://www.oocities.org/xo_pitseleh/lom2.html">Translated Ultimania Tempering Charts</a><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+</a></b><a href="https://www.oocities.org/xo_pitseleh/lom3.html"><b>Mystic Card List</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+Relationship Between Weapon/Armor Material, Item Energy, &amp; Essence Levels</a></b><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom5.html"><b>Produce Percentage Chart</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom6.html"><b>Tempering for Bonus Effects and Plunges</b></a><br>
+<b><a href="https://www.oocities.org/xo_pitseleh/lom7.html">Item Search &amp; Shop Rank</a></b><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom9.html"><b>Golem Logic Block Size and Block Strength</b></a><b><i><font size="4"><br>
+</font></i></b><a href="https://www.oocities.org/xo_pitseleh/lom11.html"><b>Best Instruments</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom10.html"><b>Special Techniques</b></a><a href="https://www.oocities.org/xo_pitseleh/lom8.html"><b><br>
+Scratch Pad</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom12.html"><b>How to Choose a Map</b></a><br>
+<b><i><font size="4"><br>
+</font></i></b>On This Page:<b><i><font size="4"><br>
+</font></i></b><a href="https://www.oocities.org/xo_pitseleh/lom6.html#I.%20Bonus%20Effects%20(Armor)">I. Bonus Effects (Armor)</a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom6.html#II.%20Bonus%20Effects%20(Weapon)">II. Bonus Effects (Weapon)</a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom6.html#III.%20Plunge%20Attacks">III. Plunge Attacks</a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom6.html#IV.%20Material%20Attributes">IV. Material Attributes (Sharp-Heavy-Force-Technique and Strike-Slash-Pierce-Magic
+of Materials)</a><b><i><font size="4"><br>
+</font></i></b><font size="4">
+</font></p><hr align="CENTER"><font size="4">
+</font><p></p>
+<p align="CENTER"><b><font size="5"><br>
+</font></b><font size="5"><a name="I.%20Bonus%20Effects%20(Armor)"></a></font><b><font size="5">I. Bonus Effects
+(Armor)</font></b></p>
+<p><b><i><font size="4"><br>
+Notes Before Starting:</font></i></b><br>
+-This should help you choose items and  cards to enhance an armor you're tempering. If, say, you want to make yourself
+a robe, you can look for "Robe" and see what items and cards will add effects to a robe.<br>
+-The bonus percentages are for the Striike, Slash, Pierce, and Magic of the material the armor was made with and
+not the type of armor. (See charts at bottom of page.)<br>
+-The bonus percentages of cards are commpounded with each additional card. This is why 4 Bed of Thorns cards work
+so well.<br>
+-The effects of items with defense bonuuses (ex: Cabadillo) will be replaced by the next item you add. This is why
+it is best to add an item such a Cabadillo last--usually after adding 4 Bed of Thorns cards to an Hauberk.<br>
+-It's possible that the order in which  cards appear on an item effects how they work. I haven't tested this but
+I think that the card that has been on the item longest gets the lowest priority over the following cards when
+it comes to conflicting effects. For example, Bed of Thorns allows high defense but stops HP regeneration. If you
+put a Heaven's Scale card on an item and then added a Bed of Thorns card on the item, the Bed of Thorns would cancel
+the HP regenerating powers of the Heaven's Scale card since it came after the Heaven's Scale. But if you put the
+Heaven's Scale card on after the Bed of Thorns card then you'd get the HP regenerating powers of Heaven's Scale
+and the defense bonus of Bed of Thorns. It might actually be the other way around though, I can't remember...<br>
+-Wouldn't it be cool if you could tempeer your hand?<br>
+<br>
+
+<table border="1" width="100%">
+	<tbody><tr>
+		<td colspan="4">
+			<p align="CENTER"><b><font size="4" color="red">Bonus Effects (Armor)</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="9%" bgcolor="gray"><font size="1">Armor Type</font></td>
+		<td width="20%" bgcolor="gray"><font size="1">Item or Card</font></td>
+		<td width="31%" bgcolor="gray"><font size="1">Effect</font></td>
+		<td width="40%" bgcolor="gray"><font size="1">Notes</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">Shield</font></td>
+		<td width="20%"><font size="2">Healing Claw</font></td>
+		<td width="31%"><font size="2">Poison immunity</font></td>
+		<td width="40%"><font size="2">Adds Tower Card if (Wisp &gt; 0, Salamnder=0)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Wisdom Goddess</font></td>
+		<td width="31%"><font size="2">Stare attacks null</font></td>
+		<td width="40%"><font size="2">Need "Aroma Oil"<br>
+			Need combined essence levels &gt; 5</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">Helm</font></td>
+		<td width="20%"><font size="2">Sweet Moai</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce +25%</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Moss</font></td>
+		<td width="31%"><font size="2">Darkness immunity</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">Hat</font></td>
+		<td width="20%"><font size="2">Sweet Moai</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce +50%</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Spirit (of ocean) Card</font></td>
+		<td width="31%"><font size="2">Confusion Immunity</font></td>
+		<td width="40%"><font size="2">Need "Loquat-Shoes" or "Pear o' Heels"</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">Hauberk</font></td>
+		<td width="20%"><font size="2">Cabadillo</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce +25%, Magic -50%</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Volcano Card</font></td>
+		<td width="31%"><font size="2">Freeze immunity</font></td>
+		<td width="40%"><font size="2">Need "Ash"</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="3"><font size="2">Robe</font></td>
+		<td width="20%"><font size="2">Baked Roach</font></td>
+		<td width="31%"><font size="2">Poison immunity</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Metropolis Card</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Magic +50%</font><font size="2">, Confusion immunity</font></td>
+		<td width="40%"><font size="2">Need "Dialaural"<br>
+			Need Shade &gt; 0, Salamander=0</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Spring Card</font></td>
+		<td width="31%"><font size="2">Flameburst immunity</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="9%"><font size="2">Gauntlet</font></td>
+		<td width="20%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="31%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="40%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="3"><font size="2">Ring</font></td>
+		<td width="20%"><font size="2">Spirit (of housework) Card</font></td>
+		<td width="31%"><font size="2">Gain more Lucre</font></td>
+		<td width="40%"><font size="2">Need "Hairball"</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Phoenix Card</font></td>
+		<td width="31%"><font size="2">Chance of instant revive from unconscious</font></td>
+		<td width="40%"><font size="2">Need "Flaming Quill"<br>
+			Need Salamandr, Jinn &gt; 2<br>
+			Combine with Volcano Card*</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Unicorn Card</font></td>
+		<td width="31%"><font size="2">Faster revive from unconscious<br>
+			Faster HP regeneration</font><font size="2" color="#CC0000">?</font></td>
+		<td width="40%"><font size="2">Need "Whalamato"<br>
+			Need Gnome, Undine &gt; 2<br>
+			Combine with Spring Card*</font></td>
+	</tr>
+	<tr>
+		<td width="9%"><font size="2">Boots</font></td>
+		<td width="20%"><font size="2">Spirit (of shoes) Card</font></td>
+		<td width="31%"><font size="2">Paralyze immunity</font></td>
+		<td width="40%"><font size="2">Need "Loquat-Shoes" or "Pear o' Heels"</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="4"><font size="2">Sandals</font></td>
+		<td width="20%"><font size="2">Loquat-Shoes</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce +25%</font></td>
+		<td width="40%"><font size="2">Adds Spirit (of shoes) Card</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Pear o' Heels</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce +25%</font></td>
+		<td width="40%"><font size="2">Adds Spirit (of shoes) Card</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Wind God</font></td>
+		<td width="31%"><font size="2">Paralyze immunity</font></td>
+		<td width="40%"><font size="2">Need "Diceberry"<br>
+			Need Jinn &gt; 2, Combined essence levels &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Spirit (of shoes) Card</font></td>
+		<td width="31%"><font size="2">Gain more EXP</font></td>
+		<td width="40%"><font size="2">Need "Loquat-Shoes" or "Pear o' Heels"</font></td>
+	</tr>
+	<tr>
+		<td width="9%"><font size="2">Full Amor</font></td>
+		<td width="20%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="31%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="40%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">Mantle</font></td>
+		<td width="20%"><font size="2">Nymph of the Sky Card</font></td>
+		<td width="31%"><font size="2">Allows HP restore while moving</font></td>
+		<td width="40%"><font size="2">Need "White Feather"</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Spirit (of housework) Card</font></td>
+		<td width="31%"><font size="2">Sleep Immunity</font></td>
+		<td width="40%"><font size="2">Need "Hairball"</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="8"><font size="2">Pendant</font></td>
+		<td width="20%"><font size="2">Zombie Claw</font></td>
+		<td width="31%"><font size="2">Paralyze immunity</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Blackened Bat</font></td>
+		<td width="31%"><font size="2">Darkness immunity</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Spring Card</font></td>
+		<td width="31%"><font size="2">Sleep immunity</font></td>
+		<td width="40%"><font size="2">Need "Fishy Fruit"</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Goddess of Love Card</font></td>
+		<td width="31%"><font size="2">Gain more Lucre</font></td>
+		<td width="40%"><font size="2">Need "Virgin's Sigh"<br>
+			Need Shade, Dryad &gt; 2</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Fertility Goddess Card</font></td>
+		<td width="31%"><font size="2">Split EXP. with pets/ally</font></td>
+		<td width="40%"><font size="2">Need "Ear of Wheat"<br>
+			Need Dryad &gt; 2, combined essence levels &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Sacrificed Nymph Card</font></td>
+		<td width="31%"><font size="2">Petrify Immunity</font></td>
+		<td width="40%"><font size="2">Need "Ghost's Shriek"</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Phoenix Card</font></td>
+		<td width="31%"><font size="2">Chance of instant revive from unconscious</font></td>
+		<td width="40%"><font size="2">Need "Flaming Quill"<br>
+			Need Salamandr, Jinn &gt; 2<br>
+			Combine with Volcano Card*</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Unicorn Card</font></td>
+		<td width="31%"><font size="2">Faster revive from unconscious<br>
+			Faster HP regeneration</font><font size="2" color="#CC0000">?</font></td>
+		<td width="40%"><font size="2">Need "Whalamato"<br>
+			Need Gnome, Undine &gt; 2<br>
+			Combine with Spring Card*</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="17"><font size="2">All Armors</font></td>
+		<td width="20%"><font size="2">Citrus Squid</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike +25%, Slash -25%</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Pine o' Clock</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Sleep immunity</font></td>
+		<td width="40%"><font size="2">Adds Ragnarok Card if (Salamander, Gnome, Jinn, Undine &gt; 0)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Rhinolaupe</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Poison immunity</font></td>
+		<td width="40%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Little Eye</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Slash +25%</font></td>
+		<td width="40%"><font size="2">Adds Pixie Card (red hat)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Sleepy Eye</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Pierce +25%</font></td>
+		<td width="40%"><font size="2">Adds Pixie Card (blue hat)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Dangerous Eye</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike +25%</font></td>
+		<td width="40%"><font size="2">Adds Pixie Card (no hat)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Creepy Eye</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Magic +25%</font></td>
+		<td width="40%"><font size="2">Adds Pixie Card (black hat)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Moth Wing</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce -25%, Mgc +25%</font></td>
+		<td width="40%"><font size="2">Adds Spirit Card (of forest)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Stinky Breath</font></td>
+		<td width="31%"><font size="2">Poison, Confusion immunity</font></td>
+		<td width="40%"><font size="2">Adds Pixie Card (yellow hat)</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Bed of Thorns Card</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce/Magic +50%</font><font size="2"><br>
+			Prevents HP regeneration in battle</font></td>
+		<td width="40%"><font size="2">Need "Needle Lettuce" or "Needle"<br>
+			Need Dryad &gt; 0, Salamander = 0<br>
+			Prevents HP regeneration</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Metropolis Card</font></td>
+		<td width="31%"><font size="2">Improves bonus stat growth of Clown Card</font><font size="2" color="red">?</font><font size="2"><br>
+			</font><font size="2" color="#00CCFF">Magic +25%</font></td>
+		<td width="40%"><font size="2">Need "Dialaural"<br>
+			Need Shade &gt; 0, Salamander=0</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Fertility Goddess</font></td>
+		<td width="31%"><font size="2">Petrify immunity</font></td>
+		<td width="40%"><font size="2">Need "Ear of Wheat"<br>
+			Need Dryad &gt; 2, combined essence levels &gt; 4<br>
+			Split EXP. with pets/ally</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Ocean God</font></td>
+		<td width="31%"><font size="2">Flameburst immunity</font></td>
+		<td width="40%"><font size="2">Need "Squalphin" or "Orcaplant"<br>
+			Need Undine &gt; 2<br>
+			Need combined essence levels &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">God of Destruction</font></td>
+		<td width="31%"><font size="2">Freeze immunity</font></td>
+		<td width="40%"><font size="2">Need "Sharp Claw"<br>
+			Need Salamander &gt; 4, Undine = 0</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Clown Card</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike - 50%, Pierce +50%</font></td>
+		<td width="40%"><font size="2">Need "Bumpkin"<br>
+			Improved bonus stat growth with Metropolis card</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Cleric Card</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike +50%, Slash -50%</font></td>
+		<td width="40%"><font size="2">Need "Holy Water"</font></td>
+	</tr>
+	<tr>
+		<td width="20%"><font size="2">Yggdrasil Card</font></td>
+		<td width="31%"><font size="2">Faster HP regeneration</font></td>
+		<td width="40%"><font size="2">Need "Spiny Seed"</font></td>
+	</tr>
+	<tr>
+		<td width="9%"><font size="2">Hide Armors</font></td>
+		<td width="20%"><font size="2">Aroma Oil</font></td>
+		<td width="31%"><font size="2" color="#00CCFF">Strike/Slash/Pierce +50%</font></td>
+		<td width="40%"><font size="2">Adds Wisdom Goddess card if combined essence levels &gt; 5<br>
+			Includes Animal Hide, Gator Skin, Centaur Hide, Dragon Skin</font></td>
+	</tr>
+</tbody></table>
+*<font size="2">Combining the Phoenix Card with the Volcano Card should improve your chances of instant recovery
+upon being knocked unconscious. Combining the Unicorn Card with the Spring Card significantly cuts down the time
+it takes to recover from being unconscious. In both cases, (I think) the Phoenix and Unicorn cards must be on the
+item before the Volcano and Spring cards.</font></p>
+<p align="CENTER"><a name="II.%20Bonus%20Effects%20(Weapon)"></a><b><font size="5">II. Bonus Effects (Weapon)</font></b></p>
+<p><br>
+<b><i><font size="4">Notes Before Starting:</font></i></b><br>
+-This should help you choose items and  cards to enhance an weapon you're tempering.<br>
+-The bonus percentages are for the Sharrp, Heavy, Force, and Technique of the material the item was made with and
+not the type of weapon.(See charts at bottom of page.)<br>
+-The bonus percentages of cards are commpounded with each additional card on the weapon. This is why 4 Volcano,
+Clown, or Cleric cards work so well.<br>
+-The effects of items with attack bonusses (ex: Giant's Horn) will be replaced by the next item you add. This is
+why it is best to add an item such as a Giant's Horn last--usually after adding 4 Cleric cards.<br>
+<br>
+
+<table border="1" width="100%">
+	<tbody><tr>
+		<td colspan="4">
+			<p align="CENTER"><b><font size="4" color="red">Bonus Effects (Weapons)</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="12%" bgcolor="gray">Weapon Type</td>
+		<td width="14%" bgcolor="gray">Item or Card</td>
+		<td width="24%" bgcolor="gray">Effect</td>
+		<td width="50%" bgcolor="gray">Notes</td>
+	</tr>
+	<tr>
+		<td width="12%" rowspan="23"><font size="2">All Weapons</font></td>
+		<td width="14%"><font size="2">Citrus Squid</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp -25%, Heavy +25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Peach Puppy</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +25%, Heavy -25%</font></td>
+		<td width="50%"><font size="2">Adds "Wolf" card</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Apricat</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Force -25%, Tech +25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Rhinolaupe</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Spiny Carrot</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +25%, Heavy -25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Needle Lettuce</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +25%, Heavy -25%</font></td>
+		<td width="50%"><font size="2">Adds "Bed of Thorns" card if (Dryad &gt; 0, Salamander = 0)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Masked Potato</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp -25%, Heavy +25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Spade Basil</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +25%</font></td>
+		<td width="50%"><font size="2">Adds "Ruler of the Sky" card if (Wisp &gt; 2, combined essence levels &gt; 5)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Gold Clover</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Heavy +25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Sharp Claw</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +50%, Heavy -50%</font></td>
+		<td width="50%"><font size="2">Adds "God of Destruction" card if (Salamander &gt; 4, Undine = 0)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Poison Fang</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Force -50%, Tech +50%</font></td>
+		<td width="50%"><font size="2">Adds "Beast-headed God" card if (Dryad &gt; 4, Aura = 0)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Giant's Horn</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp -50%, Heavy +50%</font></td>
+		<td width="50%"><font size="2">Adds "Leviathan" card if (Gnome &gt; 4, Salamander = 0)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Scissors</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Force +50%, Tech -50%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Silly Eye</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Heavy +25%</font></td>
+		<td width="50%"><font size="2">Pixie (purple hat)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Angry Eye</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Force +25%</font></td>
+		<td width="50%"><font size="2">Pixie (light-blue hat)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Blank Eye</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Tech +25%</font></td>
+		<td width="50%"><font size="2">Pixie (yellow hat)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Wicked Eye</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +25%</font></td>
+		<td width="50%"><font size="2">&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Clear Feather</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Heavy -50%, Tech +50%</font></td>
+		<td width="50%"><font size="2">Adds "Lord of Flies" card if (Jinn &gt; 4, Gnome = 0)</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Dragon Breath</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Force +25%, Tech +25%</font></td>
+		<td width="50%"><font size="2">Adds "Man of Valour"card if (Wisp, Salamander &gt; 0, combined essence levels &gt; 2)&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Volcano Card</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Force +50%, Tech -50%</font></td>
+		<td width="50%"><font size="2">Need "Ash"</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Clown Card</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp +50%, Heavy -50%</font></td>
+		<td width="50%"><font size="2">Need "Bumpkin"</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Cleric Card</font></td>
+		<td width="24%"><font size="2" color="#FFFF66">Sharp -50%, Heavy +50%</font></td>
+		<td width="50%"><font size="2">Need "Holy Water"</font></td>
+	</tr>
+	<tr>
+		<td width="14%"><font size="2">Yggdrasil Card</font></td>
+		<td width="24%"><font size="2">Faster HP regeneration</font></td>
+		<td width="50%"><font size="2">Need "Spiny Seed"</font></td>
+	</tr>
+</tbody></table>
+</p>
+<p align="CENTER"><a name="III.%20Plunge%20Attacks"></a><b><font size="5">III. Plunge Attacks</font></b></p>
+<p><br>
+<b><i><font size="4">Notes Before Starting:</font></i></b><br>
+-This should help you choose Plunge Atttacks to enhance a weapon you're tempering.<br>
+-Once a Plunge Attack is added to your  weapon, the Plunge Attack stays on that weapon until replaced by a different
+Plunge Attack of the same type (Jump, Uppercut, Thrust etc.)<br>
+-Using Plunge Attacks fills up your Atttack Guage twice as fast as attacking with Quick Attacks. "Attack Guage
++" means that that particular Plunge Attack fills up your Attack Guage 4 times faster than a Quick Attack.
+"Attack Guage -" means that that particular Plunge Attack fills up your Attack Guage half as fast as
+a Quick Attack.<br>
+<br>
+
+<table border="1" width="100%">
+	<tbody><tr>
+		<td colspan="5">
+			<p align="CENTER"><b><font size="4" color="red">Plunge Attacks</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="9%" bgcolor="gray"><font size="1">Weapon Type</font></td>
+		<td width="17%" bgcolor="gray"><font size="1">Card</font></td>
+		<td width="16%" bgcolor="gray"><font size="1">Plunge Attack</font></td>
+		<td width="29%" bgcolor="gray"><font size="1">Description</font></td>
+		<td width="29%" bgcolor="gray">Notes</td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="3"><font size="2">Dagger</font></td>
+		<td width="17%"><font size="2">Lord of Flies</font></td>
+		<td width="16%"><font size="2">Sinister Blade</font></td>
+		<td width="29%"><font size="2">Jump, x2 damage vs. demi-humans</font></td>
+		<td width="29%"><font size="2">Need "Clear Feather"<br>
+			Jinn &gt; 4, Gnome = 0</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Beast-Headed God</font></td>
+		<td width="16%"><font size="2">Poison Blade</font></td>
+		<td width="29%"><font size="2">Uppercut, poison</font></td>
+		<td width="29%"><font size="2">Need "Poison Fang"<br>
+			Dryad &gt; 4, Aura = 0</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Clown</font></td>
+		<td width="16%"><font size="2">Quick Blade</font></td>
+		<td width="29%"><font size="2">Uppercut, Attack Guage +</font></td>
+		<td width="29%"><font size="2">Need "Bumpkin"</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="4"><font size="2">Sword</font></td>
+		<td width="17%"><font size="2">Sun God</font></td>
+		<td width="16%"><font size="2">Sunlight</font></td>
+		<td width="29%"><font size="2">Uppercut, x2 damage vs. undead,<br>
+			flameburst to undead</font></td>
+		<td width="29%"><font size="2">Need "Sun Crystal"<br>
+			Wisp &gt; 2, total &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Moon Goddess</font></td>
+		<td width="16%"><font size="2">Moonlight</font></td>
+		<td width="29%"><font size="2">Jump, x2 damage vs. aquatic,<br>
+			sleep to aquatic</font></td>
+		<td width="29%"><font size="2">Need "Moon Crystal"<br>
+			Shade &gt; 2, total &gt; 4&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Witch of Moon</font></td>
+		<td width="16%"><font size="2">Vampsword</font></td>
+		<td width="29%"><font size="2">Uppercut, ¼ damage absorbed to HP</font></td>
+		<td width="29%"><font size="2">Need "Vampire Fang"&nbsp;<br>
+			Undine &gt; 4, Jinn = 0</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">God of Destruction</font></td>
+		<td width="16%"><font size="2">Flametongue</font></td>
+		<td width="29%"><font size="2">Uppercut, fire damage, flameburst</font></td>
+		<td width="29%"><font size="2">Need "Sharp Claw"&nbsp;<br>
+			Salamandr &gt; 4, Undine = 0&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">Axe</font></td>
+		<td width="17%"><font size="2">God of War</font></td>
+		<td width="16%"><font size="2">Dragon Slayer</font></td>
+		<td width="29%"><font size="2">Uppercut, x2 damage to dragon,<br>
+			sleep to dragons</font></td>
+		<td width="29%"><font size="2">Need "Dragon Blood"<br>
+			Salamandr &gt; 2, total &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Wanderer</font></td>
+		<td width="16%"><font size="2">Wood Chopper</font></td>
+		<td width="29%"><font size="2">Jump, x2 damage vs plant&nbsp;</font></td>
+		<td width="29%"><font size="2">Need "Wad of Wool"&nbsp;<br>
+			Shade, Dryad &gt; 0, total &gt; 2</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="2"><font size="2">2H Sword</font></td>
+		<td width="17%"><font size="2">Ragnarok</font></td>
+		<td width="16%"><font size="2">Ragnarok</font></td>
+		<td width="29%"><font size="2">Jump, power up</font></td>
+		<td width="29%"><font size="2">Pine o 'Clock<br>
+			Salamander, Gnome, Jinn, Undine &gt; 0</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Fallen Angel&nbsp;</font></td>
+		<td width="16%"><font size="2">Chaotic Avenger</font></td>
+		<td width="29%"><font size="2">Thrust, fire/earth/wind/water damage,<br>
+			Attack Guage +&nbsp;</font></td>
+		<td width="29%"><font size="2">Angel Feather<br>
+			Wisp &gt; 4, Shade = 0</font></td>
+	</tr>
+	<tr>
+		<td width="9%"><font size="2">2H Axe</font></td>
+		<td width="17%"><font size="2">Leviathan</font></td>
+		<td width="16%"><font size="2">Treefeller</font></td>
+		<td width="29%"><font size="2">Jump, x2 damage vs. plant,<br>
+			dizzy to plant</font></td>
+		<td width="29%"><font size="2">Orange'opus or Giant's Horn<br>
+			Gnome &gt; 4, Salamandr = 0&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="4"><font size="2">Hammer</font></td>
+		<td width="17%"><font size="2">Volcano</font></td>
+		<td width="16%"><font size="2">Magma Hammer</font></td>
+		<td width="29%"><font size="2">Jump, fire/gold damage, defense up</font></td>
+		<td width="29%"><font size="2">Ash</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Thunder God</font></td>
+		<td width="16%"><font size="2">Mjiolnir</font></td>
+		<td width="29%"><font size="2">Jump, fire/wind damage, Attack Guage +&nbsp;</font></td>
+		<td width="29%"><font size="2">Electricity<br>
+			Wisp, Salamandr, Jinn&nbsp;&gt; 2</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Blacksmith God</font></td>
+		<td width="16%"><font size="2">Sledge Hammer</font></td>
+		<td width="29%"><font size="2">Jump, x2 damage to poltergiest,<br>
+			dizzy to poltergeist</font></td>
+		<td width="29%"><font size="2">Ether<br>
+			Aura, Gnome &gt;&nbsp;2</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Spirit (of mountain)</font></td>
+		<td width="16%"><font size="2">Quake Hammer</font></td>
+		<td width="29%"><font size="2">Jump, gold/earth damage, defense up</font></td>
+		<td width="29%"><font size="2">Ether<br>
+			Aura, Gnome less than 2</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="3"><font size="2">Spear</font></td>
+		<td width="17%"><font size="2">Ruler of Sky</font></td>
+		<td width="16%"><font size="2">Gungnir</font></td>
+		<td width="29%"><font size="2">Thrust, spirit up, Attack Guage +</font></td>
+		<td width="29%"><font size="2">Spade Basil<br>
+			Wisp &gt; 2, total &gt; 5</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Ocean God</font></td>
+		<td width="16%"><font size="2">Trident</font></td>
+		<td width="29%"><font size="2">Thrust, x2 damage vs. aquatic,<br>
+			confuse to aquatic, Attack Guage +</font></td>
+		<td width="29%"><font size="2">Squalphin or Orcaplant&nbsp;<br>
+			Undine &gt; 3, total &gt; 5&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Man of Valour</font></td>
+		<td width="16%"><font size="2">Spear of Light</font></td>
+		<td width="29%"><font size="2">Thrust, light damage</font></td>
+		<td width="29%"><font size="2">Dragon Breath<br>
+			Wisp, Salamandr &gt; 0, total &gt; 3&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="4"><font size="2">Staff</font></td>
+		<td width="17%"><font size="2">Ruler of Sky</font></td>
+		<td width="16%"><font size="2">Electro Sceptre</font></td>
+		<td width="29%"><font size="2">Jump, fire/wind damage</font></td>
+		<td width="29%"><font size="2">Spade Basil<br>
+			Wisp &gt; 2, total &gt; 5</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Wind God</font></td>
+		<td width="16%"><font size="2">Caduceus</font></td>
+		<td width="29%"><font size="2">Thrust, x2 damage vs insect<br>
+			paralyze to insect</font></td>
+		<td width="29%"><font size="2">Diceberry<br>
+			Jinn &gt; 2, total &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Wings of Darkness</font></td>
+		<td width="16%"><font size="2">Golden Touch</font></td>
+		<td width="29%"><font size="2">Jump, EXP to Lucre, Attack Guage -</font></td>
+		<td width="29%"><font size="2">Blackened Bat<br>
+			Shade &gt; 4, Wisp = 0&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Cleric</font></td>
+		<td width="16%"><font size="2">Demonicide</font></td>
+		<td width="29%"><font size="2">Jump, x2 damage vs demon<br>
+			flameburst to demon</font></td>
+		<td width="29%"><font size="2">Holy Water</font></td>
+	</tr>
+	<tr>
+		<td width="9%"><font size="2">Gloves</font></td>
+		<td width="17%"><font size="2">King</font></td>
+		<td width="16%"><font size="2">Hand of Midas</font></td>
+		<td width="29%"><font size="2">Uppercut, EXP to Lucre, Attack Guage -</font></td>
+		<td width="29%"><font size="2">Garlicrown</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="3"><font size="2">Flail</font></td>
+		<td width="17%"><font size="2">Mother of Gods</font></td>
+		<td width="16%"><font size="2">Green Princess</font></td>
+		<td width="29%"><font size="2">Thrust, defense up, Attack Guage +</font></td>
+		<td width="29%"><font size="2">Heart Mint<br>
+			Shade, Gnome, Undine &gt; 1</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Mother of Gods</font></td>
+		<td width="16%"><font size="2">Game of Death</font></td>
+		<td width="29%"><font size="2">Uppercut, skill up, Attack Guage +&nbsp;</font></td>
+		<td width="29%"><font size="2">Heart Mint<br>
+			Shade, Gnome, Undine &gt; 1</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Mother of Gods</font></td>
+		<td width="16%"><font size="2">Red Dream</font></td>
+		<td width="29%"><font size="2">Jump,&nbsp;power up, Attack Guage +</font></td>
+		<td width="29%"><font size="2">Heart Mint<br>
+			Shade, Gnome, Undine &gt; 1</font></td>
+	</tr>
+	<tr>
+		<td width="9%" rowspan="8"><font size="2">Bow</font></td>
+		<td width="17%"><font size="2">Sun God</font></td>
+		<td width="16%"><font size="2">Solar Flare</font></td>
+		<td width="29%"><font size="2">Double, light damage&nbsp;</font></td>
+		<td width="29%"><font size="2">Need "Sun Crystal"<br>
+			Wisp &gt; 2, total &gt; 4</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Moon Goddess&nbsp;</font></td>
+		<td width="16%"><font size="2">Lunar Shot</font></td>
+		<td width="29%"><font size="2">Shot, dark damage</font></td>
+		<td width="29%"><font size="2">Need "Moon Crystal"<br>
+			Shade &gt; 2, total &gt; 4&nbsp;&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Sage&nbsp;</font></td>
+		<td width="16%"><font size="2">Phoenix Falling</font></td>
+		<td width="29%"><font size="2">Double, x2 damage vs aerial,<br>
+			flameburst to aerial&nbsp;</font></td>
+		<td width="29%"><font size="2">Messy Scroll<br>
+			Jinn, Undine &gt; 0, total &gt; 2&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Spirit (of forest)&nbsp;</font></td>
+		<td width="16%"><font size="2">Elven Archer</font></td>
+		<td width="29%"><font size="2">Shot, paralyze&nbsp;</font></td>
+		<td width="29%"><font size="2">Moth Wing&nbsp;</font></td>
+	</tr>
+	<tr>
+		<td width="17%"><font size="2">Raven, Sorceror, Witch</font></td>
+		<td width="16%"><font size="2">Magical Shot</font></td>
+		<td width="29%"><font size="2">Double, x2 damage vs demon,<br>
+			confusion to demon, Attack Guage +&nbsp;</font></td>
+		<td width="29%"><font size="2">Need Raven Feather, Sulpher, and Mercury</font></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="16%"><font size="2">Medusa Arrow</font></td>
+		<td width="29%"><font size="2">Double, stone, weak attack</font></td>
+		<td width="29%"><font size="2">Found only in "Sacred Bow" dropped by Chobinhoods lvl 64 - 99</font></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="16%"><font size="2">Flaming Arrow</font></td>
+		<td width="29%"><font size="2">Double, fire damage, flameburst</font></td>
+		<td width="29%"><font size="2">Found only in "Sidewinder" dropped by Chobinhoods lvl 32 - 99</font></td>
+	</tr>
+	<tr>
+		<td width="17%">
+			<p align="CENTER"><font size="2">-</font>
+		</p></td>
+		<td width="16%"><font size="2">Icicle</font></td>
+		<td width="29%"><font size="2">Double, water damage, freeze&nbsp;</font></td>
+		<td width="29%"><font size="2">Found only in "Waveruck" dropped by Chobinhoods lvl 48 - 99</font></td>
+	</tr>
+</tbody></table>
+</p>
+<p align="CENTER"><a name="IV.%20Material%20Attributes"></a><b><font size="5">IV. Material Attributes</font></b><br>
+(Sharp-Heavy-Force-Technique and Strike-Slash-Pierce-Magic of Materials)</p>
+<p><br>
+<br>
+<b><i><font size="4">Notes Before Starting:</font></i><font size="4"><br>
+</font></b>-This shows the natural preference of materials for Sharp-Heavy-Force-Technique and Strike-Slash-Pierce-Magic.<br>
+-<font color="red">Red</font> indicatess the best material for that category<br>
+-The bonus percentages are for the Striike-Slash-Pierce-Magic and Sharp-Heavy-Force-Technique of the material the
+armor was made with and <i>NOT</i> the type of armor or weapon. For example: Temper a Dangerous Eye into an armor
+made of Menos Bronze and you get a 25% bonus to the Menos Bronze's "Strike" defense. Or temper a Wicked
+Eye into a weapon made of Menos Bronze and you get a 25% bonus to the Menos Bronze's "Sharp".<br>
+-I think most of these numbers apply onnly to the Japanese version since they were changed to different amounts
+in the U.S. version of LOM. So these numbers are kind of worthless unless you're playing the Japanese version.<br>
+
+<table border="1" width="92%">
+	<tbody><tr>
+		<td colspan="10">
+			<p align="CENTER"><b><font size="4" color="red">Material Attributes</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="8%" bgcolor="gray">
+			<p align="CENTER">Type
+		</p></td>
+		<td width="15%" bgcolor="gray">
+			<p align="CENTER">Material Name
+		</p></td>
+		<td width="9%" bgcolor="gray">
+			<p align="CENTER">Sharp <br>
+			(a)
+		</p></td>
+		<td width="9%" bgcolor="gray">
+			<p align="CENTER">Heavy <br>
+			(b)
+		</p></td>
+		<td width="9%" bgcolor="gray">
+			<p align="CENTER">Force <br>
+			(c)
+		</p></td>
+		<td width="12%" bgcolor="gray">
+			<p align="CENTER">Tech <br>
+			(d)
+		</p></td>
+		<td width="9%" bgcolor="gray">
+			<p align="CENTER">Strike<br>
+			(e)
+		</p></td>
+		<td width="10%" bgcolor="gray">
+			<p align="CENTER">Slash<br>
+			(f)
+		</p></td>
+		<td width="8%" bgcolor="gray">
+			<p align="CENTER">Pierce <br>
+			(g)
+		</p></td>
+		<td width="11%" bgcolor="gray">
+			<p align="CENTER">Magic Def <br>
+			(h)
+		</p></td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="11" bgcolor="gray">Metal</td>
+		<td width="15%">Menos Bronze</td>
+		<td width="9%">10</td>
+		<td width="9%">10</td>
+		<td width="9%">10</td>
+		<td width="12%">10</td>
+		<td width="9%">10</td>
+		<td width="10%">10</td>
+		<td width="8%">10</td>
+		<td width="11%">10</td>
+	</tr>
+	<tr>
+		<td width="15%">Forsena Iron</td>
+		<td width="9%">15</td>
+		<td width="9%">15</td>
+		<td width="9%">15</td>
+		<td width="12%">15</td>
+		<td width="9%">15</td>
+		<td width="10%">15</td>
+		<td width="8%">15</td>
+		<td width="11%">15</td>
+	</tr>
+	<tr>
+		<td width="15%">Granz Steel</td>
+		<td width="9%">20</td>
+		<td width="9%">20</td>
+		<td width="9%">20</td>
+		<td width="12%">20</td>
+		<td width="9%">20</td>
+		<td width="10%">20</td>
+		<td width="8%">20</td>
+		<td width="11%">20</td>
+	</tr>
+	<tr>
+		<td width="15%">Lorant Silver</td>
+		<td width="9%">25</td>
+		<td width="9%">25</td>
+		<td width="9%">25</td>
+		<td width="12%">25</td>
+		<td width="9%">25</td>
+		<td width="10%">25</td>
+		<td width="8%">25</td>
+		<td width="11%">25</td>
+	</tr>
+	<tr>
+		<td width="15%">Wendel Silver</td>
+		<td width="9%">30</td>
+		<td width="9%">30</td>
+		<td width="9%">30</td>
+		<td width="12%">30</td>
+		<td width="9%">30</td>
+		<td width="10%">30</td>
+		<td width="8%">30</td>
+		<td width="11%">30</td>
+	</tr>
+	<tr>
+		<td width="15%">Vizel Gold</td>
+		<td width="9%">40</td>
+		<td width="9%">40</td>
+		<td width="9%">40</td>
+		<td width="12%">40</td>
+		<td width="9%">40</td>
+		<td width="10%">40</td>
+		<td width="8%">40</td>
+		<td width="11%">40</td>
+	</tr>
+	<tr>
+		<td width="15%">Ishe Platinum</td>
+		<td width="9%">50</td>
+		<td width="9%">50</td>
+		<td width="9%">50</td>
+		<td width="12%">50</td>
+		<td width="9%">50</td>
+		<td width="10%">50</td>
+		<td width="8%">50</td>
+		<td width="11%">50</td>
+	</tr>
+	<tr>
+		<td width="15%">Lorimar Iron</td>
+		<td width="9%">60</td>
+		<td width="9%">60</td>
+		<td width="9%">60</td>
+		<td width="12%">60</td>
+		<td width="9%">60</td>
+		<td width="10%">60</td>
+		<td width="8%">60</td>
+		<td width="11%">60</td>
+	</tr>
+	<tr>
+		<td width="15%">Altena Alloy</td>
+		<td width="9%">75</td>
+		<td width="9%">75</td>
+		<td width="9%">75</td>
+		<td width="12%">75</td>
+		<td width="9%">75</td>
+		<td width="10%">75</td>
+		<td width="8%">75</td>
+		<td width="11%">75</td>
+	</tr>
+	<tr>
+		<td width="15%">Maia Lead*</td>
+		<td width="9%">4</td>
+		<td width="9%">85</td>
+		<td width="9%">22</td>
+		<td width="12%">4</td>
+		<td width="9%">22</td>
+		<td width="10%">45</td>
+		<td width="8%">45</td>
+		<td width="11%">90</td>
+	</tr>
+	<tr>
+		<td width="15%">Orihalcon</td>
+		<td width="9%">38</td>
+		<td width="9%">32</td>
+		<td width="9%">33</td>
+		<td width="12%">37</td>
+		<td width="9%">30</td>
+		<td width="10%">30</td>
+		<td width="8%">30</td>
+		<td width="11%">40</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="8" bgcolor="gray">Wood</td>
+		<td width="15%">Oak Wood</td>
+		<td width="9%">6</td>
+		<td width="9%">14</td>
+		<td width="9%">6</td>
+		<td width="12%">16</td>
+		<td width="9%">5</td>
+		<td width="10%">7</td>
+		<td width="8%">9</td>
+		<td width="11%">12</td>
+	</tr>
+	<tr>
+		<td width="15%">Holly Wood</td>
+		<td width="9%">12</td>
+		<td width="9%">28</td>
+		<td width="9%">8</td>
+		<td width="12%">32</td>
+		<td width="9%">10</td>
+		<td width="10%">14</td>
+		<td width="8%">18</td>
+		<td width="11%">24</td>
+	</tr>
+	<tr>
+		<td width="15%">Baobab Wood</td>
+		<td width="9%">18</td>
+		<td width="9%">42</td>
+		<td width="9%">12</td>
+		<td width="12%">48</td>
+		<td width="9%">15</td>
+		<td width="10%">21</td>
+		<td width="8%">27</td>
+		<td width="11%">36</td>
+	</tr>
+	<tr>
+		<td width="15%">Ebony Wood</td>
+		<td width="9%">24</td>
+		<td width="9%">56</td>
+		<td width="9%">16</td>
+		<td width="12%">64</td>
+		<td width="9%">20</td>
+		<td width="10%">28</td>
+		<td width="8%">36</td>
+		<td width="11%">48</td>
+	</tr>
+	<tr>
+		<td width="15%">Maple Wood</td>
+		<td width="9%">30</td>
+		<td width="9%">70</td>
+		<td width="9%">20</td>
+		<td width="12%">80</td>
+		<td width="9%">25</td>
+		<td width="10%">35</td>
+		<td width="8%">45</td>
+		<td width="11%">60</td>
+	</tr>
+	<tr>
+		<td width="15%">Dior Wood</td>
+		<td width="9%">45</td>
+		<td width="9%">105</td>
+		<td width="9%">30</td>
+		<td width="12%"><font color="red">120</font></td>
+		<td width="9%">37</td>
+		<td width="10%">52</td>
+		<td width="8%">67</td>
+		<td width="11%">90</td>
+	</tr>
+	<tr>
+		<td width="15%">Ash wood</td>
+		<td width="9%">27</td>
+		<td width="9%">63</td>
+		<td width="9%">18</td>
+		<td width="12%">72</td>
+		<td width="9%">22</td>
+		<td width="10%">31</td>
+		<td width="8%">40</td>
+		<td width="11%">54</td>
+	</tr>
+	<tr>
+		<td width="15%">Fossil Wood*</td>
+		<td width="9%">42</td>
+		<td width="9%">98</td>
+		<td width="9%">28</td>
+		<td width="12%">112</td>
+		<td width="9%">35</td>
+		<td width="10%">49</td>
+		<td width="8%">63</td>
+		<td width="11%">84</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="4" bgcolor="gray">Stone</td>
+		<td width="15%">Marble</td>
+		<td width="9%">2</td>
+		<td width="9%">21</td>
+		<td width="9%">16</td>
+		<td width="12%">7</td>
+		<td width="9%">9</td>
+		<td width="10%">12</td>
+		<td width="8%">15</td>
+		<td width="11%">6</td>
+	</tr>
+	<tr>
+		<td width="15%">Obsidian</td>
+		<td width="9%">4</td>
+		<td width="9%">43</td>
+		<td width="9%">33</td>
+		<td width="12%">14</td>
+		<td width="9%">18</td>
+		<td width="10%">24</td>
+		<td width="8%">30</td>
+		<td width="11%">12</td>
+	</tr>
+	<tr>
+		<td width="15%">Pedan Stone</td>
+		<td width="9%">9</td>
+		<td width="9%">86</td>
+		<td width="9%">67</td>
+		<td width="12%">28</td>
+		<td width="9%">36</td>
+		<td width="10%">48</td>
+		<td width="8%">60</td>
+		<td width="11%">24</td>
+	</tr>
+	<tr>
+		<td width="15%">Gaius's Tears</td>
+		<td width="9%">14</td>
+		<td width="9%">129</td>
+		<td width="9%">100</td>
+		<td width="12%">43</td>
+		<td width="9%">54</td>
+		<td width="10%">72</td>
+		<td width="8%">90</td>
+		<td width="11%">36</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="4" bgcolor="gray">Hide</td>
+		<td width="15%">Animal Hide</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">20</td>
+		<td width="9%">8</td>
+		<td width="10%">12</td>
+		<td width="8%">10</td>
+		<td width="11%">15</td>
+	</tr>
+	<tr>
+		<td width="15%">Gator Skin</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">40</td>
+		<td width="9%">16</td>
+		<td width="10%">24</td>
+		<td width="8%">20</td>
+		<td width="11%">30</td>
+	</tr>
+	<tr>
+		<td width="15%">Centaur Hide**</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">80</td>
+		<td width="9%">32</td>
+		<td width="10%">48</td>
+		<td width="8%">40</td>
+		<td width="11%">60</td>
+	</tr>
+	<tr>
+		<td width="15%">Dragon Skin</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%"><font color="red">120</font></td>
+		<td width="9%">48</td>
+		<td width="10%">72</td>
+		<td width="8%">60</td>
+		<td width="11%">90</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="4" bgcolor="gray">Scales</td>
+		<td width="15%">Fish Scales</td>
+		<td width="9%">8</td>
+		<td width="9%">7</td>
+		<td width="9%">7</td>
+		<td width="12%">9</td>
+		<td width="9%">9</td>
+		<td width="10%">8</td>
+		<td width="8%">4</td>
+		<td width="11%">16</td>
+	</tr>
+	<tr>
+		<td width="15%">Lizard Scales</td>
+		<td width="9%">17</td>
+		<td width="9%">14</td>
+		<td width="9%">14</td>
+		<td width="12%">19</td>
+		<td width="9%">19</td>
+		<td width="10%">16</td>
+		<td width="8%">8</td>
+		<td width="11%">32</td>
+	</tr>
+	<tr>
+		<td width="15%">Snake Scales</td>
+		<td width="9%">26</td>
+		<td width="9%">21</td>
+		<td width="9%">21</td>
+		<td width="12%">28</td>
+		<td width="9%">28</td>
+		<td width="10%">24</td>
+		<td width="8%">12</td>
+		<td width="11%">48</td>
+	</tr>
+	<tr>
+		<td width="15%">Dragon Scales</td>
+		<td width="9%"><font color="red">88</font></td>
+		<td width="9%">72</td>
+		<td width="9%">72</td>
+		<td width="12%">96</td>
+		<td width="9%"><font color="red">96</font></td>
+		<td width="10%">80</td>
+		<td width="8%">40</td>
+		<td width="11%"><font color="red">160</font></td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="4" bgcolor="gray">Bone</td>
+		<td width="15%">Animal Bone</td>
+		<td width="9%">18</td>
+		<td width="9%">12</td>
+		<td width="9%">15</td>
+		<td width="12%">15</td>
+		<td width="9%">11</td>
+		<td width="10%">18</td>
+		<td width="8%">7</td>
+		<td width="11%">11</td>
+	</tr>
+	<tr>
+		<td width="15%">Ivory</td>
+		<td width="9%">36</td>
+		<td width="9%">24</td>
+		<td width="9%">30</td>
+		<td width="12%">30</td>
+		<td width="9%">22</td>
+		<td width="10%">37</td>
+		<td width="8%">15</td>
+		<td width="11%">22</td>
+	</tr>
+	<tr>
+		<td width="15%">Cursed Bone**</td>
+		<td width="9%">54</td>
+		<td width="9%">36</td>
+		<td width="9%">45</td>
+		<td width="12%">45</td>
+		<td width="9%">33</td>
+		<td width="10%">56</td>
+		<td width="8%">22</td>
+		<td width="11%">33</td>
+	</tr>
+	<tr>
+		<td width="15%">Fossil</td>
+		<td width="9%">78</td>
+		<td width="9%">52</td>
+		<td width="9%">65</td>
+		<td width="12%">65</td>
+		<td width="9%">48</td>
+		<td width="10%">81</td>
+		<td width="8%">32</td>
+		<td width="11%">48</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="4" bgcolor="gray">Fabric</td>
+		<td width="15%">Topple Cotton</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">9</td>
+		<td width="9%">9</td>
+		<td width="10%">9</td>
+		<td width="8%">9</td>
+		<td width="11%">18</td>
+	</tr>
+	<tr>
+		<td width="15%">Sultan's Silk</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">19</td>
+		<td width="9%">19</td>
+		<td width="10%">19</td>
+		<td width="8%">19</td>
+		<td width="11%">38</td>
+	</tr>
+	<tr>
+		<td width="15%">Judd Hemp</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">29</td>
+		<td width="9%">29</td>
+		<td width="10%">29</td>
+		<td width="8%">29</td>
+		<td width="11%">58</td>
+	</tr>
+	<tr>
+		<td width="15%">Altena Felt</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="9%">1</td>
+		<td width="12%">39</td>
+		<td width="9%">39</td>
+		<td width="10%">39</td>
+		<td width="8%">39</td>
+		<td width="11%">78</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="8" bgcolor="gray">Rock</td>
+		<td width="15%">Jacobini Rock</td>
+		<td width="9%">15</td>
+		<td width="9%">30</td>
+		<td width="9%">32</td>
+		<td width="12%">20</td>
+		<td width="9%">18</td>
+		<td width="10%">24</td>
+		<td width="8%">32</td>
+		<td width="11%">12</td>
+	</tr>
+	<tr>
+		<td width="15%">Halley Rock</td>
+		<td width="9%">18</td>
+		<td width="9%">37</td>
+		<td width="9%">40</td>
+		<td width="12%">25</td>
+		<td width="9%">22</td>
+		<td width="10%">30</td>
+		<td width="8%">40</td>
+		<td width="11%">15</td>
+	</tr>
+	<tr>
+		<td width="15%">Ankh Rock</td>
+		<td width="9%">22</td>
+		<td width="9%">45</td>
+		<td width="9%">48</td>
+		<td width="12%">30</td>
+		<td width="9%">27</td>
+		<td width="10%">36</td>
+		<td width="8%">48</td>
+		<td width="11%">18</td>
+	</tr>
+	<tr>
+		<td width="15%">Vinek Rock</td>
+		<td width="9%">26</td>
+		<td width="9%">52</td>
+		<td width="9%">56</td>
+		<td width="12%">35</td>
+		<td width="9%">31</td>
+		<td width="10%">42</td>
+		<td width="8%">56</td>
+		<td width="11%">21</td>
+	</tr>
+	<tr>
+		<td width="15%">Tuttle Rock</td>
+		<td width="9%">30</td>
+		<td width="9%">60</td>
+		<td width="9%">64</td>
+		<td width="12%">40</td>
+		<td width="9%">36</td>
+		<td width="10%">48</td>
+		<td width="8%">64</td>
+		<td width="11%">24</td>
+	</tr>
+	<tr>
+		<td width="15%">Nemesis Rock*</td>
+		<td width="9%">37</td>
+		<td width="9%">75</td>
+		<td width="9%">80</td>
+		<td width="12%">50</td>
+		<td width="9%">45</td>
+		<td width="10%">60</td>
+		<td width="8%">80</td>
+		<td width="11%">30</td>
+	</tr>
+	<tr>
+		<td width="15%">Biella Rock*</td>
+		<td width="9%">45</td>
+		<td width="9%">90</td>
+		<td width="9%">96</td>
+		<td width="12%">60</td>
+		<td width="9%">54</td>
+		<td width="10%">72</td>
+		<td width="8%">96</td>
+		<td width="11%">36</td>
+	</tr>
+	<tr>
+		<td width="15%">Swifte Rock*</td>
+		<td width="9%">52</td>
+		<td width="9%">105</td>
+		<td width="9%">112</td>
+		<td width="12%">70</td>
+		<td width="9%">63</td>
+		<td width="10%">84</td>
+		<td width="8%"><font color="red">112</font></td>
+		<td width="11%">42</td>
+	</tr>
+	<tr>
+		<td width="8%" rowspan="8" bgcolor="gray">Misc</td>
+		<td width="15%">Adamantite</td>
+		<td width="9%">67</td>
+		<td width="9%"><font color="red">135</font></td>
+		<td width="9%"><font color="red">144</font></td>
+		<td width="12%">90</td>
+		<td width="9%">45</td>
+		<td width="10%">135</td>
+		<td width="8%">90</td>
+		<td width="11%">67</td>
+	</tr>
+	<tr>
+		<td width="15%">Fullmetal</td>
+		<td width="9%">63</td>
+		<td width="9%">106</td>
+		<td width="9%">102</td>
+		<td width="12%">68</td>
+		<td width="9%">42</td>
+		<td width="10%"><font color="red">153</font></td>
+		<td width="8%">42</td>
+		<td width="11%">42</td>
+	</tr>
+	<tr>
+		<td width="15%">Coral</td>
+		<td width="9%">39</td>
+		<td width="9%">26</td>
+		<td width="9%">23</td>
+		<td width="12%">42</td>
+		<td width="9%">16</td>
+		<td width="10%">59</td>
+		<td width="8%">16</td>
+		<td width="11%">16</td>
+	</tr>
+	<tr>
+		<td width="15%">Tortoise Shell</td>
+		<td width="9%">31</td>
+		<td width="9%">20</td>
+		<td width="9%">18</td>
+		<td width="12%">33</td>
+		<td width="9%">13</td>
+		<td width="10%">46</td>
+		<td width="8%">13</td>
+		<td width="11%">13</td>
+	</tr>
+	<tr>
+		<td width="15%">Shell</td>
+		<td width="9%">21</td>
+		<td width="9%">14</td>
+		<td width="9%">12</td>
+		<td width="12%">23</td>
+		<td width="9%">9</td>
+		<td width="10%">32</td>
+		<td width="8%">9</td>
+		<td width="11%">9</td>
+	</tr>
+	<tr>
+		<td width="15%">Emerald</td>
+		<td width="9%">2</td>
+		<td width="9%">2</td>
+		<td width="9%">2</td>
+		<td width="12%">2</td>
+		<td width="9%">1</td>
+		<td width="10%">1</td>
+		<td width="8%">1</td>
+		<td width="11%">50</td>
+	</tr>
+	<tr>
+		<td width="15%">Pearl</td>
+		<td width="9%">2</td>
+		<td width="9%">2</td>
+		<td width="9%">2</td>
+		<td width="12%">2</td>
+		<td width="9%">1</td>
+		<td width="10%">1</td>
+		<td width="8%">1</td>
+		<td width="11%">50</td>
+	</tr>
+	<tr>
+		<td width="15%">Lapis Lazuli</td>
+		<td width="9%">2</td>
+		<td width="9%">2</td>
+		<td width="9%">2</td>
+		<td width="12%">2</td>
+		<td width="9%">1</td>
+		<td width="10%">1</td>
+		<td width="8%">1</td>
+		<td width="11%">50</td>
+	</tr>
+</tbody></table>
+* indicates that the material is only available with a Pocket Station<br>
+** indicates that the material is only available in weapons or armors you find<br>
+<br>
+<br>
+Last Update: Oct. 9, 2001
+
+<script language="JavaScript" type="text/javascript">
+var width  = window.innerWidth || (window.document.documentElement.clientWidth ||  window.document.body.clientWidth);
+var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+var d = document;
+if (width>=639 && height>=468 || top.location.href == window.location.href) {
+}
+rp_account   = '9645';rp_site      = '17527';rp_zonesize  = '1527362-51';rp_slot   = 'ad_group_786919';rp_adtype    = 'js';rp_smartfile = '[SMART FILE URL]';
+d.write('<script language="JavaScript" type="text/javascript"');
+d.write(' src="https://ads.rubiconproject.com/ad/9645.js">');
+d.write('<\/scr'+'ipt>');}</script>
+
+
+</p></div><style> 
+.zoomout { -webkit-transition: -webkit-transform 0.5s ease;
+-moz-transition: -moz-transform 0.5s ease;
+-o-transition: -o-transform 0.5s ease;
+transition: transform 0.5s;
+-ms-transition: transform 0.5s ease;}
+.zoomin { 
+filter: blur(0)
+-webkit-transform: scaleY(1.15);
+-moz-transform: scaleY(1.15);
+-o-transform: scaleY(1.15);
+transform: scaleYY(1.15);
+-ms-transform: scaleY(1.15);
+} 
+#archive:hover { zoom:101%;)
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var width  = window.innerWidth || (window.document.documentElement.clientWidth ||  window.document.body.clientWidth);
+var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+var d = document;
+
+if (width>=806 && height>=468 || top.location.href == window.location.href) {
+d.write('<div id="archive" onMouseOver="className=\'zoomin\';this.style.zIndex=\'99\'"  onMouseOut="className=\'zoomout\';this.style.zIndex=\'5\'" style="padding-left:25px;background-image:url(https://www.oocities.org/d.jpg); background-repeat:repeat-x; filter:alpha(opacity=88); -moz-opacity:0.88 ; opacity:0.88; position:fixed; background-color:#FFFFFF; width:100%; min-width:970px;  overflow:hidden; left:0px; top:0px; font-family:times; font-size:9px; border-bottom:5px solid #f7f7f7; color:#000000;background-color:#ffffe0;z-Index:5;"><font style="font-size:16px" color="#000000"> This Page is an outdated, user-generated website brought to you by an archive</font><font style="font-family:times; font-size:9px" color="#000000">.It was mirrored from Geocities at the end of October, 2009.<br>For any questions concerning this page try to contact the respective author. (To report any malicious content send the URL to oocities(at gmail dot com). For question about the archive visit: <a style="color:#005577" href="//oocities.org" target="_new" title="geocities archive">OoCities.org</a>.</font><div onClick="archive.style.display=\'none\'"  onMouseOver="style.cursor=\'pointer\'" style="font-size:17px;position:absolute;left:3px;top:3px;color:#999;line-height:20px">[x]</div><div onClick="archive.style.display=\'none\';footer.style.display=\'none\'"  onMouseOver="style.cursor=\'pointer\'" style="font-size:19px;position:absolute;right:30px;top:0px;color:#777;line-height:20px">[x]</div></div>');
+var x =  d.getElementById('content').offsetWidth;
+d.write('<div id="foot" style="position:fixed;left:1018px;top:31px;z-index:10;padding-bottom:3px"><div id="ft72">');
+rp_account   = '9645';
+rp_site      = '17527';
+rp_zonesize  = '55620-15';
+rp_slot   = 's';
+rp_adtype    = 'iframe';
+rp_width     = '300';
+rp_height    = '250';
+rp_smartfile = '[SMART FILE URL]';
+d.write('<script language="JavaScript" type="text/javascript"');
+d.write('src="https://ads.rubiconproject.com/ad/9645.js">');
+d.write('<\/scr'+'ipt></div>');
+if ( height>=543) {
+var cb = Math.random();
+var iframe = "&fr=" + (window != top);
+var ref = "";
+try {
+    if (window != top) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script id="rp3" language="JavaScript" type="text/javascript"');
+d.write('src="https://optimized-by.rubiconproject.com/a/9645/17527/55620-15.js?cb='+cb+ref+iframe+'"></script>')
+}
+
+d.write('<div id="ft73"><span onClick="foot.style.display=\'none\'"  style="font-size:16px;position:relative;left:7px;color:#555;background-color:ccc;line-height:19px"> \[x\]close <\/span><\/div>');
+
+
+if ( width-x>=440 || width>=1425) { 
+d.write('<div id="footer" style="position:fixed;left:1310px;top:31px;z-index:11;padding-bottom:3px"><div id="ft74">');
+
+var cb = Math.random();
+var iframe = "&fr=" + (window != top);
+var ref = "";
+try {
+    if (window != top) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script id="rp3" language="JavaScript" type="text/javascript"');
+d.write('src="https://optimized-by.rubiconproject.com/a/9645/17527/55620-15.js?cb='+cb+ref+iframe+'">')
+d.write('<\/scr'+'ipt><\/div><div id="ft75">');
+
+var cb = Math.random();
+var iframe = "&fr=" + (window != top);
+var ref = "";
+try {
+    if (window != top) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script id="rp4" language="JavaScript" type="text/javascript"');
+d.write('src="https://optimized-by.rubiconproject.com/a/9645/17527/55620-15.js?cb='+cb+ref+iframe+'">');
+d.write('<\/scr'+'ipt></div></div>');
+}}
+-->
+</script><div id="archive" onmouseover="className=&#39;zoomin&#39;;this.style.zIndex=&#39;99&#39;" onmouseout="className=&#39;zoomout&#39;;this.style.zIndex=&#39;5&#39;" style="padding-left: 25px; background-image: url(&quot;https://www.oocities.org/d.jpg&quot;); background-repeat: repeat-x; opacity: 0.88; position: fixed; width: 100%; min-width: 970px; overflow: hidden; left: 0px; top: 0px; font-family: times; font-size: 9px; border-bottom: 5px solid rgb(247, 247, 247); color: rgb(0, 0, 0); background-color: rgb(255, 255, 224); z-index: 5;" class="zoomout"><font style="font-size:16px" color="#000000"> This Page is an outdated, user-generated website brought to you by an archive</font><font style="font-family:times; font-size:9px" color="#000000">.It was mirrored from Geocities at the end of October, 2009.<br>For any questions concerning this page try to contact the respective author. (To report any malicious content send the URL to oocities(at gmail dot com). For question about the archive visit: <a style="color:#005577" href="https://oocities.org/" target="_new" title="geocities archive">OoCities.org</a>.</font><div onclick="archive.style.display=&#39;none&#39;" onmouseover="style.cursor=&#39;pointer&#39;" style="font-size:17px;position:absolute;left:3px;top:3px;color:#999;line-height:20px">[x]</div><div onclick="archive.style.display=&#39;none&#39;;footer.style.display=&#39;none&#39;" onmouseover="style.cursor=&#39;pointer&#39;" style="font-size:19px;position:absolute;right:30px;top:0px;color:#777;line-height:20px">[x]</div></div><div id="foot" style="position: fixed; left: 773px; top: 31px; z-index: 10; padding-bottom: 3px;"><div id="ft72"><script language="JavaScript" type="text/javascript" src="./9645.js.download"></script></div><script id="rp3" language="JavaScript" type="text/javascript" src="./55620-15.js.download"></script><div id="ft73"><span onclick="foot.style.display=&#39;none&#39;" style="font-size:16px;position:relative;left:7px;color:#555;background-color:ccc;line-height:19px"> [x]close </span></div>
+<script type="text/javascript">
+if (x<=1015){d.getElementById('foot').style.left = x + "px";}
+d.getElementById('footer').style.left = x + d.getElementById('foot').offsetWidth + "px";
+</script>
+
+<script type="text/javascript">
+<!--
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26808115-1']);
+  _gaq.push(['_setDomainName', 'oocities.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+-->
+</script><script type="text/javascript"> window.google_analytics_uacct = "UA-26808115-1"; </script>
+
+
+
+
+</div></body></html>

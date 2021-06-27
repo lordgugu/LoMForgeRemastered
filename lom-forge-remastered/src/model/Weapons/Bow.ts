@@ -3,13 +3,17 @@ import { WeaponProps } from '.'
 
 export const Bow: WeaponProps = {
   name: 'Bow',
-  sharpness: 40,
-  weight: 4,
-  force: 20,
-  technique: 40,
+  attributes: {
+    sharpness: 40,
+    weight: 4,
+    force: 20,
+    technique: 40
+  },
   markerThreshold: 1,
   priceCoefficient: 35,
-  topPlunge: Shot,
-  middlePlunge: DoubleShot,
-  bottomPlunge: Jump
+  plungeAttacks: {
+    top: Shot,
+    middle: DoubleShot,
+    bottom: Jump
+  }
 }

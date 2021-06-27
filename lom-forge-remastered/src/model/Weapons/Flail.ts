@@ -3,13 +3,17 @@ import { WeaponProps } from '.'
 
 export const Flail: WeaponProps = {
   name: 'Flail',
-  sharpness: 0,
-  weight: 40,
-  force: 28,
-  technique: 44,
+  attributes: {
+    sharpness: 0,
+    weight: 40,
+    force: 28,
+    technique: 44
+  },
   markerThreshold: 3,
   priceCoefficient: 40,
-  topPlunge: Thrust,
-  middlePlunge: Uppercut,
-  bottomPlunge: Jump
+  plungeAttacks: {
+    top: Thrust,
+    middle: Uppercut,
+    bottom: Jump
+  }
 }

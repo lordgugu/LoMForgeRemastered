@@ -3,13 +3,17 @@ import { WeaponProps } from '.'
 
 export const TwoHandedAxe: WeaponProps = {
   name: '2H Axe',
-  sharpness: 40,
-  weight: 40,
-  force: 64,
-  technique: 16,
+  attributes: {
+    sharpness: 40,
+    weight: 40,
+    force: 64,
+    technique: 16
+  },
   markerThreshold: 3,
   priceCoefficient: 75,
-  topPlunge: Thrust,
-  middlePlunge: Uppercut,
-  bottomPlunge: Jump
+  plungeAttacks: {
+    top: Thrust,
+    middle: Uppercut,
+    bottom: Jump
+  }
 }

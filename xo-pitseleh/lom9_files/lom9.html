@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.oocities.org/xo_pitseleh/lom9.html?202127 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script type="text/javascript" async="" src="./ga.js.download"></script><script>(function(){function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}hookGeo();})()</script><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.64">
+<meta http-equiv="Cache-control" content="public, min-fresh:2400000">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<style type="text/css"> html { max-width:1024px;overflow:auto;} </style>
+<script language="JavaScript" type="text/javascript">
+if (window == top) { 
+//document.write('<div style="height:30px;"></div><div id="content" style="max-width:1022px;overflow:auto">');
+}
+else {document.write('<div id="content" style="max-width:804px;overflow:auto">');} </script></head><body text="lime" bgcolor="black"><div id="content" style="max-width:804px;overflow:auto">
+
+<script language="JavaScript" src="./geovck08.js.download"></script>
+
+
+
+
+	
+	<meta name="GENERATOR" content="Visual Page 2.0 for Windows">
+	<title>Golem Logic Block Size and Block Strength</title>
+
+
+
+
+
+<p align="CENTER"><img src="./LOMkilroy01.gif" width="70" height="90" align="BOTTOM" border="0"><b><font size="5" color="red">Golem Logic Block Size and Block Strength</font></b><font size="5" color="red"><img src="./LOMkilroy01.gif" width="70" height="90" align="BOTTOM" border="0"></font></p>
+<p><br>
+e-mail: xo_pitseleh@hotmail.com<br>
+<br>
+Other Pages:<br>
+<a href="https://www.oocities.org/xo_pitseleh/lom.html"><b>How to get to essence level 10 using "Mirrored World" card. (not translated)</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+</a><a href="https://www.oocities.org/xo_pitseleh/lom2.html">Translated Ultimania Tempering Charts</a><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+</a></b><a href="https://www.oocities.org/xo_pitseleh/lom3.html"><b>Mystic Card List</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom4.html"><br>
+Relationship Between Weapon/Armor Material, Item Energy, &amp; Essence Levels</a></b><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom5.html"><b>Produce Percentage Chart</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom6.html"><b>Tempering for Bonus Effects and Plunges</b></a><br>
+<b><a href="https://www.oocities.org/xo_pitseleh/lom7.html">Item Search &amp; Shop Rank</a></b><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom9.html"><b>Golem Logic Block Size and Block Strength</b></a><b><i><font size="4"><br>
+</font></i></b><a href="https://www.oocities.org/xo_pitseleh/lom11.html"><b>Best Instruments</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom10.html"><b>Special Techniques</b></a><a href="https://www.oocities.org/xo_pitseleh/lom8.html"><b><br>
+Scratch Pad</b></a><br>
+<a href="https://www.oocities.org/xo_pitseleh/lom12.html"><b>How to Choose a Map</b></a><b><a href="https://www.oocities.org/xo_pitseleh/lom7.html"><br>
+<br>
+</a></b>
+</p><hr align="CENTER">
+<br>
+<b><i><font size="4">Notes Before Starting:</font></i></b><br>
+-This will help you figure out the shaape of a Golem Logic Block for any two items you want to combine. Here's the
+formula and an example:<br>
+(Material Block # for the 1st item) <b><font size="5">+</font></b> (Material Block # for the 2nd item) <b><font size="5">=</font></b> Combined Material Block #<br>
+Example: Any item made of Ishe Platinum (6) <b><font size="5">+</font></b> Any item made of Sultan's Silk (8) <b><font size="5">=</font></b> Combined Material Block # of 14<br>
+If you look at the chart titled "Block Types Based on Combined Material Block #" you'll see that any
+combination of materials that adds up to a 14 will look like this:<br>
+<img src="./LOM-block06.gif" width="32" height="32" align="BOTTOM" border="0"><br>
+So if I combined and Ishe Helm with an Ishe Drum I'd get a logic block shaped like that.<br>
+
+<table border="1" width="100%">
+	<tbody><tr>
+		<td colspan="10">
+			<p align="CENTER"><b><font size="4" color="#CC0000">Block # Based on Item Material</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="7%"><font size="2">Material Block #</font></td>
+		<td width="9%"><font size="2">Metal</font></td>
+		<td width="11%"><font size="2">Wood</font></td>
+		<td width="10%"><font size="2">Stone</font></td>
+		<td width="10%"><font size="2">Hide</font></td>
+		<td width="11%"><font size="2">Scales</font></td>
+		<td width="9%"><font size="2">Bone</font></td>
+		<td width="11%"><font size="2">Fabric</font></td>
+		<td width="11%"><font size="2">Rock</font></td>
+		<td width="11%"><font size="2">Misc. Metal</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">0</font>
+		</p></td>
+		<td width="9%"><font size="2">Menos Bronze</font></td>
+		<td width="11%"><font size="2">Ash Wood</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%"><font size="2">Lizard Scales</font></td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Jacobini Rock</font></td>
+		<td width="11%"><font size="2">Tortoise Shell</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">1</font>
+		</p></td>
+		<td width="9%"><font size="2">Forsena Iron</font></td>
+		<td width="11%"><font size="2">Fossil Wood*</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%"><font size="2">Snake Scales</font></td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Halley Rock</font></td>
+		<td width="11%"><font size="2">Shell</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">2</font>
+		</p></td>
+		<td width="9%"><font size="2">Granz Steel</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="10%"><font size="2">Marble</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%"><font size="2">Dragon Scales</font></td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Ankh Rock</font></td>
+		<td width="11%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">3</font>
+		</p></td>
+		<td width="9%"><font size="2">Lorant Silver</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="10%"><font size="2">Obsidian</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%"><font size="2">Animal Bone</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Vinek Rock</font></td>
+		<td width="11%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">4</font>
+		</p></td>
+		<td width="9%"><font size="2">Wendel Silver<br>
+			Orihalcon</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="10%"><font size="2">Pedan Stone</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%"><font size="2">Ivory</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Tuttle Rock</font></td>
+		<td width="11%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">5</font>
+		</p></td>
+		<td width="9%"><font size="2">Vizel Gold</font></td>
+		<td width="11%"><font size="2">Oak Wood</font></td>
+		<td width="10%"><font size="2">Gaius's Tears</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%"><font size="2">Fossil</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Nemesis Rock*</font></td>
+		<td width="11%">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">6</font>
+		</p></td>
+		<td width="9%"><font size="2">Ishe Platinum</font></td>
+		<td width="11%"><font size="2">Holly Wood</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%"><font size="2">Animal Hide</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Biella Rock</font></td>
+		<td width="11%"><font size="2">Emerald</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">7</font>
+		</p></td>
+		<td width="9%"><font size="2">Lorimar Iron</font></td>
+		<td width="11%"><font size="2">Baobab Wood</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%"><font size="2">Gator Skin</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%"><font size="2">Topple Cotton</font></td>
+		<td width="11%"><font size="2">Swifte Rock*</font></td>
+		<td width="11%"><font size="2">Pearl</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">8</font>
+		</p></td>
+		<td width="9%"><font size="2">Altena Alloy</font></td>
+		<td width="11%"><font size="2">Ebony Wood</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%"><font size="2">Sultan's Silk</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Lapis Lazuli<br>
+			Adamantite</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">9</font>
+		</p></td>
+		<td width="9%"><font size="2">Maia Lead</font></td>
+		<td width="11%"><font size="2">Maple Wood</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%"><font size="2">Dragon Skin</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%"><font size="2">Judd Hemp</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Full Metal</font></td>
+	</tr>
+	<tr>
+		<td width="7%">
+			<p align="CENTER"><font size="2">10</font>
+		</p></td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%"><font size="2">Dior Wood</font></td>
+		<td width="10%">&nbsp;</td>
+		<td width="10%">&nbsp;</td>
+		<td width="11%"><font size="2">Fish Scales</font></td>
+		<td width="9%">&nbsp;</td>
+		<td width="11%"><font size="2">Altena Felt</font></td>
+		<td width="11%">&nbsp;</td>
+		<td width="11%"><font size="2">Coral</font></td>
+	</tr>
+</tbody></table>
+*Item not available in U.S. version<br>
+<br>
+
+<table border="1" width="35%">
+	<tbody><tr>
+		<td colspan="2">
+			<p align="CENTER"><b><font size="4" color="#CC0000">Block Types Based on <br>
+			Combined Material Block #</font></b>
+		</p></td>
+	</tr>
+	<tr>
+		<td width="40%">Combined<br>
+			Material Block #</td>
+		<td width="60%">Block Type</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">0 or 11</font></td>
+		<td width="60%"><img src="./LOM-block01.gif" width="16" height="16" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">1 or 12</font></td>
+		<td width="60%"><img src="./LOM-block02.gif" width="32" height="16" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">2 or 13</font></td>
+		<td width="60%"><img src="./LOM-block03.gif" width="48" height="16" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">3 or 14</font></td>
+		<td width="60%"><img src="./LOM-block06.gif" width="32" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">4 or 15</font></td>
+		<td width="60%"><img src="./LOM-block04.gif" width="64" height="16" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">5 or 16</font></td>
+		<td width="60%"><img src="./LOM-block07.gif" width="48" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">6 or 17</font></td>
+		<td width="60%"><img src="./LOM-block09.gif" width="48" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">7 or 18</font></td>
+		<td width="60%"><img src="./LOM-block08.gif" width="48" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">8 or 19</font></td>
+		<td width="60%"><img src="./LOM-block10.gif" width="48" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">9 or 20</font></td>
+		<td width="60%"><img src="./LOM-block11.gif" width="48" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="2">&nbsp;</td>
+	</tr>
+	<tr>
+		<td width="40%"><font size="2">10</font></td>
+		<td width="60%"><img src="./LOM-block05.gif" width="32" height="32" align="BOTTOM" border="0"></td>
+	</tr>
+</tbody></table>
+<br>
+<i><b><font size="4">Other Notes:</font></b></i><br>
+-Golem techniques that cause damage caan have a strength bonus rating of +1 ~ +9. To determine the strength bonus
+rating of a block you're about to make you must consider the defense power and attack power of the two items you
+are combining. The formula to figure a block's strength bonus rating is this:<br>
+[(Attack or Defense of the 1st item) <b><font size="5">+</font></b> (Attack or Defense of the 2nd item)] <b><i><font size="5">÷</font></i></b> 17 = Strength Bonus Rating<br>
+Example: [Ishe 2H Sword (Attack: 50) <b><font size="5">+</font></b> Lorimar Iron Robe (Defense: 17)] <b><i><font size="5">÷ </font></i></b>17 <b><font size="5">=</font></b> Strength Bonus Rating of +3<br>
+-As a general rule, you want to place  any long-range Logic Blocks on the right half of your Golem's Logic Grid
+and any short-range Logic Blocks on the left half of your Golem's Logic Grid.<br>
+<br>
+
+<hr align="CENTER">
+<br>
+Last Update: Oct. 9, 2001
+
+<script language="JavaScript" type="text/javascript">
+var width  = window.innerWidth || (window.document.documentElement.clientWidth ||  window.document.body.clientWidth);
+var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+var d = document;
+if (width>=639 && height>=468 || top.location.href == window.location.href) {
+}
+rp_account   = '9645';rp_site      = '17527';rp_zonesize  = '1527362-51';rp_slot   = 'ad_group_786919';rp_adtype    = 'js';rp_smartfile = '[SMART FILE URL]';
+d.write('<script language="JavaScript" type="text/javascript"');
+d.write(' src="https://ads.rubiconproject.com/ad/9645.js">');
+d.write('<\/scr'+'ipt>');}</script>
+
+
+</div><style> 
+.zoomout { -webkit-transition: -webkit-transform 0.5s ease;
+-moz-transition: -moz-transform 0.5s ease;
+-o-transition: -o-transform 0.5s ease;
+transition: transform 0.5s;
+-ms-transition: transform 0.5s ease;}
+.zoomin { 
+filter: blur(0)
+-webkit-transform: scaleY(1.15);
+-moz-transform: scaleY(1.15);
+-o-transform: scaleY(1.15);
+transform: scaleYY(1.15);
+-ms-transform: scaleY(1.15);
+} 
+#archive:hover { zoom:101%;)
+</style>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var width  = window.innerWidth || (window.document.documentElement.clientWidth ||  window.document.body.clientWidth);
+var height = window.innerHeight || (window.document.documentElement.clientHeight || window.document.body.clientHeight);
+var d = document;
+
+if (width>=806 && height>=468 || top.location.href == window.location.href) {
+d.write('<div id="archive" onMouseOver="className=\'zoomin\';this.style.zIndex=\'99\'"  onMouseOut="className=\'zoomout\';this.style.zIndex=\'5\'" style="padding-left:25px;background-image:url(https://www.oocities.org/d.jpg); background-repeat:repeat-x; filter:alpha(opacity=88); -moz-opacity:0.88 ; opacity:0.88; position:fixed; background-color:#FFFFFF; width:100%; min-width:970px;  overflow:hidden; left:0px; top:0px; font-family:times; font-size:9px; border-bottom:5px solid #f7f7f7; color:#000000;background-color:#ffffe0;z-Index:5;"><font style="font-size:16px" color="#000000"> This Page is an outdated, user-generated website brought to you by an archive</font><font style="font-family:times; font-size:9px" color="#000000">.It was mirrored from Geocities at the end of October, 2009.<br>For any questions concerning this page try to contact the respective author. (To report any malicious content send the URL to oocities(at gmail dot com). For question about the archive visit: <a style="color:#005577" href="//oocities.org" target="_new" title="geocities archive">OoCities.org</a>.</font><div onClick="archive.style.display=\'none\'"  onMouseOver="style.cursor=\'pointer\'" style="font-size:17px;position:absolute;left:3px;top:3px;color:#999;line-height:20px">[x]</div><div onClick="archive.style.display=\'none\';footer.style.display=\'none\'"  onMouseOver="style.cursor=\'pointer\'" style="font-size:19px;position:absolute;right:30px;top:0px;color:#777;line-height:20px">[x]</div></div>');
+var x =  d.getElementById('content').offsetWidth;
+d.write('<div id="foot" style="position:fixed;left:1018px;top:31px;z-index:10;padding-bottom:3px"><div id="ft72">');
+rp_account   = '9645';
+rp_site      = '17527';
+rp_zonesize  = '55620-15';
+rp_slot   = 's';
+rp_adtype    = 'iframe';
+rp_width     = '300';
+rp_height    = '250';
+rp_smartfile = '[SMART FILE URL]';
+d.write('<script language="JavaScript" type="text/javascript"');
+d.write('src="https://ads.rubiconproject.com/ad/9645.js">');
+d.write('<\/scr'+'ipt></div>');
+if ( height>=543) {
+var cb = Math.random();
+var iframe = "&fr=" + (window != top);
+var ref = "";
+try {
+    if (window != top) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script id="rp3" language="JavaScript" type="text/javascript"');
+d.write('src="https://optimized-by.rubiconproject.com/a/9645/17527/55620-15.js?cb='+cb+ref+iframe+'"></script>')
+}
+
+d.write('<div id="ft73"><span onClick="foot.style.display=\'none\'"  style="font-size:16px;position:relative;left:7px;color:#555;background-color:ccc;line-height:19px"> \[x\]close <\/span><\/div>');
+
+
+if ( width-x>=440 || width>=1425) { 
+d.write('<div id="footer" style="position:fixed;left:1310px;top:31px;z-index:11;padding-bottom:3px"><div id="ft74">');
+
+var cb = Math.random();
+var iframe = "&fr=" + (window != top);
+var ref = "";
+try {
+    if (window != top) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script id="rp3" language="JavaScript" type="text/javascript"');
+d.write('src="https://optimized-by.rubiconproject.com/a/9645/17527/55620-15.js?cb='+cb+ref+iframe+'">')
+d.write('<\/scr'+'ipt><\/div><div id="ft75">');
+
+var cb = Math.random();
+var iframe = "&fr=" + (window != top);
+var ref = "";
+try {
+    if (window != top) {
+        ref = "&rf="+escape(d.referrer);
+    }
+} catch (ignore) { }
+d.write('<script id="rp4" language="JavaScript" type="text/javascript"');
+d.write('src="https://optimized-by.rubiconproject.com/a/9645/17527/55620-15.js?cb='+cb+ref+iframe+'">');
+d.write('<\/scr'+'ipt></div></div>');
+}}
+-->
+</script>
+<script type="text/javascript">
+if (x<=1015){d.getElementById('foot').style.left = x + "px";}
+d.getElementById('footer').style.left = x + d.getElementById('foot').offsetWidth + "px";
+</script>
+
+<script type="text/javascript">
+<!--
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26808115-1']);
+  _gaq.push(['_setDomainName', 'oocities.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+-->
+</script><script type="text/javascript"> window.google_analytics_uacct = "UA-26808115-1"; </script>
+
+
+
+
+</body></html>

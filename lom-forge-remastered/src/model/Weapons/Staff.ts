@@ -3,13 +3,17 @@ import { WeaponProps } from '.'
 
 export const Staff: WeaponProps = {
   name: 'Staff',
-  sharpness: 4,
-  weight: 44,
-  force: 16,
-  technique: 32,
+  attributes: {
+    sharpness: 4,
+    weight: 44,
+    force: 16,
+    technique: 32
+  },
   markerThreshold: 1,
   priceCoefficient: 30,
-  topPlunge: Thrust,
-  middlePlunge: Uppercut,
-  bottomPlunge: Jump
+  plungeAttacks: {
+    top: Thrust,
+    middle: Uppercut,
+    bottom: Jump
+  }
 }
