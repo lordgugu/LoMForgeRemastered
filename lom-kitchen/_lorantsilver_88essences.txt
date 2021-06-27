@@ -1,0 +1,440 @@
+[Legend of Mana]
+
+
+
+LorantSilver : 88 Essences
+
+Secondary Materials : $864,000 Lucre
+    4 Sala Gold
+    2 Gnome Gold
+    4 Jinn Gold
+    3 Undine Gold
+    5 Wisp Silver
+    5 Shade Silver
+    1 Dryad Silver
+    5 Aura Silver
+   22 Sala Silver
+    9 Gnome Silver
+   22 Jinn Silver
+    8 Undine Silver
+  245 Glow Crystal  $490,000 Lucre
+   59 Chaos Crystal $295,000 Lucre
+    4 [Any] Seed
+    4 Lilipods
+   40 Gold Clover   $ 40,000 Lucre
+   65 Mercury       $ 19,500 Lucre
+   65 Sulpher       $ 19,500 Lucre
+
+0-0-0-0-0-0-0-9
+  2 Mercury
+  1 Undine Silver 0-0-0-0-0-0-0-1
+  1 Glow Crystal  0-0-0-0-0-0-0-2
+  5 Gold Clover   0-0-0-0-0-0-0-7
+  3 Glow Crystal
+  2 Mercury
+  1 Undine Silver 0-0-0-0-0-0-0-8
+  1 Glow Crystal  0-0-0-0-0-0-0-9
+
+0-0-0-0-7-0-0-9
+  1 Chaos Crystal
+  1 Sulpher
+  1 Sala Silver   0-0-0-0-1-0-0-9
+  1 Glow Crystal  0-0-0-0-2-0-0-9
+  3 Gold Clover   0-0-0-0-5-0-0-9
+  3 Glow Crystal  0-0-0-0-6-0-0-9
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-0-7-0-0-9
+
+0-0-0-0-6-0-0-10
+  4 Glow Crystal
+  2 Mercury
+  1 Undine Silver 0-0-0-0-6-0-0-10
+
+0-0-0-0-8-0-0-10
+  1 Chaos Crystal 0-0-0-0-5-0-0-10
+  1 Sulpher
+  1 Sala Silver
+  4 Glow Crystal  0-0-0-0-6-0-0-10
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-0-7-0-0-10
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-0-8-0-0-10
+
+0-0-0-0-7-0-0-11
+  4 Glow Crystal
+  2 Mercury
+  1 Undine Silver 0-0-0-0-7-0-0-11
+
+0-0-0-0-9-0-0-11
+  1 Chaos Crystal 0-0-0-0-6-0-0-11
+  4 Glow Crystal
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-0-7-0-0-11
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-0-8-0-0-11
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Gold     0-0-0-0-9-0-0-11
+
+0-0-0-0-8-0-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Undine Gold   0-0-0-0-8-0-0-12
+
+0-0-0-9-7-0-0-12
+  1 Chaos Crystal 0-0-0-0-7-0-0-12
+  2 Mercury
+  1 Aura Silver   0-0-0-1-7-0-0-12
+  1 Glow Crystal  0-0-0-2-7-0-0-12
+  5 Gold Clover   0-0-0-7-7-0-0-12
+  3 Glow Crystal
+  2 Mercury
+  1 Aura Silver   0-0-0-8-7-0-0-12
+  1 Glow Crystal  0-0-0-9-7-0-0-12
+
+0-0-0-10-6-0-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Aura Silver
+  1 Undine Silver 0-0-0-10-6-0-0-12
+
+0-0-0-10-8-0-0-12
+  1 Chaos Crystal 0-0-0-10-5-0-0-12
+  1 Sulpher
+  1 Sala Silver
+  4 Glow Crystal  0-0-0-10-6-0-0-12
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-10-7-0-0-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-10-8-0-0-12
+
+0-0-0-11-7-0-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Aura Silver
+  1 Undine Silver 0-0-0-11-7-0-0-12
+
+0-0-0-11-9-0-0-12
+  1 Chaos Crystal 0-0-0-11-6-0-0-12
+  4 Glow Crystal
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-11-7-0-0-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-0-0-11-8-0-0-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Gold     0-0-0-11-9-0-0-12
+
+0-0-0-12-8-0-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Aura Silver
+  1 Undine Gold   0-0-0-12-8-0-0-12
+
+0-0-0-12-0-0-0-12
+  1 Lilipods      0-0-0-12-7-0-0-12
+  7 Gold Clover   0-0-0-12-0-0-0-12
+
+0-0-0-12-0-9-0-12
+  2 Sulpher
+  1 Gnome Silver  0-0-0-12-0-9-0-12
+  1 Glow Crystal  0-0-0-12-0-9-0-12
+  5 Gold Clover   0-0-0-12-0-9-0-12
+  3 Glow Crystal
+  2 Sulpher
+  1 Gnome Silver  0-0-0-12-0-9-0-12
+  1 Glow Crystal  0-0-0-12-0-9-0-12
+
+0-0-0-12-0-9-7-12
+  1 Chaos Crystal
+  1 Mercury
+  1 Jinn Silver   0-0-0-12-0-9-1-12
+  1 Glow Crystal  0-0-0-12-0-9-2-12
+  3 Gold Clover   0-0-0-12-0-9-5-12
+  3 Glow Crystal  0-0-0-12-0-9-6-12
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-0-12-0-9-7-12
+
+0-0-0-12-0-10-6-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Gnome Silver  0-0-0-12-0-10-6-12
+
+0-0-0-12-0-10-8-12
+  1 Chaos Crystal 0-0-0-12-0-10-5-12
+  1 Mercury
+  1 Jinn Silver
+  4 Glow Crystal  0-0-0-12-0-10-6-12
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-0-12-0-10-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-0-12-0-10-8-12
+
+0-0-0-12-0-11-7-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Gnome Silver  0-0-0-12-0-11-7-12
+
+0-0-0-12-0-11-9-12
+  1 Chaos Crystal 0-0-0-12-0-11-6-12
+  4 Glow Crystal
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-0-12-0-11-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-0-12-0-11-8-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Gold     0-0-0-12-0-11-9-12
+
+0-0-0-12-0-12-8-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Gnome Gold    0-0-0-12-0-12-8-12
+
+0-0-9-12-0-12-7-12
+  1 Chaos Crystal 0-0-0-12-0-12-7-12
+  2 Sulpher
+  1 [Any] Seed    0-0-1-12-0-12-7-12
+  1 Glow Crystal  0-0-2-12-0-12-7-12
+  5 Gold Clover   0-0-7-12-0-12-7-12
+  3 Glow Crystal
+  2 Sulpher
+  1 Dryad Silver  0-0-8-12-0-12-7-12
+  1 Glow Crystal  0-0-9-12-0-12-7-12
+
+0-0-10-12-0-12-6-12
+  4 Glow Crystal
+  2 Sulpher
+  1 [Any] Seed
+  1 Gnome Silver  0-0-10-12-0-12-6-12
+
+0-0-10-12-0-12-8-12
+  1 Chaos Crystal 0-0-10-12-0-12-5-12
+  1 Mercury
+  1 Jinn Silver
+  4 Glow Crystal  0-0-10-12-0-12-6-12
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-10-12-0-12-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-10-12-0-12-8-12
+
+0-0-11-12-0-12-7-12
+  4 Glow Crystal
+  2 Sulpher
+  1 [Any] Seed
+  1 Gnome Silver  0-0-11-12-0-12-7-12
+
+0-0-11-12-0-12-9-12
+  1 Chaos Crystal 0-0-11-12-0-12-6-12
+  4 Glow Crystal
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-11-12-0-12-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   0-0-11-12-0-12-8-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Gold     0-0-11-12-0-12-9-12
+
+0-0-12-12-0-12-8-12
+  4 Glow Crystal
+  2 Sulpher
+  1 [Any] Seed
+  1 Gnome Gold    0-0-12-12-0-12-8-12
+
+0-0-12-12-0-12-0-12
+  1 Lilipods      0-0-12-12-0-12-7-12
+  7 Gold Clover   0-0-12-12-0-12-0-12
+
+0-9-12-12-0-12-0-12
+  2 Mercury
+  1 Shade Silver  0-1-12-12-0-12-0-12
+  1 Glow Crystal  0-2-12-12-0-12-0-12
+  5 Gold Clover   0-7-12-12-0-12-0-12
+  3 Glow Crystal
+  2 Mercury
+  1 Shade Silver  0-8-12-12-0-12-0-12
+  1 Glow Crystal  0-9-12-12-0-12-0-12
+
+0-9-12-12-7-12-0-12
+  1 Chaos Crystal
+  1 Sulpher
+  1 Sala Silver   0-9-12-12-1-12-0-12
+  1 Glow Crystal  0-9-12-12-2-12-0-12
+  3 Gold Clover   0-9-12-12-5-12-0-12
+  3 Glow Crystal  0-9-12-12-6-12-0-12
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-9-12-12-7-12-0-12
+
+0-10-12-12-6-12-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Shade Silver
+  1 Undine Silver 0-10-12-12-6-12-0-12
+
+0-10-12-12-8-12-0-12
+  1 Chaos Crystal 0-10-12-12-5-12-0-12
+  1 Sulpher
+  1 Sala Silver
+  4 Glow Crystal  0-10-12-12-6-12-0-12
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-10-12-12-7-12-0-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-10-12-12-8-12-0-12
+
+0-11-12-12-7-12-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Shade Silver
+  1 Undine Silver 0-11-12-12-7-12-0-12
+
+0-11-12-12-9-12-0-12
+  1 Chaos Crystal 0-11-12-12-6-12-0-12
+  4 Glow Crystal
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-11-12-12-7-12-0-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   0-11-12-12-8-12-0-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Gold     0-11-12-12-9-12-0-12
+
+0-12-12-12-8-12-0-12
+  4 Glow Crystal
+  2 Mercury
+  1 Shade Silver
+  1 Undine Gold   0-12-12-12-8-12-0-12
+
+0-12-12-12-0-12-0-12
+  1 Lilipods      0-12-12-12-7-12-0-12
+  7 Gold Clover   0-12-12-12-0-12-0-12
+
+7-12-12-12-0-12-0-12
+  2 Sulpher
+  1 Wisp Silver   1-12-12-12-0-12-0-12
+  1 Glow Crystal  2-12-12-12-0-12-0-12
+  3 Gold Clover   5-12-12-12-0-12-0-12
+  3 Glow Crystal  6-12-12-12-0-12-0-12
+  2 Sulpher
+  1 Wisp Silver   7-12-12-12-0-12-0-12
+
+7-12-12-12-0-12-7-12
+  1 Chaos Crystal
+  1 Mercury
+  1 Jinn Silver   7-12-12-12-0-12-1-12
+  1 Glow Crystal  7-12-12-12-0-12-2-12
+  3 Gold Clover   7-12-12-12-0-12-5-12
+  3 Glow Crystal  7-12-12-12-0-12-6-12
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   7-12-12-12-0-12-7-12
+
+8-12-12-12-0-12-6-12
+  2 Sulpher
+  1 Wisp Silver
+  1 Gnome Silver  8-12-12-12-0-12-6-12
+
+8-12-12-12-0-12-8-12
+  1 Chaos Crystal 8-12-12-12-0-12-5-12
+  1 Mercury
+  1 Jinn Silver
+  4 Glow Crystal  8-12-12-12-0-12-6-12
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   8-12-12-12-0-12-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   8-12-12-12-0-12-8-12
+
+9-12-12-12-0-12-7-12
+  2 Sulpher
+  1 Wisp Silver
+  1 Gnome Silver  9-12-12-12-0-12-7-12
+
+9-12-12-12-0-12-9-12
+  1 Chaos Crystal 9-12-12-12-0-12-6-12
+  4 Glow Crystal
+  1 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   9-12-12-12-0-12-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   9-12-12-12-0-12-8-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Gold     9-12-12-12-0-12-9-12
+
+10-12-12-12-0-12-8-12
+  2 Sulpher
+  1 Wisp Silver
+  1 Gnome Silver  10-12-12-12-0-12-8-12
+
+10-12-12-12-0-12-9-12
+  1 Chaos Crystal 10-12-12-12-0-12-7-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Silver   10-12-12-12-0-12-8-12
+  4 Glow Crystal
+  2 Mercury
+  1 Chaos Crystal
+  1 Jinn Gold     10-12-12-12-0-12-9-12
+
+10-12-12-12-9-12-9-12
+  1 Chaos Crystal
+  1 Sulpher
+  1 Sala Silver   10-12-12-12-1-12-9-12
+  1 Glow Crystal  10-12-12-12-2-12-9-12
+  3 Gold Clover   10-12-12-12-5-12-9-12
+  3 Glow Crystal  10-12-12-12-6-12-9-12
+  1 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   10-12-12-12-7-12-9-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Silver   10-12-12-12-8-12-9-12
+  4 Glow Crystal
+  2 Sulpher
+  1 Chaos Crystal
+  1 Sala Gold     10-12-12-12-9-12-9-12

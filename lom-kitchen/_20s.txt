@@ -1,0 +1,169 @@
+1. Getting 20s
+The easy way to increase your stats is to make a yggdrasil card. Every time
+you temper an item with a visible yggdrasil card the stats will increase by 1.
+Yggdrasil only has a stat limit of 10, so without help thats as high as your
+stats would go. The only cards with a +20 stats limit are the evil god cards
+EGC. EGCs lower all stats whenever they are visible, so with 1 EGC and 1
+yggdrasil your stats would only stay the same. But since the game doesn't keep
+track of stats over 20 its important that the yggdrasil comes after the EGC.
+In order for your stats to rise you need to either add items which raise stats
+or have another yggdrasil. Having two yggdrasils is tricky because yggdrasil
+is a world card. Thats a problem because world cards normally won't appear if
+another is present. A bed of thorn BoT card will allow us past this world card
+limitation.
+Now we can put together our first recipe.
+
+Yggdrasil - spiny seed, dryad 5+
+Beast-Headed God (an EGC) - poison fang, dryad 5+, aura=0
+Bed of Thorn - needle or needlettuce, dryad 1+, sala=0
+
+round seed
+3 sulpher
+round seed (dryad is now at 5)
+needle
+spiny seed
+poison fang
+spiny seed
+lilipod
+9 meat
+
+The lilipod is needed to push on the second yggdrasil so they are both
+visible. Almost any card producer would work in its place. After that you just
+need to keep adding cardless items (meats are usually the easiest to come by)
+until the stats get to 20.
+
+
+2. Avoiding No Regen
+But there is a problem. BoT left us with the no regen effect. Quick
+regeneration is the most noticable benifit of high stats, so getting another
+effect is important. The only other effect for most equipment is the move
+regen and no revive effect from Heavens Scale.
+
+Heavens Scale - springana
+
+round seed
+3 sulpher
+round seed
+needle
+springana
+spiny seed
+poison fang
+spiny seed
+lilipod
+9 meat
+
+Another option is to just use items to raise the stats. Dragon blood and
+toadstoolshed will both raise all stats.
+
+round seed
+3 sulpher
+round seed
+poison fang
+spiny seed
+lilipod
+12 dragon blood
+
+Dragon bloods and toadstoolsheds are both hard to come by. Its sometimes worth
+the effort to raise the stats upto 12 on a clown+metropolis combo before
+bringing out the EGC to finish it off.
+
+Clown - bumpkin
+Metropolis - dialaurel, shade 1+, sala=0
+
+moon crystal
+round seed
+3 sulpher
+round seed
+spiny seed
+bumpkin
+dialaurel
+lilipod
+6 meat
+poison fang
+spiny seed
+lilipod
+3 toadstoolshed
+
+
+3. Other EGCs
+Poison fangs can also be hard to find at times. So here are some other ways to
+make EGCs.
+
+Fallen Angel - angel feather, wisp 5+, shade=0
+Wings of Darkness - blackened bat, shade 5+, wisp=0
+Beast-headed God - poison fang, dryad 5+, aura=0
+God of Destruction - sharp claw, sala 5+, undine=0
+Leviathan - orange'opus or giants horn, gnome 5+, sala=0
+Lord of Flies - clear feather, jinn 5+, gnome=0
+Witch of Moon - vampire fang, undine 5+, jinn=0
+
+EGCs can be transformed from pixies with a ragnarok card.
+Note that ragnarok is a world card.
+
+Ragnarok - pine oclock, sala 1+, gnome 1+, jinn 1+, undine 1+
+Leviathan - Purple Hat Pixie - silly eye or knockout dust
+Fallen Angel - Red Hat Pixie - little eye
+Witch of Moon - Blue Hat Pixie - sleepy eye or rust
+Lord of Flies - Yellow Hat Pixie - blank eye or sleepy powder
+Beast-Headed God - No Hat Pixie - dangerous eye
+Wings of Darkness - Black Hat Pixie - wicked eye or stinky breath
+God of Destruction - Light Blue Hat Pixie - angry eye or poison powder
+
+EGCs can also be kept around by sacrificed nymph cards.
+If an EGC would have left when a sac nymph is present the EGC will take the
+sac nymphs place and the sac nymph will leave.
+
+Sacrificed Nymph - ghosts howl
+
+
+4. Other Effects
+Some equipment can have effects other than those from BoT/Heavens Scale.
+Some of these are quite useful.
+
+All     - No Regen - Bed of Thorn - needle or needlettuce, dryad 1+, sala=0
+        - Move Regen, No Revive - Heavens Scale - springana
+Mantle  - Move Regen  - Nymph of Sky - white feather, wisp 1+, total 3+
+Shield  - Stare Immunity - Wisdom Goddess - aroma oil, total 6+
+Shoes   - Extra Exp   - Spirit of Shoes - loquat shoes or pear oheels
+Pedant  - Extra Lucre - Goddess of Love - virgins sigh, shade 3+, dryad 3+
+        - Auto Revive - Volcano - ash
+                        + Phoenix - flaming quill, sala 3+, jinn 3+
+        - Fast Revive - Spring - fishy fruit
+                        + Unicorn - whalamato, gnome 3+, undine 3+
+Ring    - Share Exp   - Fertility Goddess - ear of wheat, dryad 3+, total 5+
+        - Extra Lucre - Spirit of Housework - hairball
+        - Fast Revive - Nymph of Orchards - applesocks, total 5+
+        - Fast Revive - Spring + Unicorn
+        - Auto Revive - Volcano + Phoenix
+
+The auto revive effect will go away if no phoenix cards are visible or one
+is in the hidden slot. One phoenix card is removed everytime you auto revive,
+and that can cause the effect to go away too.
+
+
+5. Equipment Recommendations
+There are a lot of choices. What should you use?
+Move regen is quite nice, particuarly when you can still revive. But if any of
+your equipment has the BoT effect it won't work. Stare immunity is fine, but
+shields can only be used with swords. Extra exp is good because you level
+faster, but shoes can't be worn with Armor. Extra lucre is pretty worthless.
+Enemies drop an insignifigant amount of money compared to tempering wind hats.
+Auto revive kinda sucks. You have to be the last one in your party standing
+for it to work. And if it works then you have to retemper it. Fast revive is
+better, but its even better not to die ;) Neither revive effect will work if
+any of your equipment has the Heavens Scale effect. Share exp is good and bad.
+It takes any exp you collect and splits it among your party. This means it
+takes longer for you to level, but its the only good way to get exp for your
+pets. 
+
+In the beginning I'd go with shoes, mantle, and a share exp ring.
+After you collect the materials for an all immunity pendant you'll want to
+work that into the mix. You could replace the mantle with a Heavens Scale
+pendant or you could replace the shoes with a fast revive pendant. Since
+dying isn't a very likely or costly event I'd stick with the extra exp from
+the shoes.
+
+As you get up in levels all your stats but luck will be maxed even without 3
+pieces of equipment. Then it might be worth the effort to make a set of high
+defense equipment. If you're using a sword go with armor, shield, pendant.
+Otherwise go with armor, mantle, pendant.

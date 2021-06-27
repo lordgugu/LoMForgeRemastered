@@ -1,0 +1,334 @@
+0 0 0 0 0 0 0 0
+moon crystal
+4 glow crystal
+2 sulpher
+firestone
+glow
+0 1 9 0 2 0 0 0
+2 glow
+sala silver
+2 sulpher
+4 glow
+3 sulpher
+fire
+0 1 9 0 8 0 0 0
+garlicrown
+0 1 9 1 9 0 0 0
+mirror piece
+2 sulpher
+fire
+earth
+0 1 10 0 9 1 0 0
+2 sulpher
+fire
+garlic
+0 1 10 1 10 0 0 0
+mirror
+2 sulpher
+fire
+earth
+2 sulpher
+fire
+garlic
+0 1 11 1 11 0 0 0
+mirror
+2 sulpher
+fire
+earth
+2 sulpher
+fire
+garlic
+0 1 12 1 12 0 0 0
+mirror
+2 sulpher
+fire
+earth
+2 sulpher
+fire
+garlic
+0 1 13 1 13 0 0 0
+mirror
+2 sulpher
+fire
+earth
+2 sulpher
+fire
+garlic
+0 1 14 1 14 0 0 0
+mirror
+2 sulpher
+fire
+earth
+2 sulpher
+fire
+garlic
+0 1 15 1 15 0 0 0
+moon
+2 sun
+2 2 15 1 15 0 0 0
+aura
+3 glow
+aura
+2 mercury
+4 glow
+3 mercury
+aura
+4 glow
+3 mercury
+aura gold
+2 2 15 9 15 0 0 0
+sulpher
+fire
+spiny carrot
+2 2 15 10 15 0 0 1
+mirror
+aura
+sulpher
+fire
+earth
+2 2 15 11 15 1 0 0
+aura
+sulpher
+fire
+carrot
+mirror
+aura
+sulpher
+fire
+earth
+2 2 15 13 15 1 0 0
+2 fish meat
+chaos
+moon
+2 3 15 13 15 0 0 0
+aura
+3 mercury
+garlic
+2 3 13 15 15 0 0 0
+sun
+2 sulpher
+fire
+carrot
+3 3 14 15 15 0 0 1
+mirror
+shade
+sulpher
+fire
+earth
+0 4 15 15 15 1 0 0
+2 glow
+shade
+3 glow
+2 merc
+2 shade
+0 7 15 15 15 0 0 0
+shade
+garlic
+0 10 14 15 15 0 0 0
+shade
+sulpher
+fire
+carrot
+0 11 14 15 15 0 0 1
+3 sleepy eye
+mirror
+fire
+0 11 15 14 15 0 0 0
+3 holy water
+shade
+sulpher
+fire
+carrot
+0 12 15 14 15 0 0 1
+2 mercury
+shade
+garlic
+0 13 14 15 15 0 0 1
+wisp
+2 glow
+sulpher
+wisp
+glow
+sulpher
+wisp
+3 glow
+2 sulpher
+2 wisp
+8 13 14 15 15 0 0 1
+wisp
+garlic
+11 13 13 15 15 0 0 1
+sulpher
+2 wisp
+garlic
+13 13 12 15 15 0 0 1
+mirror
+2 sulpher
+fire
+earth
+13 13 13 15 15 1 0 0
+sulpher
+fire
+carrot
+13 13 14 15 15 0 0 1
+mirror
+shade
+sulpher
+fire
+earth
+0 14 15 15 15 1 0 0
+2 mercury
+shade
+garlic
+0 15 14 15 15 0 0 0
+wisp
+2 glow
+sulpher
+wisp
+glow
+sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+glow
+9 15 14 15 15 0 0 0
+sulpher
+fire
+carrot
+10 15 14 15 15 0 0 1
+3 eye
+mirror
+fire
+3 holy
+10 15 15 14 15 0 0 0
+wisp
+2 mercury
+garlic
+11 15 14 15 15 0 0 0
+sulpher
+wisp
+fire
+carrot
+12 15 14 15 15 0 0 1
+3 eye
+mirror
+fire
+3 holy
+wisp
+2 mercury
+garlic
+sulpher
+wisp
+fire
+carrot
+14 15 14 15 15 0 0 1
+wind
+3 glow
+jinn
+2 mercury
+4 glow
+2 mercury
+wind
+glow
+14 15 14 15 15 0 9 0
+3 eye
+mirror
+wind
+3 holy
+2 mercury
+wind
+garlic
+14 15 14 15 15 0 11 0
+3 eye
+mirror
+wind
+3 holy
+2 mercury
+wind
+garlic
+14 15 14 15 15 0 13 0
+3 eye
+mirror
+wind
+3 holy
+2 mercury
+wind
+garlic
+14 15 14 15 15 0 15 0
+glow
+chaos
+2 undine
+4 glow
+mercury
+chaos
+water
+4 glow
+2 mercury
+chaos
+water
+4 glow
+chaos
+2 mercury
+undine gold
+14 15 14 15 15 0 15 9
+glow
+chaos
+2 gnome
+4 glow
+sulpher
+chaos
+earth
+4 glow
+2 sulpher
+chaos
+earth
+4 glow
+2 sulpher
+chaos
+gnome gold
+14 15 14 15 15 9 15 9
+
+3 eye
+mirror
+lilipod
+3 holy
+sulpher
+wisp
+garlic
+15 15 14 14 15 9 15 9
+
+~~Material List
+
+1 aura gold
+1 gnome gold
+1 undine gold
+18 wisp silver
+10 shade silver
+7 aura silver
+1 sala silver
+2 gnome silver
+1 jinn silver
+2 undine silver
+31 firestone
+13 earthstone
+8 windstone
+2 waterstone
+3 sun crystal
+3 moon crystal
+77 glow crystal
+9 chaos crystal
+19 garlicrown
+9 spiny carrot
+1 lilipod
+2 fish meat
+21 sleepy eye
+21 holy water
+36 mercury
+64 sulpher
+18 mirror piece
+
+381 items (40% more than diorwood_104s 273)

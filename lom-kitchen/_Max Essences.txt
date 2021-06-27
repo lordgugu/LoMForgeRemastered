@@ -1,0 +1,69 @@
+Current Known MAXED Essences.
+
+Elements are listed in Order:
+
+Wisp, Shade, Dryad, Aura, Salamander, Gnome, Jinn, Undine
+
+Material    |      Resistances      | Final Essence Values | Total
+
+MenosBronze  8  8  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+ForsenaIton  9  9  9  9  9  9  9  9, 15-15-14-14-15-7-15-7, 102
+GranzSteel   9  9  9  9  9  9  9  9, 15-15-14-14-15-7-15-7, 102
+LorantSilver 8  6  7  7  7  7  7  7, 15-15-14-14-15-9-15-9, 106
+WendelSilver 9  7  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+VixelGold    7  9  9  9  9  9  9  9, 15-15-14-15-15-7-15-7. 103
+IshePlatinum 7  7  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+LorimarIron  7  9  9  9  9  9  9  9, 15-15-14-15-15-7-15-7, 103
+AltenaAlloy 10 10 10 10 10 10 10 10, 15-15-14-14-15-7-15-7, 102
+
+MaiaLead    32 32 32 32 32 32 32 32, 15-15-14-14-5-15-4-15, 97
+Orihalcon    8  8  7 10  7  9  6  8, 15-15-14-14-9-15-9-15, 106
+
+WOODS        7  8  6  9 10  7  7  7, 15-15-14-14-15-9-15-9, 106
+
+Marble       7  8  9  7  7  6 10  7, 15-15-14-15-15-9-15-9, 107
+Obsidian     8  6  9  7  7  6 10  8, 15-15-14-15-15-9-15-7, 105
+PedanStone   7  8  9  7  7  7 11  7, 15-15-14-15-15-9-15-9, 107
+Gaeus'sTears 8  8  9  7 10  6 10  6, 15-15-14-15-15-9-15-9, 107
+
+AnimalHide   8  8  7  9  9  7  7  7, 15-15-14-14-15-9-15-9, 106
+GatorSkin    8  8  7  9  9  8  8  6, 15-15-14-14-15-7-15-9, 104
+CentaurHide  8  8  9  7  8  7  8  8, 15-15-14-15-15-9-15-7, 105
+DragonSkin   8  8  7  9  5 10  5 10, 15-15-14-14-9-15-9-15, 106
+
+FishScales   8  8  8  8  8  8  8  6, 15-15-14-14-15-7-15-9, 104
+LizardScales 7  9  8  8  7  8  8  9, 15-15-14-14-9-15-7-15, 104
+SnakeScales  9  7  8  8  8  7  8  7, 15-15-14-14-15-9-15-9, 106
+DragonScales 7  7  7  7  6  7  7  7, 15-15-14-15-15-9-15-9, 107
+
+AnimalBone   9  6  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+Ivory        7  6  7  7  8  6  7  7, 15-15-14-15-15-9-15-9, 107
+CursedBone   9  7  8  8  8  7  8  7, 15-15-14-14-15-9-15-9, 106
+Fossil       9  6  8  8 10  6 10  6, 15-15-14-14-15-9-15-9, 106
+
+ToppleCotton 6  8  6 10 10  7  7  6, 15-15-14-14-15-9-15-9, 106
+Sultan'sSilk 6  8  6 10 10  7  7  6, 15-15-14-14-15-9-15-9, 106
+JuddHemp    10  6  6 10 10  7  7  6, 15-15-14-14-15-9-15-9, 106
+AltenaFelt   7  7  7  9 10  7  7  6, 15-15-14-14-15-9-15-9, 106
+
+AEROLITES    7  8 10  7  7  8  9  8, 15-15-15-15-13-14-15-14, 116*
+
+Adamantite   8  8  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+FullMetal    8  8  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+
+Coral        9  6  7  7  9  7  9  5, 15-15-14-14-15-9-15-9, 106
+TortoisShell 8  8  9  7  9  8  9  7, 15-15-14-15-15-7-15-9, 105
+Shell        8  7  9  8  9  7  9  6, 15-15-14-14-15-9-15-9, 106
+
+GEMS         8  8  8  8  8  8  8  8, 15-15-14-14-15-7-15-7, 102
+
+*Essences with Varnish.  Before Varnish, 15-15-15-15-15-14-15-14.
+
+Special Thanks Goes To:
+
+AsianGrinch for his Mirrored World Recipes (which almost all values were based off of)
+
+Myst Erik Ery for Teaching and our Gracious Host 
+
+Nano_Biquts for actually tempering Maia Lead... Gigas Flail anyone?
+also for the JuddHemp Correction,  Also not to mention... PIXIES :p

@@ -1,0 +1,278 @@
+Hello ! Here are short recipes for :
+- maximum plunge attack on a same weapon
+- special powers in the faster way you can get them (mantle, ring and shoes)
+
+plunge attacks are :
+A: forward forward (hold) + square
+B: quarter-circle from down to forward (hold) + square
+C: backward forward (hold) + square
+
+The weapon power is given for Lorimar Iron but you can forge with something different, of course !
+
+
+Thanks a lot to johandarkstalker and his program : 
+https://groups.yahoo.com/neo/groups/LoM_Kitchen/conversations/messages/1187
+and many thanks to the Legend of Mana Kitchen :-)
+
+-----------------------------------------------------------------------------
+Knife (with *B/C* Quick Blade & Sinister Blade) - 154
+Fire Stone
+Mercury
+Wind Stone
+Big Seed
+Mercury
+Earth Stone
+Wind Stone
+Mercury
+Mercury
+Wind Stone
+Glow Crystal
+Clear Feather
+Bumpkin
+Bumpkin
+Bumpkin
+Fire Stone
+Sharp Claw
+
+-------------------------------------------------------------------
+Sword (with *B/C* Sunlight & Moonlight) - 153
+Fire Stone
+Wind Stone
+Moon Crystal
+Big Seed
+Moon Crystal
+Moon Crystal
+Moon Crystal
+Sun Crystal
+Sun Crystal
+Sun Crystal
+Sun Crystal
+Bumpkin
+Bumpkin
+Bumpkin
+Fire Stone
+Sharp Claw
+
+--------------------------------------------------
+Axe (with *B* Dragon Slayer) - 174
+Fire Stone
+Sulpher
+Mercury
+Wind Stone
+Big Seed
+Sulpher
+Mercury
+Earth Stone
+Wind Stone
+Dragon Blood
+Ash
+Ash
+Ash
+Fire Stone
+Scissors
+
+---------------------------------------------------------------------------------
+2H Sword (with *A* Chaotic Avenger & Ragnarock) - 179
+Sun Crystal
+Earth Stone
+Wind Stone
+Water Stone
+Chaos Crystal
+Fire Stone
+Sulpher
+Wisp Silver
+Sun Crystal
+Sulpher
+Glow Crystal
+Pine O'Clock
+Angel Feather
+Bumpkin
+Bumpkin
+Bumpkin
+Fire Stone
+Sharp Claw
+
+------------------------------------------------
+2H Axe (with *C* Treefeller) - 255
+Earth Stone
+Earth Stone
+Glow Crystal
+Sulpher
+Earth Stone
+Earth Stone
+Giant's Horn
+Fire Stone
+Water Stone
+Big Seed
+Sun Crystal
+Glow Crystal
+Ash
+Ash
+Ash
+Fire Stone
+Scissors
+
+-----------------------------------------------------------
+Hammer (with *C* Quake Hammer) - 241
+Fire Stone
+Sulpher
+Mercury
+Wind Stone
+Big Seed
+Sulpher
+Mercury
+Earth Stone
+Wind Stone
+Ether
+Holy Water
+Holy Water
+Holy Water
+Fire Stone
+Giant's Horn
+
+--------------------------------------------
+Spear (with *A* Gungnir) - 204
+Fire Stone
+Sulpher
+Mercury
+Wind Stone
+Big Seed
+Earth Stone
+Mercury
+Wind Stone
+Sun Crystal
+Sun Crystal
+Sun Crystal
+Spade Basil
+Bumpkin
+Bumpkin
+Bumpkin
+Fire Stone
+Sharp Claw
+
+---------------------------------------------
+Staff (with *A* Caduceus) - 147
+Fire Stone
+Sulpher
+Mercury
+Wind Stone
+Big Seed
+Sulpher
+Mercury
+Earth Stone
+Wind Stone
+Diceberry
+Holy Water
+Holy Water
+Holy Water
+Fire Stone
+Giant's Horn
+
+-----------------------------------------------------
+Glove (with *B* Hand of Midas) - 131
+Fire Stone
+Sulpher
+Mercury
+Wind Stone
+Big Seed
+Sulpher
+Mercury
+Earth Stone
+Wind Stone
+Sulpher
+Garlicrown
+Holy Water
+Holy Water
+Holy Water
+Fire Stone
+Giant's Horn
+
+-------------------------------------------------------------------------------------------------------
+Flail (with *A/B/C* Green Princess, Game of Death & Red Dream) - 155
+Moon Crystal
+Water Stone
+Earth Stone
+Mercury
+Sulpher
+Moon Crystal
+Sulpher
+Moon Crystal
+Earth Stone
+Heart Mint
+Holy Water
+Holy Water
+Holy Water
+Fire Stone
+Giant's Horn
+
+-----------------------------------------------------------------------
+Bow (with *A/B* Solar Flare & Double Shot) - 143
+Fire Stone
+Wind Stone
+Big Seed
+Earth Stone
+Sun Crystal
+Sun Crystal
+Sun Crystal
+Sun Crystal
+Bumpkin
+Bumpkin
+Bumpkin
+Fire Stone
+Sharp Claw
+
+
+------------------------------------------------------------
+No Regen (but max defense) on an armor
+Round Seed
+Needle
+Needle
+Needle
+Sleepy Eye
+
+-------------------------------------------------------------------------------
+Move Regen No Revive (but good defense) on an armor
+Round Seed
+Needle
+Needle
+Springanana
+Sleepy Eye
+
+------------------------------------
+Move Regen on a Mantle
+Big Seed
+Sulpher
+Sun Crystal
+White Feather
+Holy Water
+
+--------------------------------
+Fast Revive on a Ring
+Fire Stone
+Sulpher
+Wind Stone
+Big Seed
+Applesocks
+Big Seed
+
+--------------------------------
+Extra Lucre on a Ring
+Hairball
+Holy Water
+
+------------------------------
+Extra Exp on Shoes
+Pear O'Heels
+Holy Water
+Loquat shoes
+Holy Water
+
+-------------------------------
+Share Exp on a Ring
+Big Seed
+Sulpher
+Sulpher
+Sulpher
+Big Seed
+Ear Of Wheat
+Holy Water

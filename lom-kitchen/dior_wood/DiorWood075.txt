@@ -1,0 +1,160 @@
+0 0 0 0 0 0 0 0
+2 glow
+2 shade
+3 glow
+2 mercury
+2 shade
+0 7 6 0 0 0 0 0
+3 sulpher
+2 wisp
+3 sulpher
+wisp
+3 glow
+2 sulpher
+2 wisp
+7 7 8 0 0 0 0 0
+aura
+3 mercury
+aura
+3 glow
+2 mercury
+aura
+4 glow
+3 mercury
+aura
+4 glow
+3 mercury
+aura gold
+7 7 8 9 0 0 0 0
+sala
+3 sulpher
+sala
+4 glow
+2 sulpher
+flaming quill
+sala
+4 glow
+3 sulpher
+sala
+4 glow
+3 sulpher
+sala gold
+7 7 9 9 9 0 0 0
+undine           (this step becomes important in later methods)
+7 7 10 9 9 0 0 1  (dryad raised and sala stayed the same...?!)
+2 jinn
+3 mercury
+jinn
+4 glow
+2 mercury
+jinn
+jinn gold
+7 7 10 9 9 0 9 0
+gnome
+chaos
+gnome
+glow
+2 sulpher
+chaos
+gnome
+2 sulpher
+glow
+7 7 10 9 9 7 9 0
+3 glow
+3 sulpher
+sala
+7 7 10 9 10 6 9 0
+chaos
+gnome
+glow
+2 sulpher
+chaos
+gnome
+2 sulpher
+4 glow
+chaos
+2 sulpher
+gnome
+4 glow
+chaos
+sulpher
+gnome gold
+7 7 10 9 10 9 9 0
+4 glow
+3 sulpher
+sala gold
+7 7 11 9 11 8 9 0
+3 sala
+7 7 11 9 11 0 9 0
+undine
+chaos
+undine
+glow
+2 mercury
+chaos
+undine
+2 mercury
+glow
+7 7 11 9 11 0 9 7
+3 glow
+2 mercury
+jinn
+7 7 11 9 11 0 10 6
+chaos
+undine
+glow
+2 mercury
+chaos
+undine
+2 mercury
+4 glow
+chaos
+2 mercury
+undine
+7 7 11 9 11 0 10 8
+4 glow
+2 mercury
+jinn
+7 7 11 9 11 0 11 7
+chaos
+undine
+2 mercury
+4 glow
+chaos
+2 mercury
+undine
+4 glow
+chaos
+2 mercury
+undine gold
+7 7 11 9 11 0 11 9
+4 glow
+2 mercury
+jinn gold
+7 7 11 9 11 0 12 8
+chaos
+4 glow
+chaos
+2 mercury
+undine
+4 glow
+chaos
+2 mercury
+undine gold
+7 7 11 9 11 0 12 9
+gnome
+chaos
+gnome
+3 sulpher
+chaos
+gnome
+2 sulpher
+4 glow
+chaos
+2 sulpher
+gnome
+4 glow
+chaos
+sulpher
+gnome gold
+7 7 11 9 11 9 12 9

@@ -1,0 +1,141 @@
+Lots of unneeded items and it doesn't take dryad/gnome to 10.
+But 999 weapons are finally possible. ^_^
+
+0 0 0 0 0 0 0 0
+wisp
+3 glow
+wisp
+3 glow
+6 0 6 0 0 0 0 0
+chaos
+shade
+3 glow
+chaos
+shade
+3 glow
+6 6 6 0 0 0 0 0
+chaos
+3 sulpher
+dryad gold
+6 6 8 0 0 0 0 0
+chaos
+aura
+3 glow
+chaos
+aura
+3 glow
+chaos
+3 mercury
+aura gold
+6 6 8 7 0 0 0 0
+undine
+3 glow
+undine
+3 glow
+3 mercury
+undine gold
+6 6 8 7 0 0 0 7
+chaos
+sala
+3 glow
+chaos
+sala
+3 glow
+6 6 8 7 5 0 0 7
+4 mercury
+undine
+undine gold
+6 6 8 7 2 0 0 8
+chaos
+sala
+3 glow
+chaos
+sala
+3 glow
+chaos
+3 sulpher
+sala gold
+6 6 8 7 6 0 0 8
+4 mercury
+undine
+undine gold
+6 6 8 7 3 0 0 9
+chaos
+sala
+3 glow
+chaos
+sala
+3 glow
+chaos
+3 sulpher
+sala gold
+chaos
+3 sulpher
+sala gold
+6 6 8 7 7 0 0 9
+4 mercury
+undine
+undine gold
+6 6 8 7 4 0 0 10
+gnome
+3 glow
+gnome
+3 glow
+3 sulpher
+gnome gold
+6 6 8 7 0 7 0 10
+chaos
+2 jinn
+2 mercury
+chaos
+jinn
+6 6 8 7 0 7 5 10
+4 sulpher
+gnome
+gnome gold
+6 6 8 7 0 8 2 10
+chaos
+jinn
+3 glow
+chaos
+jinn
+3 glow
+6 6 8 7 0 8 6 10
+4 sulpher
+gnome
+gnome gold
+6 6 9 7 0 8 3 10
+chaos
+jinn
+3 glow
+chaos
+jinn
+3 glow
+6 6 9 7 0 8 6 10
+4 sulpher
+gnome
+gnome gold
+6 6 9 7 0 9 3 10
+chaos
+jinn
+3 glow
+chaos
+jinn
+3 glow
+chaos
+3 mercury
+jinn gold
+6 6 9 7 0 9 7 10
+chaos
+sala
+3 glow
+chaos
+sala
+3 glow
+chaos
+3 sulpher
+sala gold
+chaos
+3 sulpher
+sala gold
+6 6 9 7 7 9 7 10

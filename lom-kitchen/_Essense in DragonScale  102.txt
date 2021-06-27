@@ -1,0 +1,134 @@
+       <Elemental  Augmentation>
+     <Advanced DragonScale Recipe>
+
+><>< Start ><><
+4 Glow Crystal
+Shade Gold (Shade Lv 1)
+Shade Gold (Shade Lv 3)
+Shade Gold (Shade Lv 5)
+Shade Gold (Shade Lv 6)
+4 Glow Crystal
+2 Mercury
+2 Shade Gold (Shade Lv 7)
+4 Glow Crystal
+2 Mercury
+2 Shade Gold (Shade Lv 8)
+4 Glow Crystal
+2 Mercury
+2 Shade Gold (Shade Lv 9)
+4 Glow Crystal
+Wisp Gold (Wisp Lv 1)
+Wisp Gold (Wisp Lv 3)
+Wisp Gold (Wisp Lv 5)
+Wisp Gold (Wisp Lv 6)
+4 Glow Crystal
+2 Sulpher
+2 Wisp Gold (Wisp Lv 7)
+4 Glow Crystal
+2 Sulpher
+2 Wisp Gold (Wisp Lv 8)
+4 Glow Crystal
+2 Sulpher
+2 Wisp Gold (Wisp Lv 9)
+4 Glow Crystal
+Dryad Gold (Dryad Lv 1)
+Dryad Gold (Dryad Lv 3)
+Dryad Gold (Dryad Lv 5)
+Dryad Gold (Dryad Lv 6)
+4 Glow Crystal
+2 Sulpher
+Dryad Gold (Dryad Lv 7)
+Dryad Gold (Dryad Lv 8)
+4 Glow Crystal
+2 Sulpher
+Dryad Gold (Dryad Lv 9)
+*Though it is possible in theory to add another gold here, I recommend playing it safe and restarting with glow crystals as it keeps the recipe as safe as possible. Also note that this 'free space' is essential to raising the conflicting essenses to 9, as the Ancient Moon card will need to be employed by using Chaos Crystals*
+4 Glow Crystal
+Sala Gold (Salamander Lv 1)
+Sala Gold (Salamander Lv 3)
+Sala Gold (Salamander Lv 5)
+Sala Gold (Salamander Lv 6)
+4 Glow Crystal
+2 Sulpher
+Sala Gold (Salamander Lv 7)
+Sala Gold (Salamander Lv 8)
+4 Glow Crystal
+2 Sulpher
+Sala Gold (Salamander lv 9)
+4 Glow Crystal
+Jinn Gold (Jinn Lv 1)
+Jinn Gold (Jinn Lv 3)
+Jinn Gold (Jinn Lv 5)
+Jinn Gold (Jinn Lv 6)
+4 Glow Crystal
+2 Mercury
+Jinn Gold (Jinn Lv 7)
+Jinn Gold (Jinn Lv 8)
+4 Glow Crystal
+2 Mercury
+Jinn Gold (Jinn Lv 9)
+4 Glow Crystal
+*4 must be used in order to prevent conflict. If you only use 3, the chaos crystal will push out Jinn without pushing in NoD, and that will mess up the process*
+Chaos Crystal
+Aura Gold (Aura Lv 1)
+Aura Gold (Aura Lv 3)
+Aura Gold (Aura Lv 5)
+4 Glow Crystal
+Chaos Crystal
+Aura Gold (Aura Lv 6)
+*You can't produce an Aura card while NoD is present due to AM needing to be present, so you won't be able to gain another rank without causing conflict if you add the fourth Gold before you renew the NoD's and AM. This will also apply to Gnome and Undine*
+4 Glow Crystal
+2 Mercury
+Chaos Crystal
+Aura Gold (Aura Lv 7)
+4 Glow Crystal
+2 Mercury
+Chaos Crystal
+Aura Gold (Aura Lv 8)
+4 Glow Crystal
+2 Mercury
+Chaos Crystal
+Aura Gold (Aura Lv 9)
+4 Glow Crystal
+Chaos Crystal
+Gnome Gold (Gnome Lv 1)
+Gnome Gold (Gnome Lv 3)
+Gnome Gold (Gnome Lv 5)
+4 Glow Crystal
+Chaos Crystal
+Gnome Gold (Gnome Lv 6)
+4 Glow Crystal
+2 Sulpher
+Chaos Crystal
+Gnome Gold (Gnome Lv 7)
+4 Glow Crystal
+2 Sulpher
+Chaos Crystal
+Gnome Gold (Gnome Lv 8)
+4 Glow Crystal
+2 Sulpher
+Chaos Crystal
+Gnome Gold (Gnome Lv 9)
+4 Glow Crystal
+Chaos Crystal
+Undine Gold (Undine Lv 1)
+Undine Gold (Undine Lv 3)
+Undine Gold (Undine Lv 5)
+4 Glow Crystal
+Chaos Crystal
+Undine Gold (Undine Lv 6)
+4 Glow Crystal
+2 Mercury
+Chaos Crystal
+Undine Gold (Undine Lv 7)
+4 Glow Crystal
+2 Mercury
+Chaos Crystal
+Undine Gold (Undine Lv 8)
+4 Glow Crystal
+2 Mercury
+Chaos Crystal
+Undine Gold (Undine Lv 9)
+><>< End ><><
+
+With the proper varnishing, Dragon Scale weapons made with this recipe will reach the 600's-700's range of attack.

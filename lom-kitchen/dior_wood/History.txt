@@ -1,0 +1,130 @@
+Game released early june 2000
+
+##game mastery faq##
+
+--Rumah Edge--
+
+2 silver
+gold
+
+4s (only gets to 3 on resist 9 or more)
+
+*diorwood 30* late june 2000
+
+
+Kiah, Moonlore, ShiroKage, MasterWai???
+
+
+##myers/richardson faq##
+
+--kelson--
+
+{
+3 glow
+2 silver
+}*4 (dryad,wisp,undine,gnome)
+
+{
+3 glow
+chaos
+2 silver
+2 glow
+chaos
+silver
+}*4 (sala,aura,shade,jinn)
+
+2 glow
+
+6s (only gets to 5 on resist 10 or more)
+shade misfires
+
+--Vulpes Mundi--
+Changed recipe for conflicting essences, eleminates shade misfires
+
+3 glow
+chaos
+silver
+3 glow
+chaos
+silver
+
+--Phildo--
+Changed essence order so only two needed to be raised in conflict
+
+{normal}*6 (dryad,aura,shade,wisp,undine,gnome)
+{conflict}*2 (sala,jinn)
+
+--Synth--
+Saves a couple of glows, but causes other problems.
+
+{
+glow
+silver
+glow
+silver
+}*6 (shade,aura,wisp,dryad,sala,jinn)
+
+{
+glow
+chaos
+silver
+glow
+chaos
+silver
+}*2 (gnome,undine)
+
+problem with dryad not being about to raise til wisp=shade.
+chaos crystals can't be stacked as close as they are.
+
+--hybrid Synth--
+
+Uses more glow crystals to fix problems with pure Synth.
+
+*diorwood 47 possible* ~~aug 2000
+
+
+--SSJCloud and Phildo--
+
+2 aura
+3 mercury
+1 aura silver
+1 aura gold
+
+gets to 7!
+
+
+##saricks faq##
+
+Starting to use wizards and consumptions. Has material resistance table
+translated from Ultimania, but lacks item energy chart.
+
+*diorwood 61* ~~oct 2000
+
+
+##mmajarra faq##
+
+Almost everything we know now. Lacked some fine points about wisp/shade including
+how they interact with wizards. Done so well it hasn't been replaced yet...
+
+*diorwood 75* ~~feb 2001
+
+
+Lots of improvements went on, but none of the intermediate steps seem to have
+been recorded. All the info to make this jump was in Marcus' faq. While its just
+a matter of understanding tempering at a high level, AsianGrinch did a masterful
+job. I might be able to recreate his results, but 104 in 273 items still amazes me.
+
+(I found a post of AsianGrinches adamantite recipe from july 2001. It notes
+that wisp/shade only benefit from wizards cards that appear before them)
+
+*diorwood 104* ~~aug 2001?
+
+
+Locartes recognizes something interesting. "psuedo draining"
+
+*diorwood 105* july 2003
+
+
+I use pixies to control mirrored world, the bane of high level diorwood tempering.
+
+*diorwood 106* feb 2004

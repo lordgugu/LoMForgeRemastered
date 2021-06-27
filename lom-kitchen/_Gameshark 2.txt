@@ -1,0 +1,885 @@
+LEGEND OF MANA PET MONSTER GAMESHARK
+
+Version: 1.0
+Written By: J. Glessner (jynkers)
+
+-------------------------------------------------------------------------------
+PET CODES
+-------------------------------------------------------------------------------
+
+Pet 1:
+
+Monster Type
+30045EE1 00xx
+
+Monster Family (effect besides egg graphic?):
+30045EE2 00xx
+
+Max Stats:
+
+Level
+30045EE4 0063
+
+EXP
+30045EE5 00FF
+30045EE6 00FF
+30045EE7 00FF
+
+9999 HP
+80045EE8 270F
+80045EE9 270F
+
+Power
+30045EF4 00FF
+30045EF5 00FF
+
+Skills
+30045EF6 00FF
+30045EF7 00FF
+
+Defense
+30045EF8 00FF
+30045EF9 00FF
+
+Magic
+30045EFA 00FF
+30045EFB 00FF
+
+HP Stat
+30045EFC 00FF
+30045EFD 00FF
+
+Spirit
+30045EFE 00FF
+30045EFF 00FF
+
+Charm
+30045F00 00FF
+30045F01 00FF
+
+Luck
+30045F02 00FF
+30045F03 00FF
+
+Defenses:
+
+Offense
+30045EEA 0088
+30045EEB 0088
+
+Strike
+30045EEC 00FF
+30045EED 00FF
+
+Slash
+30045EEE 00FF
+30045EEF 00FF
+
+Thrust
+30045EF0 00FF
+30045EF1 00FF
+
+Magic
+30045EF2 00FF
+30045EF3 00FF
+
+Stat Growth:
+
+30045F18 00FF: Power growth rate (FF for best)
+30045F19 00FF: Skills growth rate
+30045F1A 00FF: Defense growth rate
+30045F1B 00FF: Magic growth rate
+30045F1C 00FF: HP growth rate
+30045F1D 00FF: Spirit growth rate
+30045F1E 00FF: Charm growth rate
+30045F1F 00FF: Luck growth rate
+
+30045F20 0088: Strike defense growth rate (88 for best)
+30045F21 0088: Slash defense growth rate
+30045F22 0088: Thrust defense growth rate
+30045F23 0088: Magic defense growth rate
+30045F24 0088: Offense growth rate
+
+30045F25 00FA: Sell price growth rate 
+(FF for best, though FA is a little more even)
+
+Sell Price
+30045F26 00xx
+30045F27 00xx
+
+Name Modifier:
+30045ECC 00xx
+30045ECD 00xx
+30045ECE 00xx
+30045ECF 00xx
+30045ED0 00xx
+30045ED1 00xx
+30045ED2 00xx
+30045ED3 00xx
+30045ED4 00xx
+30045ED5 00xx
+30045ED6 00xx
+30045ED7 00xx
+30045ED8 00xx
+30045ED9 00xx
+30045EDA 00xx
+30045EDB 00xx
+30045EDC 00xx
+30045EDD 00xx
+30045EDE 00xx
+30045EDF 00xx
+
+-------------------------------------------------------------------------------
+
+Pet 2:
+
+Monster Type:
+30045F41 00xx
+
+Monster Family (effect besides egg graphic?):
+30045F42 00xx
+
+Max Stats:
+
+Level
+30045F44 0063
+
+EXP
+30045F45 00FF
+30045F46 00FF
+30045F47 00FF
+
+9999 HP
+80045F48 270F
+80045F49 270F
+
+Power
+30045F54 00FF
+30045F55 00FF
+
+Skills
+30045F56 00FF
+30045F57 00FF
+
+Defense
+30045F58 00FF
+30045F59 00FF
+
+Magic
+30045F5A 00FF
+30045F5B 00FF
+
+HP Stat
+30045F5C 00FF
+30045F5D 00FF
+
+Spirit
+30045F5E 00FF
+30045F5F 00FF
+
+Charm
+30045F60 00FF
+30045F61 00FF
+
+Luck
+30045F62 00FF
+30045F63 00FF
+
+Defenses:
+
+Offense
+30045F4A 0088
+30045F4B 0088
+
+Strike
+30045F4C 00FF
+30045F4D 00FF
+
+Slash
+30045F4E 00FF
+30045F4F 00FF
+
+Thrust
+30045F50 00FF
+30045F51 00FF
+
+Magic
+30045F52 00FF
+30045F53 00FF
+
+Stat Growth:
+
+30045F78 00FF: Power growth rate (FF for best)
+30045F79 00FF: Skill growth rate
+30045F7A 00FF: Defense growth rate
+30045F7B 00FF: Magic growth rate
+30045F7C 00FF: HP growth rate
+30045F7D 00FF: Spirit growth rate
+30045F7E 00FF: Charm growth rate
+30045F7F 00FF: Luck growth rate
+
+30045F80 0088: Strike defense growth rate (88 for best)
+30045F81 0088: Slash defense growth rate (88 for best)
+30045F82 0088: Thrust defense growth rate (88 for best)
+30045F83 0088: Magic defense growth rate (88 for best)
+30045F84 0088: Offense defense growth rate (88 for best)
+
+30045F85 00FA: Sell price growth rate 
+(FF for best, though FA is a little more even)
+
+Sell Price
+30045F86 00FF
+30045F87 00FF
+
+Name Modifier:
+30045F2C 00xx
+30045F2D 00xx
+30045F2E 00xx
+30045F2F 00xx
+30045F30 00xx
+30045F31 00xx
+30045F32 00xx
+30045F33 00xx
+30045F34 00xx
+30045F35 00xx
+30045F36 00xx
+30045F37 00xx
+30045F38 00xx
+30045F39 00xx
+30045F3A 00xx
+30045F3B 00xx
+30045F3C 00xx
+30045F3D 00xx
+30045F3E 00xx
+30045F3F 00xx
+
+-------------------------------------------------------------------------------
+
+Pet 3:
+
+Monster Type
+30045FA1 00xx
+
+Monster Family (effect besides egg graphic?):
+30045FA2 00xx
+
+Max Stats:
+
+Level
+30045FA4 0063
+
+EXP
+30045FA5 00FF
+30045FA6 00FF
+30045FA7 00FF
+
+9999 HP
+80045FA8 270F
+80045FA9 270F
+
+Power
+30045FB4 00FF
+30045FB5 00FF
+
+Skill
+30045FB6 00FF
+30045FB7 00FF
+
+Defense
+30045FB8 00FF
+30045FB9 00FF
+
+Magic
+30045FBA 00FF
+30045FBB 00FF
+
+HP Stat
+30045FBC 00FF
+30045FBD 00FF
+
+Spirit
+30045FBE 00FF
+30045FBF 00FF
+
+Charm
+30045FC0 00FF
+30045FC1 00FF
+
+Luck
+30045FC2 00FF
+30045FC3 00FF
+
+Defenses:
+
+Offense
+30045FAA 0088
+30045FAB 0088
+
+Strike
+30045FAC 00FF
+30045FAD 00FF
+
+Slash
+30045FAE 00FF
+30045FAF 00FF
+
+Thrust
+30045FB0 00FF
+30045FB1 00FF
+
+Magic
+30045FB2 00FF
+30045FB3 00FF
+
+Stat Growth:
+
+30045FD8 00FF: Power growth rate (FF for best)
+30045FD9 00FF: Skills growth rate
+30045FDA 00FF: Defense growth rate
+30045FDB 00FF: Magic growth rate
+30045FDC 00FF: HP growth rate
+30045FDD 00FF: Spirit growth rate
+30045FDE 00FF: Charm growth rate
+30045FDF 00FF: Luck growth rate
+
+30045FE0 0088: Strike defense growth rate (88 for best)
+30045FE1 0088: Slash defense growth rate
+30045FE2 0088: Thrust defense growth rate
+30045FE3 0088: Magic defense growth rate
+30045FE4 0088: Offense growth rate
+
+30045FE5 00FA: Sell price growth rate
+
+Sell Price:
+
+30045FE6 00xx
+30045FE7 00xx
+
+Name Modifier:
+30045F8C 00xx
+30045F8D 00xx
+30045F8E 00xx
+30045F8F 00xx
+30045F90 00xx
+30045F91 00xx
+30045F92 00xx
+30045F93 00xx
+30045F94 00xx
+30045F95 00xx
+30045F96 00xx
+30045F97 00xx
+30045F98 00xx
+30045F99 00xx
+30045F9A 00xx
+30045F9B 00xx
+30045F9C 00xx
+30045F9D 00xx
+30045F9E 00xx
+30045F9F 00xx
+
+-------------------------------------------------------------------------------
+
+Pet 4:
+
+Monster Type
+30046001 00xx
+
+Monster Family (effect besides egg graphic?):
+30046002 00xx
+
+Max Stats:
+
+Level
+30046004 0063
+
+EXP
+30046005 00FF
+30046006 00FF
+30046007 00FF
+
+9999 HP
+80046008 270F
+80046009 270F
+
+Power
+30046014 00FF
+30046015 00FF
+
+Skills
+30046016 00FF
+30046017 00FF
+
+Defense
+30046018 00FF
+30046019 00FF
+
+Magic
+3004601A 00FF
+3004601B 00FF
+
+HP Stat
+3004601C 00FF
+3004601D 00FF
+
+Spirit
+3004601E 00FF
+3004601F 00FF
+
+Charm
+30046020 00FF
+30046021 00FF
+
+Luck
+30046022 00FF
+30046023 00FF
+
+Defenses:
+
+Offense
+3004600A 0088
+3004600B 0088
+
+Strike
+3004600C 00FF
+3004600D 00FF
+
+Slash
+3004600E 00FF
+3004600F 00FF
+
+Thrust
+30046010 00FF
+30046011 00FF
+
+Magic
+30046012 00FF
+30046013 00FF
+
+Stat Growth:
+
+30046038 00FF: Power growth rate (FF for best)
+30046039 00FF: Skills growth rate
+3004603A 00FF: Defense growth rate
+3004603B 00FF: Magic growth rate
+3004603C 00FF: HP growth rate
+3004603D 00FF: Spirit growth rate
+3004603E 00FF: Charm growth rate
+3004602F 00FF: Luck growth rate
+
+30046040 0088: Strike defense growth rate (88 for best)
+30046041 0088: Slash defense growth rate
+30046042 0088: Thrust defense growth rate
+30046043 0088: Magic defense growth rate
+30046044 0088: Offense growth rate
+
+30046045 00FA: Sell price growth rate 
+(FF for best, though FA is a little more even)
+
+Sell Price
+30046046 00xx
+30046047 00xx
+
+Name Modifier:
+30045FEC 00xx
+30045FED 00xx
+30045FEE 00xx
+30045FEF 00xx
+30045FF0 00xx
+30045FF1 00xx
+30045FF2 00xx
+30045FF3 00xx
+30045FF4 00xx
+30045FF5 00xx
+30045FF6 00xx
+30045FF7 00xx
+30045FF8 00xx
+30045FF9 00xx
+30045FFA 00xx
+30045FFB 00xx
+30045FFC 00xx
+30045FFD 00xx
+30045FFE 00xx
+30045FFF 00xx
+
+-------------------------------------------------------------------------------
+
+Pet 5:
+
+Monster Type
+30046061 00xx
+
+Monster Family (effect besides egg graphic?):
+30046062 00xx
+
+Max Stats:
+
+Level
+30046064 0063
+
+EXP
+30046065 00FF
+30046066 00FF
+30046067 00FF
+
+9999 HP
+80046068 270F
+80046069 270F
+
+Power
+30046074 00FF
+30046075 00FF
+
+Skills
+30046076 00FF
+30046077 00FF
+
+Defense
+30046078 00FF
+30046079 00FF
+
+Magic
+3004607A 00FF
+3004607B 00FF
+
+HP Stat
+3004607C 00FF
+3004607D 00FF
+
+Spirit
+3004607E 00FF
+3004607F 00FF
+
+Charm
+30046080 00FF
+30046081 00FF
+
+Luck
+30046082 00FF
+30046083 00FF
+
+Defenses:
+
+Offense
+3004606A 0088
+3004606B 0088
+
+Strike
+3004606C 00FF
+3004606D 00FF
+
+Slash
+3004606E 00FF
+3004606F 00FF
+
+Thrust
+30046070 00FF
+30046071 00FF
+
+Magic
+30046072 00FF
+30046073 00FF
+
+Stat Growth:
+
+30046098 00FF: Power growth rate (FF for best)
+30046099 00FF: Skills growth rate
+3004609A 00FF: Defense growth rate
+3004609B 00FF: Magic growth rate
+3004609C 00FF: HP growth rate
+3004609D 00FF: Spirit growth rate
+3004609E 00FF: Charm growth rate
+3004609F 00FF: Luck growth rate
+
+300460A0 0088: Strike defense growth rate (88 for best)
+300460A1 0088: Slash defense growth rate
+300460A2 0088: Thrust defense growth rate
+300460A3 0088: Magic defense growth rate
+300460A4 0088: Offense growth rate
+
+300460A5 00FA: Sell price growth rate 
+(FF for best, though FA is a little more even)
+
+Sell Price
+300460A6 00xx
+300460A7 00xx
+
+Name Modifier:
+3004604C 00xx
+3004604D 00xx
+3004604E 00xx
+3004604F 00xx
+30046050 00xx
+30046051 00xx
+30046052 00xx
+30046053 00xx
+30046054 00xx
+30046055 00xx
+30046056 00xx
+30046057 00xx
+30046058 00xx
+30046059 00xx
+3004605A 00xx
+3004605B 00xx
+3004605C 00xx
+3004605D 00xx
+3004605E 00xx
+3004605F 00xx
+
+-------------------------------------------------------------------------------
+
+Quantity Digits:
+
+Monster Type
+
+Beast:
+00 = Rabite
+01 = Molebear
+02 = Teedie
+03 = Howler
+04 = Gray Ox
+
+Plant:
+05 = Lullabud
+06 = Mushboom
+07 = Shrieknip
+08 = Malboro
+09 = Wooding
+
+Arthropod:
+0A = Stinger Bug
+0B = Hoppin' Tick
+0C = Silkspitter
+0D = Sand Scorpion
+0E = Gloomoth
+
+Reptile:
+0F = Tonpole
+10 = Lizardon
+11 = Rattler Boa
+12 = Basilisk
+13 = Tyrranos
+
+Aquatic:
+14 = Iffish
+15 = Pincher Crab
+16 = Seajack
+17 = Seadragon
+18 = Big Baby
+
+Aerial:
+19 = Needlebeak
+1A = Bloodsucker
+1B = Cockatrice
+1C = Chocobo
+1D = Garuda
+
+Morph:
+1E = Shadow Zero
+1F = Slime
+20 = Tezla
+21 = Denden
+22 = Moldy Goo
+
+Undead:
+23 = Skull Beast
+24 = Zombine
+25 = Specter
+26 = Skeleton
+27 = Ape Mummy
+
+Demonic:
+28 = Imp
+29 = Fierce Face
+2A = Punkster
+2B = Dark Stalker
+2C = Chimera Beast
+
+Dragon:
+2D = Kid Dragon
+2E = Sky Dragon
+2F = Land Dragon
+
+Oddity:
+30 = Eye Spy
+31 = Spiny Cone
+32 = Poto
+33 = Beholder
+34 = Springball
+
+Poltergeist:
+35 = Cursed Doll
+36 = Polter Box
+37 = Chess Knight
+38 = Dainslaif
+39 = [blank, but Machine Golem picture]
+
+Demi-human:
+3A = Chobin Hood
+3B = Goblin
+3C = Tomato Man
+3D = Sahagin
+3E = Succubus
+3F = Narcissos
+40 = Mad Mallard
+
+Monster Family
+
+00 = Beast
+01 = Plant
+02 = Arthropod
+03 = Reptile
+04 = Aquatic
+05 = Aerial
+06 = Morph
+07 = Undead
+08 = Demonic
+09 = Dragon
+0A = Oddity
+0B = Poltergeist
+0C = Demi-human
+
+Quantity Digits to Accompany Name Modifier Codes
+21 - !
+22 - "
+23 - #
+24 - $
+25 - %
+26 - &
+27 - '
+28 - (
+29 - )
+2A - *
+2B - +
+2C - ,
+2D - -
+2E - .
+2F - /
+30 - 0
+31 - 1
+32 - 2
+33 - 3
+34 - 4
+35 - 5
+36 - 6
+37 - 7
+38 - 8
+39 - 9
+3A - :
+3B - ;
+3C -
+3F - ?
+40 - @
+41 - A
+42 - B
+43 - C
+44 - D
+45 - E
+46 - F
+47 - G
+48 - H
+49 - I
+4A - J
+4B - K
+4C - L
+4D - M
+4E - N
+4F - O
+50 - P
+51 - Q
+52 - R
+53 - S
+54 - T
+55 - U
+56 - V
+57 - W
+58 - X
+59 - Y
+5A - Z
+5B - [
+5C - \
+5D - ]
+5E - ^
+5F - _
+60 - `
+61 - a
+62 - b
+63 - c
+64 - d
+65 - e
+66 - f
+67 - g
+68 - h
+69 - i
+6A - j
+6B - k
+6C - l
+6D - m
+6E - n
+6F - o
+70 - p
+71 - q
+72 - r
+73 - s
+74 - t
+75 - u
+76 - v
+77 - w
+78 - x
+79 - y
+7A - z
+7B - {
+7C - |
+7D - }
+7E - ~
+7F - "
+
+-------------------------------------------------------------------------------
+
+Other Stuff
+
+Pet Personality Modifier:
+
+30045F14 00xx - Stable slot #1
+30045F74 00xx - Stable slot #2
+30045FD4 00xx - Stable slot #3
+30046034 00xx - Stable slot #4
+30046094 00xx - Stable slot #5
+
+xx = (sum up what you want appropriately in hex) 
+01: aggressive
+02: arrogant
+04: calm
+08: indecisive
+10: scheming
+20: lazy
+40: friendly
+80: lonely
+
+-------------------------------------------------------------------------------
+
+Credit:
+
+I don't remember who posted this to the GameFAQs message board (probably 
+Vilurum or OTW... maybe), but that person gets FULL CREDIT for these codes, I'm 
+just posting them where everyone can access them ^_^
+
+-------------------------------------------------------------------------------
+
+Contact Info:
+
+If you have any questions or comments:
+
+My Email: leareth@hotmail.com
+
+Instant Messenger Programs: 
+YIM – kittycat98684@yahoo.com
+
+-------------------------------------------------------------------------------
+
+Copyright Info:
+
+© 2006 J. Glessner (jynkers). Feel free to use these codes as you wish, just 
+remember to give credit where it's due. If you have codes that you customized 
+(codes for us lazy bums ^^), and would like me to add them, you will be 
+credited. Note that I will test them out before posting them, however.
+-------------------------------------------------------------------------------

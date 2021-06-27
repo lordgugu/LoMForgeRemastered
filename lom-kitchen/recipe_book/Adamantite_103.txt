@@ -1,0 +1,160 @@
+I'm pulling this from
+http://www.neoseeker.com/forums/864/t24033-ultimate-adamanitite-achieved-tempering-info/
+
+Something seems off in the last two steps.
+There is a version (with corrections) you can dump into calc at the bottom.
+
+Adamantite Recipe
+A 0-0-0-0-9-0-0-0
+firestone > sulpher > firestone >4x glow crystal >2x sulpher > firestone >4x glow crystal >3x sulpher > firestone >4x glow crystal >3x sulpher > sala gold
+B 0-0-9-0-9-0-0-0
+any seed > sulpher > any seed >4x glow crystal >2x sulpher > any seed >4x glow crystal >3x sulpher > any seed >4x glow crystal >3x sulpher > dryad gold
+C 0-0-9-9-9-0-0-0
+aura silver > mercury > aura silver >4x glow crystal >2x mercury > aura silver >4x glow crystal >3x mercury > aura silver >4x glow crystal >3x mercury > aura gold
+D 0-1-8-11-8-0-0-1
+3x mercury > spiny carrot > mercury > moon crystal > garlicrown
+E 1-1-9-10-10-0-0-0
+mirror piece >2x firestone > honey onion > aura silver > sun crystal
+F 1-2-8-12-9-0-0-1
+3x mercury > spiny carrot > chaos crystal> moon crystal > garlicrown
+G 2-2-10-10-11-0-0-0
+mirror piece >2x firestone > any seed > aura silver > sun crystal
+H 2-3-11-11-9-0-0-2
+spiny carrot >3x mercury > spiny carrot > chaos crystal > mush-in-a-box
+I 2-3-9-13-9-0-0-2
+garlicrown >3x mercury > garlicrown
+J 3-3-12-12-10-0-0-2
+mirror piece >3x firestone > any seed > angel feather >3x sulpher >2x spiny carrot > glow crystal
+K 3-4-10-14-10-0-0-2
+chaos crystal > shade silver > 3x mercury > garlicrown >3x mercury > garlicrown
+L 4-4-13-13-11-0-0-2
+mirror piece >3x firestone > any seed > wisp silver > glow crystal > any seed > 3x sulpher >2x spiny carrot
+M 4-5-11-15-11-0-0-2
+glow crystal > chaos crystal > shade silver >3x mercury > garlicrown >3x mercury > garlicrown
+N 5-5-14-14-12-0-0-2
+mirror piece >3x firestone > any seed > glow crystal > wisp silver > any seed > 2x sulpher > fishy fruit > spiny carrot
+O 5-6-13-15-12-0-0-2
+any seed > chaos crystal > mercury > glow crystal > shade silver >2x mercury > garlicrown
+P 5-6-13-15-13-0-0-0
+mirror piece > firestone > sulpher > honey onion >2x mercury > garlicrown
+Q 6-6-14-15-12-0-0-1
+sulpher > glow crystal > wisp silver > sulpher > any seed >2x sulpher > firestone > squalphin
+R 9-0-14-15-11-0-0-2
+3x wisp silver > sulpher > spiny carrot
+S 12-0-14-15-12-0-0-0
+honey onion > mirror piece > wisp silver > firestone > mercury > aura silver
+T 13-0-14-15-13-0-0-0
+wisp silver > sulpher > honey onion > mirror piece > firestone >2x mercury > aura silver
+U 14-0-14-15-14-0-0-0
+2x sulpher > wisp silver > honey onion > mirror piece > firestone > 2x mercury > aura silver
+V 15-0-15-14-14-0-0-0
+2x sulpher > wisp silver > honey onion
+W 15-4-15-14-14-0-0-0
+chaos crystal > shade silver > mercury >2x flaming quill >2x mercury
+X 15-6-14-15-13-1-0-0
+mirror piece > shade silver > mercury > garlicrown > earthstone
+Y 15-7-14-15-0-1-0-10
+4x waterstone > sulpher > honey onion > mirror piece > shade silver > waterstone > mercury > aura silver
+Z 15-7-15-14-0-8-0-10
+earthstone >3x sulpher > earthstone > glow crystal >2x earthstone > sulpher > honey onion
+A 15-8-15-14-0-10-0-11
+mirror piece > shade silver > waterstone > mercury > aura silver >2x earthstone > sulpher > honey onion
+B 15-9-15-14-0-12-0-12
+mirror piece > shade silver > mercury > waterstone > aura silver >2x earthstone > sulpher > honey onion
+C 15-10-15-14-0-13-0-13
+mirror piece > shade silver > mercury > waterstone > aura silver > earthstone > sulpher > honey onion
+D 15-11-15-14-0-14-0-13
+mirror piece > shade silver > mercury > garlicrown > earthstone >2x sulpher > honey onion
+E 15-12-15-14-0-15-0-13
+mirror piece > shade silver > mercury > garlicrown > earthstone> 2x sulpher > honey onion
+F 15-13-15-14-0-15-0-14
+mirror piece > shade silver > mercury > garlicrown > waterstone >2x sulpher > honey onion
+G 15-14-15-14-0-15-0-14
+mirror piece > shade silver >2x mercury > garlicrown > honey onion
+H 15-14-15-14-0-15-0-15
+mirror piece > waterstone >2x mercury > garlicrown > honey onion
+I 15-15-14-15-0-15-0-15
+mirror piece >2x mercury > shade silver > aura silver
+J 15-15-14-15-0-15-7-15
+windstone > chaos crystal >2x mercury >2x flaming quill > windstone >4x glow crystal > chaos crystal >2x mercury > windstone
+K 15-15-14-15-7-15-7-15
+firestone > chaos crystal >2x sulpher >2x gold clover > firestone >4x glow crystal > chaos crystal >2x sulpher > firestone 
+
+
+Hammer Adamantite
+6 48
+<0-0-0-0-0-0-0-0-0
+17 107 17 23 23 23 23 107 107 17 23 23 23 23 107 107 107 17 23 23 23 23 107 107 107 5
+A<0-0-0-0-9-0-0-0
+25 107 25 23 23 23 23 107 107 25 23 23 23 23 107 107 107 25 23 23 23 23 107 107 107 3
+B<0-0-9-0-9-0-0-0
+12 97 12 23 23 23 23 97 97 12 23 23 23 23 97 97 97 12 23 23 23 23 97 97 97 4
+C<0-0-9-9-9-0-0-0
+97 97 97 53 97 22 50
+D<0-1-8-11-8-0-0-1
+116 17 17 51 12 21
+E<1-1-9-10-10-0-0-0
+97 97 97 53 24 22 50
+F<1-2-8-12-9-0-0-1
+116 17 17 25 12 21
+G<2-2-10-10-11-0-0-0
+53 97 97 97 53 24 68
+H<2-3-11-11-9-0-0-2
+50 97 97 97 50
+I<2-3-9-13-9-0-0-2
+116 17 17 17 25 86 107 107 107 53 53 23
+J<3-3-12-12-10-0-0-2
+24 10 97 97 97 50 97 97 97 50
+K<3-4-10-14-10-0-0-2
+116 17 17 17 25 9 23 25 107 107 107 53 53
+L<4-4-13-13-11-0-0-2
+23 24 10 97 97 97 50 97 97 97 50
+M<4-5-11-15-11-0-0-2
+116 17 17 17 25 23 9 25 107 107 46 53
+N<5-5-14-14-12-0-0-2
+25 24 97 23 10 97 97 50
+O<5-6-13-15-12-0-0-2
+116 17 107 51 97 97 50
+P<5-6-13-15-13-0-0-0
+107 23 9 107 25 107 107 17 38
+Q<6-6-14-15-12-0-0-1
+9 9 9 107 53
+R<9-0-14-15-11-0-0-2
+51 116 9 17 97 12
+S<12-0-14-15-12-0-0-0
+9 107 51 116 17 97 97 12
+T<13-0-14-15-13-0-0-0
+107 107 9 51 116 17 97 97 12
+U<14-0-14-15-14-0-0-0
+107 107 9 51
+V<15-0-15-14-14-0-0-0
+24 10 97 90 90 97 97
+W<15-4-15-14-14-0-0-0
+116 10 97 50 18
+X<15-6-14-15-13-1-0-0
+20 20 20 20 107 51 116 10 20 97 12
+Y<15-7-14-15-0-1-0-10
+18 107 107 107 18 23 18 18 107 51
+Z<15-7-15-14-0-8-0-10
+116 10 20 97 12 18 18 107 51
+A<15-8-15-14-0-10-0-11
+116 10 97 20 12 18 18 107 51
+B<15-9-15-14-0-12-0-12
+116 10 97 20 12 18 107 51
+C<15-10-15-14-0-13-0-13
+116 10 97 50 18 107 107 51
+D<15-11-15-14-0-14-0-13
+116 10 97 50 18 107 107 51
+E<15-12-15-14-0-15-0-13
+116 10 97 50 20 107 107 51
+F<15-13-15-14-0-15-0-14
+116 10 97 97 50 51
+G<15-14-15-14-0-15-0-14
+116 20 97 97 50 51
+H<15-14-15-14-0-15-0-15
+116 97 97 10 12
+I<15-15-14-15-0-15-0-15
+24 19 23 23 23 24 19 23 23 23 23 24 97 97 19
+J<15-15-14-15-0-15-7-15
+97 24 17 23 23 23 24 17 23 23 23 23 24 107 107 17
+K<15-15-14-15-7-15-7-15

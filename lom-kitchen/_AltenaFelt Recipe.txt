@@ -1,0 +1,373 @@
+AltenaFelt Uber Recipe.  Inspired by AsianGrinch, Myst Erik Ery, Marcus Majarra and countless others on
+the gamefaqs.com Legend of Mana Message Board.
+
+Make your enemies and friends tremble in fear of your Deadly Fabric Weapons of Doom :)
+
+Element Resistance on AltenaFelt is
+7-7-7-9-10-7-7-6
+
+A 0-0-9-0-0-0-0-0
+
+	Any Seed
+	2x Sulpher
+	Glow Crystal
+	3x Gold Clovers
+	2x Glow Crystal
+	2x Sulpher
+	Any Seed
+	3x Glow Crystal
+	2x Sulpher
+	Dryad Silver
+	Glow Crystal
+
+B 0-0-9-9-0-0-0-0
+
+	Aura Silver
+	3x Mercury
+	Aura Silver
+	3x Glow Crystal
+	2x Mercury
+	Aura Silver
+	4x Glow Crystal
+	3x Mercury
+	Aura Silver
+	4x Glow Crystal
+	3x Mercury
+	Aura Gold
+
+C 0-0-9-9-9-0-0-0
+
+	Fire Stone
+	3x Sulpher
+	Sala Coin
+	3x Glow Crystals
+	2x Sulpher
+	Sala Silver
+	4x Glow Crystal
+	3x Sulpher
+	Sala Silver
+	4x Glow Crystal
+	3x Sulpher
+	Sala Gold
+
+D 0-1-9-10-9-0-0-0
+
+	Aura Silver
+	Mercury
+	Fishy Fruit
+	Mirror Piece
+	Fire Stone
+	4x Glow Crystal
+	3x Sulpher
+	Sala Gold
+	Mush-in-a-Box
+
+E 0-1-9-10-10-0-0-0
+
+	Mirror Piece
+	2x Sulpher
+	Fire Stone
+	Honey Onion
+	Mercury
+	Garlic Crown
+
+F 0-1-10-9-11-0-0-0
+
+	Mirror Piece
+	2x Sulpher
+	Fire Stone
+	Honey Onion
+
+G 1-1-10-11-10-0-0-0
+
+	Corn Flower
+	Mercury
+	2x Aura Silver
+	Fishy Fruit
+	Chaos Crystal
+	Lilapod
+	Mush-in-a-Box
+
+H 1-2-10-11-11-0-0-0
+
+	Repeat Step E
+
+I 1-2-11-10-12-0-0-0
+
+	Repeat Step F
+
+J 2-2-11-12-11-0-0-0
+
+	Repeat Step G
+	Replace Mush-in-a-Box with Moon Crystal
+
+
+K 2-3-11-12-12-0-0-0
+
+	Repeat Step E
+
+L 2-3-12-11-13-0-0-0
+
+	Repeat Step F
+
+M 3-3-12-13-12-0-0-0
+
+	Repeat Step G
+
+	Replace Corn Flower with Sun Crystal
+
+	Replace Lilapod/Mush-in-a-Box with
+		Mercury
+		Shade Silver
+		Glow Crystal
+		Lilapod  **Important** Remember this or Wisp will drain to 0 when Mirror World Card comes into play
+
+N 3-4-12-13-13-0-0-0
+
+	Repeat Step E
+
+O 3-4-13-12-14-0-0-0
+
+	Repeat Step F
+
+P 4-4-13-14-13-0-0-0
+
+	Repeat Step G
+
+	Replace Corn Flower with
+
+		Sulpher
+		Wisp Silver
+
+	Replace Lilapod/Mush-in-a-Box with
+
+		Mercury
+		Shade Silver
+		Glow Crystal
+		Lilapod  **Important** Remember this or Wisp will drain to 0 when Mirror World Card comes into play
+
+Q 4-5-13-14-14-0-0-0
+
+	Repeat Step E
+
+R 4-5-14-13-15-0-0-0
+
+	Repeat Step F
+
+S 5-5-14-15-14-0-0-0
+
+	Repeat Step G
+
+	Replace Corn Flower with
+
+		sulpher
+		Wisp Silver
+		Glow Crystal
+
+	Replace Lilapod/Mush-in-Box with Step T
+
+T 0-9-14-15-14-0-0-0
+
+	Mirror Piece
+	Glow Crystal
+	Mercury
+	Shade Silver
+	Mercury
+	3x Glow Crystal
+	2x Mercury
+	Shade Silver
+	3x Glow Crystal
+	2x Mercury
+	Shade Silver
+
+U 0-9-15-14-15-0-0-0
+
+	Repeat Step F
+
+V 0-15-15-14-15-0-0-0
+
+	Mercury
+	2x Shade Silver
+	Garlic Crown
+	Mirror Piece
+	Sulpher
+	2x Shade Silver
+	Honey Onion
+	2x Mercury
+	Shade Silver
+	Garlic Crown
+	Mirror Piece
+	Mercury
+	Sulpher
+	Shade Silver
+	Honey Onion
+
+W 9-15-15-14-15-0-0-0
+
+	2x Sulpher
+	Wisp Silver
+	Glow Crystal
+	5x Gold Clovers
+	2x Glow Crystal
+	2x Sulpher
+	Wisp Silver
+	3x Glow Crystal
+	2x Sulpher
+	Wisp Silver
+
+X 9-15-15-14-15-0-9-0
+
+	Wind Stone
+	2x Mercury
+	Glow Crystal
+	3x Gold Clover
+	2x Glow Crystal
+	2x Mercury
+	Jinn Silver
+	3x Glow Crystal
+	2x Mercury
+	Jinn Silver
+
+Y 11-15-14-15-15-0-9-0
+
+	Mercury
+	2x Wisp Silver
+	Garlic Crown
+
+Z 11-15-15-14-15-0-11-0
+
+	Lilapod **Important** Remember this or Wisp will drain to 0 when Mirror World Card comes into play
+	Mirror Piece
+	Sulpher
+	2x Wind Stone
+	Honey Onion
+
+Aa 12-15-14-15-15-0-11-0
+
+	Mercury
+	Sulpher
+	Wisp Silver
+	Garlic Crown
+
+Bb 12-15-15-14-15-0-13-0
+
+	Repeat Step Z
+
+Cc 13-15-14-15-15-0-13-0
+
+	Repeat Step Aa
+
+Dd 13-15-15-14-15-0-14-0
+
+	Lilapod **Important** Remember this or Wisp will drain to 0 when Mirror World Card comes into play
+	Mirror Piece
+	Mercury
+	Sulpher
+	Wind Stone
+	Honey Onion
+	Mercury
+	Garlic Crown
+
+Ee 13-15-15-14-15-0-15-0
+
+	Mirror Piece
+	Mercury
+	Sulpher
+	Wind Stone
+	Honey Onion
+
+Ff 15-15-14-14-15-0-15-0
+
+	Sulpher
+	2x Wisp Silvers
+	Garlic Crown
+
+Gg 15-15-14-14-15-9-15-0
+
+	Glow Crystal
+	Chaos Crystal
+	2x Gnome Silver
+	Sulpher
+	3x Glow Crystal
+	Gnome Silver
+	Chaos Crystal
+	Sulpher
+	Glow crystal
+	Sulpher
+	Earth Stone
+	4x Glow Crystal
+	Chaos Crystal
+	2x Sulpher
+	Gnome Gold
+
+
+Hh 15-15-14-14-15-9-15-9
+
+	Glow Crystal
+	Chaos Crystal
+	2x Undine Silver
+	Mercury
+	3x Glow Crystal
+	Undine Silver
+	Chaos Crystal
+	Mercury
+	Glow Crystal
+	Mercury
+	Water Stone
+	4x Glow Crystal
+	Chaos Crystal
+	2x Mercury
+	Undine Gold
+
+Needed:
+
+19 Mirror Pieces
+73 Glow Crystals
+11 Chaos Crystals
+52 Mercury
+68 Sulpher
+11 Gold Clovers
+
+2  Corn Flowers
+10 Wisp Silvers
+1  Sun Crystal
+
+2  Mush in a Boxe
+11 Shade Silvers
+1  Moon Crystal
+
+2  Any Seeds
+17 Honey Onion
+1  Dryad Silver
+
+11 Garlic Crown
+7  Aura Silvers
+
+13 Fire Stone
+2  Sala Silvers
+2  Sala Gold
+
+1  Earth Stone
+3  Gnome Silvers
+1  Gnome Gold
+
+5  Wind Stone
+2  Jinn Silver
+
+6  Fishy Fruit
+1  Water Stone
+3  Undine Silver
+1  Undine Gold
+
+After Thoughts: there are probably more efficient ways in going about getting to 106 essenses, I simply followed
+what I felt comfortable with and knew could work without looking up any notes (mainly steps E F G on down till you
+raise Conflicting Essences the last two steps)
+
+Attack Powers have 3 Bumpkins + 1 Sharp Claw Varnish
+
+Spear: 999
+Knife: 974
+2handSword: 888
+2handAxe: 888
+Bow: 886
+1handSword: 710

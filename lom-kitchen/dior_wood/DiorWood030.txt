@@ -1,0 +1,23 @@
+5a - Tempering Your Weapon :
+	The first thing you want to do to your weapon is to max out all spirit 
+levels.  This method was first posted by Ramuh Edge (nick10512@aol.com), on the 
+LOM message board at www.gamefaqs.com.  I'm going to describe the technique in 
+my own words.
+
+	Each element has an opponent that it will cancel if it exists in your 
+weapon.  The Chaos Stones, however, add the Ancient Moon mystic power, which 
+allows them to co-exist.
+
+Requirements : 4 Chaos Crystals, 2 silvers & a gold coin each for the first four 
+cooperating elements, and 2 gold coins for each for the last four conflicting 
+elements.
+
+1. Add in two silvers and a gold coin (do silver before gold) for four spirits 
+that cooperate with one another : Wisp, Dryad, Salamander, and Jinn, OR Shade, 
+Aura, Undine, and Gnome.  They should now be level 4.
+
+2. For this step, add a chaos crystal, and then another one for every two spirit 
+coins you add.  To speed the process up, and to lower the required number of 
+chaos crystals, you should use two golds, instead of two silvers and a gold.  Do 
+this for all four spirits, and your equipment should have maxed out spirit 
+levels.

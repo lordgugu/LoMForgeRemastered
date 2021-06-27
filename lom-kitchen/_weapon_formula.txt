@@ -1,0 +1,187 @@
+WEAPON BASICS
+
+At the most basic level the attack value of a weapon is determined by 8
+factors. Four are from the type of weapon, and the other four come from the
+material used. Each has a value for Sharp, Heavy, Force and Tech. To get the
+final attack value multiply the like values, add them together, and then
+divide by 128.
+
+(Weapon.Sharp*Material.Sharp + W.Heavy*M.H + W.Force*M.F + W.Tech*M.T)/128
+
+Here is a list of the weapon values.
+The material values can be found at material.txt.
+
+WEAPONS   Sharp Heavy Force Tech
+Knife     44    16    12    48
+Sword     32    32    32    32
+Axe       28    36    48    16
+2H Sword  40    40    40    40
+2H Axe    40    40    64    16
+Hammer     8    72    64    16
+Spear     52    20    24    48
+Staff      4    44    16    32
+Glove      0    32    24    56
+Flail      0    40    28    44
+Bow       40     4    20    40
+
+
+Example: Coral Hammer
+
+Coral  18 21 14 12
+
+Hammer  8 72 64 16
+
+(18*8 + 21*72 + 14*64 + 12*16) = 2744
+
+2744 / 128 = 21.4375
+
+Rounding down the attack value is found to be 21
+
+
+CHANGING MATERIAL VALUES
+
+There are a number of cards and items which change a materials values. When
+properly combined a weapons attack value can be increased by up to a factor
+of 5.
+
+CARDS         Sharp Heavy Force Tech
+Clown         +50%  -50%             (from Bumpkin)
+Cleric        -50%  +50%             (from Holy Water)
+Volcano                   +50%  -50% (from Ash)
+
+ITEMS
+Sharp Claw    +50%  -50%
+Giants Horn   -50%  +50%
+Scissors                  +50%  -50%
+Poison Fang               -50%  +50%
+Clear Feather       -50%        +50%
+Dragon's Breath           +25%  +25%
+Wicked Eye    +25%
+Silly Eye           +25%
+Angry Eye                 +25%
+Blank Eye                       +25%
+Rhinoloupe    +25%
+Spade Basil   +25%
+Gold Clover         +25%
+Peach Puppy   +25%  -25%
+Spiny Carrot  +25%  -25%
+Needlettuce   +25%  -25%
+Masked Potato -25%  +25%
+Citrisquid    -25%  +25%
+Apricat                   -25%  +25%
+
+You can have three cards, but only one item, and it must be the last thing
+added. These last cards and item added are called the varnish. The three
+varnishes most commonly used are.
+
+3 Clowns and a Sharp Claw
+3 Clerics and a Giants Horn
+3 Volcanos and a Scissors
+
+Usually the varnish can be chosen just based on the strongest stat of the
+weapon.
+
+
+Example: Coral Hammer
+1. Add a Holy Water. Nothing happens, but thats ok. A Cleric has been produced
+in the "invisible" slot and it will be pushed on by the next holy water.
+
+Coral  18 21 14 12
+
+
+2. Add another Holy Water. The first Cleric becomes visible. The Sharp value
+is multiplied by .5 and the Heavy value is multiplied by 1.5, round down.
+
+Coral   9 31 14 12
+
+
+3. Add another. Two Clerics are visible.
+
+Coral   4 46 14 12
+
+
+4. Add another. Three Clerics are visible.
+
+Coral   2 69 14 12
+
+Adding any more Holy Waters won't improve the weapon at this point since only
+three Clerics can ever be visible.
+
+
+5. Add the Giants Horn.
+
+Coral   1 103 14 12
+
+Hammer  8  72 64 16
+
+(1*8 + 103*72 + 14*64 + 12*16) = 8512
+
+8512 / 128 = 66.5
+
+So by adding the varnish the hammer went from 21 to 66. Thats an increase of
+more than 3 times after adding only 5 items.
+
+
+EFFECT OF INCREASED ESSENCES
+
+Weapons also gain power when their essence total increases. To understand
+this we need a new value called "growth control" or GC, which can also be
+found in material.txt. The weapons attack value is multiplied by the factor.
+
+(Essence.total + GC) / GC
+
+If no essences have been added this factor is always 1.
+
+Example: Coral Hammer
+Lets say the hammer has an essence total of 36.
+Coral has a growth control of 12.
+
+Coral  18 21 14 12 /12
+
+Hammer  8 72 64 16
+
+(18*8 + 21*72 + 14*64 + 12*16) = 2744
+
+2744 * (36 + 12) / 12 / 128 = 85.75
+
+Rounding down gives an attack power of 85
+
+
+When varnished like in the previous example...
+
+Coral   1 103 14 12 /12
+
+Hammer  8  72 64 16
+
+(1*8 + 103*72 + 14*64 + 12*16) = 8512
+
+8512 * (36 + 12) / 12 / 128 = 266
+
+So by combining essence raising and varnishing the attack power went from 21
+all the way to 266.
+
+
+STATISTICAL LIMITS
+
+An important place where system implementaion effects the equations is in the
+material values. When multiplying by 1.5 the material value will never go
+above 255. This only occurs when the materials base value is over 50.
+
+Example: DragonScale Sword
+
+DragonScale 60 66 54 54
+
+Sword       32 32 32 32
+
+A heavy varnish would seem to be best since heavy is the highest base stat.
+
+DragonScale 3 333 54 54 (3*32+333*32+54*32+54*32)/128=111
+  capped    3 255 54 54 (3*32+255*32+54*32+54*32)/128=91
+
+Varnishing for force would give...
+
+DragonScale 60 66 271 3 (60*32+66*32+271*32+3*32)/128=100
+  capped    60 66 255 3 (60*32+66*32+255*32+3*32)/128=96
+
+Without a cap heavy would be the better varnish, but with the cap it turns out
+force is best.

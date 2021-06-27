@@ -1,0 +1,62 @@
+This is an altered for of tagged_jc's AdamPendant recipe that shows how to
+make it work with LorimarIron and AltenaAlloy in addition to Adamantite.
+
+Shade Silver
+Aura Silver
+Gnome Silver
+Wisp Silver
+Undine Silver
+Moth Wing
+Gnome Silver
+Moth Wing
+***
+Chaos Crystal
+Jinn Silver
+Moth Wing
+Sala Silver
+Moth Wing
+Dryad Silver/any non-spiny seed
+2x Sulpher
+Lilipods/any non-card item
+2x Wicked Eye
+Virgin's Sigh
+Pine o'Clock
+Stinky Breath
+Angry Eye
+Squalphin
+Fishy Fruit
+Ghost's Howl
+Blackened Bat
+Zombie Claw
+Spiny Seed
+Ghost's Howl
+14x Dragon Blood
+Moth Wing/Creepy Eye
+
+Where it says ***, just add 1 Acid for LorimarIron or 2 Acid for AltenaAlloy
+(The 15th Dragon Blood in tagged_jc's recipe was wasted, so I reduced it to 14)
+
+Results:
+LorimarIron
+  Defense: 0 0 0 25
+  Essence: 3 3 5 2 / 2 3 3 3
+  Special: Bonus Lucre
+  Stats: +20 to all
+  All elemental defenses
+  All status immunities
+
+AltenaAlloy
+  Defense: 0 0 0 28
+  Essence: 3 3 5 2 / 2 3 2 3
+  Special: Bonus Lucre
+  Stats: +20 to all
+  All elemental defenses
+  All status immunities
+
+Adamantite
+  Defense: 0 0 0 34
+  Essence: 3 3 5 3 / 2 3 3 3
+  Special: Bonus Lucre
+  Stats: +20 to all
+  All elemental defenses
+  All status immunities

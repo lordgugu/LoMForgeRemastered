@@ -1,0 +1,67 @@
+SilkCape
+
+Sultan'sSilk Mantle
+Fire Stone
+Sulpher
+Sulpher
+Gold Clover
+Glow Crystal
+Stinky Breath
+Sharp Claw
+Hairball
+Water Stone
+Spiny Carrot
+Non-Spiny Seed
+Squalphin
+Garlicrown
+Earth Stone
+Aura Silver
+Ear of Wheat
+Gold Clover
+Gold Clover
+Chaos Crystal
+Shade Silver
+Wind Stone
+Shade Silver
+Wicked Eye
+Wisp Silver
+Wisp Silver
+Ether
+Fire Stone
+Chaos Crystal
+Bed of Thorn
+Hairball
+Mangoelephant
+Mangoelephant
+Vampire Fang
+Vampire Fang
+Bellgrapes
+Bellgrapes
+Bellgrapes
+Bellgrapes
+White Feather
+Moth Wing
+
+22
+37
+17 107 107 67 23 98 71 114 20 53 25 38 50 18 12 104 67 67 24 10 19 10 84 9 9 96 17 24 115 114 35 35 77 77 33 33 33 91 89
+
+
+Final Stats:
+Defenses:
+0/0/0/5
+Essences:
+3/3/3/3
+3/3/3/3
+Bonuses:
++3/+3/+3/+3
++3/+3/+3/+3
+Immunities:
+Sl Po -- Co
+-- Pe Fl Fr
+Effect:
+Move HP Regen
+Mystic Cards:
+Nymph of the Sky
+Spirit of Housework
+Bed of Thorn

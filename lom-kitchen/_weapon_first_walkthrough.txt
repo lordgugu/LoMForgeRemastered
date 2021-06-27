@@ -1,0 +1,185 @@
+This isn't a very good walkthrough yet because a lot of it won't make sense if this
+is your first time through the game, but I'll work on that.
+
+
+------------------- 
+|17|14|  |  |  |  |
+|__|__|__|__|__|__|
+|~~~~|13|15|  |  |  |
+|__|__|__|__|__|__|
+|  |12|  |  |  |~~~~|
+|__|__|__|__|__|__|
+|  |11|16|  | 8| 6|
+|__|__|__|__|__|__|
+|  |10|  | 9|  | 2|
+|__|__|__|__|__|__| 
+|  | 7| 5| 4| 3| 1|
+|__|__|__|__|__|__|
+
+
+1 Mailbox
+
+2 Colorblocks
+  get niccolo + Wheel
+
+3 Wheel
+  "Niccolo's Business Unusual" get Flame + Medallion, equip pot
+  <-Domina- get deana
+  "Geaus' Wisdom" equip ForbiddenRing
+  <-Home- "Mana Orchards" grow orange (small or oblong+crooked)
+
+<-Domina- "Little Sorcerors" get bud + lisa
+<-Domina- "Monster Corral" get rabite
+
+4 Medallion
+  "Huntin' Du'Cate" get Sand Rose + Ancient Tablet
+
+5 Ancient Tablet
+  "Teatime of Danger" get Bottled Spirit + Rusty Anchor
+
+6 Rusty Anchor
+
+7 Bottled Spirit
+  "Mine Your Own Business" get Moon's Mirror + Torch of Coral
+  "Watts drops the hammer"
+  <-Home- "Blacksmithing 101" improve ForbiddenRing
+
+8 Torch of Coral
+
+9 Moon's Mirror
+
+10 Flame
+
+11 Sand Rose
+  "Reach for the Stars" get Broken Doll
+  <-Home- "Music 101"
+
+<-Domina- get elazul + Jade Egg
+
+12 Jade Egg
+  "The Lost Princess" get Stone Eye + Firefly Lamp
+
+13 Broken Doll
+  "The Infernal Doll" get Tome of Magic
+
+14 Firefly Lamp
+  "Faeries' Light" get Trembling Spoon
+
+15 Stone Eye
+
+16 Trembling Spoon
+
+17 Tome of Magic
+
+*** MAKE WEAPON ***
+Have wisp+aura+sala silver from "Music 101"
+Have sharp claw and acid from the jungle
+<-Domina- buy 1 wind, 1 water, and 1 earth stone
+<-Gato- buy 6 sulpher + 5 mercury (don't finish the quest you start there yet)
+<-Lumina- buy 1 holy water, 1 chaos crystal
+<-Geo- buy Altena  Felt, 56 power flute
+<-Junkyard- play for a shade silver (maybe pick up a polter box while you're there)
+Grow 3 bumpkin
+Get 1 non-spiny seed and 1 spiny seed
+Get 14 flaming quills from cocatrice/chocobos
+Get 17 meats
+
+aura silver
+mercury
+mercury
+water stone __fq
+seed _________m m m m fq fq
+sulpher
+sulpher
+earth stone __m fq fq
+mercury ______m m m fq fq
+mercury
+shade silver
+sulpher ______m m m fq fq
+sulpher
+wisp silver
+wind stone ___m m m fq fq
+mercury
+chaos crystal
+sala silver __m m fq fq
+sulpher
+sulpher ______acid
+flaming quill
+spiny seed
+bumpkin
+bumpkin
+bumpkin ______m
+holy water ___sharp claw
+
+If you make a spear it will be attack power 595 with +9 to all stats.
+It works well on other sharp weapons.
+knife 504
+2H sword 459
+2H axe 459
+bow 458
+sword 367
+
+
+------------------- 
+|17|14|  |  |  |  |
+|__|__|__|__|__|__|
+|~~~~|13|15|  |  |  |
+|__|__|__|__|__|__|
+|  |12|  |  |  |~~~~|
+|__|__|__|__|__|__|
+|  |11|16|  | 8| 6|
+|__|__|__|__|__|__|
+|  |10|  | 9|  | 2|
+|__|__|__|__|__|__| 
+|  | 7| 5| 4| 3| 1|
+|__|__|__|__|__|__|
+
+1 mailbox
+2 colorblocks
+3 wheel (flame, medallion)
+4 medallion (flame, sand rose, ancient tablet)
+5 ancient tablet (flame, sand rose, bottled spirit, rusty anchor)
+6 rusty anchor <8> lvl1 shop
+7 bottled spirit (flame, sand rose, moons mirror, torch of coral)
+8 torch of coral
+9 moons mirror
+10 flame <15> lvl2 shop
+11 sand rose (broken doll)
+12 jade egg (broken doll, stone eye, firefly lamp)
+13 broken doll (stone eye, firefly lamp, tome of magic)
+14 firefly lamp <23> lvl3 shop (stone eye, tome of magic, trembling spoon)
+15 stone eye
+16 trembling spoon
+17 tome of magic <27> lvl4 shop
+
+
+
+------------------- 
+|**|**|  |  |  |  |
+|__|__|__|__|__|__|
+|24|**|**|18|  |  |
+|__|__|__|__|__|__|
+|25|**|26|19|20|~~~~|
+|__|__|__|__|__|__|
+|  |**|**|21|**|**|
+|__|__|__|__|__|__|
+|  |**|22|**|23|**|
+|__|__|__|__|__|__| 
+|  |**|**|**|**|**|
+|__|__|__|__|__|__|
+
+18 jumi staff
+19 golden seed
+20 brooch of love
+21 sword of mana
+22 skull lantern
+23 dragonbone
+24 pirates hook
+25 green cane
+26 frozen heart
+
+Thanks to Locarte for the suggestion of using Altena Felt
+instead of Lorimar Iron which gave a 50% boost in power.
+
+*CONTACT*
+jonh @ polter . net

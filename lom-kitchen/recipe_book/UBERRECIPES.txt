@@ -1,0 +1,527 @@
+NOTE: The Dragonscales Recipe has some problems with Stones and Coins.  If a particular step isn't working, try it again, but replace Mana Stones with Silver Coins, and Silver Coins with Gold Coins, and please post a message telling me, so I can fix this recipe!  Once this is completed, varnish appropriately.
+
+DragonScales Recipe
+A 0-0-0-0-9-0-0-0
+firestone
+sulpher
+glow crystal
+sulpher
+sala silver
+4x glow crystal
+2x sulpher
+firestone
+glow crystal
+B 0-0-0-9-9-0-0-0
+aura silver
+glow crystal
+aura silver
+mercury
+4x glow crystal
+2x mercury
+aura silver
+glow crystal
+C 0-0-9-9-9-0-0-0
+any seed
+glow crystal
+dryad silver
+sulpher
+4x glow crystal
+2x sulpher
+any seed
+glow crystal
+D 0-1-9-10-8-0-0-1
+spiny carrot
+moon crystal
+mercury
+garlicrown
+E 0-1-10-9-9-0-0-0
+mirror piece
+firestone
+sulpher
+honey onion
+F 0-1-8-11-9-0-0-0
+mercury
+garlicrown
+mercury
+garlicrown
+G 1-1-9-10-11-0-0-0
+mirror piece
+2x firestone
+sulpher
+any seed
+sun crystal
+H 1-2-11-10-10-0-0-1
+any seed
+mercury
+spiny carrot
+chaos crystal
+moon crystal
+I 2-2-10-11-12-0-0-0
+2x mercury
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+sun crystal
+J 2-3-12-11-11-0-0-1
+any seed
+mercury
+spiny carrot
+chaos crystal
+moon crystal
+K 3-3-11-12-13-0-0-0
+mercury
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+sun crystal
+L 3-4-13-12-12-0-0-1
+any seed
+mercury
+spiny carrot
+chaos crystal
+shade gold
+3x mercury
+M 4-4-12-13-14-0-0-0
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+wisp gold
+N 4-5-14-13-13-0-0-1
+sulpher
+2x any seed
+mercury
+spiny carrot
+shade silver
+chaos crystal
+gold clover
+O 4-5-13-14-15-0-0-0
+2x mercury
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+P 5-5-15-14-14-0-0-1
+glow crystal
+wisp silver
+sulpher
+2x any seed
+firestone
+spiny carrot
+Q 0-8-15-14-13-1-0-0
+mirror piece
+3x shade silver
+earthstone
+R 0-12-15-14-13-1-0-0
+mercury
+2x shade silver
+garlicrown
+mirror piece
+2x shade silver
+sulpher
+any seed
+S 0-14-15-14-13-1-0-0
+mercury
+shade silver
+garlicrown
+mirror piece
+shade silver
+sulpher
+honey onion
+T 0-15-14-15-13-1-0-0
+mercury
+shade silver
+garlicrown
+U 10-15-14-15-11-0-0-2
+2x glow crystal
+2x wisp silver
+glow crystal
+firestone
+2x spiny carrot
+sulpher
+V 13-15-14-15-12-0-0-1
+mirror piece
+firestone
+sulpher
+firestone
+any seed
+2x wisp silver
+2x mercury
+spiny carrot
+garlicrown
+W 13-15-14-15-14-0-0-0
+mirror piece
+2x firestone
+sulpher
+any seed
+mercury
+garlicrown
+X 13-15-15-14-15-0-0-0
+mirror piece
+firestone
+2x sulpher
+any seed
+wisp silver
+Y 14-15-14-15-0-0-0-10
+2x waterstone
+mercury
+2x waterstone
+mercury
+garlicrown
+Z 14-15-14-15-0-9-0-10
+earthstone
+sulpher
+glow crystal
+sulpher
+earthstone
+4x glow crystal
+2x sulpher
+gnome silver
+glow crystal
+A 14-15-14-15-0-11-0-12
+mirror piece
+2x earthstone
+sulpher
+any seed
+mercury
+2x waterstone
+garlicrown
+B 14-15-14-15-0-13-0-14
+mirror piece
+2x earthstone
+sulpher
+any seed
+mercury
+2x waterstone
+garlicrown
+C 14-15-14-15-0-14-0-15
+mirror piece
+earthstone
+sulpher
+honey onion
+mercury
+waterstone
+garlicrown
+D 15-15-14-15-0-15-0-15
+mirror piece
+earthstone
+sulpher
+honey onion
+mercury
+sulpher
+wisp silver
+garlicrown
+E 15-15-14-15-0-15-9-15
+glow crystal
+chaos crystal
+windstone
+jinn silver
+mercury
+3x glow crystal
+jinn silver
+chaos crystal
+mercury
+glow crystal
+mercury
+jinn silver
+4x glow crystal
+chaos crystal
+2x mercury
+jinn gold
+F 15-15-14-15-9-15-9-15
+glow crystal
+chaos crystal
+2x sala silver
+sulpher
+3x glow crystal
+sala silver
+chaos crystal
+sulpher
+glow crystal
+sulpher
+sala silver
+4x glow crystal
+chaos crystal
+2x sulpher
+sala gold
+
+Need:
+15 Mirror Piece
+46 Glow Crystal
+10 Chaos Crystal
+3 Sun Crystal
+3 Moon Crystal
+18 FireStone
+9 WaterStone
+9 EarthStone
+1 WindStone
+5 Sala Silver
+1 Sala Gold
+3 Aura Silver
+1 Dryad Silver
+1 Gnome Silver
+3 Jinn Silver
+1 Jinn Gold
+11 Shade Silver
+1 Shade Gold
+7 Wisp Silver
+1 Wisp Gold
+20 Any Seed
+36 Sulphur
+34 Mercury
+19 Garlicrown
+4 Honey Onion
+9 Spiny Carrot
+1 Gold Clover
+
+
+Dior Wood Recipe
+A 0-0-9-0-0-0-0-0
+5x glow crystal
+2x sulpher
+2x glow crystal
+B 0-0-9-9-0-0-0-0
+aura silver
+mercury
+aura silver
+4x glow crystal
+2x mercury
+aura silver
+4x glow crystal
+3x mercury
+aura silver
+4x glow crystal
+3x mercury
+aura gold
+glow crystal
+C 0-0-9-9-0-0-0-9
+waterstone
+glow crystal
+undine silver
+mercury
+4x glow crystal
+2x mercury
+waterstone
+glow crystal
+D 0-0-11-9-1-0-0-8
+mirror piece
+any seed
+2x sulpher
+firestone
+E 0-0-11-9-0-0-0-9
+4x glow crystal
+2x mercury
+waterstone
+glow crystal
+F 0-1-10-11-0-0-0-9
+mirror piece
+aura silver
+2x mercury
+sala silver
+moon crystal
+waterstone
+2x mercury
+garlicrown
+G 1-1-10-11-0-0-0-12
+needle
+mirror piece
+2x mercury
+2x waterstone
+2x mercury
+garlicrown
+sun crystal
+H 1-1-13-12-2-0-0-10
+mirror piece
+aura silver
+2x mercury
+firstone
+2x any seed
+mirror piece
+any seed
+2x sulpher
+firestone
+I 1-2-12-13-0-0-0-11
+chaos crystal
+moon crystal
+aura silver
+2x mercury
+waterstone
+spiny carrot
+J 2-2-12-13-0-0-0-14
+needle
+mirror piece
+sulpher
+mercury
+2x waterstone
+2x mercury
+garlicrown
+sun crystal
+K 2-2-15-14-2-0-0-12
+mirror piece
+aura silver
+2x mercury
+firestone
+2x any seed
+mirror piece
+any seed
+2x sulpher
+firestone
+L 2-3-14-15-0-0-0-13
+chaos crystal
+moon crystal
+aura silver
+2x mercury
+waterstone
+spiny carrot
+M 0-7-14-15-0-0-0-14
+needle
+mirror piece
+waterstone
+3x shade silver
+2x mercury
+garlicrown
+N 0-11-14-15-0-0-0-15
+needle
+mirror piece
+4x shade silver
+waterstone
+2x mercury
+garlicrown
+O 0-14-14-15-0-0-0-15
+needle
+mirror piece
+3x shade silver
+firestone
+waterstone
+2x mercury
+garlicrown
+P 0-15-15-14-0-0-0-15
+needle
+mirror piece
+2x sulpher
+mercury
+mush-in-a-box
+Q 6-15-14-15-0-0-0-15
+2x glow crystal
+2x wisp silver
+2x glow crystal
+sulpher
+wisp silver
+R 10-15-14-15-0-0-4-14
+chaos crystal
+any seed
+windstone
+2x wisp silver
+2x mercury
+garlicrown
+S 10-15-15-14-0-0-2-15
+needle
+mirror piece
+waterstone
+sulpher
+mercury
+waterstone
+T 14-15-14-15-0-0-4-13
+wisp silver
+2x mercury
+garlicrown
+3x wisp silver
+windstone
+chaos crystal
+U 14-15-14-15-0-9-0-13
+earthstone
+sulpher
+glow crystal
+sulpher
+earthstone
+4x glow crystal
+2x sulpher
+gnome silver
+glow crystal
+V 14-15-14-15-0-13-0-14
+needle
+mirror piece
+4x earthstone
+waterstone
+2x mercury
+garlicrown
+W 14-15-14-15-0-15-0-15
+needle
+mirror piece
+2x sulpher
+2x earthstone
+waterstone
+2x mercury
+garlicrown
+X 15-15-14-14-0-15-0-15
+needle
+mirror piece
+4x sulpher
+wisp silver
+garlicrown
+Y 15-15-14-14-0-15-9-15
+glow crystal
+chaos crystal
+windstone
+jinn silver
+mercury
+glow crystal
+chaos crystal
+windstone
+2x mercury
+4x glow crystal
+chaos crystal
+2x mercury
+windstone
+4x glow crystal
+chaos crystal
+2x mercury
+jinn gold
+Z 15-15-14-14-7-15-9-15
+firestone
+chaos crystal
+sulpher
+firestone
+acid
+glow crystal
+chaos crystal
+3x mercury
+sala silver
+4x glow crystal
+chaos crystal
+sulpher
+firestone
+
+Need:
+16 Mirror Piece
+51 Glow Crystal
+10 Chaos Crystal
+2 Sun Crystal
+3 Moon Crystal
+9 FireStone
+17 WaterStone
+5 WindStone
+8 EarthStone
+9 Aura Silver
+1 Aura Gold
+2 Sala Silver
+1 Gnome Silver
+1 Jinn Silver
+1 Jinn Gold
+1 Undine Silver
+10 Wisp Silver
+10 Shade Silver
+8 Any Seed
+55 Mercury
+27 Sulphur
+10 Needle
+1 Acid
+12 Garlicrown
+2 Spiny Carrot
+1 Mush-in-a-Box

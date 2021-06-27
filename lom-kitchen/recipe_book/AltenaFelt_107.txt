@@ -1,0 +1,519 @@
+Round Seed
+Sulpher
+Sulpher
+Glow Crystal
+Gold Clover
+Gold Clover
+Gold Clover
+Glow Crystal
+Glow Crystal
+Sulpher
+Sulpher
+Round Seed
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Sulpher
+Sulpher
+Dryad Silver
+Glow Crystal
+
+Aura Silver
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Aura Silver
+Mercury
+Mercury
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Mercury
+Mercury
+Mercury
+Aura Silver
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Mercury
+Mercury
+Mercury
+Aura Gold
+
+Fire Stone
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Sala Silver
+Sulpher
+Sulpher
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Sulpher
+Sulpher
+Sulpher
+Fire Stone
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Sulpher
+Sulpher
+Sulpher
+Sala Gold
+A<0-0-9-9-9-0-0-0
+
+Sun Crystal
+Fire Stone
+Sulpher
+Sulpher
+Honey Onion
+B<1-0-10-8-10-0-0-0
+
+Honey Onion
+C<1-0-11-7-10-0-0-0
+
+Aura Silver
+Aura Silver
+Chaos Crystal
+Moon Crystal
+D<1-1-11-7-10-0-0-0
+
+Spiny Carrot
+E<1-1-11-9-9-0-0-1
+
+Chaos Crystal
+Sun Crystal
+F<2-1-11-9-9-0-0-1
+
+Lilipods
+Lilipods
+Lilipods
+Mirror Piece
+Fire Stone
+Mercury
+Sulpher
+Aura Silver
+G<2-1-10-10-10-0-0-0
+
+Fire Stone
+Sulpher
+Sulpher
+Honey Onion
+Honey Onion
+Aura Silver
+Aura Silver
+Chaos Crystal
+Moon Crystal
+Spiny Carrot
+Chaos Crystal
+Sun Crystal
+Lilipods
+Lilipods
+Lilipods
+Mirror Piece
+Fire Stone
+Mercury
+Sulpher
+Aura Silver
+H<3-2-11-11-11-0-0-0
+
+Fire Stone
+Sulpher
+Sulpher
+Honey Onion
+Honey Onion
+Aura Silver
+Aura Silver
+Chaos Crystal
+Moon Crystal
+Spiny Carrot
+Chaos Crystal
+Wisp Gold
+Lilipods
+Lilipods
+Lilipods
+Mirror Piece
+Fire Stone
+Mercury
+Sulpher
+Aura Silver
+I<4-3-12-12-12-0-0-0
+
+Fire Stone
+Sulpher
+Sulpher
+Honey Onion
+Honey Onion
+Chaos Crystal
+Shade Gold
+Aura Silver
+Aura Silver
+Lilipods
+Spiny Carrot
+Chaos Crystal
+Glow Crystal
+Wisp Silver
+Lilipods
+Lilipods
+Lilipods
+Mirror Piece
+Fire Stone
+Mercury
+Sulpher
+Aura Silver
+J<5-4-13-13-13-0-0-0
+
+Fire Stone
+Sulpher
+Sulpher
+Honey Onion
+Honey Onion
+Chaos Crystal
+Glow Crystal
+Shade Silver
+Aura Silver
+Mercury
+Aura Silver
+Mercury
+Spiny Carrot
+Lilipods
+Spiny Carrot
+K<5-5-15-14-12-0-0-2
+
+Glow Crystal
+Sulpher
+Wisp Silver
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Sulpher
+Sulpher
+Wisp Silver
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Sulpher
+Sulpher
+Wisp Silver
+Wisp Gold
+L<9-0-15-14-12-0-0-2
+
+Lilipods
+Spiny Carrot
+M<11-0-15-14-11-0-0-3
+
+Mirror Piece
+Fire Stone
+Wisp Silver
+Mercury
+Aura Silver
+N<12-0-14-15-11-0-0-0
+
+Sulpher
+Wisp Silver
+Wisp Silver
+Honey Onion
+O<14-0-15-14-11-0-0-0
+
+Mirror Piece
+Sulpher
+Fire Stone
+Mercury
+Aura Silver
+P<14-0-14-15-12-0-0-0
+
+Sulpher
+Sulpher
+Wisp Silver
+Honey Onion
+Q<15-0-15-14-12-0-0-0
+
+Mercury
+Chaos Crystal
+Shade Silver
+Glow Crystal
+Gold Clover
+Gold Clover
+Gold Clover
+R<15-5-15-14-12-0-0-0
+
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Mercury
+Chaos Crystal
+Shade Silver
+Glow Crystal
+S<15-6-15-14-12-0-0-0
+
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Mercury
+Chaos Crystal
+Shade Silver
+Glow Crystal
+Glow Crystal
+Glow Crystal
+T<15-7-15-14-12-0-0-0
+
+Mirror Piece
+Shade Silver
+Mercury
+Garlicrown
+Earth Stone
+U<15-9-14-15-11-1-0-0
+
+Sulpher
+Fire Stone
+Fire Stone
+Honey Onion
+V<15-9-15-14-13-0-0-0
+
+Mirror Piece
+Shade Silver
+Mercury
+Garlicrown
+Earth Stone
+Sulpher
+Fire Stone
+Fire Stone
+Honey Onion
+W<15-11-15-14-14-0-0-0
+
+Mirror Piece
+Shade Silver
+Mercury
+Garlicrown
+Earth Stone 
+X<15-13-14-15-13-1-0-0
+
+Fire Stone
+Wind Stone
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Wind Stone
+Mercury
+Mercury
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Mercury
+Mercury
+Mercury
+Wind Stone
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Mercury
+Mercury
+Mercury
+Jinn Gold
+Y<15-13-14-15-13-0-9-0
+
+Wind Stone
+Wind Stone
+Honey Onion
+Z<15-13-15-14-13-0-12-0
+
+Mirror Piece
+Shade Silver
+Mercury
+Mercury
+Garlicrown
+a<15-14-14-15-13-0-12-0
+
+Sulpher
+Fire Stone
+Wind Stone
+Honey Onion
+b<15-14-15-14-14-0-13-0
+
+Mirror Piece
+Wind Stone
+Mercury
+Mercury
+Garlicrown
+Fire Stone
+Sulpher
+Sulpher
+Honey Onion
+c<15-14-15-14-15-0-14-0
+
+Mirror Piece
+Wind Stone
+Mercury
+Mercury
+Garlicrown
+Honey Onion
+d<15-14-15-14-15-0-15-0
+
+Mirror Piece
+Mercury
+Mercury
+Shade Silver
+Garlicrown
+e<15-15-14-15-15-0-15-0
+
+Glow Crystal
+Chaos Crystal
+Gnome Silver
+Gnome Silver
+Sulpher
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Gnome Silver
+Chaos Crystal
+Sulpher
+Glow Crystal
+Sulpher
+Earth Stone
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Chaos Crystal
+Sulpher
+Sulpher
+Gnome Gold
+
+Glow Crystal
+Chaos Crystal
+Undine Silver
+Undine Silver
+Mercury
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Undine Silver
+Chaos Crystal
+Mercury
+Glow Crystal
+Mercury
+Water Stone
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Glow Crystal
+Chaos Crystal
+Mercury
+Mercury
+Undine Gold
+f<15-15-14-15-15-9-15-9
+
+
+13 Mirror Piece
+78 Glow Crystal
+18 Chaos Crystal
+47 Sulpher
+43 Mercury
+15 Lilipods
+6 Gold Clover
+3 Sun Crystal
+8 Wisp Silver
+2 Wisp Gold
+3 Moon Crystal
+9 Shade Silver
+1 Shade Gold
+19 Aura Silver
+1 Aura Gold
+7 Garlicrown
+2 Round Seed
+1 Dryad Silver
+18 Honey Onion
+20 Fire Stone
+1 Sala Silver
+1 Sala Gold
+4 Earth Stone
+3 Gnome Silver
+1 Gnome Gold
+8 Wind Stone
+1 Jinn Gold
+1 Water Stone
+3 Undine Silver
+1 Undine Gold
+7 Spiny Carrot
+
+
+Knife AltenaFelt
+1 39
+<0-0-0-0-0-0-0-0
+25 107 107 23 67 67 67 23 23 107 107 25 23 23 23 107 107 11 23
+12 23 23 23 12 97 97 23 23 23 23 97 97 97 12 23 23 23 23 97 97 97 4
+17 23 23 23 13 107 107 23 23 23 23 107 107 107 17 23 23 23 23 107 107 107 5
+A<0-0-9-9-9-0-0-0
+21 17 107 107 51
+B<1-0-10-8-10-0-0-0
+51
+C<1-0-11-7-10-0-0-0
+12 12 24 22
+D<1-1-11-7-10-0-0-0
+53
+E<1-1-11-9-9-0-0-1
+24 21
+F<2-1-11-9-9-0-0-1
+60 60 60 116 17 97 107 12
+G<2-1-10-10-10-0-0-0
+17 107 107 51 51 12 12 24 22 53 24 21 60 60 60 116 17 97 107 12
+H<3-2-11-11-11-0-0-0
+17 107 107 51 51 12 12 24 22 53 24 1 60 60 60 116 17 97 107 12
+I<4-3-12-12-12-0-0-0
+17 107 107 51 51 24 2 12 12 60 53 24 23 9 60 60 60 116 17 97 107 12
+J<5-4-13-13-13-0-0-0
+17 107 107 51 51 24 23 10 12 97 12 97 53 60 53
+K<5-5-15-14-12-0-0-2
+23 107 9 23 23 23 107 107 9 23 23 23 107 107 9 1
+L<9-0-15-14-12-0-0-2
+60 53
+M<11-0-15-14-11-0-0-3
+116 17 9 97 12
+N<12-0-14-15-11-0-0-0
+107 9 9 51
+O<14-0-15-14-11-0-0-0
+116 107 17 97 12
+P<14-0-14-15-12-0-0-0
+107 107 9 51
+Q<15-0-15-14-12-0-0-0
+97 24 10 23 67 67 67
+R<15-5-15-14-12-0-0-0
+23 23 23 97 24 10 23
+S<15-6-15-14-12-0-0-0
+23 23 23 97 24 10 23 23 23
+T<15-7-15-14-12-0-0-0
+116 10 97 50 18
+U<15-9-14-15-11-1-0-0
+107 17 17 51
+V<15-9-15-14-13-0-0-0
+116 10 97 50 18 107 17 17 51
+W<15-11-15-14-14-0-0-0
+116 10 97 50 18 
+X<15-13-14-15-13-1-0-0
+17 19 23 23 23 19 97 97 23 23 23 23 97 97 97 19 23 23 23 23 97 97 97 7
+Y<15-13-14-15-13-0-9-0
+19 19 51
+Z<15-13-15-14-13-0-12-0
+116 10 97 97 50
+a<15-14-14-15-13-0-12-0
+107 17 19 51
+b<15-14-15-14-14-0-13-0
+116 19 97 97 50 17 107 107 51
+c<15-14-15-14-15-0-14-0
+116 19 97 97 50 51
+d<15-14-15-14-15-0-15-0
+116 97 97 10 50
+e<15-15-14-15-15-0-15-0
+23 24 14 14 107 23 23 23 14 24 107 23 107 18 23 23 23 23 24 107 107 6
+23 24 16 16 97 23 23 23 16 24 97 23 97 20 23 23 23 23 24 97 97 8
+f<15-15-14-15-15-9-15-9
+
+
+

@@ -1,0 +1,37 @@
+AdamPendant
+Shade Silver  [Sh1
+Aura Silver   [Sh2         Au1
+Gnome Silver  [Sh3         Au2
+Wisp Silver   [Sh3 Wi1     Au3     Gn1
+Undine Silver [Sh3 Wi2     Au3     Gn2     Un1
+Moth Wing     [Sh3 Wi3     Au3     Gn2     Un1
+Gnome Silver  [Sh3         Au3     Gn3     Un2
+Moth Wing     [Sh3         Au3     Gn3     Un3
+Chaos Crystal
+Jinn Silver   [Sh3 Wi3     Au3     Gn3 Ji1 Un3
+Moth Wing     [Sh3 Wi3     Au3     Gn3 Ji2 Un3
+Sala Silver   [Sh3 Wi3     Au3 Sa1 Gn3 Ji3 Un3
+Moth Wing     [Sh3 Wi3     Au3 Sa2 Gn3 Ji3 Un3
+Any Seed      [Sh3 Wi3 Dr1 Au3 Sa2 Gn3 Ji3 Un3
+Sulpher       [Sh3 Wi3 Dr2 Au3 Sa2 Gn3 Ji3 Un3
+Sulpher       [Sh3 Wi3 Dr3 Au3 Sa2 Gn3 Ji3 Un3
+Card-Item
+Wicked Eye    [Sh3 Wi3 Dr4 Au3 Sa2 Gn3 Ji3 Un3
+Wicked Eye    [Sh3 Wi3 Dr5 Au3 Sa2 Gn3 Ji3 Un3
+Virgin's Sigh [Extra Lucre effect
+Pine o' Clock [                    Slp
+Stinky Breath [Psn         Cnf
+Angry Eye     [Psn         Cnf
+Squalphin     [Psn         Cnf             Frz
+Fishy Fruit   [Psn         Cnf Fbt         Frz
+Ghost's Howl  [Psn         Cnf Fbt Slp     Frz
+Blackened Bat [Psn Drk     Cnf Fbt Slp     Frz
+Zombie Claw   [Psn Drk Prz Cnf Fbt Slp     Frz
+Spiny Seed
+Ghost's Howl  /POW DEX DEF INT CON CHM SPI LUK
+Dragon Blood* \+20 +20 +20 +20 +20 +20 +20 +20
+          x15
+Moth Wing**   [Psn Drk Prz Cnf Fbt Slp Pet Frz
+
+*or Toadstoolshed
+**or Creepy Eye

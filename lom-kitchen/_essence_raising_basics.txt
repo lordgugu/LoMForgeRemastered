@@ -1,0 +1,385 @@
+1. Coins Only
+    -Energy + Resistance + TP
+2. +Chaos Crystals
+    -Conflict
+3. +Glow Crystals
+    -Nymph of Dawn
+4. +Mercury/Sulpher
+    -Lowering Resistance
+    -Obsidian Tempering
+A. Item Table
+B. Card Table
+C. Resistance Table
+
+1. Coins Only
+  At first the only things which clearly helped raise essences were silver and
+gold coins. This could raise essences up to 4 but sometimes only 3. In order
+to raise an essence, energy and a taint point (TP) are needed. With enough
+energy an essence can be raised for each TP. How much energy is needed can be
+determined by the essences resistance. Now, we can look up the resistance in a
+table, but in the old days it was all trial and error. Whether something was
+called high or low resist was based only on if a method worked or not. Here is
+a partial energy chart. I've cut things off at 64, because thats how much
+energy is available from a gold coin.
+
+ 1  2  3  4
+10 20 40  -
+ 9 18 36  -
+ 8 16 32 64
+ 7 14 28 56
+ 6 12 24 48
+
+So, if the material had a resistance of 9 or 10 it could only get to essence
+level 3, but if it was a lower resist it could get to 4.
+
+Now for the recipe. Lets assume a resistance of 8.
+
+dryad silver [1]    (dryad)/    --/    --/ --
+dryad silver [2,3]  (dryad)/ dryad/    --/ --
+dryad gold   [4]    (dryad)/ dryad/ dryad/ --
+
+When the first silver coin is added is gives 48 energy and a dryad TP. Since
+only 8 energy is needed there is plenty to get from 0 to 1. When the second
+silver coin is added a dryad card is pushed on. This provides an additional TP
+so with enough energy dryad could go up two. To go from 1 to 3 we need 16 + 32
+energy, and thats exactly how much we have. When the gold coin is added
+another dryad card is pushed on, so three TP are available, but the 64 energy
+is only enough to raise dryad by one.
+
+An interesting thing would have happened if we had done this with wisp. Some
+cards need energy to be produced. All essence cards are like this, but wisp
+and shade are the only essences which can take energy before card checks. The
+effect of this is seen when the wisp gold doesn't produce a card. The gold
+coin has 64 energy and it takes 64 energy to raise wisp to 4. There is zero
+energy when the card check is made so the card isn't produced.
+
+wisp silver [1]    (wisp)/   --/ --/ --
+wisp silver [2,3]  (wisp)/ wisp/ --/ --
+wisp gold   [4]    (wisp)/ wisp/ --/ --
+
+
+2. +Chaos Crystals
+  If you started tempering the essences in order (wisp, shade, dryad, aura,
+sala, gnome, jinn, undine) you would find that shade, aura, gnome, and undine
+wouldn't rise. These essences are said to be in conflict. But its not quite
+that bad. As long as wisp and shade are equal, aura and dryad won't be in
+conflict. And as long as you raise shade before wisp there won't be a conflict
+there. Just don't raise wisp above shade or shade will drop to 0! So gnome
+and undine are the only two that are stuck in conflict. A chaos crystal can
+be used to produce an ancient moon card which allows conflicting essences to
+raise. That makes for a simple fix to the original formula.
+
+chaos crystal      (   AM)/    --/    --/ --
+gnome silver [1]   (gnome)/    AM/    --/ --
+gnome silver [2,3] (gnome)/ gnome/    AM/ --
+gnome gold   [4]   (gnome)/ gnome/ gnome/ AM
+
+But its not quite that simple. Ancient Moon is a "world" card, and these cards
+have some interesting properties. One is that they are in effect when they are
+visible, even the turn that they leave. Another is that they don't like to
+coexist. If you had added a chaos crystal after the gnome gold it wouldn't
+produce an ancient moon card. In general you need 4 cards between world cards
+in order for them both to appear.
+
+
+3. +Glow Crystals
+  Glow crystals are the most energetic card in the game at 96 energy. AND they
+produce the nymph of dawn card which gives up 196 energy when it comes off the
+item. So together that gets our max energy from 64 to 288.
+
+ 1  2  3  4   5   6
+10 20 40 80 160   -
+ 9 18 36 72 144 288
+ 8 16 32 64 128 256
+ 7 14 28 56 112 224
+ 6 12 24 48  96 192
+
+Here is a recipe.
+
+glow crystal       (  NoD)/    --/    --/    --
+glow crystal       (  NoD)/   NoD/    --/    --
+dryad silver [1]   (dryad)/   NoD/   NoD/    --
+dryad silver [2,3] (dryad)/ dryad/   NoD/   NoD
+glow crystal [4,5] (  NoD)/ dryad/ dryad/   NoD (NoD leaving)
+glow crystal [6]   (  NoD)/   NoD/ dryad/ dryad (NoD leaving)
+
+If dryad is resist 9 then the second dryad silver won't have enough energy to
+raise the 2 and 3. There are two ways to deal with that. Either use a dryad
+gold or use another glow crystal at the beginning.
+
+Recipe in conflict.
+
+chaos crystal     (    AM)/     --/     --/     --
+undine silver [1] (undine)/     AM/     --/     --
+glow crystal  [2] (   NoD)/ undine/     AM/     --
+glow crystal  [3] (   NoD)/    NoD/ undine/     AM
+glow crystal  [4] (   NoD)/    NoD/    NoD/ undine (AM leaving)
+chaos crystal     (    AM)/    NoD/    NoD/     -- (NoD leaving) ***
+undine silver     (undine)/     AM/    NoD/    NoD
+glow crystal  [5] (   NoD)/ undine/     AM/    NoD (NoD leaving)
+glow crystal  [6] (   NoD)/    NoD/ undine/     AM (NoD leaving)
+
+A nymph of dawn left when the chaos crystal was added. That is because chaos
+crystals only have 24 energy. When a NoD sees 24 or less energy she
+contributes her energy and leaves. This means only one NoD will leave a turn
+except in some strange wisp/shade setups.
+
+
+4. +Mercury/Sulpher
+  Sulpher produces the sorcerer card which reduces resistance on wisp, dryad,
+sala, and gnome. Mercury produces the witch card which reduces resistance on
+shade, aura, jinn, and gnome. The amount of the reduction is only suppose to
+be 75%, but the coders did something funky with integer math. Usually one
+would multiply by 3 then divide by 4, but our coders divided by 4 then
+multiplied by 3. Here is a chart of the difference. There is a minimum
+resistance of 1.
+
+start [*3 /4] [/4 *3] [*3/4]^2 [/4*3]^2 [*3/4]^3 [/4*3]^3
+11    8       6       6        3        4        1
+10    7       6       5        3        3        1
+9     6       6       4        3        3        1
+8     6       6       4        3        3        1
+7     5       3       3        1        2        1
+6     4       3       3        1        2        1
+5     3       3       2        1        1        1
+4     3       3       2        1        1        1
+3     2       1       1        1        1        1
+2     1       1       1        1        1        1
+1     1       1       1        1        1        1
+
+This gives the modern definition of high and low resist.
+
+      1card 2cards 3cards
+high
+8-11      6      3      1
+
+low
+5-7       3      1      1
+
+
+ 1  2  3  4   5   6   7   8   9
+11 22 44 88 176   -   -   -   -
+10 20 40 80 160   -   -   -   -
+ 9 18 36 72 144 288   -   -   -
+ 8 16 32 64 128 256   -   -   -
+ 7 14 28 56 112 224   -   -   -
+_6_12_24_48__96_192___-___-___-
+ 5 10 20 40  80 160   -   -   -
+_3__6_12_24__48__96_192___-___-
+_1__2__4__8__16__32__64_128_256
+
+So through careful use of coins, glow crystals and mercury/sulpher we can get
+up to 9s. One thing which complicates matters is that mercury and sulpher only
+have 24 energy. Wisp and shade can only benefit from wizard cards if they are
+cards and the wizard cards occur before them (lower on the list).
+
+Low Resist
+
+sala silver  [1] (sala)/   --/   --/   --
+glow crystal [2] ( NoD)/ sala/   --/   --
+glow crystal [3] ( NoD)/  NoD/ sala/   --
+glow crystal [4] ( NoD)/  NoD/  NoD/ sala
+sala silver      (sala)/  NoD/  NoD/  NoD
+sulpher      [5] (sorc)/ sala/  NoD/  NoD (leaving NoD)
+sulpher      [6] (sorc)/ sorc/ sala/  NoD (leaving NoD)
+glow crystal [7] ( NoD)/ sorc/ sorc/ sala (leaving NoD)
+glow crystal     ( NoD)/  NoD/ sorc/ sorc
+glow crystal     ( NoD)/  NoD/  NoD/ sorc
+glow crystal     ( NoD)/  NoD/  NoD/  NoD
+sulpher          (sorc)/  NoD/  NoD/  NoD (leaving NoD)
+sulpher          (sorc)/ sorc/  NoD/  NoD (leaving NoD)
+sala silver  [8] (sala)/ sorc/ sorc/  NoD (leaving NoD)
+glow crystal [9] ( NoD)/ sala/ sorc/ sorc (leaving NoD)
+
+
+Here are some more examples in a full obsidian tempering.
+
+ 8  6  9  7  7  6 10  8 | Obsidian
+
+Since wisp and shade have different resistances we'll temper dryad and aura
+before them to avoid conflicts.
+
+-dryad  (high resist)
+
+dryad
+3 glow
+dryad
+2 sulpher
+4 glow
+3 sulpher
+dryad
+4 glow
+3 sulpher
+dryad gold
+
+-aura   (low resist)
+
+aura
+3 glow
+aura
+2 mercury
+4 glow
+2 mercury
+aura
+glow
+
+-jinn   (high resist)
+
+jinn
+3 glow
+jinn
+2 mercury
+4 glow
+3 mercury
+jinn
+4 glow
+3 mercury
+jinn gold
+
+-sala   (low resist)
+
+sala
+3 glow
+sala
+2 sulpher
+4 glow
+2 sulpher
+sala
+glow
+
+-shade  (low resist)
+
+glow (from previous step)
+2 shade
+glow
+mercury
+shade
+3 glow
+2 mercury
+shade
+3 glow
+2 mercury
+shade
+glow
+
+-wisp   (high resist)(only gets to 7)
+
+2 glow (1 from previous step)
+2 wisp
+3 glow
+2 sulpher
+wisp
+glow
+
+-gnome  (low resist conflict)
+
+glow (from previous step)
+chaos
+2 gnome
+sulpher
+3 glow
+gnome
+chaos
+sulpher
+glow
+sulpher
+earth stone
+4 glow
+chaos
+2 sulpher
+gnome gold
+
+-undine (high resist conflict)(only gets to 7)
+
+lilipod (need 4 cards between ancient moons)
+chaos
+undine
+3 glow
+chaos
+undine
+4 glow
+2 mercury
+chaos
+undine
+
+
+A. Item Table
+______________Energy_|_Card_Produced_|_Comments
+Silver Coin   |   48 | same as coin  | has TP of essence
+Gold Coin     |   64 | same as coin  | has TP of essence
+Chaos Crystal |   24 | Ancient Moon  | AM won't form if another is present
+Glow Crystal  |   96 | Nymph of Dawn |
+Mercury       |   24 | Witch         |
+Sulpher       |   24 | Sorcerer      |
+
+
+B. Card Table
+______________|_Comments
+Essence       | has TP of essence
+Ancient Moon  | prevents conflict/consumption, in effect the turn it leaves
+Nymph of Dawn | produces 192 energy when it leaves, also leaves if <=24 energy
+Witch         | reduces resistance of shade, aura, jinn, and undine
+Sorcerer      | reduces resistance of wisp, dryad, sala, and gnome
+
+
+C. Resistance Table (from material.txt)
+
+Wi_Sh_Dr_Au_Sa_Gn_Ji_Un_|______________
+ 8  8  8  8  8  8  8  8 | MenosBronze
+ 9  9  9  9  9  9  9  9 | ForsenaIron
+ 9  9  9  9  9  9  9  9 | GranzSteel
+ 8  6  7  7  7  7  7  7 | LorantSilver
+ 9  7  8  8  8  8  8  8 | WendelSilver
+ 7  9  9  9  9  9  9  9 | VizelGold
+ 7  7  8  8  8  8  8  8 | IshePlatinum
+ 7  9  9  9  9  9  9  9 | LorimarIron
+10 10 10 10 10 10 10 10 | AltenaAlloy
+32 32 32 32 32 32 32 32 | MaiaLead
+ 8  8  7 10  7  9  6  8 | Orihalcon
+ 7  8  6  9 10  7  7  7 | OakWood
+ 7  8  6  9 10  7  7  7 | HollyWood
+ 7  8  6  9 10  7  7  7 | BaobabWood
+ 7  8  6  9 10  7  7  7 | EbonyWood
+ 7  8  6  9 10  7  7  7 | MapleWood
+ 7  8  5  9 10  7  7  7 | DiorWood
+ 7  8  6  9 10  7  7  7 | AshWood
+ 7  6  6  9 10  6  7  7 | FossilWood
+ 7  8  9  7  7  6 10  7 | Marble
+ 8  6  9  7  7  6 10  8 | Obsidian
+ 7  8  9  7  7  7 11  7 | PedanStone
+ 8  8  9  7 10  6 10  6 | Gaeus'sTears
+ 8  8  7  9  9  7  7  7 | AnimalHide
+ 8  8  7  9  9  8  8  6 | GatorSkin
+ 8  8  9  7  8  7  8  8 | CentaurHide
+ 8  8  7  9  5 10  5 10 | DragonSkin
+ 8  8  8  8  8  8  8  6 | FishScales
+ 7  9  8  8  7  8  8  9 | LizardScales
+ 9  7  8  8  8  7  8  7 | SnakeScales
+ 7  7  7  7  6  7  7  7 | DragonScales
+ 9  6  8  8  8  8  8  8 | AnimalBone
+ 7  6  7  7  8  6  7  7 | Ivory
+ 9  5  9  7  9  7  9  7 | CursedBone
+ 9  6  8  8 10  6 10  6 | Fossil
+ 6  8  6 10 10  7  7  6 | ToppleCotton
+ 6  8  6 10 10  7  7  6 | Sultan'sSilk
+10  6  6 10 10  7  7  6 | JuddHemp
+ 7  7  7  9 10  7  7  6 | AltenaFelt
+ 7  8 10  7  7  8  9  8 | JacobiniRock
+ 7  8 10  7  7  8  9  8 | HalleyRock
+ 7  8 10  7  7  8  9  8 | AnkhRock
+ 7  8 10  7  7  8  9  8 | VinekRock
+ 7  8 10  7  7  8  9  8 | TuttleRock
+ 7  8 10  7  7  8  9  8 | NemesisRock
+ 7  8 10  7  7  8  9  8 | BiellaRock
+ 7  8 10  7  7  8  9  8 | SwifteRock
+ 8  8  8  8  8  8  8  8 | Adamantite
+ 8  8  8  8  8  8  8  8 | Fullmetal
+ 9  6  7  7  9  7  9  5 | Coral
+ 8  8  9  7  9  8  9  7 | TortoiseShell
+ 8  7  9  8  9  7  9  6 | Shell
+ 8  8  8  8  8  8  8  8 | Emerald
+ 8  8  8  8  8  8  8  8 | Pearl
+ 8  8  8  8  8  8  8  8 | LapisLazuli
+
+
+biqutS ( jonh @ polter . net ) April 2004

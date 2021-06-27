@@ -1,0 +1,621 @@
+This was completely inspired by ekm3777 / Locarte
+The main differences from what he described are that I used LOTS
+of consumptions at the beginning to save a few mirror pieces and
+I managed to only stop at wisp/shade=13 instead of 11 and 14.
+
+meat
+4 glow
+2 sulpher
+aura
+glow
+0 0 9 2 0 0 0 0
+gnome
+3 glow
+gnome
+2 sulpher
+aura
+4 glow
+2 sulpher
+gnome
+glow
+0 0 9 5 0 9 0 0
+2 sulpher
+2 sala
+aura
+0 0 11 6 5 4 0 0
+sala
+undine
+3 glow
+undine
+2 merc
+4 glow
+2 merc
+undine
+glow
+0 0 11 6 0 0 0 9
+2 glow
+chaos
+glow
+2 sulpher
+jinn
+glow
+aura
+0 0 12 7 0 0 2 7
+3 glow
+jinn
+2 merc
+4 glow
+2 merc
+jinn
+glow
+0 0 12 7 0 0 9 0
+chaos
+2 undine
+4 glow
+merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine gold
+0 0 12 7 0 0 9 9
+jinn
+2 merc
+jinn
+0 0 12 7 0 0 11 7
+chaos
+glow
+merc
+water
+4 glow
+2 merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine gold
+0 0 12 7 0 0 11 9
+jinn
+2 merc
+jinn
+0 0 12 7 0 0 12 7
+2 jinn
+2 sulpher
+2 gnome
+aura
+0 0 14 8 0 5 7 0
+4 glow
+2 sulpher
+gnome
+glow
+0 0 14 8 0 9 0 0
+chaos
+2 jinn
+4 glow
+merc
+chaos
+jinn
+4 glow
+2 merc
+chaos
+jinn
+4 glow
+2 merc
+chaos
+jinn gold
+gnome
+2 sulpher
+gnome
+chaos
+glow
+merc
+wind
+4 glow
+2 merc
+chaos
+jinn
+4 glow
+2 merc
+chaos
+jinn gold
+2 sulpher
+3 gnome
+meat
+chaos
+meat
+sala
+2 sulpher
+sala
+0 0 15 8 5 10 0 0
+chaos
+4 glow
+3 merc
+aura gold
+sala
+0 0 15 10 6 8 0 0
+sala
+sala
+chaos
+undine
+2 merc
+fishy fruit
+4 glow
+merc
+chaos
+undine
+4 glow
+merc
+chaos
+merc
+undine
+2 merc
+undine
+0 0 15 10 5 0 0 10
+undine
+2 merc
+aura
+jinn
+0 0 15 11 0 0 1 9
+merc
+2 jinn
+4 glow (100 already)
+2 merc
+jinn
+glow
+0 0 15 11 0 0 9 0
+chaos
+2 undine
+4 glow
+merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine gold
+jinn
+2 merc
+jinn
+0 0 15 11 0 0 11 7
+jinn
+2 merc
+aura
+gnome
+0 0 15 12 0 1 10 0
+chaos
+gnome
+2 sulpher
+4 glow
+sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+gnome
+2 sulpher
+gnome
+chaos
+glow
+merc
+wind
+4 glow
+2 merc
+chaos
+jinn
+4 glow
+2 merc
+chaos
+jinn gold
+gnome
+2 sulpher
+gnome
+0 0 15 12 0 12 7 0
+gnome
+2 merc
+aura
+sala
+0 0 15 13 1 11 0 0
+chaos
+sala
+2 sulpher
+glow
+chaos
+sala
+2 sulpher
+4 glow
+2 sulpher
+chaos
+3 sala
+sulpher
+sala
+0 0 15 13 10 7 0 0
+chaos
+4 glow
+chaos
+sulpher
+gnome
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+3 sulpher
+sala
+0 0 15 13 11 8 0 0
+moon
+2 sulpher
+sala
+garlicrown
+0 1 14 14 12 3 0 0
+3 merc
+garlicrown
+0 1 13 15 12 1 0 0
+2 sulpher
+sala
+garlicrown
+sun
+1 1 12 15 13 0 0 0
+2 sulpher
+sala
+fishy fruit
+mirror
+meat
+1 1 13 15 13 0 0 0
+2 sulpher
+sala
+fishy fruit
+mirror
+meat
+2 sulpher
+sala
+fishy fruit
+mirror
+meat
+1 1 15 15 13 0 0 0
+3 meat
+chaos
+moon
+2 sulpher
+sala
+garlicrown
+sun
+2 2 14 15 14 0 0 0
+2 sulpher
+sala
+fishy fruit
+mirror
+meat
+2 2 15 15 14 0 0 0
+3 meat
+chaos
+moon
+2 sulpher
+sala
+garlicrown
+sun
+3 3 14 15 15 0 0 0
+2 sulpher
+sala
+fishy fruit
+mirror
+meat
+3 3 15 15 15 0 0 0
+merc
+shade
+glow
+0 4 15 15 15 0 0 0
+merc
+shade
+3 glow
+2 merc
+shade
+glow
+0 7 15 15 15 0 0 0
+chaos
+2 gnome
+4 glow
+sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+0 7 15 15 15 9 0 0
+sala
+merc
+shade
+2 merc
+shade
+sala
+0 9 15 15 15 7 0 0
+chaos
+glow
+sulpher
+earth
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+2 merc
+shade
+sala
+0 10 15 15 15 8 0 0
+chaos
+meat
+3 shade
+garlicrown
+0 13 14 15 15 7 0 0
+wisp
+2 glow
+sulpher
+wisp
+glow
+sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+9 13 14 15 15 9 0 0
+sala
+sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+sala
+11 13 14 15 15 7 0 0
+chaos
+glow
+sulpher
+earth
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+3 glow
+2 sulpher
+wisp
+sala gold
+12 13 14 15 15 8 0 0
+sala
+sulpher
+sala
+wisp
+fishy fruit
+13 13 14 15 15 0 0 1
+mirror
+meat
+2 sulpher
+sala
+fishy fruit
+mirror
+shade
+13 13 15 15 15 0 0 0
+sulpher
+sala
+gnome
+0 14 15 15 15 1 0 0
+2 merc
+shade
+garlicrown
+0 15 14 15 15 0 0 0
+wisp
+2 glow
+sulpher
+wisp
+glow
+sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+glow
+chaos
+2 gnome
+4 glow
+sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+9 15 14 15 15 9 0 0
+sala
+sulpher
+wisp
+3 glow
+2 sulpher
+wisp
+sala
+11 15 14 15 15 7 0 0
+chaos
+glow
+sulpher
+earth
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+3 glow
+2 sulpher
+wisp
+sala gold
+12 15 14 15 15 8 0 0
+sala
+sulpher
+2 wisp
+garlicrown
+14 15 13 15 15 1 0 0
+sulpher
+wisp
+sala
+fishy fruit
+mirror
+meat
+15 15 13 15 15 0 0 0
+2 sulpher
+sala
+fishy fruit
+mirror
+meat
+2 sulpher
+sala
+fishy fruit
+15 15 15 15 15 0 0 1
+jinn
+3 glow
+jinn
+2 merc
+4 glow
+2 merc
+jinn
+glow
+chaos
+2 undine
+4 glow
+chaos
+merc
+undine
+4 glow
+2 merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine gold
+15 15 15 15 15 0 9 9
+jinn
+2 merc
+jinn
+chaos
+glow
+merc
+water
+4 glow
+2 merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine gold
+jinn
+2 merc
+jinn
+chaos
+glow
+merc
+water
+4 glow
+2 merc
+chaos
+undine
+4 glow
+2 merc
+chaos
+undine gold
+15 15 15 15 15 0 12 9
+3 meat
+chaos
+2 gnome
+4 glow
+sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome
+4 glow
+2 sulpher
+chaos
+gnome gold
+15 15 15 15 15 9 12 9
+
+~Material List~
+ 3 sun
+20 wisp
+ 3 moon
+11 shade
+ 8 garlicrown
+ 8 aura
+ 1 aura gold
+40 sala
+ 2 sala gold
+ 3 earth
+39 gnome
+ 9 gnome gold
+ 2 wind
+29 jinn
+ 3 jinn gold
+11 fishy fruit
+ 3 water
+23 undine
+ 6 undine gold
+ 9 mirror
+21 meat
+74 chaos
+100 mercury
+130 sulpher
+292 glow
+
+850 total
+
+
+

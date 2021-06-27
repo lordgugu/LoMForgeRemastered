@@ -1,0 +1,565 @@
+0-0-0-0-0-0-0-0
+moon crystal
+sun crystal
+1-1-0-0-0-0-0-0
+dryad
+3 glow
+dryad
+2 sulpher
+3 glow
+rocket
+2 sulpher
+dryad gold
+1-1-6-0-0-0-0-0
+aura
+3 glow
+aura
+2 mercury
+3 glow
+rocket
+2 mercury
+aura gold
+1-1-6-6-0-0-0-0
+sala
+3 glow
+sala
+2 sulpher
+3 glow
+rocket
+2 sulpher
+sala gold
+1-1-6-6-6-0-0-0
+sulpher
+rocket
+dryad
+glow
+spiny carrot
+1-1-7-6-5-0-0-0
+2 glow
+rocket
+2 sulpher
+sala gold
+1-1-7-6-6-0-0-0
+mercury
+rocket
+aura
+glow
+spiny carrot
+1-1-7-7-5-0-0-0
+2 glow
+rocket
+2 sulpher
+sala gold
+1-1-7-7-6-0-0-0
+3 glow
+chaos
+2 gnome
+3 glow
+rocket
+sulpher
+chaos
+gnome gold
+1-1-7-7-6-5-0-0
+rocket
+2 sulpher
+sala
+1-1-7-7-7-4-0-0
+chaos
+mercury
+rocket
+aura
+glow
+spiny carrot
+1-1-7-8-6-3-0-0
+chaos
+gnome
+3 glow
+rocket
+sulpher
+chaos
+gnome gold
+1-1-7-8-6-5-0-0
+rocket
+2 sulpher
+2 sala
+sulpher
+rocket
+dryad
+fishy
+1-1-8-8-6-0-0-1
+mirror
+sulpher
+sala
+shade
+gnome
+sun
+1-2-8-8-6-0-0-0
+rocket
+mercury
+garlicrown
+1-2-7-9-6-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+1-2-7-9-7-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+1-2-7-9-8-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+1-2-7-9-9-0-0-0
+wisp
+rocket
+mercury
+aura
+fishy
+2-2-7-10-8-0-0-1
+dryad
+fishy
+2-2-8-10-7-0-0-1
+mirror
+sulpher
+sala
+shade
+gnome
+0-3-8-10-7-1-0-0
+sun
+2 lili
+1-3-8-10-7-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+wisp
+rocket
+mercury
+aura
+fishy
+dryad
+fishy
+mirror
+sulpher
+sala
+shade
+gnome
+0-4-9-11-8-1-0-0
+sulpher
+wisp
+3 glow
+3-4-9-11-8-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+wisp
+rocket
+mercury
+aura
+fishy
+dryad
+fishy
+mirror
+sulpher
+sala
+shade
+gnome
+0-5-10-12-9-1-0-0
+3 glow
+wisp
+3 glow
+4-5-10-12-9-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+wisp
+rocket
+mercury
+aura
+fishy
+dryad
+fishy
+mirror
+sulpher
+sala
+shade
+gnome
+0-6-11-13-10-1-0-0
+3 glow
+wisp
+3 glow
+sulpher
+rocket
+wisp
+3 glow
+5-6-11-13-10-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+wisp
+rocket
+mercury
+aura
+fishy
+dryad
+fishy
+mirror
+sulpher
+sala
+shade
+gnome
+0-7-12-14-11-1-0-0
+2 glow
+wisp gold
+3 glow
+rocket
+sulpher
+wisp
+sala gold
+fishy
+6-7-12-14-11-0-0-1
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+wisp
+rocket
+mercury
+aura
+fishy
+dryad
+fishy
+mirror
+sulpher
+sala
+shade
+gnome
+0-8-13-15-12-1-0-0
+2 glow
+wisp gold
+3 glow
+sulpher
+rocket
+wisp
+dragon blood
+lilipod
+5-8-13-15-12-0-0-0
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+mirror
+sala
+sulpher
+rocket
+honey onion
+mercury
+garlic
+5-8-13-15-14-0-0-0
+3 wisp
+fishy
+8-8-13-15-13-0-0-1
+sulpher
+rocket
+dryad
+fishy
+8-8-14-15-12-0-0-1
+sala
+mirror
+3 shade
+gnome
+0-11-14-15-11-1-0-0
+sala
+mirror
+sulpher
+sala
+honey
+mercury
+shade
+garlic
+0-12-14-15-12-0-0-0
+mirror
+sulpher
+sala
+honey
+mercury
+shade
+garlic
+0-13-14-15-13-0-0-0
+mirror
+2 sulpher
+sala
+honey
+2 mercury
+shade
+garlic
+0-14-14-15-14-0-0-0
+> Firestone   #nice improvement by tf_faq
+> Waterstone
+> Mercury
+> Shade Silver
+fishy
+0-15-14-15-12-0-0-1
+2 glow
+wisp gold
+3 glow
+sulpher
+rocket
+wisp
+wisp gold
+wisp
+2 fishy
+10-15-14-15-10-0-0-3
+mirror
+2 sala
+sulpher
+honey
+2 wisp
+merc
+garlic
+12-15-14-15-12-0-0-0
+mirror
+sala
+sulpher
+honey
+mercury
+wisp
+garlic
+13-15-14-15-13-0-0-0
+chaos
+undine
+mercury
+2 glow
+chaos
+undine
+3 glow
+rocket
+mercury
+chaos
+undine gold
+13-15-14-15-13-0-0-5
+sulpher
+rocket
+wisp
+undine
+14-15-14-15-12-0-0-5
+chaos
+lili
+4 undine
+14-15-14-15-7-0-0-10
+spiny carrot
+sulpher
+gnome
+3 glow
+rocket
+sulpher
+gnome
+3 glow
+rocket
+2 sulpher
+gnome gold
+14-15-14-15-0-6-0-10
+mirror
+2 gnome
+sulpher
+honey
+2 gnome
+mercury
+garlic
+14-15-14-15-0-10-0-10
+mirror
+2 gnome
+sulpher
+honey
+2 undine
+mercury
+garlic
+14-15-14-15-0-12-0-12
+mirror
+gnome
+sulpher
+honey
+undine
+mercury
+garlic
+14-15-14-15-0-13-0-13
+mirror
+gnome
+2 sulpher
+honey
+undine
+2 mercury
+garlic
+14-15-14-15-0-14-0-14
+mirror
+gnome
+sulpher
+rocket
+honey
+undine
+mercury
+rocket
+garlic
+14-15-14-15-0-15-0-15
+chaos
+sala
+sulpher
+2 glow
+chaos
+sala
+3 glow
+rocket
+sulpher
+chaos
+sala gold
+14-15-14-15-5-15-0-15
+3 glow
+chaos
+2 jinn
+glow
+14-15-14-15-5-15-4-15
+
+mirror
+honey
+3 lili
+wisp
+garlic
+15-15-14-14-5-15-4-15
+
+~~Item List
+
+10 aura silver
+ 1 aura gold
+13 chaos crystal
+ 1 dragon blood
+11 dryad silver
+ 1 dryad gold
+ 1 firestone
+19 fishy fruit
+32 garlicrown
+87 glow crystal
+22 gnome silver
+ 3 gnome gold
+31 honey onion
+ 2 jinn silver
+ 7 lilipod
+48 mercury
+39 mirror piece
+ 1 moon crystal
+52 rocket papaya
+42 sala silver
+ 5 sala gold
+14 shade silver
+ 4 spiny carrot
+72 sulpher
+ 3 sun crystal
+12 undine silver
+ 1 undine gold
+ 1 waterstone
+22 wisp silver
+ 4 wisp gold
+
+580 total

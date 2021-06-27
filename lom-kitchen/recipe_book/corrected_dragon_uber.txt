@@ -1,0 +1,354 @@
+NOTE: The Dragonscales Recipe has some problems with Stones and Coins.  If a particular step isn't working, try it again, but replace Mana Stones with Silver Coins, and Silver Coins with Gold Coins, and please post a message telling me, so I can fix this recipe!  Once this is completed, varnish appropriately.
+
+There are 6 errors, or basically 3 errors were a stone and silver coin
+got swapped in the instructions. (The totals are still the same)
+Search for ### to find the corrections.
+At the end is the recipe in a form that can be dumped directly into calc.exe
+
+DragonScales Recipe
+A 0-0-0-0-9-0-0-0
+firestone
+sulpher
+glow crystal
+sulpher
+sala silver
+4x glow crystal
+2x sulpher
+firestone
+glow crystal
+B 0-0-0-9-9-0-0-0
+aura silver
+glow crystal
+aura silver
+mercury
+4x glow crystal
+2x mercury
+aura silver
+glow crystal
+C 0-0-9-9-9-0-0-0
+any seed
+glow crystal
+dryad silver
+sulpher
+4x glow crystal
+2x sulpher
+any seed
+glow crystal
+D 0-1-9-10-8-0-0-1
+spiny carrot
+moon crystal
+mercury
+garlicrown
+E 0-1-10-9-9-0-0-0
+mirror piece
+firestone
+sulpher
+honey onion
+F 0-1-8-11-9-0-0-0
+mercury
+garlicrown
+mercury
+garlicrown
+G 1-1-9-10-11-0-0-0
+mirror piece
+2x firestone
+sulpher
+any seed
+sun crystal
+H 1-2-11-10-10-0-0-1
+any seed
+mercury
+spiny carrot
+chaos crystal
+moon crystal
+I 2-2-10-11-12-0-0-0
+2x mercury
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+sun crystal
+J 2-3-12-11-11-0-0-1
+any seed
+mercury
+spiny carrot
+chaos crystal
+moon crystal
+K 3-3-11-12-13-0-0-0
+mercury
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+sun crystal
+L 3-4-13-12-12-0-0-1
+any seed
+mercury
+spiny carrot
+chaos crystal
+shade gold
+3x mercury
+M 4-4-12-13-14-0-0-0
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+wisp gold
+N 4-5-14-13-13-0-0-1
+sulpher
+2x any seed
+mercury
+spiny carrot
+shade silver
+chaos crystal
+gold clover
+O 4-5-13-14-15-0-0-0
+2x mercury
+2x garlicrown
+mirror piece
+2x firestone
+sulpher
+any seed
+P 5-5-15-14-14-0-0-1
+glow crystal
+wisp silver
+sulpher
+2x any seed
+firestone
+spiny carrot
+Q 0-8-15-14-13-1-0-0
+mirror piece
+3x shade silver
+earthstone
+R 0-12-15-14-13-1-0-0
+mercury
+2x shade silver
+garlicrown
+mirror piece
+2x shade silver
+sulpher
+any seed
+S 0-14-15-14-13-1-0-0
+mercury
+shade silver
+garlicrown
+mirror piece
+shade silver
+sulpher
+honey onion
+T 0-15-14-15-13-1-0-0
+mercury
+shade silver
+garlicrown
+U 10-15-14-15-11-0-0-2
+2x glow crystal
+2x wisp silver
+glow crystal
+firestone ###should be sala silver
+2x spiny carrot
+sulpher
+V 13-15-14-15-12-0-0-1
+mirror piece
+firestone
+sulpher
+firestone
+any seed
+2x wisp silver
+2x mercury
+spiny carrot
+garlicrown
+W 13-15-14-15-14-0-0-0
+mirror piece
+2x firestone
+sulpher
+any seed
+mercury
+garlicrown
+X 13-15-15-14-15-0-0-0
+mirror piece
+firestone
+2x sulpher
+any seed
+wisp silver
+Y 14-15-14-15-0-0-0-10
+2x waterstone
+mercury
+2x waterstone
+mercury
+garlicrown
+Z 14-15-14-15-0-9-0-10
+earthstone
+sulpher
+glow crystal
+sulpher
+earthstone ###gnome silver
+4x glow crystal
+2x sulpher
+gnome silver ###earthstone
+glow crystal
+A 14-15-14-15-0-11-0-12
+mirror piece
+2x earthstone
+sulpher
+any seed
+mercury
+2x waterstone
+garlicrown
+B 14-15-14-15-0-13-0-14
+mirror piece
+2x earthstone
+sulpher
+any seed
+mercury
+2x waterstone
+garlicrown
+C 14-15-14-15-0-14-0-15
+mirror piece
+earthstone
+sulpher
+honey onion
+mercury
+waterstone
+garlicrown
+D 15-15-14-15-0-15-0-15
+mirror piece
+earthstone
+sulpher
+honey onion
+mercury
+sulpher
+wisp silver
+garlicrown
+E 15-15-14-15-0-15-9-15
+glow crystal
+chaos crystal
+windstone ###jinn silver
+jinn silver
+mercury
+3x glow crystal
+jinn silver
+chaos crystal
+mercury
+glow crystal
+mercury
+jinn silver ###windstone
+4x glow crystal
+chaos crystal
+2x mercury
+jinn gold
+F 15-15-14-15-9-15-9-15
+glow crystal
+chaos crystal
+2x sala silver
+sulpher
+3x glow crystal
+sala silver
+chaos crystal
+sulpher
+glow crystal
+sulpher
+sala silver ###firestone
+4x glow crystal
+chaos crystal
+2x sulpher
+sala gold
+
+Need:
+15 Mirror Piece
+46 Glow Crystal
+10 Chaos Crystal
+3 Sun Crystal
+3 Moon Crystal
+18 FireStone
+9 WaterStone
+9 EarthStone
+1 WindStone
+5 Sala Silver
+1 Sala Gold
+3 Aura Silver
+1 Dryad Silver
+1 Gnome Silver
+3 Jinn Silver
+1 Jinn Gold
+11 Shade Silver
+1 Shade Gold
+7 Wisp Silver
+1 Wisp Gold
+20 Any Seed
+36 Sulphur
+34 Mercury
+19 Garlicrown
+4 Honey Onion
+9 Spiny Carrot
+1 Gold Clover
+
+DragonScale Knife
+1 31
+<0-0-0-0-0-0-0-0
+17 107 23 107 13 23 23 23 23 107 107 17 23
+A0-0-0-0-9-0-0-0
+12 23 12 97 23 23 23 23 97 97 12 23
+B0-0-0-9-9-0-0-0
+25 23 11 107 23 23 23 23 107 107 25 23
+C0-0-9-9-9-0-0-0
+53 22 97 50
+D0-1-9-10-8-0-0-1
+116 17 107 51
+E0-1-10-9-9-0-0-0
+97 50 97 50
+F0-1-8-11-9-0-0-0
+116 17 17 107 25 21
+G1-1-9-10-11-0-0-0
+25 97 53 24 22
+H1-2-11-10-10-0-0-1
+97 97 50 50 116 17 17 107 25 21
+I2-2-10-11-12-0-0-0
+25 97 53 24 22
+J2-3-12-11-11-0-0-1
+97 50 50 116 17 17 107 25 21
+K3-3-11-12-13-0-0-0
+25 97 53 24 2 97 97 97
+L3-4-13-12-12-0-0-1
+50 50 116 17 17 107 25 1
+M4-4-12-13-14-0-0-0
+107 25 25 97 53 10 24 67
+N4-5-14-13-13-0-0-1
+97 97 50 50 116 17 17 107 25
+O4-5-13-14-15-0-0-0
+23 9 107 25 25 17 53
+P5-5-15-14-14-0-0-1
+116 10 10 10 18
+Q0-8-15-14-13-1-0-0
+97 10 10 50 116 10 10 107 25
+R0-12-15-14-13-1-0-0
+97 10 50 116 10 107 51
+S0-14-15-14-13-1-0-0
+97 10 50
+T0-15-14-15-13-1-0-0
+23 23 9 9 23 13 53 53 107
+U10-15-14-15-11-0-0-2
+116 17 107 17 25 9 9 97 97 53 50
+V13-15-14-15-12-0-0-1
+116 17 17 107 25 97 50
+W13-15-14-15-14-0-0-0
+116 17 107 107 25 9
+X13-15-15-14-15-0-0-0
+20 20 97 20 20 97 50
+Y14-15-14-15-0-0-0-10
+18 107 23 107 14 23 23 23 23 107 107 18 23
+Z14-15-14-15-0-9-0-10
+116 18 18 107 25 97 20 20 50
+A14-15-14-15-0-11-0-12
+116 18 18 107 25 97 20 20 50
+B14-15-14-15-0-13-0-14
+116 18 107 51 97 20 50
+C14-15-14-15-0-14-0-15
+116 18 107 51 97 107 9 50
+D15-15-14-15-0-15-0-15
+23 24 15 15 97 23 23 23 15 24 97 23 97 19 23 23 23 23 24 97 97 7
+E15-15-14-15-0-15-9-15
+23 24 13 13 107 23 23 23 13 24 107 23 107 17 23 23 23 23 24 107 107 5
+F15-15-14-15-9-15-9-15

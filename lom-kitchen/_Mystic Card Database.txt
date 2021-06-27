@@ -1,0 +1,67 @@
+#############################
+ Mystic Card Database - Help
+#############################
+
+In the Mystic Card Database, there are a number of columns.
+Here's what each column means.
+
+CARD ID - This column has the Card's internal ID number.
+          Mostly for those of you with a GameShark, this column is pretty
+          much just to put the Mystic Cards in a reasonable order.
+
+CARD GROUP - This is the Card Group that the Mystic Card belongs to.
+             The only real things you have to worry about are "World",
+             "Evil God", and "Pixie".  The rest of the Group names are
+             just for sorting purposes.
+
+CARD NAME - This is the title of the Card as shown in the game.
+
+PRICE - This is how much Lucre will be added to the price of your item.
+        The cost of an item is equal to the four Mystic Cards it has, plus
+        the cost of the base item.
+
+LIMITATIONS - These are used to determine how high a Stat Bonus can go.  For
+              example, if you had -3~+5, you could only raise each stat to
+              a maximum of +5, but not more.  The Limitations used are always
+              the most extreme ones for each stat.  Therefore, if you have an
+              Evil God Card on your item, all stat values are possible, since
+              then you can go from -10~+20.
+
+BONUS (LIMITATIONS) - This section is divided into two different kinds of
+                      bonuses.  First, you have Bonus Limitations (denoted by
+                      the word 'lim') and ordinary Bonuses.
+
+      BONUS LIMITATIONS (lim +5 Magic)
+      These are almost like Limitations, but are slightly
+      different.  If a stat falls within the Mystic Card's
+      Limitations, but is below the Bonus Limitation of that Card,
+      then that stat is set up to the Bonus Limitation.  Think
+      of it as a special minimum value for one stat.
+
+      BONUS (+1 Magic)
+      These are how much a stat will raise each Tempering Phase.  As an
+      example, take the Yggdrasil Card.  Every time you add something, and
+      the Yggdrasil Card remains on your item, you'll get [+1] to all of
+      your stats.  Likewise, the Dying Earth Card will lower your stats.
+
+WEAPON/ARMOR EFFECTS - These are the effects your Mystic Card has on weapons and
+                       armors.  A "W" denotes a Weapon effect, and an "A"
+                       denotes an Armor effect.  A specific Weapon or Armor can
+                       also be specified, like "Hammer:".  Anything that's in
+                       quotation marks is a Plunge Attack, and status conditions
+                       stand for an Immunity to that status.
+
+SPECIAL EFFECTS - Sometimes, a Mystic Card will have a special effect.  This
+                  is where that effect is listed.  Some special effects are
+                  called Effects, and they have a special number.  You may only
+                  have one such Effect at a time.  An example of an Effect is
+                  the Bed of Thorn Effect, which prevents HP Recovery in battle.
+                  Its Effect number is 1.  All Effects stay until replaced by
+                  a new effect, except for the Revive Effect (2).  This Effect
+                  will be lost if there isn't a Phoenix Card in one of the three
+                  visible slots.
+
+ITEM/ESSENCE REQUIREMENT - In this section, you will learn what items you'll use
+                           to create each Mystic Card, and also any Essence
+                           requirements.  "Total" means, of course, the added
+                           sum of all Essence Levels.

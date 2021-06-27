@@ -1,0 +1,2290 @@
+3D9D - Knife (Type Property)
+  Set Essense Markers(1)
+End Sub
+3DA5 - Sword (Type Property)
+  Set Essense Markers(1)
+End Sub
+3DAD - Axe (Type Property)
+  Set Essense Markers(2)
+End Sub
+3DB6 - 2H Sword (Type Property)
+  Set Essense Markers(2)
+End Sub
+3DBF - 2H Axe (Type Property)
+  Set Essense Markers(3)
+End Sub
+3DC8 - Hammer (Type Property)
+  Set Essense Markers(3)
+End Sub
+3DD1 - Spear (Type Property)
+  Set Essense Markers(2)
+End Sub
+3DDA - Staff (Type Property)
+  Set Essense Markers(1)
+End Sub
+3DE2 - Glove (Type Property)
+  Set Essense Markers(2)
+End Sub
+3DEB - Flail (Type Property)
+  Set Essense Markers(3)
+End Sub
+3DF4 - Bow (Type Property)
+  Set Essense Markers(1)
+  Find Card(Witch)
+  If Witch is in Slot 1-3 Then:
+     Find Card(Raven)
+     If Raven is in Slot 1-3 Then:
+        Find Card(Wolf)
+        If Wolf is in Slot 1-3 Then:
+           Set Plunge Attack 1 to 170(Magical Shot)
+        End If
+     End If
+  End If
+End Sub
+3E36 - Shield (Type Property)
+  Set Resistance Markers(1)
+End Sub
+3E3E - Ring/Pendant (Type Property)
+  Set Resistance Markers(1)
+  If Special Effect == 2 Then:
+     Find Card(Phoenix)
+     If Phoenix is not in Slot1-3 Then:
+        Special Effect = 0
+     End If
+  End If
+End Sub
+3E64 - Other DefItems (Type Property)
+  Set Resistance Markers(2)
+End Sub
+3E6D - Armor (Type Property)
+  Set Resistance Markers(3)
+End Sub
+
+3E77 - Wood (Material Property)
+  Call Dryad Taint
+  Call Place Dryad Card
+End Sub
+3E7F - Aerolite (Material Property)
+  If Tempered Item ID == 255(Dummy Item) Then:  (???)
+     Sala EssLv = 4
+  End If
+  Call Reduce Sala
+End Sub
+
+3E92 - Wisp Gold, Wisp Silver (Secondary)
+  Call Wisp Taint
+  Call Place Wisp Card
+End Sub
+3E99 - Shade Gold, Shade Silver (Secondary)
+  Call Shade Taint
+  Call Place Shade Card
+End Sub
+3EA0 - Dryad Gold, Dryad Silver (Secondary)
+  Call Dryad Taint
+  Call Place Dryad Card
+End Sub
+3EA7 - Aura Gold, Aura Silver (Secondary)
+  Call Aura Taint
+  Call Place Aura Card
+End Sub
+3EAE - Sala Gold, Sala Silver, Firestone (Secondary)
+  Call Sala Taint
+  Call Place Sala Card
+End Sub
+3EB5 - Gnome Gold, Gnome Silver, Earthstone (Secondary)
+  Call Gnome Taint
+  Call Place Gnome Card
+End Sub
+3EBC - Jinn Gold, Jinn Silver, Windstone (Secondary)
+  Call Jinn Taint
+  Call Place Jinn Card
+End Sub
+3EC3 - Undine Gold, Undine Silver, Waterstone (Secondary)
+  Call Undine Taint
+  Call Place Undine Card
+End Sub
+
+3F1E - Sun Crystal (Secondary)
+  If Wisp EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Sun God
+        End If
+     End If
+  End If
+  Call Wisp Taint
+End Sub
+3F4B - Moon Crystal (Secondary)
+  If Shade EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        PreHidden Card = Moon God
+     End If
+  End If
+  Call Shade Taint
+End Sub
+3F69 - Glow Crystal (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Nymph of Dawn
+  End If
+End Sub
+3F7E - Chaos Crystal (Secondary)
+  If Energy >= 16 Then:
+     PreHidden Card = Ancient Moon
+  End If
+End Sub
+
+3F92 - Non-Spiny Seed (Secondary)
+  Call Dryad Taint
+  Call Place Dryad Card
+End Sub
+3F99 - Spiny Seed (Secondary)
+  If Dryad EssLv >= 5 Then:
+     If Energy >= 8 Then:
+        PreHidden Card = Yggdrasil
+     End If
+  End If
+  Call Dryad Taint
+End Sub
+  
+3FB9 - Bellgrapes (Secondary)
+  Set Stat Limitation(- 5/+10,Mag)
+  Increase Stat(Mag)
+End Sub
+3FCF - Diceberry (Secondary)
+  If Jinn EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        PreHidden Card = Wind God
+     End If
+  End If
+  Increase Stat(Lck)
+End Sub
+3FF2 - Mangolephant (Secondary)
+  Set Stat Limitation(- 5/+10,HP)
+  Increase Stat(HP)
+End Sub
+4008 - Loquat-Shoes (Secondary)
+  If Energy >= 16 Then:
+     PreHidden Card = Spirit(4)
+  End If
+  If ItemSlot == Armor Then:
+     If ItemType == Boots or Sandals Then:
+        Call 125% ArmStrike
+        Call 125% ArmSlash
+        Call 125% ArmThrust
+     End If
+  End If
+End Sub
+4038 - Pear o'Heels (Secondary)
+  If Energy >= 16 Then:
+     PreHidden Card = Spirit(4)
+  End If
+  If ItemSlot == Armor Then:
+     If ItemType == Boots or Sandals Then:
+        Call 125% ArmStrike
+        Call 125% ArmSlash
+        Call 125% ArmThrust
+     End If
+  End If
+End Sub
+4068 - Squalphin (Secondary)
+  If Undine EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Ocean God
+        End If
+     End If
+  End If
+  Call Undine Taint
+End Sub
+4095 - Citrisquid (Secondary)
+  If ItemSlot == Weapon Then:
+     Call  75% WeapSharp
+     Call 125% WeapHeavy
+  Else
+     Call  75% ArmSlash
+     Call 125% ArmStrike
+  End If
+End Sub
+40AE - Springanana (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Heaven's Scale
+  End If
+End Sub
+40C3 - Peach Puppy (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Wolf
+  End If
+  If ItemSlot == Weapon Then:
+     Call 125% WeapSharp
+     Call  75% WeapHeavy
+  End If
+End Sub
+40E7 - Apricat (Secondary)
+  If ItemSlot == Weapon Then:
+     Call  75% WeapForce
+     Call 125% WeapTech
+  End If
+End Sub
+40F7 - Applesocks (Secondary)
+  Set Stat Limitation(- 5/+10,Skl)
+  Increase Stat(Skl)
+  Call Get Total EssLv
+  If Total EssLv >= 5 Then:
+     If Energy >= 16 Then:
+        PreHidden Card = Nymph of Orchards
+     End If
+  End If
+End Sub
+412B - Whalamato (Secondary)
+  Set Stat Limitation(- 5/+10,HP)
+  Set Stat Min(+10,HP)
+  If Gnome EssLv >= 3 Then:
+     If Undine EssLv >= 3 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Unicorn
+        End If
+     End If
+  End If
+End Sub
+
+416C - Pine o'Clock (Secondary)
+  If ItemSlot == Armor Then:
+     Immunity = Sleep
+  End If
+  ??? 80 81(88 7B)80
+  If Sala EssLv >= 1 Then:
+     If Gnome EssLv >= 1 Then:
+        If Jinn EssLv >= 1 Then:
+           If Undine EssLv >= 1 Then:
+              If Energy >= 8 Then:
+                 ??? 80 81(88 7C)80 -
+                 PreHidden Card = Ragnarok
+              End If
+           End If
+        End If
+     End If
+  End If
+End Sub
+
+41BD - Fishy Fruit (Secondary)
+  PreHidden Card = Spring
+  Set Stat Limitation(- 1/+ 3,Mag)
+  Increase Stat(Mag)
+  Call Undine Taint  
+End Sub
+41DA - Boarmelon (Secondary)
+  Set Stat Limitation(- 1/+ 3,Pwr)
+  Increase Stat(Pwr)
+End Sub
+41ED - Rhinoloupe (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapSharp
+  Else
+     Immunity = Poison
+  End If
+End Sub
+4201 - Orcaplant (Secondary)
+  If Undine EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Ocean God
+        End If
+     End If
+  End If
+End Sub
+422B - Garlicrown (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = King
+  End If
+  Pixie Unsticky
+  Aura Taint
+End Sub
+4247 - Honey Onion (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Princess
+  End If
+  Dryad Taint
+End Sub
+425F - Sweet Moai (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Helm Then:
+        Call 125% ArmStrike
+        Call 125% ArmSlash
+        Call 125% ArmThrust
+     Else If ItemType == Hat Then:
+        Call 150% ArmStrike
+        Call 150% ArmSlash
+        Call 150% ArmThrust
+     End If
+  End If
+End Sub
+4293 - Spiny Carrot (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapSharp
+     Call  75% WeapHeavy
+  End If
+  Call Undine Taint
+End Sub
+42A6 - Conchurnip (Secondary)
+  Set Stat Limitation(- 1/+ 3,Def)
+  Increase Stat(Def)
+  If Energy >= 16 Then:
+     PreHidden Card = Spirit(1)
+  End If
+End Sub
+42CF - Cornflower (Secondary)
+  Call Wisp Taint
+End Sub
+42D3 - Cabbadillo (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Hauberk Then:
+        Call 125% ArmStrike
+        Call 125% ArmSlash
+        Call 125% ArmThrust
+        Call  50% ArmMagic
+     End If
+  End If
+End Sub
+42F2 - Needlettuce (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapSharp
+     Call  75% WeapHeavy
+  End If
+  If Sala EssLv == 0 Then:
+     If Dryad EssLv > 0 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Bed of Thorn
+        End If
+     End If
+  End If
+End Sub
+4328 - Cherry Bombs (Secondary)
+  If ItemSlot = Armor Then:
+     If ItemType = Ring Then:
+        Set All Stat Limitations(- 3/+ 9)
+     End If
+  End If
+End Sub
+4346 - Masked Potato (Secondary)
+  If ItemSlot == Weapon Then:
+     Call  75% WeapSharp
+     Call 125% WeapHeavy
+  End If
+End Sub
+4356 - Lilipods (Secondary)
+  Set Stat Limitation(- 1/+ 3,Spr)
+  Increase Stat(Spr)
+  If Energy >= 8 Then:
+     PreHidden Card = Enticed Nymph
+  End If
+End Sub
+437F - Rocket Papaya (Secondary)
+  Set Stat Limitation(- 5/+10,Chm)
+  Increase Stat(Chm)
+  If Jinn EssLv == 0 Then:
+     If Wisp EssLv > 0 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Tower
+        End If
+     End If
+  End If
+End Sub
+43BB - Orange'opus (Secondary)
+  Set Stat Limitation(- 5/+10,Def)
+  Increase Stat(Def)
+  If Sala EssLv == 0 Then:
+     If Gnome EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Leviathan
+        End If
+     End If
+  End If
+End Sub
+43F7 - Bumpkin (Secondary)
+  Set Stat Limitation(- 1/+ 3,Lck)
+  Set Stat Min(+ 3,Lck)
+  If Energy >= 8 Then:
+     PreHidden Card = Clown
+  End If
+End Sub
+4425 - Heart Mint (Secondary)
+  Set Stat Limitation(- 1/+ 3,Chm)
+  Increase Stat(Chm)
+  If Shade EssLv >= 2 Then:
+     If Gnome EssLv >= 2 Then:
+        If Undine EssLv >= 2 Then:
+           If Energy >= 8 Then:
+              PreHidden Card = Mother of Gods
+           End If
+        End If
+     End If
+  End If
+End Sub
+4469 - Spade Basil (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapSharp
+  End If
+  If Wisp EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 6 Then:
+        If Energy >= 8 THen:
+           PreHidden Card = Ruler of Sky
+        End If
+     End If
+  End If
+End Sub
+449F - Dialaurel (Secondary)
+  If Sala EssLv == 0 Then: 
+     If Shade EssLv > 0 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Metropolis
+        End If
+     End If
+  End If
+End Sub
+44C6 - Gold Clover (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapHeavy
+  End If
+End Sub
+44D3 - Mush-in-a-Box (Secondary)
+  Call Shade Taint
+End Sub
+44D7 - Toadstoolshed (Secondary)
+  Call Increase All Stats
+  Call Shade Taint
+End Sub
+
+44DF - Sharp Claw (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 150% WeapSharp
+     Call  50% WeapHeavy
+  End If
+  If Undine EssLv == 0 Then:
+     If Sala EssLv >= 5 Then:  
+        If Energy >= 8 Then:
+           PreHidden Card = God of Destruction
+        End If
+     End If
+  End If
+End Sub
+4515 - Poison Fang (Secondary)
+  If ItemSlot == Weapon Then:
+     Call  50% WeapForce
+     Call 150% WeapTech
+  End If
+  If Aura EssLv == 0 Then:
+     If Dryad EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Beast-headed God
+        End If
+     End If
+  End If
+End Sub
+454B - Giant's Horn (Secondary)
+  If Sala EssLv == 0 Then:
+     If Gnome EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Leviathan
+        End If
+     End If
+  End If
+  If ItemSlot == Weapon Then:
+     Call  50% WeapSharp
+     Call 150% WeapHeavy
+  End If
+End Sub
+4581 - Scissors (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 150% WeapForce
+     Call  50% WeapTech
+  End If
+End Sub
+4591 - Healing Claw (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Shield Then:
+        Immunity = Immunity OR Poison
+     End If
+  End If
+  If Sala EssLv == 0 Then:
+     If Wisp EssLv > 0 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Tower
+        End If
+     End If
+  End If
+End Sub
+45D4 - Zombie Claw (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Pendant Then:
+        Immunity = Immunity OR Paralysis
+     End If
+  End If
+End Sub
+45F1 - Vampire Fang (Secondary)
+  Set Stat Limitation(- 3/+ 5,Chm)
+  Set Stat Limitation(- 3/+ 5,Spr)
+  Increase Stat(Chm)
+  Increase Stat(Spr)
+  If Jinn EssLv == 0 Then:
+     If Undine EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Witch of Moon
+        End If
+     End If
+  End If
+End Sub
+  
+464B - Little Eye (Secondary)
+  If ItemSlot == Armor Then:
+     Call 125% ArmSlash
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(1)
+  End If
+End Sub
+466C - Sleepy Eye (Secondary)
+  If ItemSlot == Armor Then:
+     Call 125% ArmThrust
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(2)
+  End If
+End Sub
+468D - Silly Eye (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapHeavy
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(6)
+  End If
+End Sub
+46AE - Dangerous Eye (Secondary)
+  If ItemSlot == Armor Then:
+     Call 125% ArmStrike
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(7)
+  End If
+End Sub
+46CF - Angry Eye (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapForce
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(5)
+  End If
+End Sub
+46F0 - Blank Eye (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapTech
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(3)
+  End If
+End Sub
+4711 - Creepy Eye (Secondary)
+  If ItemSlot == Armor Then:
+     Call 125% ArmMagic
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(4)
+  End If
+End Sub
+4732 - Wicked Eye (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapSharp
+  End If
+End Sub
+
+473F - Angel Feather (Secondary)
+  Increase Stat Limitation(- 3/+ 5,Chm)
+  Increase Stat(Chm)
+  If Shade EssLv == 0 Then:
+     If Wisp EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Fallen Angel
+        End If
+     End If
+  End If
+  Call Wisp Taint
+End Sub
+477E - Raven Feather (Secondary)
+  Set Stat Limitation(- 3/+ 5,Spr)
+  Increase Stat(Spr)
+  If Energy >= 8 Then:
+     PreHidden Card = Raven
+  End If
+  Call Shade Taint
+End Sub
+47AB - Clear Feather (Secondary)
+  If ItemSlot == Weapon Then
+     Call  50% WeapHeavy
+     Call 150% WeapTech
+  End If
+  If Gnome EssLv == 0 Then
+     If Jinn EssLv >= 5 Then
+        If Energy >= 8 Then:
+           PreHidden Card = Lord of Flies
+        End If
+     End If
+  End If
+End Sub
+47E1 - Moth Wing (Secondary)
+  If ItemSlot == Armor Then:
+     Call  75% ArmStrike
+     Call  75% ArmSlash
+     Call  75% ArmThrust
+     Call 150% ArmMagic
+  End If
+  If Energy >= 8 Then:
+     PreHidden Card = Spirit(2)
+  End If
+End Sub
+480B - Flaming Quill (Secondary)
+  Set Stat Limitation(- 3/+ 5,Pwr)
+  Set Stat Min(+5,Pwr)
+  If Sala EssLv >= 3 Then:
+     If Jinn EssLv >= 3 Then:
+        If Energy >= 4 Then:
+           PreHidden Card = Phoenix
+        End If
+     End If
+  End If
+End Sub
+484A - White Feather (Secondary)
+  Set Stat Limitation(- 3/+ 5,Skl)
+  Set Stat Min(+5,Skl)
+  If Wisp EssLv > 0 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 3 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Nymph of the Sky
+        End If
+     End If
+  End If
+End Sub
+
+488E - Aroma Oil (Secondary)
+  If Item Slot == Armor Then:
+     If Item Material == AnimalHide to Dragon Skin Then:
+        Call 150% ArmStrike
+        Call 150% ArmSlash
+        Call 150% ArmThrust
+     End If
+  End If
+  Call Get Total EssLv
+  If Total EssLv >= 6 Then:
+     If Energy >= 8 Then:
+        PreHidden Card = Wisdom Goddess
+     End If
+  End If
+End Sub
+48CA - Dragon Blood (Secondary)
+  Call Increase All Stats
+  If Sala EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = God of War
+        End If
+     End If
+  End If
+End Sub
+48F8 - Holy Water (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Cleric
+  End If
+  Pixie Unsticky
+End Sub
+4911 - Ether (Secondary)
+  If Aura EssLv >= 3 Then:
+     If Gnome EssLv >= 3 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Blacksmith God
+        End If
+     Else
+        PreHidden Card = Spirit(3)
+     End If
+  Else
+     PreHidden Card = Spirit(3)
+  End If
+End Sub
+
+4953 - Mercury (Secondary)
+  If Energy >= 4 Then:
+     PreHidden Card = Witch
+  End If
+End Sub
+4968 - Stinky Breath (Secondary)
+  If ItemSlot == Armor Then:
+     Immunity = Poison + Confusion
+  End If
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(4)
+  End If
+End Sub
+498B - Ghost's Howl (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Sacrificed Nymph
+  End If
+End Sub
+49A0 - Dragon Breath (Secondary)
+  If ItemSlot == Weapon Then:
+     Call 125% WeapForce
+     Call 125% WeapTech
+  End If
+  If Wisp EssLv > 0 Then:
+     If Sala EssLv > 0 Then:
+        Call Get Total EssLv
+        If Total EssLv >= 3 Then:
+           If Energy >= 8 Then:
+              PreHidden Card = Man of Valour
+           End If
+        End If
+     End If
+  End If
+End Sub
+49E2 - Virgin's Sigh (Secondary)
+  If Shade EssLv >= 3 Then:
+     If Dryad EssLv >= 3 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Goddess of Love
+        End If
+     End If
+  End If
+End Sub
+
+4A14 - Electricity (Secondary)
+  If Wisp EssLv >= 3 Then:
+     If Sala EssLv >= 3 Then:
+        If Jinn EssLv >= 3 Then:
+           If Energy >= 8 Then:
+              PreHidden Card = Thunder God
+           End If
+        End If
+     End If
+  End If
+End Sub
+4A44 - Moss (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Helm Then:
+        Immunity = Immunity OR Darkness
+     End If
+  End If
+End Sub
+4A5E - Ear of Wheat (Secondary)
+  If Dryad EssLv >= 3 Then:
+     Call Get Total EssLv
+     If Total EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Fertility Goddess
+        End If
+     End If
+  End If
+End Sub
+
+4A8D - Baked Roach (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Robe Then:
+        Immunity = Immunity OR Poison
+     End If
+  End If
+End Sub
+4AA7 - Blackened Bat (Secondary)
+  If ItemSlot == Armor Then:
+     If ItemType == Pendant Then:
+        Immunity = Immunity OR Darkness
+     End If
+  End If
+  If Wisp EssLv == 0 Then:
+     If Shade EssLv >= 5 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Wings of Darkness
+        End If
+     End If
+  End If
+End Sub
+
+4AED - Sulpher (Secondary)
+  If Energy >= 4 Then:
+     PreHidden Card = Sorcerer
+  End If
+End Sub
+4B02 - Poison Powder (Secondary)
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(5)
+  End If
+End Sub
+4B17 - Sleepy Powder (Secondary)
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(3)
+  End If
+End Sub
+4B2C - Knockout Dust (Secondary)
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(6)
+  End If
+End Sub
+4B41 - Rust (Secondary)
+  If Energy >= 4 Then:
+     PreHidden Card = Pixie(2)
+  End If
+End Sub
+4B56 - Grave Dirt (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Dying Earth
+  End If
+End Sub
+4B6B - Ash (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Volcano
+  End If
+End Sub
+
+4B89 - Hairball (Secondary)
+  If Energy >= 8 Then:
+     PreHidden Card = Spirit(5)
+  End If
+End Sub
+4B9E - Needle (Secondary)
+  If Sala EssLv == 0 Then:
+     If Dryad EssLv > 0 Then:
+        If Energy >= 8 Then:
+           PreHidden Card = Bed of Thorn
+        End If
+     End If
+  End If
+End Sub
+4BC5 - Mirror Piece (Secondary)
+  Call Get Total EssLv
+  If Total EssLv >= 3 Then:
+     If Energy >= 8 Then:
+        PreHidden Card = Mirrored World
+     End If
+  End If
+End Sub
+4BE6 - Wad of Wool (Secondary)
+  If Shade EssLv > 0 Then:
+     If Dryad EssLv > 0 Then:
+        Call Get Total EssLv
+        If Total EssLv >= 3 Then:
+           If Energy >= 8 Then:
+              PreHidden Card = Wanderer
+           End If
+        End If
+     End If
+  End If
+End Sub
+4C19 - Messy Scroll (Secondary)
+  If Jinn EssLv > 0 Then:
+     If Undine EssLv > 0 Then:
+        Call Get Total EssLv
+        If Total EssLv >= 3 Then:
+           If Energy >= 8 Then:
+              PreHidden Card = Sage
+           End If
+        End If
+     End If
+  End If
+End Sub
+
+4C52 - Greenball Bun (Secondary)
+  Increase Stat(HP)
+End Sub
+4C5B - Tako Bug (Secondary)
+  Increase Stat(Chm)
+End Sub
+
+4C67 - Wisp (Slot1/Slot2/Slot3)
+  Increase Stat(Chm)
+  Call Wisp Taint
+End Sub
+4C73 - Shade (Slot1/Slot2/Slot3)
+  Increase Stat(Spr)
+  Call Shade Taint
+End Sub
+4C7F - Dryad (Slot1/Slot2/Slot3)
+  Increase Stat(HP)
+  Call Dryad Taint
+End Sub
+4C8B - Aura (Slot1/Slot2/Slot3)
+  Increase Stat(Lck)
+  Call Aura Taint
+End Sub
+4C97 - Salamander (Slot1/Slot2/Slot3)
+  Increase Stat(Pwr)
+  Call Sala Taint
+End Sub
+4CA2 - Gnome (Slot1/Slot2/Slot3)
+  Increase Stat(Def)
+  Call Gnome Taint
+End Sub
+4CAE - Jinn (Slot1/Slot2/Slot3)
+  Increase Stat(Skl)
+  Call Jinn Taint
+End Sub
+4CB9 - Undine (Slot1/Slot2/Slot3)
+  Increase Stat(Mag)
+  Call Undine Taint
+End Sub
+
+4CC5 - Pixie(1) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(1) with Fallen Angel
+     End If
+     Call Fallen Angel (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(Chm)
+  End If
+End Sub
+4CFE - Pixie(2) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(2) with Witch of Moon
+     End If
+     Call Witch of Moon (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(Mag)
+  End If
+End Sub
+4D36 - Pixie(3) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(3) with Lord of Flies
+     End If
+     Call Lord of Flies (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(Skl)
+  End If
+End Sub
+4D6D - Pixie(4) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(4) with Wings of Darkness
+     End If
+     Call Wings of Darkness (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(Spr)
+  End If
+End Sub
+4DA5 - Pixie(5) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(5) with God of Destruction
+     End If
+     Call God of Destruction (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(Pwr)
+  End If
+End Sub
+4DDC - Pixie(6) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(6) with Leviathan
+     End If
+     Call Leviathan (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(HP)
+  End If
+End Sub
+4E14 - Pixie(7) (Slot1/Slot2/Slot3)
+  If Active World Card == Ragnarok Then:
+     If Energy >= 8 Then:
+        Replace Bottommost Pixie(7) with Beast-headed God
+     End If
+     Call Beast-headed God (Slot1/Slot2/Slot3)
+  Else
+     Set All Stat Limitations(- 1/+ 3)     
+     Call Decrease All Stats
+     Increase Stat(Def)
+  End If
+End Sub
+
+4E4D - Sorcerer (Slot1/Slot2/Slot3)
+  Find Card(Tower)
+  If Tower is in Slot 1-3 Then:
+     Set All Stat Limitations(- 3/+ 5)
+     Increase Stat(Mag)
+     Increase Stat(Spr)
+     Increase Stat(Chm)
+     50% Resist(Wisp)
+     50% Resist(Dryad)
+     50% Resist(Sala)
+     50% Resist(Gnome)
+  Else:
+     Set All Stat Limitations(- 1/+ 3)
+     Increase Stat(Mag)
+     75% Resist(Wisp)
+     75% Resist(Dryad)
+     75% Resist(Sala)
+     75% Resist(Gnome)
+  End If
+End Sub
+4ECF - Witch (Slot1/Slot2/Slot3)
+  Find Card(Tower)
+  If Tower is in Slot 1-3 Then:
+     Set All Stat Limitations(- 3/+ 5)
+     Increase Stat(Mag)
+     Increase Stat(Spr)
+     Increase Stat(Chm)
+     50% Resist(Shade)
+     50% Resist(Aura)
+     50% Resist(Jinn)
+     50% Resist(Undine)
+  Else:
+     Set All Stat Limitations(- 1/+ 3)
+     Increase Stat(Mag)
+     75% Resist(Shade)
+     75% Resist(Aura)
+     75% Resist(Jinn)
+     75% Resist(Undine)
+  End If
+End Sub
+4F51 - King (Slot1/Slot2/Slot3)
+  Find Card(Metropolis)
+  If Metropolis is in Slot 1-3 Then:
+     Set All Stat Limitations(- 3/+ 5)
+     Increase Stat(Pwr)
+  Else
+     Set All Stat Limitations(- 1/+ 3)
+     Increase Stat(Pwr)
+  End If 
+  If ItemSlot == Weapon Then:
+     If ItemType == Glove Then:
+        If Aura EssLv > 0 Then:
+           Plunge Attack 2 = Hand of Midas
+        End If
+     End If
+  End If
+End Sub
+4FA3 - Princess (Slot1/Slot2/Slot3)
+  Find Card(Metropolis)
+  If Metropolis is in Slot 1-3 Then:
+     Set All Stat Limitations(- 3/+ 5)
+     Increase Stat(Def)     
+  Else:
+     Set All Stat Limitations(- 1/+ 3)
+     Increase Stat(Def)     
+  End If
+End Sub
+4FD7 - Clown (Slot1/Slot2/Slot3)
+  Find Card(Metropolis)
+  If Metropolis is in Slot 1-3 Then:
+     Set All Stat Limitations(- 5/+12)
+  Else
+     Set All Stat Limitations(- 3/+ 9)
+  End If
+  If ItemSlot == Weapon Then:
+     Call 150% WeapSharp
+     Call  50% WeapHeavy
+     If ItemType == Knife Then:
+        Plunge Attack 2 = Quick Blade
+     End If
+  Else
+     Call 150% ArmThrust
+     Call  50% ArmStrike
+  End If
+End Sub
+501F - Cleric (Slot1/Slot2/Slot3)
+  Find Card(Metropolis)
+  If Metropolis is in Slot 1-3 Then:
+     Set All Stat Limitations(- 3/+ 5)
+     Increase Stat(Mag)
+     Increase Stat(Spr)
+     Increase Stat(Chm)
+  Else
+     Set All Stat Limitations(- 1/+ 3)
+     Increase Stat(Spr)
+  End If
+  If ItemSlot == Weapon Then:
+     Call  50% WeapSharp
+     Call 150% WeapHeavy
+     If ItemType == Staff Then
+        Plunge Attack 3 = Demonicide
+     End If
+  Else
+     Call 150% ArmStrike
+     Call  50% ArmSlash
+  End If
+End Sub
+
+5089 - Ruler of Sky (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 9,Pwr)
+  Set Stat Limitation(- 3/+ 9,Mag)
+  Set Stat Min(+9,Pwr)
+  Set Stat Min(+9,Mag)
+  If ItemSlot == Weapon Then:
+     If ItemType == Spear Then:
+        Plunge Attack 1 = Gungnir
+     Else If ItemType == Staff Then:
+        Plunge Attack 3 = Electrosceptre
+     End If
+  End If
+End Sub
+50E5 - Mother of Gods (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 5,Mag)
+  Set Stat Limitation(- 3/+ 5,Spr)
+  Set Stat Limitation(- 3/+ 5,Chm)
+  Set Stat Min(+5,Mag)
+  Set Stat Min(+5,Spr)
+  Set Stat Min(+5,Chm)
+  If ItemSlot == Weapon Then:
+     If ItemType == Flail Then:
+        Plunge Attack 1 = Green Princess
+        Plunge Attack 2 = Game of Death
+        Plunge Attack 3 = Red Dream
+     End If
+  End If
+End Sub
+5158 - Sun God (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,Chm)
+  Set Stat Min(+10,Chm)
+  If ItemSlot == Weapon Then:
+     If ItemType == Sword Then:
+        Plunge Attack 2 = Sunlight
+     Else If ItemType == Bow
+        Plunge Attack 1 = Solar Flare
+     End If
+  End If
+End Sub
+519B - Moon Goddess (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,Spr)
+  Set Stat Min(+10,Spr)
+  If ItemSlot == Weapon Then
+     If ItemType == Sword Then
+        Plunge Attack 3 = Moonlight
+     Else If Item Type == Bow Then
+        Plunge Attack 2 = Lunar Shot
+     End If
+  End If
+End Sub
+51DE - Thunder God (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 5,Pwr)
+  Set Stat Limitation(- 3/+ 5,Skl)
+  Set Stat Limitation(- 3/+ 5,Def)
+  Set Stat Min(+5,Pwr)
+  Set Stat Min(+5,Skl)
+  Set Stat Min(+5,Def)
+  If ItemSlot == Weapon Then
+     If ItemType == Hammer Then
+        Plunge Attack 3 = Mjolnir
+     End If
+  End If
+End Sub
+5240 - Goddess of Love (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 9,Spr)
+  Set Stat Limitation(- 3/+ 9,Chm)
+  Set Stat Min(+7,Spr)
+  Set Stat Min(+7,Chm)
+  If ItemSlot == Armor Then
+     If ItemType == Pendant Then
+        Special Effect = 10
+     End If
+  End If
+End Sub
+528C - Fertility Goddess (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,HP)
+  Set Stat Min(+10,HP)
+  If ItemSlot == Armor Then
+     Immunity = Immunity OR Petrification
+     If ItemType == Robe Then
+        Immunity = Immunity OR Petrification
+     Else If ItemType == Ring Then
+        Special Effect = 3
+     End If
+  End If
+End Sub
+52D8 - Ocean God (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 9,Pwr)
+  Set Stat Limitation(- 3/+ 9,Skl)
+  Set Stat Min(+ 7,Pwr)
+  Set Stat Min(+ 7,Skl)
+  If ItemSlot == Weapon Then:
+     If ItemType == Spear Then:
+        Plunge Attack 1 = Trident
+     End If
+  Else
+     Immunity = Immunity OR Flameburst
+  End If
+End Sub
+532A - Wind God (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,Skl)
+  Set Stat Min(+10,Skl)
+  If ItemSlot == Weapon Then:
+     If ItemType == Staff Then:
+        ??? 80 81 88 7D 80
+        Plunge Attack 1 = Caduceus
+     End If
+  End If
+  If ItemSlot == Armor Then:
+     If ItemType == Sandals Then:
+        ArmStrike = ArmStrike + 10
+        ArmSlash  = ArmSlash  + 10
+        ArmThrust = ArmThrust + 10
+        ArmMagic  = ArmMagic  + 10
+        Immunity = Immunity OR Paralysis
+     End If
+  End If
+End Sub
+5394 - Wisdom Goddess (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,Mag)
+  Set Stat Min(+10,Mag)
+  If ItemSlot == Armor Then:
+     If ItemType == Shield Then:
+        Special Effect = 5
+     End If
+  End If
+End Sub
+53C6 - Blacksmith God (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,Def)
+  Set Stat Min(+10,Def)
+  If ItemSlot == Weapon Then:
+     If ItemType == Hammer Then:
+        Plunge Attack 3 = Sledge Hammer
+     End If
+  End If
+End Sub  
+53F8 - God of War (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 5/+10,Pwr)
+  Set Stat Min(+10,Pwr)
+  If ItemSlot == Weapon Then:
+     If ItemType == Axe Then:
+        Plunge Attack 2 = Dragonslayer
+     End If
+  End If
+End Sub
+  
+5428 - Fallen Angel (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,Chm)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == 2H Sword Then:
+        Plunge Attack 1 = Chaotic Avenger
+     End If
+  End If
+End Sub
+5458 - Fallen Angel (Leave)
+  Replace Bottommost Sacrificed Nymph with Fallen Angel
+End Sub
+546F - Witch of Moon (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,Mag)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == Sword Then:
+        Plunge Attack 2 = Vampsword
+     End If
+  End If
+End Sub  
+549F - Witch of Moon (Leave)
+  Replace Bottommost Sacrificed Nymph with Witch of Moon
+End Sub
+54B5 - Lord of Flies (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,Skl)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == Knife Then:
+        Plunge Attack 3 = Sinister Blade
+     End If
+  End If
+End Sub
+54E4 - Lord of Flies (Leave)
+  Replace Bottommost Sacrificed Nymph with Lord of Flies
+End Sub
+54FA - Wings of Darkness (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,Spr)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == Staff Then:
+        Plunge Attack 3 = Golden Touch
+     End If
+  End If
+End Sub
+552A - Wings of Darkness (Leave)
+  Replace Bottommost Sacrificed Nymph with Wings of Darkness
+End Sub
+5540 - God of Destruction (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,Pwr)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == Sword Then:
+        Plunge Attack 2 = Flame Tongue
+     End If
+  Else
+     Immunity = Immunity OR Freeze
+  End If
+End Sub
+5579 - God of Destruction (Leave)
+  Replace Bottommost Sacrificed Nymph with God of Destruction
+End Sub
+558F - Beast-headed God (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,HP)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == Knife Then:
+         Plunge Attack 2 = Poison Blade
+     End If
+  End If
+End Sub
+55BF - Beast-headed God (Leave)
+  Replace Bottommost Sacrificed Nymph with Beast-headed God
+End Sub
+55D5 - Leviathan (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(-10/+20)
+  Set Stat Min(+15,Def)
+  Call Decrease All Stats
+  If ItemSlot == Weapon Then:
+     If ItemType == 2H Axe Then:
+         Plunge Attack 3 = Treefeller
+     End If
+  End If
+End Sub
+5605 - Leviathan (Leave)
+  Replace Bottommost Sacrificed Nymph with Leviathan
+End Sub
+
+561C - Phoenix (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 5,Pwr)
+  Set Stat Limitation(- 3/+ 5,Skl)
+  Set Stat Min(+3,Pwr)
+  Set Stat Min(+3,Skl)
+  If ItemSlot == Armor Then:
+     Find Card(Volcano)
+     If Volcano is in Slot 1-3 Then:
+        If ItemType == Ring Then:
+           Special Effect = 2
+        Else If ItemType == Pendant Then:
+           Special Effect = 2
+        End If
+     End If
+  End If
+End Sub
+568A - Unicorn (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 5,Def)
+  Set Stat Limitation(- 3/+ 5,Mag)
+  Set Stat Min(+3,Def)
+  Set Stat Min(+3,Mag)
+  If ItemSlot == Armor Then:
+     Find Card(Spring)
+     If Spring is in Slot 1-3 Then:
+        If ItemType == Ring Then:
+           Special Effect = 6
+        Else If ItemType == Pendant Then:
+           Special Effect = 6
+        End If
+     End If
+  End If
+End Sub
+
+56FC - Spirit(1) (Slot1/Slot2/Slot3)
+  Increase Stat(Chm)
+  If ItemSlot == Armor Then:
+     If ItemType == Hat Then:
+        Immunity = Immunity OR Confusion
+     End If
+  End If
+End Sub
+571E - Spirit(2) (Slot1/Slot2/Slot3)
+  Increase Stat(Spr)
+  Increase Stat(Chm)
+  If ItemSlot == Weapon Then:
+     If ItemType == Bow Then:
+        Plunge Attack 2 = Elven Archer
+     End If
+  End If
+End Sub
+5746 - Spirit(3) (Slot1/Slot2/Slot3)
+  Increase Stat(Def)
+  Increase Stat(HP)
+  If ItemSlot == Weapon Then:
+     If ItemType == Hammer Then:
+        Plunge Attack 3 = Quake Hammer
+     End If
+  End If
+End Sub
+576E - Spirit(4) (Slot1/Slot2/Slot3)
+  Increase Stat(Skl)
+  If ItemSlot == Armour Then:
+     If ItemType == Boots Then:
+        Immunity = Immunity OR Paralysis
+     Else If ItemType == Sandals Then:
+        Special Effect = 9
+     End If
+  End If
+End Sub
+57A3 - Spirit(5) (Slot1/Slot2/Slot3)
+  Increase Stat(Lck)
+  If ItemSlot == Armour Then:
+     If ItemType == Ring Then:
+        Special Effect = 10
+     Else If ItemType == Mantle Then:
+        Immunity = Immunity OR Sleep
+     End If
+  End If
+End Sub
+
+57D6 - Yggdrasil (Slot1/Slot2/Slot3)
+  If ItemSlot == Weapon Then:
+     If ItemType == Staff Then:
+        Set All Stat Limitations(- 3/+ 9)
+     Else
+        Set All Stat Limitations(- 5/+10)
+     End If
+  Else
+     Set All Stat Limitations(- 5/+10)
+  End If
+  Call Increase All Stats
+End Sub
+5806 - Heaven's Scale (Slot1/Slot2/Slot3)
+  If ItemSlot == Armor Then:
+     Special Effect = 8
+  End If
+End Sub
+5815 - Dying Earth (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 5/+12)
+  Find Card(Enticed Nymph)
+  If Enticed Nymph is not in Slot 1-3 Then:
+     Call Decrease All Stats
+  End If
+End Sub
+5832 - Ragnarok (Slot1/Slot2/Slot3)
+  Find Card(Heaven's Scale)
+  If ItemSlot == Weapon Then:
+     If ItemType == 2H Sword Then:
+        Plunge Attack 3 = Ragnarok
+     End If
+  End If
+End Sub
+5855 - Any WORLD Card (Hidden) 
+  If Active World Card <= 14 Then:
+     Hidden Slot = None
+  End If
+End Sub
+
+5863 - Bed of Thorn (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 1/+ 3)
+  If ItemSlot == Armor Then:
+     Special Effect = 1
+     Call 150% ArmStrike
+     Call 150% ArmSlash
+     Call 150% ArmThrust
+     Call 150% ArmMagic
+  End If
+End Sub
+5884 - Volcano (Slot1/Slot2/Slot3)
+  If ItemSlot == Weapon Then:
+     Call 150% WeapForce
+     Call  50% WeapTech
+     If ItemType == Hammer
+        Plunge Attack 3 = Magma Hammer
+     End If
+  Else If ItemType == Hauberk Then:
+     Immunity = Immunity OR Freeze
+  End If
+End Sub
+58B5 - Metropolis (Slot1/Slot2/Slot3)
+  If ItemSlot == Armor Then:
+     If ItemType == Robe Then:
+        Call 150% ArmMagic
+        Immunity = Immunity OR Confusion
+     Else
+        Call 125% ArmMagic
+     End If
+  End If
+End Sub
+58D8 - Tower (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 3/+ 5)
+End Sub
+58E1 - Spring (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 3/+ 5)
+  If ItemSlot == Armor Then:
+     If ItemType == Robe Then:
+        Immunity = Immunity OR Flameburst
+     Else If ItemType == Pendant Then:
+        Immunity = Immunity OR Sleep
+     End If
+  End If
+End Sub
+
+5917 - Sacrificed Nymph (Slot1/Slot2/Slot3)
+  If ItemSlot == Armor Then:
+     If ItemType == Pendant Then:
+        Immunity = Immunity OR Petrification
+     End If
+  End If
+End Sub
+5935 - Nymph of the Sky (Slot1/Slot2/Slot3)
+  If ItemSlot == Armor Then:
+     If ItemType == Mantle Then:
+        Special Effect = 4
+     End If
+  End If
+End Sub
+5950 - Nymph of Orchards (Slot1/Slot2/Slot3)
+  If ItemSlot == Armor Then:
+     If ItemType == Ring Then:
+        Special Effect = 6
+     End If
+  End If
+End Sub
+
+596B - Sage (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 3/+ 5)
+  Increase Stat(Mag)
+  Increase Stat(Def)
+  If ItemSlot == Weapon Then:
+     If ItemType == Bow Then:
+        Plunge Attack 1 = Phoenix Falling
+     End If
+  End If
+End Sub
+599B - Man of Valour (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 3/+ 5)
+  Increase Stat(Pwr)
+  Increase Stat(HP)
+  If ItemSlot == Weapon Then:
+     If ItemType == Spear Then:
+        Plunge Attack 1 = Spear of Light
+     End If
+  End If
+End Sub
+59CA - Wanderer (Slot1/Slot2/Slot3)
+  Set All Stat Limitations(- 3/+ 5)
+  Increase Stat(Skl)
+  Increase Stat(Spr)
+  If ItemSlot == Weapon Then:
+     If ItemType == Axe Then:
+        Plunge Attack 3 = Woodchopper
+     End If
+  End If
+End Sub
+  
+59F9 - Nymph of Dawn (Slot2/Slot3)
+  If Energy <= 24 Then:
+     Energy = Energy + 192
+     Replace Bottommost Nymph of Dawn with Empty Slot
+  End If
+End Sub
+5A1E - Nymph of Dawn (Leave)
+  Energy = Energy + 192
+End Sub
+
+5A27 - Raven (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 5,Mag)
+  Set Stat Limitation(- 3/+ 5,Chm)
+  Set Stat Min(+3,Mag)
+  Set Stat Min(+3,Chm)
+End Sub
+5A5D - Wolf (Slot1/Slot2/Slot3)
+  Set Stat Limitation(- 3/+ 5,Skl)
+  Set Stat Limitation(- 3/+ 5,HP)
+  Set Stat Min(+3,Skl)
+  Set Stat Min(+3,HP)
+End Sub
+
+5A90 - Test Shade Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        Conflict = Wisp EssLv
+     Else If Wisp EssLv > 0 Then:
+        Conflict = Wisp EssLv + Shade EssLv
+     Else
+        Conflict = 0
+     End If
+  Else
+     Conflict = 0
+  End If        
+End Sub
+5ACB - Test Wisp Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        If Shade EssLv > 0 Then:
+           Conflict = Wisp EssLv + Shade EssLv
+        Else
+           Conflict = 0
+        End If
+     Else
+        Conflict = Shade EssLv
+     End If
+  Else
+     Conflict = 0
+  End If
+End Sub
+5B06 - Test Dryad Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+      Conflict = Dryad EssLv
+  Else
+      Conflict = 0
+  End If
+End Sub  
+5B1D - Test Aura Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+      Conflict = Aura EssLv
+  Else
+      Conflict = 0
+  End If
+End Sub  
+5B34 - Test Sala Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+     Conflict = Sala EssLv
+  Else
+     Conflict = 0
+  End If
+End Sub
+5B4B - Test Gnome Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+     Conflict = Gnome EssLv
+  Else
+     Conflict = 0
+  End If
+End Sub
+5B62 - Test Jinn Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+     Conflict = Jinn EssLv
+  Else
+     Conflict = 0
+  End If
+End If
+5B79 - Test Undine Dominance - Conflict = 5578
+  If Active World Card != Ancient Moon Then:
+     Conflict = Undine EssLv
+  Else
+     Conflict = 0
+  End If
+End Sub
+     
+5B90 - Test Wisp Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     Conflict = 0
+  Else:
+     Call Test Wisp Dominance
+  End If
+End Sub
+5BA4 - Test Shade Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     Call Test Shade Dominance
+  Else
+     Conflict = 0
+  End If
+End Sub
+5BB8 - Test Dryad Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     If Shade EssLv <= Wisp EssLv Then:
+        Conflict = 0
+     Else
+        Call Test Aura Dominance
+     End If
+  Else
+     If Wisp EssLv <= Shade EssLv Then:
+        Conflict = 0
+     Else
+        Call Test Aura Dominance
+     End If
+  End If
+End Sub
+5BED - Test Aura Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     If Wisp EssLv <= Shade EssLv Then:
+        Conflict = 0
+     Else
+        Call Test Dryad Dominance
+     End If
+  Else
+     If Shade EssLv <= Wisp EssLv Then:
+        Conflict = 0
+     Else
+        Call Test Dryad Dominance
+     End If
+  End If
+End Sub
+5C22 - Test Sala Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     Call Test Undine Dominance
+  Else
+     Call Test Gnome Dominance
+  End If
+End Sub
+5C35 - Test Gnome Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     Call Test Sala Dominance
+  Else
+     Call Test Jinn Dominance
+  End If
+End Sub
+5C48 - Test Jinn Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     Call Test Gnome Dominance
+  Else
+     Call Test Undine Dominance
+  End If
+End Sub
+5C5B - Test Undine Conflict - Conflict = 5578
+  If Active World Card != Mirrored World Then:
+     Call Test Jinn Dominance
+  Else
+     Call Test Sala Dominance
+  End If
+End Sub
+
+5C6E - Wisp Taint - Conflict = 5578
+  Call Test Wisp Conflict
+  If Conflict == 0 Then:
+     If Energy >= 8 Then:
+        Increase Wisp EssLv by 1 <-- Energy
+     End If
+  End If
+  Call Wisp/Shade Consumption
+End Sub
+5C9C - Shade Taint - Conflict = 5578
+  Call Test Shade Conflict
+  If Conflict == 0 Then:
+    If Energy >= 8 Then:
+       Increase Shade EssLv by 1 <-- Energy
+    End If
+  End If
+  Call Wisp/Shade Consumption
+End Sub
+5CCA - Dryad Taint - Conflict = 5578
+  Call Test Dryad Conflict
+  If Conflict == 0 Then:
+     Call Aura Consumption
+     If Energy >= 8 Then:
+        Dryad LvRaise = Dryad LvRaise + 1
+     End If
+  End If
+End Sub
+5CF0 - Aura Taint - Conflict = 5578
+  Call Test Aura Conflict
+  If Conflict == 0 Then:
+     Call Dryad Consumption
+     If Energy >= 8 Then:
+        Aura LvRaise = Aura LvRaise + 1
+     End If
+  End If
+End Sub
+5D16 - Sala Taint - Conflict = 5578
+  Call Test Sala Conflict
+  If Conflict == 0 Then:
+     Call Gnome Consumption
+     If Energy >= 8 Then:
+        Sala LvRaise = Sala LvRaise + 1
+     End If
+  End If
+End Sub
+5D3C - Gnome Taint - Conflict = 5578
+  Call Test Gnome Conflict
+  If Conflict == 0 Then:
+     Call Jinn Consumption
+     If Energy >= 8 Then:
+        Gnome LvRaise = Gnome LvRaise + 1
+     End If
+  End If
+End Sub
+5D62 - Jinn Taint - Conflict = 5578
+  Call Test Jinn Conflict
+  If Conflict == 0 Then:
+     Call Undine Consumption
+     If Energy >= 8 Then:
+        Jinn LvRaise = Jinn LvRaise + 1
+     End If
+  End If
+End Sub
+5D88 - Undine Taint - Conflict = 5578
+  Call Test Undine Conflict
+  If Conflict == 0 Then
+     Call Sala Consumption
+     If Energy >= 8 Then:
+        Undine LvRaise = Undine LvRaise + 1
+     End If
+  End If
+End Sub
+
+5DAE - Reduce Wisp
+  Decrease Wisp EssLv by 1 --> Energy
+End Sub
+5DBE - Reduce Shade
+  Decrease Shade EssLv by 1 --> Energy
+End Sub
+5DCE - Reduce Dryad
+  If Energy >= 4 Then:
+     Decrease Dryad EssLv by 1 --> Energy
+  End If
+End Sub
+5DEE - Reduce Aura
+  If Energy >= 4 Then:
+     Decrease Aura EssLv by 1 --> Energy
+  End If
+End Sub
+5E0E - Reduce Sala
+  If Energy >= 4 Then:
+     Decrease Sala EssLv by 1 --> Energy
+  End If
+End Sub
+5E2E - Reduce Gnome
+  If Energy >= 4 Then:
+     Decrease Gnome EssLv by 1 --> Energy
+  End If
+End Sub
+5E4E - Reduce Jinn
+  If Energy >= 4 Then:
+     Decrease Jinn EssLv by 1 --> Energy
+  End If
+End Sub
+5E6E - Reduce Undine
+  If Energy >= 4 Then:
+     Decrease Undine EssLv by 1 --> Energy
+  End If
+End Sub
+
+5E8E - Wisp/Shade Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        If Wisp EssLv > Shade EssLv Then:
+           While Shade EssLv > 0:
+              Call Reduce Shade
+           WEnd
+        End If
+     Else If Shade EssLv > Wisp EssLv Then:
+        While Wisp EssLv > 0:
+           Call Reduce Wisp
+        WEnd
+     End If
+  End If
+End Sub
+5ED6 - Aura Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        If Wisp EssLv > Shade EssLv Then:
+           Call Reduce Aura
+        End If
+     Else If Shade EssLv > Wisp EssLv Then:
+        Call Reduce Aura
+     End If
+  End If
+End Sub
+5F06 - Dryad Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        If Shade EssLv > Wisp EssLv Then:
+           Call Reduce Dryad
+        End If
+     Else If Wisp EssLv > Shade EssLv Then:
+        Call Reduce Dryad
+     End If
+  End If
+End Sub
+5F36 - Gnome Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        Call Reduce Gnome
+     Else
+        Call Reduce Undine
+     End If
+  End If
+End Sub
+5F52 - Jinn Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        Call Reduce Jinn
+     Else
+        Call Reduce Sala
+     End If
+  End If
+End Sub
+5F6E - Undine Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        Call Reduce Undine
+     Else
+        Call Reduce Gnome
+     End If
+  End If
+End Sub
+5F8A - Sala Consumption
+  If Active World Card != Ancient Moon Then:
+     If Active World Card != Mirrored World Then:
+        Call Reduce Sala
+     Else
+        Call Reduce Jinn
+     End If
+  End If
+End Sub
+
+5FA6 - Set Essense Markers - Arg1 = 5500, EssMk = 5A80
+  If Wisp EssLv >= Arg1 Then:
+     EssMk = EssMk OR 1
+  End If
+  If Shade EssLv >= Arg1 Then:
+     EssMk = EssMk OR 2
+  End If
+  If Dryad EssLv >= Arg1 Then:
+     EssMk = EssMk OR 4
+  End If
+  If Aura EssLv >= Arg1 Then:
+     EssMk = EssMk OR 8
+  End If
+  If Sala EssLv >= Arg1 Then:
+     EssMk = EssMk OR 16
+  End If
+  If Gnome EssLv >= Arg1 Then:
+     EssMk = EssMk OR 32
+  End If
+  If Jinn EssLv >= Arg1 Then:
+     EssMk = EssMk OR 64
+  End If
+  If Undine EssLv >= Arg1 Then:
+     EssMk = EssMk OR 128
+  End If
+End Sub
+602F - Set Resistance Markers - Arg1 = 5500, ResMk = 5A88
+  If Wisp EssLv >= Arg1 Then:
+     ResMk = ResMk OR 2
+  End If
+  If Shade EssLv >= Arg1 Then:
+     ResMk = ResMk OR 1
+  End If
+  If Dryad EssLv >= Arg1 Then:
+     ResMk = ResMk OR 8
+  End If
+  If Aura EssLv >= Arg1 Then:
+     ResMk = ResMk OR 4
+  End If
+  If Sala EssLv >= Arg1 Then:
+     ResMk = ResMk OR 32
+  End If
+  If Gnome EssLv >= Arg1 Then:
+     ResMk = ResMk OR 64
+  End If
+  If Jinn EssLv >= Arg1 Then:
+     ResMk = ResMk OR 128
+  End If
+  If Undine EssLv >= Arg1 Then:
+     ResMk = ResMk OR 16
+  End If
+End Sub
+
+60B8 - Get Essense Lvl - Arg1 = 5500 - Only thing that changes is Temp = 5568
+  Temp = Arg1 * 16
+  Pointer = 5888
+  Pointer = Pointer + Temp
+  Temp = Pointer-->Address
+End Sub
+
+60D4 - Place Wisp Card
+  If Energy >= 8 Then:
+     PreHidden Card = Wisp
+  End If
+End Sub
+60E9 - Place Shade Card
+  If Energy >= 8 Then:
+     PreHidden Card = Shade
+  End If
+End Sub
+60FE - Place Dryad Card
+  If Energy >= 8 Then:
+     PreHidden Card = Dryad
+  End If
+End Sub
+6113 - Place Aura Card
+  If Energy >= 8 Then:
+     PreHidden Card = Aura
+  End If
+End Sub
+6128 - Place Sala Card
+  If Energy >= 8 Then:
+     PreHidden Card = Salamander
+  End If
+End Sub
+613D - Place Gnome Card
+  If Energy >= 8 Then:
+     PreHidden Card = Gnome
+  End If
+End Sub
+6152 - Place Jinn Card
+  If Energy >= 8 Then:
+     PreHidden Card = Jinn
+  End If
+End Sub
+6167 - Place Undine Card
+  If Energy >= 8 Then:
+     PreHidden Card = Undine
+  End If
+End Sub
+
+617C - Increase Stat - Arg1 = 5500
+  Temp = Arg1 * 8
+  Pointer = 4920
+  Pointer = Pointer + Temp
+  Temp = Pointer-->Address
+  Temp = Temp + 1
+  If Temp > 15 Then:
+     Temp = 15
+  End If
+  Pointer-->Address = Temp
+End Sub
+61B3 - Increase All Stats - Arg2 = 5508
+  For 5500(Arg1) = 0 to 7
+     Increase Stat(Arg1,Arg2)
+  Next
+End Sub
+61CE - Set Stat Min - Arg1 = 5500, Arg2 = 5508
+  Temp = Arg2 * 8
+  Pointer = 5AA0
+  Pointer = Pointer + Temp
+  Pointer-->Address = Arg1
+End Sub
+61EA - Decrease Stat - Arg1 = 5500, Arg2 = 5508
+  Temp = Arg1 * 8
+  Pointer = 4920
+  Pointer = Pointer + Temp
+  Temp = Pointer-->Address
+  Temp = Temp - 1
+  If Temp < 0 Then
+     Temp = 0
+  End If
+  Pointer-->Address = Temp
+End Sub
+6220 - Decrease All Stats - Arg2 = 5508
+  For 5500(Arg1) = 0 to 7
+     Decrease Stat(Arg1,Arg2)
+  Next
+End Sub
+623B - Set Stat Limitation - Arg1 = 5500, Arg2 = 5508
+  Temp = Arg2 * 8
+  Pointer = 4924
+  Pointer = Pointer + Temp
+  Temp = Pointer-->Address
+  If Temp <= Arg1 Then:
+     Pointer-->Address = Arg1
+  End If
+End Sub
+6267 - Set All Stat Limitations - Arg2 = 5508
+  For 5500(Arg1) = 0 to 7
+     Set Stat Limitation(Arg1,Arg2)
+  Next
+End Sub
+
+6282 - 50% Resist - Arg1 = 5500
+  Temp = Arg1 * 16
+  Pointer = 5880
+  Pointer = Pointer + Temp
+  Temp = Pointer-->Address
+  Temp = [Temp / 2]
+  If Temp == 0 Then:
+     Temp = 1
+  End If
+  Pointer-->Address = Temp
+End Sub
+62B8 - 75% Resist - Arg1 = 5500
+  Temp = Arg1 * 16
+  Pointer = 5880
+  Pointer = Pointer + Temp
+  Temp = Pointer-->Address
+  Temp = [Temp / 4] * 3
+  If Temp == 0 Then:
+     Temp = 1
+  End If
+  Pointer-->Address = Temp
+End Sub
+
+62F5 - Find Card - Arg1 = 5500, SlotNum = 7100
+  Pointer = 5960
+  For SlotNum = 0 to 5
+     Temp = Pointer-->Address
+     If Temp = Arg1 Then:
+        Break
+     End If
+     Pointer = Pointer + 8
+  Next SlotNum
+End Sub
+
+632C - Get Essense Level - Arg1 = 5500, Result = 7100
+  Temp = Arg1 * 16
+  Pointer = 5888
+  Pointer = Pointer + Temp
+  Result = Pointer-->Address
+End Sub
+
+6348 - Get Total EssLv - Total = 7100
+  Total = 0
+  Total = Total + Wisp EssLv
+  Total = Total + Shade EssLv
+  Total = Total + Dryad EssLv
+  Total = Total + Aura EssLv
+  Total = Total + Sala EssLv
+  Total = Total + Gnome EssLv
+  Total = Total + Jinn EssLv
+  Total = Total + Undine EssLv
+  80 31 88 7B 80 '00 71'
+End Sub
+
+6394 - Inc50% - Arg1 = 6570
+  Arg1 = Arg1 * 3
+  Arg1 = [Arg1 / 2]
+  If Arg1 > 255 Then:
+     Arg1 = 255
+  End If
+End Sub
+63B0 - Inc25% - Arg1 = 6570
+  Arg1 = Arg1 * 5
+  Arg1 = [Arg1 / 4]
+  If Arg > 255 Then:
+     Arg1 = 255
+  End If
+End Sub
+
+63CC - 150% WeapSharp - Arg1 = 6570
+  Arg1 = WeapSharp
+  Inc50%(Arg1)
+  WeapSharp = Arg1
+End Sub
+63DC - 150% WeapHeavy - Arg1 = 6570
+  Arg1 = WeapHeavy
+  Inc50%(Arg1)
+  WeapHeavy = Arg1
+End Sub
+63EC - 150% WeapForce - Arg1 = 6570
+  Arg1 = WeapForce
+  Inc50%(Arg1)
+  WeapForce = Arg1
+End Sub
+63FC - 150% WeapTech - Arg1 = 6570
+  Arg1 = WeapTech
+  Inc50%(Arg1)
+  WeapTech = Arg1
+End Sub
+640C - 150% ArmStrike - Arg1 = 6570
+  Arg1 = ArmStrike
+  Inc50%(Arg1)
+  ArmStrike = Arg1
+End Sub
+641C - 150% ArmSlash - Arg1 = 6570
+  Arg1 = ArmSlash
+  Inc50%(Arg1)
+  ArmSlash = Arg1
+End Sub
+642C - 150% ArmThrust - Arg1 = 6570
+  Arg1 = ArmThrust
+  Inc50%(Arg1)
+  ArmThrust = Arg1
+End Sub
+643C - 150% ArmMagic - Arg1 = 6570
+  Arg1 = ArmMagic
+  Inc50%(Arg1)
+  ArmMagic = Arg1
+End Sub
+
+644C - 125% WeapSharp - Arg1 = 6570
+  Arg1 = WeapSharp
+  Inc25%(Arg1)
+  WeapSharp = Arg1
+End Sub
+645C - 125% WeapHeavy - Arg1 = 6570
+  Arg1 = WeapHeavy
+  Inc25%(Arg1)
+  WeapHeavy = Arg1
+End Sub
+646C - 125% WeapForce - Arg1 = 6570
+  Arg1 = WeapForce
+  Inc25%(Arg1)
+  WeapForce = Arg1
+End Sub
+647C - 125% WeapTech - Arg1 = 6570
+  Arg1 = WeapTech
+  Inc25%(Arg1)
+  WeapTech = Arg1
+End Sub
+648C - 125% ArmStrike - Arg1 = 6570
+  Arg1 = ArmStrike
+  Inc25%(Arg1)
+  ArmStrike = Arg1
+End Sub
+649C - 125% ArmSlash - Arg1 = 6570
+  Arg1 = ArmSlash
+  Inc25%(Arg1)
+  ArmSlash = Arg1
+End Sub
+64AC - 125% ArmThrust - Arg1 = 6570
+  Arg1 = ArmThrust
+  Inc25%(Arg1)
+  ArmThrust = Arg1
+End Sub
+64BC - 125% ArmMagic - Arg1 = 6570
+  Arg1 = ArmMagic
+  Inc25%(Arg1)
+  ArmMagic = Arg1
+End Sub
+
+64CC - 75% WeapSharp
+  WeapSharp = [WeapSharp / 4] * 3
+End Sub
+64DB - 75% WeapHeavy
+  WeapHeavy = [WeapHeavy / 4] * 3
+End Sub
+64EA - 75% WeapForce
+  WeapForce = [WeapForce / 4] * 3
+End Sub
+64F9 - 75% WeapTech
+  WeapTech = [WeapTech / 4] * 3
+End Sub
+6508 - 75% ArmStrike
+  ArmStrike = [ArmStrike / 4] * 3
+End Sub
+6517 - 75% ArmSlash
+  ArmSlash = [ArmSlash / 4] * 3
+End Sub
+6526 - 75% ArmThrust
+  ArmThrust = [ArmThrust / 4] * 3
+End Sub
+6535 - 75% ArmMagic
+  ArmMagic = [ArmMagic / 4] * 3
+End Sub
+
+6544 - 50% WeapSharp
+  WeapSharp = [WeapSharp / 2]
+End Sub
+654C - 50% WeapHeavy
+  WeapHeavy = [WeapHeavy / 2]
+End Sub
+6554 - 50% WeapForce
+  WeapForce = [WeapForce / 2]
+End Sub
+655C - 50% WeapTech
+  WeapTech = [WeapTech / 2]
+End Sub
+6564 - 50% ArmStrike
+  ArmStrike = [ArmStrike / 2]
+End Sub
+656C - 50% ArmSlash
+  ArmSlash = [ArmSlash / 2]
+End Sub
+6574 - 50% ArmThrust
+  ArmThrust = [ArmThrust / 2]
+End Sub
+657C - 50% ArmMagic
+  ArmMagic = [ArmMagic / 2]
+End Sub

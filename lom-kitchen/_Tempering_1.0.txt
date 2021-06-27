@@ -1,0 +1,143 @@
+biqutS Tempering 1.0
+
+
+PURPOSE:
+This is a guide for making a 200+ attack power weapon out of LorantSilver.
+
+
+INGREDIENTS:
+30 gold clover
+1 silver coin of each element
+5 mercury
+5 sulpher
+1 chaos crystal
+4 bumpkin
+1 sharp claw
+
+
+RECIPE:
+aura silver
+mercury
+mercury
+undine silver
+gold clover
+gold clover
+gold clover
+dryad silver
+gold clover
+gold clover
+gold clover
+gold clover
+gold clover
+sulpher
+sulpher
+gnome silver
+gold clover
+gold clover
+gold clover
+mercury
+gold clover
+gold clover
+gold clover
+gold clover
+gold clover
+mercury
+shade silver
+sulpher
+gold clover
+gold clover
+gold clover
+gold clover
+gold clover
+sulpher
+wisp silver
+sala silver
+gold clover
+gold clover
+gold clover
+sulpher
+chaos crystal
+jinn silver
+gold clover
+gold clover
+gold clover
+gold clover
+mercury
+bumpkin
+gold clover
+gold clover
+bumpkin
+bumpkin
+bumpkin
+sharp claw
+
+
+RESULTS:
+Following the recipe above will give you a weapon with all the essence markers,
+50 total essences, +3 to all stats, and approximately these attack powers.
+spear 336
+2Haxe 284
+2Hsword 284
+knife 283
+bow 263
+sword 227
+
+The other weapons produce better results under slightly different conditions.
+Using holy waters instead of the bumpkins and a giants horn instead of the
+sharp claw will give approximately these results.
+hammer 446
+flail 275
+staff 271
+axe 248
+glove 242
+
+
+THEORY I (cardless tempering):
+This is a listing of just the carded ingredients. To the side are the cards
+present when the cardless items are added.
+ 
+aura silver
+mercury
+mercury
+undine silver __(undine)/witch/witch/aura
+dryad silver ___(dryad)/undine/witch/witch
+sulpher
+sulpher
+gnome silver ___(gnome)/sorcerer/sorcerer/dryad
+mercury ________(mercury)/gnome/sorcerer/sorcerer
+mercury
+shade silver
+sulpher ________(sulpher)/shade/witch/witch
+sulpher
+wisp silver
+sala silver ____(sala)/wisp/sorcerer/sorcerer
+sulpher
+chaos crystal
+jinn silver ____(jinn)/ancient moon/sorcerer/sala
+mercury
+bumpkin ________(bumpkin)/witch/jinn/ancient moon
+bumpkin
+bumpkin
+bumpkin ________(bumpkin)/clown/clown/clown
+
+The first thing you should notice is that the (first slot) isn't visible on
+your weapon.
+The second thing you should notice is that in the first 6 cases the three
+visible slots contain one element card and 2 wizard cards. This situation
+reduces elemental resistances and allows us to get the most out of our gold
+clovers.
+In the next two cases there is an ancient moon card instead of a second
+wizard card. The ancient moon card is needed to get rid of the conflict
+which would normally prevent the last two elements from rising.
+In the last case the clown cards increase one aspect of the weapon while
+decreasing another. The sharp claw has a similar effect.
+
+
+ACKNOWLEDGEMENTS:
+Marcus Majarra
+Myst Erik Ery
+
+
+CONTACT:
+biqutS @ GameFAQs (jonh @ polter . net)
+

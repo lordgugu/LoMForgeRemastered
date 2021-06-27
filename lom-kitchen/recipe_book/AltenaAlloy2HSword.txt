@@ -1,0 +1,110 @@
+~AltenaAlloy 2H Sword:~
+
+~Recipe:~
+3 Glow Crystals
+2 Dryad Gold Coins
+3 Glow Crystals
+2 Aura Gold Coins
+0  0  5  3  0  0  0  0 : 90
+
+3 Glow Crystals
+2 Shade Gold Coins
+3 Glow Crystals
+2 Wisp Gold Coins
+3  5  5  5  0  0  0  0 : 125
+
+3 Glow Crystals
+2 Undine Gold Coins
+3 Glow Crystals
+2 Gnome Gold Coins
+5  5  5  5  0  3  0  5 : 159
+
+3 Glow Crystals
+1 Chaos Crystal
+2 Salamander Gold Coins
+2 Glow Crystals
+5  5  5  5  5  5  0  5 : 184
+
+1 Chaos Crystal
+1 Salamander Gold Coin
+3 Glow Crystals
+1 Chaos Crystal
+5  5  5  5  5  5  0  5 : 184
+
+2 Jinn Gold Coins
+2 Glow Crystals
+1 Chaos Crystal
+1 Jinn Gold Coin
+5  5  5  5  5  5  5  5 : 201
+
+2 Glow Crystals
+5 Holy Waters
+1 Dragon Breath
+1 Giant's Horn
+1 Gold Clover
+5  5  5  5  5  5  5  5 : 252
+
+Note: you can substitute 2 Silver Coins ones for a Gold one, but the Silvers have to be used first.
+
+~Materials Needed:~
+30 Glow Crystals
+2 Wisp Gold
+2 Shade Gold
+2 Dryad Gold
+2 Aura Gold
+3 Sala Gold
+2 Gnome Gold
+3 Jinn Gold
+2 Undine Gold
+4 Chaos Crystals
+1 Dragon Breaths
+5 Holy Waters
+1 Gold Clover
+1 Giant's Horn.
+
+~Result (without additions):~
+Power:   252
+Resists: 10 10 10 10 10 10 10 10
+Essence:  5  5  5  5  5  5  5  5
+Markers: wi, sh, dr, au, sa, gn, ji, un
+Stats:    3  3  1  1  3  5  1  1
+Last Item: Gold Clover
+Cards:  (Sacrificed Nymph), Man of Valor, Cleric, Cleric, >-->
+Plunges: Thrust, Uppercut, Jump
+Price:   4125
+
+~Additions:~
+Plunge Attacks:
+1 Moth Wing
+1 Lilipod
+5  5  5  5  5  5  5  5 : 201
+
+Augmenting:
+3 Lilipods
+7 Spiny Seed
+5  5  5  5  5  5  5  5 : 201
+
+Varnish:
+3 Bumpkin
+1 Sharp Claw
+3 Bumpkin
+1 Sharp Claw
+5  5  5  5  5  5  5  5 : 357
+
+~Result (with additions):~
+Power:  357
+Resists: 10 10 10 10 10 10 10 10
+Essence:  5  5  5  5  5  5  5  5
+Markers: wi, sh, dr, au, sa, gn, ji, un
+Stats:    9  9  9  9  9  9  9  9
+Last Item: Sharp Claw
+Cards:  (Clown), Clown, Clown, Clown, >-->
+Plunges: Thrust, Uppercut, Jump
+Price:   2125
+
+~Note that I did not come up with this idea by myself. This is a variation on Gameguy256's Dragonscale 2H Sword. 
+
+I happen to like Altena Alloy, so I used Gameguy256's recipe, and it worked pretty well. Then I just used the typical 
+additions ('cept I used the varnish twice, which upped the power by 82 points).
+
+If anyone can get an AltenaAlloy2HSword up any higher than this, please let me know.

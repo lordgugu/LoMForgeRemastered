@@ -1,0 +1,32 @@
+97 / 172 LorantSilver Glove (shop only mats)
+RoundSeed
+2 Sulpher
+FireStone
+2 MoonCrystal
+GoldClover
+2 MoonCrystal
+3 SunCrystal
+3 GoldClover
+WindStone
+2 Mercury
+WaterStone
+3 GoldClover
+ChaosCrystal
+EarthStone
+4 GoldClover
+Sulpher
+EarthStone
+2 GoldClover
+
+After you get a level 3 material shop add
+4 HolyWater
+GoldClover
+
+
+9 4
+25 107 107 17 22 22 67 22 22
+21 21 21 67 67 67 19 97 97 20
+67 67 67 24 18 67 67 67 67
+107 18 67 67
+
+95 95 95 95 67

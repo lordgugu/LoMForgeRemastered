@@ -1,0 +1,256 @@
+0-0-0-0-0-0-0-0
+meat
+4x glow crystal
+2x sulpher
+aura silver
+glow crystal
+A 0-0-9-0-0-0-0-0
+2x glow crystal
+aura silver
+2x mercury
+4x glow crystal
+3x mercury
+aura silver
+4x glow crystal
+3x mercury
+aura gold
+B 0-0-9-9-0-0-0-0
+(glow crystal?)
+waterstone
+glow crystal
+undine silver
+mercury
+4x glow crystal
+2x mercury
+waterstone
+glow crystal
+C 0-0-9-9-0-0-0-9
+mirror piece
+any seed
+2x sulpher
+firestone
+D 0-0-11-9-1-0-0-8
+4x glow crystal
+2x mercury
+waterstone
+glow crystal
+E 0-0-11-9-0-0-0-9
+mirror piece
+aura silver
+2x mercury
+sala silver
+moon crystal
+waterstone
+2x mercury
+garlicrown
+F 0-1-10-11-0-0-0-9
+needle
+mirror piece
+2x mercury
+2x waterstone
+0-1-11-10-0-0-0-11
+2x mercury
+garlicrown
+sun crystal
+G 1-1-10-11-0-0-0-12
+mirror piece
+aura silver
+2x mercury
+firstone
+2x any seed
+mirror piece
+any seed
+2x sulpher
+firestone
+H 1-1-13-12-2-0-0-10
+chaos crystal
+moon crystal
+aura silver
+2x mercury
+waterstone
+spiny carrot
+I 1-2-12-13-0-0-0-11
+needle
+mirror piece
+sulpher
+mercury
+2x waterstone
+2x mercury
+garlicrown
+sun crystal
+J 2-2-12-13-0-0-0-14
+mirror piece
+aura silver
+2x mercury
+firestone
+2x any seed
+mirror piece
+any seed
+2x sulpher
+firestone
+K 2-2-15-14-2-0-0-12
+chaos crystal
+moon crystal
+aura silver
+2x mercury
+waterstone
+spiny carrot
+L 2-3-14-15-0-0-0-13
+needle
+mirror piece
+waterstone
+3x shade silver
+2x mercury
+garlicrown
+M 0-7-14-15-0-0-0-14
+
+needle
+mirror piece
+4x shade silver
+waterstone
+2x mercury
+garlicrown
+N 0-11-14-15-0-0-0-15
+needle
+mirror piece
+3x shade silver
+firestone
+waterstone
+2x mercury
+garlicrown
+O 0-14-14-15-0-0-0-15
+needle
+mirror piece
+2x sulpher
+mercury
+mush-in-a-box
+P 0-15-15-14-0-0-0-15
+2x glow crystal
+2x wisp silver
+2x glow crystal
+sulpher
+wisp silver
+Q 6-15-14-15-0-0-0-15
+chaos crystal
+any seed
+windstone
+2x wisp silver
+2x mercury
+garlicrown
+R 10-15-14-15-0-0-4-14
+needle
+mirror piece
+waterstone
+sulpher
+mercury
+waterstone
+S 10-15-15-14-0-0-2-15
+wisp silver
+2x mercury
+garlicrown
+3x wisp silver
+windstone
+chaos crystal
+T 14-15-14-15-0-0-4-13
+earthstone
+sulpher
+glow crystal
+sulpher
+earthstone
+4x glow crystal
+2x sulpher
+gnome silver
+glow crystal
+U 14-15-14-15-0-9-0-13
+needle
+mirror piece
+4x earthstone
+waterstone
+2x mercury
+garlicrown
+V 14-15-14-15-0-13-0-14
+needle
+mirror piece
+2x sulpher
+2x earthstone
+waterstone
+2x mercury
+garlicrown
+W 14-15-14-15-0-15-0-15
+needle
+mirror piece
+4x sulpher
+wisp silver
+garlicrown
+X 15-15-14-14-0-15-0-15
+glow crystal
+chaos crystal
+windstone
+jinn silver
+mercury
+glow crystal
+chaos crystal
+windstone
+2x mercury
+4x glow crystal
+chaos crystal
+2x mercury
+windstone
+4x glow crystal
+chaos crystal
+2x mercury
+jinn gold
+Y 15-15-14-14-0-15-9-15
+firestone
+chaos crystal
+sulpher
+firestone
+acid
+glow crystal
+chaos crystal
+3x sulpher
+sala silver
+4x glow crystal
+chaos crystal
+sulpher
+firestone
+Z 15-15-14-14-7-15-9-15
+
+Need:
+16 Mirror Piece
+51 Glow Crystal
+10 Chaos Crystal
+2 Sun Crystal
+3 Moon Crystal
+9 FireStone
+17 WaterStone
+5 WindStone
+8 EarthStone
+9 Aura Silver
+1 Aura Gold
+2 Sala Silver
+1 Gnome Silver
+1 Jinn Silver
+1 Jinn Gold
+1 Undine Silver
+10 Wisp Silver
+10 Shade Silver
+8 Any Seed
+55 Mercury
+27 Sulphur
+10 Needle
+1 Acid
+12 Garlicrown
+2 Spiny Carrot
+1 Mush-in-a-Box
+
+Note: I'm not sure where you have to add the extra Glow Crystal in -- at the
+end of the first, or at the end of the second step. One of the two. Try one,
+and if it ends up correct, it must be the one. If it doesn't work after a
+couple steps, try the other. ^_^
+
+Myst, I'm tracing this thing out, you're missing a Glow Crystal at the end of
+Phase B (or at the start of Phase C, since it's used to get Undine to 9).
+
+
+

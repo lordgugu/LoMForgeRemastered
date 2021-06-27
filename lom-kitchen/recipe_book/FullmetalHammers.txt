@@ -1,0 +1,127 @@
+1TonHammer
+FullmetalHammer
+
+Ash
+Honey Onion
+Earth Stone
+Garlicrown
+Spiny Carrot
+Hairball OR Needle
+Hairball OR Needle
+Fire Stone
+Wind Stone
+Chaos Crystal
+Spade Basil
+Mush-in-a-Box
+Cornflower
+Fishy Fruit
+Flaming Quill
+White Feather
+5x Heart Mint
+4x Orange'opus
+Whalamato OR 5x Mangoelephant
+Fishy Fruit OR Bellgrapes
+3x Bellgrapes
+Grave Dirt
+Holy Water
+Bumpkin
+Holy Water
+Any Meat
+Dragon's Breath
+
+(36 Items)
+
+OFFENSE: 111
+  1/  1/  1/  1
+  1/  1/  1/  1
+ +1/ +1/ +1/ +1
+ +1/ +1/ +1/ +1
+Magma Hammer Plunge
+
+Forgecode:
+6
+49
+113 51 18 50 53 114 114 17 19 24 65 68 55 46 90 91 64 64 64 64 64 62 62 62 62 44 46 33 33 33 112 95 63 95 70 100
+
+
+
+
+
+
+
+2TonHammer
+FullmetalHammer
+
+Shade Silver
+Aura Silver
+Wisp Silver
+Big/Small/Long Seed
+Fire Stone
+Wind Stone
+Earth Stone
+Chaos Crystal
+Ash
+Spiny Carrot
+Fishy Fruit
+Meat
+Ash
+Dragon Blood
+Angry Eye
+
+(15 Items)
+
+OFFENSE: 222
+  2/  2/  2/  2
+  2/  2/  2/  2
+ +2/ +2/ +2/ +2
+ +2/ +2/ +2/ +2
+Magma Hammer Plunge
+
+Forge Code:
+6
+49
+10 12 9 28 17 19 18 24 113 53 46 70 113 93 82
+
+
+
+
+
+
+3TonHammer
+FullmetalHammer
+
+Big/Small/Long Seed
+Fire Stone
+Aura Silver
+Jinn Silver
+Gnome Gold
+Undine Silver
+Grave Dirt
+4x Mush-in-a-Box
+Chaos Crystal
+Gnome Silver
+Undine Silver
+Wisp Silver
+Sulphur
+Flaming Quill
+Whalamato
+Sulphur
+Ash
+Holy Water
+Ash
+Bumpkin
+Scissors
+
+(24 Items)
+
+OFFENSE: 333
+  3/  3/  3/  3
+  3/  3/  3/  3
+ +3/ +3/ +3/ +3
+ +3/ +3/ +3/ +3
+Magma Hammer Plunge
+
+Forge Code:
+6
+49
+28 17 12 15 6 16 112 68 68 68 68 24 14 16 9 107 90 44 107 113 95 113 63 74

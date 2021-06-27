@@ -1,0 +1,234 @@
+[[ Edited by Myst Erik Ery to have line wraps >_>;
+[[ Original file: ekm3777 
+[[ Here's to Myst Erik Ery, wishing Yahoo didn't claim it was created by him! >_<
+
+Aerolite "Uber" Recipe
+
+Typed/Tested: Locarte
+
+Special Thanks to:
+
+Terence for showing us that Salamander being constantly drained is a GOOD 
+thing.  Also made the first good Aerolite Weapon (as far as I know anyway)
+
+Myst Erik Ery for being a vocal authority of the tempering processes so that
+all others could learn.
+
+---------------------------------------------
+
+Aerolites and what you need to know...
+
+Rule #1: With each item you temper in, Salamander WILL DRAIN by 1 point.  Learn
+ to live with it and love it.
+
+Rule #2: Salamander can NEVER be put in a "Locked" status.  It is ALWAYS being
+ drained whether it looks like it is or not
+
+Rule #3: Review Rule #1 and #2.  There lies in the advantage.
+
+Rule #4: Its recommended that you put in any Plunge Attacks BEFORE you start
+ the recipe.  There is a good chance you won't get the oppertunity to add it in
+ during the actual recipe.
+
+---------------------------------------------
+
+Notation: This recipe, I'm using the NemesisRock 2H Axe, Sweet Revenge dropped
+ by Level 64+ Goblins
+All Attack Power Values and Pre Temper Recipe reflect that.
+
+Pre Recipe Temper:
+
+Earth Stone
+Sulpher
+2x Flaming Quill
+Glow Crystal
+Giant Horn (for Treefeller Plunge)
+
+
+[[ This section by Myst:
+
+If you're forging it raw, you'll need to do this:
+4 Any Meat (to clear away the four starting Salamander essence)
+Earth Stone
+Sulphur
+Sulphur
+Flaming Quill
+Glow Crystal
+Giant Horn
+
+Next, you'll want to do something like this in order to ensure you've got a blank slate to work with:
+Fire Stone
+Fire Stone
+4 Meat (This should drain Gnome to 0 again)
+
+Now you can continue from the place I've marked as ":HERE"  :
+
+If you're forging it raw and don't want the Plunge Attack, simply add 4 meats, and start from the beginning of the "onward to the recipe" section.
+
+ ]]
+
+Onward to the recipe:
+
+Fire Stone	Sala 1
+Fire Stone	Sala 2
+Sulpher		Sala 3   :HERE
+Sulpher		Sala 4
+Fire Stone	Sala 5
+Fire Stone	Sala 6
+Sulpher
+Sulpher
+Fire Stone	Sala 7
+Fire Stone	Sala 8
+Sulpher
+Sulpher
+Fire Stone	Sala 9
+Fire Stone	Sala 10 (I think by now you get the idea)
+Sulpher
+Sulpher
+Fire Stone	Sala 11
+Fire Stone	Sala 12
+Sulpher
+Sulpher
+Fire Stone	Sala 13
+Fire Stone	Sala 14
+Sulpher
+Sulpher
+Fire Stone	Sala 15		Attack Power 116
+Mecury
+Shade Silver	Shade 1
+_Mush-in-a-Box	Shade 2 => 14	Attack Power 168 
+Fire Stone	Shade 15, Sala 14
+Sulpher
+Sulpher
+Fire Stone	Sala 15
+Wisp Silver	Wisp 1
+Sulpher		Wisp 2
+_Meat		Wisp 3 => 15	Attack Power 228
+Any Seed	Dryad 1
+Fire Stone	Dryad 2
+Sulpher		Dryad 3
+_Meat		Dryad 4 => 15, Sala 14	Attack Power 280 (add 1 more meat when you first see 280 to get correct essences)
+Sulpher
+Fire Stone	Sala 15
+Aura Silver	Aura 1
+Fire Stone	Aura 2
+_Meat		Aura 3 => 14
+Sulpher		Aura 15, Sala 14
+Sulpher
+Fire Stone	Sala 15
+Wind Stone	Jinn 1
+Mercury		Jinn 2
+_Meat		Jinn 3 => 13	Attack Power 389
+Mercury
+Fire Stone
+_Meat		Jinn 14 => 15, Sala 14 => 13
+Sulpher
+Sulpher
+Fire Stone	Sala 14
+Fire Stone	Sala 15
+Earth Stone
+Chaos Crystal
+Sulpher		Gnome 1
+_Gold Clover	Gnome 2 => 4
+Fire Stone	Gnome 5		Attack Power 415
+Earth Stone	Gnome 6
+Earth Stone	Gnome 8
+Chaos Crystal	Gnome 7
+Fire Stone
+Sulpher
+Earth Stone	Gnome 8
+Earth Stone	Gnome 10
+Fire Stone	Gnome 9
+Chaos Crystal	Gnome 8
+Sulpher
+Earth Stone	Gnome 9
+Fire Stone	Gnome 10
+Earth Stone	Gnome 12
+Chaos Crystal	Gnome 11
+Sulpher
+Fire Stone	Gnome 12
+Earth Stone	Gnome 13
+Sulpher		Gnome 14
+Chaos Crystal	Gnome 13
+Fire Stone	Gnome 14
+_Meat		Gnome 15, Sala 14
+Sulpher
+Sulpher
+Fire Stone	Sala 15
+Chaos Crystal	Gnome 14
+Ash/Bumpkin
+_Spiny Carrot	Undine 1 => 14	Attack Power 504 *
+Ash/Bumpkin
+--If using Bumpkins, nows the time to add 7x ToadstoolSheds for +9 Stats to all
+Ash/Bumpkin	Sala 14
+Fire Stone
+Scissors/Sharp Claw	Sala 13
+
+FINISHED
+
+* Current Essences
+
+15-15-15-15-15-14-15-14!!  Take a moment to appreciate this, this by far is the
+ HIGHEST the Essences will ever get without cheating.
+
+[[ Editor's (Myst Erik Ery's) Note: Congratulations!  Do remember that the
+ varnish cuts down on Salamander by two points, which is sad...  But I believe 
+that this is, in fact, the highest Essences will get.  Ever.  Heh, heh.  You 
+know, though, I knew from approximately the time we learned about Aerolite's 
+Bleeding properties that they would be what reaches the highest essense total.  
+I do wonder what Attack Powers you'd get for SwifteRock!  Too bad Pocketstation 
+was cut.. ;_;
+
+Materials Needed:
+
+30x Fire Stones
+8x Earth Stones
+1x Jinn Stone
+14x Spiny Carrots
+1x Wisp Silver
+1x Shade Silver
+13x Mush-in-a-Box's
+1x Any Seed
+1x Aura Silver
+51x Meats
+3x Gold Clovers
+28x Sulphers
+3x Mercury
+6x Chaos Crystals
+3x Ash/Bumpkins
+1x Scissor/Sharp Claw
+7x ToadstoolSheds **Optional
+
+Not including the Optional Items
+
+Total Items Used: 165
+
+Lucre Costs: 49050
+
+----------------------------------
+
+Final Essence Values:
+
+15-15-15-15-13-14-15-14
+
+Total Essences: 116!
+
+Special Weapons Attack Powers:
+
+Sweet Revenge: 999
+Crimson Glare: 914
+
+TuttleRock Attack Powers:
+
+Hammer: 999
+2H Axe: 999
+1H Axe: 915
+Spear :	841
+2H Swd: 822
+Dagger: 710
+Bow   : 662
+1H Swd: 657
+
+Afterthoughts:
+
+This is my favorite recipe yet.  Nothing but cheap items used.  ZERO Mirror Pieces needed, ZERO Glow Crystals Needed so no trading at Prof. Bombs place.  Just about every item you put into the process raises an essence one way or another.  I'd almost consider it a "quick" recipe if it didn't require so much thought :P  Not to mention tempering in 165 items is hardly considered quick :)

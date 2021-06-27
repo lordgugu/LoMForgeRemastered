@@ -1,0 +1,196 @@
+DragonScaleArmor and AdamantitePendants are the "best" armor because
+they have the highest values for material and equipment type.
+Pendants also allow you to get all of the status immunities on a
+single item.
+
+1. Max armor values
+Great high defense, but you can't regenerate hp.
+  DragonScaleArmor 98/98/99/6
+    round seed
+    3 needle(ttuce)
+    sleepy eye
+  AdamantitePendant 0/0/0/95
+    stinky breath
+    fire stone
+    sulpher
+    sulpher
+    holy water
+    zombie claw
+    blackened Bat
+    ghost howl
+    sharp claw
+    water stone
+    fishy fruit
+    squalphin
+    round seed
+    3 needle(ttuce)
+    moth wing
+
+2. High armor values
+Pretty much the same as the first one but uses heaven scales card
+from springana so you can regenerate hp (even while moving), but
+now you can't revive.
+  DragonScaleArmor 65/65/68/4
+    round seed
+    2 needle(ttuce)
+    springana
+    sleepy eye
+  AdamantitePendant 0/0/0/78
+    stinky breath
+    fire stone
+    sulpher
+    sulpher
+    holy water
+    zombie claw
+    blackened Bat
+    ghost howl
+    sharp claw
+    water stone
+    fishy fruit
+    squalphin
+    round seed
+    2 needle(ttuce)
+    springana
+    moth wing
+
+3. High stats
+With a maxed out hp stat you'll regenerate damage faster than you can
+take it in most situations. This setup also raises your luck more than
+the others can. Since the armor values aren't critical to this setup
+you can make the first three items out of anything (the shoes show what
+needs to change to work on wood). The pendant recipe relies on the
+particular resistances of adamantite in a number of places, but it can
+be replaced with menos bronze and any other material with the same
+resistances.
+  Mantle
+    round seed
+    3 sulpher
+    round seed
+    sun crystal
+    needle(ttuce)
+    spiny seed
+    poison fang
+    spiny seed
+    white feather (regen while moving)
+    X meat
+    lilipod
+  Ring
+    round seed
+    3 sulpher
+    round seed
+    needle(ttuce)
+    spiny seed
+    poison fang
+    spiny seed
+    ear of wheat (exp share)
+    X meat
+    lilipod
+  Shoes
+    round seed
+    3 sulpher
+    round seed
+    needle(ttuce)
+    spiny seed
+    poison fang
+    spiny seed
+    loquat-shoes or pear o'heels (extra exp crystals)
+    X meat
+    lilipod
+  WoodenShoes
+    3 sulpher
+    needle(ttuce)
+    loquat-shoes or pear o'heels (extra exp crystals)
+    spiny seed
+    poison fang
+    spiny seed
+    X grave dirt
+  AdamantitePendant (0 0 0 34 with all essence markers)
+    stinky breath
+    fire stone
+    sulpher
+    sulpher
+    holy water
+    zombie claw
+    blackened bat
+    shade silver
+    sharp claw
+    water stone
+    fishy fruit
+    squalphin
+    round seed
+    sulpher
+    sulpher
+    gnome silver
+    flaming quill
+    wind stone
+    sun crystal
+    flaming quill
+    flaming quill
+    chaos crystal
+    aura silver
+    giants horn
+    flaming quill
+    sala gold
+    needlettuce
+    ghosts howl
+    spiny seed 
+    ghosts howl
+    spiny seed
+    virgins sigh (extra lucre)
+    X meat
+    moth wing
+
+Here are some more high stat recipes.
+  Mantle (granz steel 1 1 1 5, vizel gold 2 2 2 9, altena alloy 3 3 3 14)
+    moon crystal
+    sun crystal
+    round seed
+    3 sulpher
+    round seed
+    needle
+    white feather
+    spiny seed
+    poison fang
+    spiny seed
+    dialaurel
+    9 meat
+    creepy eye
+  Shoes (lorimar iron 2 4 2 3)
+    round seed
+    3 sulpher
+    round seed
+    wind stone
+    3 mercury
+    wind stone
+    needle
+    pear oheals/loquat shoes
+    spiny seed
+    clear feather/poison fang
+    spiny seed
+    diceberry
+    9 meat
+    pear oheal/loquat shoes
+  Pendant (Adamantite 0 0 0 43, LapisLazuli 0 0 0 34)
+    stinky breath
+    fire stone
+    2 sulpher
+    holy water
+    zombie claw
+    blackened bat
+    shade silver
+    sharp claw
+    water stone
+    fishy fruit
+    squalphin
+    round seed
+    3 sulpher
+    round seed
+    ghosts howl
+    needle
+    virgins sigh
+    spiny seed
+    poison fang
+    spiny seed
+    dialaurel
+    10 meats
+    moth wing

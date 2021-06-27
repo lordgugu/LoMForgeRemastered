@@ -1,0 +1,170 @@
+LEGEND OF MANA ARMOR/WEAPON GAMESHARK
+
+Version: 1.0
+Written By: J. Glessner (jynkers)
+
+-------------------------------------------------------------------------------
+GAMESHARK
+-------------------------------------------------------------------------------
+
+After searching the net until my ears nearly bled, I consigned myself to the 
+fact that I was going to have to figure this out on my own. There were weapon 
+modifier codes that give you the “ultimate weapon” of whatever kind you want.  
+However, until now there were no armor codes of the same caliber. 
+
+I wanted not only the best armor, but the best golem – and I didn’t want to 
+spend hours upon hours tempering. It took me a total of 2.5 hours to complete 
+this, and another hour to figure out whether or not they’d work (which, 
+thankfully, they did – after some tweaking). 
+
+So, for those of you who are lazy like me and want the best-of-the-best without 
+much work, these are for your enjoyment purposes (gameshark 4.0 or higher is 
+required for these to work).
+
+-------------------------------------------------------------------------------
+
+**Armor Modifier Codes**
+
+>>Slot 1<<
+
+Elements:
+Shade & Wisp		30043670 00FF
+Dryad & Aura		30043671 00FF
+Salamander & Gnome	30043672 00FF
+Jinn & Undine		30043673 00FF
+
+Max Status Modifier Codes:
+Power & Skills		30043674 00FF
+Defense & Magic		30043675 00FF
+HP & Spirit		30043676 00FF
+Charm & Luck		30043677 00FF
+
+Max Strikes		8004367C 03E7
+Max Slashes		8004367E 03E7
+Max Thrusts		80043680 03E7
+Max Magic		80043682 03E7
+
+Mystical Powers Modifier Codes:
+Slot 1			30043678 00??
+Slot 2			30043679 00??
+Slot 3			3004367A 00??
+
+Have All Status Markers	        30043684 00FF
+Have All Elemental Markers	30043685 00FF
+
+>>Slot 2<<
+
+Elements:
+Shade & Wisp		300436B0 00FF
+Dryad & Aura		300436B1 00FF
+Salamander & Gnome	300436B2 00FF
+Jinn & Undine		300436B3 00FF
+
+Max Status Modifier Codes:
+Power & Skills		300436B4 00FF
+Defense & Magic		300436B5 00FF
+HP & Spirit		300436B6 00FF
+Charm & Luck		300436B7 00FF
+
+Max Strikes		800436BC 03E7
+Max Slashes		800436BE 03E7
+Max Thrusts		800436C0 03E7
+Max Magic		800436C2 03E7
+
+Mystical Powers Modifier Codes:
+Slot 1			300436B8 00??
+Slot 2			300436B9 00??
+Slot 3			300436BA 00??
+
+Have All Status Markers	        300436C4 00FF
+Have All Elemental Markers	300436C5 00FF
+
+>>Slot 3<<
+
+Elements:
+Shade & Wisp		300436F0 00FF
+Dryad & Aura		300436F1 00FF
+Salamander & Gnome	300436F2 00FF
+Jinn & Undine		300436F3 00FF
+
+Max Status Modifier Codes:
+Power & Skills		300436F4 00FF
+Defense & Magic		300436F5 00FF
+HP & Spirit		300436F6 00FF
+Charm & Luck		300436F7 00FF
+
+Max Strikes		800436FC 03E7
+Max Slashes		800436FE 03E7
+Max Thrusts		80043700 03E7
+Max Magic		80043702 03E7
+
+Mystical Powers Modifier Codes:
+Slot 1			300436F8 00??
+Slot 2			300436F9 00??
+Slot 3			300436FA 00??
+
+Have All Status Markers	        30043704 00FF
+Have All Elemental Markers	30043705 00FF
+
+And if you’re going to use armor codes, you’ll probably want weapon 
+codes as well, here they are (note that the following came from 
+CodeBreaker.com):
+
+>>Weapon Modifier Codes:<<
+
+Elements:
+Shade & Wisp		30043630 00FF
+Dryad & Aura		30043631 00FF
+Salamander & Gnome	30043632 00FF
+Jinn & Undine		30043633 00FF
+
+Max Status Modifier Codes
+Power & Skills		30043634 00FF
+Defense & Magic		30043635 00FF
+HP & Spirit		30043636 00FF
+Charm & Luck		30043637 00FF
+Max Attack		8004363C 03E7
+
+Mystical Powers Modifier Codes
+Slot 1			30043638 00??
+Slot 2			30043639 00??
+Slot 3			3004363A 00??
+
+Have All Essence Markers	30043644 00FF
+
+-------------------------------------------------------------------------------
+
+Extra:
+
+I finally found those pets codes! If you want them, they're posted in a 
+separate document entitled, of course, "Pet Modifier Codes".
+
+-------------------------------------------------------------------------------
+
+Credit:
+
+I have to give credit to www.CodeBreaker.com for the weapon modifier codes, 
+without which I’d have been unable to figure out the armor codes.
+
+-------------------------------------------------------------------------------
+
+Contact Info:
+
+If you have any questions or comments:
+
+My Email: leareth@hotmail.com
+
+Instant Messenger Programs: 
+YIM – kittycat98684@yahoo.com
+
+-------------------------------------------------------------------------------
+
+Copyright Info:
+
+© 2006 J. Glessner (jynkers). Feel free to use these codes 
+as you wish, just remember to credit me and inform me that 
+you’ve used them. If you have codes that you customized 
+(codes for us lazy bums ^^), and would like me to add them, 
+you will be credited. Note that I will test them out before 
+posting them, however.
+-------------------------------------------------------------------------------
