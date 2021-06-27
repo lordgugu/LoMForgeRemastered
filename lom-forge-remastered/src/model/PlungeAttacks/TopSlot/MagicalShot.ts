@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const MagicalShot = new PlungeAttack({
-  slot: 1,
+export const MagicalShot: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Magical Shot',
-  weapons: [Weapon.Bow],
-  description: 'Double damage against demons, may also inflict confusion on demons, Attack Gauge +',
-  requiredCards: ['Witch', 'Raven', 'Wolf']
-})
+  weapons: [Bow],
+  effects: ['Double damage against demons', 'May also inflict confusion on demons', 'Attack Guage +'],
+  cards: ['Witch', 'Raven', 'Wolf']
+}

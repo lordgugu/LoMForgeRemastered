@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Staff } from 'model/Weapons'
 
-export const Electrosceptre = new PlungeAttack({
-  slot: 3,
+export const Electrosceptre: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Electrosceptre',
-  weapons: [Weapon.Staff],
-  description: 'Inflicts Sala/Jinn damage',
-  requiredCards: ['Ruler of Sky']
-})
+  weapons: [Staff],
+  effects: ['Inflicts Sala/Jinn Damage'],
+  cards: ['Ruler of Sky']
+}

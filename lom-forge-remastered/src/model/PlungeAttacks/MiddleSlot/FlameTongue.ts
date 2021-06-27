@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Sword } from 'model/Weapons'
 
-export const FlameTongue = new PlungeAttack({
-  slot: 2,
+export const FlameTongue: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Flame Tongue',
-  weapons: [Weapon.Sword],
-  description: 'Inflicts Sala damage, may also inflict flameburst',
-  requiredCards: ['God of Destruction']
-})
+  weapons: [Sword],
+  effects: ['Inflicts Sala Damage', 'May also inflict flameburst'],
+  cards: ['God of Destruction']
+}

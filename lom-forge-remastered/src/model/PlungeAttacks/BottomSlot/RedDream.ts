@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Flail } from 'model/Weapons'
 
-export const RedDream = new PlungeAttack({
-  slot: 3,
+export const RedDream: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Red Dream',
-  weapons: [Weapon.Flail],
-  description: 'Power Up, Attack Gauge +',
-  requiredCards: ['Mother of Gods']
-})
+  weapons: [Flail],
+  effects: ['Power Up', 'Attack Gauge +'],
+  cards: ['Mother of Gods']
+}

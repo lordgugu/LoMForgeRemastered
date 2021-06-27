@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Axe } from 'model/Weapons'
 
-export const DragonSlayer = new PlungeAttack({
-  slot: 2,
+export const DragonSlayer: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Dragon Slayer',
-  weapons: [Weapon.Axe],
-  description: 'Double damage against dragons, may also inflict sleep on dragons',
-  requiredCards: ['God of War']
-})
+  weapons: [Axe],
+  effects: ['Double damage against dragons', 'May also inflict sleep on dragons'],
+  cards: ['God of War']
+}

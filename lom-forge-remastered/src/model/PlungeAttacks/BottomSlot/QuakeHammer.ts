@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Hammer } from 'model/Weapons'
 
-export const QuakeHammer = new PlungeAttack({
-  slot: 3,
+export const QuakeHammer: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Quake Hammer',
-  weapons: [Weapon.Hammer],
-  description: 'Inflicts Aura/Gnome damage, Defense Up',
-  requiredCards: ['Spirit (Mountain)']
-})
+  weapons: [Hammer],
+  effects: ['Inflicts Aura/Gnome Damage', 'Defense Up'],
+  cards: ['Spirit (Mountain)']
+}

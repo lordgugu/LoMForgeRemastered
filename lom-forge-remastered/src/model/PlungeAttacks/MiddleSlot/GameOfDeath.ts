@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Flail } from 'model/Weapons'
 
-export const GameOfDeath = new PlungeAttack({
-  slot: 2,
+export const GameOfDeath: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Game of Death',
-  weapons: [Weapon.Flail],
-  description: 'Skill Up, Attack Gauge +',
-  requiredCards: ['Mother of Gods']
-})
+  weapons: [Flail],
+  effects: ['Skill Up', 'Attack Gauge +'],
+  cards: ['Mother of Gods']
+}

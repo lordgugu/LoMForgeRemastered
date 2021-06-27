@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const MedusaArrow = new PlungeAttack({
-  slot: 1,
+export const MedusaArrow: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Medusa Arrow',
-  weapons: [Weapon.Bow],
-  description: 'Exclusive to the Sacred Bow, may also inflict petrification',
-  requiredCards: []
-})
+  weapons: [Bow],
+  effects: ['Exclusive to the Sacred Bow', 'May also inflict petrification'],
+  cards: []
+}

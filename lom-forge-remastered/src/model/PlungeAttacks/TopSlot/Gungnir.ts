@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Spear } from 'model/Weapons'
 
-export const Gungnir = new PlungeAttack({
-  slot: 1,
+export const Gungnir: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Gungnir',
-  weapons: [Weapon.Spear],
-  description: 'Spirit Up, Attack Gauge +',
-  requiredCards: ['Ruler of Sky']
-})
+  weapons: [Spear],
+  effects: ['Spirit Up', 'Attack Gauge +'],
+  cards: ['Ruler of Sky']
+}

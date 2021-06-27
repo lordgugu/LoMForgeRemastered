@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Hammer } from 'model/Weapons'
 
-export const Mjolnir = new PlungeAttack({
-  slot: 3,
+export const Mjolnir: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Mjolnir',
-  weapons: [Weapon.Hammer],
-  description: 'Inflicts Sala/Jinn damage, Attack Gauge +',
-  requiredCards: ['Thunder God']
-})
+  weapons: [Hammer],
+  effects: ['Inflicts Sala/Jinn Damage', 'Attack Gauge +'],
+  cards: ['Thunder God']
+}

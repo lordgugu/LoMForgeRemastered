@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Knife } from 'model/Weapons'
 
-export const SinisterBlade = new PlungeAttack({
-  slot: 3,
+export const SinisterBlade: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Sinister Blade',
-  weapons: [Weapon.Knife],
-  description: 'Double damage against demi-humans',
-  requiredCards: ['Lord of Flies']
-})
+  weapons: [Knife],
+  effects: ['Double damage against demi-humans'],
+  cards: ['Lord of Flies']
+}

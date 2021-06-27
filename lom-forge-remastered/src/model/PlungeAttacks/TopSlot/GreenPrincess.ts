@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Flail } from 'model/Weapons'
 
-export const GreenPrincess = new PlungeAttack({
-  slot: 1,
+export const GreenPrincess: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Green Princess',
-  weapons: [Weapon.Flail],
-  description: 'Defense Up, Attack Gauge +',
-  requiredCards: ['Mother of Gods']
-})
+  weapons: [Flail],
+  effects: ['Defense Up', 'Attack Gauge +'],
+  cards: ['Mother of Gods']
+}

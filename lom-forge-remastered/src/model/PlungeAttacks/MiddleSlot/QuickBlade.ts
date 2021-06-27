@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Knife } from 'model/Weapons'
 
-export const QuickBlade = new PlungeAttack({
-  slot: 2,
+export const QuickBlade: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Quick Blade',
-  weapons: [Weapon.Knife],
-  description: 'Attack Gauge +',
-  requiredCards: ['Clown']
-})
+  weapons: [Knife],
+  effects: ['Attack Gauge +'],
+  cards: ['Clown']
+}

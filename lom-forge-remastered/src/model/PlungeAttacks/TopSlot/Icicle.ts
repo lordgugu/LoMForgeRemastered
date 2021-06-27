@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const Icicle = new PlungeAttack({
-  slot: 1,
+export const Icicle: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Icicle',
-  weapons: [Weapon.Bow],
-  description: 'Exclusive to the Waveruck, inflicts Undine damage, may also inflict freeze',
-  requiredCards: []
-})
+  weapons: [Bow],
+  effects: ['Exclusive to the Waveruck', 'Inflicts Undine Damage', 'May also inflict freeze'],
+  cards: []
+}

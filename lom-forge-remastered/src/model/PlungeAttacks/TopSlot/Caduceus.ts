@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Staff } from 'model/Weapons'
 
-export const Caduceus = new PlungeAttack({
-  slot: 1,
+export const Caduceus: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Caduceus',
-  weapons: [Weapon.Staff],
-  description: 'Double damage against insects, may also inflict paralysis on insects',
-  requiredCards: ['Wind God']
-})
+  weapons: [Staff],
+  effects: ['Double damage against insects', 'May also inflict paralysis on insects'],
+  cards: ['Wind God']
+}

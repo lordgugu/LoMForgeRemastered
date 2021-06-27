@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Axe } from 'model/Weapons'
 
-export const Woodchopper = new PlungeAttack({
-  slot: 3,
+export const Woodchopper: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Woodchopper',
-  weapons: [Weapon.Axe],
-  description: 'Double damage against plants',
-  requiredCards: ['Wanderer']
-})
+  weapons: [Axe],
+  effects: ['Double damage against plants'],
+  cards: ['Wanderer']
+}

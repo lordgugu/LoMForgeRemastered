@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const SolarFlare = new PlungeAttack({
-  slot: 1,
+export const SolarFlare: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Solar Flare',
-  weapons: [Weapon.Bow],
-  description: 'Inflicts Wisp damage',
-  requiredCards: ['Sun God']
-})
+  weapons: [Bow],
+  effects: ['Inflicts Wisp Damage'],
+  cards: ['Sun God']
+}

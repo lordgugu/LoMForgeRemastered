@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const PhoenixFalling = new PlungeAttack({
-  slot: 1,
+export const PhoenixFalling: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Phoenix Falling',
-  weapons: [Weapon.Bow],
-  description: 'Double damage against aerials, may also inflict flameburst on aerials',
-  requiredCards: ['Sage']
-})
+  weapons: [Bow],
+  effects: ['Double damage against aerials', 'May also inflict flameburst on aerials'],
+  cards: ['Sage']
+}

@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const LunarShot = new PlungeAttack({
-  slot: 2,
+export const LunarShot: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Lunar Shot',
-  weapons: [Weapon.Bow],
-  description: 'Inflicts Shade damage',
-  requiredCards: ['Moon Goddess']
-})
+  weapons: [Bow],
+  effects: ['Inflicts Shade Damage'],
+  cards: ['Moon Goddess']
+}

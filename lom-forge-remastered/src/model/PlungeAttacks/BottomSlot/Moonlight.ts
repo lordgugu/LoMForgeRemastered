@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Sword } from 'model/Weapons'
 
-export const Moonlight = new PlungeAttack({
-  slot: 3,
+export const Moonlight: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Moonlight',
-  weapons: [Weapon.Sword],
-  description: 'Double damage against aquatics, may also inflict sleep on aquatics',
-  requiredCards: ['Moon Goddess']
-})
+  weapons: [Sword],
+  effects: ['Double damage against aquatics', 'May also inflict sleep on aquatics'],
+  cards: ['Moon Goddess']
+}

@@ -35,7 +35,7 @@ const LoMAppBar: React.FC<LoMAppBarProp> = (props) => {
         <IconButton color="inherit" aria-label="open drawer" edge="start" onClick={handleDrawerToggle} className={classes.menuButton}>
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap>
+        <Typography variant="h4" noWrap>
           LoM Forge Remastered
         </Typography>
       </Toolbar>

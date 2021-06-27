@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Spear } from 'model/Weapons'
 
-export const Trident = new PlungeAttack({
-  slot: 1,
+export const Trident: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Trident',
-  weapons: [Weapon.Spear],
-  description: 'Double damage against aquatics, may also inflict confusion on aquatics',
-  requiredCards: ['Ocean God']
-})
+  weapons: [Spear],
+  effects: ['Double damage against aquatics', 'May inflict confusion on aquatics'],
+  cards: ['Ocean God']
+}

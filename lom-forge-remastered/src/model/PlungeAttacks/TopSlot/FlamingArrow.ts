@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const FlamingArrow = new PlungeAttack({
-  slot: 1,
+export const FlamingArrow: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Flaming Arrow',
-  weapons: [Weapon.Bow],
-  description: 'Exclusive to the Sidewinder, inflicts Sala damage, may also inflict flameburst',
-  requiredCards: []
-})
+  weapons: [Bow],
+  effects: ['Exclusive to Sidewinder', 'Inflicts Sala Damage', 'May also inflict flameburst'],
+  cards: []
+}

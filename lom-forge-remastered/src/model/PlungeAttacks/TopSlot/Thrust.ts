@@ -1,21 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, TwoHandedSword } from 'model/Weapons'
 
-export const Thrust = new PlungeAttack({
-  slot: 1,
+export const Thrust: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Thrust',
-  weapons: [
-    Weapon.Knife,
-    Weapon.Sword,
-    Weapon.Axe,
-    Weapon.TwoHandedSword,
-    Weapon.TwoHandedAxe,
-    Weapon.Hammer,
-    Weapon.Spear,
-    Weapon.Staff,
-    Weapon.Glove,
-    Weapon.Flail
-  ],
-  description: 'Default plunge attack for the top slot',
-  requiredCards: []
-})
+  weapons: [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail],
+  effects: ['Default plunge attack for the top slot'],
+  cards: []
+}

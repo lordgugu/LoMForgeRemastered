@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { TwoHandedAxe } from 'model/Weapons'
 
-export const Treefeller = new PlungeAttack({
-  slot: 3,
+export const Treefeller: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Treefeller',
-  weapons: [Weapon.TwoHandedAxe],
-  description: 'Double damage against plants, may also inflict dizzy on plants',
-  requiredCards: ['Leviathan']
-})
+  weapons: [TwoHandedAxe],
+  effects: ['Double damage against plants', 'May also inflict dizzy on plants'],
+  cards: ['Leviathan']
+}

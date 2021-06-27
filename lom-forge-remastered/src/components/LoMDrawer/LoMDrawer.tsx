@@ -3,10 +3,11 @@ import SecondaryMaterialIcon from '@iconify-icons/mdi/cube-send'
 import HomeIcon from '@iconify-icons/mdi/mailbox'
 import ArmorIcon from '@iconify-icons/mdi/shield'
 import WeaponsIcon from '@iconify-icons/mdi/sword'
+import PlungeAttacksIcon from '@iconify-icons/mdi/sword-cross'
 import { Icon } from '@iconify/react'
 import { Divider, Drawer, Hidden, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Theme } from '@material-ui/core/styles'
-import { createStyles, makeStyles, useTheme } from '@material-ui/styles'
+import { createStyles, makeStyles } from '@material-ui/styles'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -19,19 +20,18 @@ const useStyles = makeStyles((theme: Theme) =>
     drawer: {
       [theme.breakpoints.up('sm')]: {
         width: drawerWidth,
-        flexShrink: 0,
-      },
+        flexShrink: 0
+      }
     },
     drawerPaper: {
-      width: drawerWidth,
-    },
+      width: drawerWidth
+    }
   })
 )
 
-const LoMDrawer: React.FC<LoMDrawerProp> = (props?) => {
-  const { container } = props?.container
+const LoMDrawer: React.FC<LoMDrawerProp> = props => {
+  const { container } = props
   const classes = useStyles()
-  const theme = useTheme()
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
@@ -76,6 +76,12 @@ const LoMDrawer: React.FC<LoMDrawerProp> = (props?) => {
           </ListItemIcon>
           <ListItemText primary="Secondary Materials" />
         </ListItem>
+        <ListItem component={Link} to={'/PlungeAttacks'}>
+          <ListItemIcon>
+            <Icon icon={PlungeAttacksIcon} height="2em" />
+          </ListItemIcon>
+          <ListItemText primary="Plunge Attacks" />
+        </ListItem>
       </List>
     </div>
   )
@@ -90,10 +96,10 @@ const LoMDrawer: React.FC<LoMDrawerProp> = (props?) => {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           classes={{
-            paper: classes.drawerPaper,
+            paper: classes.drawerPaper
           }}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true // Better open performance on mobile.
           }}
         >
           {drawerContent}
@@ -102,7 +108,7 @@ const LoMDrawer: React.FC<LoMDrawerProp> = (props?) => {
       <Hidden xsDown implementation="css">
         <Drawer
           classes={{
-            paper: classes.drawerPaper,
+            paper: classes.drawerPaper
           }}
           variant="permanent"
           open
@@ -119,7 +125,7 @@ LoMDrawer.propTypes = {
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
    */
-  container: PropTypes.instanceOf(typeof Element === 'undefined' ? Object : Element),
+  container: PropTypes.instanceOf(typeof Element === 'undefined' ? Object : Element)
 }
 
 interface LoMDrawerProp {

@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Sword } from 'model/Weapons'
 
-export const Sunlight = new PlungeAttack({
-  slot: 2,
+export const Sunlight: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Sunlight',
-  weapons: [Weapon.Sword],
-  description: 'Double damage against undead, may also inflict flameburst on undead',
-  requiredCards: ['Sun God']
-})
+  weapons: [Sword],
+  effects: ['Double damage against undead', 'May also inflict flameburst on undead'],
+  cards: ['Sun God']
+}

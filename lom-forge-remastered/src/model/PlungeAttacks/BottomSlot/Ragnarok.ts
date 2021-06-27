@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { TwoHandedSword } from 'model/Weapons'
 
-export const Ragnarok = new PlungeAttack({
-  slot: 3,
+export const Ragnarok: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Ragnarok',
-  weapons: [Weapon.TwoHandedSword],
-  description: 'Power Up',
-  requiredCards: ['Ragnarok']
-})
+  weapons: [TwoHandedSword],
+  effects: ['Power Up'],
+  cards: ['Ragnarok']
+}

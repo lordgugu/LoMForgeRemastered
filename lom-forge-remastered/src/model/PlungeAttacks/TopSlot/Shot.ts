@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const Shot = new PlungeAttack({
-  slot: 1,
+export const Shot: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Shot',
-  weapons: [Weapon.Bow],
-  description: 'Default plunge attack for the top slot',
-  requiredCards: []
-})
+  weapons: [Bow],
+  effects: ['Default plunge attack for the top slot'],
+  cards: []
+}

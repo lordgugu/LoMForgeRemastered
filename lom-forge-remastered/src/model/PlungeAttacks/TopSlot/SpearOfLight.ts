@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Spear } from 'model/Weapons'
 
-export const SpearOfLight = new PlungeAttack({
-  slot: 1,
+export const SpearOfLight: TopSlotPlungeAttack = {
+  slot: 'Top',
   name: 'Spear of Light',
-  weapons: [Weapon.Spear],
-  description: 'Inflicts Wisp damage',
-  requiredCards: ['Man of Valour']
-})
+  weapons: [Spear],
+  effects: ['Inflicts Wisp Damage'],
+  cards: ['Man of Valour']
+}

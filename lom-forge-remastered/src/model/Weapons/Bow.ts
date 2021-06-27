@@ -1,8 +1,8 @@
-import { DoubleShot, Shot } from 'model/PlungeAttacks'
-import { Weapon, WeaponProps } from 'model/Weapons'
+import { DoubleShot, Jump, Shot } from 'model/PlungeAttacks'
+import { WeaponProps } from '.'
 
-export const Bow = new WeaponProps({
-  kind: Weapon.Bow,
+export const Bow: WeaponProps = {
+  name: 'Bow',
   sharpness: 40,
   weight: 4,
   force: 20,
@@ -10,5 +10,6 @@ export const Bow = new WeaponProps({
   markerThreshold: 1,
   priceCoefficient: 35,
   topPlunge: Shot,
-  middlePlunge: DoubleShot
-})
+  middlePlunge: DoubleShot,
+  bottomPlunge: Jump
+}

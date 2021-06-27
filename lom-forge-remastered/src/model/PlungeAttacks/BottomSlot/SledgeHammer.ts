@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Hammer } from 'model/Weapons'
 
-export const SledgeHammer = new PlungeAttack({
-  slot: 3,
+export const SledgeHammer: BottomSlotPlungeAttack = {
+  slot: 'Bottom',
   name: 'Sledge Hammer',
-  weapons: [Weapon.Hammer],
-  description: 'Double damage to poltergeists, may also inflict dizzy on poltergeists',
-  requiredCards: ['Blacksmith God']
-})
+  weapons: [Hammer],
+  effects: ['Double damage to poltergeists', 'May also inflict dizzy on poltergeists'],
+  cards: ['Blacksmith God']
+}

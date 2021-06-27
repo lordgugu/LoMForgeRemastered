@@ -1,10 +1,10 @@
-import { Weapon } from 'model/Weapons'
-import { PlungeAttack } from '..'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Bow } from 'model/Weapons'
 
-export const ElvenArcher = new PlungeAttack({
-  slot: 2,
+export const ElvenArcher: MiddleSlotPlungeAttack = {
+  slot: 'Middle',
   name: 'Elven Archer',
-  weapons: [Weapon.Bow],
-  description: 'May also inflict paralysis',
-  requiredCards: ['Spirit (Forest)']
-})
+  weapons: [Bow],
+  effects: ['May also inflict paralysis'],
+  cards: ['Spirit (Forest)']
+}
