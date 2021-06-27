@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "algorithm": "cpp",
+    "ios": "cpp",
+    "memory": "cpp",
+    "mutex": "cpp",
+    "xmemory": "cpp",
+    "xmemory0": "cpp",
+    "xstring": "cpp",
+    "xutility": "cpp",
+    "*.rh": "cpp"
+  }
+}
