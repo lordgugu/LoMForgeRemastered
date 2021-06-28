@@ -1,4 +1,4 @@
-import { Mantle } from 'model/Armor'
+import { Mantle } from 'model/Armors'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const MoveHpRegeneration: SpecialAbility = {

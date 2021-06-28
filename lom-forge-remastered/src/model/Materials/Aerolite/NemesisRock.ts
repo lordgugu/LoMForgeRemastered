@@ -1,8 +1,8 @@
-import { Aerolite } from 'model/Materials'
+import { Aerolite, MaterialProps } from 'model/Materials'
 
-export const NemesisRock: Aerolite = {
+export const NemesisRock: MaterialProps = {
   name: 'Nemesis Rock',
-  category: 'Aerolite',
+  category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
     sharpness: 40,

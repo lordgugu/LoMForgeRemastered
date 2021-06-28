@@ -1,8 +1,8 @@
-import { Fabric } from 'model/Materials'
+import { Fabric, MaterialProps } from 'model/Materials'
 
-export const AltenaFelt: Fabric = {
+export const AltenaFelt: MaterialProps = {
   name: 'Altena Felt',
-  category: 'Fabric',
+  category: Fabric,
   growthControl: 10,
   weaponAttributes: {
     sharpness: 48,

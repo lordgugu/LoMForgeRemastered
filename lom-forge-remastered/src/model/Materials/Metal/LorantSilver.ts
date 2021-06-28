@@ -1,8 +1,8 @@
-import { Metal } from 'model/Materials'
+import { MaterialProps, Metal } from 'model/Materials'
 
-export const LorantSilver: Metal = {
+export const LorantSilver: MaterialProps = {
   name: 'Lorant Silver',
-  category: 'Metal',
+  category: Metal,
   growthControl: 12,
   weaponAttributes: {
     sharpness: 25,

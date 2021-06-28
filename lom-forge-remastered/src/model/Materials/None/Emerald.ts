@@ -1,8 +1,8 @@
-import { Other } from 'model/Materials'
+import { MaterialProps, None } from 'model/Materials'
 
-export const Emerald: Other = {
+export const Emerald: MaterialProps = {
   name: 'Emerald',
-  category: undefined,
+  category: None,
   growthControl: 8,
   weaponAttributes: {
     sharpness: 2,

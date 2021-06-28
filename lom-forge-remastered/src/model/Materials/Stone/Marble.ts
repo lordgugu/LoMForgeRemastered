@@ -1,8 +1,8 @@
-import { Stone } from 'model/Materials'
+import { MaterialProps, Stone } from 'model/Materials'
 
-export const Marble: Stone = {
+export const Marble: MaterialProps = {
   name: 'Marble',
-  category: 'Stone',
+  category: Stone,
   growthControl: 28,
   weaponAttributes: {
     sharpness: 12,

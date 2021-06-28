@@ -1,8 +1,8 @@
-import { Other } from 'model/Materials'
+import { MaterialProps, None } from 'model/Materials'
 
-export const Adamantite: Other = {
+export const Adamantite: MaterialProps = {
   name: 'Adamantite',
-  category: undefined,
+  category: None,
   growthControl: 20,
   weaponAttributes: {
     sharpness: 62,

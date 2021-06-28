@@ -1,8 +1,8 @@
-import { Bone } from 'model/Materials'
+import { Bone, MaterialProps } from 'model/Materials'
 
-export const Ivory: Bone = {
+export const Ivory: MaterialProps = {
   name: 'Ivory',
-  category: 'Bone',
+  category: Bone,
   growthControl: 20,
   weaponAttributes: {
     sharpness: 28,

@@ -1,8 +1,8 @@
-import { Other } from 'model/Materials'
+import { MaterialProps, None } from 'model/Materials'
 
-export const Shell: Other = {
+export const Shell: MaterialProps = {
   name: 'Shell',
-  category: undefined,
+  category: None,
   growthControl: 14,
   weaponAttributes: {
     sharpness: 20,

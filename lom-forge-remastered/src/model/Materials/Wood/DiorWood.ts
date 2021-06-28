@@ -1,8 +1,8 @@
-import { Wood } from 'model/Materials'
+import { MaterialProps, Wood } from 'model/Materials'
 
-export const DiorWood: Wood = {
+export const DiorWood: MaterialProps = {
   name: 'Dior Wood',
-  category: 'Wood',
+  category: Wood,
   growthControl: 10,
   weaponAttributes: {
     sharpness: 50,

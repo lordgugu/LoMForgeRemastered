@@ -1,8 +1,8 @@
-import { Metal } from 'model/Materials'
+import { MaterialProps, Metal } from 'model/Materials'
 
-export const VizelGold: Metal = {
+export const VizelGold: MaterialProps = {
   name: 'Vizel Gold',
-  category: 'Metal',
+  category: Metal,
   growthControl: 16,
   weaponAttributes: {
     sharpness: 35,

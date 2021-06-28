@@ -1,8 +1,8 @@
-import { Wood } from 'model/Materials'
+import { MaterialProps, Wood } from 'model/Materials'
 
-export const HollyWood: Wood = {
+export const HollyWood: MaterialProps = {
   name: 'Holly Wood',
-  category: 'Wood',
+  category: Wood,
   growthControl: 14,
   weaponAttributes: {
     sharpness: 15,

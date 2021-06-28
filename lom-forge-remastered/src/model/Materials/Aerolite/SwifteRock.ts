@@ -1,8 +1,8 @@
-import { Aerolite } from 'model/Materials'
+import { Aerolite, MaterialProps } from 'model/Materials'
 
-export const SwifteRock: Aerolite = {
+export const SwifteRock: MaterialProps = {
   name: 'Swifte Rock',
-  category: 'Aerolite',
+  category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
     sharpness: 50,

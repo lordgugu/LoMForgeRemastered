@@ -1,3 +1,7 @@
+import { MaterialCategory } from 'model/Materials'
+
+export const Aerolite: MaterialCategory = 'Aerolite'
+
 export * from './AnkhRock'
 export * from './BiellaRock'
 export * from './HalleyRock'

@@ -1,4 +1,4 @@
-import { ArmorProps } from 'model/Armor'
+import { ArmorProps } from 'model/Armors'
 
 export const Hat: ArmorProps = {
   name: 'Hat',

@@ -1,8 +1,8 @@
-import { Metal } from 'model/Materials'
+import { MaterialProps, Metal } from 'model/Materials'
 
-export const MenosBronze: Metal = {
+export const MenosBronze: MaterialProps = {
   name: 'Menos Bronze',
-  category: 'Metal',
+  category: Metal,
   growthControl: 18,
   weaponAttributes: {
     sharpness: 10,

@@ -1,8 +1,8 @@
-import { Aerolite } from 'model/Materials'
+import { Aerolite, MaterialProps } from 'model/Materials'
 
-export const VinekRock: Aerolite = {
+export const VinekRock: MaterialProps = {
   name: 'Vinek Rock',
-  category: 'Aerolite',
+  category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
     sharpness: 30,

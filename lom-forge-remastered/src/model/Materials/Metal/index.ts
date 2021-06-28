@@ -1,3 +1,7 @@
+import { MaterialCategory } from 'model/Materials'
+
+export const Metal: MaterialCategory = 'Metal'
+
 export * from './AltenaAlloy'
 export * from './ForsenaIron'
 export * from './GranzSteel'

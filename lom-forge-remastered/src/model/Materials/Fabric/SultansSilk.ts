@@ -1,8 +1,8 @@
-import { Fabric } from 'model/Materials'
+import { Fabric, MaterialProps } from 'model/Materials'
 
-export const SultansSilk: Fabric = {
+export const SultansSilk: MaterialProps = {
   name: "Sultan's Silk",
-  category: 'Fabric',
+  category: Fabric,
   growthControl: 10,
   weaponAttributes: {
     sharpness: 28,

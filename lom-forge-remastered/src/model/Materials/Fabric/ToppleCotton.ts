@@ -1,8 +1,8 @@
-import { Fabric } from 'model/Materials'
+import { Fabric, MaterialProps } from 'model/Materials'
 
-export const ToppleCotton: Fabric = {
+export const ToppleCotton: MaterialProps = {
   name: 'Topple Cotton',
-  category: 'Fabric',
+  category: Fabric,
   growthControl: 10,
   weaponAttributes: {
     sharpness: 18,

@@ -1,3 +1,7 @@
+import { MaterialCategory } from 'model/Materials'
+
+export const None: MaterialCategory = undefined
+
 export * from './Adamantite'
 export * from './Coral'
 export * from './Emerald'

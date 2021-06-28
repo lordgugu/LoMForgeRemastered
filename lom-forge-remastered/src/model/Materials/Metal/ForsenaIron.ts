@@ -1,8 +1,8 @@
-import { Metal } from 'model/Materials'
+import { MaterialProps, Metal } from 'model/Materials'
 
-export const ForsenaIron: Metal = {
+export const ForsenaIron: MaterialProps = {
   name: 'Forsena Iron',
-  category: 'Metal',
+  category: Metal,
   growthControl: 20,
   weaponAttributes: {
     sharpness: 15,

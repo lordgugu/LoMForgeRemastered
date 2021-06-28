@@ -1,8 +1,8 @@
-import { Other } from 'model/Materials'
+import { MaterialProps, None } from 'model/Materials'
 
-export const Pearl: Other = {
-  name: 'Pearl',
-  category: undefined,
+export const LapisLazuli: MaterialProps = {
+  name: 'Lapis Lazuli',
+  category: None,
   growthControl: 8,
   weaponAttributes: {
     sharpness: 2,

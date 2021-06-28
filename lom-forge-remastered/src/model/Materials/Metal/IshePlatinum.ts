@@ -1,8 +1,8 @@
-import { Metal } from 'model/Materials'
+import { MaterialProps, Metal } from 'model/Materials'
 
-export const IshePlatinum: Metal = {
+export const IshePlatinum: MaterialProps = {
   name: 'Ishe Platinum',
-  category: 'Metal',
+  category: Metal,
   growthControl: 16,
   weaponAttributes: {
     sharpness: 40,

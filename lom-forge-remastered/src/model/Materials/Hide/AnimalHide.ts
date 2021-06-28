@@ -1,8 +1,8 @@
-import { Hide } from 'model/Materials'
+import { Hide, MaterialProps } from 'model/Materials'
 
-export const AnimalHide: Hide = {
+export const AnimalHide: MaterialProps = {
   name: 'Animal Hide',
-  category: 'Hide',
+  category: Hide,
   growthControl: 8,
   weaponAttributes: {
     sharpness: 10,

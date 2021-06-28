@@ -1,8 +1,8 @@
-import { Scales } from 'model/Materials'
+import { MaterialProps, Scales } from 'model/Materials'
 
-export const LizardScales: Scales = {
+export const LizardScales: MaterialProps = {
   name: 'Lizard Scales',
-  category: 'Scales',
+  category: Scales,
   growthControl: 20,
   weaponAttributes: {
     sharpness: 16,

@@ -1,8 +1,8 @@
-import { Metal } from 'model/Materials'
+import { MaterialProps, Metal } from 'model/Materials'
 
-export const AltenaAlloy: Metal = {
+export const AltenaAlloy: MaterialProps = {
   name: 'Altena Alloy',
-  category: 'Metal',
+  category: Metal,
   growthControl: 18,
   weaponAttributes: {
     sharpness: 50,
