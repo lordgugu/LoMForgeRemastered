@@ -1,3 +1,8 @@
+import { PlungeAttack } from 'model/PlungeAttacks'
+
+export interface BottomSlotPlungeAttack extends PlungeAttack {
+  slot: 'Bottom'
+}
 export * from './Demonicide'
 export * from './Electrosceptre'
 export * from './GoldenTouch'

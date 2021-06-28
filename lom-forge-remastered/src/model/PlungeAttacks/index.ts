@@ -1,8 +1,12 @@
-export * from './BottomSlot'
-export * from './BottomSlotPlunges'
-export * from './MiddleSlot'
-export * from './MiddleSlotPlunges'
-export * from './PlungeAttack'
-export * from './TopSlot'
-export * from './TopSlotPlunges'
+import { WeaponProps } from 'model/Weapons'
 
+export type PlungeAttack = {
+  name: string
+  weapons: WeaponProps[]
+  effects: string[]
+  cards: string[]
+}
+
+export * from './BottomSlot'
+export * from './MiddleSlot'
+export * from './TopSlot'

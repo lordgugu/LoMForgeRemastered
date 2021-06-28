@@ -1,5 +1,21 @@
 import { Card, CardContent, Divider, List, ListItem, ListItemText, Typography } from '@material-ui/core'
-import { PlungeAttack, TopSlotPlungeAttacks } from 'model/PlungeAttacks'
+import {
+  Caduceus,
+  ChaoticAvenger,
+  FlamingArrow,
+  GreenPrincess,
+  Gungnir,
+  Icicle,
+  MagicalShot,
+  MedusaArrow,
+  PhoenixFalling,
+  PlungeAttack,
+  Shot,
+  SolarFlare,
+  SpearOfLight,
+  Thrust,
+  Trident
+} from 'model/PlungeAttacks'
 import React from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 import './PlungeAttacksPage.scss'
@@ -27,21 +43,29 @@ const PlungeAttackCard: React.FC<PlungeAttack> = plungeAttack => {
             </ListItem>
           ))}
         </List>
-        {/* 
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography> */}
       </CardContent>
     </Card>
   )
 }
 
-export const PlungeAttacksPage: React.FC<PlungeAttacksPageProps> = (props) => {
+export const PlungeAttacksPage: React.FC<PlungeAttacksPageProps> = props => {
+  const topSlotPlungeAttacks = [
+    Thrust,
+    Shot,
+    Caduceus,
+    ChaoticAvenger,
+    FlamingArrow,
+    GreenPrincess,
+    Gungnir,
+    Icicle,
+    MagicalShot,
+    MedusaArrow,
+    PhoenixFalling,
+    SolarFlare,
+    SpearOfLight,
+    Trident
+  ]
+
   return (
     <>
       <Typography variant="h5">Plunge Attacks</Typography>
@@ -61,7 +85,7 @@ export const PlungeAttacksPage: React.FC<PlungeAttacksPageProps> = (props) => {
       </ul>
       <Divider />
       <Typography variant="h5">Top Slot</Typography>
-      {TopSlotPlungeAttacks.map((plungeAttack, index) => (
+      {topSlotPlungeAttacks.map((plungeAttack, index) => (
         <PlungeAttackCard key={index} {...plungeAttack} />
       ))}
       <Divider />

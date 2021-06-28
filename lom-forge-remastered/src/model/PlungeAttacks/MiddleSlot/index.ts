@@ -1,3 +1,9 @@
+import { PlungeAttack } from 'model/PlungeAttacks'
+
+export interface MiddleSlotPlungeAttack extends PlungeAttack {
+  slot: 'Middle'
+}
+
 export * from './DoubleShot'
 export * from './DragonSlayer'
 export * from './ElvenArcher'
