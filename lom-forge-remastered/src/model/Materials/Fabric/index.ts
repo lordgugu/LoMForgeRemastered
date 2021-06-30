@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const Fabric: MaterialCategory = 'Fabric'
+export const Fabric: MaterialCategory = { originalName: 'Fabric' }
 
 export * from './AltenaFelt'
 export * from './JuddHemp'

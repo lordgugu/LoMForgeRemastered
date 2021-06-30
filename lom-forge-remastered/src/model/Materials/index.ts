@@ -12,16 +12,10 @@ export type MaterialResistances = {
   undine: number
 }
 
-export type MaterialCategory =
-  | 'Metal'
-  | 'Wood'
-  | 'Stone'
-  | 'Hide'
-  | 'Scales'
-  | 'Bone'
-  | 'Fabric'
-  | 'Aerolite'
-  | undefined
+export type MaterialCategory = {
+  originalName: 'Metal' | 'Wood' | 'Stone' | 'Hide' | 'Scales' | 'Bone' | 'Fabric' | 'Aerolite' | undefined
+  remasteredName?: string
+}
 
 export type MaterialProps = {
   id: number

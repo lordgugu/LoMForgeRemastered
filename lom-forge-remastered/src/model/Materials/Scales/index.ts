@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const Scales: MaterialCategory = 'Scales'
+export const Scales: MaterialCategory = { originalName: 'Scales' }
 
 export * from './DragonScales'
 export * from './FishScales'

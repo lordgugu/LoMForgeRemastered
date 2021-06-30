@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const Hide: MaterialCategory = 'Hide'
+export const Hide: MaterialCategory = { originalName: 'Hide' }
 
 export * from './AnimalHide'
 export * from './CentaurHide'
