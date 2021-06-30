@@ -1,7 +1,8 @@
 import { Fabric, MaterialProps } from 'model/Materials'
 
 export const SultansSilk: MaterialProps = {
-  name: "Sultan's Silk",
+  id: 37,
+  originalName: "Sultan'sSilk",
   category: Fabric,
   growthControl: 10,
   weaponAttributes: {

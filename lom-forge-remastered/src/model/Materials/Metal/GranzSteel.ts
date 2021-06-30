@@ -1,7 +1,8 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const GranzSteel: MaterialProps = {
-  name: 'Granz Steel',
+  id: 3,
+  originalName: 'GranzSteel',
   category: Metal,
   growthControl: 24,
   weaponAttributes: {

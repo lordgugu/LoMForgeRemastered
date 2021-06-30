@@ -1,7 +1,8 @@
 import { MaterialProps, None } from 'model/Materials'
 
 export const Adamantite: MaterialProps = {
-  name: 'Adamantite',
+  id: 48,
+  originalName: 'Adamantite',
   category: None,
   growthControl: 20,
   weaponAttributes: {

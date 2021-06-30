@@ -1,7 +1,8 @@
 import { ArmorProps } from 'model/Armors'
 
 export const Shoes: ArmorProps = {
-  name: 'Shoes',
+  id: 20,
+  originalName: 'Shoes',
   attributes: {
     strike: 2,
     slash: 4,

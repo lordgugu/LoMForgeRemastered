@@ -3,7 +3,7 @@ import { Hammer } from 'model/Weapons'
 
 export const MagmaHammer: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Magma Hammer',
+  originalName: 'Magma Hammer',
   weapons: [Hammer],
   effects: ['Inflicts Sala/Aura Damage', 'Defense Up'],
   cards: ['Volcano']

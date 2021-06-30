@@ -2,7 +2,8 @@ import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
 import { WeaponProps } from '.'
 
 export const Glove: WeaponProps = {
-  name: 'Glove',
+  id: 9,
+  originalName: 'Glove',
   attributes: {
     sharpness: 0,
     weight: 32,

@@ -1,7 +1,8 @@
 import { MaterialProps, Wood } from 'model/Materials'
 
 export const BaobabWood: MaterialProps = {
-  name: 'Baobab Wood',
+  id: 14,
+  originalName: 'BaobabWood',
   category: Wood,
   growthControl: 24,
   weaponAttributes: {

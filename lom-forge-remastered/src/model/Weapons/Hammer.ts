@@ -2,7 +2,8 @@ import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
 import { WeaponProps } from '.'
 
 export const Hammer: WeaponProps = {
-  name: 'Hammer',
+  id: 6,
+  originalName: 'Hammer',
   attributes: {
     sharpness: 8,
     weight: 72,

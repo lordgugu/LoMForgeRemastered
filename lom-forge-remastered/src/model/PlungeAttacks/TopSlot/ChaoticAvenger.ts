@@ -3,7 +3,7 @@ import { TwoHandedSword } from 'model/Weapons'
 
 export const ChaoticAvenger: TopSlotPlungeAttack = {
   slot: 'Top',
-  name: 'Chaotic Avenger',
+  originalName: 'Chaotic Avenger',
   weapons: [TwoHandedSword],
   effects: ['Inflicts Sala/Gnome/Jinn/Undine Damage', 'Attack Gauge +'],
   cards: ['Fallen Angel']

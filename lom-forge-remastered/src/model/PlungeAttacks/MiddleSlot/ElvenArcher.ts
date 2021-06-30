@@ -3,7 +3,7 @@ import { Bow } from 'model/Weapons'
 
 export const ElvenArcher: MiddleSlotPlungeAttack = {
   slot: 'Middle',
-  name: 'Elven Archer',
+  originalName: 'Elven Archer',
   weapons: [Bow],
   effects: ['May also inflict paralysis'],
   cards: ['Spirit (Forest)']

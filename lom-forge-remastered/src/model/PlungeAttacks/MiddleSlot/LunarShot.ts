@@ -3,7 +3,7 @@ import { Bow } from 'model/Weapons'
 
 export const LunarShot: MiddleSlotPlungeAttack = {
   slot: 'Middle',
-  name: 'Lunar Shot',
+  originalName: 'Lunar Shot',
   weapons: [Bow],
   effects: ['Inflicts Shade Damage'],
   cards: ['Moon Goddess']

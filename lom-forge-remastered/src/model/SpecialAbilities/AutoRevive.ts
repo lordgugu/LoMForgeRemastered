@@ -2,7 +2,7 @@ import { Pendant, Ring } from 'model/Armors'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const AutoRevive: SpecialAbility = {
-  name: 'Auto-Revive',
+  originalName: 'Auto-Revive',
   requirements: [{ armors: [Pendant, Ring], cards: ['Phoenix', 'Volcano'] }],
   effect: ['Immediately revives the wearer when they are knocked out'],
   notes: [

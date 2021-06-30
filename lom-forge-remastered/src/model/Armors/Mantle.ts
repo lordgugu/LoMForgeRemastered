@@ -1,7 +1,8 @@
 import { ArmorProps } from 'model/Armors'
 
 export const Mantle: ArmorProps = {
-  name: 'Mantle',
+  id: 22,
+  originalName: 'Mantle',
   attributes: {
     strike: 4,
     slash: 4,

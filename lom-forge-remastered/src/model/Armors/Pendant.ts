@@ -1,7 +1,8 @@
 import { ArmorProps } from 'model/Armors'
 
 export const Pendant: ArmorProps = {
-  name: 'Pendant',
+  id: 23,
+  originalName: 'Pendant',
   attributes: {
     strike: 0,
     slash: 0,

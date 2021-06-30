@@ -3,7 +3,7 @@ import { Knife } from 'model/Weapons'
 
 export const QuickBlade: MiddleSlotPlungeAttack = {
   slot: 'Middle',
-  name: 'Quick Blade',
+  originalName: 'Quick Blade',
   weapons: [Knife],
   effects: ['Attack Gauge +'],
   cards: ['Clown']

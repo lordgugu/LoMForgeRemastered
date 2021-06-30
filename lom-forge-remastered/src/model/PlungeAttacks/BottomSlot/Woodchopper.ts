@@ -3,7 +3,7 @@ import { Axe } from 'model/Weapons'
 
 export const Woodchopper: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Woodchopper',
+  originalName: 'Woodchopper',
   weapons: [Axe],
   effects: ['Double damage against plants'],
   cards: ['Wanderer']

@@ -1,7 +1,8 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const Orihalcon: MaterialProps = {
-  name: 'Orihalcon',
+  id: 11,
+  originalName: 'Orihalcon',
   category: Metal,
   growthControl: 12,
   weaponAttributes: {

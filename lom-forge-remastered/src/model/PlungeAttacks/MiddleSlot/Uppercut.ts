@@ -3,7 +3,7 @@ import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, Tw
 
 export const Uppercut: MiddleSlotPlungeAttack = {
   slot: 'Middle',
-  name: 'Uppercut',
+  originalName: 'Uppercut',
   weapons: [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail],
   effects: ['Default plunge attack for the middle slot'],
   cards: []

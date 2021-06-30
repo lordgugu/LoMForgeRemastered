@@ -1,7 +1,8 @@
 import { MaterialProps, Stone } from 'model/Materials'
 
 export const PedanStone: MaterialProps = {
-  name: 'Pedan Stone',
+  id: 22,
+  originalName: 'PedanStone',
   category: Stone,
   growthControl: 24,
   weaponAttributes: {

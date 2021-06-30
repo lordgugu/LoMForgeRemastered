@@ -2,7 +2,7 @@ import { Mantle } from 'model/Armors'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const MoveHpRegeneration: SpecialAbility = {
-  name: 'Movement HP Regeneration',
+  originalName: 'Movement HP Regeneration',
   requirements: [
     {
       armors: [Mantle],

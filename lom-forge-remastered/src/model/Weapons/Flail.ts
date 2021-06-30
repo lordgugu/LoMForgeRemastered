@@ -2,7 +2,8 @@ import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
 import { WeaponProps } from '.'
 
 export const Flail: WeaponProps = {
-  name: 'Flail',
+  id: 10,
+  originalName: 'Flail',
   attributes: {
     sharpness: 0,
     weight: 40,

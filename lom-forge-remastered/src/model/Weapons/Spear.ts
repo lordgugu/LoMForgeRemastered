@@ -2,7 +2,8 @@ import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
 import { WeaponProps } from '.'
 
 export const Spear: WeaponProps = {
-  name: 'Spear',
+  id: 7,
+  originalName: 'Spear',
   attributes: {
     sharpness: 52,
     weight: 20,

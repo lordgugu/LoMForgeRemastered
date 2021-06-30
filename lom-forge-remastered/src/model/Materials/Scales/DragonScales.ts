@@ -1,7 +1,8 @@
 import { MaterialProps, Scales } from 'model/Materials'
 
 export const DragonScales: MaterialProps = {
-  name: 'Dragon Scales',
+  id: 21,
+  originalName: 'DragonScales',
   category: Scales,
   growthControl: 14,
   weaponAttributes: {

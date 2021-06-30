@@ -1,7 +1,8 @@
 import { ArmorProps } from 'model/Armors'
 
 export type SpecialAbility = {
-  name: string
+  originalName: string
+  remasteredName?: string
   requirements: { armors: ArmorProps[]; cards: string[] }[]
   effect: string[]
   notes: string[]

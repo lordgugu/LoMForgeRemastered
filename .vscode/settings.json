@@ -8,6 +8,7 @@
     "xmemory0": "cpp",
     "xstring": "cpp",
     "xutility": "cpp",
-    "*.rh": "cpp"
+    "*.rh": "cpp",
+    "xlocnum": "c"
   }
 }

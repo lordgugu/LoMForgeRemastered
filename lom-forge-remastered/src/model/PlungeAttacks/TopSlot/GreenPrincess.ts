@@ -3,7 +3,7 @@ import { Flail } from 'model/Weapons'
 
 export const GreenPrincess: TopSlotPlungeAttack = {
   slot: 'Top',
-  name: 'Green Princess',
+  originalName: 'Green Princess',
   weapons: [Flail],
   effects: ['Defense Up', 'Attack Gauge +'],
   cards: ['Mother of Gods']

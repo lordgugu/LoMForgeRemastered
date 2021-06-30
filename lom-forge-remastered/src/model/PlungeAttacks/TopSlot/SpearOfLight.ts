@@ -3,7 +3,7 @@ import { Spear } from 'model/Weapons'
 
 export const SpearOfLight: TopSlotPlungeAttack = {
   slot: 'Top',
-  name: 'Spear of Light',
+  originalName: 'Spear of Light',
   weapons: [Spear],
   effects: ['Inflicts Wisp Damage'],
   cards: ['Man of Valour']

@@ -7,22 +7,10 @@ export type ArmorAttributes = {
   magic: number
 }
 
-export type ArmorName =
-  | 'Armor'
-  | 'Boots'
-  | 'Gauntlet'
-  | 'Hat'
-  | 'Hauberk'
-  | 'Helm'
-  | 'Mantle'
-  | 'Pendant'
-  | 'Ring'
-  | 'Robe'
-  | 'Shield'
-  | 'Shoes'
-
 export type ArmorProps = {
-  name: ArmorName
+  id: number
+  originalName: string
+  remasteredName?: string
   attributes: ArmorAttributes
   markerThreshold: number
   priceCoefficient: number

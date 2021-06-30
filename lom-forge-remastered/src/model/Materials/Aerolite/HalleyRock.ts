@@ -1,7 +1,8 @@
 import { Aerolite, MaterialProps } from 'model/Materials'
 
 export const HalleyRock: MaterialProps = {
-  name: 'Halley Rock',
+  id: 41,
+  originalName: 'HalleyRock',
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {

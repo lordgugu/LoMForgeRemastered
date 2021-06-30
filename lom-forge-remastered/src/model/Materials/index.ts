@@ -24,7 +24,9 @@ export type MaterialCategory =
   | undefined
 
 export type MaterialProps = {
-  name: string
+  id: number
+  originalName: string
+  remasteredName?: string
   category: MaterialCategory
   growthControl: number
   weaponAttributes: WeaponAttributes

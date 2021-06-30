@@ -1,7 +1,9 @@
 import { MaterialProps, Stone } from 'model/Materials'
 
-export const GaiasTears: MaterialProps = {
-  name: "Gaia's Tears",
+export const GaeussTears: MaterialProps = {
+  id: 23,
+  originalName: "Gaeus'sTears",
+  remasteredName: "Gaia's Tears",
   category: Stone,
   growthControl: 20,
   weaponAttributes: {

@@ -3,7 +3,7 @@ import { Glove } from 'model/Weapons'
 
 export const HandOfMidas: MiddleSlotPlungeAttack = {
   slot: 'Middle',
-  name: 'Hand of Midas',
+  originalName: 'Hand of Midas',
   weapons: [Glove],
   effects: ['Converts experience to Lucre', 'Attack Gauge &minus;'],
   cards: ['King']

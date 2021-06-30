@@ -3,7 +3,7 @@ import { TwoHandedAxe } from 'model/Weapons'
 
 export const Treefeller: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Treefeller',
+  originalName: 'Treefeller',
   weapons: [TwoHandedAxe],
   effects: ['Double damage against plants', 'May also inflict dizzy on plants'],
   cards: ['Leviathan']

@@ -1,7 +1,8 @@
 import { ArmorProps } from 'model/Armors'
 
 export const Ring: ArmorProps = {
-  name: 'Ring',
+  id: 18,
+  originalName: 'Ring',
   attributes: {
     strike: 1,
     slash: 1,

@@ -3,7 +3,7 @@ import { Bow } from 'model/Weapons'
 
 export const SolarFlare: TopSlotPlungeAttack = {
   slot: 'Top',
-  name: 'Solar Flare',
+  originalName: 'Solar Flare',
   weapons: [Bow],
   effects: ['Inflicts Wisp Damage'],
   cards: ['Sun God']

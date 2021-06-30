@@ -3,7 +3,7 @@ import { Hammer } from 'model/Weapons'
 
 export const QuakeHammer: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Quake Hammer',
+  originalName: 'Quake Hammer',
   weapons: [Hammer],
   effects: ['Inflicts Aura/Gnome Damage', 'Defense Up'],
   cards: ['Spirit (Mountain)']

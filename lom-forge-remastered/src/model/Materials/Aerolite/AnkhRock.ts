@@ -1,7 +1,8 @@
 import { Aerolite, MaterialProps } from 'model/Materials'
 
 export const AnkhRock: MaterialProps = {
-  name: 'Ankh Rock',
+  id: 42,
+  originalName: 'AnkhRock',
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {

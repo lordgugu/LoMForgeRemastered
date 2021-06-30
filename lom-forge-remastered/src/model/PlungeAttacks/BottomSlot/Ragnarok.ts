@@ -3,7 +3,7 @@ import { TwoHandedSword } from 'model/Weapons'
 
 export const Ragnarok: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Ragnarok',
+  originalName: 'Ragnarok',
   weapons: [TwoHandedSword],
   effects: ['Power Up'],
   cards: ['Ragnarok']

@@ -2,7 +2,7 @@ import { Pendant, Ring } from 'model/Armors'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const FastRevive: SpecialAbility = {
-  name: 'Fast Revive',
+  originalName: 'Fast Revive',
   requirements: [
     { armors: [Pendant, Ring], cards: ['Unicorn', 'Spring'] },
     { armors: [Ring], cards: ['Nymnph of Orchards'] }

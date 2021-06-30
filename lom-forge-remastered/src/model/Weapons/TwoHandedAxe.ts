@@ -2,7 +2,8 @@ import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
 import { WeaponProps } from '.'
 
 export const TwoHandedAxe: WeaponProps = {
-  name: '2H Axe',
+  id: 5,
+  originalName: '2H Axe',
   attributes: {
     sharpness: 40,
     weight: 40,

@@ -3,7 +3,7 @@ import { Knife } from 'model/Weapons'
 
 export const PoisonBlade: MiddleSlotPlungeAttack = {
   slot: 'Middle',
-  name: 'Poison Blade',
+  originalName: 'Poison Blade',
   weapons: [Knife],
   effects: ['May inflict poison'],
   cards: ['Beast-Headed God']

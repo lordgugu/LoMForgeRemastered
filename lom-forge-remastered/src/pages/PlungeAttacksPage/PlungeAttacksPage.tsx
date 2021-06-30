@@ -25,7 +25,7 @@ const PlungeAttackCard: React.FC<PlungeAttack> = plungeAttack => {
     <Card>
       <CardContent>
         <Typography variant="h6" component="span" gutterBottom>
-          {plungeAttack.name}
+          {plungeAttack.originalName}
         </Typography>
         <Typography
           color="textSecondary"
@@ -34,7 +34,7 @@ const PlungeAttackCard: React.FC<PlungeAttack> = plungeAttack => {
             float: 'right'
           }}
         >
-          {plungeAttack.weapons.map((attack) => attack.name).join(', ')}
+          {plungeAttack.weapons.map((attack) => attack.originalName).join(', ')}
         </Typography>
         <List>
           {plungeAttack.effects.map((effect, index) => (

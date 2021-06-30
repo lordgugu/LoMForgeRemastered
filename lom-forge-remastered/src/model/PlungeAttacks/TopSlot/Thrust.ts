@@ -3,7 +3,7 @@ import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, Tw
 
 export const Thrust: TopSlotPlungeAttack = {
   slot: 'Top',
-  name: 'Thrust',
+  originalName: 'Thrust',
   weapons: [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail],
   effects: ['Default plunge attack for the top slot'],
   cards: []

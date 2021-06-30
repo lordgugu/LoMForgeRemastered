@@ -1,7 +1,8 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const VizelGold: MaterialProps = {
-  name: 'Vizel Gold',
+  id: 6,
+  originalName: 'VizelGold',
   category: Metal,
   growthControl: 16,
   weaponAttributes: {

@@ -1,7 +1,8 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const IshePlatinum: MaterialProps = {
-  name: 'Ishe Platinum',
+  id: 7,
+  originalName: 'IshePlatinum',
   category: Metal,
   growthControl: 16,
   weaponAttributes: {

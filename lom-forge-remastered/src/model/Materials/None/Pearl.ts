@@ -1,7 +1,8 @@
 import { MaterialProps, None } from 'model/Materials'
 
 export const Pearl: MaterialProps = {
-  name: 'Pearl',
+  id: 54,
+  originalName: 'Pearl',
   category: None,
   growthControl: 8,
   weaponAttributes: {

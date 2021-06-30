@@ -1,7 +1,8 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const MaiaLead: MaterialProps = {
-  name: 'Maia Lead',
+  id: 10,
+  originalName: 'MaiaLead',
   category: Metal,
   growthControl: 48,
   weaponAttributes: {

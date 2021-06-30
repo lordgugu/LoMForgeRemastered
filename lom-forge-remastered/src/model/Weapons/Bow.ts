@@ -2,7 +2,8 @@ import { DoubleShot, Jump, Shot } from 'model/PlungeAttacks'
 import { WeaponProps } from '.'
 
 export const Bow: WeaponProps = {
-  name: 'Bow',
+  id: 11,
+  originalName: 'Bow',
   attributes: {
     sharpness: 40,
     weight: 4,

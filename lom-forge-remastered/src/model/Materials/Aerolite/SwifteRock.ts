@@ -1,7 +1,8 @@
 import { Aerolite, MaterialProps } from 'model/Materials'
 
 export const SwifteRock: MaterialProps = {
-  name: 'Swifte Rock',
+  id: 47,
+  originalName: 'SwifteRock',
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {

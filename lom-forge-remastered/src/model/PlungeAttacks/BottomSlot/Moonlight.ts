@@ -3,7 +3,7 @@ import { Sword } from 'model/Weapons'
 
 export const Moonlight: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Moonlight',
+  originalName: 'Moonlight',
   weapons: [Sword],
   effects: ['Double damage against aquatics', 'May also inflict sleep on aquatics'],
   cards: ['Moon Goddess']

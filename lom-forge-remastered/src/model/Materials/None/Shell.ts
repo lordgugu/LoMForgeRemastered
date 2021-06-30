@@ -1,7 +1,8 @@
 import { MaterialProps, None } from 'model/Materials'
 
 export const Shell: MaterialProps = {
-  name: 'Shell',
+  id: 52,
+  originalName: 'Shell',
   category: None,
   growthControl: 14,
   weaponAttributes: {

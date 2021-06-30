@@ -3,7 +3,7 @@ import { Flail } from 'model/Weapons'
 
 export const RedDream: BottomSlotPlungeAttack = {
   slot: 'Bottom',
-  name: 'Red Dream',
+  originalName: 'Red Dream',
   weapons: [Flail],
   effects: ['Power Up', 'Attack Gauge +'],
   cards: ['Mother of Gods']
