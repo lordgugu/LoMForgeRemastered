@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { TwoHandedSword } from 'model/Weapons'
+import { TwoHandedSword } from 'model/Equipment'
 
 export const Ragnarok: BottomSlotPlungeAttack = {
   slot: 'Bottom',

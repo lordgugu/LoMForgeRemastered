@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Flail } from 'model/Weapons'
+import { Flail } from 'model/Equipment'
 
 export const RedDream: BottomSlotPlungeAttack = {
   slot: 'Bottom',

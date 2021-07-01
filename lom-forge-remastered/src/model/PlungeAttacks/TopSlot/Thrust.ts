@@ -1,5 +1,5 @@
 import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, TwoHandedSword } from 'model/Weapons'
+import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, TwoHandedSword } from 'model/Equipment'
 
 export const Thrust: TopSlotPlungeAttack = {
   slot: 'Top',

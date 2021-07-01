@@ -1,4 +1,4 @@
-import { Ring } from 'model/Armors'
+import { Ring } from 'model/Equipment'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const ShareExperience: SpecialAbility = {

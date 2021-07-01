@@ -1,4 +1,4 @@
-import { ArmorProps } from 'model/Armors'
+import { ArmorProps } from 'model/Equipment'
 
 export type SpecialAbility = {
   originalName: string

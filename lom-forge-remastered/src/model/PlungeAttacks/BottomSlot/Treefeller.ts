@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { TwoHandedAxe } from 'model/Weapons'
+import { TwoHandedAxe } from 'model/Equipment'
 
 export const Treefeller: BottomSlotPlungeAttack = {
   slot: 'Bottom',

@@ -1,5 +1,5 @@
 import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Staff } from 'model/Weapons'
+import { Staff } from 'model/Equipment'
 
 export const Caduceus: TopSlotPlungeAttack = {
   slot: 'Top',

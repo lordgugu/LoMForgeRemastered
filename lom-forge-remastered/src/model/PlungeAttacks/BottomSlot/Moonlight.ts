@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Sword } from 'model/Weapons'
+import { Sword } from 'model/Equipment'
 
 export const Moonlight: BottomSlotPlungeAttack = {
   slot: 'Bottom',

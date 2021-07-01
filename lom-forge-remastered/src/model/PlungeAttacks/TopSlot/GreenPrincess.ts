@@ -1,5 +1,5 @@
 import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Flail } from 'model/Weapons'
+import { Flail } from 'model/Equipment'
 
 export const GreenPrincess: TopSlotPlungeAttack = {
   slot: 'Top',

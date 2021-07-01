@@ -1,4 +1,4 @@
-import { WeaponProps } from 'model/Weapons'
+import { WeaponProps } from 'model/Equipment'
 
 export type PlungeAttack = {
   originalName: string

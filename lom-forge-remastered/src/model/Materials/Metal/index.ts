@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const Metal: MaterialCategory = { originalName: 'Metal' }
+export const Metal: MaterialCategory = { originalName: 'METAL' }
 
 export * from './AltenaAlloy'
 export * from './ForsenaIron'

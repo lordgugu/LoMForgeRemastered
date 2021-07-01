@@ -1,4 +1,4 @@
-import { Pendant, Ring } from 'model/Armors'
+import { Pendant, Ring } from 'model/Equipment'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const FastRevive: SpecialAbility = {

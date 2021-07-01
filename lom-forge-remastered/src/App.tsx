@@ -1,7 +1,18 @@
 import React from 'react'
 import './App.scss'
 import { createMuiTheme, createStyles, makeStyles, Theme, ThemeProvider } from '@material-ui/core/styles'
-import { AppBar, CssBaseline, Divider, Drawer, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography } from '@material-ui/core'
+import {
+  AppBar,
+  CssBaseline,
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Toolbar,
+  Typography
+} from '@material-ui/core'
 import MailIcon from '@material-ui/icons/Mail'
 import InboxIcon from '@material-ui/icons/Inbox'
 
@@ -12,26 +23,26 @@ const drawerWidth = 240
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      display: 'flex',
+      display: 'flex'
     },
     appBar: {
       width: `calc(100% - ${drawerWidth}px)`,
-      marginLeft: drawerWidth,
+      marginLeft: drawerWidth
     },
     drawer: {
       width: drawerWidth,
-      flexShrink: 0,
+      flexShrink: 0
     },
     drawerPaper: {
-      width: drawerWidth,
+      width: drawerWidth
     },
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     content: {
       flexGrow: 1,
       backgroundColor: theme.palette.background.default,
-      padding: theme.spacing(3),
-    },
+      padding: theme.spacing(3)
+    }
   })
 )
 
@@ -53,7 +64,7 @@ function App() {
           className={classes.drawer}
           variant="permanent"
           classes={{
-            paper: classes.drawerPaper,
+            paper: classes.drawerPaper
           }}
           anchor="left"
         >

@@ -1,0 +1,20 @@
+import { ItemCategory } from 'model/Items'
+
+export const Coins: ItemCategory = { originalName: 'COINS' }
+
+export * from './AuraGold'
+export * from './AuraSilver'
+export * from './DryadGold'
+export * from './DryadSilver'
+export * from './GnomeGold'
+export * from './GnomeSilver'
+export * from './JinnGold'
+export * from './JinnSilver'
+export * from './SalaGold'
+export * from './SalaSilver'
+export * from './ShadeGold'
+export * from './ShadeSilver'
+export * from './UndineGold'
+export * from './UndineSilver'
+export * from './WispGold'
+export * from './WispSilver'

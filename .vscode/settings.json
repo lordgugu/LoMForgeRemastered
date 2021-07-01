@@ -9,6 +9,7 @@
     "xstring": "cpp",
     "xutility": "cpp",
     "*.rh": "cpp",
-    "xlocnum": "c"
+    "xlocnum": "c",
+    "vector": "c"
   }
 }

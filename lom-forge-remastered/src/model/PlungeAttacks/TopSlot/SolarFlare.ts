@@ -1,5 +1,5 @@
 import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Bow } from 'model/Weapons'
+import { Bow } from 'model/Equipment'
 
 export const SolarFlare: TopSlotPlungeAttack = {
   slot: 'Top',

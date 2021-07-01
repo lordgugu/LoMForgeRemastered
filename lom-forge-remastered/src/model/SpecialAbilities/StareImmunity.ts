@@ -1,4 +1,4 @@
-import { Shield } from 'model/Armors'
+import { Shield } from 'model/Equipment'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const StareImmunity: SpecialAbility = {

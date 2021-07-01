@@ -1,5 +1,5 @@
 import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Glove } from 'model/Weapons'
+import { Glove } from 'model/Equipment'
 
 export const HandOfMidas: MiddleSlotPlungeAttack = {
   slot: 'Middle',

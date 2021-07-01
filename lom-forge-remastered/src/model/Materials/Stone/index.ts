@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const Stone: MaterialCategory = { originalName: 'Stone' }
+export const Stone: MaterialCategory = { originalName: 'STONE' }
 
 export * from './GaeussTears'
 export * from './Marble'

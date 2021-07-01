@@ -1,4 +1,4 @@
-import { Shoes } from 'model/Armors'
+import { Shoes } from 'model/Equipment'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const ExtraExperience: SpecialAbility = {

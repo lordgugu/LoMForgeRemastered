@@ -1,5 +1,5 @@
 import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Flail } from 'model/Weapons'
+import { Flail } from 'model/Equipment'
 
 export const GameOfDeath: MiddleSlotPlungeAttack = {
   slot: 'Middle',

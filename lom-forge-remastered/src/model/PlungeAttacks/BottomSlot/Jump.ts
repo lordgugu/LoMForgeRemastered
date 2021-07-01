@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Axe, Bow, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, TwoHandedSword } from 'model/Weapons'
+import { Axe, Bow, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, TwoHandedSword } from 'model/Equipment'
 
 export const Jump: BottomSlotPlungeAttack = {
   slot: 'Bottom',

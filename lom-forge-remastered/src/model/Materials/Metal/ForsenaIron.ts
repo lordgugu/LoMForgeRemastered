@@ -3,6 +3,7 @@ import { MaterialProps, Metal } from 'model/Materials'
 export const ForsenaIron: MaterialProps = {
   id: 2,
   originalName: 'ForsenaIron',
+  remasteredName: 'Valsena Iron',
   category: Metal,
   growthControl: 20,
   weaponAttributes: {

@@ -1,5 +1,5 @@
 import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Axe } from 'model/Weapons'
+import { Axe } from 'model/Equipment'
 
 export const DragonSlayer: MiddleSlotPlungeAttack = {
   slot: 'Middle',

@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const Wood: MaterialCategory = { originalName: 'Wood' }
+export const Wood: MaterialCategory = { originalName: 'WOOD' }
 
 export * from './AshWood'
 export * from './BaobabWood'

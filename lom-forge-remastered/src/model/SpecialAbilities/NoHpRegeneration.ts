@@ -1,4 +1,4 @@
-import { Armor, Boots, Gauntlet, Hat, Hauberk, Helm, Mantle, Pendant, Ring, Robe, Shield, Shoes } from 'model/Armors'
+import { Armor, Boots, Gauntlet, Hat, Hauberk, Helm, Mantle, Pendant, Ring, Robe, Shield, Shoes } from 'model/Equipment'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export const NoHpRegeneration: SpecialAbility = {

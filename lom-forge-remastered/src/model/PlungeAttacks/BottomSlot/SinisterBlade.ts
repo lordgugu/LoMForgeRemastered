@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Knife } from 'model/Weapons'
+import { Knife } from 'model/Equipment'
 
 export const SinisterBlade: BottomSlotPlungeAttack = {
   slot: 'Bottom',

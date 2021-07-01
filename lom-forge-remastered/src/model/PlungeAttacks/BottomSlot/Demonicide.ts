@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Staff } from 'model/Weapons'
+import { Staff } from 'model/Equipment'
 
 export const Demonicide: BottomSlotPlungeAttack = {
   slot: 'Bottom',

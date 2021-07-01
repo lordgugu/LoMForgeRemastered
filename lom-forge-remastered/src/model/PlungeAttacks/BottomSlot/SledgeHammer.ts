@@ -1,5 +1,5 @@
 import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Hammer } from 'model/Weapons'
+import { Hammer } from 'model/Equipment'
 
 export const SledgeHammer: BottomSlotPlungeAttack = {
   slot: 'Bottom',

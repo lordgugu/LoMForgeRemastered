@@ -1,5 +1,5 @@
 import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
-import { Spear } from 'model/Weapons'
+import { Spear } from 'model/Equipment'
 
 export const Trident: TopSlotPlungeAttack = {
   slot: 'Top',

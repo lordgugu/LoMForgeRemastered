@@ -1,6 +1,6 @@
 import { MaterialCategory } from 'model/Materials'
 
-export const None: MaterialCategory = { originalName: undefined }
+export const None: MaterialCategory = undefined
 
 export * from './Adamantite'
 export * from './Coral'
