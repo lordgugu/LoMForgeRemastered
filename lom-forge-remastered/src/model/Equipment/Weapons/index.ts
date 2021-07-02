@@ -1,4 +1,4 @@
-import { BottomSlotPlungeAttack, MiddleSlotPlungeAttack, TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { BottomSlotMasterMove, MiddleSlotMasterMove, TopSlotMasterMove } from 'model/MasterMoves'
 
 export type WeaponAttributes = {
   sharpness: number
@@ -13,10 +13,10 @@ export type WeaponProps = {
   attributes: WeaponAttributes
   markerThreshold: number
   priceCoefficient: number
-  plungeAttacks: {
-    top: TopSlotPlungeAttack
-    middle: MiddleSlotPlungeAttack
-    bottom: BottomSlotPlungeAttack
+  masterMoves: {
+    top: TopSlotMasterMove
+    middle: MiddleSlotMasterMove
+    bottom: BottomSlotMasterMove
   }
 }
 

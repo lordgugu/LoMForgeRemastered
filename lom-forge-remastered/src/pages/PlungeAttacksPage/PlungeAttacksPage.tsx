@@ -9,18 +9,18 @@ import {
   MagicalShot,
   MedusaArrow,
   PhoenixFalling,
-  PlungeAttack,
+  MasterMove,
   Shot,
   SolarFlare,
   SpearOfLight,
   Thrust,
   Trident
-} from 'model/PlungeAttacks'
+} from 'model/MasterMoves'
 import React from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 import './PlungeAttacksPage.scss'
 
-const PlungeAttackCard: React.FC<PlungeAttack> = plungeAttack => {
+const PlungeAttackCard: React.FC<MasterMove> = plungeAttack => {
   return (
     <Card>
       <CardContent>

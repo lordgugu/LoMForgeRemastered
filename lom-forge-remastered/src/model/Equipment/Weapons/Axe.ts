@@ -1,5 +1,5 @@
-import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
-import { WeaponProps } from '.'
+import { WeaponProps } from 'model/Equipment'
+import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Axe: WeaponProps = {
   originalName: 'Axe',
@@ -11,7 +11,7 @@ export const Axe: WeaponProps = {
   },
   markerThreshold: 2,
   priceCoefficient: 50,
-  plungeAttacks: {
+  masterMoves: {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump

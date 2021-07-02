@@ -1,5 +1,5 @@
-import { DoubleShot, Jump, Shot } from 'model/PlungeAttacks'
-import { WeaponProps } from '.'
+import { WeaponProps } from 'model/Equipment'
+import { DoubleShot, Jump, Shot } from 'model/MasterMoves'
 
 export const Bow: WeaponProps = {
   originalName: 'Bow',
@@ -11,7 +11,7 @@ export const Bow: WeaponProps = {
   },
   markerThreshold: 1,
   priceCoefficient: 35,
-  plungeAttacks: {
+  masterMoves: {
     top: Shot,
     middle: DoubleShot,
     bottom: Jump

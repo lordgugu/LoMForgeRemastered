@@ -1,4 +1,4 @@
-import { Jump, Thrust, Uppercut } from 'model/PlungeAttacks'
+import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
 import { WeaponProps } from '.'
 
 export const TwoHandedSword: WeaponProps = {
@@ -11,7 +11,7 @@ export const TwoHandedSword: WeaponProps = {
   },
   markerThreshold: 2,
   priceCoefficient: 75,
-  plungeAttacks: {
+  masterMoves: {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
