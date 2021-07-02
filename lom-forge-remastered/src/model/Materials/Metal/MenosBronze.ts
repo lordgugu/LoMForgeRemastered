@@ -1,7 +1,6 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const MenosBronze: MaterialProps = {
-  id: 1,
   originalName: 'MenosBronze',
   remasteredName: 'Menos Bronze',
   category: Metal,

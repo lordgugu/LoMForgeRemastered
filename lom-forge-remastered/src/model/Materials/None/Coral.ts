@@ -1,7 +1,6 @@
 import { MaterialProps, None } from 'model/Materials'
 
 export const Coral: MaterialProps = {
-  id: 50,
   originalName: 'Coral',
   category: None,
   growthControl: 12,

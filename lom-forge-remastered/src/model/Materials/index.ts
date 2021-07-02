@@ -76,7 +76,6 @@ export type MaterialCategory =
   | undefined
 
 export type MaterialProps = {
-  id: number
   originalName: string
   remasteredName?: string
   category: MaterialCategory

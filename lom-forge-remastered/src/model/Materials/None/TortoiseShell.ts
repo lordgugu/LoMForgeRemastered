@@ -1,7 +1,6 @@
 import { MaterialProps, None } from 'model/Materials'
 
 export const TortoiseShell: MaterialProps = {
-  id: 51,
   originalName: 'TortoiseShell',
   category: None,
   growthControl: 20,

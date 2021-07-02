@@ -1,7 +1,6 @@
 import { MaterialProps, Stone } from 'model/Materials'
 
 export const Obsidian: MaterialProps = {
-  id: 21,
   originalName: 'Obsidian',
   category: Stone,
   growthControl: 32,

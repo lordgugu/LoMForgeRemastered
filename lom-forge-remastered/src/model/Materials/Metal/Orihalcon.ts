@@ -1,7 +1,6 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const Orihalcon: MaterialProps = {
-  id: 11,
   originalName: 'Orihalcon',
   category: Metal,
   growthControl: 12,

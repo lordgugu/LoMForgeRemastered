@@ -1,7 +1,6 @@
 import { Aerolite, MaterialProps } from 'model/Materials'
 
 export const JacobiniRock: MaterialProps = {
-  id: 40,
   originalName: 'JacobiniRock',
   category: Aerolite,
   growthControl: 16,

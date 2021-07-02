@@ -1,7 +1,6 @@
 import { Fabric, MaterialProps } from 'model/Materials'
 
 export const ToppleCotton: MaterialProps = {
-  id: 36,
   originalName: 'ToppleCotton',
   category: Fabric,
   growthControl: 10,

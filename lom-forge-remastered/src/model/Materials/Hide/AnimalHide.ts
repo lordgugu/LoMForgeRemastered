@@ -1,7 +1,6 @@
 import { Hide, MaterialProps } from 'model/Materials'
 
 export const AnimalHide: MaterialProps = {
-  id: 24,
   originalName: 'AnimalHide',
   category: Hide,
   growthControl: 8,

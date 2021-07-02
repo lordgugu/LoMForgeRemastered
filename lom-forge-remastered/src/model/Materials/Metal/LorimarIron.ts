@@ -1,7 +1,6 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const LorimarIron: MaterialProps = {
-  id: 8,
   originalName: 'LorimarIron',
   category: Metal,
   growthControl: 16,

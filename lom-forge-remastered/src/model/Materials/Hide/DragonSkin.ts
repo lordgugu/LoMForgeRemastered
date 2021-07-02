@@ -1,7 +1,6 @@
 import { Hide, MaterialProps } from 'model/Materials'
 
 export const DragonSkin: MaterialProps = {
-  id: 27,
   originalName: 'DragonSkin',
   category: Hide,
   growthControl: 20,

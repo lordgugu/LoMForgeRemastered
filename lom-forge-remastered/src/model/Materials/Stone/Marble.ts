@@ -1,7 +1,6 @@
 import { MaterialProps, Stone } from 'model/Materials'
 
 export const Marble: MaterialProps = {
-  id: 20,
   originalName: 'Marble',
   category: Stone,
   growthControl: 28,

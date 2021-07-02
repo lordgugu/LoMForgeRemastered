@@ -1,7 +1,6 @@
 import { Bone, MaterialProps } from 'model/Materials'
 
 export const AnimalBone: MaterialProps = {
-  id: 32,
   originalName: 'AnimalBone',
   category: Bone,
   growthControl: 20,

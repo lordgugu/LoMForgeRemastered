@@ -1,7 +1,6 @@
 import { MaterialProps, Scales } from 'model/Materials'
 
 export const LizardScales: MaterialProps = {
-  id: 29,
   originalName: 'LizardScales',
   category: Scales,
   growthControl: 20,

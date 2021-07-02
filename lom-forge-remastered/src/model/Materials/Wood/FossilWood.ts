@@ -1,7 +1,6 @@
 import { MaterialProps, Wood } from 'model/Materials'
 
 export const FossilWood: MaterialProps = {
-  id: 19,
   originalName: 'FossilWood',
   category: Wood,
   growthControl: 22,

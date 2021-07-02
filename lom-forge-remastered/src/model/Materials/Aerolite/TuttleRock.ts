@@ -1,7 +1,6 @@
 import { Aerolite, MaterialProps } from 'model/Materials'
 
 export const TuttleRock: MaterialProps = {
-  id: 44,
   originalName: 'TuttleRock',
   category: Aerolite,
   growthControl: 16,

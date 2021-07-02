@@ -1,7 +1,6 @@
 import { MaterialProps, Metal } from 'model/Materials'
 
 export const IshePlatinum: MaterialProps = {
-  id: 7,
   originalName: 'IshePlatinum',
   category: Metal,
   growthControl: 16,

@@ -1,7 +1,6 @@
 import { MaterialProps, Stone } from 'model/Materials'
 
 export const GaeussTears: MaterialProps = {
-  id: 23,
   originalName: "Gaeus'sTears",
   remasteredName: "Gaia's Tears",
   category: Stone,
