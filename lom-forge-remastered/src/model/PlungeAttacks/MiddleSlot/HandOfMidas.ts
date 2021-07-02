@@ -1,10 +1,11 @@
-import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { King } from 'model/Cards'
 import { Glove } from 'model/Equipment'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
 
 export const HandOfMidas: MiddleSlotPlungeAttack = {
   slot: 'Middle',
   originalName: 'Hand of Midas',
-  weapons: [Glove],
-  effects: ['Converts experience to Lucre', 'Attack Gauge &minus;'],
-  cards: ['King']
+  weapons: () => [Glove],
+  effects: () => ['Experience &rarr; Lucre', 'Attack Gauge &minus;'],
+  cards: () => [King]
 }

@@ -1,10 +1,11 @@
-import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { GodOfWar } from 'model/Cards'
 import { Axe } from 'model/Equipment'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
 
 export const DragonSlayer: MiddleSlotPlungeAttack = {
   slot: 'Middle',
   originalName: 'Dragon Slayer',
-  weapons: [Axe],
-  effects: ['Double damage against dragons', 'May also inflict sleep on dragons'],
-  cards: ['God of War']
+  weapons: () => [Axe],
+  effects: () => ['Dragon Damage +', 'Sleep vs. Dragon'],
+  cards: () => [GodOfWar]
 }

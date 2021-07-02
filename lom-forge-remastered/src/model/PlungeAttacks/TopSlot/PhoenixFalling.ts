@@ -1,10 +1,11 @@
-import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Sage } from 'model/Cards'
 import { Bow } from 'model/Equipment'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
 
 export const PhoenixFalling: TopSlotPlungeAttack = {
   slot: 'Top',
   originalName: 'Phoenix Falling',
-  weapons: [Bow],
-  effects: ['Double damage against aerials', 'May also inflict flameburst on aerials'],
-  cards: ['Sage']
+  weapons: () => [Bow],
+  effects: () => ['Aerial Damage +', 'Flameburst vs. Aerial'],
+  cards: () => [Sage]
 }

@@ -1,11 +1,13 @@
+import { CardProps } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
 
 export type PlungeAttack = {
   originalName: string
   remasteredName?: string
-  weapons: WeaponProps[]
-  effects: string[]
-  cards: string[]
+  weapons: () => WeaponProps[]
+  effects: () => string[]
+  cards?: () => CardProps[]
+  notes?: () => string[]
 }
 
 export * from './BottomSlot'

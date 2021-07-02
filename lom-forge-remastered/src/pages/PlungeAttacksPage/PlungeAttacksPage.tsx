@@ -34,10 +34,10 @@ const PlungeAttackCard: React.FC<PlungeAttack> = plungeAttack => {
             float: 'right'
           }}
         >
-          {plungeAttack.weapons.map((attack) => attack.originalName).join(', ')}
+          {plungeAttack.weapons().map((attack) => attack.originalName).join(', ')}
         </Typography>
         <List>
-          {plungeAttack.effects.map((effect, index) => (
+          {plungeAttack.effects().map((effect, index) => (
             <ListItem key={index}>
               <ListItemText>• {effect}</ListItemText>
             </ListItem>

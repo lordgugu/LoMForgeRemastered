@@ -1,10 +1,11 @@
-import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
+import { Cleric } from 'model/Cards'
 import { Staff } from 'model/Equipment'
+import { BottomSlotPlungeAttack } from 'model/PlungeAttacks'
 
 export const Demonicide: BottomSlotPlungeAttack = {
   slot: 'Bottom',
   originalName: 'Demonicide',
-  weapons: [Staff],
-  effects: ['Double damage against demons', 'May also inflict flameburst on demons'],
-  cards: ['Cleric']
+  weapons: () => [Staff],
+  effects: () => ['Demon Damage +', 'Flameburst vs. Demon'],
+  cards: () => [Cleric]
 }

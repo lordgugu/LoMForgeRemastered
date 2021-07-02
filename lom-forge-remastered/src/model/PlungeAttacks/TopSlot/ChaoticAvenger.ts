@@ -1,10 +1,11 @@
-import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
+import { FallenAngel } from 'model/Cards'
 import { TwoHandedSword } from 'model/Equipment'
+import { TopSlotPlungeAttack } from 'model/PlungeAttacks'
 
 export const ChaoticAvenger: TopSlotPlungeAttack = {
   slot: 'Top',
   originalName: 'Chaotic Avenger',
-  weapons: [TwoHandedSword],
-  effects: ['Inflicts Sala/Gnome/Jinn/Undine Damage', 'Attack Gauge +'],
-  cards: ['Fallen Angel']
+  weapons: () => [TwoHandedSword],
+  effects: () => ['Salamander Damage', 'Gnome Damage', 'Jinn Damage', 'Undine Damage', 'Attack Gauge +'],
+  cards: () => [FallenAngel]
 }

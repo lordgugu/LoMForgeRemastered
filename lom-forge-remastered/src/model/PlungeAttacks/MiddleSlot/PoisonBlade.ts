@@ -1,10 +1,11 @@
-import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
+import { BeastHeadedGod } from 'model/Cards'
 import { Knife } from 'model/Equipment'
+import { MiddleSlotPlungeAttack } from 'model/PlungeAttacks'
 
 export const PoisonBlade: MiddleSlotPlungeAttack = {
   slot: 'Middle',
   originalName: 'Poison Blade',
-  weapons: [Knife],
-  effects: ['May inflict poison'],
-  cards: ['Beast-Headed God']
+  weapons: () => [Knife],
+  effects: () => ['Poison'],
+  cards: () => [BeastHeadedGod]
 }
