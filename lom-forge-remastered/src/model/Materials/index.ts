@@ -1,4 +1,5 @@
 import { ArmorAttributes, WeaponAttributes } from 'model/Equipment'
+import { Resistances } from 'model/Essences'
 import {
   Adamantite,
   AltenaAlloy,
@@ -57,17 +58,6 @@ import {
   WendelSilver
 } from 'model/Materials'
 
-export type MaterialResistances = {
-  wisp: number
-  shade: number
-  dryad: number
-  aura: number
-  sala: number
-  gnome: number
-  jinn: number
-  undine: number
-}
-
 export type MaterialCategory =
   | {
       originalName: 'METAL' | 'WOOD' | 'STONE' | 'HIDE' | 'SCALES' | 'BONE' | 'FABRIC' | 'AEROLITE'
@@ -82,7 +72,7 @@ export type MaterialProps = {
   growthControl: number
   weaponAttributes: WeaponAttributes
   armorAttributes: ArmorAttributes
-  resistances: MaterialResistances
+  resistances: Resistances
   priceCoefficient: number
 }
 

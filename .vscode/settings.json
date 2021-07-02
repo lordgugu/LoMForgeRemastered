@@ -10,6 +10,7 @@
     "xutility": "cpp",
     "*.rh": "cpp",
     "xlocnum": "c",
-    "vector": "c"
+    "vector": "c",
+    "essence.h": "c"
   }
 }
