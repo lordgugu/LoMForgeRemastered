@@ -1,8 +1,7 @@
 import { Bow } from 'model/Equipment'
-import { TopSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const Shot: TopSlotMasterMove = {
-  slot: 'Top',
+export const Shot: MasterMove = {
   originalName: 'Shot',
   weapons: () => [Bow],
   effects: () => ['Default (Top Slot)']

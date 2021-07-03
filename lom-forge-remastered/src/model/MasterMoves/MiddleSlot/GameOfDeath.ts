@@ -1,9 +1,8 @@
 import { MotherOfGods } from 'model/Cards'
 import { Flail } from 'model/Equipment'
-import { MiddleSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const GameOfDeath: MiddleSlotMasterMove = {
-  slot: 'Middle',
+export const GameOfDeath: MasterMove = {
   originalName: 'Game of Death',
   weapons: () => [Flail],
   effects: () => ['Skill Up', 'Attack Gauge +'],

@@ -1,9 +1,3 @@
-import { MasterMove } from 'model/MasterMoves'
-
-export interface MiddleSlotMasterMove extends MasterMove {
-  slot: 'Middle'
-}
-
 export * from './DoubleShot'
 export * from './DragonSlayer'
 export * from './ElvenArcher'

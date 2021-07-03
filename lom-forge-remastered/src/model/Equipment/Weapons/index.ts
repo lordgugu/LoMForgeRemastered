@@ -1,23 +1,26 @@
-import { BottomSlotMasterMove, MiddleSlotMasterMove, TopSlotMasterMove } from 'model/MasterMoves'
+import { CardProps } from 'model/Cards'
+import { MasterMove } from 'model/MasterMoves'
+import { WeaponProjectProps } from 'model/Projects'
 
 export type WeaponAttributes = {
-  sharpness: number
-  weight: number
-  force: number
-  technique: number
+  readonly sharpness: number
+  readonly weight: number
+  readonly force: number
+  readonly technique: number
 }
 
+export type MasterMoveSlot = 'top' | 'middle' | 'bottom'
+
 export type WeaponProps = {
-  originalName: string
-  remasteredName?: string
-  attributes: WeaponAttributes
-  markerThreshold: number
-  priceCoefficient: number
-  masterMoves: {
-    top: TopSlotMasterMove
-    middle: MiddleSlotMasterMove
-    bottom: BottomSlotMasterMove
-  }
+  readonly originalName: string
+  readonly remasteredName?: string
+  readonly attributes: WeaponAttributes
+  readonly markerThreshold: number
+  readonly priceCoefficient: number
+  readonly masterMoves: { readonly [key in MasterMoveSlot]: MasterMove }
+  readonly compatibleMasterMoves: { readonly [key in MasterMoveSlot]: () => MasterMove[] }
+  readonly activate?: (project: WeaponProjectProps) => void
+  readonly relatedCards: () => CardProps[]
 }
 
 export * from './Axe'

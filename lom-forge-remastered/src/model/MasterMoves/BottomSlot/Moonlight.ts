@@ -1,9 +1,8 @@
 import { MoonGoddess } from 'model/Cards'
 import { Sword } from 'model/Equipment'
-import { BottomSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const Moonlight: BottomSlotMasterMove = {
-  slot: 'Bottom',
+export const Moonlight: MasterMove = {
   originalName: 'Moonlight',
   weapons: () => [Sword],
   effects: () => ['Aquatic Damage +', 'Sleep vs. Aquatic'],

@@ -1,5 +1,6 @@
+import { GodOfDestruction, MoonGoddess, SunGod, WitchOfMoon } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { FlameTongue, Jump, Moonlight, Sunlight, Thrust, Uppercut, Vampsword } from 'model/MasterMoves'
 
 export const Sword: WeaponProps = {
   originalName: 'Sword',
@@ -15,5 +16,11 @@ export const Sword: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust, FlameTongue, Sunlight, Vampsword],
+    middle: () => [Uppercut, Moonlight],
+    bottom: () => [Jump]
+  },
+  relatedCards: () => [GodOfDestruction, SunGod, WitchOfMoon, MoonGoddess]
 }

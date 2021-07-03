@@ -1,9 +1,8 @@
 import { Ragnarok as RagnarokCard } from 'model/Cards'
 import { TwoHandedSword } from 'model/Equipment'
-import { BottomSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const Ragnarok: BottomSlotMasterMove = {
-  slot: 'Bottom',
+export const Ragnarok: MasterMove = {
   originalName: 'Ragnarok',
   weapons: () => [TwoHandedSword],
   effects: () => ['Power Up'],

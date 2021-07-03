@@ -57,26 +57,28 @@ import {
   VizelGold,
   WendelSilver
 } from 'model/Materials'
+import { ProjectProps } from 'model/Projects'
 
 export type MaterialCategory =
   | {
-      originalName: 'METAL' | 'WOOD' | 'STONE' | 'HIDE' | 'SCALES' | 'BONE' | 'FABRIC' | 'AEROLITE'
-      remasteredName?: string
+      readonly originalName: 'METAL' | 'WOOD' | 'STONE' | 'HIDE' | 'SCALES' | 'BONE' | 'FABRIC' | 'AEROLITE'
+      readonly remasteredName?: string
     }
   | undefined
 
 export type MaterialProps = {
-  originalName: string
-  remasteredName?: string
-  category: MaterialCategory
-  growthControl: number
-  weaponAttributes: WeaponAttributes
-  armorAttributes: ArmorAttributes
-  resistances: Resistances
-  priceCoefficient: number
+  readonly originalName: string
+  readonly remasteredName?: string
+  readonly category: MaterialCategory
+  readonly growthControl: number
+  readonly weaponAttributes: WeaponAttributes
+  readonly armorAttributes: ArmorAttributes
+  readonly resistances: Resistances
+  readonly priceCoefficient: number
+  readonly activation?: (project: ProjectProps) => void
 }
 
-export const Materials: { [key: string]: MaterialProps } = {
+export const Materials: { readonly [key: string]: MaterialProps } = {
   // Metal
   '1': MenosBronze,
   '2': ForsenaIron,

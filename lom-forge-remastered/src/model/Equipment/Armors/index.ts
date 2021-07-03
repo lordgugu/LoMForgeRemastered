@@ -1,19 +1,23 @@
+import { CardProps } from 'model/Cards'
+import { ArmorProjectProps } from 'model/Projects'
 import { SpecialAbility } from 'model/SpecialAbilities'
 
 export type ArmorAttributes = {
-  strike: number
-  slash: number
-  pierce: number
-  magic: number
+  readonly strike: number
+  readonly slash: number
+  readonly pierce: number
+  readonly magic: number
 }
 
 export type ArmorProps = {
-  originalName: string
-  remasteredName?: string
-  attributes: ArmorAttributes
-  markerThreshold: number
-  priceCoefficient: number
-  special?: SpecialAbility
+  readonly originalName: string
+  readonly remasteredName?: string
+  readonly attributes: ArmorAttributes
+  readonly markerThreshold: number
+  readonly priceCoefficient: number
+  readonly compatibleSpecials?: () => SpecialAbility[]
+  readonly activate?: (project: ArmorProjectProps) => void
+  readonly relatedCards?: () => CardProps[]
 }
 
 export * from './Armor'

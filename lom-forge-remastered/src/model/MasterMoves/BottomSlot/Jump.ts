@@ -11,10 +11,9 @@ import {
   TwoHandedAxe,
   TwoHandedSword
 } from 'model/Equipment'
-import { BottomSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const Jump: BottomSlotMasterMove = {
-  slot: 'Bottom',
+export const Jump: MasterMove = {
   originalName: 'Jump',
   weapons: () => [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail, Bow],
   effects: () => ['Default (Bottom Slot)']

@@ -1,9 +1,8 @@
 import { OceanGod } from 'model/Cards'
 import { Spear } from 'model/Equipment'
-import { TopSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const Trident: TopSlotMasterMove = {
-  slot: 'Top',
+export const Trident: MasterMove = {
   originalName: 'Trident',
   weapons: () => [Spear],
   effects: () => ['Aquatic Damage +', 'Confusion vs. Aquatic'],

@@ -1,8 +1,7 @@
 import { Bow } from 'model/Equipment'
-import { TopSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const MedusaArrow: TopSlotMasterMove = {
-  slot: 'Top',
+export const MedusaArrow: MasterMove = {
   originalName: 'Medusa Arrow',
   weapons: () => [Bow],
   effects: () => ['Petrification'],

@@ -1,5 +1,6 @@
+import { ManOfValor, OceanGod, RulerOfTheSky } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { Gungnir, Jump, SpearOfLight, Thrust, Trident, Uppercut } from 'model/MasterMoves'
 
 export const Spear: WeaponProps = {
   originalName: 'Spear',
@@ -15,5 +16,11 @@ export const Spear: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust, Gungnir, SpearOfLight, Trident],
+    middle: () => [Uppercut],
+    bottom: () => [Jump]
+  },
+  relatedCards: () => [RulerOfTheSky, ManOfValor, OceanGod]
 }

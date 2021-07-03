@@ -1,9 +1,8 @@
 import { GodOfDestruction } from 'model/Cards'
 import { Sword } from 'model/Equipment'
-import { MiddleSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const FlameTongue: MiddleSlotMasterMove = {
-  slot: 'Middle',
+export const FlameTongue: MasterMove = {
   originalName: 'Flame Tongue',
   weapons: () => [Sword],
   effects: () => ['Salamander Damage', 'Flameburst'],

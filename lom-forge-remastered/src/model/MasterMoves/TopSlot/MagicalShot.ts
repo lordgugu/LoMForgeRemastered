@@ -1,9 +1,8 @@
 import { Raven, Witch, Wolf } from 'model/Cards'
 import { Bow } from 'model/Equipment'
-import { TopSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const MagicalShot: TopSlotMasterMove = {
-  slot: 'Top',
+export const MagicalShot: MasterMove = {
   originalName: 'Magical Shot',
   weapons: () => [Bow],
   effects: () => ['Demon Damage +', 'Confusion vs. Demon', 'Attack Guage +'],

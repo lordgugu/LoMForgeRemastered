@@ -1,5 +1,6 @@
+import { MotherOfGods } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { GameOfDeath, GreenPrincess, Jump, RedDream, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Flail: WeaponProps = {
   originalName: 'Flail',
@@ -15,5 +16,11 @@ export const Flail: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust, GreenPrincess],
+    middle: () => [Uppercut, GameOfDeath],
+    bottom: () => [Jump, RedDream]
+  },
+  relatedCards: () => [MotherOfGods]
 }

@@ -28,7 +28,7 @@ import {
 
 export type EquipmentProps = WeaponProps | ArmorProps
 
-export const Equipment: { [key: string]: EquipmentProps } = {
+export const Equipment: { readonly [key: string]: EquipmentProps } = {
   // Weapons
   '1': Knife,
   '2': Sword,

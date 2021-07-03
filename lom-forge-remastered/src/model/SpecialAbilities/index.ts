@@ -1,11 +1,11 @@
 import { ArmorProps } from 'model/Equipment'
 
 export type SpecialAbility = {
-  originalName: string
-  remasteredName?: string
-  requirements: { armors: ArmorProps[]; cards: string[] }[]
-  effect: string[]
-  notes: string[]
+  readonly originalName: string
+  readonly remasteredName?: string
+  readonly requirements: { readonly armors: ArmorProps[]; readonly cards: string[] }[]
+  readonly effect: string[]
+  readonly notes: string[]
 }
 
 export * from './AutoRevive'

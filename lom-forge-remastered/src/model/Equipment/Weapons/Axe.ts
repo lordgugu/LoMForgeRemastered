@@ -1,5 +1,6 @@
+import { GodOfWar, Wanderer } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { DragonSlayer, Jump, Thrust, Uppercut, Woodchopper } from 'model/MasterMoves'
 
 export const Axe: WeaponProps = {
   originalName: 'Axe',
@@ -15,5 +16,11 @@ export const Axe: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust],
+    middle: () => [Uppercut, DragonSlayer],
+    bottom: () => [Jump, Woodchopper]
+  },
+  relatedCards: () => [GodOfWar, Wanderer]
 }

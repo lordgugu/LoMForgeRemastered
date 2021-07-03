@@ -1,5 +1,6 @@
+import { BlacksmithGod, SpiritOfMountain, ThunderGod, Volcano } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Hammer: WeaponProps = {
   originalName: 'Hammer',
@@ -15,5 +16,11 @@ export const Hammer: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust],
+    middle: () => [Uppercut],
+    bottom: () => [Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer]
+  },
+  relatedCards: () => [Volcano, ThunderGod, SpiritOfMountain, BlacksmithGod]
 }

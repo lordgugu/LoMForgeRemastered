@@ -1,8 +1,3 @@
-import { MasterMove } from 'model/MasterMoves'
-
-export interface BottomSlotMasterMove extends MasterMove {
-  slot: 'Bottom'
-}
 export * from './Demonicide'
 export * from './Electrosceptre'
 export * from './GoldenTouch'

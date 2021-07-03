@@ -1,5 +1,6 @@
+import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { Caduceus, Demonicide, Electrosceptre, GoldenTouch, Jump, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Staff: WeaponProps = {
   originalName: 'Staff',
@@ -15,5 +16,11 @@ export const Staff: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust, Caduceus],
+    middle: () => [Uppercut],
+    bottom: () => [Jump, Demonicide, Electrosceptre, GoldenTouch]
+  },
+  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness]
 }

@@ -1,5 +1,6 @@
+import { King } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { HandOfMidas, Jump, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Glove: WeaponProps = {
   originalName: 'Glove',
@@ -15,5 +16,11 @@ export const Glove: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust],
+    middle: () => [Uppercut, HandOfMidas],
+    bottom: () => [Jump]
+  },
+  relatedCards: () => [King]
 }

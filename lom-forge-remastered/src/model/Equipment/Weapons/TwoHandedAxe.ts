@@ -1,5 +1,6 @@
+import { Leviathan } from 'model/Cards'
 import { WeaponProps } from 'model/Equipment'
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { Jump, Thrust, Treefeller, Uppercut } from 'model/MasterMoves'
 
 export const TwoHandedAxe: WeaponProps = {
   originalName: '2H Axe',
@@ -15,5 +16,11 @@ export const TwoHandedAxe: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust],
+    middle: () => [Uppercut],
+    bottom: () => [Jump, Treefeller]
+  },
+  relatedCards: () => [Leviathan]
 }

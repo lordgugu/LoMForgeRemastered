@@ -15,11 +15,13 @@ export type CardCategory =
   | undefined
 
 export type CardProps = {
-  originalName: string
-  remasteredName?: string
-  category: CardCategory
-  price: number
+  readonly originalName: string
+  readonly remasteredName?: string
+  readonly category: CardCategory
+  readonly price: number
 }
+
+export type MysticPowerSlot = 'prehidden' | 'hidden' | 'top' | 'middle' | 'bottom' | 'leaving'
 
 export * from './BeastGod'
 export * from './Element'

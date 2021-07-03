@@ -5,9 +5,15 @@ import {
   AnyMeat,
   Applesocks,
   Apricat,
-  AromaOil, Ash, AuraGold,
-  AuraSilver, BakedRoach, Bellgrapes,
-  BigSeed, BlackenedBat, BlankEye,
+  AromaOil,
+  Ash,
+  AuraGold,
+  AuraSilver,
+  BakedRoach,
+  Bellgrapes,
+  BigSeed,
+  BlackenedBat,
+  BlankEye,
   Boarmelon,
   Bumpkin,
   Cabadillo,
@@ -25,7 +31,11 @@ import {
   DragonBlood,
   DragonsBreath,
   DryadGold,
-  DryadSilver, EarOfWheat, EarthStone, Electricity, Ether,
+  DryadSilver,
+  EarOfWheat,
+  EarthStone,
+  Electricity,
+  Ether,
   FireStone,
   FishyFruit,
   FlamingQuill,
@@ -36,47 +46,72 @@ import {
   GlowCrystal,
   GnomeGold,
   GnomeSilver,
-  GoldClover, GraveDirt, GreenballBun, Hairball, HealingClaw,
+  GoldClover,
+  GraveDirt,
+  GreenballBun,
+  Hairball,
+  HealingClaw,
   HeartMint,
   HolyWater,
   HoneyOnion,
   JinnGold,
-  JinnSilver, KnockoutDust, Lilipods,
+  JinnSilver,
+  KnockoutDust,
+  Lilipods,
   LittleEye,
   LongSeed,
   LoquatShoes,
   Mangoelephant,
   MaskedPotato,
-  Mercury, MessyScroll, MirrorPiece, MoonCrystal, Moss, MothWing,
-  MushInABox, Needle, Needlettuce,
+  Mercury,
+  MessyScroll,
+  MirrorPiece,
+  MoonCrystal,
+  Moss,
+  MothWing,
+  MushInABox,
+  Needle,
+  Needlettuce,
   OblongSeed,
   OrangeOpus,
   Orcaplant,
   PeachPuppy,
   PearOHeels,
   PineOClock,
-  PoisonFang, PoisonPowder, RavenFeather,
+  PoisonFang,
+  PoisonPowder,
+  RavenFeather,
   Rhinoloupe,
   RocketPapaya,
-  RoundSeed, Rust, SalaGold,
+  RoundSeed,
+  Rust,
+  SalaGold,
   SalaSilver,
   Scissors,
   ShadeGold,
   ShadeSilver,
   SharpClaw,
   SillyEye,
-  SleepyEye, SleepyPowder, SmallSeed,
+  SleepyEye,
+  SleepyPowder,
+  SmallSeed,
   SpadeBasil,
   SpinyCarrot,
   SpinySeed,
   Springanana,
   Squalphin,
-  StinkyBreath, Sulpher, SunCrystal,
-  SweetMoai, TakoBug, Toadstoolshed,
+  StinkyBreath,
+  Sulpher,
+  SunCrystal,
+  SweetMoai,
+  TakoBug,
+  Toadstoolshed,
   UndineGold,
   UndineSilver,
   VampireFang,
-  VirginsSigh, WadOfWool, WaterStone,
+  VirginsSigh,
+  WadOfWool,
+  WaterStone,
   Whalamato,
   WhiteFeather,
   WickedEye,
@@ -88,7 +123,7 @@ import {
 
 export type ItemCategory =
   | {
-      originalName:
+      readonly originalName:
         | 'COINS'
         | 'M.STONES'
         | 'M.CRYSTALS'
@@ -104,18 +139,18 @@ export type ItemCategory =
         | 'PELLETS'
         | 'POWDERS'
         | 'POUCH'
-      remasteredName?: string
+      readonly remasteredName?: string
     }
   | undefined
 
 export type ItemProps = {
-  category: ItemCategory
-  originalName: string
-  remasteredName?: string
-  energy: number
+  readonly category: ItemCategory
+  readonly originalName: string
+  readonly remasteredName?: string
+  readonly energy: number
 }
 
-export const Items: { [key: string]: ItemProps } = {
+export const Items: { readonly [key: string]: ItemProps } = {
   // Coins
   '1': WispGold,
   '2': ShadeGold,
@@ -285,4 +320,3 @@ export * from './Produce'
 export * from './Seeds'
 export * from './Urns'
 export * from './Vials'
-

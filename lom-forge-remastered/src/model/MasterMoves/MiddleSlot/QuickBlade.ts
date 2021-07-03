@@ -1,9 +1,8 @@
 import { Clown } from 'model/Cards'
 import { Knife } from 'model/Equipment'
-import { MiddleSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const QuickBlade: MiddleSlotMasterMove = {
-  slot: 'Middle',
+export const QuickBlade: MasterMove = {
   originalName: 'Quick Blade',
   weapons: () => [Knife],
   effects: () => ['Attack Gauge +'],

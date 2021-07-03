@@ -1,4 +1,5 @@
-import { Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
+import { ChaoticAvenger, Jump, Ragnarok, Thrust, Uppercut } from 'model/MasterMoves'
 import { WeaponProps } from '.'
 
 export const TwoHandedSword: WeaponProps = {
@@ -15,5 +16,11 @@ export const TwoHandedSword: WeaponProps = {
     top: Thrust,
     middle: Uppercut,
     bottom: Jump
-  }
+  },
+  compatibleMasterMoves: {
+    top: () => [Thrust, ChaoticAvenger],
+    middle: () => [Uppercut],
+    bottom: () => [Jump, Ragnarok]
+  },
+  relatedCards: () => [FallenAngel, RagnarokCard]
 }

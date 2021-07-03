@@ -1,9 +1,8 @@
 import { Volcano } from 'model/Cards'
 import { Hammer } from 'model/Equipment'
-import { BottomSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const MagmaHammer: BottomSlotMasterMove = {
-  slot: 'Bottom',
+export const MagmaHammer: MasterMove = {
   originalName: 'Magma Hammer',
   weapons: () => [Hammer],
   effects: () => ['Salamander Damage', 'Aura Damage', 'Defense Up'],

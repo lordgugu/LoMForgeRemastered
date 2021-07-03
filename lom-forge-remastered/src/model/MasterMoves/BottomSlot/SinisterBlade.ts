@@ -1,9 +1,8 @@
 import { LordOfFlies } from 'model/Cards'
 import { Knife } from 'model/Equipment'
-import { BottomSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const SinisterBlade: BottomSlotMasterMove = {
-  slot: 'Bottom',
+export const SinisterBlade: MasterMove = {
   originalName: 'Sinister Blade',
   weapons: () => [Knife],
   effects: () => ['Demi-Human Damage +'],

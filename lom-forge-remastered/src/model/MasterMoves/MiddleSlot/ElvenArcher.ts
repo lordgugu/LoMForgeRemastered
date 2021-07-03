@@ -1,9 +1,8 @@
 import { SpiritOfForest } from 'model/Cards'
 import { Bow } from 'model/Equipment'
-import { MiddleSlotMasterMove } from 'model/MasterMoves'
+import { MasterMove } from 'model/MasterMoves'
 
-export const ElvenArcher: MiddleSlotMasterMove = {
-  slot: 'Middle',
+export const ElvenArcher: MasterMove = {
   originalName: 'Elven Archer',
   weapons: () => [Bow],
   effects: () => ['Paralysis'],
