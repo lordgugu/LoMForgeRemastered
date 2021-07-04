@@ -17,13 +17,14 @@ export type Immunity =
   | 'petrification'
   | 'freeze'
 
-type CommonProjectProps = StatProps & EssenceProps & {
-  material: MaterialProps
-  sticky: boolean
-  mysticPowers: { [key in MysticPowerSlot]?: CardProps }
-  activeWorldCard?: CardProps
-  price: number
-}
+type CommonProjectProps = StatProps &
+  EssenceProps & {
+    material: MaterialProps
+    sticky: boolean
+    mysticPowers: { [key in MysticPowerSlot]?: CardProps }
+    activeWorldCard?: CardProps
+    price: number
+  }
 
 export type WeaponProjectProps = CommonProjectProps & {
   type: 'Weapon'
@@ -86,6 +87,14 @@ function setActiveWorldCard(project: ProjectProps) {
   project.activeWorldCard = slots.find((slot) => slot?.category === World)
 }
 
+function activateMaterialCategory(project: ProjectProps) {
+  const { category } = project.material
+
+  if (category?.activate) {
+    category.activate(project)
+  }
+}
+
 export function addItem(project: ProjectProps, item: ItemProps) {
   resetStatLimits(project)
   resetVolatileMysticPowers(project)
@@ -96,4 +105,6 @@ export function addItem(project: ProjectProps, item: ItemProps) {
   setActiveWorldCard(project)
 
   project.energy = item.energy
+
+  activateMaterialCategory(project)
 }

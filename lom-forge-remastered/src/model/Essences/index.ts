@@ -4,7 +4,7 @@ import { ancientMoonTaint } from './AncientMoonTaint'
 import { mirroredWorldTaint } from './MirroredWorldTaint'
 import { normalTaint } from './NormalTaint'
 
-export type PotentialEssence = 'dryad' | 'aura' | 'sala' | 'gnome' | 'jinn' | 'undine'
+type PotentialEssence = 'dryad' | 'aura' | 'sala' | 'gnome' | 'jinn' | 'undine'
 export type Essence = 'wisp' | 'shade' | PotentialEssence
 
 export const Wisp: Essence = 'wisp'

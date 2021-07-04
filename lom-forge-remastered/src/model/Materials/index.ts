@@ -63,6 +63,7 @@ export type MaterialCategory =
   | {
       readonly originalName: 'METAL' | 'WOOD' | 'STONE' | 'HIDE' | 'SCALES' | 'BONE' | 'FABRIC' | 'AEROLITE'
       readonly remasteredName?: string
+      readonly activate?: (project: ProjectProps) => void
     }
   | undefined
 
@@ -75,7 +76,6 @@ export type MaterialProps = {
   readonly armorAttributes: ArmorAttributes
   readonly resistances: Resistances
   readonly priceCoefficient: number
-  readonly activation?: (project: ProjectProps) => void
 }
 
 export const Materials: { readonly [key: string]: MaterialProps } = {
