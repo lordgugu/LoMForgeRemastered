@@ -1,7 +1,8 @@
-import { CardProps, Spirit } from 'model/Cards'
+import { Card, Spirit } from 'model/Cards'
 
-export const SpiritOfMountain: CardProps = {
-  originalName: 'Spirit (of Mountain)',
+export const SpiritOfMountain: Card = {
+  id: 'SpiritOfMountain',
+  name: 'Spirit (of Mountain)',
   category: Spirit,
   price: 800
 }

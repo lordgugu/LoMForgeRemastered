@@ -1,7 +1,8 @@
-import { ItemProps, Powders } from 'model/Items'
+import { Item, Powders } from 'model/Items'
 
-export const KnockoutDust: ItemProps = {
-  originalName: "Knockout Dust",
+export const KnockoutDust: Item = {
+  id: 'KnockoutDust',
+  name: 'Knockout Dust',
   category: Powders,
   energy: 8
 }

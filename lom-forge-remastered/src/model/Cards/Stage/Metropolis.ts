@@ -1,7 +1,10 @@
-import { CardProps, Stage } from 'model/Cards'
+import { Card, Stage } from 'model/Cards'
+import { Dialaurel } from 'model/Items'
 
-export const Metropolis: CardProps = {
-  originalName: 'Metropolis',
+export const Metropolis: Card = {
+  id: 'Metropolis',
+  name: 'Metropolis',
   category: Stage,
-  price: 1500
+  price: 1500,
+  relatedItems: () => [Dialaurel]
 }

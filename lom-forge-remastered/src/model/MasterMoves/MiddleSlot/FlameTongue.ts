@@ -3,8 +3,9 @@ import { Sword } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const FlameTongue: MasterMove = {
-  originalName: 'Flame Tongue',
-  weapons: () => [Sword],
+  id: 'FlameTongue',
+  name: 'Flame Tongue',
   effects: () => ['Salamander Damage', 'Flameburst'],
-  cards: () => [GodOfDestruction]
+  relatedWeapons: () => [Sword],
+  relatedCards: () => [GodOfDestruction]
 }

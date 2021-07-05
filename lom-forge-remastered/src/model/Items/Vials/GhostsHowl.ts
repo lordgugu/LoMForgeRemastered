@@ -1,7 +1,8 @@
-import { ItemProps, Vials } from 'model/Items'
+import { Item, Vials } from 'model/Items'
 
-export const GhostsHowl: ItemProps = {
-  originalName: "Ghost's Howl",
+export const GhostsHowl: Item = {
+  id: 'GhostsHowl',
+  name: "Ghost's Howl",
   category: Vials,
   energy: 32
 }

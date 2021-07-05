@@ -1,7 +1,8 @@
-import { ItemProps, Meats } from 'model/Items'
+import { Item, Meats } from 'model/Items'
 
-export const AnyMeat: ItemProps = {
-  originalName: 'Any Meat',
+export const AnyMeat: Item = {
+  id: 'AnyMeat',
+  name: 'Any Meat',
   category: Meats,
   energy: 16
 }

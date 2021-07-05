@@ -2,8 +2,9 @@ import { Bow } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Icicle: MasterMove = {
-  originalName: 'Icicle',
-  weapons: () => [Bow],
+  id: 'Icicle',
+  name: 'Icicle',
   effects: () => ['Undine Damage', 'Freeze'],
-  notes: () => ['Waveruck Exclusive']
+  notes: () => ['Waveruck Exclusive'],
+  relatedWeapons: () => [Bow]
 }

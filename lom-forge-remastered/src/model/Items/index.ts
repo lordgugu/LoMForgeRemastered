@@ -1,3 +1,4 @@
+import { Entity } from 'model/Common'
 import {
   Acid,
   AngelFeather,
@@ -120,37 +121,50 @@ import {
   WispSilver,
   ZombieClaw
 } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
 export type ItemCategory =
-  | {
-      readonly originalName:
-        | 'COINS'
-        | 'M.STONES'
-        | 'M.CRYSTALS'
-        | 'SEEDS'
-        | 'PRODUCE'
-        | 'MEATS'
-        | 'FANG/CLAW'
-        | 'EYES'
-        | 'FEATHERS'
-        | 'BOTTLES'
-        | 'VIALS'
-        | 'URNS'
-        | 'PELLETS'
-        | 'POWDERS'
-        | 'POUCH'
-      readonly remasteredName?: string
-    }
+  | 'Coins'
+  | 'Magic Stones'
+  | 'Magic Crystals'
+  | 'Seeds'
+  | 'Produce'
+  | 'Meats'
+  | 'Fang / Claw'
+  | 'Eyes'
+  | 'Feathers'
+  | 'Bottles'
+  | 'Vials'
+  | 'Urns'
+  | 'Pellets'
+  | 'Powders'
+  | 'Pouch'
   | undefined
 
-export type ItemProps = {
+export const Coins: ItemCategory = 'Coins'
+export const MagicStones: ItemCategory = 'Magic Stones'
+export const MagicCrystals: ItemCategory = 'Magic Crystals'
+export const Seeds: ItemCategory = 'Seeds'
+export const Produce: ItemCategory = 'Produce'
+export const Meats: ItemCategory = 'Meats'
+export const FangClaw: ItemCategory = 'Fang / Claw'
+export const Eyes: ItemCategory = 'Eyes'
+export const Feathers: ItemCategory = 'Feathers'
+export const Bottles: ItemCategory = 'Bottles'
+export const Vials: ItemCategory = 'Vials'
+export const Urns: ItemCategory = 'Urns'
+export const Pellets: ItemCategory = 'Pellets'
+export const Powders: ItemCategory = 'Powders'
+export const Pouch: ItemCategory = 'Pouch'
+export const None: ItemCategory = undefined
+
+export type Item = Entity & {
   readonly category: ItemCategory
-  readonly originalName: string
-  readonly remasteredName?: string
   readonly energy: number
+  readonly activate?: (project: TemperingProject) => void
 }
 
-export const Items: { readonly [key: string]: ItemProps } = {
+export const AllItems: { readonly [key: string]: Item } = {
   // Coins
   '1': WispGold,
   '2': ShadeGold,

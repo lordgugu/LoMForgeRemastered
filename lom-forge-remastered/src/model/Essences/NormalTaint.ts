@@ -3,7 +3,7 @@ import {
   decreaseEssence,
   Dryad,
   Essence,
-  EssenceProps,
+  Essences,
   Gnome,
   increaseEssence,
   Jinn,
@@ -13,102 +13,102 @@ import {
   Wisp
 } from 'model/Essences'
 
-export function normalTaint(project: EssenceProps, essence: Essence): void {
-  const { levels, energy, potential } = project
+export function normalTaint(essences: Essences, essence: Essence): void {
+  const { levels, energy } = essences
   const { wisp, shade, dryad, aura, sala, gnome, jinn, undine } = levels
 
   switch (essence) {
     case Wisp:
       if (energy >= 8) {
-        increaseEssence(project, Wisp)
+        increaseEssence(essences, Wisp)
       }
 
       if (shade < wisp) {
-        while (levels[Shade] > 0) {
-          decreaseEssence(project, Shade)
+        while (essences.levels.shade > 0) {
+          decreaseEssence(essences, Shade)
         }
       }
 
       break
     case Shade:
       if (wisp === 0 && energy >= 8) {
-        increaseEssence(project, Shade)
+        increaseEssence(essences, Shade)
         return
       }
 
       if (shade < wisp) {
-        while (levels[Shade] > 0) {
-          decreaseEssence(project, Shade)
+        while (essences.levels.shade > 0) {
+          decreaseEssence(essences, Shade)
         }
       }
 
       break
     case Dryad:
       if (energy >= 8 && (aura === 0 || wisp === shade)) {
-        potential.dryad++
+        essences.potential.dryad++
         return
       }
 
       if (shade < wisp) {
-        decreaseEssence(project, Aura)
+        decreaseEssence(essences, Aura)
 
         if (energy >= 8) {
-          potential.dryad++
+          essences.potential.dryad++
         }
       }
 
       break
     case Aura:
       if (energy >= 8 && (dryad === 0 || wisp === shade)) {
-        potential.aura++
+        essences.potential.aura++
         return
       }
 
       if (wisp < shade) {
-        decreaseEssence(project, Dryad)
+        decreaseEssence(essences, Dryad)
 
         if (energy >= 8) {
-          potential.aura++
+          essences.potential.aura++
         }
       }
 
       break
     case Salamander:
       if (undine === 0) {
-        decreaseEssence(project, Gnome)
+        decreaseEssence(essences, Gnome)
 
         if (energy >= 8) {
-          potential.sala++
+          essences.potential.sala++
         }
       }
 
       break
     case Gnome:
       if (sala === 0) {
-        decreaseEssence(project, Jinn)
+        decreaseEssence(essences, Jinn)
 
         if (energy >= 8) {
-          potential.gnome++
+          essences.potential.gnome++
         }
       }
 
       break
     case Jinn:
       if (gnome === 0) {
-        decreaseEssence(project, Undine)
+        decreaseEssence(essences, Undine)
 
         if (energy >= 8) {
-          potential.jinn++
+          essences.potential.jinn++
         }
       }
 
       break
     case Undine:
       if (jinn === 0) {
-        decreaseEssence(project, Salamander)
+        decreaseEssence(essences, Salamander)
 
         if (energy >= 8) {
-          potential.undine++
+          essences.potential.undine++
         }
       }
 

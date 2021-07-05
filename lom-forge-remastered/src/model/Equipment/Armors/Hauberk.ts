@@ -1,7 +1,10 @@
-import { ArmorProps } from 'model/Equipment'
+import { ArmorEquipment } from 'model/Equipment'
+import { Poison, Sleep } from 'model/Immunities'
+import { Citrisquid, CreepyEye, DangerousEye, LittleEye, PineOClock, SleepyEye } from 'model/Items'
 
-export const Hauberk: ArmorProps = {
-  originalName: 'Hauberk',
+export const Hauberk: ArmorEquipment = {
+  id: 'Hauberk',
+  name: 'Hauberk',
   attributes: {
     strike: 12,
     slash: 16,
@@ -9,5 +12,7 @@ export const Hauberk: ArmorProps = {
     magic: 2
   },
   markerThreshold: 2,
-  priceCoefficient: 60
+  priceCoefficient: 60,
+  relatedItems: () => [Citrisquid, PineOClock, LittleEye, SleepyEye, DangerousEye, CreepyEye],
+  relatedImmunities: () => [Poison, Sleep]
 }

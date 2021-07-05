@@ -3,8 +3,9 @@ import { Spear } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const SpearOfLight: MasterMove = {
-  originalName: 'Spear of Light',
-  weapons: () => [Spear],
+  id: 'SpearOfLight',
+  name: 'Spear of Light',
   effects: () => ['Wisp Damage'],
-  cards: () => [ManOfValor]
+  relatedWeapons: () => [Spear],
+  relatedCards: () => [ManOfValor]
 }

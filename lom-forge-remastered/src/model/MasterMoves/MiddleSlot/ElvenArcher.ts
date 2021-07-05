@@ -3,8 +3,9 @@ import { Bow } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const ElvenArcher: MasterMove = {
-  originalName: 'Elven Archer',
-  weapons: () => [Bow],
+  id: 'ElvenArcher',
+  name: 'Elven Archer',
   effects: () => ['Paralysis'],
-  cards: () => [SpiritOfForest]
+  relatedWeapons: () => [Bow],
+  relatedCards: () => [SpiritOfForest]
 }

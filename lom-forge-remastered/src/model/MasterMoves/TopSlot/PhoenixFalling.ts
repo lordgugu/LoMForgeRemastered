@@ -3,8 +3,9 @@ import { Bow } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const PhoenixFalling: MasterMove = {
-  originalName: 'Phoenix Falling',
-  weapons: () => [Bow],
+  id: 'PhoenixFalling',
+  name: 'Phoenix Falling',
   effects: () => ['Aerial Damage +', 'Flameburst vs. Aerial'],
-  cards: () => [Sage]
+  relatedWeapons: () => [Bow],
+  relatedCards: () => [Sage]
 }

@@ -1,7 +1,8 @@
-import { Feathers, ItemProps } from 'model/Items'
+import { Feathers, Item } from 'model/Items'
 
-export const WhiteFeather: ItemProps = {
-  originalName: 'White Feather',
+export const WhiteFeather: Item = {
+  id: 'WhiteFeather',
+  name: 'White Feather',
   category: Feathers,
   energy: 32
 }

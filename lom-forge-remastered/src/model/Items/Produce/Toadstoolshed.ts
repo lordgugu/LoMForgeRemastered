@@ -1,7 +1,20 @@
-import { ItemProps, Produce } from 'model/Items'
+import { Shade, taint } from 'model/Essences'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { AllStats, incrementStat } from 'model/Stats'
 
-export const Toadstoolshed: ItemProps = {
+export const Toadstoolshed: Item = {
+  id: 'Toadstoolshed',
+  name: 'Toadstoolshed',
   category: Produce,
-  originalName: "Toadstoolshed",
-  energy: 64
+  energy: 64,
+  activate: activateToastoolshed,
+  relatedStats: () => AllStats,
+  relatedEssences: () => [Shade]
+}
+
+function activateToastoolshed(project: TemperingProject) {
+  AllStats.forEach((stat) => incrementStat(project, stat))
+
+  taint(project, Shade)
 }

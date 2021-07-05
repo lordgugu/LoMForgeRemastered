@@ -1,7 +1,8 @@
-import { MaterialProps, None } from 'model/Materials'
+import { Material, None } from 'model/Materials'
 
-export const Fullmetal: MaterialProps = {
-  originalName: 'Fullmetal',
+export const Fullmetal: Material = {
+  id: 'Fullmetal',
+  name: 'Fullmetal',
   category: None,
   growthControl: 20,
   weaponAttributes: {

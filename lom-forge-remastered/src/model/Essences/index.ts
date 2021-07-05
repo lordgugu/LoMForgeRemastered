@@ -1,5 +1,5 @@
 import { AncientMoon, MirroredWorld } from 'model/Cards'
-import { ProjectProps } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 import { ancientMoonTaint } from './AncientMoonTaint'
 import { mirroredWorldTaint } from './MirroredWorldTaint'
 import { normalTaint } from './NormalTaint'
@@ -30,7 +30,7 @@ export type PotentialGrowth = {
   [key in PotentialEssence]: number
 }
 
-export type EssenceProps = {
+export type Essences = {
   energy: number
   levels: Levels
   markers: Markers
@@ -57,55 +57,56 @@ const PowerOfTwo: { [exponent in Level]: number } = {
   15: 32768
 }
 
-export function increaseEssence(project: EssenceProps, essence: Essence): void {
-  const level = project.levels[essence]
+export function increaseEssence(essences: Essences, essence: Essence): void {
+  const level = essences.levels[essence]
 
   if (level === 15) {
     return
   }
 
-  const requiredEnergy = project.resistances[essence] * PowerOfTwo[level]
+  const requiredEnergy = essences.resistances[essence] * PowerOfTwo[level]
 
-  if (project.energy >= requiredEnergy) {
-    project.energy -= requiredEnergy
-    project.levels[essence]++
+  if (essences.energy >= requiredEnergy) {
+    essences.energy -= requiredEnergy
+    essences.levels[essence]++
   }
 }
 
-export function decreaseEssence(project: EssenceProps, essence: Essence): void {
-  if (project.levels[essence] === 0) {
+export function decreaseEssence(essences: Essences, essence: Essence): void {
+  if (essences.levels[essence] === 0) {
     return
+  }
+
+  const decrease = () => {
+    const resistance = essences.resistances[essence]
+
+    essences.levels[essence]--
+    essences.energy += resistance * PowerOfTwo[essences.levels[essence]]
   }
 
   switch (essence) {
     case Wisp:
     case Shade:
-      break
+      decrease()
+      return
     default:
-      if (project.energy < 4) {
-        return
+      if (essences.energy >= 4) {
+        decrease()
       }
-      break
+      return
   }
-
-  const resistance = project.resistances[essence]
-
-  project.levels[essence]--
-  project.energy += resistance * PowerOfTwo[project.levels[essence]]
 }
 
-export function consumeRemainingEnergy(project: EssenceProps): void {
-  const essences: PotentialEssence[] = [Dryad, Aura, Salamander, Gnome, Jinn, Undine]
-
-  essences.forEach((essence) => {
-    while (project.potential[essence] > 0) {
-      project.potential[essence]--
-      increaseEssence(project, essence)
+export function consumeRemainingEnergy(essences: Essences): void {
+  Array.of(Dryad, Aura, Salamander, Gnome, Jinn, Undine).forEach((essence) => {
+    while (essences.potential[essence] > 0) {
+      essences.potential[essence]--
+      increaseEssence(essences, essence)
     }
   })
 }
 
-export function taint(project: ProjectProps, essence: Essence): void {
+export function taint(project: TemperingProject, essence: Essence): void {
   switch (project.activeWorldCard) {
     case AncientMoon:
       ancientMoonTaint(project, essence)
@@ -117,4 +118,10 @@ export function taint(project: ProjectProps, essence: Essence): void {
       normalTaint(project, essence)
       break
   }
+}
+
+export function totalLevels(essences: Essences): number {
+  return Object.values(essences.levels)
+    .map((level) => level as number)
+    .reduce((sum, level) => sum + level, 0)
 }

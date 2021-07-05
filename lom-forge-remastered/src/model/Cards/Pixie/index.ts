@@ -1,7 +1,3 @@
-import { CardCategory } from 'model/Cards'
-
-export const Pixie: CardCategory = { name: 'Pixie' }
-
 export * from './PixieOfEnvy'
 export * from './PixieOfGluttony'
 export * from './PixieOfGreed'

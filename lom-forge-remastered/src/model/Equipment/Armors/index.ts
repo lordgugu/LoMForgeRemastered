@@ -1,24 +1,46 @@
-import { CardProps } from 'model/Cards'
-import { ArmorProjectProps } from 'model/Projects'
-import { SpecialAbility } from 'model/SpecialAbilities'
+import { Entity } from 'model/Common'
+import { ArmorProject } from 'model/Projects'
+import { Armor } from './Armor'
+import { Boots } from './Boots'
+import { Gauntlet } from './Gauntlet'
+import { Hat } from './Hat'
+import { Hauberk } from './Hauberk'
+import { Helm } from './Helm'
+import { Mantle } from './Mantle'
+import { Pendant } from './Pendant'
+import { Ring } from './Ring'
+import { Robe } from './Robe'
+import { Shield } from './Shield'
+import { Shoes } from './Shoes'
 
 export type ArmorAttributes = {
-  readonly strike: number
-  readonly slash: number
-  readonly pierce: number
-  readonly magic: number
+  strike: number
+  slash: number
+  pierce: number
+  magic: number
 }
 
-export type ArmorProps = {
-  readonly originalName: string
-  readonly remasteredName?: string
+export type ArmorEquipment = Entity & {
   readonly attributes: ArmorAttributes
   readonly markerThreshold: number
   readonly priceCoefficient: number
-  readonly compatibleSpecials?: () => SpecialAbility[]
-  readonly activate?: (project: ArmorProjectProps) => void
-  readonly relatedCards?: () => CardProps[]
+  readonly activate?: (project: ArmorProject) => void
 }
+
+export const AllArmors: ArmorEquipment[] = [
+  Shield,
+  Helm,
+  Hat,
+  Hauberk,
+  Robe,
+  Gauntlet,
+  Ring,
+  Boots,
+  Shoes,
+  Armor,
+  Mantle,
+  Pendant
+]
 
 export * from './Armor'
 export * from './Boots'

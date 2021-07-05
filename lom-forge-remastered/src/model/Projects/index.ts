@@ -1,110 +1,105 @@
-import { CardProps, MysticPowerSlot, World } from 'model/Cards'
-import { ArmorAttributes, ArmorProps, MasterMoveSlot, WeaponAttributes, WeaponProps } from 'model/Equipment'
-import { EssenceProps, Levels, Markers, PotentialGrowth, Resistances } from 'model/Essences'
-import { ItemProps } from 'model/Items'
+import { Card, MysticPowerSlot, World } from 'model/Cards'
+import { ArmorAttributes, ArmorEquipment, MasterMoveSlot, WeaponAttributes, WeaponEquipment } from 'model/Equipment'
+import { Essences } from 'model/Essences'
+import { Immunities } from 'model/Immunities'
+import { Item } from 'model/Items'
 import { MasterMove } from 'model/MasterMoves'
-import { MaterialProps } from 'model/Materials'
-import { SpecialAbility } from 'model/SpecialAbilities'
-import { resetStatLimits, StatProps } from 'model/Stats'
+import { Material } from 'model/Materials'
+import { Special } from 'model/Specials'
+import { resetStatLimits, Stats } from 'model/Stats'
 
-export type Immunity =
-  | 'poison'
-  | 'darkness'
-  | 'paralysis'
-  | 'confusion'
-  | 'flameburst'
-  | 'sleep'
-  | 'petrification'
-  | 'freeze'
-
-type CommonProjectProps = StatProps &
-  EssenceProps & {
-    material: MaterialProps
+type Project = Stats &
+  Essences & {
+    material: Material
     sticky: boolean
-    mysticPowers: { [key in MysticPowerSlot]?: CardProps }
-    activeWorldCard?: CardProps
+    mysticPowers: { [key in MysticPowerSlot]?: Card }
+    activeWorldCard?: Card
     price: number
   }
 
-export type WeaponProjectProps = CommonProjectProps & {
+export const WeaponProjectType = 'Weapon'
+export const ArmorProjectType = 'Armor'
+
+export type WeaponProject = Project & {
   type: 'Weapon'
-  equipment: WeaponProps
+  equipment: WeaponEquipment
   attributes: WeaponAttributes
   power: number
   masterMoves: { [key in MasterMoveSlot]: MasterMove }
 }
 
-export type ArmorProjectProps = CommonProjectProps & {
-  type: 'Armor'
-  equipment: ArmorProps
-  attributes: ArmorAttributes
-  special?: SpecialAbility
-  immunities: { [key in Immunity]: boolean }
-}
+export type ArmorProject = Project &
+  Immunities & {
+    type: 'Armor'
+    equipment: ArmorEquipment
+    attributes: ArmorAttributes
+    special?: Special
+  }
 
-export type ProjectProps = WeaponProjectProps | ArmorProjectProps
+export type TemperingProject = WeaponProject | ArmorProject
 
-function resetVolatileMysticPowers(project: CommonProjectProps) {
+function resetVolatileMysticPowers(project: Project) {
   project.mysticPowers.hidden = undefined
   project.mysticPowers.leaving = undefined
   project.sticky = true
 }
 
-function resetMaterialProps(project: ProjectProps) {
+function resetMaterialProperties(project: TemperingProject) {
   switch (project.type) {
-    case 'Weapon':
+    case WeaponProjectType:
       project.attributes = { ...project.material.weaponAttributes }
       break
-    case 'Armor':
+    case ArmorProjectType:
       project.attributes = { ...project.material.armorAttributes }
       break
   }
 
-  project.resistances = project.material.resistances
+  project.resistances = { ...project.material.resistances }
 }
 
-function activateEquipment(project: ProjectProps) {
+function activateEquipment(project: TemperingProject) {
   if (project.equipment.activate) {
     switch (project.type) {
-      case 'Weapon':
+      case WeaponProjectType:
         project.equipment.activate(project)
         break
-      case 'Armor':
+      case ArmorProjectType:
         project.equipment.activate(project)
         break
     }
   }
 }
 
-function setActiveWorldCard(project: ProjectProps) {
-  const slots = [
-    project.mysticPowers.bottom,
-    project.mysticPowers.middle,
-    project.mysticPowers.top,
-    project.mysticPowers.hidden
-  ]
+function setActiveWorldCard(project: TemperingProject) {
+  const { bottom, middle, top, hidden } = project.mysticPowers
 
-  project.activeWorldCard = slots.find((slot) => slot?.category === World)
+  project.activeWorldCard = Array.of(bottom, middle, top, hidden).find((slot) => slot?.category === World)
 }
 
-function activateMaterialCategory(project: ProjectProps) {
-  const { category } = project.material
+function activateMaterial(project: TemperingProject) {
+  const { material } = project
 
-  if (category?.activate) {
-    category.activate(project)
+  if (material?.activate) {
+    material.activate(project)
   }
 }
 
-export function addItem(project: ProjectProps, item: ItemProps) {
+function activateItem(project: TemperingProject, item: Item) {
+  if (item.activate) {
+    item.activate(project)
+  }
+}
+
+export function addItem(project: TemperingProject, item: Item) {
   resetStatLimits(project)
   resetVolatileMysticPowers(project)
-  resetMaterialProps(project)
+  resetMaterialProperties(project)
 
   activateEquipment(project)
-
   setActiveWorldCard(project)
 
   project.energy = item.energy
 
-  activateMaterialCategory(project)
+  activateMaterial(project)
+  activateItem(project, item)
 }

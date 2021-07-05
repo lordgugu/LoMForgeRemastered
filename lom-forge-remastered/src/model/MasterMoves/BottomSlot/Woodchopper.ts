@@ -3,8 +3,9 @@ import { Axe } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Woodchopper: MasterMove = {
-  originalName: 'Woodchopper',
-  weapons: () => [Axe],
+  id: 'Woodchopper',
+  name: 'Woodchopper',
   effects: () => ['Plant Damage +'],
-  cards: () => [Wanderer]
+  relatedWeapons: () => [Axe],
+  relatedCards: () => [Wanderer]
 }

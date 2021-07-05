@@ -1,7 +1,3 @@
-import { ItemCategory } from 'model/Items'
-
-export const Seeds: ItemCategory = { originalName: 'SEEDS' }
-
 export * from './BigSeed'
 export * from './CrookedSeed'
 export * from './FlatSeed'

@@ -1,7 +1,10 @@
-import { CardProps, Maiden } from 'model/Cards'
+import { Card, Maiden } from 'model/Cards'
+import { Applesocks } from 'model/Items'
 
-export const NymphOfOrchards: CardProps = {
-  originalName: 'Nymph of Orchards',
+export const NymphOfOrchards: Card = {
+  id: 'NymphOfOrchards',
+  name: 'Nymph of Orchards',
   category: Maiden,
-  price: 1000
+  price: 1000,
+  relatedItems: () => [Applesocks]
 }

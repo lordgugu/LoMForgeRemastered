@@ -3,8 +3,9 @@ import { Flail } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const RedDream: MasterMove = {
-  originalName: 'Red Dream',
-  weapons: () => [Flail],
+  id: 'RedDream',
+  name: 'Red Dream',
   effects: () => ['Power Up', 'Attack Gauge +'],
-  cards: () => [MotherOfGods]
+  relatedWeapons: () => [Flail],
+  relatedCards: () => [MotherOfGods]
 }

@@ -3,8 +3,9 @@ import { Hammer } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Mjolnir: MasterMove = {
-  originalName: 'Mjolnir',
-  weapons: () => [Hammer],
+  id: 'Mjolnir',
+  name: 'Mjolnir',
   effects: () => ['Salamander Damage', 'Jinn Damage', 'Attack Gauge +'],
-  cards: () => [ThunderGod]
+  relatedWeapons: () => [Hammer],
+  relatedCards: () => [ThunderGod]
 }

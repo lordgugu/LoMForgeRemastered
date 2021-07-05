@@ -1,7 +1,8 @@
-import { ItemProps, Urns } from 'model/Items'
+import { Item, Urns } from 'model/Items'
 
-export const Electricity: ItemProps = {
-  originalName: "Electricity",
+export const Electricity: Item = {
+  id: 'Electricity',
+  name: 'Electricity',
   category: Urns,
   energy: 32
 }

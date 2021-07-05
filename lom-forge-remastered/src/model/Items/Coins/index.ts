@@ -1,7 +1,3 @@
-import { ItemCategory } from 'model/Items'
-
-export const Coins: ItemCategory = { originalName: 'COINS' }
-
 export * from './AuraGold'
 export * from './AuraSilver'
 export * from './DryadGold'

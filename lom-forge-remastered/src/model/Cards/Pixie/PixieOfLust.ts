@@ -1,7 +1,10 @@
-import { CardProps, Pixie } from 'model/Cards'
+import { Card, Pixie } from 'model/Cards'
+import { CreepyEye } from 'model/Items'
 
-export const PixieOfLust: CardProps = {
-  originalName: 'Pixie (of Lust)',
+export const PixieOfLust: Card = {
+  id: 'PixieOfLust',
+  name: 'Pixie (of Lust)',
   category: Pixie,
-  price: 150
+  price: 150,
+  relatedItems: () => [CreepyEye]
 }

@@ -1,7 +1,8 @@
-import { ItemProps, Pouch } from 'model/Items'
+import { Item, Pouch } from 'model/Items'
 
-export const WadOfWool: ItemProps = {
-  originalName: 'Wad Of Wool',
+export const WadOfWool: Item = {
+  id: 'WadOfWool',
+  name: 'Wad of Wool',
   category: Pouch,
   energy: 16
 }

@@ -1,9 +1,30 @@
 import { ManOfValor, OceanGod, RulerOfTheSky } from 'model/Cards'
-import { WeaponProps } from 'model/Equipment'
+import { WeaponEquipment } from 'model/Equipment'
+import {
+  AngryEye,
+  Apricat,
+  BlankEye,
+  Citrisquid,
+  ClearFeather,
+  GiantsHorn,
+  GoldClover,
+  MaskedPotato,
+  Needlettuce,
+  PeachPuppy,
+  PoisonFang,
+  Rhinoloupe,
+  Scissors,
+  SharpClaw,
+  SillyEye,
+  SpadeBasil,
+  SpinyCarrot,
+  WickedEye
+} from 'model/Items'
 import { Gungnir, Jump, SpearOfLight, Thrust, Trident, Uppercut } from 'model/MasterMoves'
 
-export const Spear: WeaponProps = {
-  originalName: 'Spear',
+export const Spear: WeaponEquipment = {
+  id: 'Spear',
+  name: 'Spear',
   attributes: {
     sharpness: 52,
     weight: 20,
@@ -17,10 +38,30 @@ export const Spear: WeaponProps = {
     middle: Uppercut,
     bottom: Jump
   },
-  compatibleMasterMoves: {
+  relatedMasterMoves: {
     top: () => [Thrust, Gungnir, SpearOfLight, Trident],
     middle: () => [Uppercut],
     bottom: () => [Jump]
   },
+  relatedItems: () => [
+    Apricat,
+    Citrisquid,
+    PeachPuppy,
+    Rhinoloupe,
+    SpinyCarrot,
+    Needlettuce,
+    MaskedPotato,
+    SpadeBasil,
+    GoldClover,
+    SharpClaw,
+    PoisonFang,
+    GiantsHorn,
+    Scissors,
+    SillyEye,
+    AngryEye,
+    BlankEye,
+    WickedEye,
+    ClearFeather
+  ],
   relatedCards: () => [RulerOfTheSky, ManOfValor, OceanGod]
 }

@@ -1,7 +1,8 @@
-import { Fabric, MaterialProps } from 'model/Materials'
+import { Fabric, Material } from 'model/Materials'
 
-export const JuddHemp: MaterialProps = {
-  originalName: 'JuddHemp',
+export const JuddHemp: Material = {
+  id: 'JuddHemp',
+  name: 'JuddHemp',
   category: Fabric,
   growthControl: 10,
   weaponAttributes: {

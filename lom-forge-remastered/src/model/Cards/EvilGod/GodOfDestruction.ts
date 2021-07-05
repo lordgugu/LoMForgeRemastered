@@ -1,7 +1,10 @@
-import { CardProps, EvilGod } from 'model/Cards'
+import { Card, EvilGod } from 'model/Cards'
+import { SharpClaw } from 'model/Items'
 
-export const GodOfDestruction: CardProps = {
-  originalName: 'God of Destruction',
+export const GodOfDestruction: Card = {
+  id: 'GodOfDestruction',
+  name: 'God of Destruction',
   category: EvilGod,
-  price: 6660
+  price: 6660,
+  relatedItems: () => [SharpClaw]
 }

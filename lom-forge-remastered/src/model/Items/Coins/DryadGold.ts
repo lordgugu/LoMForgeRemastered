@@ -1,7 +1,24 @@
-import { Coins, ItemProps } from 'model/Items'
+import { Dryad as DryadCard } from 'model/Cards'
+import { Dryad, taint } from 'model/Essences'
+import { Coins, Item } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const DryadGold: ItemProps = {
+export const DryadGold: Item = {
+  id: 'DryadGold',
+  name: 'Dryad Gold',
   category: Coins,
-  originalName: 'Dryad Gold',
-  energy: 64
+  energy: 64,
+  activate: activateDryadGold,
+  relatedCards: () => [DryadCard],
+  relatedEssences: () => [Dryad]
+}
+
+function activateDryadGold(project: TemperingProject) {
+  taint(project, Dryad)
+
+  const { energy } = project
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = DryadCard
+  }
 }

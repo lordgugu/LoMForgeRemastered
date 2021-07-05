@@ -1,14 +1,8 @@
 import { Dryad as DryadCard } from 'model/Cards'
 import { Dryad, taint } from 'model/Essences'
-import { MaterialCategory } from 'model/Materials'
-import { ProjectProps } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
-export const Wood: MaterialCategory = {
-  originalName: 'WOOD',
-  activate: activationCode
-}
-
-function activationCode(project: ProjectProps) {
+export function activateWood(project: TemperingProject) {
   taint(project, Dryad)
 
   if (project.energy >= 8) {

@@ -3,8 +3,9 @@ import { Knife } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const SinisterBlade: MasterMove = {
-  originalName: 'Sinister Blade',
-  weapons: () => [Knife],
+  id: 'SinisterBlade',
+  name: 'Sinister Blade',
   effects: () => ['Demi-Human Damage +'],
-  cards: () => [LordOfFlies]
+  relatedWeapons: () => [Knife],
+  relatedCards: () => [LordOfFlies]
 }

@@ -1,7 +1,9 @@
-import { Aerolite, MaterialProps } from 'model/Materials'
+import { Salamander } from 'model/Essences'
+import { activateAerolite, Aerolite, Material } from 'model/Materials'
 
-export const VinekRock: MaterialProps = {
-  originalName: 'VinekRock',
+export const VinekRock: Material = {
+  id: 'VinekRock',
+  name: 'VinekRock',
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
@@ -26,5 +28,7 @@ export const VinekRock: MaterialProps = {
     jinn: 9,
     undine: 8
   },
-  priceCoefficient: 1050
+  priceCoefficient: 1050,
+  activate: activateAerolite,
+  relatedEssences: () => [Salamander]
 }

@@ -1,10 +1,13 @@
 import { Phoenix } from 'model/Cards'
-import { ArmorProps } from 'model/Equipment'
-import { ArmorProjectProps } from 'model/Projects'
-import { AutoRevive } from 'model/SpecialAbilities'
+import { ArmorEquipment } from 'model/Equipment'
+import { Poison, Sleep } from 'model/Immunities'
+import { CherryBombs, Citrisquid, CreepyEye, DangerousEye, LittleEye, PineOClock, SleepyEye } from 'model/Items'
+import { ArmorProject } from 'model/Projects'
+import { AutoRevive } from 'model/Specials'
 
-export const Ring: ArmorProps = {
-  originalName: 'Ring',
+export const Ring: ArmorEquipment = {
+  id: 'Ring',
+  name: 'Ring',
   attributes: {
     strike: 1,
     slash: 1,
@@ -13,8 +16,10 @@ export const Ring: ArmorProps = {
   },
   markerThreshold: 1,
   priceCoefficient: 5,
-  compatibleSpecials: () => [AutoRevive],
-  activate: activationCode,
+  activate: activateRing,
+  relatedSpecials: () => [AutoRevive],
+  relatedItems: () => [Citrisquid, PineOClock, CherryBombs, LittleEye, SleepyEye, DangerousEye, CreepyEye],
+  relatedImmunities: () => [Poison, Sleep],
   relatedCards: () => [Phoenix]
 }
 
@@ -24,21 +29,15 @@ export const Ring: ArmorProps = {
  *
  * @param project tempering project
  */
-function activationCode(project: ArmorProjectProps): void {
-  if (project.special !== AutoRevive) {
+function activateRing(project: ArmorProject): void {
+  const { special } = project
+  const { hidden, top, middle, bottom } = project.mysticPowers
+
+  if (special !== AutoRevive) {
     return
   }
 
-  if (project.mysticPowers.hidden === Phoenix) {
+  if (hidden === Phoenix || Array.of(top, middle, bottom).every((slot) => slot !== Phoenix)) {
     project.special = undefined
-    return
   }
-
-  const visibleSlots = [project.mysticPowers.top, project.mysticPowers.middle, project.mysticPowers.bottom]
-
-  if (visibleSlots.some((slot) => slot === Phoenix)) {
-    return
-  }
-
-  project.special = undefined
 }

@@ -1,7 +1,8 @@
-import { ItemProps, Powders } from 'model/Items'
+import { Item, Powders } from 'model/Items'
 
-export const Sulpher: ItemProps = {
-  originalName: "Sulpher",
+export const Sulpher: Item = {
+  id: 'Sulpher',
+  name: 'Sulpher',
   category: Powders,
   energy: 24
 }

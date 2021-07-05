@@ -1,7 +1,8 @@
-import { ItemProps, Pellets } from 'model/Items'
+import { Item, Pellets } from 'model/Items'
 
-export const BakedRoach: ItemProps = {
-  originalName: "Baked Roach",
+export const BakedRoach: Item = {
+  id: 'BakedRoach',
+  name: 'Baked Roach',
   category: Pellets,
   energy: 24
 }

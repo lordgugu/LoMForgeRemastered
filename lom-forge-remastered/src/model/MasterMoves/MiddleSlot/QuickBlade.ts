@@ -3,8 +3,9 @@ import { Knife } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const QuickBlade: MasterMove = {
-  originalName: 'Quick Blade',
-  weapons: () => [Knife],
+  id: 'QuickBlade',
+  name: 'Quick Blade',
   effects: () => ['Attack Gauge +'],
-  cards: () => [Clown]
+  relatedWeapons: () => [Knife],
+  relatedCards: () => [Clown]
 }

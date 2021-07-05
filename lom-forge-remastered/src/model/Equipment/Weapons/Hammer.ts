@@ -1,9 +1,30 @@
 import { BlacksmithGod, SpiritOfMountain, ThunderGod, Volcano } from 'model/Cards'
-import { WeaponProps } from 'model/Equipment'
+import { WeaponEquipment } from 'model/Equipment'
+import {
+  AngryEye,
+  Apricat,
+  BlankEye,
+  Citrisquid,
+  ClearFeather,
+  GiantsHorn,
+  GoldClover,
+  MaskedPotato,
+  Needlettuce,
+  PeachPuppy,
+  PoisonFang,
+  Rhinoloupe,
+  Scissors,
+  SharpClaw,
+  SillyEye,
+  SpadeBasil,
+  SpinyCarrot,
+  WickedEye
+} from 'model/Items'
 import { Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer, Thrust, Uppercut } from 'model/MasterMoves'
 
-export const Hammer: WeaponProps = {
-  originalName: 'Hammer',
+export const Hammer: WeaponEquipment = {
+  id: 'Hammer',
+  name: 'Hammer',
   attributes: {
     sharpness: 8,
     weight: 72,
@@ -17,10 +38,30 @@ export const Hammer: WeaponProps = {
     middle: Uppercut,
     bottom: Jump
   },
-  compatibleMasterMoves: {
+  relatedMasterMoves: {
     top: () => [Thrust],
     middle: () => [Uppercut],
     bottom: () => [Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer]
   },
+  relatedItems: () => [
+    Apricat,
+    Citrisquid,
+    PeachPuppy,
+    Rhinoloupe,
+    SpinyCarrot,
+    Needlettuce,
+    MaskedPotato,
+    SpadeBasil,
+    GoldClover,
+    SharpClaw,
+    PoisonFang,
+    GiantsHorn,
+    Scissors,
+    SillyEye,
+    AngryEye,
+    BlankEye,
+    WickedEye,
+    ClearFeather
+  ],
   relatedCards: () => [Volcano, ThunderGod, SpiritOfMountain, BlacksmithGod]
 }

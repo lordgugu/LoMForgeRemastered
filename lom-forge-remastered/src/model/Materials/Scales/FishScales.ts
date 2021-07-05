@@ -1,7 +1,8 @@
-import { MaterialProps, Scales } from 'model/Materials'
+import { Material, Scales } from 'model/Materials'
 
-export const FishScales: MaterialProps = {
-  originalName: 'FishScales',
+export const FishScales: Material = {
+  id: 'FishScales',
+  name: 'FishScales',
   category: Scales,
   growthControl: 20,
   weaponAttributes: {

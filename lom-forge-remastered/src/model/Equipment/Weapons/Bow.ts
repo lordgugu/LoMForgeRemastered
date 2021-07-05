@@ -1,5 +1,25 @@
 import { MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
-import { WeaponProps } from 'model/Equipment'
+import { WeaponEquipment } from 'model/Equipment'
+import {
+  AngryEye,
+  Apricat,
+  BlankEye,
+  Citrisquid,
+  ClearFeather,
+  GiantsHorn,
+  GoldClover,
+  MaskedPotato,
+  Needlettuce,
+  PeachPuppy,
+  PoisonFang,
+  Rhinoloupe,
+  Scissors,
+  SharpClaw,
+  SillyEye,
+  SpadeBasil,
+  SpinyCarrot,
+  WickedEye
+} from 'model/Items'
 import {
   DoubleShot,
   ElvenArcher,
@@ -13,10 +33,11 @@ import {
   Shot,
   SolarFlare
 } from 'model/MasterMoves'
-import { WeaponProjectProps } from 'model/Projects'
+import { WeaponProject } from 'model/Projects'
 
-export const Bow: WeaponProps = {
-  originalName: 'Bow',
+export const Bow: WeaponEquipment = {
+  id: 'Bow',
+  name: 'Bow',
   attributes: {
     sharpness: 40,
     weight: 4,
@@ -30,12 +51,32 @@ export const Bow: WeaponProps = {
     middle: DoubleShot,
     bottom: Jump
   },
-  compatibleMasterMoves: {
+  activate: activateBow,
+  relatedMasterMoves: {
     top: () => [Shot, FlamingArrow, Icicle, MagicalShot, MedusaArrow, PhoenixFalling, SolarFlare],
     middle: () => [DoubleShot, ElvenArcher, LunarShot],
     bottom: () => [Jump]
   },
-  activate: activationCode,
+  relatedItems: () => [
+    Apricat,
+    Citrisquid,
+    PeachPuppy,
+    Rhinoloupe,
+    SpinyCarrot,
+    Needlettuce,
+    MaskedPotato,
+    SpadeBasil,
+    GoldClover,
+    SharpClaw,
+    PoisonFang,
+    GiantsHorn,
+    Scissors,
+    SillyEye,
+    AngryEye,
+    BlankEye,
+    WickedEye,
+    ClearFeather
+  ],
   relatedCards: () => [Raven, Witch, Wolf, Sage, SunGod, SpiritOfForest, MoonGoddess]
 }
 
@@ -45,14 +86,14 @@ export const Bow: WeaponProps = {
  *
  * @param project tempering project
  */
-function activationCode(project: WeaponProjectProps) {
+function activateBow(project: WeaponProject) {
+  const { top, middle, bottom } = project.mysticPowers
+
   let witch = false
   let raven = false
   let wolf = false
 
-  const slots = [project.mysticPowers.top, project.mysticPowers.middle, project.mysticPowers.bottom]
-
-  slots.forEach((slot) => {
+  Array.of(top, middle, bottom).forEach((slot) => {
     switch (slot) {
       case Witch:
         witch = true

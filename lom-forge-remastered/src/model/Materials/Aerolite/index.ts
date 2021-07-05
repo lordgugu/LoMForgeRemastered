@@ -1,13 +1,7 @@
 import { decreaseEssence, Salamander } from 'model/Essences'
-import { MaterialCategory } from 'model/Materials'
-import { ProjectProps } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
-export const Aerolite: MaterialCategory = {
-  originalName: 'AEROLITE',
-  activate: activationCode
-}
-
-function activationCode(project: ProjectProps) {
+export function activateAerolite(project: TemperingProject) {
   decreaseEssence(project, Salamander)
 }
 

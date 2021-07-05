@@ -1,7 +1,24 @@
-import { Coins, ItemProps } from 'model/Items'
+import { Shade as ShadeCard } from 'model/Cards'
+import { Shade, taint } from 'model/Essences'
+import { Coins, Item } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const ShadeGold: ItemProps = {
+export const ShadeGold: Item = {
+  id: 'ShadeGold',
+  name: 'Shade Gold',
   category: Coins,
-  originalName: 'Shade Gold',
-  energy: 64
+  energy: 64,
+  activate: activateShadeGold,
+  relatedCards: () => [ShadeCard],
+  relatedEssences: () => [Shade]
+}
+
+function activateShadeGold(project: TemperingProject) {
+  taint(project, Shade)
+
+  const { energy } = project
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = ShadeCard
+  }
 }

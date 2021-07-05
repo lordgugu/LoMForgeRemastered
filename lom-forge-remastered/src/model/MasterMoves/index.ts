@@ -1,12 +1,7 @@
-import { CardProps } from 'model/Cards'
-import { WeaponProps } from 'model/Equipment'
+import { Entity } from 'model/Common'
 
-export type MasterMove = {
-  readonly originalName: string
-  readonly remasteredName?: string
-  readonly weapons: () => WeaponProps[]
+export type MasterMove = Entity & {
   readonly effects: () => string[]
-  readonly cards?: () => CardProps[]
   readonly notes?: () => string[]
 }
 

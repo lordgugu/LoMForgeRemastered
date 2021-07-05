@@ -1,7 +1,10 @@
-import { ArmorProps } from 'model/Equipment'
+import { ArmorEquipment as ArmorEquipment } from 'model/Equipment'
+import { Poison, Sleep } from 'model/Immunities'
+import { Citrisquid, CreepyEye, DangerousEye, LittleEye, PineOClock, SleepyEye } from 'model/Items'
 
-export const Armor: ArmorProps = {
-  originalName: 'Armor',
+export const Armor: ArmorEquipment = {
+  id: 'Armor',
+  name: 'Armor',
   attributes: {
     strike: 26,
     slash: 26,
@@ -9,5 +12,7 @@ export const Armor: ArmorProps = {
     magic: 4
   },
   markerThreshold: 3,
-  priceCoefficient: 75
+  priceCoefficient: 75,
+  relatedItems: () => [Citrisquid, PineOClock, LittleEye, SleepyEye, DangerousEye, CreepyEye],
+  relatedImmunities: () => [Poison, Sleep]
 }

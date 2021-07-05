@@ -2,7 +2,8 @@ import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, Tw
 import { MasterMove } from 'model/MasterMoves'
 
 export const Uppercut: MasterMove = {
-  originalName: 'Uppercut',
-  weapons: () => [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail],
-  effects: () => ['Default (Middle Slot)']
+  id: 'Uppercut',
+  name: 'Uppercut',
+  effects: () => ['Default (Middle Slot)'],
+  relatedWeapons: () => [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail]
 }

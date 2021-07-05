@@ -1,7 +1,24 @@
-import { ItemProps, Produce } from 'model/Items'
+import { Princess } from 'model/Cards'
+import { Dryad, taint } from 'model/Essences'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const HoneyOnion: ItemProps = {
+export const HoneyOnion: Item = {
+  id: 'HoneyOnion',
+  name: 'Honey Onion',
   category: Produce,
-  originalName: "Honey Onion",
-  energy: 32
+  energy: 32,
+  activate: activateHoneyOnion,
+  relatedCards: () => [Princess],
+  relatedEssences: () => [Dryad]
+}
+
+function activateHoneyOnion(project: TemperingProject) {
+  const { energy } = project
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = Princess
+  }
+
+  taint(project, Dryad)
 }

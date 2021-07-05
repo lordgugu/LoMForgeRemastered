@@ -3,8 +3,9 @@ import { Staff } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Caduceus: MasterMove = {
-  originalName: 'Caduceus',
-  weapons: () => [Staff],
+  id: 'Caduceus',
+  name: 'Caduceus',
   effects: () => ['Insect Damage +', 'Paralysis vs. Insect'],
-  cards: () => [WindGod]
+  relatedWeapons: () => [Staff],
+  relatedCards: () => [WindGod]
 }

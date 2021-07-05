@@ -3,8 +3,9 @@ import { Bow } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const SolarFlare: MasterMove = {
-  originalName: 'Solar Flare',
-  weapons: () => [Bow],
+  id: 'SolarFlare',
+  name: 'Solar Flare',
   effects: () => ['Wisp Damage'],
-  cards: () => [SunGod]
+  relatedWeapons: () => [Bow],
+  relatedCards: () => [SunGod]
 }

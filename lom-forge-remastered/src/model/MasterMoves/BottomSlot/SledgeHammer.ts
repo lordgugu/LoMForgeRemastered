@@ -3,8 +3,9 @@ import { Hammer } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const SledgeHammer: MasterMove = {
-  originalName: 'Sledge Hammer',
-  weapons: () => [Hammer],
+  id: 'SledgeHammer',
+  name: 'Sledge Hammer',
   effects: () => ['Poltergeist Damage +', 'Dizzy vs. Poltergeist'],
-  cards: () => [BlacksmithGod]
+  relatedWeapons: () => [Hammer],
+  relatedCards: () => [BlacksmithGod]
 }

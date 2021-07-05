@@ -1,9 +1,30 @@
 import { GodOfWar, Wanderer } from 'model/Cards'
-import { WeaponProps } from 'model/Equipment'
+import { WeaponEquipment } from 'model/Equipment'
+import {
+  AngryEye,
+  Apricat,
+  BlankEye,
+  Citrisquid,
+  ClearFeather,
+  GiantsHorn,
+  GoldClover,
+  MaskedPotato,
+  Needlettuce,
+  PeachPuppy,
+  PoisonFang,
+  Rhinoloupe,
+  Scissors,
+  SharpClaw,
+  SillyEye,
+  SpadeBasil,
+  SpinyCarrot,
+  WickedEye
+} from 'model/Items'
 import { DragonSlayer, Jump, Thrust, Uppercut, Woodchopper } from 'model/MasterMoves'
 
-export const Axe: WeaponProps = {
-  originalName: 'Axe',
+export const Axe: WeaponEquipment = {
+  id: 'Axe',
+  name: 'Axe',
   attributes: {
     sharpness: 28,
     weight: 36,
@@ -17,10 +38,30 @@ export const Axe: WeaponProps = {
     middle: Uppercut,
     bottom: Jump
   },
-  compatibleMasterMoves: {
+  relatedMasterMoves: {
     top: () => [Thrust],
     middle: () => [Uppercut, DragonSlayer],
     bottom: () => [Jump, Woodchopper]
   },
+  relatedItems: () => [
+    Apricat,
+    Citrisquid,
+    PeachPuppy,
+    Rhinoloupe,
+    SpinyCarrot,
+    Needlettuce,
+    MaskedPotato,
+    SpadeBasil,
+    GoldClover,
+    SharpClaw,
+    PoisonFang,
+    GiantsHorn,
+    Scissors,
+    SillyEye,
+    AngryEye,
+    BlankEye,
+    WickedEye,
+    ClearFeather
+  ],
   relatedCards: () => [GodOfWar, Wanderer]
 }

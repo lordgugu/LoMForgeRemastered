@@ -1,7 +1,8 @@
-import { ItemProps, None } from 'model/Items'
+import { Item, None } from 'model/Items'
 
-export const GreenballBun: ItemProps = {
-  originalName: 'Greenball Bun',
+export const GreenballBun: Item = {
+  id: 'GreenballBun',
+  name: 'Greenball Bun',
   category: None,
   energy: 8
 }

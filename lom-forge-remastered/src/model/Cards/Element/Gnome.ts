@@ -1,7 +1,10 @@
-import { CardProps, Element } from 'model/Cards'
+import { Card, Element } from 'model/Cards'
+import { EarthStone, GnomeGold, GnomeSilver } from 'model/Items'
 
-export const Gnome: CardProps = {
-  originalName: 'Gnome',
+export const Gnome: Card = {
+  id: 'Gnome',
+  name: 'Gnome',
   category: Element,
-  price: 250
+  price: 250,
+  relatedItems: () => [GnomeGold, GnomeSilver, EarthStone]
 }

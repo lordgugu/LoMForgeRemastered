@@ -3,8 +3,9 @@ import { Axe } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const DragonSlayer: MasterMove = {
-  originalName: 'Dragon Slayer',
-  weapons: () => [Axe],
+  id: 'DragonSlayer',
+  name: 'Dragon Slayer',
   effects: () => ['Dragon Damage +', 'Sleep vs. Dragon'],
-  cards: () => [GodOfWar]
+  relatedWeapons: () => [Axe],
+  relatedCards: () => [GodOfWar]
 }

@@ -1,7 +1,10 @@
-import { CardProps, EvilGod } from 'model/Cards'
+import { Card, EvilGod } from 'model/Cards'
+import { AngelFeather } from 'model/Items'
 
-export const FallenAngel: CardProps = {
-  originalName: 'Fallen Angel',
+export const FallenAngel: Card = {
+  id: 'FallenAngel',
+  name: 'Fallen Angel',
   category: EvilGod,
-  price: 6660
+  price: 6660,
+  relatedItems: () => [AngelFeather]
 }

@@ -3,8 +3,9 @@ import { Knife } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const PoisonBlade: MasterMove = {
-  originalName: 'Poison Blade',
-  weapons: () => [Knife],
+  id: 'PoisonBlade',
+  name: 'Poison Blade',
   effects: () => ['Poison'],
-  cards: () => [BeastHeadedGod]
+  relatedWeapons: () => [Knife],
+  relatedCards: () => [BeastHeadedGod]
 }

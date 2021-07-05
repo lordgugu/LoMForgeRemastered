@@ -1,7 +1,8 @@
-import { ItemProps, Pouch } from 'model/Items'
+import { Item, Pouch } from 'model/Items'
 
-export const MessyScroll: ItemProps = {
-  originalName: 'MessyScroll',
+export const MessyScroll: Item = {
+  id: 'MessyScroll',
+  name: 'Messy Scroll',
   category: Pouch,
   energy: 16
 }

@@ -1,7 +1,8 @@
-import { Bottles, ItemProps } from 'model/Items'
+import { Bottles, Item } from 'model/Items'
 
-export const Acid: ItemProps = {
-  originalName: 'Acid',
+export const Acid: Item = {
+  id: 'Acid',
+  name: 'Acid',
   category: Bottles,
   energy: 48
 }

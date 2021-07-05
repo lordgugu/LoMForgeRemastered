@@ -1,7 +1,8 @@
-import { CardProps, World } from 'model/Cards'
+import { Card, World } from 'model/Cards'
 
-export const DyingEarth: CardProps = {
-  originalName: 'DyingEarth',
+export const DyingEarth: Card = {
+  id: 'DyingEarth',
+  name: 'Dying Earth',
   category: World,
   price: 2600
 }

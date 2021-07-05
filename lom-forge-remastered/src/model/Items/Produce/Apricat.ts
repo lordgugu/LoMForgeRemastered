@@ -1,7 +1,22 @@
-import { ItemProps, Produce } from 'model/Items'
+import { minus25Percent, plus25Percent } from 'model/Common'
+import { AllWeapons } from 'model/Equipment'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject, WeaponProjectType } from 'model/Projects'
 
-export const Apricat: ItemProps = {
+export const Apricat: Item = {
+  id: 'Apricat',
+  name: 'Apricat',
   category: Produce,
-  originalName: "Apricat",
-  energy: 8
+  energy: 8,
+  activate: activateApricat,
+  relatedWeapons: () => AllWeapons
+}
+
+function activateApricat(project: TemperingProject) {
+  if (project.type === WeaponProjectType) {
+    const { force, technique } = project.attributes
+
+    project.attributes.force = minus25Percent(force)
+    project.attributes.technique = plus25Percent(technique)
+  }
 }

@@ -1,7 +1,24 @@
-import { Coins, ItemProps } from 'model/Items'
+import { Wisp as WispCard } from 'model/Cards'
+import { taint, Wisp } from 'model/Essences'
+import { Coins, Item } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const WispGold: ItemProps = {
+export const WispGold: Item = {
+  id: 'WispGold',
+  name: 'Wisp Gold',
   category: Coins,
-  originalName: 'Wisp Gold',
-  energy: 64
+  energy: 64,
+  activate: activateWispGold,
+  relatedCards: () => [WispCard],
+  relatedEssences: () => [Wisp]
+}
+
+function activateWispGold(project: TemperingProject) {
+  taint(project, Wisp)
+
+  const { energy } = project
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = WispCard
+  }
 }

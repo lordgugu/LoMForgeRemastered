@@ -3,8 +3,9 @@ import { Flail } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const GreenPrincess: MasterMove = {
-  originalName: 'Green Princess',
-  weapons: () => [Flail],
+  id: 'GreenPrincess',
+  name: 'Green Princess',
   effects: () => ['Defense Up', 'Attack Gauge +'],
-  cards: () => [MotherOfGods]
+  relatedWeapons: () => [Flail],
+  relatedCards: () => [MotherOfGods]
 }

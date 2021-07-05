@@ -1,7 +1,8 @@
-import { Feathers, ItemProps } from 'model/Items'
+import { Feathers, Item } from 'model/Items'
 
-export const FlamingQuill: ItemProps = {
-  originalName: 'Flaming Quill',
+export const FlamingQuill: Item = {
+  id: 'FlamingQuill',
+  name: 'Flaming Quill',
   category: Feathers,
   energy: 64
 }

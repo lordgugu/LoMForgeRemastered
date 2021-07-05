@@ -1,7 +1,16 @@
-import { ItemProps, Produce } from 'model/Items'
+import { taint, Wisp } from 'model/Essences'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const Cornflower: ItemProps = {
+export const Cornflower: Item = {
+  id: 'Cornflower',
+  name: 'Cornflower',
   category: Produce,
-  originalName: "Cornflower",
-  energy: 24
+  energy: 24,
+  activate: activateCornflower,
+  relatedEssences: () => [Wisp]
+}
+
+function activateCornflower(project: TemperingProject) {
+  taint(project, Wisp)
 }

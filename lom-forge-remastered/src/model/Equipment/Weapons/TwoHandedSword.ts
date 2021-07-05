@@ -1,9 +1,30 @@
 import { FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
+import { WeaponEquipment } from 'model/Equipment'
+import {
+  AngryEye,
+  Apricat,
+  BlankEye,
+  Citrisquid,
+  ClearFeather,
+  GiantsHorn,
+  GoldClover,
+  MaskedPotato,
+  Needlettuce,
+  PeachPuppy,
+  PoisonFang,
+  Rhinoloupe,
+  Scissors,
+  SharpClaw,
+  SillyEye,
+  SpadeBasil,
+  SpinyCarrot,
+  WickedEye
+} from 'model/Items'
 import { ChaoticAvenger, Jump, Ragnarok, Thrust, Uppercut } from 'model/MasterMoves'
-import { WeaponProps } from '.'
 
-export const TwoHandedSword: WeaponProps = {
-  originalName: '2H Sword',
+export const TwoHandedSword: WeaponEquipment = {
+  id: 'TwoHandedSword',
+  name: '2H Sword',
   attributes: {
     sharpness: 40,
     weight: 40,
@@ -17,10 +38,30 @@ export const TwoHandedSword: WeaponProps = {
     middle: Uppercut,
     bottom: Jump
   },
-  compatibleMasterMoves: {
+  relatedMasterMoves: {
     top: () => [Thrust, ChaoticAvenger],
     middle: () => [Uppercut],
     bottom: () => [Jump, Ragnarok]
   },
+  relatedItems: () => [
+    Apricat,
+    Citrisquid,
+    PeachPuppy,
+    Rhinoloupe,
+    SpinyCarrot,
+    Needlettuce,
+    MaskedPotato,
+    SpadeBasil,
+    GoldClover,
+    SharpClaw,
+    PoisonFang,
+    GiantsHorn,
+    Scissors,
+    SillyEye,
+    AngryEye,
+    BlankEye,
+    WickedEye,
+    ClearFeather
+  ],
   relatedCards: () => [FallenAngel, RagnarokCard]
 }

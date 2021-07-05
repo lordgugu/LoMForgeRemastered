@@ -1,7 +1,17 @@
-import { ItemProps, Produce } from 'model/Items'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { incrementStat, Magic, widenStatRange } from 'model/Stats'
 
-export const Bellgrapes: ItemProps = {
+export const Bellgrapes: Item = {
+  id: 'Bellgrapes',
+  name: 'Bellgrapes',
   category: Produce,
-  originalName: 'Bellgrapes',
-  energy: 64
+  energy: 64,
+  activate: activateBellgrapes,
+  relatedStats: () => [Magic]
+}
+
+function activateBellgrapes(project: TemperingProject) {
+  widenStatRange(project, Magic, -5, 10)
+  incrementStat(project, Magic)
 }

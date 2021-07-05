@@ -1,7 +1,8 @@
-import { Bottles, ItemProps } from 'model/Items'
+import { Bottles, Item } from 'model/Items'
 
-export const DragonBlood: ItemProps = {
-  originalName: 'Dragon Blood',
+export const DragonBlood: Item = {
+  id: 'DragonBlood',
+  name: 'Dragon Blood',
   category: Bottles,
   energy: 64
 }

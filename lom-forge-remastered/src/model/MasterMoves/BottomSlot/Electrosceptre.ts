@@ -3,8 +3,9 @@ import { Staff } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Electrosceptre: MasterMove = {
-  originalName: 'Electrosceptre',
-  weapons: () => [Staff],
+  id: 'Electrosceptre',
+  name: 'Electrosceptre',
   effects: () => ['Salamander Damage', 'Jinn Damage'],
-  cards: () => [RulerOfTheSky]
+  relatedWeapons: () => [Staff],
+  relatedCards: () => [RulerOfTheSky]
 }

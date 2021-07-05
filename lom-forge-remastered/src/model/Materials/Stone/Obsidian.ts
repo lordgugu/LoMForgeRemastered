@@ -1,7 +1,8 @@
-import { MaterialProps, Stone } from 'model/Materials'
+import { Material, Stone } from 'model/Materials'
 
-export const Obsidian: MaterialProps = {
-  originalName: 'Obsidian',
+export const Obsidian: Material = {
+  id: 'Obsidian',
+  name: 'Obsidian',
   category: Stone,
   growthControl: 32,
   weaponAttributes: {

@@ -1,7 +1,10 @@
-import { ArmorProps } from 'model/Equipment'
+import { ArmorEquipment } from 'model/Equipment'
+import { Poison, Sleep } from 'model/Immunities'
+import { Citrisquid, CreepyEye, DangerousEye, LittleEye, PineOClock, SleepyEye } from 'model/Items'
 
-export const Mantle: ArmorProps = {
-  originalName: 'Mantle',
+export const Mantle: ArmorEquipment = {
+  id: 'Mantle',
+  name: 'Mantle',
   attributes: {
     strike: 4,
     slash: 4,
@@ -9,5 +12,7 @@ export const Mantle: ArmorProps = {
     magic: 12
   },
   markerThreshold: 2,
-  priceCoefficient: 20
+  priceCoefficient: 20,
+  relatedItems: () => [Citrisquid, PineOClock, LittleEye, SleepyEye, DangerousEye, CreepyEye],
+  relatedImmunities: () => [Poison, Sleep]
 }

@@ -1,3 +1,4 @@
+import { Entity } from 'model/Common'
 import { ArmorAttributes, WeaponAttributes } from 'model/Equipment'
 import { Resistances } from 'model/Essences'
 import {
@@ -9,6 +10,7 @@ import {
   AnkhRock,
   AshWood,
   BaobabWood,
+  BeiserGold,
   BiellaRock,
   CentaurHide,
   Coral,
@@ -19,11 +21,10 @@ import {
   EbonyWood,
   Emerald,
   FishScales,
-  ForsenaIron,
   Fossil,
   FossilWood,
   Fullmetal,
-  GaeussTears,
+  GaiasTears,
   GatorSkin,
   GranzSteel,
   HalleyRock,
@@ -33,8 +34,8 @@ import {
   JacobiniRock,
   JuddHemp,
   LapisLazuli,
+  LaurentSilver,
   LizardScales,
-  LorantSilver,
   LorimarIron,
   MaiaLead,
   MapleWood,
@@ -53,39 +54,51 @@ import {
   ToppleCotton,
   TortoiseShell,
   TuttleRock,
+  ValsenaIron,
   VinekRock,
-  VizelGold,
   WendelSilver
 } from 'model/Materials'
-import { ProjectProps } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export type MaterialCategory =
-  | {
-      readonly originalName: 'METAL' | 'WOOD' | 'STONE' | 'HIDE' | 'SCALES' | 'BONE' | 'FABRIC' | 'AEROLITE'
-      readonly remasteredName?: string
-      readonly activate?: (project: ProjectProps) => void
-    }
+  | 'Metal'
+  | 'Wood'
+  | 'Stone'
+  | 'Hide'
+  | 'Scales'
+  | 'Bone'
+  | 'Fabric'
+  | 'Aerolite'
   | undefined
 
-export type MaterialProps = {
-  readonly originalName: string
-  readonly remasteredName?: string
+export const Metal: MaterialCategory = 'Metal'
+export const Wood: MaterialCategory = 'Wood'
+export const Stone: MaterialCategory = 'Stone'
+export const Hide: MaterialCategory = 'Hide'
+export const Scales: MaterialCategory = 'Scales'
+export const Bone: MaterialCategory = 'Bone'
+export const Fabric: MaterialCategory = 'Fabric'
+export const Aerolite: MaterialCategory = 'Aerolite'
+export const None: MaterialCategory = undefined
+
+export type Material = Entity & {
   readonly category: MaterialCategory
   readonly growthControl: number
   readonly weaponAttributes: WeaponAttributes
   readonly armorAttributes: ArmorAttributes
   readonly resistances: Resistances
   readonly priceCoefficient: number
+  readonly activate?: (project: TemperingProject) => void
 }
 
-export const Materials: { readonly [key: string]: MaterialProps } = {
+export const AllMaterials: { readonly [key: string]: Material } = {
   // Metal
   '1': MenosBronze,
-  '2': ForsenaIron,
+  '2': ValsenaIron,
   '3': GranzSteel,
-  '4': LorantSilver,
+  '4': LaurentSilver,
   '5': WendelSilver,
-  '6': VizelGold,
+  '6': BeiserGold,
   '7': IshePlatinum,
   '8': LorimarIron,
   '9': AltenaAlloy,
@@ -106,7 +119,7 @@ export const Materials: { readonly [key: string]: MaterialProps } = {
   '20': Marble,
   '21': Obsidian,
   '22': PedanStone,
-  '23': GaeussTears,
+  '23': GaiasTears,
 
   // Hide
   '24': AnimalHide,

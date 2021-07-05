@@ -1,7 +1,8 @@
-import { ItemProps, None } from 'model/Items'
+import { Item, None } from 'model/Items'
 
-export const TakoBug: ItemProps = {
-  originalName: 'Tako Bug',
+export const TakoBug: Item = {
+  id: 'TakoBug',
+  name: 'Tako Bug',
   category: None,
   energy: 8
 }

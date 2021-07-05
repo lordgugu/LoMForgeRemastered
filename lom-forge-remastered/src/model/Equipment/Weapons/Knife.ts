@@ -1,9 +1,30 @@
 import { BeastHeadedGod, Clown, LordOfFlies } from 'model/Cards'
-import { WeaponProps } from 'model/Equipment'
+import { WeaponEquipment } from 'model/Equipment'
+import {
+  AngryEye,
+  Apricat,
+  BlankEye,
+  Citrisquid,
+  ClearFeather,
+  GiantsHorn,
+  GoldClover,
+  MaskedPotato,
+  Needlettuce,
+  PeachPuppy,
+  PoisonFang,
+  Rhinoloupe,
+  Scissors,
+  SharpClaw,
+  SillyEye,
+  SpadeBasil,
+  SpinyCarrot,
+  WickedEye
+} from 'model/Items'
 import { Jump, PoisonBlade, QuickBlade, SinisterBlade, Thrust, Uppercut } from 'model/MasterMoves'
 
-export const Knife: WeaponProps = {
-  originalName: 'Knife',
+export const Knife: WeaponEquipment = {
+  id: 'Knife',
+  name: 'Knife',
   attributes: {
     sharpness: 44,
     weight: 16,
@@ -17,10 +38,30 @@ export const Knife: WeaponProps = {
     middle: Uppercut,
     bottom: Jump
   },
-  compatibleMasterMoves: {
+  relatedMasterMoves: {
     top: () => [Thrust],
     middle: () => [Uppercut, PoisonBlade, QuickBlade],
     bottom: () => [Jump, SinisterBlade]
   },
+  relatedItems: () => [
+    Apricat,
+    Citrisquid,
+    PeachPuppy,
+    Rhinoloupe,
+    SpinyCarrot,
+    Needlettuce,
+    MaskedPotato,
+    SpadeBasil,
+    GoldClover,
+    SharpClaw,
+    PoisonFang,
+    GiantsHorn,
+    Scissors,
+    SillyEye,
+    AngryEye,
+    BlankEye,
+    WickedEye,
+    ClearFeather
+  ],
   relatedCards: () => [BeastHeadedGod, Clown, LordOfFlies]
 }

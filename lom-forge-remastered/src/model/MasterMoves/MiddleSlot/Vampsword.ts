@@ -3,8 +3,9 @@ import { Sword } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Vampsword: MasterMove = {
-  originalName: 'Vampsword',
-  weapons: () => [Sword],
+  id: 'Vampsword',
+  name: 'Vampsword',
   effects: () => ['Absorbs 25% of Damage Dealt'],
-  cards: () => [WitchOfMoon]
+  relatedWeapons: () => [Sword],
+  relatedCards: () => [WitchOfMoon]
 }

@@ -1,7 +1,3 @@
-import { ItemCategory } from 'model/Items'
-
-export const Powders: ItemCategory = { originalName: 'POWDERS' }
-
 export * from './Ash'
 export * from './GraveDirt'
 export * from './KnockoutDust'

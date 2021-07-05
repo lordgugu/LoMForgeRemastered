@@ -2,8 +2,9 @@ import { Bow } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const FlamingArrow: MasterMove = {
-  originalName: 'Flaming Arrow',
-  weapons: () => [Bow],
+  id: 'FlamingArrow',
+  name: 'Flaming Arrow',
   effects: () => ['Salamander Damage', 'Flameburst'],
-  notes: () => ['Sidewinder Exclusive']
+  notes: () => ['Sidewinder Exclusive'],
+  relatedWeapons: () => [Bow]
 }

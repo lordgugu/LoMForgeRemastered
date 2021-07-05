@@ -1,7 +1,10 @@
-import { CardProps, None } from 'model/Cards'
+import { Card, None } from 'model/Cards'
+import { HoneyOnion } from 'model/Items'
 
-export const Princess: CardProps = {
-  originalName: 'Princess',
+export const Princess: Card = {
+  id: 'Princess',
+  name: 'Princess',
   category: None,
-  price: 1500
+  price: 1500,
+  relatedItems: () => [HoneyOnion]
 }

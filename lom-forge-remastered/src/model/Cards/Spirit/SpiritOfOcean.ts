@@ -1,7 +1,10 @@
-import { CardProps, Spirit } from 'model/Cards'
+import { Card, Spirit } from 'model/Cards'
+import { Conchurnip } from 'model/Items'
 
-export const SpiritOfOcean: CardProps = {
-  originalName: 'Spirit (of Ocean)',
+export const SpiritOfOcean: Card = {
+  id: 'SpiritOfOcean',
+  name: 'Spirit (of Ocean)',
   category: Spirit,
-  price: 800
+  price: 800,
+  relatedItems: () => [Conchurnip]
 }

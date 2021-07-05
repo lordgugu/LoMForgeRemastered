@@ -3,8 +3,9 @@ import { Spear } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Trident: MasterMove = {
-  originalName: 'Trident',
-  weapons: () => [Spear],
+  id: 'Trident',
+  name: 'Trident',
   effects: () => ['Aquatic Damage +', 'Confusion vs. Aquatic'],
-  cards: () => [OceanGod]
+  relatedWeapons: () => [Spear],
+  relatedCards: () => [OceanGod]
 }

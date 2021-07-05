@@ -3,8 +3,9 @@ import { TwoHandedAxe } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Treefeller: MasterMove = {
-  originalName: 'Treefeller',
-  weapons: () => [TwoHandedAxe],
+  id: 'Treefeller',
+  name: 'Treefeller',
   effects: () => ['Plant Damage +', 'Dizzy vs. Plant'],
-  cards: () => [Leviathan]
+  relatedWeapons: () => [TwoHandedAxe],
+  relatedCards: () => [Leviathan]
 }

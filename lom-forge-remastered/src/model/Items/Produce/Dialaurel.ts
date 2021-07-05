@@ -1,7 +1,23 @@
-import { ItemProps, Produce } from 'model/Items'
+import { Metropolis } from 'model/Cards'
+import { Salamander, Shade } from 'model/Essences'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const Dialaurel: ItemProps = {
+export const Dialaurel: Item = {
+  id: 'Dialaurel',
+  name: 'Dialaurel',
   category: Produce,
-  originalName: "Dialaurel",
-  energy: 64
+  energy: 64,
+  activate: activateDialaurel,
+  relatedCards: () => [Metropolis],
+  relatedEssences: () => [Shade, Salamander]
+}
+
+function activateDialaurel(project: TemperingProject) {
+  const { energy } = project
+  const { shade, sala } = project.levels
+
+  if (sala === 0 && shade > 0 && energy >= 8) {
+    project.mysticPowers.prehidden = Metropolis
+  }
 }

@@ -1,62 +1,44 @@
-const All: Stat[] = ['power', 'skill', 'defense', 'magic', 'hp', 'spirit', 'charm', 'luck']
-
 export type Stat = 'power' | 'skill' | 'defense' | 'magic' | 'hp' | 'spirit' | 'charm' | 'luck'
+
+export const Power: Stat = 'power'
+export const Skill: Stat = 'skill'
+export const Defense: Stat = 'defense'
+export const Magic: Stat = 'magic'
+export const HP: Stat = 'hp'
+export const Spirit: Stat = 'spirit'
+export const Charm: Stat = 'charm'
+export const Luck: Stat = 'luck'
+
+export const AllStats: Stat[] = [Power, Skill, Defense, Magic, HP, Spirit, Charm, Luck]
 
 /**
  * Stat modifiers do not increment by 1 at all times. They simply move along a sliding scale of 16 possible values.
  */
 export type StatModifier = -10 | -5 | -3 | -1 | 0 | 1 | 2 | 3 | 4 | 5 | 7 | 9 | 10 | 12 | 15 | 20
 
-export type StatProps = {
-  stats: { [key in Stat]: StatModifier }
-  minStatValues: { [key in Stat]: StatModifier }
-  statRangeMin: { [key in Stat]: StatModifier }
-  statRangeMax: { [key in Stat]: StatModifier }
+export type Stats = {
+  modifiers: { [key in Stat]: StatModifier }
+  minValues: { [key in Stat]: StatModifier }
+  rangeMin: { [key in Stat]: StatModifier }
+  rangeMax: { [key in Stat]: StatModifier }
 }
 
 /**
  * Every time an item is added to a project, the modifier range and minimums are reset to [0; 1] and -10 for all stats.
  * As such, the resulting range and minimums will always correspond to the cumulative effects applied with the item.
- * 
+ *
  * Only the resulting stat modifier persists after items, but if an item would push out cards providing a favorable (or
  * disfavorable) range or minimum, it's likely that the persisted stat modifier will be truncated. To prevent this,
  * it's important to be aware of what the final visible cards will be on the resulting project.
- * 
- * @param project tempering project
+ *
+ * @param stats tempering project
  */
-export function resetStatLimits(project: StatProps) {
-  project.minStatValues = {
-    power: -10,
-    skill: -10,
-    defense: -10,
-    magic: -10,
-    hp: -10,
-    spirit: -10,
-    charm: -10,
-    luck: -10
-  }
-
-  project.statRangeMin = {
-    power: 0,
-    skill: 0,
-    defense: 0,
-    magic: 0,
-    hp: 0,
-    spirit: 0,
-    charm: 0,
-    luck: 0
-  }
-
-  project.statRangeMax = {
-    power: 1,
-    skill: 1,
-    defense: 1,
-    magic: 1,
-    hp: 1,
-    spirit: 1,
-    charm: 1,
-    luck: 1
-  }
+export function resetStatLimits(stats: Stats) {
+  AllStats.forEach((stat) => {
+    stats.minValues[stat] = -10
+    stats.rangeMin[stat] = 0
+    stats.rangeMax[stat] = 1
+  })
 }
 
 const Increment: { [key in StatModifier]: StatModifier } = {
@@ -78,12 +60,8 @@ const Increment: { [key in StatModifier]: StatModifier } = {
   20: 20
 }
 
-export function incrementStat(project: StatProps, stat: Stat): void {
-  project.stats[stat] = Increment[project.stats[stat]]
-}
-
-export function incrementAllStats(project: StatProps): void {
-  All.forEach((stat) => incrementStat(project, stat))
+export function incrementStat(project: Stats, stat: Stat): void {
+  project.modifiers[stat] = Increment[project.modifiers[stat]]
 }
 
 const Decrement: { [key in StatModifier]: StatModifier } = {
@@ -105,12 +83,8 @@ const Decrement: { [key in StatModifier]: StatModifier } = {
   20: 15
 }
 
-export function decrementStat(project: StatProps, stat: Stat): void {
-  project.stats[stat] = Decrement[project.stats[stat]]
-}
-
-export function decrementAllStats(project: StatProps): void {
-  All.forEach((stat) => decrementStat(project, stat))
+export function decrementStat(project: Stats, stat: Stat): void {
+  project.modifiers[stat] = Decrement[project.modifiers[stat]]
 }
 
 /**
@@ -123,13 +97,13 @@ export function decrementAllStats(project: StatProps): void {
  * @param min new low bound for minimum stat modifiers
  * @param max new high bound for maximum stat modifiers
  */
-export function setStatRange(project: StatProps, stat: Stat, min: StatModifier, max: StatModifier): void {
-  if (min < project.statRangeMin[stat]) {
-    project.statRangeMin[stat] = min
+export function widenStatRange(project: Stats, stat: Stat, min: StatModifier, max: StatModifier): void {
+  if (min < project.rangeMin[stat]) {
+    project.rangeMin[stat] = min
   }
 
-  if (max > project.statRangeMax[stat]) {
-    project.statRangeMax[stat] = max
+  if (max > project.rangeMax[stat]) {
+    project.rangeMax[stat] = max
   }
 }
 
@@ -143,8 +117,8 @@ export function setStatRange(project: StatProps, stat: Stat, min: StatModifier, 
  * @param stat stat to update
  * @param minValue new minimum value for the stat modifier
  */
-export function setMinimumStatValue(project: StatProps, stat: Stat, minValue: StatModifier): void {
-  project.minStatValues[stat] = minValue
+export function setMinimumStatValue(project: Stats, stat: Stat, minValue: StatModifier): void {
+  project.minValues[stat] = minValue
 }
 
 /**
@@ -154,22 +128,22 @@ export function setMinimumStatValue(project: StatProps, stat: Stat, minValue: St
  * @param project tempering project
  * @param stat stat to calculate
  */
-function calculateFinalStat(project: StatProps, stat: Stat): void {
-  let mod = project.stats[stat]
+function calculateFinalStat(project: Stats, stat: Stat): void {
+  let mod = project.modifiers[stat]
 
-  if (mod < project.statRangeMin[stat]) {
-    mod = project.statRangeMin[stat]
-  } else if (mod > project.statRangeMax[stat]) {
-    mod = project.statRangeMax[stat]
+  if (mod < project.rangeMin[stat]) {
+    mod = project.rangeMin[stat]
+  } else if (mod > project.rangeMax[stat]) {
+    mod = project.rangeMax[stat]
   }
 
-  if (mod < project.minStatValues[stat]) {
-    mod = project.minStatValues[stat]
+  if (mod < project.minValues[stat]) {
+    mod = project.minValues[stat]
   }
 
-  project.stats[stat] = mod
+  project.modifiers[stat] = mod
 }
 
-export function calculateFinalStats(project: StatProps): void {
-  All.forEach((stat) => calculateFinalStat(project, stat))
+export function calculateFinalStats(project: Stats): void {
+  AllStats.forEach((stat) => calculateFinalStat(project, stat))
 }

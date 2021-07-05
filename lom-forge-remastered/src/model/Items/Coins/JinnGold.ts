@@ -1,7 +1,24 @@
-import { Coins, ItemProps } from 'model/Items'
+import { Jinn as JinnCard } from 'model/Cards'
+import { Jinn, taint } from 'model/Essences'
+import { Coins, Item } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const JinnGold: ItemProps = {
+export const JinnGold: Item = {
+  id: 'JinnGold',
+  name: 'Jinn Gold',
   category: Coins,
-  originalName: 'Jinn Gold',
-  energy: 64
+  energy: 64,
+  activate: activateJinnGold,
+  relatedCards: () => [JinnCard],
+  relatedEssences: () => [Jinn]
+}
+
+function activateJinnGold(project: TemperingProject) {
+  taint(project, Jinn)
+
+  const { energy } = project
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = JinnCard
+  }
 }

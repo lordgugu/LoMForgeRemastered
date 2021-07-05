@@ -1,7 +1,8 @@
-import { CardProps, Noble } from 'model/Cards'
+import { Card, Noble } from 'model/Cards'
 
-export const Wanderer: CardProps = {
-  originalName: 'Wanderer',
+export const Wanderer: Card = {
+  id: 'Wanderer',
+  name: 'Wanderer',
   category: Noble,
   price: 1000
 }

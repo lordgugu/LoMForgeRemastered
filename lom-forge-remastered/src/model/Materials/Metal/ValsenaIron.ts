@@ -1,6 +1,7 @@
-import { MaterialProps, Metal } from 'model/Materials'
+import { Material, Metal } from 'model/Materials'
 
-export const ForsenaIron: MaterialProps = {
+export const ValsenaIron: Material = {
+  id: 'ValsenaIron',
   originalName: 'ForsenaIron',
   remasteredName: 'Valsena Iron',
   category: Metal,

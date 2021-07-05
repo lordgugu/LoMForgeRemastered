@@ -3,8 +3,9 @@ import { Staff } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Demonicide: MasterMove = {
-  originalName: 'Demonicide',
-  weapons: () => [Staff],
+  id: 'Demonicide',
+  name: 'Demonicide',
   effects: () => ['Demon Damage +', 'Flameburst vs. Demon'],
-  cards: () => [Cleric]
+  relatedWeapons: () => [Staff],
+  relatedCards: () => [Cleric]
 }

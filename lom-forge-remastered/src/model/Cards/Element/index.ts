@@ -1,7 +1,3 @@
-import { CardCategory } from 'model/Cards'
-
-export const Element: CardCategory = { name: 'Element' }
-
 export * from './Aura'
 export * from './Dryad'
 export * from './Gnome'

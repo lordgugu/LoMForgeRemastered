@@ -1,7 +1,8 @@
-import { MaterialProps, None } from 'model/Materials'
+import { Material, None } from 'model/Materials'
 
-export const TortoiseShell: MaterialProps = {
-  originalName: 'TortoiseShell',
+export const TortoiseShell: Material = {
+  id: 'TortoiseShell',
+  name: 'TortoiseShell',
   category: None,
   growthControl: 20,
   weaponAttributes: {

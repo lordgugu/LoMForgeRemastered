@@ -1,7 +1,25 @@
-import { ItemProps, Produce } from 'model/Items'
+import { Clown } from 'model/Cards'
+import { Item, Produce } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { Luck, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
-export const Bumpkin: ItemProps = {
+export const Bumpkin: Item = {
+  id: 'Bumpkin',
+  name: 'Bumpkin',
   category: Produce,
-  originalName: "Bumpkin",
-  energy: 24
+  energy: 24,
+  activate: activateBumpkin,
+  relatedCards: () => [Clown],
+  relatedStats: () => [Luck]
+}
+
+function activateBumpkin(project: TemperingProject) {
+  const { energy } = project
+
+  widenStatRange(project, Luck, -1, 3)
+  setMinimumStatValue(project, Luck, 5)
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = Clown
+  }
 }

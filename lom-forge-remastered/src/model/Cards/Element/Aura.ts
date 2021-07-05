@@ -1,7 +1,10 @@
-import { CardProps, Element } from 'model/Cards'
+import { Card, Element } from 'model/Cards'
+import { AuraGold, AuraSilver } from 'model/Items'
 
-export const Aura: CardProps = {
-  originalName: 'Aura',
+export const Aura: Card = {
+  id: 'Aura',
+  name: 'Aura',
   category: Element,
-  price: 250
+  price: 250,
+  relatedItems: () => [AuraGold, AuraSilver]
 }

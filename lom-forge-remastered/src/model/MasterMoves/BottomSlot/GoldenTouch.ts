@@ -3,8 +3,9 @@ import { Staff } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const GoldenTouch: MasterMove = {
-  originalName: 'Golden Touch',
-  weapons: () => [Staff],
+  id: 'GoldenTouch',
+  name: 'Golden Touch',
   effects: () => ['Experience &rarr; Lucre', 'Attack Gauge &minus;'],
-  cards: () => [WingsOfDarkness]
+  relatedWeapons: () => [Staff],
+  relatedCards: () => [WingsOfDarkness]
 }

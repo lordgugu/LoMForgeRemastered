@@ -1,7 +1,10 @@
-import { CardProps, World } from 'model/Cards'
+import { Card, World } from 'model/Cards'
+import { PineOClock } from 'model/Items'
 
-export const Ragnarok: CardProps = {
-  originalName: 'Ragnarok',
+export const Ragnarok: Card = {
+  id: 'Ragnarok',
+  name: 'Ragnarok',
   category: World,
-  price: 10000
+  price: 10000,
+  relatedItems: () => [PineOClock]
 }

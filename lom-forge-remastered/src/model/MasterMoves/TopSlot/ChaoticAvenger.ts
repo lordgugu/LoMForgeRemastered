@@ -3,8 +3,9 @@ import { TwoHandedSword } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const ChaoticAvenger: MasterMove = {
-  originalName: 'Chaotic Avenger',
-  weapons: () => [TwoHandedSword],
+  id: 'ChaoticAvenger',
+  name: 'Chaotic Avenger',
   effects: () => ['Salamander Damage', 'Gnome Damage', 'Jinn Damage', 'Undine Damage', 'Attack Gauge +'],
-  cards: () => [FallenAngel]
+  relatedWeapons: () => [TwoHandedSword],
+  relatedCards: () => [FallenAngel]
 }

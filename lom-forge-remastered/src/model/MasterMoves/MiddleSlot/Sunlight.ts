@@ -3,8 +3,9 @@ import { Sword } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Sunlight: MasterMove = {
-  originalName: 'Sunlight',
-  weapons: () => [Sword],
+  id: 'Sunlight',
+  name: 'Sunlight',
   effects: () => ['Undead Damage +', 'Flameburst vs. Undead'],
-  cards: () => [SunGod]
+  relatedWeapons: () => [Sword],
+  relatedCards: () => [SunGod]
 }

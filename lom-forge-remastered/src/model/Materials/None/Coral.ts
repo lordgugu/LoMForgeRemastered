@@ -1,7 +1,8 @@
-import { MaterialProps, None } from 'model/Materials'
+import { Material, None } from 'model/Materials'
 
-export const Coral: MaterialProps = {
-  originalName: 'Coral',
+export const Coral: Material = {
+  id: 'Coral',
+  name: 'Coral',
   category: None,
   growthControl: 12,
   weaponAttributes: {

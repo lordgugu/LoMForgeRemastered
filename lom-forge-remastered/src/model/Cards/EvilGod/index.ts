@@ -1,7 +1,3 @@
-import { CardCategory } from 'model/Cards'
-
-export const EvilGod: CardCategory = { name: 'Evil God' }
-
 export * from './BeastHeadedGod'
 export * from './FallenAngel'
 export * from './GodOfDestruction'

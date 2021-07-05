@@ -1,7 +1,9 @@
-import { Aerolite, MaterialProps } from 'model/Materials'
+import { Salamander } from 'model/Essences'
+import { activateAerolite, Aerolite, Material } from 'model/Materials'
 
-export const NemesisRock: MaterialProps = {
-  originalName: 'NemesisRock',
+export const NemesisRock: Material = {
+  id: 'NemesisRock',
+  name: 'NemesisRock',
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
@@ -26,5 +28,7 @@ export const NemesisRock: MaterialProps = {
     jinn: 9,
     undine: 8
   },
-  priceCoefficient: 1500
+  priceCoefficient: 1500,
+  activate: activateAerolite,
+  relatedEssences: () => [Salamander]
 }

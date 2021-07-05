@@ -3,8 +3,9 @@ import { Glove } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const HandOfMidas: MasterMove = {
-  originalName: 'Hand of Midas',
-  weapons: () => [Glove],
+  id: 'HandOfMidas',
+  name: 'Hand of Midas',
   effects: () => ['Experience &rarr; Lucre', 'Attack Gauge &minus;'],
-  cards: () => [King]
+  relatedWeapons: () => [Glove],
+  relatedCards: () => [King]
 }

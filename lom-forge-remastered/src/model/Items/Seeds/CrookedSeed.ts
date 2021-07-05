@@ -1,7 +1,24 @@
-import { ItemProps, Seeds } from 'model/Items'
+import { Dryad as DryadCard } from 'model/Cards'
+import { Dryad, taint } from 'model/Essences'
+import { Item, Seeds } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const CrookedSeed: ItemProps = {
+export const CrookedSeed: Item = {
+  id: 'CrookedSeed',
+  name: 'Crooked Seed',
   category: Seeds,
-  originalName: 'Crooked Seed',
-  energy: 16
+  energy: 16,
+  activate: activateCrookedSeed,
+  relatedCards: () => [DryadCard],
+  relatedEssences: () => [Dryad]
+}
+
+function activateCrookedSeed(project: TemperingProject) {
+  taint(project, Dryad)
+
+  const { energy } = project
+
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = DryadCard
+  }
 }

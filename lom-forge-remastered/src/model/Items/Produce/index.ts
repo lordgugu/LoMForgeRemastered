@@ -1,7 +1,3 @@
-import { ItemCategory } from 'model/Items'
-
-export const Produce: ItemCategory = { originalName: 'PRODUCE' }
-
 export * from './Applesocks'
 export * from './Apricat'
 export * from './Bellgrapes'
@@ -25,7 +21,7 @@ export * from './Mangoelephant'
 export * from './MaskedPotato'
 export * from './MushInABox'
 export * from './Needlettuce'
-export * from './Orangeopus'
+export * from './OrangeOpus'
 export * from './Orcaplant'
 export * from './PeachPuppy'
 export * from './PearOHeels'

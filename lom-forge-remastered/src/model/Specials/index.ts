@@ -1,11 +1,8 @@
-import { ArmorProps } from 'model/Equipment'
+import { Entity } from 'model/Common'
 
-export type SpecialAbility = {
-  readonly originalName: string
-  readonly remasteredName?: string
-  readonly requirements: { readonly armors: ArmorProps[]; readonly cards: string[] }[]
+export type Special = Entity & {
   readonly effect: string[]
-  readonly notes: string[]
+  readonly notes?: string[]
 }
 
 export * from './AutoRevive'

@@ -1,7 +1,10 @@
-import { CardProps, World } from 'model/Cards'
+import { Card, World } from 'model/Cards'
+import { SpinySeed } from 'model/Items'
 
-export const Yggdrasil: CardProps = {
-  originalName: 'Yggdrasil',
+export const Yggdrasil: Card = {
+  id: 'Yggdrasil',
+  name: 'Yggdrasil',
   category: World,
-  price: 3000
+  price: 3000,
+  relatedItems: () => [SpinySeed]
 }

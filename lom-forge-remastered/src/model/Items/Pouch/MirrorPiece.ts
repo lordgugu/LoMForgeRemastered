@@ -1,7 +1,8 @@
-import { ItemProps, Pouch } from 'model/Items'
+import { Item, Pouch } from 'model/Items'
 
-export const MirrorPiece: ItemProps = {
-  originalName: 'Mirror Piece',
+export const MirrorPiece: Item = {
+  id: 'MirrorPiece',
+  name: 'Mirror Piece',
   category: Pouch,
   energy: 24
 }

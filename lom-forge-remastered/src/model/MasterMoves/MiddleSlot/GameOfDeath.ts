@@ -3,8 +3,9 @@ import { Flail } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const GameOfDeath: MasterMove = {
-  originalName: 'Game of Death',
-  weapons: () => [Flail],
+  id: 'GameOfDeath',
+  name: 'Game of Death',
   effects: () => ['Skill Up', 'Attack Gauge +'],
-  cards: () => [MotherOfGods]
+  relatedWeapons: () => [Flail],
+  relatedCards: () => [MotherOfGods]
 }

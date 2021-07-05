@@ -1,7 +1,8 @@
-import { ItemProps, Urns } from 'model/Items'
+import { Item, Urns } from 'model/Items'
 
-export const EarOfWheat: ItemProps = {
-  originalName: "Ear Of Wheat",
+export const EarOfWheat: Item = {
+  id: 'EarOfWheat',
+  name: 'Ear of Wheat',
   category: Urns,
   energy: 24
 }

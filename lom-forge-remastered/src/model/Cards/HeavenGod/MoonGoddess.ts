@@ -1,7 +1,10 @@
-import { CardProps, HeavenGod } from 'model/Cards'
+import { Card, HeavenGod } from 'model/Cards'
+import { MoonCrystal } from 'model/Items'
 
-export const MoonGoddess: CardProps = {
-  originalName: 'Moon Goddess',
+export const MoonGoddess: Card = {
+  id: 'MoonGoddess',
+  name: 'Moon Goddess',
   category: HeavenGod,
-  price: 3000
+  price: 3000,
+  relatedItems: () => [MoonCrystal]
 }

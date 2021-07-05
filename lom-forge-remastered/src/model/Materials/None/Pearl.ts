@@ -1,7 +1,8 @@
-import { MaterialProps, None } from 'model/Materials'
+import { Material, None } from 'model/Materials'
 
-export const Pearl: MaterialProps = {
-  originalName: 'Pearl',
+export const Pearl: Material = {
+  id: 'Pearl',
+  name: 'Pearl',
   category: None,
   growthControl: 8,
   weaponAttributes: {

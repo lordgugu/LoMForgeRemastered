@@ -1,7 +1,8 @@
-import { MaterialProps, Metal } from 'model/Materials'
+import { Material, Metal } from 'model/Materials'
 
-export const LorimarIron: MaterialProps = {
-  originalName: 'LorimarIron',
+export const LorimarIron: Material = {
+  id: 'LorimarIron',
+  name: 'LorimarIron',
   category: Metal,
   growthControl: 16,
   weaponAttributes: {

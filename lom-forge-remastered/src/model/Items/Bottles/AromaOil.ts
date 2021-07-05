@@ -1,7 +1,8 @@
-import { Bottles, ItemProps } from 'model/Items'
+import { Bottles, Item } from 'model/Items'
 
-export const AromaOil: ItemProps = {
-  originalName: 'Aroma Oil',
+export const AromaOil: Item = {
+  id: 'AromaOil',
+  name: 'Aroma Oil',
   category: Bottles,
   energy: 24
 }

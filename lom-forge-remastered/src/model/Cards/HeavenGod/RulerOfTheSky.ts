@@ -1,7 +1,10 @@
-import { CardProps, HeavenGod } from 'model/Cards'
+import { Card, HeavenGod } from 'model/Cards'
+import { SpadeBasil } from 'model/Items'
 
-export const RulerOfTheSky: CardProps = {
-  originalName: 'Ruler of the Sky',
+export const RulerOfTheSky: Card = {
+  id: 'RulerOfTheSky',
+  name: 'Ruler of the Sky',
   category: HeavenGod,
-  price: 5000
+  price: 5000,
+  relatedItems: () => [SpadeBasil]
 }

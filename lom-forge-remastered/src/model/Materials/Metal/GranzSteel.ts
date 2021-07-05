@@ -1,7 +1,8 @@
-import { MaterialProps, Metal } from 'model/Materials'
+import { Material, Metal } from 'model/Materials'
 
-export const GranzSteel: MaterialProps = {
-  originalName: 'GranzSteel',
+export const GranzSteel: Material = {
+  id: 'GranzSteel',
+  name: 'GranzSteel',
   category: Metal,
   growthControl: 24,
   weaponAttributes: {

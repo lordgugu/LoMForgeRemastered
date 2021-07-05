@@ -3,8 +3,9 @@ import { Bow } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const LunarShot: MasterMove = {
-  originalName: 'Lunar Shot',
-  weapons: () => [Bow],
+  id: 'LunarShot',
+  name: 'Lunar Shot',
   effects: () => ['Shade Damage'],
-  cards: () => [MoonGoddess]
+  relatedWeapons: () => [Bow],
+  relatedCards: () => [MoonGoddess]
 }

@@ -1,7 +1,10 @@
-import { CardProps, Element } from 'model/Cards'
+import { Card, Element } from 'model/Cards'
+import { WispGold, WispSilver } from 'model/Items'
 
-export const Wisp: CardProps = {
-  originalName: 'Wisp',
+export const Wisp: Card = {
+  id: 'Wisp',
+  name: 'Wisp',
   category: Element,
-  price: 250
+  price: 250,
+  relatedItems: () => [WispGold, WispSilver]
 }

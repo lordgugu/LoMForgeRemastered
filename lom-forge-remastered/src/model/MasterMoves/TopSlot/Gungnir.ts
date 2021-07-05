@@ -3,8 +3,9 @@ import { Spear } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Gungnir: MasterMove = {
-  originalName: 'Gungnir',
-  weapons: () => [Spear],
+  id: 'Gungnir',
+  name: 'Gungnir',
   effects: () => ['Spirit Up', 'Attack Gauge +'],
-  cards: () => [RulerOfTheSky]
+  relatedWeapons: () => [Spear],
+  relatedCards: () => [RulerOfTheSky]
 }

@@ -1,7 +1,9 @@
-import { MaterialProps, Metal } from 'model/Materials'
+import { Material, Metal } from 'model/Materials'
 
-export const LorantSilver: MaterialProps = {
+export const LaurentSilver: Material = {
+  id: 'LaurentSilver',
   originalName: 'LorantSilver',
+  remasteredName: 'Laurent Silver',
   category: Metal,
   growthControl: 12,
   weaponAttributes: {

@@ -1,7 +1,8 @@
-import { CardProps, None } from 'model/Cards'
+import { Card, None } from 'model/Cards'
 
-export const Sorcerer: CardProps = {
-  originalName: 'Sorcerer',
+export const Sorcerer: Card = {
+  id: 'Sorcerer',
+  name: 'Sorcerer',
   category: None,
   price: 300
 }

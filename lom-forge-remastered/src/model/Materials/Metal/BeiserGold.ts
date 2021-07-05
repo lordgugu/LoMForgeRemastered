@@ -1,6 +1,7 @@
-import { MaterialProps, Metal } from 'model/Materials'
+import { Material, Metal } from 'model/Materials'
 
-export const VizelGold: MaterialProps = {
+export const BeiserGold: Material = {
+  id: 'BeiserGold',
   originalName: 'VizelGold',
   remasteredName: 'Beiser Gold',
   category: Metal,

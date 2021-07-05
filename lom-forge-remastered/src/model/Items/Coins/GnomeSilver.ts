@@ -1,7 +1,24 @@
-import { Coins, ItemProps } from 'model/Items'
+import { Gnome as GnomeCard } from 'model/Cards'
+import { Gnome, taint } from 'model/Essences'
+import { Coins, Item } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const GnomeSilver: ItemProps = {
+export const GnomeSilver: Item = {
+  id: 'GnomeSilver',
+  name: 'Gnome Silver',
   category: Coins,
-  originalName: 'Gnome Silver',
-  energy: 48
+  energy: 48,
+  activate: activateGnomeSilver,
+  relatedCards: () => [GnomeCard],
+  relatedEssences: () => [Gnome]
+}
+
+function activateGnomeSilver(project: TemperingProject) {
+  taint(project, Gnome)
+
+  const { energy } = project
+  
+  if (energy >= 8) {
+    project.mysticPowers.prehidden = GnomeCard
+  }
 }

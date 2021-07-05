@@ -1,7 +1,9 @@
-import { MaterialProps, Wood } from 'model/Materials'
+import { Dryad } from 'model/Essences'
+import { activateWood, Material, Wood } from 'model/Materials'
 
-export const EbonyWood: MaterialProps = {
-  originalName: 'EbonyWood',
+export const EbonyWood: Material = {
+  id: 'EbonyWood',
+  name: 'EbonyWood',
   category: Wood,
   growthControl: 24,
   weaponAttributes: {
@@ -26,5 +28,7 @@ export const EbonyWood: MaterialProps = {
     jinn: 7,
     undine: 7
   },
-  priceCoefficient: 900
+  priceCoefficient: 900,
+  activate: activateWood,
+  relatedEssences: () => [Dryad]
 }

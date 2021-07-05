@@ -1,7 +1,3 @@
-import { ItemCategory } from 'model/Items'
-
-export const Eyes: ItemCategory = { originalName: 'EYES' }
-
 export * from './AngryEye'
 export * from './BlankEye'
 export * from './CreepyEye'

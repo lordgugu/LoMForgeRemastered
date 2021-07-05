@@ -3,8 +3,9 @@ import { Sword } from 'model/Equipment'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Moonlight: MasterMove = {
-  originalName: 'Moonlight',
-  weapons: () => [Sword],
+  id: 'Moonlight',
+  name: 'Moonlight',
   effects: () => ['Aquatic Damage +', 'Sleep vs. Aquatic'],
-  cards: () => [MoonGoddess]
+  relatedWeapons: () => [Sword],
+  relatedCards: () => [MoonGoddess]
 }

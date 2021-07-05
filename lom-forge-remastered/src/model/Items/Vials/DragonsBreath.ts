@@ -1,7 +1,8 @@
-import { ItemProps, Vials } from 'model/Items'
+import { Item, Vials } from 'model/Items'
 
-export const DragonsBreath: ItemProps = {
-  originalName: "Dragon's Breath",
+export const DragonsBreath: Item = {
+  id: 'DragonsBreath',
+  name: "Dragon's Breath",
   category: Vials,
   energy: 24
 }

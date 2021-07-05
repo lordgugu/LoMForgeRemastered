@@ -1,7 +1,10 @@
-import { CardProps, Stage } from 'model/Cards'
+import { Card, Stage } from 'model/Cards'
+import { FishyFruit } from 'model/Items'
 
-export const Spring: CardProps = {
-  originalName: 'Spring',
+export const Spring: Card = {
+  id: 'Spring',
+  name: 'Spring',
   category: Stage,
-  price: 1500
+  price: 1500,
+  relatedItems: () => [FishyFruit]
 }

@@ -1,6 +1,6 @@
 import {
   Armor,
-  ArmorProps,
+  ArmorEquipment,
   Axe,
   Boots,
   Bow,
@@ -23,10 +23,10 @@ import {
   Sword,
   TwoHandedAxe,
   TwoHandedSword,
-  WeaponProps
+  WeaponEquipment
 } from 'model/Equipment'
 
-export type EquipmentProps = WeaponProps | ArmorProps
+export type EquipmentProps = WeaponEquipment | ArmorEquipment
 
 export const Equipment: { readonly [key: string]: EquipmentProps } = {
   // Weapons

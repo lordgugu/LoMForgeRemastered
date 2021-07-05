@@ -1,7 +1,22 @@
-import { ItemProps, Seeds } from 'model/Items'
+import { Dryad as DryadCard } from 'model/Cards'
+import { Dryad, taint } from 'model/Essences'
+import { Item, Seeds } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
 
-export const LongSeed: ItemProps = {
+export const LongSeed: Item = {
+  id: 'LongSeed',
+  name: 'Long Seed',
   category: Seeds,
-  originalName: 'Long Seed',
-  energy: 24
+  energy: 24,
+  activate: activateLongSeed,
+  relatedCards: () => [DryadCard],
+  relatedEssences: () => [Dryad]
+}
+
+function activateLongSeed(project: TemperingProject) {
+  taint(project, Dryad)
+
+  if (project.energy >= 8) {
+    project.mysticPowers.prehidden = DryadCard
+  }
 }
