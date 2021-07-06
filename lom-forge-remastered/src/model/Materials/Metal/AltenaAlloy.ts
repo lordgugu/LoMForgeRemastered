@@ -6,10 +6,10 @@ export const AltenaAlloy: Material = {
   category: Metal,
   growthControl: 18,
   weaponAttributes: {
-    sharpness: 50,
-    weight: 50,
+    sharp: 50,
+    heavy: 50,
     force: 50,
-    technique: 50
+    tech: 50
   },
   armorAttributes: {
     strike: 50,

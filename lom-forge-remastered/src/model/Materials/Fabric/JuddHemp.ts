@@ -6,10 +6,10 @@ export const JuddHemp: Material = {
   category: Fabric,
   growthControl: 10,
   weaponAttributes: {
-    sharpness: 38,
-    weight: 1,
+    sharp: 38,
+    heavy: 1,
     force: 1,
-    technique: 1
+    tech: 1
   },
   armorAttributes: {
     strike: 19,

@@ -6,10 +6,10 @@ export const Orihalcon: Material = {
   category: Metal,
   growthControl: 12,
   weaponAttributes: {
-    sharpness: 28,
-    weight: 28,
+    sharp: 28,
+    heavy: 28,
     force: 28,
-    technique: 28
+    tech: 28
   },
   armorAttributes: {
     strike: 28,

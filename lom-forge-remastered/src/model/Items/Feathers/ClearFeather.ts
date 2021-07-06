@@ -21,9 +21,9 @@ function activateClearFeather(project: TemperingProject) {
   const { gnome, jinn } = project.levels
 
   if (project.type === WeaponProjectType) {
-    const { weight, technique } = project.attributes
-    project.attributes.weight = minus50Percent(weight)
-    project.attributes.technique = plus50Percent(technique)
+    const { heavy, tech } = project.attributes
+    project.attributes.heavy = minus50Percent(heavy)
+    project.attributes.tech = plus50Percent(tech)
   }
 
   if (gnome === 0 && jinn >= 5 && energy >= 8) {

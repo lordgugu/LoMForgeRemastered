@@ -27,10 +27,10 @@ export const Spear: WeaponEquipment = {
   id: 'Spear',
   name: 'Spear',
   attributes: {
-    sharpness: 52,
-    weight: 20,
+    sharp: 52,
+    heavy: 20,
     force: 24,
-    technique: 48
+    tech: 48
   },
   markerThreshold: 2,
   priceCoefficient: 60,

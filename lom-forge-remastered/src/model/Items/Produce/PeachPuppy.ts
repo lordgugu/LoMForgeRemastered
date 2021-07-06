@@ -22,9 +22,9 @@ function activatePeachPuppy(project: TemperingProject) {
   }
 
   if (project.type === WeaponProjectType) {
-    const { sharpness, weight } = project.attributes
+    const { sharp, heavy } = project.attributes
 
-    project.attributes.sharpness = plus25Percent(sharpness)
-    project.attributes.weight = minus25Percent(weight)
+    project.attributes.sharp = plus25Percent(sharp)
+    project.attributes.heavy = minus25Percent(heavy)
   }
 }

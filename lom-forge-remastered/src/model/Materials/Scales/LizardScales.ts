@@ -6,10 +6,10 @@ export const LizardScales: Material = {
   category: Scales,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 16,
-    weight: 17,
+    sharp: 16,
+    heavy: 17,
     force: 14,
-    technique: 14
+    tech: 14
   },
   armorAttributes: {
     strike: 19,

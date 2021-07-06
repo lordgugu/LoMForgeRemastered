@@ -21,9 +21,9 @@ function activatePoisonFang(project: TemperingProject) {
   const { dryad, aura } = project.levels
 
   if (project.type === WeaponProjectType) {
-    const { force, technique } = project.attributes
+    const { force, tech } = project.attributes
     project.attributes.force = minus50Percent(force)
-    project.attributes.technique = plus50Percent(technique)
+    project.attributes.tech = plus50Percent(tech)
   }
 
   if (aura === 0 && dryad >= 5 && energy >= 8) {

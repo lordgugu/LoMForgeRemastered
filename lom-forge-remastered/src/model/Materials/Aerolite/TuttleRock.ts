@@ -7,10 +7,10 @@ export const TuttleRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 35,
-    weight: 26,
+    sharp: 35,
+    heavy: 26,
     force: 52,
-    technique: 56
+    tech: 56
   },
   armorAttributes: {
     strike: 35,

@@ -7,10 +7,10 @@ export const MenosBronze: Material = {
   category: Metal,
   growthControl: 18,
   weaponAttributes: {
-    sharpness: 10,
-    weight: 10,
+    sharp: 10,
+    heavy: 10,
     force: 10,
-    technique: 10
+    tech: 10
   },
   armorAttributes: {
     strike: 10,

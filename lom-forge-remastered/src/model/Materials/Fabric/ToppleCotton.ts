@@ -6,10 +6,10 @@ export const ToppleCotton: Material = {
   category: Fabric,
   growthControl: 10,
   weaponAttributes: {
-    sharpness: 18,
-    weight: 1,
+    sharp: 18,
+    heavy: 1,
     force: 1,
-    technique: 1
+    tech: 1
   },
   armorAttributes: {
     strike: 9,

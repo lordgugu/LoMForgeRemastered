@@ -22,9 +22,9 @@ function activateDragonsBreath(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (project.type === WeaponProjectType) {
-    const { force, technique } = project.attributes
+    const { force, tech } = project.attributes
     project.attributes.force = plus25Percent(force)
-    project.attributes.technique = plus25Percent(technique)
+    project.attributes.tech = plus25Percent(tech)
   }
 
   if (wisp > 0 && sala > 0 && total >= 3 && energy >= 8) {

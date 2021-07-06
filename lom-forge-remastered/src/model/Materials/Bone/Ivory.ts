@@ -6,10 +6,10 @@ export const Ivory: Material = {
   category: Bone,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 28,
-    weight: 21,
+    sharp: 28,
+    heavy: 21,
     force: 24,
-    technique: 24
+    tech: 24
   },
   armorAttributes: {
     strike: 18,

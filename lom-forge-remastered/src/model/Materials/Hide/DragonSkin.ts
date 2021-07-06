@@ -7,10 +7,10 @@ export const DragonSkin: Material = {
   category: Hide,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 35,
-    weight: 1,
+    sharp: 35,
+    heavy: 1,
     force: 1,
-    technique: 1
+    tech: 1
   },
   armorAttributes: {
     strike: 70,

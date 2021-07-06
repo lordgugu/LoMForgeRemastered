@@ -7,10 +7,10 @@ export const JacobiniRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 15,
-    weight: 11,
+    sharp: 15,
+    heavy: 11,
     force: 22,
-    technique: 24
+    tech: 24
   },
   armorAttributes: {
     strike: 15,

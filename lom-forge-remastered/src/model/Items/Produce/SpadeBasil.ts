@@ -22,8 +22,8 @@ function activateSpadeBasil(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (project.type === WeaponProjectType) {
-    const { sharpness } = project.attributes
-    project.attributes.sharpness = plus25Percent(sharpness)
+    const { sharp } = project.attributes
+    project.attributes.sharp = plus25Percent(sharp)
   }
 
   if (wisp >= 3 && total >= 6 && energy >= 8) {

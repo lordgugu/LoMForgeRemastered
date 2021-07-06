@@ -18,8 +18,8 @@ function activateBlankEye(project: TemperingProject) {
   const { energy } = project
 
   if (project.type === WeaponProjectType) {
-    const { technique } = project.attributes
-    project.attributes.technique = plus25Percent(technique)
+    const { tech } = project.attributes
+    project.attributes.tech = plus25Percent(tech)
   }
 
   if (energy >= 4) {

@@ -14,7 +14,7 @@ export const GoldClover: Item = {
 
 function activateGoldClover(project: TemperingProject) {
   if (project.type === WeaponProjectType) {
-    const { weight } = project.attributes
-    project.attributes.weight = plus25Percent(weight)
+    const { heavy } = project.attributes
+    project.attributes.heavy = plus25Percent(heavy)
   }
 }

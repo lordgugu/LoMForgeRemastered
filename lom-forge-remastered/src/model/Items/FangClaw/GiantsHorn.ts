@@ -21,9 +21,9 @@ function activateGiantsHorn(project: TemperingProject) {
   const { sala, gnome } = project.levels
 
   if (project.type === WeaponProjectType) {
-    const { sharpness, weight } = project.attributes
-    project.attributes.sharpness = minus50Percent(sharpness)
-    project.attributes.weight = plus50Percent(weight)
+    const { sharp, heavy } = project.attributes
+    project.attributes.sharp = minus50Percent(sharp)
+    project.attributes.heavy = plus50Percent(heavy)
   }
 
   if (sala === 0 && gnome >= 5 && energy >= 8) {

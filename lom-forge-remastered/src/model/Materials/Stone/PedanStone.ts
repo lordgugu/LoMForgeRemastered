@@ -6,10 +6,10 @@ export const PedanStone: Material = {
   category: Stone,
   growthControl: 24,
   weaponAttributes: {
-    sharpness: 36,
-    weight: 7,
+    sharp: 36,
+    heavy: 7,
     force: 64,
-    technique: 50
+    tech: 50
   },
   armorAttributes: {
     strike: 21,

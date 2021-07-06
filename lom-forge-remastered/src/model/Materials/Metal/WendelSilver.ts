@@ -6,10 +6,10 @@ export const WendelSilver: Material = {
   category: Metal,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 30,
-    weight: 30,
+    sharp: 30,
+    heavy: 30,
     force: 30,
-    technique: 30
+    tech: 30
   },
   armorAttributes: {
     strike: 30,

@@ -6,10 +6,10 @@ export const Marble: Material = {
   category: Stone,
   growthControl: 28,
   weaponAttributes: {
-    sharpness: 12,
-    weight: 2,
+    sharp: 12,
+    heavy: 2,
     force: 21,
-    technique: 16
+    tech: 16
   },
   armorAttributes: {
     strike: 7,

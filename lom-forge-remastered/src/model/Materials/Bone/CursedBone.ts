@@ -6,10 +6,10 @@ export const CursedBone: Material = {
   category: Bone,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 43,
-    weight: 32,
+    sharp: 43,
+    heavy: 32,
     force: 36,
-    technique: 36
+    tech: 36
   },
   armorAttributes: {
     strike: 27,

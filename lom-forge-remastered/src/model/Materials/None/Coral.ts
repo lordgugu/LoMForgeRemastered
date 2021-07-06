@@ -6,10 +6,10 @@ export const Coral: Material = {
   category: None,
   growthControl: 12,
   weaponAttributes: {
-    sharpness: 18,
-    weight: 21,
+    sharp: 18,
+    heavy: 21,
     force: 14,
-    technique: 12
+    tech: 12
   },
   armorAttributes: {
     strike: 23,

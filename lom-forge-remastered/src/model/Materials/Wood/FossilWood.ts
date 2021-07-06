@@ -7,10 +7,10 @@ export const FossilWood: Material = {
   category: Wood,
   growthControl: 22,
   weaponAttributes: {
-    sharpness: 40,
-    weight: 24,
+    sharp: 40,
+    heavy: 24,
     force: 56,
-    technique: 16
+    tech: 16
   },
   armorAttributes: {
     strike: 64,

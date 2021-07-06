@@ -6,10 +6,10 @@ export const SultansSilk: Material = {
   category: Fabric,
   growthControl: 10,
   weaponAttributes: {
-    sharpness: 28,
-    weight: 1,
+    sharp: 28,
+    heavy: 1,
     force: 1,
-    technique: 1
+    tech: 1
   },
   armorAttributes: {
     strike: 14,

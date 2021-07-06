@@ -6,10 +6,10 @@ export const LorimarIron: Material = {
   category: Metal,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 45,
-    weight: 45,
+    sharp: 45,
+    heavy: 45,
     force: 45,
-    technique: 45
+    tech: 45
   },
   armorAttributes: {
     strike: 45,

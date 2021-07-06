@@ -7,10 +7,10 @@ export const GaiasTears: Material = {
   category: Stone,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 48,
-    weight: 9,
+    sharp: 48,
+    heavy: 9,
     force: 86,
-    technique: 67
+    tech: 67
   },
   armorAttributes: {
     strike: 28,

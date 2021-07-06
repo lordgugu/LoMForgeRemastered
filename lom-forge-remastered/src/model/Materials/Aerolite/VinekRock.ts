@@ -7,10 +7,10 @@ export const VinekRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 30,
-    weight: 22,
+    sharp: 30,
+    heavy: 22,
     force: 45,
-    technique: 48
+    tech: 48
   },
   armorAttributes: {
     strike: 30,

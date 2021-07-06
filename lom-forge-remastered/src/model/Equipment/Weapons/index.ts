@@ -14,10 +14,10 @@ import { TwoHandedAxe } from './TwoHandedAxe'
 import { TwoHandedSword } from './TwoHandedSword'
 
 export type WeaponAttributes = {
-  sharpness: number
-  weight: number
+  sharp: number
+  heavy: number
   force: number
-  technique: number
+  tech: number
 }
 
 export type MasterMoveSlot = 'top' | 'middle' | 'bottom'

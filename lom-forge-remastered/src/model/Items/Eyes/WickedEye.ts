@@ -14,7 +14,7 @@ export const WickedEye: Item = {
 
 function activateWickedEye(project: TemperingProject) {
   if (project.type === WeaponProjectType) {
-    const { sharpness } = project.attributes
-    project.attributes.sharpness = plus25Percent(sharpness)
+    const { sharp } = project.attributes
+    project.attributes.sharp = plus25Percent(sharp)
   }
 }

@@ -27,10 +27,10 @@ export const Flail: WeaponEquipment = {
   id: 'Flail',
   name: 'Flail',
   attributes: {
-    sharpness: 0,
-    weight: 40,
+    sharp: 0,
+    heavy: 40,
     force: 28,
-    technique: 44
+    tech: 44
   },
   markerThreshold: 3,
   priceCoefficient: 40,

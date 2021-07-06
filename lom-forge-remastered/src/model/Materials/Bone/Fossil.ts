@@ -6,10 +6,10 @@ export const Fossil: Material = {
   category: Bone,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 57,
-    weight: 43,
+    sharp: 57,
+    heavy: 43,
     force: 48,
-    technique: 48
+    tech: 48
   },
   armorAttributes: {
     strike: 36,

@@ -6,10 +6,10 @@ export const Adamantite: Material = {
   category: None,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 62,
-    weight: 46,
+    sharp: 62,
+    heavy: 46,
     force: 93,
-    technique: 99
+    tech: 99
   },
   armorAttributes: {
     strike: 62,

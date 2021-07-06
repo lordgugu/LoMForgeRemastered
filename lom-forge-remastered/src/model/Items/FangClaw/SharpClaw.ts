@@ -21,9 +21,9 @@ function activateSharpClaw(project: TemperingProject) {
   const { sala, undine } = project.levels
 
   if (project.type === WeaponProjectType) {
-    const { sharpness, weight } = project.attributes
-    project.attributes.sharpness = plus50Percent(sharpness)
-    project.attributes.weight = minus50Percent(weight)
+    const { sharp, heavy } = project.attributes
+    project.attributes.sharp = plus50Percent(sharp)
+    project.attributes.heavy = minus50Percent(heavy)
   }
 
   if (undine === 0 && sala >= 5 && energy >= 8) {

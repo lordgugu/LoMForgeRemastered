@@ -6,10 +6,10 @@ export const SnakeScales: Material = {
   category: Scales,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 24,
-    weight: 26,
+    sharp: 24,
+    heavy: 26,
     force: 21,
-    technique: 21
+    tech: 21
   },
   armorAttributes: {
     strike: 28,

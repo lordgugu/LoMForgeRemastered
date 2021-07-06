@@ -6,10 +6,10 @@ export const DragonScales: Material = {
   category: Scales,
   growthControl: 14,
   weaponAttributes: {
-    sharpness: 60,
-    weight: 66,
+    sharp: 60,
+    heavy: 66,
     force: 54,
-    technique: 54
+    tech: 54
   },
   armorAttributes: {
     strike: 72,

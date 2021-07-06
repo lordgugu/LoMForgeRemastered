@@ -6,10 +6,10 @@ export const Fullmetal: Material = {
   category: None,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 55,
-    weight: 41,
+    sharp: 55,
+    heavy: 41,
     force: 68,
-    technique: 66
+    tech: 66
   },
   armorAttributes: {
     strike: 44,

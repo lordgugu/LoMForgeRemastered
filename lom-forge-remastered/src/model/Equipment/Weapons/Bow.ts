@@ -40,10 +40,10 @@ export const Bow: WeaponEquipment = {
   id: 'Bow',
   name: 'Bow',
   attributes: {
-    sharpness: 40,
-    weight: 4,
+    sharp: 40,
+    heavy: 4,
     force: 20,
-    technique: 40
+    tech: 40
   },
   markerThreshold: 1,
   priceCoefficient: 35,

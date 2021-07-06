@@ -16,9 +16,9 @@ export const SpinyCarrot: Item = {
 
 function activateSpinyCarrot(project: TemperingProject) {
   if (project.type === WeaponProjectType) {
-    const { sharpness, weight } = project.attributes
-    project.attributes.sharpness = plus25Percent(sharpness)
-    project.attributes.weight = minus25Percent(weight)
+    const { sharp, heavy } = project.attributes
+    project.attributes.sharp = plus25Percent(sharp)
+    project.attributes.heavy = minus25Percent(heavy)
   }
 
   taint(project, Undine)

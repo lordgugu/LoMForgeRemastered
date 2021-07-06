@@ -16,9 +16,9 @@ export const Citrisquid: Item = {
 function activateCitrisquid(project: TemperingProject) {
   switch (project.type) {
     case WeaponProjectType:
-      const { sharpness, weight } = project.attributes
-      project.attributes.sharpness = minus25Percent(sharpness)
-      project.attributes.weight = plus25Percent(weight)
+      const { sharp, heavy } = project.attributes
+      project.attributes.sharp = minus25Percent(sharp)
+      project.attributes.heavy = plus25Percent(heavy)
       break
     case ArmorProjectType:
       const { slash, strike } = project.attributes

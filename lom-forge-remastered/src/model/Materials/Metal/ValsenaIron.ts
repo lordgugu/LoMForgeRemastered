@@ -7,10 +7,10 @@ export const ValsenaIron: Material = {
   category: Metal,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 15,
-    weight: 15,
+    sharp: 15,
+    heavy: 15,
     force: 15,
-    technique: 15
+    tech: 15
   },
   armorAttributes: {
     strike: 15,

@@ -6,10 +6,10 @@ export const FishScales: Material = {
   category: Scales,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 8,
-    weight: 8,
+    sharp: 8,
+    heavy: 8,
     force: 7,
-    technique: 7
+    tech: 7
   },
   armorAttributes: {
     strike: 9,

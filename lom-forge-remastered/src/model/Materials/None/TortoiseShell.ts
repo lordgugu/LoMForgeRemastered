@@ -6,10 +6,10 @@ export const TortoiseShell: Material = {
   category: None,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 26,
-    weight: 31,
+    sharp: 26,
+    heavy: 31,
     force: 20,
-    technique: 18
+    tech: 18
   },
   armorAttributes: {
     strike: 33,

@@ -27,10 +27,10 @@ export const Sword: WeaponEquipment = {
   id: 'Sword',
   name: 'Sword',
   attributes: {
-    sharpness: 32,
-    weight: 32,
+    sharp: 32,
+    heavy: 32,
     force: 32,
-    technique: 32
+    tech: 32
   },
   markerThreshold: 1,
   priceCoefficient: 50,

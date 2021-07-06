@@ -27,10 +27,10 @@ export const TwoHandedAxe: WeaponEquipment = {
   id: 'TwoHandedAxe',
   name: '2H Axe',
   attributes: {
-    sharpness: 40,
-    weight: 40,
+    sharp: 40,
+    heavy: 40,
     force: 64,
-    technique: 16
+    tech: 16
   },
   markerThreshold: 3,
   priceCoefficient: 75,

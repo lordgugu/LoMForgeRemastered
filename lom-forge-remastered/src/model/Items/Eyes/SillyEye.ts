@@ -18,8 +18,8 @@ function activateSillyEye(project: TemperingProject) {
   const { energy } = project
 
   if (project.type === WeaponProjectType) {
-    const { weight } = project.attributes
-    project.attributes.weight = plus25Percent(weight)
+    const { heavy } = project.attributes
+    project.attributes.heavy = plus25Percent(heavy)
   }
 
   if (energy >= 4) {

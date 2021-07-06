@@ -7,10 +7,10 @@ export const AnimalHide: Material = {
   category: Hide,
   growthControl: 8,
   weaponAttributes: {
-    sharpness: 10,
-    weight: 1,
+    sharp: 10,
+    heavy: 1,
     force: 1,
-    technique: 1
+    tech: 1
   },
   armorAttributes: {
     strike: 20,

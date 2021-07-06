@@ -7,10 +7,10 @@ export const BeiserGold: Material = {
   category: Metal,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 35,
-    weight: 35,
+    sharp: 35,
+    heavy: 35,
     force: 35,
-    technique: 35
+    tech: 35
   },
   armorAttributes: {
     strike: 35,

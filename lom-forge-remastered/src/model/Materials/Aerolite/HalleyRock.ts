@@ -7,10 +7,10 @@ export const HalleyRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 20,
-    weight: 15,
+    sharp: 20,
+    heavy: 15,
     force: 30,
-    technique: 32
+    tech: 32
   },
   armorAttributes: {
     strike: 20,

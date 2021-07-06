@@ -6,10 +6,10 @@ export const Obsidian: Material = {
   category: Stone,
   growthControl: 32,
   weaponAttributes: {
-    sharpness: 24,
-    weight: 4,
+    sharp: 24,
+    heavy: 4,
     force: 43,
-    technique: 33
+    tech: 33
   },
   armorAttributes: {
     strike: 14,

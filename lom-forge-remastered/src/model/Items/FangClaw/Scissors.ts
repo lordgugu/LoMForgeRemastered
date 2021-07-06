@@ -14,8 +14,8 @@ export const Scissors: Item = {
 
 function activateScissors(project: TemperingProject) {
   if (project.type === WeaponProjectType) {
-    const { force, technique } = project.attributes
+    const { force, tech } = project.attributes
     project.attributes.force = plus50Percent(force)
-    project.attributes.technique = minus50Percent(technique)
+    project.attributes.tech = minus50Percent(tech)
   }
 }

@@ -27,10 +27,10 @@ export const Hammer: WeaponEquipment = {
   id: 'Hammer',
   name: 'Hammer',
   attributes: {
-    sharpness: 8,
-    weight: 72,
+    sharp: 8,
+    heavy: 72,
     force: 64,
-    technique: 16
+    tech: 16
   },
   markerThreshold: 3,
   priceCoefficient: 75,

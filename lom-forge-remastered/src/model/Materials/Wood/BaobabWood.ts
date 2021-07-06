@@ -7,10 +7,10 @@ export const BaobabWood: Material = {
   category: Wood,
   growthControl: 24,
   weaponAttributes: {
-    sharpness: 20,
-    weight: 12,
+    sharp: 20,
+    heavy: 12,
     force: 28,
-    technique: 8
+    tech: 8
   },
   armorAttributes: {
     strike: 32,

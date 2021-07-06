@@ -7,10 +7,10 @@ export const DiorWood: Material = {
   category: Wood,
   growthControl: 10,
   weaponAttributes: {
-    sharpness: 50,
-    weight: 30,
+    sharp: 50,
+    heavy: 30,
     force: 70,
-    technique: 20
+    tech: 20
   },
   armorAttributes: {
     strike: 80,

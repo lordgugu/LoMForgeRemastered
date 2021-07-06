@@ -18,8 +18,8 @@ export const Rhinoloupe: Item = {
 function activateRhinoloupe(project: TemperingProject) {
   switch (project.type) {
     case WeaponProjectType:
-      const { sharpness } = project.attributes
-      project.attributes.sharpness = plus25Percent(sharpness)
+      const { sharp } = project.attributes
+      project.attributes.sharp = plus25Percent(sharp)
       break
     case ArmorProjectType:
       setImmunities(project, Poison)

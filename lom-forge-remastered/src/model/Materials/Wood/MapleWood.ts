@@ -7,10 +7,10 @@ export const MapleWood: Material = {
   category: Wood,
   growthControl: 12,
   weaponAttributes: {
-    sharpness: 35,
-    weight: 21,
+    sharp: 35,
+    heavy: 21,
     force: 49,
-    technique: 14
+    tech: 14
   },
   armorAttributes: {
     strike: 56,

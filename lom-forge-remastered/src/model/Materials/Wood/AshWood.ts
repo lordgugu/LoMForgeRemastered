@@ -7,10 +7,10 @@ export const AshWood: Material = {
   category: Wood,
   growthControl: 11,
   weaponAttributes: {
-    sharpness: 30,
-    weight: 18,
+    sharp: 30,
+    heavy: 18,
     force: 42,
-    technique: 12
+    tech: 12
   },
   armorAttributes: {
     strike: 48,

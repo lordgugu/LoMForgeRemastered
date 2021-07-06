@@ -7,10 +7,10 @@ export const OakWood: Material = {
   category: Wood,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 10,
-    weight: 6,
+    sharp: 10,
+    heavy: 6,
     force: 14,
-    technique: 4
+    tech: 4
   },
   armorAttributes: {
     strike: 16,

@@ -7,10 +7,10 @@ export const HollyWood: Material = {
   category: Wood,
   growthControl: 14,
   weaponAttributes: {
-    sharpness: 15,
-    weight: 9,
+    sharp: 15,
+    heavy: 9,
     force: 21,
-    technique: 6
+    tech: 6
   },
   armorAttributes: {
     strike: 24,

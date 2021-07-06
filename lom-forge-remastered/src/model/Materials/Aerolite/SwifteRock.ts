@@ -7,10 +7,10 @@ export const SwifteRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 50,
-    weight: 37,
+    sharp: 50,
+    heavy: 37,
     force: 75,
-    technique: 80
+    tech: 80
   },
   armorAttributes: {
     strike: 50,

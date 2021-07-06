@@ -7,10 +7,10 @@ export const NemesisRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 40,
-    weight: 30,
+    sharp: 40,
+    heavy: 30,
     force: 60,
-    technique: 64
+    tech: 64
   },
   armorAttributes: {
     strike: 40,

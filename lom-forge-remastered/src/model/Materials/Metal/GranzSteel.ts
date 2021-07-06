@@ -6,10 +6,10 @@ export const GranzSteel: Material = {
   category: Metal,
   growthControl: 24,
   weaponAttributes: {
-    sharpness: 20,
-    weight: 20,
+    sharp: 20,
+    heavy: 20,
     force: 20,
-    technique: 20
+    tech: 20
   },
   armorAttributes: {
     strike: 20,

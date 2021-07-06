@@ -7,10 +7,10 @@ export const LaurentSilver: Material = {
   category: Metal,
   growthControl: 12,
   weaponAttributes: {
-    sharpness: 25,
-    weight: 25,
+    sharp: 25,
+    heavy: 25,
     force: 25,
-    technique: 25
+    tech: 25
   },
   armorAttributes: {
     strike: 25,

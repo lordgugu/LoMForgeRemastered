@@ -6,10 +6,10 @@ export const MaiaLead: Material = {
   category: Metal,
   growthControl: 48,
   weaponAttributes: {
-    sharpness: 36,
-    weight: 3,
+    sharp: 36,
+    heavy: 3,
     force: 68,
-    technique: 18
+    tech: 18
   },
   armorAttributes: {
     strike: 3,

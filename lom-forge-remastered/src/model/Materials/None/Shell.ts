@@ -6,10 +6,10 @@ export const Shell: Material = {
   category: None,
   growthControl: 14,
   weaponAttributes: {
-    sharpness: 20,
-    weight: 24,
+    sharp: 20,
+    heavy: 24,
     force: 16,
-    technique: 14
+    tech: 14
   },
   armorAttributes: {
     strike: 26,

@@ -6,10 +6,10 @@ export const LapisLazuli: Material = {
   category: None,
   growthControl: 8,
   weaponAttributes: {
-    sharpness: 2,
-    weight: 2,
+    sharp: 2,
+    heavy: 2,
     force: 2,
-    technique: 2
+    tech: 2
   },
   armorAttributes: {
     strike: 1,

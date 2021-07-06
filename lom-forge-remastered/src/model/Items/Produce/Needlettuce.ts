@@ -21,9 +21,9 @@ function activateNeedlettuce(project: TemperingProject) {
   const { sala, dryad } = project.levels
 
   if (project.type === WeaponProjectType) {
-    const { sharpness, weight } = project.attributes
-    project.attributes.sharpness = plus25Percent(sharpness)
-    project.attributes.weight = minus25Percent(weight)
+    const { sharp, heavy } = project.attributes
+    project.attributes.sharp = plus25Percent(sharp)
+    project.attributes.heavy = minus25Percent(heavy)
   }
 
   if (sala === 0 && dryad > 0 && energy >= 8) {

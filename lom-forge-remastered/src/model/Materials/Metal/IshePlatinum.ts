@@ -6,10 +6,10 @@ export const IshePlatinum: Material = {
   category: Metal,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 40,
-    weight: 40,
+    sharp: 40,
+    heavy: 40,
     force: 40,
-    technique: 40
+    tech: 40
   },
   armorAttributes: {
     strike: 40,

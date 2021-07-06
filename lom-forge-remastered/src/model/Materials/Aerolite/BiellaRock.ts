@@ -7,10 +7,10 @@ export const BiellaRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 45,
-    weight: 33,
+    sharp: 45,
+    heavy: 33,
     force: 67,
-    technique: 72
+    tech: 72
   },
   armorAttributes: {
     strike: 45,

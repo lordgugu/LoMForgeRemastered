@@ -6,10 +6,10 @@ export const AltenaFelt: Material = {
   category: Fabric,
   growthControl: 10,
   weaponAttributes: {
-    sharpness: 48,
-    weight: 1,
+    sharp: 48,
+    heavy: 1,
     force: 1,
-    technique: 1
+    tech: 1
   },
   armorAttributes: {
     strike: 24,

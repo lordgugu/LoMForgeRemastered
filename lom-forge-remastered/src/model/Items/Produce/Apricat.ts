@@ -14,9 +14,9 @@ export const Apricat: Item = {
 
 function activateApricat(project: TemperingProject) {
   if (project.type === WeaponProjectType) {
-    const { force, technique } = project.attributes
+    const { force, tech } = project.attributes
 
     project.attributes.force = minus25Percent(force)
-    project.attributes.technique = plus25Percent(technique)
+    project.attributes.tech = plus25Percent(tech)
   }
 }

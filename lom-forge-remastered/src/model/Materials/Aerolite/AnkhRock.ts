@@ -7,10 +7,10 @@ export const AnkhRock: Material = {
   category: Aerolite,
   growthControl: 16,
   weaponAttributes: {
-    sharpness: 25,
-    weight: 18,
+    sharp: 25,
+    heavy: 18,
     force: 37,
-    technique: 40
+    tech: 40
   },
   armorAttributes: {
     strike: 25,

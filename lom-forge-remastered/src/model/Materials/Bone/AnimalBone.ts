@@ -6,10 +6,10 @@ export const AnimalBone: Material = {
   category: Bone,
   growthControl: 20,
   weaponAttributes: {
-    sharpness: 14,
-    weight: 10,
+    sharp: 14,
+    heavy: 10,
     force: 12,
-    technique: 12
+    tech: 12
   },
   armorAttributes: {
     strike: 9,

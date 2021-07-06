@@ -7,10 +7,10 @@ export const EbonyWood: Material = {
   category: Wood,
   growthControl: 24,
   weaponAttributes: {
-    sharpness: 25,
-    weight: 15,
+    sharp: 25,
+    heavy: 15,
     force: 35,
-    technique: 10
+    tech: 10
   },
   armorAttributes: {
     strike: 40,
