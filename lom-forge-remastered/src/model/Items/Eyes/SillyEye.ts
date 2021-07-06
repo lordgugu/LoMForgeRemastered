@@ -23,6 +23,6 @@ function activateSillyEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfGluttony
+    project.cards.pending = PixieOfGluttony
   }
 }

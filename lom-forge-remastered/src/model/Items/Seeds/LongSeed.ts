@@ -17,6 +17,6 @@ function activateLongSeed(project: TemperingProject) {
   taint(project, Dryad)
 
   if (project.energy >= 8) {
-    project.mysticPowers.prehidden = DryadCard
+    project.cards.pending = DryadCard
   }
 }

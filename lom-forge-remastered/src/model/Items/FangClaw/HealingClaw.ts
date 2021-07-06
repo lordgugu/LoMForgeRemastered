@@ -26,6 +26,6 @@ function activateHealingClaw(project: TemperingProject) {
   }
 
   if (sala === 0 && wisp > 0 && energy >= 8) {
-    project.mysticPowers.prehidden = Tower
+    project.cards.pending = Tower
   }
 }

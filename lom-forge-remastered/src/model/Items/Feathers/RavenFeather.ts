@@ -22,7 +22,7 @@ function activateRavenFeather(project: TemperingProject) {
   incrementStat(project, Spirit)
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = Raven
+    project.cards.pending = Raven
   }
 
   taint(project, Shade)

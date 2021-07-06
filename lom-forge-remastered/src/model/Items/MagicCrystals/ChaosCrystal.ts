@@ -15,6 +15,6 @@ function activateChaosCrystal(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 16) {
-    project.mysticPowers.prehidden = AncientMoon
+    project.cards.pending = AncientMoon
   }
 }

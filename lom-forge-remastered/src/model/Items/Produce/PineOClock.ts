@@ -26,6 +26,6 @@ function activatePineOClock(project: TemperingProject) {
   }
 
   if (sala * gnome * jinn * undine > 0 && energy >= 8) {
-    project.mysticPowers.prehidden = Ragnarok
+    project.cards.pending = Ragnarok
   }
 }

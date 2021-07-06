@@ -23,6 +23,6 @@ function activateWhalamato(project: TemperingProject) {
   setMinimumStatValue(project, HP, 10)
 
   if (gnome >= 3 && undine >= 3 && energy >= 8) {
-    project.mysticPowers.prehidden = Unicorn
+    project.cards.pending = Unicorn
   }
 }

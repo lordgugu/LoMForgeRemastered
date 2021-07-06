@@ -31,6 +31,6 @@ function activatePearOHeels(project: TemperingProject) {
   }
 
   if (energy >= 16) {
-    project.mysticPowers.prehidden = SpiritOfShoes
+    project.cards.pending = SpiritOfShoes
   }
 }

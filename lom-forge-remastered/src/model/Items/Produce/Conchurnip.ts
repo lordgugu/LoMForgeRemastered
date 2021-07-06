@@ -20,6 +20,6 @@ function activateConchurnip(project: TemperingProject) {
   incrementStat(project, Defense)
 
   if (energy >= 16) {
-    project.mysticPowers.prehidden = SpiritOfOcean
+    project.cards.pending = SpiritOfOcean
   }
 }

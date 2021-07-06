@@ -23,6 +23,6 @@ function activateCreepyEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfLust
+    project.cards.pending = PixieOfLust
   }
 }

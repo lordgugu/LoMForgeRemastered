@@ -23,6 +23,6 @@ function activateLittleEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfPride
+    project.cards.pending = PixieOfPride
   }
 }

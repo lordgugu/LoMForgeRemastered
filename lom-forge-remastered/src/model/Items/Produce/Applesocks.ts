@@ -22,6 +22,6 @@ function activateApplesocks(project: TemperingProject) {
   incrementStat(project, Skill)
 
   if (total >= 5 && energy >= 16) {
-    project.mysticPowers.hidden = NymphOfOrchards
+    project.cards.hidden = NymphOfOrchards
   }
 }

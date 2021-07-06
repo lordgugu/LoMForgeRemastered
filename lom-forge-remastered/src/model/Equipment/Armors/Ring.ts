@@ -1,7 +1,18 @@
 import { Phoenix } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Poison, Sleep } from 'model/Immunities'
-import { CherryBombs, Citrisquid, CreepyEye, DangerousEye, LittleEye, PineOClock, SleepyEye } from 'model/Items'
+import { Confusion, Poison, Sleep } from 'model/Immunities'
+import {
+  AromaOil,
+  CherryBombs,
+  Citrisquid,
+  CreepyEye,
+  DangerousEye,
+  LittleEye,
+  MothWing,
+  PineOClock,
+  SleepyEye,
+  StinkyBreath
+} from 'model/Items'
 import { ArmorProject } from 'model/Projects'
 import { AutoRevive } from 'model/Specials'
 
@@ -18,8 +29,19 @@ export const Ring: ArmorEquipment = {
   priceCoefficient: 5,
   activate: activateRing,
   relatedSpecials: () => [AutoRevive],
-  relatedItems: () => [Citrisquid, PineOClock, CherryBombs, LittleEye, SleepyEye, DangerousEye, CreepyEye],
-  relatedImmunities: () => [Poison, Sleep],
+  relatedItems: () => [
+    Citrisquid,
+    PineOClock,
+    CherryBombs,
+    LittleEye,
+    SleepyEye,
+    DangerousEye,
+    CreepyEye,
+    MothWing,
+    AromaOil,
+    StinkyBreath
+  ],
+  relatedImmunities: () => [Poison, Sleep, Confusion],
   relatedCards: () => [Phoenix]
 }
 
@@ -31,7 +53,7 @@ export const Ring: ArmorEquipment = {
  */
 function activateRing(project: ArmorProject): void {
   const { special } = project
-  const { hidden, top, middle, bottom } = project.mysticPowers
+  const { hidden, top, middle, bottom } = project.cards
 
   if (special !== AutoRevive) {
     return

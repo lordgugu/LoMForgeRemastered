@@ -19,6 +19,6 @@ function activateWindStone(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = JinnCard
+    project.cards.pending = JinnCard
   }
 }

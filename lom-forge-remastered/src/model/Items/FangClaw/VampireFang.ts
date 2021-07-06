@@ -25,6 +25,6 @@ function activateVampireFang(project: TemperingProject) {
   incrementStat(project, Spirit)
 
   if (jinn === 0 && undine >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = WitchOfMoon
+    project.cards.pending = WitchOfMoon
   }
 }

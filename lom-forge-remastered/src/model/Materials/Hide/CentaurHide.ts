@@ -1,3 +1,4 @@
+import { AromaOil } from 'model/Items'
 import { Hide, Material } from 'model/Materials'
 
 export const CentaurHide: Material = {
@@ -27,5 +28,6 @@ export const CentaurHide: Material = {
     jinn: 8,
     undine: 8
   },
-  priceCoefficient: 360
+  priceCoefficient: 360,
+  relatedItems: () => [AromaOil]
 }

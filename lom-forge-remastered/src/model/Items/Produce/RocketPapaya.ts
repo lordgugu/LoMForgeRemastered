@@ -23,6 +23,6 @@ function activateRocketPapaya(project: TemperingProject) {
   incrementStat(project, Charm)
 
   if (jinn === 0 && wisp > 0 && energy >= 8) {
-    project.mysticPowers.prehidden = Tower
+    project.cards.pending = Tower
   }
 }

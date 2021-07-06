@@ -1,3 +1,4 @@
+import { AromaOil } from 'model/Items'
 import { Hide, Material } from 'model/Materials'
 
 export const DragonSkin: Material = {
@@ -27,5 +28,6 @@ export const DragonSkin: Material = {
     jinn: 5,
     undine: 10
   },
-  priceCoefficient: 540
+  priceCoefficient: 540,
+  relatedItems: () => [AromaOil]
 }

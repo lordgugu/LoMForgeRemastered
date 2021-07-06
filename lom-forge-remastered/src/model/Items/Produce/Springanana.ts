@@ -15,6 +15,6 @@ function activateSpringanana(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = HeavensScale
+    project.cards.pending = HeavensScale
   }
 }

@@ -1,8 +1,10 @@
 import { Card, World } from 'model/Cards'
+import { GraveDirt } from 'model/Items'
 
 export const DyingEarth: Card = {
   id: 'DyingEarth',
   name: 'Dying Earth',
   category: World,
-  price: 2600
+  price: 2600,
+  relatedItems: () => [GraveDirt]
 }

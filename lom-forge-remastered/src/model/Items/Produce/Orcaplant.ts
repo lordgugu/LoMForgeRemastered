@@ -18,6 +18,6 @@ function activateOrcaplant(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (undine >= 3 && total >= 5) {
-    project.mysticPowers.prehidden = OceanGod
+    project.cards.pending = OceanGod
   }
 }

@@ -23,7 +23,7 @@ function activateAngelFeather(project: TemperingProject) {
   incrementStat(project, Charm)
 
   if (shade === 0 && wisp >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = FallenAngel
+    project.cards.pending = FallenAngel
   }
 
   taint(project, Wisp)

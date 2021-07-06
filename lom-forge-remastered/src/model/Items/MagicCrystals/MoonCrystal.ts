@@ -18,7 +18,7 @@ function activateMoonCrystal(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (shade >= 3 && total >= 5) {
-    project.mysticPowers.prehidden = MoonGoddess
+    project.cards.pending = MoonGoddess
   }
 
   taint(project, Shade)

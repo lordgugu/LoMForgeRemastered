@@ -20,6 +20,6 @@ function activateLilipods(project: TemperingProject) {
   incrementStat(project, Spirit)
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = EnticedNymph
+    project.cards.pending = EnticedNymph
   }
 }

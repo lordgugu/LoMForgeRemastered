@@ -1,6 +1,18 @@
 import { ArmorEquipment } from 'model/Equipment'
-import { Poison, Sleep } from 'model/Immunities'
-import { Citrisquid, CreepyEye, DangerousEye, LittleEye, PineOClock, SleepyEye, SweetMoai } from 'model/Items'
+import { Confusion, Darkness, Poison, Sleep } from 'model/Immunities'
+import {
+  AromaOil,
+  Citrisquid,
+  CreepyEye,
+  DangerousEye,
+  LittleEye,
+  Moss,
+  MothWing,
+  PineOClock,
+  SleepyEye,
+  StinkyBreath,
+  SweetMoai
+} from 'model/Items'
 
 export const Helm: ArmorEquipment = {
   id: 'Helm',
@@ -13,6 +25,18 @@ export const Helm: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 25,
-  relatedItems: () => [Citrisquid, PineOClock, SweetMoai, LittleEye, SleepyEye, DangerousEye, CreepyEye],
-  relatedImmunities: () => [Poison, Sleep]
+  relatedItems: () => [
+    Citrisquid,
+    PineOClock,
+    SweetMoai,
+    LittleEye,
+    SleepyEye,
+    DangerousEye,
+    CreepyEye,
+    MothWing,
+    AromaOil,
+    StinkyBreath,
+    Moss
+  ],
+  relatedImmunities: () => [Poison, Sleep, Confusion, Darkness]
 }

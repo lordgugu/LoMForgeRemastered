@@ -1,14 +1,17 @@
 import { ArmorEquipment } from 'model/Equipment'
-import { Poison, Sleep } from 'model/Immunities'
+import { Confusion, Poison, Sleep } from 'model/Immunities'
 import {
+  AromaOil,
   Citrisquid,
   CreepyEye,
   DangerousEye,
   LittleEye,
   LoquatShoes,
+  MothWing,
   PearOHeels,
   PineOClock,
-  SleepyEye
+  SleepyEye,
+  StinkyBreath
 } from 'model/Items'
 
 export const Shoes: ArmorEquipment = {
@@ -22,6 +25,18 @@ export const Shoes: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 10,
-  relatedItems: () => [LoquatShoes, PearOHeels, Citrisquid, PineOClock, LittleEye, SleepyEye, DangerousEye, CreepyEye],
-  relatedImmunities: () => [Poison, Sleep]
+  relatedItems: () => [
+    LoquatShoes,
+    PearOHeels,
+    Citrisquid,
+    PineOClock,
+    LittleEye,
+    SleepyEye,
+    DangerousEye,
+    CreepyEye,
+    MothWing,
+    AromaOil,
+    StinkyBreath
+  ],
+  relatedImmunities: () => [Poison, Sleep, Confusion]
 }

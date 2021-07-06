@@ -23,6 +23,6 @@ function activateSleepyEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfSloth
+    project.cards.pending = PixieOfSloth
   }
 }

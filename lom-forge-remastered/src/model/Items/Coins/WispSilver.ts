@@ -19,6 +19,6 @@ function activateWispSilver(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = WispCard
+    project.cards.pending = WispCard
   }
 }

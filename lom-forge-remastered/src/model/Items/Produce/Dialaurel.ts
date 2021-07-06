@@ -18,6 +18,6 @@ function activateDialaurel(project: TemperingProject) {
   const { shade, sala } = project.levels
 
   if (sala === 0 && shade > 0 && energy >= 8) {
-    project.mysticPowers.prehidden = Metropolis
+    project.cards.pending = Metropolis
   }
 }

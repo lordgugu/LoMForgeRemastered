@@ -23,6 +23,6 @@ function activateBlankEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfEnvy
+    project.cards.pending = PixieOfEnvy
   }
 }

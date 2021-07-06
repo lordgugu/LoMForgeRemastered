@@ -27,6 +27,6 @@ function activatePoisonFang(project: TemperingProject) {
   }
 
   if (aura === 0 && dryad >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = BeastHeadedGod
+    project.cards.pending = BeastHeadedGod
   }
 }

@@ -19,6 +19,6 @@ function activateUndineGold(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = UndineCard
+    project.cards.pending = UndineCard
   }
 }

@@ -19,7 +19,7 @@ function activateSunCrystal(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (wisp >= 3 && total >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = SunGod
+    project.cards.pending = SunGod
   }
 
   taint(project, Wisp)

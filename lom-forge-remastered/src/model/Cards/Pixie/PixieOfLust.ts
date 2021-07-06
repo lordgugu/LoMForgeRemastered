@@ -1,10 +1,10 @@
 import { Card, Pixie } from 'model/Cards'
-import { CreepyEye } from 'model/Items'
+import { CreepyEye, Garlicrown, HolyWater, StinkyBreath } from 'model/Items'
 
 export const PixieOfLust: Card = {
   id: 'PixieOfLust',
   name: 'Pixie (of Lust)',
   category: Pixie,
   price: 150,
-  relatedItems: () => [CreepyEye]
+  relatedItems: () => [Garlicrown, CreepyEye, HolyWater, StinkyBreath]
 }

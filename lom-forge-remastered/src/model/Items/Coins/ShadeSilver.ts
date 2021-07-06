@@ -19,6 +19,6 @@ function activateShadeSilver(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = ShadeCard
+    project.cards.pending = ShadeCard
   }
 }

@@ -20,6 +20,6 @@ function activateBumpkin(project: TemperingProject) {
   setMinimumStatValue(project, Luck, 5)
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = Clown
+    project.cards.pending = Clown
   }
 }

@@ -27,6 +27,6 @@ function activateGiantsHorn(project: TemperingProject) {
   }
 
   if (sala === 0 && gnome >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = Leviathan
+    project.cards.pending = Leviathan
   }
 }

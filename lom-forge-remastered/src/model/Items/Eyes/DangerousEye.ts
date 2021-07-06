@@ -23,6 +23,6 @@ function activateDangerousEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfGreed
+    project.cards.pending = PixieOfGreed
   }
 }

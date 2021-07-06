@@ -15,6 +15,6 @@ function activateGlowCrystal(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 16) {
-    project.mysticPowers.prehidden = NymphOfDawn
+    project.cards.pending = NymphOfDawn
   }
 }

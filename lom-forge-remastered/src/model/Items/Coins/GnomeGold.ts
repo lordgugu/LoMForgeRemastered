@@ -19,6 +19,6 @@ function activateGnomeGold(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = GnomeCard
+    project.cards.pending = GnomeCard
   }
 }

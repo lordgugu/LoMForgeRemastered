@@ -27,6 +27,6 @@ function activateSpadeBasil(project: TemperingProject) {
   }
 
   if (wisp >= 3 && total >= 6 && energy >= 8) {
-    project.mysticPowers.prehidden = RulerOfTheSky
+    project.cards.pending = RulerOfTheSky
   }
 }

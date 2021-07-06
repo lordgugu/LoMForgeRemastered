@@ -30,7 +30,7 @@ export type Card = Entity & {
   readonly price: number
 }
 
-export type MysticPowerSlot = 'prehidden' | 'hidden' | 'top' | 'middle' | 'bottom' | 'leaving'
+export type CardSlot = 'pending' | 'hidden' | 'top' | 'middle' | 'bottom' | 'leaving'
 
 export * from './BeastGod'
 export * from './Element'

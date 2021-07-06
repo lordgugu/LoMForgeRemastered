@@ -107,7 +107,7 @@ export function consumeRemainingEnergy(essences: Essences): void {
 }
 
 export function taint(project: TemperingProject, essence: Essence): void {
-  switch (project.activeWorldCard) {
+  switch (project.worldCard) {
     case AncientMoon:
       ancientMoonTaint(project, essence)
       break

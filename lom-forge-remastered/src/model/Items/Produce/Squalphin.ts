@@ -19,7 +19,7 @@ function activateSqualphin(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (undine >= 3 && total >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = OceanGod
+    project.cards.pending = OceanGod
   }
 
   taint(project, Undine)

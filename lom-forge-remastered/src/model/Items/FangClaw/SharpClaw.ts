@@ -27,6 +27,6 @@ function activateSharpClaw(project: TemperingProject) {
   }
 
   if (undine === 0 && sala >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = GodOfDestruction
+    project.cards.pending = GodOfDestruction
   }
 }

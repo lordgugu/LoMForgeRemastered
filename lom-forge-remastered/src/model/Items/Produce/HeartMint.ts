@@ -23,6 +23,6 @@ function activateHeartMint(project: TemperingProject) {
   incrementStat(project, Charm)
 
   if (shade >= 2 && gnome >= 2 && undine >= 2 && energy >= 8) {
-    project.mysticPowers.prehidden = MotherOfGods
+    project.cards.pending = MotherOfGods
   }
 }

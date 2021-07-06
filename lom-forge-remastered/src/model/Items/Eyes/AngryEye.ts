@@ -23,6 +23,6 @@ function activateAngryEye(project: TemperingProject) {
   }
 
   if (energy >= 4) {
-    project.mysticPowers.prehidden = PixieOfWrath
+    project.cards.pending = PixieOfWrath
   }
 }

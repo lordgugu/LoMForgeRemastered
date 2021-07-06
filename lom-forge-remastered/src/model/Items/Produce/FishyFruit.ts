@@ -16,7 +16,7 @@ export const FishyFruit: Item = {
 }
 
 function activateFishyFruit(project: TemperingProject) {
-  project.mysticPowers.prehidden = Spring
+  project.cards.pending = Spring
 
   widenStatRange(project, Magic, -1, 3)
   incrementStat(project, Magic)

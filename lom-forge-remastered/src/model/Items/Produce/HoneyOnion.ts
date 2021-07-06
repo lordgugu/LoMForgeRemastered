@@ -17,7 +17,7 @@ function activateHoneyOnion(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = Princess
+    project.cards.pending = Princess
   }
 
   taint(project, Dryad)

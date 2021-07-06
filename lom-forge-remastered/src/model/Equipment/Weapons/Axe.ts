@@ -6,6 +6,7 @@ import {
   BlankEye,
   Citrisquid,
   ClearFeather,
+  DragonsBreath,
   GiantsHorn,
   GoldClover,
   MaskedPotato,
@@ -61,7 +62,8 @@ export const Axe: WeaponEquipment = {
     AngryEye,
     BlankEye,
     WickedEye,
-    ClearFeather
+    ClearFeather,
+    DragonsBreath
   ],
   relatedCards: () => [GodOfWar, Wanderer]
 }

@@ -1,3 +1,4 @@
+import { AromaOil } from 'model/Items'
 import { Hide, Material } from 'model/Materials'
 
 export const AnimalHide: Material = {
@@ -27,5 +28,6 @@ export const AnimalHide: Material = {
     jinn: 7,
     undine: 7
   },
-  priceCoefficient: 90
+  priceCoefficient: 90,
+  relatedItems: () => [AromaOil]
 }

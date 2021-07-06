@@ -20,7 +20,7 @@ function activateDiceberry(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (jinn >= 3 && total >= 5) {
-    project.mysticPowers.prehidden = WindGod
+    project.cards.pending = WindGod
   }
 
   incrementStat(project, Luck)

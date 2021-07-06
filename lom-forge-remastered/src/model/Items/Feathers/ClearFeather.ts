@@ -27,6 +27,6 @@ function activateClearFeather(project: TemperingProject) {
   }
 
   if (gnome === 0 && jinn >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = LordOfFlies
+    project.cards.pending = LordOfFlies
   }
 }

@@ -23,6 +23,6 @@ function activateOrangeOpus(project: TemperingProject) {
   incrementStat(project, Defense)
 
   if (sala === 0 && gnome >= 5 && energy >= 8) {
-    project.mysticPowers.prehidden = Leviathan
+    project.cards.pending = Leviathan
   }
 }

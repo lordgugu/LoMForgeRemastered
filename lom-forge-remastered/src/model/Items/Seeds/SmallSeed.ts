@@ -19,6 +19,6 @@ function activateSmallSeed(project: TemperingProject) {
   const { energy } = project
 
   if (energy >= 8) {
-    project.mysticPowers.prehidden = DryadCard
+    project.cards.pending = DryadCard
   }
 }

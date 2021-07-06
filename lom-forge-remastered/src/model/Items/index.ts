@@ -26,6 +26,7 @@ import {
   Cornflower,
   CreepyEye,
   CrookedSeed,
+  DamselsSigh,
   DangerousEye,
   Dialaurel,
   Diceberry,
@@ -110,7 +111,6 @@ import {
   UndineGold,
   UndineSilver,
   VampireFang,
-  VirginsSigh,
   WadOfWool,
   WaterStone,
   Whalamato,
@@ -286,7 +286,7 @@ export const AllItems: { readonly [key: string]: Item } = {
   '98': StinkyBreath,
   '99': GhostsHowl,
   '100': DragonsBreath,
-  '101': VirginsSigh,
+  '101': DamselsSigh,
 
   // Urns
   '102': Electricity,

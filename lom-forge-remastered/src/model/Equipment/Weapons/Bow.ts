@@ -6,6 +6,7 @@ import {
   BlankEye,
   Citrisquid,
   ClearFeather,
+  DragonsBreath,
   GiantsHorn,
   GoldClover,
   MaskedPotato,
@@ -75,7 +76,8 @@ export const Bow: WeaponEquipment = {
     AngryEye,
     BlankEye,
     WickedEye,
-    ClearFeather
+    ClearFeather,
+    DragonsBreath
   ],
   relatedCards: () => [Raven, Witch, Wolf, Sage, SunGod, SpiritOfForest, MoonGoddess]
 }
@@ -87,7 +89,7 @@ export const Bow: WeaponEquipment = {
  * @param project tempering project
  */
 function activateBow(project: WeaponProject) {
-  const { top, middle, bottom } = project.mysticPowers
+  const { top, middle, bottom } = project.cards
 
   let witch = false
   let raven = false

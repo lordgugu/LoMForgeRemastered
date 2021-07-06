@@ -27,6 +27,6 @@ function activateNeedlettuce(project: TemperingProject) {
   }
 
   if (sala === 0 && dryad > 0 && energy >= 8) {
-    project.mysticPowers.prehidden = BedOfThorn
+    project.cards.pending = BedOfThorn
   }
 }

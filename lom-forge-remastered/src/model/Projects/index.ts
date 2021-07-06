@@ -1,4 +1,4 @@
-import { Card, MysticPowerSlot, World } from 'model/Cards'
+import { Card, CardSlot, World } from 'model/Cards'
 import { ArmorAttributes, ArmorEquipment, MasterMoveSlot, WeaponAttributes, WeaponEquipment } from 'model/Equipment'
 import { Essences } from 'model/Essences'
 import { Immunities } from 'model/Immunities'
@@ -12,8 +12,8 @@ type Project = Stats &
   Essences & {
     material: Material
     sticky: boolean
-    mysticPowers: { [key in MysticPowerSlot]?: Card }
-    activeWorldCard?: Card
+    cards: { [slot in CardSlot]?: Card }
+    worldCard?: Card
     price: number
   }
 
@@ -39,8 +39,8 @@ export type ArmorProject = Project &
 export type TemperingProject = WeaponProject | ArmorProject
 
 function resetVolatileMysticPowers(project: Project) {
-  project.mysticPowers.hidden = undefined
-  project.mysticPowers.leaving = undefined
+  project.cards.hidden = undefined
+  project.cards.leaving = undefined
   project.sticky = true
 }
 
@@ -71,9 +71,9 @@ function activateEquipment(project: TemperingProject) {
 }
 
 function setActiveWorldCard(project: TemperingProject) {
-  const { bottom, middle, top, hidden } = project.mysticPowers
+  const { bottom, middle, top, hidden } = project.cards
 
-  project.activeWorldCard = Array.of(bottom, middle, top, hidden).find((slot) => slot?.category === World)
+  project.worldCard = Array.of(bottom, middle, top, hidden).find((slot) => slot?.category === World)
 }
 
 function activateMaterial(project: TemperingProject) {
