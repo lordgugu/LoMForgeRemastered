@@ -97,7 +97,7 @@ export function decreaseEssence(essences: Essences, essence: Essence): void {
   }
 }
 
-export function consumeRemainingEnergy(essences: Essences): void {
+export function increaseRemainingEssences(essences: Essences): void {
   Array.of(Dryad, Aura, Salamander, Gnome, Jinn, Undine).forEach((essence) => {
     while (essences.potential[essence] > 0) {
       essences.potential[essence]--
