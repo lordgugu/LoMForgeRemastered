@@ -1,10 +1,27 @@
-import { Card, Element } from 'model/Cards'
-import { EarthStone, GnomeGold, GnomeSilver } from 'model/Items'
+import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { Gnome as GnomeEssence, taint } from 'model/Essences'
+import { GnomeGold, GnomeSilver } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { Defense, incrementStat } from 'model/Stats'
 
 export const Gnome: Card = {
   id: 'Gnome',
   name: 'Gnome',
   category: Element,
   price: 250,
-  relatedItems: () => [GnomeGold, GnomeSilver, EarthStone]
+  activate: activateGnome,
+  relatedItems: () => [GnomeGold, GnomeSilver],
+  relatedStats: () => [Defense],
+  relatedEssences: () => [GnomeEssence]
+}
+
+function activateGnome(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      incrementStat(project, Defense)
+      taint(project, GnomeEssence)
+      break
+  }
 }

@@ -1,30 +1,27 @@
-import { Card, Element } from 'model/Cards'
-import {
-  BigSeed,
-  CrookedSeed,
-  DryadGold,
-  DryadSilver,
-  FlatSeed,
-  LongSeed,
-  OblongSeed,
-  RoundSeed,
-  SmallSeed
-} from 'model/Items'
+import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { Dryad as DryadEssence, taint } from 'model/Essences'
+import { DryadGold, DryadSilver } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { HP, incrementStat } from 'model/Stats'
 
 export const Dryad: Card = {
   id: 'Dryad',
   name: 'Dryad',
   category: Element,
   price: 250,
-  relatedItems: () => [
-    DryadGold,
-    DryadSilver,
-    RoundSeed,
-    OblongSeed,
-    CrookedSeed,
-    BigSeed,
-    SmallSeed,
-    LongSeed,
-    FlatSeed
-  ]
+  activate: activateDryad,
+  relatedItems: () => [DryadGold, DryadSilver],
+  relatedStats: () => [HP],
+  relatedEssences: () => [DryadEssence]
+}
+
+function activateDryad(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      incrementStat(project, HP)
+      taint(project, DryadEssence)
+      break
+  }
 }
