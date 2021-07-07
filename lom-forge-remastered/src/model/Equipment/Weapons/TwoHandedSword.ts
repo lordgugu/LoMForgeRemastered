@@ -1,26 +1,5 @@
-import { Clown, FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
+import { FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import {
-  AngryEye,
-  Apricat,
-  BlankEye,
-  Citrisquid,
-  ClearFeather,
-  DragonsBreath,
-  GiantsHorn,
-  GoldClover,
-  MaskedPotato,
-  Needlettuce,
-  PeachPuppy,
-  PoisonFang,
-  Rhinoloupe,
-  Scissors,
-  SharpClaw,
-  SillyEye,
-  SpadeBasil,
-  SpinyCarrot,
-  WickedEye
-} from 'model/Items'
 import { ChaoticAvenger, Jump, Ragnarok, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const TwoHandedSword: WeaponEquipment = {
@@ -44,26 +23,5 @@ export const TwoHandedSword: WeaponEquipment = {
     middle: () => [Uppercut],
     bottom: () => [Jump, Ragnarok]
   },
-  relatedItems: () => [
-    Apricat,
-    Citrisquid,
-    PeachPuppy,
-    Rhinoloupe,
-    SpinyCarrot,
-    Needlettuce,
-    MaskedPotato,
-    SpadeBasil,
-    GoldClover,
-    SharpClaw,
-    PoisonFang,
-    GiantsHorn,
-    Scissors,
-    SillyEye,
-    AngryEye,
-    BlankEye,
-    WickedEye,
-    ClearFeather,
-    DragonsBreath
-  ],
-  relatedCards: () => [FallenAngel, RagnarokCard, Clown]
+  relatedCards: () => [FallenAngel, RagnarokCard]
 }

@@ -1,5 +1,5 @@
 import { WisdomGoddess } from 'model/Cards'
-import { AllArmors, Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
+import { Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
 import { totalLevels } from 'model/Essences'
 import { Bottles, Item } from 'model/Items'
 import { AnimalHide, CentaurHide, DragonSkin, GatorSkin, Hide } from 'model/Materials'
@@ -13,7 +13,7 @@ export const AromaOil: Item = {
   activate: activateAromaOil,
   relatedCards: () => [WisdomGoddess],
   relatedMaterials: () => [AnimalHide, GatorSkin, CentaurHide, DragonSkin],
-  relatedArmors: () => AllArmors
+  relatedArmorAttributes: () => [Strike, Slash, Pierce]
 }
 
 function activateAromaOil(project: TemperingProject) {

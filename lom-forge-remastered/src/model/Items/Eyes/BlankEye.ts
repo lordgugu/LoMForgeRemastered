@@ -1,5 +1,5 @@
 import { PixieOfEnvy } from 'model/Cards'
-import { AllWeapons, plus25Percent, Tech } from 'model/Equipment'
+import { plus25Percent, Tech } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -10,7 +10,7 @@ export const BlankEye: Item = {
   energy: 32,
   activate: activateBlankEye,
   relatedCards: () => [PixieOfEnvy],
-  relatedWeapons: () => AllWeapons
+  relatedWeaponAttributes: () => [Tech]
 }
 
 function activateBlankEye(project: TemperingProject) {

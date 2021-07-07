@@ -1,15 +1,5 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import {
-  AllArmors,
-  AllWeapons,
-  Heavy,
-  Knife,
-  minus50Percent,
-  Pierce,
-  plus50Percent,
-  Sharp,
-  Strike
-} from 'model/Equipment'
+import { Heavy, Knife, minus50Percent, Pierce, plus50Percent, Sharp, Strike } from 'model/Equipment'
 import { Bumpkin } from 'model/Items'
 import { QuickBlade } from 'model/MasterMoves'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
@@ -24,8 +14,9 @@ export const Clown: ActiveCard = {
   relatedItems: () => [Bumpkin],
   relatedCards: () => [Metropolis],
   relatedStatRanges: () => AllStats,
-  relatedWeapons: () => AllWeapons,
-  relatedArmors: () => AllArmors,
+  relatedWeapons: () => [Knife],
+  relatedWeaponAttributes: () => [Sharp, Heavy],
+  relatedArmorAttributes: () => [Pierce, Strike],
   relatedMasterMoves: {
     middle: () => [QuickBlade]
   }

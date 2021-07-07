@@ -1,17 +1,6 @@
-import { Clown } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Poison, Sleep } from 'model/Immunities'
-import {
-  AromaOil,
-  Citrisquid,
-  CreepyEye,
-  DangerousEye,
-  LittleEye,
-  MothWing,
-  PineOClock,
-  SleepyEye,
-  StinkyBreath
-} from 'model/Items'
+import { Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 
 export const Hauberk: ArmorEquipment = {
   id: 'Hauberk',
@@ -24,17 +13,6 @@ export const Hauberk: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 60,
-  relatedItems: () => [
-    Citrisquid,
-    PineOClock,
-    LittleEye,
-    SleepyEye,
-    DangerousEye,
-    CreepyEye,
-    MothWing,
-    AromaOil,
-    StinkyBreath
-  ],
-  relatedImmunities: () => [Poison, Sleep, Confusion],
-  relatedCards: () => [Clown]
+  relatedItems: () => [Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath],
+  relatedImmunities: () => [Poison, Sleep, Confusion]
 }

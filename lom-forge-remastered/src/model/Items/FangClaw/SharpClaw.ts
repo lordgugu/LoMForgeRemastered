@@ -1,5 +1,5 @@
 import { GodOfDestruction } from 'model/Cards'
-import { AllWeapons, Heavy, minus50Percent, plus50Percent, Sharp } from 'model/Equipment'
+import { Heavy, minus50Percent, plus50Percent, Sharp } from 'model/Equipment'
 import { Salamander, Undine } from 'model/Essences'
 import { FangClaw, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -11,7 +11,7 @@ export const SharpClaw: Item = {
   energy: 24,
   activate: activateSharpClaw,
   relatedCards: () => [GodOfDestruction],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Sharp, Heavy],
   relatedEssences: () => [Salamander, Undine]
 }
 

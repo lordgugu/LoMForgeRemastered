@@ -1,4 +1,4 @@
-import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
+import { Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -8,7 +8,7 @@ export const MaskedPotato: Item = {
   category: Produce,
   energy: 24,
   activate: activateMaskedPotato,
-  relatedWeapons: () => AllWeapons
+  relatedWeaponAttributes: () => [Sharp, Heavy]
 }
 
 function activateMaskedPotato(project: TemperingProject) {

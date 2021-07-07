@@ -1,7 +1,7 @@
 import { Wolf } from 'model/Cards'
-import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
+import { Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const PeachPuppy: Item = {
   id: 'PeachPuppy',
@@ -10,7 +10,7 @@ export const PeachPuppy: Item = {
   energy: 24,
   activate: activatePeachPuppy,
   relatedCards: () => [Wolf],
-  relatedWeapons: () => AllWeapons
+  relatedWeaponAttributes: () => [Sharp, Heavy]
 }
 
 function activatePeachPuppy(project: TemperingProject) {

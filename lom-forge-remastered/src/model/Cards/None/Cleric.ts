@@ -1,15 +1,5 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import {
-  AllArmors,
-  AllWeapons,
-  Heavy,
-  minus50Percent,
-  plus50Percent,
-  Sharp,
-  Slash,
-  Staff,
-  Strike
-} from 'model/Equipment'
+import { Heavy, minus50Percent, plus50Percent, Sharp, Slash, Staff, Strike } from 'model/Equipment'
 import { HolyWater } from 'model/Items'
 import { Demonicide } from 'model/MasterMoves'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
@@ -25,8 +15,9 @@ export const Cleric: ActiveCard = {
   relatedCards: () => [Metropolis],
   relatedStats: () => [Magic, Charm, Spirit],
   relatedStatRanges: () => AllStats,
-  relatedWeapons: () => AllWeapons,
-  relatedArmors: () => AllArmors,
+  relatedWeapons: () => [Staff],
+  relatedWeaponAttributes: () => [Sharp, Heavy],
+  relatedArmorAttributes: () => [Slash, Strike],
   relatedMasterMoves: {
     middle: () => [Demonicide]
   }

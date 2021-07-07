@@ -1,4 +1,4 @@
-import { AllWeapons, Force, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
+import { Force, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
 import { FangClaw, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -8,7 +8,7 @@ export const Scissors: Item = {
   category: FangClaw,
   energy: 16,
   activate: activateScissors,
-  relatedWeapons: () => AllWeapons
+  relatedWeaponAttributes: () => [Force, Tech]
 }
 
 function activateScissors(project: TemperingProject) {

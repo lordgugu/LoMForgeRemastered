@@ -1,26 +1,5 @@
 import { BeastHeadedGod, Clown, LordOfFlies } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import {
-  AngryEye,
-  Apricat,
-  BlankEye,
-  Citrisquid,
-  ClearFeather,
-  DragonsBreath,
-  GiantsHorn,
-  GoldClover,
-  MaskedPotato,
-  Needlettuce,
-  PeachPuppy,
-  PoisonFang,
-  Rhinoloupe,
-  Scissors,
-  SharpClaw,
-  SillyEye,
-  SpadeBasil,
-  SpinyCarrot,
-  WickedEye
-} from 'model/Items'
 import { Jump, PoisonBlade, QuickBlade, SinisterBlade, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Knife: WeaponEquipment = {
@@ -44,26 +23,5 @@ export const Knife: WeaponEquipment = {
     middle: () => [Uppercut, PoisonBlade, QuickBlade],
     bottom: () => [Jump, SinisterBlade]
   },
-  relatedItems: () => [
-    Apricat,
-    Citrisquid,
-    PeachPuppy,
-    Rhinoloupe,
-    SpinyCarrot,
-    Needlettuce,
-    MaskedPotato,
-    SpadeBasil,
-    GoldClover,
-    SharpClaw,
-    PoisonFang,
-    GiantsHorn,
-    Scissors,
-    SillyEye,
-    AngryEye,
-    BlankEye,
-    WickedEye,
-    ClearFeather,
-    DragonsBreath
-  ],
   relatedCards: () => [BeastHeadedGod, Clown, LordOfFlies]
 }

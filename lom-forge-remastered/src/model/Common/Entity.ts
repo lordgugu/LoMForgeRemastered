@@ -1,5 +1,5 @@
 import { Card } from 'model/Cards'
-import { ArmorEquipment, MasterMoveSlot, WeaponEquipment } from 'model/Equipment'
+import { ArmorAttribute, ArmorEquipment, MasterMoveSlot, WeaponAttribute, WeaponEquipment } from 'model/Equipment'
 import { Essence } from 'model/Essences'
 import { Immunity } from 'model/Immunities'
 import { Item } from 'model/Items'
@@ -22,7 +22,9 @@ type ID = Name & {
 type RelatedEntities = {
   readonly relatedCards?: () => Card[]
   readonly relatedWeapons?: () => WeaponEquipment[]
+  readonly relatedWeaponAttributes?: () => WeaponAttribute[]
   readonly relatedArmors?: () => ArmorEquipment[]
+  readonly relatedArmorAttributes?: () => ArmorAttribute[]
   readonly relatedEssences?: () => Essence[]
   readonly relatedImmunities?: () => Immunity[]
   readonly relatedItems?: () => Item[]

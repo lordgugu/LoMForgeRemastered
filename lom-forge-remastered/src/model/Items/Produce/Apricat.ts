@@ -1,4 +1,4 @@
-import { AllWeapons, Force, minus25Percent, plus25Percent, Tech } from 'model/Equipment'
+import { Force, minus25Percent, plus25Percent, Tech } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -8,7 +8,7 @@ export const Apricat: Item = {
   category: Produce,
   energy: 8,
   activate: activateApricat,
-  relatedWeapons: () => AllWeapons
+  relatedWeaponAttributes: () => [Force, Tech]
 }
 
 function activateApricat(project: TemperingProject) {

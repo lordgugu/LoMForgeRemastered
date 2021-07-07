@@ -1,5 +1,5 @@
 import { PixieOfPride } from 'model/Cards'
-import { AllArmors, plus25Percent, Slash } from 'model/Equipment'
+import { plus25Percent, Slash } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -10,7 +10,7 @@ export const LittleEye: Item = {
   energy: 32,
   activate: activateLittleEye,
   relatedCards: () => [PixieOfPride],
-  relatedArmors: () => AllArmors
+  relatedArmorAttributes: () => [Slash]
 }
 
 function activateLittleEye(project: TemperingProject) {

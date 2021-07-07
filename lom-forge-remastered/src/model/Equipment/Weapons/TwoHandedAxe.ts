@@ -1,26 +1,5 @@
-import { Clown, Leviathan } from 'model/Cards'
+import { Leviathan } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import {
-  AngryEye,
-  Apricat,
-  BlankEye,
-  Citrisquid,
-  ClearFeather,
-  DragonsBreath,
-  GiantsHorn,
-  GoldClover,
-  MaskedPotato,
-  Needlettuce,
-  PeachPuppy,
-  PoisonFang,
-  Rhinoloupe,
-  Scissors,
-  SharpClaw,
-  SillyEye,
-  SpadeBasil,
-  SpinyCarrot,
-  WickedEye
-} from 'model/Items'
 import { Jump, Thrust, Treefeller, Uppercut } from 'model/MasterMoves'
 
 export const TwoHandedAxe: WeaponEquipment = {
@@ -44,26 +23,5 @@ export const TwoHandedAxe: WeaponEquipment = {
     middle: () => [Uppercut],
     bottom: () => [Jump, Treefeller]
   },
-  relatedItems: () => [
-    Apricat,
-    Citrisquid,
-    PeachPuppy,
-    Rhinoloupe,
-    SpinyCarrot,
-    Needlettuce,
-    MaskedPotato,
-    SpadeBasil,
-    GoldClover,
-    SharpClaw,
-    PoisonFang,
-    GiantsHorn,
-    Scissors,
-    SillyEye,
-    AngryEye,
-    BlankEye,
-    WickedEye,
-    ClearFeather,
-    DragonsBreath
-  ],
-  relatedCards: () => [Leviathan, Clown]
+  relatedCards: () => [Leviathan]
 }

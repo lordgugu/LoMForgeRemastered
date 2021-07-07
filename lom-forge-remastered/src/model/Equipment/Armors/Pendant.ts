@@ -1,20 +1,9 @@
-import { Clown, Phoenix } from 'model/Cards'
+import { Phoenix } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Darkness, Paralysis, Poison, Sleep } from 'model/Immunities'
-import {
-  AromaOil,
-  BlackenedBat,
-  Citrisquid,
-  CreepyEye,
-  DangerousEye,
-  LittleEye,
-  MothWing,
-  PineOClock,
-  SleepyEye,
-  StinkyBreath
-} from 'model/Items'
+import { BlackenedBat, PineOClock, Rhinoloupe, StinkyBreath, ZombieClaw } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
-import { AutoRevive } from 'model/Specials'
+import { AutoRevive, ExtraLucre, FastRevive } from 'model/Specials'
 
 export const Pendant: ArmorEquipment = {
   id: 'Pendant',
@@ -28,21 +17,10 @@ export const Pendant: ArmorEquipment = {
   markerThreshold: 1,
   priceCoefficient: 5,
   activate: activatePendant,
-  relatedSpecials: () => [AutoRevive],
-  relatedItems: () => [
-    Citrisquid,
-    PineOClock,
-    LittleEye,
-    SleepyEye,
-    DangerousEye,
-    CreepyEye,
-    MothWing,
-    AromaOil,
-    StinkyBreath,
-    BlackenedBat
-  ],
+  relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive],
+  relatedItems: () => [PineOClock, ZombieClaw, Rhinoloupe, StinkyBreath, BlackenedBat],
   relatedImmunities: () => [Poison, Sleep, Paralysis, Confusion, Darkness],
-  relatedCards: () => [Phoenix, Clown]
+  relatedCards: () => [Phoenix]
 }
 
 /**

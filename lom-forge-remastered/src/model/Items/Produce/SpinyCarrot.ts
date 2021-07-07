@@ -1,4 +1,4 @@
-import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
+import { Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { taint, Undine } from 'model/Essences'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -9,7 +9,7 @@ export const SpinyCarrot: Item = {
   category: Produce,
   energy: 8,
   activate: activateSpinyCarrot,
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Sharp, Heavy],
   relatedEssences: () => [Undine]
 }
 

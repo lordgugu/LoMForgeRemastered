@@ -1,5 +1,5 @@
 import { BeastHeadedGod } from 'model/Cards'
-import { AllWeapons, Force, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
+import { Force, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
 import { Aura, Dryad } from 'model/Essences'
 import { FangClaw, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -11,7 +11,7 @@ export const PoisonFang: Item = {
   energy: 8,
   activate: activatePoisonFang,
   relatedCards: () => [BeastHeadedGod],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Force, Tech],
   relatedEssences: () => [Dryad, Aura]
 }
 

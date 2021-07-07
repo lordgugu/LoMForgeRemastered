@@ -1,26 +1,5 @@
-import { Cleric, Clown, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
+import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import {
-  AngryEye,
-  Apricat,
-  BlankEye,
-  Citrisquid,
-  ClearFeather,
-  DragonsBreath,
-  GiantsHorn,
-  GoldClover,
-  MaskedPotato,
-  Needlettuce,
-  PeachPuppy,
-  PoisonFang,
-  Rhinoloupe,
-  Scissors,
-  SharpClaw,
-  SillyEye,
-  SpadeBasil,
-  SpinyCarrot,
-  WickedEye
-} from 'model/Items'
 import { Caduceus, Demonicide, Electrosceptre, GoldenTouch, Jump, Thrust, Uppercut } from 'model/MasterMoves'
 
 export const Staff: WeaponEquipment = {
@@ -44,26 +23,5 @@ export const Staff: WeaponEquipment = {
     middle: () => [Uppercut],
     bottom: () => [Jump, Demonicide, Electrosceptre, GoldenTouch]
   },
-  relatedItems: () => [
-    Apricat,
-    Citrisquid,
-    PeachPuppy,
-    Rhinoloupe,
-    SpinyCarrot,
-    Needlettuce,
-    MaskedPotato,
-    SpadeBasil,
-    GoldClover,
-    SharpClaw,
-    PoisonFang,
-    GiantsHorn,
-    Scissors,
-    SillyEye,
-    AngryEye,
-    BlankEye,
-    WickedEye,
-    ClearFeather,
-    DragonsBreath
-  ],
-  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness, Clown]
+  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness]
 }

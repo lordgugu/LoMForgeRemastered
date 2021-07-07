@@ -1,5 +1,5 @@
 import { SpiritOfForest } from 'model/Cards'
-import { AllArmors, Magic, minus25Percent, Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
+import { Magic, minus25Percent, Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
 import { Feathers, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -10,7 +10,7 @@ export const MothWing: Item = {
   energy: 32,
   activate: activateMothWing,
   relatedCards: () => [SpiritOfForest],
-  relatedArmors: () => AllArmors
+  relatedArmorAttributes: () => [Strike, Slash, Pierce, Magic]
 }
 
 function activateMothWing(project: TemperingProject) {

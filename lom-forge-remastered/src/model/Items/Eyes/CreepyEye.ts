@@ -1,8 +1,7 @@
 import { PixieOfLust } from 'model/Cards'
-import { plus25Percent } from 'model/Common'
-import { AllArmors } from 'model/Equipment'
+import { Magic, plus25Percent } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const CreepyEye: Item = {
   id: 'CreepyEye',
@@ -11,16 +10,13 @@ export const CreepyEye: Item = {
   energy: 32,
   activate: activateCreepyEye,
   relatedCards: () => [PixieOfLust],
-  relatedArmors: () => AllArmors
+  relatedArmorAttributes: () => [Magic]
 }
 
 function activateCreepyEye(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === ArmorProjectType) {
-    const { magic } = project.attributes
-    project.attributes.magic = plus25Percent(magic)
-  }
+  plus25Percent(project, Magic)
 
   if (energy >= 4) {
     project.cards.pending = PixieOfLust

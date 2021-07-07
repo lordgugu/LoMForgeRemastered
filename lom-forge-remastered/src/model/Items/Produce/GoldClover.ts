@@ -1,4 +1,4 @@
-import { AllWeapons, Heavy, plus25Percent } from 'model/Equipment'
+import { Heavy, plus25Percent } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -8,7 +8,7 @@ export const GoldClover: Item = {
   category: Produce,
   energy: 64,
   activate: activateGoldClover,
-  relatedWeapons: () => AllWeapons
+  relatedWeaponAttributes: () => [Heavy]
 }
 
 function activateGoldClover(project: TemperingProject) {

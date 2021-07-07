@@ -1,4 +1,4 @@
-import { AllArmors, AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp, Slash, Strike } from 'model/Equipment'
+import { Heavy, minus25Percent, plus25Percent, Sharp, Slash, Strike } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -8,8 +8,8 @@ export const Citrisquid: Item = {
   category: Produce,
   energy: 8,
   activate: activateCitrisquid,
-  relatedWeapons: () => AllWeapons,
-  relatedArmors: () => AllArmors
+  relatedWeaponAttributes: () => [Sharp, Heavy],
+  relatedArmorAttributes: () => [Slash, Strike]
 }
 
 function activateCitrisquid(project: TemperingProject) {

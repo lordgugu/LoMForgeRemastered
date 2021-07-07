@@ -1,20 +1,9 @@
-import { Clown, Phoenix } from 'model/Cards'
+import { Phoenix } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Poison, Sleep } from 'model/Immunities'
-import {
-  AromaOil,
-  CherryBombs,
-  Citrisquid,
-  CreepyEye,
-  DangerousEye,
-  LittleEye,
-  MothWing,
-  PineOClock,
-  SleepyEye,
-  StinkyBreath
-} from 'model/Items'
+import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
-import { AutoRevive } from 'model/Specials'
+import { AutoRevive, ExtraLucre, FastRevive, ShareExperience } from 'model/Specials'
 
 export const Ring: ArmorEquipment = {
   id: 'Ring',
@@ -28,21 +17,10 @@ export const Ring: ArmorEquipment = {
   markerThreshold: 1,
   priceCoefficient: 5,
   activate: activateRing,
-  relatedSpecials: () => [AutoRevive],
-  relatedItems: () => [
-    Citrisquid,
-    PineOClock,
-    CherryBombs,
-    LittleEye,
-    SleepyEye,
-    DangerousEye,
-    CreepyEye,
-    MothWing,
-    AromaOil,
-    StinkyBreath
-  ],
+  relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive, ShareExperience],
+  relatedItems: () => [PineOClock, CherryBombs, Rhinoloupe, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion],
-  relatedCards: () => [Phoenix, Clown]
+  relatedCards: () => [Phoenix]
 }
 
 /**

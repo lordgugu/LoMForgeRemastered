@@ -1,5 +1,5 @@
 import { BedOfThorn } from 'model/Cards'
-import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
+import { Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { Dryad, Salamander } from 'model/Essences'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -11,7 +11,7 @@ export const Needlettuce: Item = {
   energy: 24,
   activate: activateNeedlettuce,
   relatedCards: () => [BedOfThorn],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Sharp, Heavy],
   relatedEssences: () => [Dryad, Salamander]
 }
 

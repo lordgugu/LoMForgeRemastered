@@ -1,19 +1,6 @@
-import { Clown } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Darkness, Poison, Sleep } from 'model/Immunities'
-import {
-  AromaOil,
-  Citrisquid,
-  CreepyEye,
-  DangerousEye,
-  LittleEye,
-  Moss,
-  MothWing,
-  PineOClock,
-  SleepyEye,
-  StinkyBreath,
-  SweetMoai
-} from 'model/Items'
+import { Moss, PineOClock, Rhinoloupe, StinkyBreath, SweetMoai } from 'model/Items'
 
 export const Helm: ArmorEquipment = {
   id: 'Helm',
@@ -26,19 +13,6 @@ export const Helm: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 25,
-  relatedItems: () => [
-    Citrisquid,
-    PineOClock,
-    SweetMoai,
-    LittleEye,
-    SleepyEye,
-    DangerousEye,
-    CreepyEye,
-    MothWing,
-    AromaOil,
-    StinkyBreath,
-    Moss
-  ],
-  relatedImmunities: () => [Poison, Sleep, Confusion, Darkness],
-  relatedCards: () => [Clown]
+  relatedItems: () => [PineOClock, SweetMoai, StinkyBreath, Moss, Rhinoloupe],
+  relatedImmunities: () => [Poison, Sleep, Confusion, Darkness]
 }

@@ -1,5 +1,5 @@
 import { LordOfFlies } from 'model/Cards'
-import { AllWeapons, Heavy, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
+import { Heavy, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
 import { Gnome, Jinn } from 'model/Essences'
 import { Feathers, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -11,7 +11,7 @@ export const ClearFeather: Item = {
   energy: 24,
   activate: activateClearFeather,
   relatedCards: () => [LordOfFlies],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Heavy, Tech],
   relatedEssences: () => [Gnome, Jinn]
 }
 

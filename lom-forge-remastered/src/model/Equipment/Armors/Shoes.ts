@@ -1,19 +1,7 @@
-import { Clown } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Poison, Sleep } from 'model/Immunities'
-import {
-  AromaOil,
-  Citrisquid,
-  CreepyEye,
-  DangerousEye,
-  LittleEye,
-  LoquatShoe,
-  MothWing,
-  PearOHeels,
-  PineOClock,
-  SleepyEye,
-  StinkyBreath
-} from 'model/Items'
+import { LoquatShoe, PearOHeels, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
+import { ExtraExperience } from 'model/Specials'
 
 export const Shoes: ArmorEquipment = {
   id: 'Shoes',
@@ -26,19 +14,7 @@ export const Shoes: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 10,
-  relatedItems: () => [
-    LoquatShoe,
-    PearOHeels,
-    Citrisquid,
-    PineOClock,
-    LittleEye,
-    SleepyEye,
-    DangerousEye,
-    CreepyEye,
-    MothWing,
-    AromaOil,
-    StinkyBreath
-  ],
-  relatedImmunities: () => [Poison, Sleep, Confusion],
-  relatedCards: () => [Clown]
+  relatedSpecials: () => [ExtraExperience],
+  relatedItems: () => [LoquatShoe, PearOHeels, PineOClock, Rhinoloupe, StinkyBreath],
+  relatedImmunities: () => [Poison, Sleep, Confusion]
 }

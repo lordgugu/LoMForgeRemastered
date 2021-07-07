@@ -1,5 +1,5 @@
 import { ManOfValor } from 'model/Cards'
-import { AllWeapons, Force, plus25Percent, Tech } from 'model/Equipment'
+import { Force, plus25Percent, Tech } from 'model/Equipment'
 import { Salamander, totalLevels, Wisp } from 'model/Essences'
 import { Item, Vials } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -11,7 +11,7 @@ export const DragonsBreath: Item = {
   energy: 24,
   activate: activateDragonsBreath,
   relatedCards: () => [ManOfValor],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Force, Tech],
   relatedEssences: () => [Wisp, Salamander]
 }
 

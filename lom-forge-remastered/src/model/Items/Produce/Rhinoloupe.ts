@@ -1,4 +1,4 @@
-import { AllArmors, AllWeapons, plus25Percent, Sharp } from 'model/Equipment'
+import { AllArmors, plus25Percent, Sharp } from 'model/Equipment'
 import { Poison, setImmunities } from 'model/Immunities'
 import { Item, Produce } from 'model/Items'
 import { ArmorProjectType, TemperingProject } from 'model/Projects'
@@ -10,7 +10,7 @@ export const Rhinoloupe: Item = {
   energy: 32,
   activate: activateRhinoloupe,
   relatedImmunities: () => [Poison],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Sharp],
   relatedArmors: () => AllArmors
 }
 

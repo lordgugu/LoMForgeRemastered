@@ -2,7 +2,7 @@ import { Hauberk, Magic, minus25Percent, Pierce, plus25Percent, Slash, Strike } 
 import { Item, Produce } from 'model/Items'
 import { ArmorProjectType, TemperingProject } from 'model/Projects'
 
-export const Cabadillo: Item = {
+export const Cabbadillo: Item = {
   id: 'Cabbadillo',
   name: 'Cabbadillo',
   category: Produce,

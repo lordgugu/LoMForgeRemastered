@@ -1,5 +1,5 @@
 import { RulerOfTheSky } from 'model/Cards'
-import { AllWeapons, plus25Percent, Sharp } from 'model/Equipment'
+import { plus25Percent, Sharp } from 'model/Equipment'
 import { totalLevels, Wisp } from 'model/Essences'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
@@ -11,7 +11,7 @@ export const SpadeBasil: Item = {
   energy: 16,
   activate: activateSpadeBasil,
   relatedCards: () => [RulerOfTheSky],
-  relatedWeapons: () => AllWeapons,
+  relatedWeaponAttributes: () => [Sharp],
   relatedEssences: () => [Wisp]
 }
 

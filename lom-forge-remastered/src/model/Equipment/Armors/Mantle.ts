@@ -1,17 +1,7 @@
-import { Clown } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Poison, Sleep } from 'model/Immunities'
-import {
-  AromaOil,
-  Citrisquid,
-  CreepyEye,
-  DangerousEye,
-  LittleEye,
-  MothWing,
-  PineOClock,
-  SleepyEye,
-  StinkyBreath
-} from 'model/Items'
+import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
+import { MoveHpRegeneration } from 'model/Specials'
 
 export const Mantle: ArmorEquipment = {
   id: 'Mantle',
@@ -24,17 +14,7 @@ export const Mantle: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 20,
-  relatedItems: () => [
-    Citrisquid,
-    PineOClock,
-    LittleEye,
-    SleepyEye,
-    DangerousEye,
-    CreepyEye,
-    MothWing,
-    AromaOil,
-    StinkyBreath
-  ],
-  relatedImmunities: () => [Poison, Sleep, Confusion],
-  relatedCards: () => [Clown]
+  relatedSpecials: () => [MoveHpRegeneration],
+  relatedItems: () => [PineOClock, Rhinoloupe, StinkyBreath],
+  relatedImmunities: () => [Poison, Sleep, Confusion]
 }
