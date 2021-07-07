@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Gnome as GnomeEssence, taint } from 'model/Essences'
 import { GnomeGold, GnomeSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { Defense, incrementStat } from 'model/Stats'
 
-export const Gnome: Card = {
+export const Gnome: ActiveCard = {
   id: 'Gnome',
   name: 'Gnome',
   category: Element,

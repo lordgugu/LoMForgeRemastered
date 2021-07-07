@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Dryad as DryadEssence, taint } from 'model/Essences'
 import { DryadGold, DryadSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { HP, incrementStat } from 'model/Stats'
 
-export const Dryad: Card = {
+export const Dryad: ActiveCard = {
   id: 'Dryad',
   name: 'Dryad',
   category: Element,

@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Aura as AuraEssence, taint } from 'model/Essences'
 import { AuraGold, AuraSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Luck } from 'model/Stats'
 
-export const Aura: Card = {
+export const Aura: ActiveCard = {
   id: 'Aura',
   name: 'Aura',
   category: Element,

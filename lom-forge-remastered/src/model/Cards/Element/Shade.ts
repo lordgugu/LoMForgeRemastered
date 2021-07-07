@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Shade as ShadeEssence, taint } from 'model/Essences'
 import { ShadeGold, ShadeSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Spirit } from 'model/Stats'
 
-export const Shade: Card = {
+export const Shade: ActiveCard = {
   id: 'Shade',
   name: 'Shade',
   category: Element,

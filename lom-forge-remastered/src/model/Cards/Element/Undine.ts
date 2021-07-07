@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { taint, Undine as UndineEssence } from 'model/Essences'
 import { UndineGold, UndineSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Magic } from 'model/Stats'
 
-export const Undine: Card = {
+export const Undine: ActiveCard = {
   id: 'Undine',
   name: 'Undine',
   category: Element,

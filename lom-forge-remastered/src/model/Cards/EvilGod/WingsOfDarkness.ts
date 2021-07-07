@@ -1,10 +1,12 @@
-import { Card, EvilGod } from 'model/Cards'
+import { ActiveCard, EvilGod, PixieOfLust, Ragnarok } from 'model/Cards'
 import { BlackenedBat } from 'model/Items'
 
-export const WingsOfDarkness: Card = {
+export const WingsOfDarkness: ActiveCard = {
   id: 'WingsOfDarkness',
   name: 'Wings of Darkness',
   category: EvilGod,
   price: 6660,
-  relatedItems: () => [BlackenedBat]
+  activate: (project, slot) => {},
+  relatedItems: () => [BlackenedBat],
+  relatedCards: () => [PixieOfLust, Ragnarok]
 }

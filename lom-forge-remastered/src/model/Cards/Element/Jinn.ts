@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Jinn as JinnEssence, taint } from 'model/Essences'
 import { JinnGold, JinnSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Skill } from 'model/Stats'
 
-export const Jinn: Card = {
+export const Jinn: ActiveCard = {
   id: 'Jinn',
   name: 'Jinn',
   category: Element,

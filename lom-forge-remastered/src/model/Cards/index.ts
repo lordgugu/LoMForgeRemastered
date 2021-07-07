@@ -32,6 +32,10 @@ export type Card = Entity & {
   readonly activate?: (project: TemperingProject, slot: CardSlot) => void
 }
 
+export type ActiveCard = Card & {
+  readonly activate: (project: TemperingProject, slot: CardSlot) => void
+}
+
 export type CardSlot = 'pending' | 'hidden' | 'top' | 'middle' | 'bottom' | 'leaving'
 export const Pending: CardSlot = 'pending'
 export const Hidden: CardSlot = 'hidden'

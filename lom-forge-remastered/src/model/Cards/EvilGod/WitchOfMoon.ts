@@ -1,10 +1,14 @@
-import { Card, EvilGod } from 'model/Cards'
+import { ActiveCard, EvilGod } from 'model/Cards'
 import { VampireFang } from 'model/Items'
+import { PixieOfSloth } from '../Pixie'
+import { Ragnarok } from '../World'
 
-export const WitchOfMoon: Card = {
+export const WitchOfMoon: ActiveCard = {
   id: 'WitchOfMoon',
   name: 'Witch of Moon',
   category: EvilGod,
   price: 6660,
-  relatedItems: () => [VampireFang]
+  activate: (project, slot) => {},
+  relatedItems: () => [VampireFang],
+  relatedCards: () => [PixieOfSloth, Ragnarok]
 }

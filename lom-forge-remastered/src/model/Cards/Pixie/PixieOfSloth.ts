@@ -1,10 +1,41 @@
-import { Card, Pixie } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Pixie, Ragnarok, Top, WitchOfMoon } from 'model/Cards'
 import { Garlicrown, HolyWater, Rust, SleepyEye } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { AllStats, decrementStat, incrementStat, Magic, widenStatRange } from 'model/Stats'
 
-export const PixieOfSloth: Card = {
+export const PixieOfSloth: ActiveCard = {
   id: 'PixieOfSloth',
   name: 'Pixie (of Sloth)',
   category: Pixie,
   price: 150,
-  relatedItems: () => [Garlicrown, SleepyEye, HolyWater, Rust]
+  activate: activatePixieOfSloth,
+  relatedItems: () => [Garlicrown, SleepyEye, HolyWater, Rust],
+  relatedCards: () => [WitchOfMoon, Ragnarok],
+  relatedStats: () => AllStats
+}
+
+function activatePixieOfSloth(project: TemperingProject, slot: CardSlot) {
+  const { energy, worldCard } = project
+  const card = project.cards[slot]
+
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      if (worldCard === Ragnarok) {
+        if (energy >= 8) {
+          project.cards[slot] = WitchOfMoon
+        }
+
+        WitchOfMoon.activate(project, slot)
+      } else {
+        AllStats.forEach((stat) => {
+          widenStatRange(project, stat, -1, 3)
+          decrementStat(project, stat)
+        })
+
+        incrementStat(project, Magic)
+      }
+      break
+  }
 }

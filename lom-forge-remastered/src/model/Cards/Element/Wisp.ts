@@ -1,10 +1,10 @@
-import { Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { taint, Wisp as WispEssence } from 'model/Essences'
 import { WispGold, WispSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat } from 'model/Stats'
 
-export const Wisp: Card = {
+export const Wisp: ActiveCard = {
   id: 'Wisp',
   name: 'Wisp',
   category: Element,
