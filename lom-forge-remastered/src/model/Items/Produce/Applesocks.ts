@@ -11,7 +11,8 @@ export const Applesocks: Item = {
   energy: 64,
   activate: activateApplesocks,
   relatedCards: () => [NymphOfOrchards],
-  relatedStats: () => [Skill]
+  relatedStats: () => [Skill],
+  relatedStatRanges: () => [Skill]
 }
 
 function activateApplesocks(project: TemperingProject) {

@@ -1,4 +1,4 @@
-import { FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
+import { Clown, FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const TwoHandedSword: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [FallenAngel, RagnarokCard]
+  relatedCards: () => [FallenAngel, RagnarokCard, Clown]
 }

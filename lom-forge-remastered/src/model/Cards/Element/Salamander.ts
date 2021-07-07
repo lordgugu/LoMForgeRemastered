@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Salamander as SalamanderEssence, taint } from 'model/Essences'
-import { SalaGold, SalaSilver } from 'model/Items'
+import { SalamanderGold, SalamanderSilver } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Power } from 'model/Stats'
 
@@ -10,7 +10,7 @@ export const Salamander: ActiveCard = {
   category: Element,
   price: 250,
   activate: activateSalamander,
-  relatedItems: () => [SalaGold, SalaSilver],
+  relatedItems: () => [SalamanderGold, SalamanderSilver],
   relatedStats: () => [Power],
   relatedEssences: () => [SalamanderEssence]
 }

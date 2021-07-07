@@ -8,7 +8,8 @@ export const Bellgrapes: Item = {
   category: Produce,
   energy: 64,
   activate: activateBellgrapes,
-  relatedStats: () => [Magic]
+  relatedStats: () => [Magic],
+  relatedStatRanges: () => [Magic]
 }
 
 function activateBellgrapes(project: TemperingProject) {

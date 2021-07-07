@@ -1,4 +1,4 @@
-import { ManOfValor, OceanGod, RulerOfTheSky } from 'model/Cards'
+import { Clown, ManOfValor, OceanGod, RulerOfTheSky } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Spear: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [RulerOfTheSky, ManOfValor, OceanGod]
+  relatedCards: () => [RulerOfTheSky, ManOfValor, OceanGod, Clown]
 }

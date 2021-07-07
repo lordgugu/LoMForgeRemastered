@@ -1,7 +1,6 @@
-import { plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, plus25Percent, Sharp } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const WickedEye: Item = {
   id: 'WickedEye',
@@ -13,8 +12,5 @@ export const WickedEye: Item = {
 }
 
 function activateWickedEye(project: TemperingProject) {
-  if (project.type === WeaponProjectType) {
-    const { sharp } = project.attributes
-    project.attributes.sharp = plus25Percent(sharp)
-  }
+  plus25Percent(project, Sharp)
 }

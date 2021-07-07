@@ -15,7 +15,7 @@ import {
 
 export function mirroredWorldTaint(essences: Essences, essence: Essence): void {
   const { levels, energy } = essences
-  const { wisp, shade, dryad, aura, sala, gnome, jinn, undine } = levels
+  const { wisp, shade, dryad, aura, salamander, gnome, jinn, undine } = levels
 
   switch (essence) {
     case Wisp:
@@ -78,7 +78,7 @@ export function mirroredWorldTaint(essences: Essences, essence: Essence): void {
         decreaseEssence(essences, Undine)
 
         if (energy >= 8) {
-          essences.potential.sala++
+          essences.potential.salamander++
         }
       }
 
@@ -104,7 +104,7 @@ export function mirroredWorldTaint(essences: Essences, essence: Essence): void {
 
       break
     case Undine:
-      if (sala === 0) {
+      if (salamander === 0) {
         decreaseEssence(essences, Jinn)
 
         if (energy >= 8) {

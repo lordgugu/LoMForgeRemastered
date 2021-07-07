@@ -22,7 +22,7 @@ export const Obsidian: Material = {
     shade: 6,
     dryad: 9,
     aura: 7,
-    sala: 7,
+    salamander: 7,
     gnome: 6,
     jinn: 10,
     undine: 8

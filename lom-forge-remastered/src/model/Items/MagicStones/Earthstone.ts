@@ -3,9 +3,10 @@ import { Gnome, taint } from 'model/Essences'
 import { Item, MagicStones } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
-export const EarthStone: Item = {
-  id: 'EarthStone',
-  name: 'Earth Stone',
+export const Earthstone: Item = {
+  id: 'Earthstone',
+  originalName: 'Earth Stone',
+  remasteredName: 'Earthstone',
   category: MagicStones,
   energy: 24,
   activate: activateEarthStone,

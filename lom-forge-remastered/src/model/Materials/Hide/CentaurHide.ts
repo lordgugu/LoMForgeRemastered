@@ -23,7 +23,7 @@ export const CentaurHide: Material = {
     shade: 8,
     dryad: 9,
     aura: 7,
-    sala: 8,
+    salamander: 8,
     gnome: 7,
     jinn: 8,
     undine: 8

@@ -10,7 +10,7 @@ export const CherryBombs: Item = {
   energy: 16,
   activate: activateCherryBombs,
   relatedArmors: () => [Ring],
-  relatedStats: () => AllStats
+  relatedStatRanges: () => AllStats
 }
 
 function activateCherryBombs(project: TemperingProject) {

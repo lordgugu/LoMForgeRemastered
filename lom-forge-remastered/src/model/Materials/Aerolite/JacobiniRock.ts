@@ -23,7 +23,7 @@ export const JacobiniRock: Material = {
     shade: 8,
     dryad: 10,
     aura: 7,
-    sala: 7,
+    salamander: 7,
     gnome: 8,
     jinn: 9,
     undine: 8

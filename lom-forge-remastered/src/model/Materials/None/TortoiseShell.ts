@@ -22,7 +22,7 @@ export const TortoiseShell: Material = {
     shade: 8,
     dryad: 9,
     aura: 7,
-    sala: 9,
+    salamander: 9,
     gnome: 8,
     jinn: 9,
     undine: 7

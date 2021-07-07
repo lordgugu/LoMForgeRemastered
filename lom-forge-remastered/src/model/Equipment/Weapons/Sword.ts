@@ -1,4 +1,4 @@
-import { GodOfDestruction, MoonGoddess, SunGod, WitchOfMoon } from 'model/Cards'
+import { Clown, GodOfDestruction, MoonGoddess, SunGod, WitchOfMoon } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Sword: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [GodOfDestruction, SunGod, WitchOfMoon, MoonGoddess]
+  relatedCards: () => [GodOfDestruction, SunGod, WitchOfMoon, MoonGoddess, Clown]
 }

@@ -1,9 +1,8 @@
 import { BeastHeadedGod } from 'model/Cards'
-import { minus50Percent, plus50Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Force, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
 import { Aura, Dryad } from 'model/Essences'
 import { FangClaw, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const PoisonFang: Item = {
   id: 'PoisonFang',
@@ -20,11 +19,8 @@ function activatePoisonFang(project: TemperingProject) {
   const { energy } = project
   const { dryad, aura } = project.levels
 
-  if (project.type === WeaponProjectType) {
-    const { force, tech } = project.attributes
-    project.attributes.force = minus50Percent(force)
-    project.attributes.tech = plus50Percent(tech)
-  }
+  minus50Percent(project, Force)
+  plus50Percent(project, Tech)
 
   if (aura === 0 && dryad >= 5 && energy >= 8) {
     project.cards.pending = BeastHeadedGod

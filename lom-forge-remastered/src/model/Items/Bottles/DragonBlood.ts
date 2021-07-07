@@ -17,12 +17,12 @@ export const DragonBlood: Item = {
 
 function activateDragonBlood(project: TemperingProject) {
   const { energy } = project
-  const { sala } = project.levels
+  const { salamander } = project.levels
   const total = totalLevels(project)
 
   AllStats.forEach((stat) => incrementStat(project, stat))
 
-  if (sala >= 3 && total >= 5 && energy >= 8) {
+  if (salamander >= 3 && total >= 5 && energy >= 8) {
     project.cards.pending = GodOfWar
   }
 }

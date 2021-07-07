@@ -1,4 +1,4 @@
-import { GodOfWar, Wanderer } from 'model/Cards'
+import { Clown, GodOfWar, Wanderer } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Axe: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [GodOfWar, Wanderer]
+  relatedCards: () => [GodOfWar, Wanderer, Clown]
 }

@@ -1,7 +1,6 @@
-import { minus50Percent, plus50Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Force, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
 import { FangClaw, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const Scissors: Item = {
   id: 'Scissors',
@@ -13,9 +12,6 @@ export const Scissors: Item = {
 }
 
 function activateScissors(project: TemperingProject) {
-  if (project.type === WeaponProjectType) {
-    const { force, tech } = project.attributes
-    project.attributes.force = plus50Percent(force)
-    project.attributes.tech = minus50Percent(tech)
-  }
+  plus50Percent(project, Force)
+  minus50Percent(project, Tech)
 }

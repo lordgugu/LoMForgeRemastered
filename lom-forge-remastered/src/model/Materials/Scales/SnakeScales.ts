@@ -22,7 +22,7 @@ export const SnakeScales: Material = {
     shade: 7,
     dryad: 8,
     aura: 8,
-    sala: 8,
+    salamander: 8,
     gnome: 7,
     jinn: 8,
     undine: 7

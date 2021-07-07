@@ -1,7 +1,6 @@
-import { plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Heavy, plus25Percent } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const GoldClover: Item = {
   id: 'GoldClover',
@@ -13,8 +12,5 @@ export const GoldClover: Item = {
 }
 
 function activateGoldClover(project: TemperingProject) {
-  if (project.type === WeaponProjectType) {
-    const { heavy } = project.attributes
-    project.attributes.heavy = plus25Percent(heavy)
-  }
+  plus25Percent(project, Heavy)
 }

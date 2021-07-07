@@ -1,9 +1,8 @@
 import { GodOfDestruction } from 'model/Cards'
-import { minus50Percent, plus50Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Heavy, minus50Percent, plus50Percent, Sharp } from 'model/Equipment'
 import { Salamander, Undine } from 'model/Essences'
 import { FangClaw, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const SharpClaw: Item = {
   id: 'SharpClaw',
@@ -18,15 +17,12 @@ export const SharpClaw: Item = {
 
 function activateSharpClaw(project: TemperingProject) {
   const { energy } = project
-  const { sala, undine } = project.levels
+  const { salamander, undine } = project.levels
 
-  if (project.type === WeaponProjectType) {
-    const { sharp, heavy } = project.attributes
-    project.attributes.sharp = plus50Percent(sharp)
-    project.attributes.heavy = minus50Percent(heavy)
-  }
+  plus50Percent(project, Sharp)
+  minus50Percent(project, Heavy)
 
-  if (undine === 0 && sala >= 5 && energy >= 8) {
+  if (undine === 0 && salamander >= 5 && energy >= 8) {
     project.cards.pending = GodOfDestruction
   }
 }

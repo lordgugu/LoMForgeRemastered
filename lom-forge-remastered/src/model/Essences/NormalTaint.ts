@@ -15,7 +15,7 @@ import {
 
 export function normalTaint(essences: Essences, essence: Essence): void {
   const { levels, energy } = essences
-  const { wisp, shade, dryad, aura, sala, gnome, jinn, undine } = levels
+  const { wisp, shade, dryad, aura, salamander, gnome, jinn, undine } = levels
 
   switch (essence) {
     case Wisp:
@@ -78,13 +78,13 @@ export function normalTaint(essences: Essences, essence: Essence): void {
         decreaseEssence(essences, Gnome)
 
         if (energy >= 8) {
-          essences.potential.sala++
+          essences.potential.salamander++
         }
       }
 
       break
     case Gnome:
-      if (sala === 0) {
+      if (salamander === 0) {
         decreaseEssence(essences, Jinn)
 
         if (energy >= 8) {

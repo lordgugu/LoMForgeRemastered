@@ -22,7 +22,7 @@ export const CursedBone: Material = {
     shade: 5,
     dryad: 9,
     aura: 7,
-    sala: 9,
+    salamander: 9,
     gnome: 7,
     jinn: 9,
     undine: 7

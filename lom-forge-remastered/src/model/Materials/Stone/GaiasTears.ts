@@ -23,7 +23,7 @@ export const GaiasTears: Material = {
     shade: 8,
     dryad: 9,
     aura: 7,
-    sala: 10,
+    salamander: 10,
     gnome: 6,
     jinn: 10,
     undine: 6

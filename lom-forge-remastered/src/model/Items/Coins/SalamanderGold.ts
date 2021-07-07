@@ -3,17 +3,18 @@ import { Salamander, taint } from 'model/Essences'
 import { Coins, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
-export const SalaGold: Item = {
-  id: 'SalaGold',
-  name: 'Sala Gold',
+export const SalamanderGold: Item = {
+  id: 'SalamanderGold',
+  originalName: 'Sala Gold',
+  remasteredName: 'Salamander Gold',
   category: Coins,
   energy: 64,
-  activate: activateSalaGold,
+  activate: activateSalamanderGold,
   relatedCards: () => [SalamanderCard],
   relatedEssences: () => [Salamander]
 }
 
-function activateSalaGold(project: TemperingProject) {
+function activateSalamanderGold(project: TemperingProject) {
   taint(project, Salamander)
 
   const { energy } = project

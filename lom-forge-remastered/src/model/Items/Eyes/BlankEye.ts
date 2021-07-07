@@ -1,8 +1,7 @@
 import { PixieOfEnvy } from 'model/Cards'
-import { plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, plus25Percent, Tech } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const BlankEye: Item = {
   id: 'BlankEye',
@@ -17,10 +16,7 @@ export const BlankEye: Item = {
 function activateBlankEye(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === WeaponProjectType) {
-    const { tech } = project.attributes
-    project.attributes.tech = plus25Percent(tech)
-  }
+  plus25Percent(project, Tech)
 
   if (energy >= 4) {
     project.cards.pending = PixieOfEnvy

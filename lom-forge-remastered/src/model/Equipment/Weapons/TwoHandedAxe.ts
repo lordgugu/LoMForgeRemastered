@@ -1,4 +1,4 @@
-import { Leviathan } from 'model/Cards'
+import { Clown, Leviathan } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const TwoHandedAxe: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [Leviathan]
+  relatedCards: () => [Leviathan, Clown]
 }

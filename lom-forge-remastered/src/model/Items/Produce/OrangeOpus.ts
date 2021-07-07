@@ -12,17 +12,18 @@ export const OrangeOpus: Item = {
   activate: activateOrangeOpus,
   relatedCards: () => [Leviathan],
   relatedStats: () => [Defense],
+  relatedStatRanges: () => [Defense],
   relatedEssences: () => [Salamander, Gnome]
 }
 
 function activateOrangeOpus(project: TemperingProject) {
   const { energy } = project
-  const { sala, gnome } = project.levels
+  const { salamander, gnome } = project.levels
 
   widenStatRange(project, Defense, -5, 10)
   incrementStat(project, Defense)
 
-  if (sala === 0 && gnome >= 5 && energy >= 8) {
+  if (salamander === 0 && gnome >= 5 && energy >= 8) {
     project.cards.pending = Leviathan
   }
 }

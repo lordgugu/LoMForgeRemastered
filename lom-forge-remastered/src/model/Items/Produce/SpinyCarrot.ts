@@ -1,8 +1,7 @@
-import { minus25Percent, plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { taint, Undine } from 'model/Essences'
 import { Item, Produce } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const SpinyCarrot: Item = {
   id: 'SpinyCarrot',
@@ -15,11 +14,8 @@ export const SpinyCarrot: Item = {
 }
 
 function activateSpinyCarrot(project: TemperingProject) {
-  if (project.type === WeaponProjectType) {
-    const { sharp, heavy } = project.attributes
-    project.attributes.sharp = plus25Percent(sharp)
-    project.attributes.heavy = minus25Percent(heavy)
-  }
+  plus25Percent(project, Sharp)
+  minus25Percent(project, Heavy)
 
   taint(project, Undine)
 }

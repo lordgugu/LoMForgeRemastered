@@ -10,7 +10,8 @@ export const Lilipods: Item = {
   energy: 8,
   activate: activateLilipods,
   relatedCards: () => [EnticedNymph],
-  relatedStats: () => [Spirit]
+  relatedStats: () => [Spirit],
+  relatedStatRanges: () => [Spirit]
 }
 
 function activateLilipods(project: TemperingProject) {

@@ -1,3 +1,4 @@
+import { Clown } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Darkness, Poison, Sleep } from 'model/Immunities'
 import {
@@ -38,5 +39,6 @@ export const Helm: ArmorEquipment = {
     StinkyBreath,
     Moss
   ],
-  relatedImmunities: () => [Poison, Sleep, Confusion, Darkness]
+  relatedImmunities: () => [Poison, Sleep, Confusion, Darkness],
+  relatedCards: () => [Clown]
 }

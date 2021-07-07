@@ -1,9 +1,8 @@
 import { ManOfValor } from 'model/Cards'
-import { plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Force, plus25Percent, Tech } from 'model/Equipment'
 import { Salamander, totalLevels, Wisp } from 'model/Essences'
 import { Item, Vials } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const DragonsBreath: Item = {
   id: 'DragonsBreath',
@@ -18,16 +17,13 @@ export const DragonsBreath: Item = {
 
 function activateDragonsBreath(project: TemperingProject) {
   const { energy } = project
-  const { wisp, sala } = project.levels
+  const { wisp, salamander } = project.levels
   const total = totalLevels(project)
 
-  if (project.type === WeaponProjectType) {
-    const { force, tech } = project.attributes
-    project.attributes.force = plus25Percent(force)
-    project.attributes.tech = plus25Percent(tech)
-  }
+  plus25Percent(project, Force)
+  plus25Percent(project, Tech)
 
-  if (wisp > 0 && sala > 0 && total >= 3 && energy >= 8) {
+  if (wisp > 0 && salamander > 0 && total >= 3 && energy >= 8) {
     project.cards.pending = ManOfValor
   }
 }

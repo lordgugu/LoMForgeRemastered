@@ -1,7 +1,20 @@
 import { ActiveCard, Bottom, CardSlot, GodOfDestruction, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
 import { AngryEye, Garlicrown, HolyWater, PoisonPowder } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
-import { AllStats, decrementStat, incrementStat, Power, widenStatRange } from 'model/Stats'
+import {
+  AllStats,
+  Charm,
+  decrementStat,
+  Defense,
+  HP,
+  incrementStat,
+  Luck,
+  Magic,
+  Power,
+  Skill,
+  Spirit,
+  widenStatRange
+} from 'model/Stats'
 
 export const PixieOfWrath: ActiveCard = {
   id: 'PixieOfWrath',
@@ -11,7 +24,8 @@ export const PixieOfWrath: ActiveCard = {
   activate: activatePixieOfWrath,
   relatedItems: () => [Garlicrown, AngryEye, HolyWater, PoisonPowder],
   relatedCards: () => [GodOfDestruction, Ragnarok],
-  relatedStats: () => AllStats
+  relatedStats: () => [Skill, Defense, Magic, HP, Spirit, Charm, Luck],
+  relatedStatRanges: () => AllStats
 }
 
 function activatePixieOfWrath(project: TemperingProject, slot: CardSlot) {

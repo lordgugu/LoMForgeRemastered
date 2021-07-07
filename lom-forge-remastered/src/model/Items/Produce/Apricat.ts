@@ -1,7 +1,6 @@
-import { minus25Percent, plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Force, minus25Percent, plus25Percent, Tech } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const Apricat: Item = {
   id: 'Apricat',
@@ -13,10 +12,6 @@ export const Apricat: Item = {
 }
 
 function activateApricat(project: TemperingProject) {
-  if (project.type === WeaponProjectType) {
-    const { force, tech } = project.attributes
-
-    project.attributes.force = minus25Percent(force)
-    project.attributes.tech = plus25Percent(tech)
-  }
+  minus25Percent(project, Force)
+  plus25Percent(project, Tech)
 }

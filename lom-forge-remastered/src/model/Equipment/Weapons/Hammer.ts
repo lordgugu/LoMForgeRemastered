@@ -1,4 +1,4 @@
-import { BlacksmithGod, SpiritOfMountain, ThunderGod, Volcano } from 'model/Cards'
+import { BlacksmithGod, Clown, SpiritOfMountain, ThunderGod, Volcano } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Hammer: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [Volcano, ThunderGod, SpiritOfMountain, BlacksmithGod]
+  relatedCards: () => [Volcano, ThunderGod, SpiritOfMountain, BlacksmithGod, Clown]
 }

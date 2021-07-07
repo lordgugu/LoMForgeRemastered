@@ -22,7 +22,7 @@ export const Fossil: Material = {
     shade: 6,
     dryad: 8,
     aura: 8,
-    sala: 10,
+    salamander: 10,
     gnome: 6,
     jinn: 10,
     undine: 6

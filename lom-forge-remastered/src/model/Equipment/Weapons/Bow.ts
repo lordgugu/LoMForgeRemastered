@@ -1,4 +1,4 @@
-import { MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
+import { Clown, MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -79,7 +79,7 @@ export const Bow: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [Raven, Witch, Wolf, Sage, SunGod, SpiritOfForest, MoonGoddess]
+  relatedCards: () => [Raven, Witch, Wolf, Sage, SunGod, SpiritOfForest, MoonGoddess, Clown]
 }
 
 /**

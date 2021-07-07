@@ -12,6 +12,7 @@ export const RocketPapaya: Item = {
   activate: activateRocketPapaya,
   relatedCards: () => [Tower],
   relatedStats: () => [Charm],
+  relatedStatRanges: () => [Charm],
   relatedEssences: () => [Wisp, Jinn]
 }
 

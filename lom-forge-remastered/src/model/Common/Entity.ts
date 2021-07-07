@@ -26,9 +26,10 @@ type RelatedEntities = {
   readonly relatedEssences?: () => Essence[]
   readonly relatedImmunities?: () => Immunity[]
   readonly relatedItems?: () => Item[]
-  readonly relatedMasterMoves?: { readonly [slot in MasterMoveSlot]: () => MasterMove[] }
+  readonly relatedMasterMoves?: { readonly [slot in MasterMoveSlot]?: () => MasterMove[] }
   readonly relatedMaterials?: () => Material[]
   readonly relatedSpecials?: () => Special[]
+  readonly relatedStatRanges?: () => Stat[]
   readonly relatedStats?: () => Stat[]
 }
 

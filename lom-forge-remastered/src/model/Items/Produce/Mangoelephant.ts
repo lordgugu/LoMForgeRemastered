@@ -8,7 +8,8 @@ export const Mangoelephant: Item = {
   category: Produce,
   energy: 64,
   activate: activateMangoelephant,
-  relatedStats: () => [HP]
+  relatedStats: () => [HP],
+  relatedStatRanges: () => [HP]
 }
 
 function activateMangoelephant(project: TemperingProject) {

@@ -23,7 +23,7 @@ export const DragonSkin: Material = {
     shade: 8,
     dryad: 7,
     aura: 9,
-    sala: 5,
+    salamander: 5,
     gnome: 10,
     jinn: 5,
     undine: 10

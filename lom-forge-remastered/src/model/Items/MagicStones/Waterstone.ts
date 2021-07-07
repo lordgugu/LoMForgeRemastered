@@ -3,9 +3,10 @@ import { taint, Undine } from 'model/Essences'
 import { Item, MagicStones } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
-export const WaterStone: Item = {
-  id: 'WaterStone',
-  name: 'Water Stone',
+export const Waterstone: Item = {
+  id: 'Waterstone',
+  originalName: 'Water Stone',
+  remasteredName: 'Waterstone',
   category: MagicStones,
   energy: 24,
   activate: activateWaterStone,

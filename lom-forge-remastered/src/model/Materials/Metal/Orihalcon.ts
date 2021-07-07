@@ -22,7 +22,7 @@ export const Orihalcon: Material = {
     shade: 8,
     dryad: 7,
     aura: 10,
-    sala: 7,
+    salamander: 7,
     gnome: 9,
     jinn: 6,
     undine: 8

@@ -1,4 +1,4 @@
-import { Phoenix } from 'model/Cards'
+import { Clown, Phoenix } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Darkness, Paralysis, Poison, Sleep } from 'model/Immunities'
 import {
@@ -42,7 +42,7 @@ export const Pendant: ArmorEquipment = {
     BlackenedBat
   ],
   relatedImmunities: () => [Poison, Sleep, Paralysis, Confusion, Darkness],
-  relatedCards: () => [Phoenix]
+  relatedCards: () => [Phoenix, Clown]
 }
 
 /**
@@ -59,7 +59,7 @@ function activatePendant(project: ArmorProject): void {
     return
   }
 
-  if (hidden === Phoenix || Array.of(top, middle, bottom).every((slot) => slot !== Phoenix)) {
+  if (hidden === Phoenix || !Array.of(top, middle, bottom).includes(Phoenix)) {
     project.special = undefined
   }
 }

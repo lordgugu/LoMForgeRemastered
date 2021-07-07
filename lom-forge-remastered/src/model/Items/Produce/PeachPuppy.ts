@@ -1,6 +1,5 @@
 import { Wolf } from 'model/Cards'
-import { minus25Percent, plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 
@@ -21,10 +20,6 @@ function activatePeachPuppy(project: TemperingProject) {
     project.cards.pending = Wolf
   }
 
-  if (project.type === WeaponProjectType) {
-    const { sharp, heavy } = project.attributes
-
-    project.attributes.sharp = plus25Percent(sharp)
-    project.attributes.heavy = minus25Percent(heavy)
-  }
+  plus25Percent(project, Sharp)
+  minus25Percent(project, Heavy)
 }

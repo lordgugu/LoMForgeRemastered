@@ -15,9 +15,9 @@ export const Electricity: Item = {
 
 function activateElectricity(project: TemperingProject) {
   const { energy } = project
-  const { wisp, sala, jinn } = project.levels
+  const { wisp, salamander, jinn } = project.levels
 
-  if (wisp >= 3 && sala >= 3 && jinn >= 3 && energy >= 8) {
+  if (wisp >= 3 && salamander >= 3 && jinn >= 3 && energy >= 8) {
     project.cards.pending = ThunderGod
   }
 }

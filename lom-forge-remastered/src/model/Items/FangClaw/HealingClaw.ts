@@ -19,13 +19,13 @@ export const HealingClaw: Item = {
 
 function activateHealingClaw(project: TemperingProject) {
   const { energy } = project
-  const { wisp, sala } = project.levels
+  const { wisp, salamander } = project.levels
 
   if (project.type === ArmorProjectType && project.equipment === Shield) {
     addImmunity(project, Poison)
   }
 
-  if (sala === 0 && wisp > 0 && energy >= 8) {
+  if (salamander === 0 && wisp > 0 && energy >= 8) {
     project.cards.pending = Tower
   }
 }

@@ -1,3 +1,4 @@
+import { Clown } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Poison, Sleep } from 'model/Immunities'
 import {
@@ -34,5 +35,6 @@ export const Mantle: ArmorEquipment = {
     AromaOil,
     StinkyBreath
   ],
-  relatedImmunities: () => [Poison, Sleep, Confusion]
+  relatedImmunities: () => [Poison, Sleep, Confusion],
+  relatedCards: () => [Clown]
 }

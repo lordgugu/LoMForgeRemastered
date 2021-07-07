@@ -1,7 +1,20 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Pixie, Ragnarok, Top, WitchOfMoon } from 'model/Cards'
 import { Garlicrown, HolyWater, Rust, SleepyEye } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
-import { AllStats, decrementStat, incrementStat, Magic, widenStatRange } from 'model/Stats'
+import {
+  AllStats,
+  Charm,
+  decrementStat,
+  Defense,
+  HP,
+  incrementStat,
+  Luck,
+  Magic,
+  Power,
+  Skill,
+  Spirit,
+  widenStatRange
+} from 'model/Stats'
 
 export const PixieOfSloth: ActiveCard = {
   id: 'PixieOfSloth',
@@ -11,7 +24,8 @@ export const PixieOfSloth: ActiveCard = {
   activate: activatePixieOfSloth,
   relatedItems: () => [Garlicrown, SleepyEye, HolyWater, Rust],
   relatedCards: () => [WitchOfMoon, Ragnarok],
-  relatedStats: () => AllStats
+  relatedStats: () => [Power, Skill, Defense, HP, Spirit, Charm, Luck],
+  relatedStatRanges: () => AllStats
 }
 
 function activatePixieOfSloth(project: TemperingProject, slot: CardSlot) {

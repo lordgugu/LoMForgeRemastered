@@ -1,4 +1,4 @@
-import { MotherOfGods } from 'model/Cards'
+import { Clown, MotherOfGods } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Flail: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [MotherOfGods]
+  relatedCards: () => [MotherOfGods, Clown]
 }

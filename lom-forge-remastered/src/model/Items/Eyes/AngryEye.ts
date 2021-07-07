@@ -1,8 +1,7 @@
 import { PixieOfWrath } from 'model/Cards'
-import { plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Force, plus25Percent } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const AngryEye: Item = {
   id: 'AngryEye',
@@ -17,10 +16,7 @@ export const AngryEye: Item = {
 function activateAngryEye(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === WeaponProjectType) {
-    const { force } = project.attributes
-    project.attributes.force = plus25Percent(force)
-  }
+  plus25Percent(project, Force)
 
   if (energy >= 4) {
     project.cards.pending = PixieOfWrath

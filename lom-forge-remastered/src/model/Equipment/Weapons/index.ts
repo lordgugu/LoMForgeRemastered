@@ -13,11 +13,14 @@ import { Sword } from './Sword'
 import { TwoHandedAxe } from './TwoHandedAxe'
 import { TwoHandedSword } from './TwoHandedSword'
 
+export type WeaponAttribute = 'sharp' | 'heavy' | 'force' | 'tech'
+export const Sharp: WeaponAttribute = 'sharp'
+export const Heavy: WeaponAttribute = 'heavy'
+export const Force: WeaponAttribute = 'force'
+export const Tech: WeaponAttribute = 'tech'
+
 export type WeaponAttributes = {
-  sharp: number
-  heavy: number
-  force: number
-  tech: number
+  [attribute in WeaponAttribute]: number
 }
 
 export type MasterMoveSlot = 'top' | 'middle' | 'bottom'

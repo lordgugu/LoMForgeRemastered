@@ -8,7 +8,8 @@ export const Boarmelon: Item = {
   category: Produce,
   energy: 32,
   activate: activateBoarmelon,
-  relatedStats: () => [Power]
+  relatedStats: () => [Power],
+  relatedStatRanges: () => [Power]
 }
 
 function activateBoarmelon(project: TemperingProject) {

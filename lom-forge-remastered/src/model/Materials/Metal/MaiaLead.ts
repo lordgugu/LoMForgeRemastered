@@ -22,7 +22,7 @@ export const MaiaLead: Material = {
     shade: 32,
     dryad: 32,
     aura: 32,
-    sala: 32,
+    salamander: 32,
     gnome: 32,
     jinn: 32,
     undine: 32

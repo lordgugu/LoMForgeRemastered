@@ -1,9 +1,8 @@
 import { BedOfThorn } from 'model/Cards'
-import { minus25Percent, plus25Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp } from 'model/Equipment'
 import { Dryad, Salamander } from 'model/Essences'
 import { Item, Produce } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const Needlettuce: Item = {
   id: 'Needlettuce',
@@ -18,15 +17,12 @@ export const Needlettuce: Item = {
 
 function activateNeedlettuce(project: TemperingProject) {
   const { energy } = project
-  const { sala, dryad } = project.levels
+  const { salamander, dryad } = project.levels
 
-  if (project.type === WeaponProjectType) {
-    const { sharp, heavy } = project.attributes
-    project.attributes.sharp = plus25Percent(sharp)
-    project.attributes.heavy = minus25Percent(heavy)
-  }
+  plus25Percent(project, Sharp)
+  minus25Percent(project, Heavy)
 
-  if (sala === 0 && dryad > 0 && energy >= 8) {
+  if (salamander === 0 && dryad > 0 && energy >= 8) {
     project.cards.pending = BedOfThorn
   }
 }

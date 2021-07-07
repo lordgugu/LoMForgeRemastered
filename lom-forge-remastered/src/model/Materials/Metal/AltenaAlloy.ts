@@ -22,7 +22,7 @@ export const AltenaAlloy: Material = {
     shade: 10,
     dryad: 10,
     aura: 10,
-    sala: 10,
+    salamander: 10,
     gnome: 10,
     jinn: 10,
     undine: 10

@@ -23,7 +23,7 @@ export const FossilWood: Material = {
     shade: 6,
     dryad: 6,
     aura: 9,
-    sala: 10,
+    salamander: 10,
     gnome: 6,
     jinn: 7,
     undine: 7

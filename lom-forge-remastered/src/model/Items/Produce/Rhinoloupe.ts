@@ -1,8 +1,7 @@
-import { plus25Percent } from 'model/Common'
-import { AllArmors, AllWeapons } from 'model/Equipment'
+import { AllArmors, AllWeapons, plus25Percent, Sharp } from 'model/Equipment'
 import { Poison, setImmunities } from 'model/Immunities'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
+import { ArmorProjectType, TemperingProject } from 'model/Projects'
 
 export const Rhinoloupe: Item = {
   id: 'Rhinoloupe',
@@ -16,13 +15,9 @@ export const Rhinoloupe: Item = {
 }
 
 function activateRhinoloupe(project: TemperingProject) {
-  switch (project.type) {
-    case WeaponProjectType:
-      const { sharp } = project.attributes
-      project.attributes.sharp = plus25Percent(sharp)
-      break
-    case ArmorProjectType:
-      setImmunities(project, Poison)
-      break
+  plus25Percent(project, Sharp)
+
+  if (project.type === ArmorProjectType) {
+    setImmunities(project, Poison)
   }
 }

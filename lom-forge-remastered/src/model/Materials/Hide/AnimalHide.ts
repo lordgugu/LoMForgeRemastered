@@ -23,7 +23,7 @@ export const AnimalHide: Material = {
     shade: 8,
     dryad: 7,
     aura: 9,
-    sala: 9,
+    salamander: 9,
     gnome: 7,
     jinn: 7,
     undine: 7

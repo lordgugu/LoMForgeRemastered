@@ -10,7 +10,8 @@ export const Conchurnip: Item = {
   energy: 16,
   activate: activateConchurnip,
   relatedCards: () => [SpiritOfOcean],
-  relatedStats: () => [Defense]
+  relatedStats: () => [Defense],
+  relatedStatRanges: () => [Defense]
 }
 
 function activateConchurnip(project: TemperingProject) {

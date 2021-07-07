@@ -1,7 +1,6 @@
-import { minus25Percent, plus25Percent } from 'model/Common'
-import { AllArmors, AllWeapons } from 'model/Equipment'
+import { AllArmors, AllWeapons, Heavy, minus25Percent, plus25Percent, Sharp, Slash, Strike } from 'model/Equipment'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const Citrisquid: Item = {
   id: 'Citrisquid',
@@ -14,16 +13,9 @@ export const Citrisquid: Item = {
 }
 
 function activateCitrisquid(project: TemperingProject) {
-  switch (project.type) {
-    case WeaponProjectType:
-      const { sharp, heavy } = project.attributes
-      project.attributes.sharp = minus25Percent(sharp)
-      project.attributes.heavy = plus25Percent(heavy)
-      break
-    case ArmorProjectType:
-      const { slash, strike } = project.attributes
-      project.attributes.slash = minus25Percent(slash)
-      project.attributes.strike = plus25Percent(strike)
-      break
-  }
+  minus25Percent(project, Sharp)
+  plus25Percent(project, Heavy)
+
+  minus25Percent(project, Slash)
+  plus25Percent(project, Strike)
 }

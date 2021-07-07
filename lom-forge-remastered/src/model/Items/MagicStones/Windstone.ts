@@ -3,9 +3,10 @@ import { Jinn, taint } from 'model/Essences'
 import { Item, MagicStones } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
-export const WindStone: Item = {
-  id: 'WindStone',
-  name: 'Wind Stone',
+export const Windstone: Item = {
+  id: 'Windstone',
+  originalName: 'Wind Stone',
+  remasteredName: 'Windstone',
   category: MagicStones,
   energy: 24,
   activate: activateWindStone,

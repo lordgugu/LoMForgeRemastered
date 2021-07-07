@@ -1,7 +1,20 @@
 import { ActiveCard, Bottom, CardSlot, LordOfFlies, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
 import { BlankEye, Garlicrown, HolyWater, SleepyPowder } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
-import { AllStats, decrementStat, incrementStat, Skill, widenStatRange } from 'model/Stats'
+import {
+  AllStats,
+  Charm,
+  decrementStat,
+  Defense,
+  HP,
+  incrementStat,
+  Luck,
+  Magic,
+  Power,
+  Skill,
+  Spirit,
+  widenStatRange
+} from 'model/Stats'
 
 export const PixieOfEnvy: ActiveCard = {
   id: 'PixieOfEnvy',
@@ -11,12 +24,12 @@ export const PixieOfEnvy: ActiveCard = {
   activate: activatePixieOfEnvy,
   relatedItems: () => [Garlicrown, BlankEye, HolyWater, SleepyPowder],
   relatedCards: () => [LordOfFlies, Ragnarok],
-  relatedStats: () => AllStats
+  relatedStats: () => [Power, Defense, Magic, HP, Spirit, Charm, Luck],
+  relatedStatRanges: () => AllStats
 }
 
 function activatePixieOfEnvy(project: TemperingProject, slot: CardSlot) {
   const { energy, worldCard } = project
-  const card = project.cards[slot]
 
   switch (slot) {
     case Top:

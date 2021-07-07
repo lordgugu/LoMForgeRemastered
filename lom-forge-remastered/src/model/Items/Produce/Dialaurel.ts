@@ -15,9 +15,9 @@ export const Dialaurel: Item = {
 
 function activateDialaurel(project: TemperingProject) {
   const { energy } = project
-  const { shade, sala } = project.levels
+  const { shade, salamander } = project.levels
 
-  if (sala === 0 && shade > 0 && energy >= 8) {
+  if (salamander === 0 && shade > 0 && energy >= 8) {
     project.cards.pending = Metropolis
   }
 }

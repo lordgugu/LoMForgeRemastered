@@ -1,10 +1,50 @@
-import { Card, None } from 'model/Cards'
-import { Sulpher } from 'model/Items'
+import { ActiveCard, Bottom, CardSlot, Middle, None, Top, Tower } from 'model/Cards'
+import { Dryad, Gnome, resistance50, resistance75, Salamander, Wisp } from 'model/Essences'
+import { Sulfur } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { AllStats, Charm, incrementStat, Magic, Spirit, widenStatRange } from 'model/Stats'
 
-export const Sorcerer: Card = {
+export const Sorcerer: ActiveCard = {
   id: 'Sorcerer',
   name: 'Sorcerer',
   category: None,
   price: 300,
-  relatedItems: () => [Sulpher]
+  activate: activateSorcerer,
+  relatedItems: () => [Sulfur],
+  relatedCards: () => [Tower],
+  relatedStats: () => [Magic, Spirit, Charm],
+  relatedStatRanges: () => AllStats,
+  relatedEssences: () => [Wisp, Dryad, Salamander, Gnome]
+}
+
+function activateSorcerer(project: TemperingProject, slot: CardSlot) {
+  const { top, middle, bottom } = project.cards
+
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      if (Array.of(top, middle, bottom).includes(Tower)) {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -3, 5))
+
+        incrementStat(project, Magic)
+        incrementStat(project, Spirit)
+        incrementStat(project, Charm)
+
+        resistance50(project, Wisp)
+        resistance50(project, Dryad)
+        resistance50(project, Salamander)
+        resistance50(project, Gnome)
+      } else {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -1, 3))
+
+        incrementStat(project, Magic)
+
+        resistance75(project, Wisp)
+        resistance75(project, Dryad)
+        resistance75(project, Salamander)
+        resistance75(project, Gnome)
+      }
+      break
+  }
 }

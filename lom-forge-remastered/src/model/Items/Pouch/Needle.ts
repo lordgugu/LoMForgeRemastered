@@ -15,9 +15,9 @@ export const Needle: Item = {
 
 function activateNeedle(project: TemperingProject) {
   const { energy } = project
-  const { sala, dryad } = project.levels
+  const { salamander, dryad } = project.levels
 
-  if (sala === 0 && dryad > 0 && energy >= 8) {
+  if (salamander === 0 && dryad > 0 && energy >= 8) {
     project.cards.pending = BedOfThorn
   }
 }

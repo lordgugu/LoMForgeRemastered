@@ -23,7 +23,7 @@ export const HollyWood: Material = {
     shade: 8,
     dryad: 6,
     aura: 9,
-    sala: 10,
+    salamander: 10,
     gnome: 7,
     jinn: 7,
     undine: 7

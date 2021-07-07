@@ -23,7 +23,7 @@ export const LaurentSilver: Material = {
     shade: 6,
     dryad: 7,
     aura: 7,
-    sala: 7,
+    salamander: 7,
     gnome: 7,
     jinn: 7,
     undine: 7

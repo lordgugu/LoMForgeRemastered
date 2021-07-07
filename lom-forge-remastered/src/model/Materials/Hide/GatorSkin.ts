@@ -23,7 +23,7 @@ export const GatorSkin: Material = {
     shade: 8,
     dryad: 7,
     aura: 9,
-    sala: 9,
+    salamander: 9,
     gnome: 8,
     jinn: 8,
     undine: 6

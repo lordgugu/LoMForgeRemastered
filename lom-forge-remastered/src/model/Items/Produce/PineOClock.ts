@@ -19,13 +19,13 @@ export const PineOClock: Item = {
 
 function activatePineOClock(project: TemperingProject) {
   const { energy } = project
-  const { sala, gnome, jinn, undine } = project.levels
+  const { salamander, gnome, jinn, undine } = project.levels
 
   if (project.type === ArmorProjectType) {
     setImmunities(project, Sleep)
   }
 
-  if (sala * gnome * jinn * undine > 0 && energy >= 8) {
+  if (salamander * gnome * jinn * undine > 0 && energy >= 8) {
     project.cards.pending = Ragnarok
   }
 }

@@ -1,4 +1,4 @@
-import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
+import { Cleric, Clown, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Staff: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness]
+  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness, Clown]
 }

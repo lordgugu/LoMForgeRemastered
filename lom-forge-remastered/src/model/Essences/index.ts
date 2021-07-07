@@ -4,14 +4,14 @@ import { ancientMoonTaint } from './AncientMoonTaint'
 import { mirroredWorldTaint } from './MirroredWorldTaint'
 import { normalTaint } from './NormalTaint'
 
-type PotentialEssence = 'dryad' | 'aura' | 'sala' | 'gnome' | 'jinn' | 'undine'
+type PotentialEssence = 'dryad' | 'aura' | 'salamander' | 'gnome' | 'jinn' | 'undine'
 export type Essence = 'wisp' | 'shade' | PotentialEssence
 
 export const Wisp: Essence = 'wisp'
 export const Shade: Essence = 'shade'
 export const Dryad: Essence & PotentialEssence = 'dryad'
 export const Aura: Essence & PotentialEssence = 'aura'
-export const Salamander: Essence & PotentialEssence = 'sala'
+export const Salamander: Essence & PotentialEssence = 'salamander'
 export const Gnome: Essence & PotentialEssence = 'gnome'
 export const Jinn: Essence & PotentialEssence = 'jinn'
 export const Undine: Essence & PotentialEssence = 'undine'
@@ -57,7 +57,7 @@ const PowerOfTwo: { [exponent in Level]: number } = {
   15: 32768
 }
 
-export function increaseEssence(essences: Essences, essence: Essence): void {
+export function increaseEssence(essences: Essences, essence: Essence) {
   const level = essences.levels[essence]
 
   if (level === 15) {
@@ -72,7 +72,7 @@ export function increaseEssence(essences: Essences, essence: Essence): void {
   }
 }
 
-export function decreaseEssence(essences: Essences, essence: Essence): void {
+export function decreaseEssence(essences: Essences, essence: Essence) {
   if (essences.levels[essence] === 0) {
     return
   }
@@ -97,7 +97,7 @@ export function decreaseEssence(essences: Essences, essence: Essence): void {
   }
 }
 
-export function increaseRemainingEssences(essences: Essences): void {
+export function increaseRemainingEssences(essences: Essences) {
   Array.of(Dryad, Aura, Salamander, Gnome, Jinn, Undine).forEach((essence) => {
     while (essences.potential[essence] > 0) {
       essences.potential[essence]--
@@ -106,7 +106,7 @@ export function increaseRemainingEssences(essences: Essences): void {
   })
 }
 
-export function taint(project: TemperingProject, essence: Essence): void {
+export function taint(project: TemperingProject, essence: Essence) {
   switch (project.worldCard) {
     case AncientMoon:
       ancientMoonTaint(project, essence)
@@ -124,4 +124,20 @@ export function totalLevels(essences: Essences): number {
   return Object.values(essences.levels)
     .map((level) => level as number)
     .reduce((sum, level) => sum + level, 0)
+}
+
+export function resistance75(essences: Essences, essence: Essence) {
+  let resistance = essences.resistances[essence]
+
+  resistance = Math.trunc(resistance / 4) * 3
+
+  essences.resistances[essence] = Math.min(resistance, 1)
+}
+
+export function resistance50(essences: Essences, essence: Essence) {
+  let resistance = essences.resistances[essence]
+
+  resistance = Math.trunc(resistance / 2)
+
+  essences.resistances[essence] = Math.min(resistance, 1)
 }

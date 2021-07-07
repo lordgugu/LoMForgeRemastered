@@ -1,4 +1,4 @@
-import { King } from 'model/Cards'
+import { Clown, King } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import {
   AngryEye,
@@ -65,5 +65,5 @@ export const Glove: WeaponEquipment = {
     ClearFeather,
     DragonsBreath
   ],
-  relatedCards: () => [King]
+  relatedCards: () => [King, Clown]
 }

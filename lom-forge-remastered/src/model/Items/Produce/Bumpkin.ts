@@ -10,7 +10,8 @@ export const Bumpkin: Item = {
   energy: 24,
   activate: activateBumpkin,
   relatedCards: () => [Clown],
-  relatedStats: () => [Luck]
+  relatedStats: () => [Luck],
+  relatedStatRanges: () => [Luck]
 }
 
 function activateBumpkin(project: TemperingProject) {

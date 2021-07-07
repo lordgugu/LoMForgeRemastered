@@ -22,7 +22,7 @@ export const Ivory: Material = {
     shade: 6,
     dryad: 7,
     aura: 7,
-    sala: 8,
+    salamander: 8,
     gnome: 6,
     jinn: 7,
     undine: 7

@@ -12,6 +12,7 @@ export const FishyFruit: Item = {
   activate: activateFishyFruit,
   relatedCards: () => [Spring],
   relatedStats: () => [Magic],
+  relatedStatRanges: () => [Magic],
   relatedEssences: () => [Undine]
 }
 

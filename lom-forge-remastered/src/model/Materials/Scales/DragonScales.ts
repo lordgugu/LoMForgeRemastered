@@ -22,7 +22,7 @@ export const DragonScales: Material = {
     shade: 7,
     dryad: 7,
     aura: 7,
-    sala: 6,
+    salamander: 6,
     gnome: 7,
     jinn: 7,
     undine: 7

@@ -13,11 +13,14 @@ import { Robe } from './Robe'
 import { Shield } from './Shield'
 import { Shoes } from './Shoes'
 
+export type ArmorAttribute = 'strike' | 'slash' | 'pierce' | 'magic'
+export const Strike: ArmorAttribute = 'strike'
+export const Slash: ArmorAttribute = 'slash'
+export const Pierce: ArmorAttribute = 'pierce'
+export const Magic: ArmorAttribute = 'magic'
+
 export type ArmorAttributes = {
-  strike: number
-  slash: number
-  pierce: number
-  magic: number
+  [attribute in ArmorAttribute]: number
 }
 
 export type ArmorEquipment = Entity & {

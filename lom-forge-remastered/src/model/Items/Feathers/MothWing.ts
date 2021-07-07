@@ -1,8 +1,7 @@
 import { SpiritOfForest } from 'model/Cards'
-import { minus25Percent, plus50Percent } from 'model/Common'
-import { AllArmors } from 'model/Equipment'
+import { AllArmors, Magic, minus25Percent, Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
 import { Feathers, Item } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const MothWing: Item = {
   id: 'MothWing',
@@ -17,13 +16,10 @@ export const MothWing: Item = {
 function activateMothWing(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === ArmorProjectType) {
-    const { strike, slash, pierce, magic } = project.attributes
-    project.attributes.strike = minus25Percent(strike)
-    project.attributes.slash = minus25Percent(slash)
-    project.attributes.pierce = minus25Percent(pierce)
-    project.attributes.magic = plus50Percent(magic)
-  }
+  minus25Percent(project, Strike)
+  minus25Percent(project, Slash)
+  minus25Percent(project, Pierce)
+  plus50Percent(project, Magic)
 
   if (energy >= 8) {
     project.cards.pending = SpiritOfForest

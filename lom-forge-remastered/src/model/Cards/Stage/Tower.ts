@@ -1,4 +1,4 @@
-import { Card, Stage } from 'model/Cards'
+import { Card, Sorcerer, Stage, Witch } from 'model/Cards'
 import { HealingClaw, RocketPapaya } from 'model/Items'
 
 export const Tower: Card = {
@@ -6,5 +6,6 @@ export const Tower: Card = {
   name: 'Tower',
   category: Stage,
   price: 1500,
-  relatedItems: () => [RocketPapaya, HealingClaw]
+  relatedItems: () => [RocketPapaya, HealingClaw],
+  relatedCards: () => [Sorcerer, Witch]
 }

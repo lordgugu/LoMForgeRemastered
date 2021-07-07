@@ -1,8 +1,7 @@
 import { PixieOfGreed } from 'model/Cards'
-import { plus25Percent } from 'model/Common'
-import { AllArmors } from 'model/Equipment'
+import { AllArmors, plus25Percent, Strike } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const DangerousEye: Item = {
   id: 'DangerousEye',
@@ -17,10 +16,7 @@ export const DangerousEye: Item = {
 function activateDangerousEye(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === ArmorProjectType) {
-    const { strike } = project.attributes
-    project.attributes.strike = plus25Percent(strike)
-  }
+  plus25Percent(project, Strike)
 
   if (energy >= 4) {
     project.cards.pending = PixieOfGreed

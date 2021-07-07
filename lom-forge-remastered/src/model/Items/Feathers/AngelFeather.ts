@@ -12,6 +12,7 @@ export const AngelFeather: Item = {
   activate: activateAngelFeather,
   relatedCards: () => [FallenAngel],
   relatedStats: () => [Charm],
+  relatedStatRanges: () => [Charm],
   relatedEssences: () => [Wisp, Shade]
 }
 

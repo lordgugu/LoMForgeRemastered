@@ -22,7 +22,7 @@ export const PedanStone: Material = {
     shade: 8,
     dryad: 9,
     aura: 7,
-    sala: 7,
+    salamander: 7,
     gnome: 7,
     jinn: 11,
     undine: 7

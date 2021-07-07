@@ -22,7 +22,7 @@ export const Coral: Material = {
     shade: 6,
     dryad: 7,
     aura: 7,
-    sala: 9,
+    salamander: 9,
     gnome: 7,
     jinn: 9,
     undine: 5

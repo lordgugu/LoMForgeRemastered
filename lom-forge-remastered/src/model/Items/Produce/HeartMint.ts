@@ -12,6 +12,7 @@ export const HeartMint: Item = {
   activate: activateHeartMint,
   relatedCards: () => [MotherOfGods],
   relatedStats: () => [Charm],
+  relatedStatRanges: () => [Charm],
   relatedEssences: () => [Shade, Gnome, Undine]
 }
 

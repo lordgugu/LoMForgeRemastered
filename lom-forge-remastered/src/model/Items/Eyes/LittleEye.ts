@@ -1,8 +1,7 @@
 import { PixieOfPride } from 'model/Cards'
-import { plus25Percent } from 'model/Common'
-import { AllArmors } from 'model/Equipment'
+import { AllArmors, plus25Percent, Slash } from 'model/Equipment'
 import { Eyes, Item } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const LittleEye: Item = {
   id: 'LittleEye',
@@ -17,10 +16,7 @@ export const LittleEye: Item = {
 function activateLittleEye(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === ArmorProjectType) {
-    const { slash } = project.attributes
-    project.attributes.slash = plus25Percent(slash)
-  }
+  plus25Percent(project, Slash)
 
   if (energy >= 4) {
     project.cards.pending = PixieOfPride

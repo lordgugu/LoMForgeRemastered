@@ -23,7 +23,7 @@ export const MenosBronze: Material = {
     shade: 8,
     dryad: 8,
     aura: 8,
-    sala: 8,
+    salamander: 8,
     gnome: 8,
     jinn: 8,
     undine: 8

@@ -12,6 +12,7 @@ export const WhiteFeather: Item = {
   activate: activateWhiteFeather,
   relatedCards: () => [NymphOfTheSky],
   relatedStats: () => [Skill],
+  relatedStatRanges: () => [Skill],
   relatedEssences: () => [Wisp]
 }
 

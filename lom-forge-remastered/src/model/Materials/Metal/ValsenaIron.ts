@@ -23,7 +23,7 @@ export const ValsenaIron: Material = {
     shade: 9,
     dryad: 9,
     aura: 9,
-    sala: 9,
+    salamander: 9,
     gnome: 9,
     jinn: 9,
     undine: 9

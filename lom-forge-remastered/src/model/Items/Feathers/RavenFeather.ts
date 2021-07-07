@@ -12,6 +12,7 @@ export const RavenFeather: Item = {
   activate: activateRavenFeather,
   relatedCards: () => [Raven],
   relatedStats: () => [Spirit],
+  relatedStatRanges: () => [Spirit],
   relatedEssences: () => [Shade]
 }
 

@@ -1,9 +1,8 @@
 import { Leviathan } from 'model/Cards'
-import { minus50Percent, plus50Percent } from 'model/Common'
-import { AllWeapons } from 'model/Equipment'
+import { AllWeapons, Heavy, minus50Percent, plus50Percent, Sharp } from 'model/Equipment'
 import { Gnome, Salamander } from 'model/Essences'
 import { FangClaw, Item } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject } from 'model/Projects'
 
 export const GiantsHorn: Item = {
   id: 'GiantsHorn',
@@ -18,15 +17,12 @@ export const GiantsHorn: Item = {
 
 function activateGiantsHorn(project: TemperingProject) {
   const { energy } = project
-  const { sala, gnome } = project.levels
+  const { salamander, gnome } = project.levels
 
-  if (project.type === WeaponProjectType) {
-    const { sharp, heavy } = project.attributes
-    project.attributes.sharp = minus50Percent(sharp)
-    project.attributes.heavy = plus50Percent(heavy)
-  }
+  minus50Percent(project, Sharp)
+  plus50Percent(project, Heavy)
 
-  if (sala === 0 && gnome >= 5 && energy >= 8) {
+  if (salamander === 0 && gnome >= 5 && energy >= 8) {
     project.cards.pending = Leviathan
   }
 }

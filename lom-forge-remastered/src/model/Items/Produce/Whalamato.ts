@@ -12,6 +12,7 @@ export const Whalamato: Item = {
   activate: activateWhalamato,
   relatedCards: () => [Unicorn],
   relatedStats: () => [HP],
+  relatedStatRanges: () => [HP],
   relatedEssences: () => [Gnome, Undine]
 }
 

@@ -1,6 +1,5 @@
 import { WisdomGoddess } from 'model/Cards'
-import { plus50Percent } from 'model/Common'
-import { AllArmors } from 'model/Equipment'
+import { AllArmors, Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
 import { totalLevels } from 'model/Essences'
 import { Bottles, Item } from 'model/Items'
 import { AnimalHide, CentaurHide, DragonSkin, GatorSkin, Hide } from 'model/Materials'
@@ -22,10 +21,9 @@ function activateAromaOil(project: TemperingProject) {
   const total = totalLevels(project)
 
   if (project.type === ArmorProjectType && project.material.category === Hide) {
-    const { strike, slash, pierce } = project.attributes
-    project.attributes.strike = plus50Percent(strike)
-    project.attributes.slash = plus50Percent(slash)
-    project.attributes.pierce = plus50Percent(pierce)
+    plus50Percent(project, Strike)
+    plus50Percent(project, Slash)
+    plus50Percent(project, Pierce)
   }
 
   if (total >= 6 && energy >= 8) {

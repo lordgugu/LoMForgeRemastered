@@ -1,34 +1,90 @@
 import {
   Armor,
+  ArmorAttribute,
   ArmorEquipment,
   Axe,
   Boots,
   Bow,
   Flail,
+  Force,
   Gauntlet,
   Glove,
   Hammer,
   Hat,
   Hauberk,
+  Heavy,
   Helm,
   Knife,
+  Magic,
   Mantle,
   Pendant,
+  Pierce,
   Ring,
   Robe,
+  Sharp,
   Shield,
   Shoes,
+  Slash,
   Spear,
   Staff,
+  Strike,
   Sword,
+  Tech,
   TwoHandedAxe,
   TwoHandedSword,
+  WeaponAttribute,
   WeaponEquipment
 } from 'model/Equipment'
+import { ArmorProjectType, TemperingProject, WeaponProject, WeaponProjectType } from 'model/Projects'
 
-export type EquipmentProps = WeaponEquipment | ArmorEquipment
+export type Equipment = WeaponEquipment | ArmorEquipment
 
-export const Equipment: { readonly [key: string]: EquipmentProps } = {
+function modifyAttribute(
+  project: TemperingProject,
+  attribute: WeaponAttribute | ArmorAttribute,
+  modification: (value: number) => number
+) {
+  switch (project.type) {
+    case WeaponProjectType:
+      switch (attribute) {
+        case Sharp:
+        case Heavy:
+        case Force:
+        case Tech:
+          project.attributes[attribute] = modification(project.attributes[attribute])
+          break
+      }
+      break
+    case ArmorProjectType:
+      switch (attribute) {
+        case Strike:
+        case Slash:
+        case Pierce:
+        case Magic:
+          project.attributes[attribute] = modification(project.attributes[attribute])
+          break
+      }
+      break
+  }
+}
+
+export function minus25Percent(project: TemperingProject, attribute: WeaponAttribute | ArmorAttribute) {
+  modifyAttribute(project, attribute, (value) => Math.trunc(value / 4) * 3)
+}
+
+export function minus50Percent(project: TemperingProject, attribute: WeaponAttribute | ArmorAttribute) {
+  modifyAttribute(project, attribute, (value) => Math.trunc(value / 2))
+}
+
+export function plus25Percent(project: TemperingProject, attribute: WeaponAttribute | ArmorAttribute) {
+  modifyAttribute(project, attribute, (value) => Math.min(255, Math.trunc((value * 5) / 4)))
+}
+
+export function plus50Percent( project: TemperingProject, attribute: WeaponAttribute | ArmorAttribute) {
+  modifyAttribute(project, attribute, (value) => Math.min(255, Math.trunc((value * 3) / 2)))
+}
+
+export const Equipments: { readonly [key: string]: Equipment } = {
   // Weapons
   '1': Knife,
   '2': Sword,

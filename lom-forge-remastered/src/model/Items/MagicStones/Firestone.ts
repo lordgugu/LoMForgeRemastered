@@ -3,9 +3,10 @@ import { Salamander, taint } from 'model/Essences'
 import { Item, MagicStones } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
-export const FireStone: Item = {
-  id: 'FireStone',
-  name: 'Fire Stone',
+export const Firestone: Item = {
+  id: 'Firestone',
+  originalName: 'Fire Stone',
+  remasteredName: 'Firestone',
   category: MagicStones,
   energy: 24,
   activate: activateFireStone,

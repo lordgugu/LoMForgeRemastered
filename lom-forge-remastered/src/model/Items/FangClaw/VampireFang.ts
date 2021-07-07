@@ -12,6 +12,7 @@ export const VampireFang: Item = {
   activate: activateVampireFang,
   relatedCards: () => [WitchOfMoon],
   relatedStats: () => [Charm, Spirit],
+  relatedStatRanges: () => [Charm, Spirit],
   relatedEssences: () => [Jinn, Undine]
 }
 
@@ -21,6 +22,7 @@ function activateVampireFang(project: TemperingProject) {
 
   widenStatRange(project, Charm, -3, 5)
   widenStatRange(project, Spirit, -3, 5)
+
   incrementStat(project, Charm)
   incrementStat(project, Spirit)
 

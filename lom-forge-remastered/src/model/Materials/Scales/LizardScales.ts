@@ -22,7 +22,7 @@ export const LizardScales: Material = {
     shade: 9,
     dryad: 8,
     aura: 8,
-    sala: 7,
+    salamander: 7,
     gnome: 8,
     jinn: 8,
     undine: 9

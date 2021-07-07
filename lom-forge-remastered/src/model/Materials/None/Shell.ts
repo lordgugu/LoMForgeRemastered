@@ -22,7 +22,7 @@ export const Shell: Material = {
     shade: 7,
     dryad: 9,
     aura: 8,
-    sala: 9,
+    salamander: 9,
     gnome: 7,
     jinn: 9,
     undine: 6
