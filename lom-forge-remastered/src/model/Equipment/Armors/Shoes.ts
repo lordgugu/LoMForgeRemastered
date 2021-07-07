@@ -1,5 +1,6 @@
+import { FertilityGoddess, OceanGod, WindGod } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { LoquatShoe, PearOHeels, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { ExtraExperience } from 'model/Specials'
 
@@ -16,5 +17,6 @@ export const Shoes: ArmorEquipment = {
   priceCoefficient: 10,
   relatedSpecials: () => [ExtraExperience],
   relatedItems: () => [LoquatShoe, PearOHeels, PineOClock, Rhinoloupe, StinkyBreath],
-  relatedImmunities: () => [Poison, Sleep, Confusion]
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst, Paralysis],
+  relatedCards: () => [FertilityGoddess, OceanGod, WindGod]
 }

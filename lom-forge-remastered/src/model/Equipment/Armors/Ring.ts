@@ -1,6 +1,6 @@
-import { Phoenix } from 'model/Cards'
+import { FertilityGoddess, OceanGod, Phoenix } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
 import { AutoRevive, ExtraLucre, FastRevive, ShareExperience } from 'model/Specials'
@@ -19,8 +19,8 @@ export const Ring: ArmorEquipment = {
   activate: activateRing,
   relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive, ShareExperience],
   relatedItems: () => [PineOClock, CherryBombs, Rhinoloupe, StinkyBreath],
-  relatedImmunities: () => [Poison, Sleep, Confusion],
-  relatedCards: () => [Phoenix]
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
+  relatedCards: () => [Phoenix, FertilityGoddess, OceanGod]
 }
 
 /**

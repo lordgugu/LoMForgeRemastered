@@ -1,5 +1,6 @@
+import { FertilityGoddess, OceanGod } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { MoveHpRegeneration } from 'model/Specials'
 
@@ -16,5 +17,6 @@ export const Mantle: ArmorEquipment = {
   priceCoefficient: 20,
   relatedSpecials: () => [MoveHpRegeneration],
   relatedItems: () => [PineOClock, Rhinoloupe, StinkyBreath],
-  relatedImmunities: () => [Poison, Sleep, Confusion]
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
+  relatedCards: () => [FertilityGoddess, OceanGod]
 }

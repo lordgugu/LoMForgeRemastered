@@ -1,5 +1,6 @@
+import { FertilityGoddess, OceanGod } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 
 export const Hauberk: ArmorEquipment = {
@@ -14,5 +15,6 @@ export const Hauberk: ArmorEquipment = {
   markerThreshold: 2,
   priceCoefficient: 60,
   relatedItems: () => [Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath],
-  relatedImmunities: () => [Poison, Sleep, Confusion]
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
+  relatedCards: () => [FertilityGoddess, OceanGod]
 }

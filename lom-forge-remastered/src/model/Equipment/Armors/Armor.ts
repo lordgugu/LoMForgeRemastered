@@ -1,5 +1,6 @@
+import { FertilityGoddess, OceanGod } from 'model/Cards'
 import { ArmorEquipment as ArmorEquipment } from 'model/Equipment'
-import { Confusion, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 
 export const Armor: ArmorEquipment = {
@@ -14,5 +15,6 @@ export const Armor: ArmorEquipment = {
   markerThreshold: 3,
   priceCoefficient: 75,
   relatedItems: () => [PineOClock, Rhinoloupe, StinkyBreath],
-  relatedImmunities: () => [Poison, Sleep, Confusion]
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
+  relatedCards: () => [FertilityGoddess, OceanGod]
 }
