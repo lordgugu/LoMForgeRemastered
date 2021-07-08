@@ -1,3 +1,4 @@
+export * from './BedOfThorn'
 export * from './Metropolis'
 export * from './Spring'
 export * from './Tower'

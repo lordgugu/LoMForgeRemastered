@@ -1,4 +1,4 @@
-import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
+import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness, Yggdrasil } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
 import { Caduceus, Demonicide, Electrosceptre, GoldenTouch, Jump, Thrust, Uppercut } from 'model/MasterMoves'
 
@@ -23,5 +23,5 @@ export const Staff: WeaponEquipment = {
     middle: () => [Uppercut],
     bottom: () => [Jump, Demonicide, Electrosceptre, GoldenTouch]
   },
-  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness]
+  relatedCards: () => [WindGod, Cleric, RulerOfTheSky, WingsOfDarkness, Yggdrasil]
 }

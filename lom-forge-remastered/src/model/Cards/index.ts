@@ -1,3 +1,4 @@
+import { BedOfThorn } from 'model/Cards'
 import { Entity } from 'model/Common'
 import { TemperingProject } from 'model/Projects'
 
@@ -59,7 +60,9 @@ export function resetVolatileCards(context: CardContext) {
 export function setWorldCard(context: CardContext) {
   const { bottom, middle, top, hidden } = context.cards
 
-  context.worldCard = Array.of(bottom, middle, top, hidden).find((slot) => slot?.category === World)
+  context.worldCard = Array.of(bottom, middle, top, hidden).find(
+    (card) => card === BedOfThorn || card?.category === World
+  )
 }
 
 export function pushCards(context: CardContext) {
