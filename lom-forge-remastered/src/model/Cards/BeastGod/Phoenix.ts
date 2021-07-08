@@ -1,10 +1,48 @@
-import { BeastGod, Card } from 'model/Cards'
+import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Top, Volcano } from 'model/Cards'
+import { Pendant, Ring } from 'model/Equipment'
 import { FlamingQuill } from 'model/Items'
+import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { AutoRevive } from 'model/Specials'
+import { Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
-export const Phoenix: Card = {
+export const Phoenix: ActiveCard = {
   id: 'Phoenix',
   name: 'Phoenix',
   category: BeastGod,
   price: 2500,
-  relatedItems: () => [FlamingQuill]
+  activate: activatePhoenix,
+  relatedItems: () => [FlamingQuill],
+  relatedCards: () => [Volcano],
+  relatedStats: () => [Power, Skill],
+  relatedStatRanges: () => [Power, Skill],
+  relatedArmors: () => [Ring, Pendant]
+}
+
+function activatePhoenix(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      widenStatRange(project, Power, -3, 5)
+      widenStatRange(project, Skill, -3, 5)
+
+      setMinimumStatValue(project, Power, 3)
+      setMinimumStatValue(project, Skill, 3)
+
+      if (project.type === ArmorProjectType) {
+        switch (project.equipment) {
+          case Ring:
+          case Pendant:
+            const { top, middle, bottom } = project.cards
+
+            if (Array.of(top, middle, bottom).includes(Volcano)) {
+              project.special = AutoRevive
+            }
+
+            break
+        }
+      }
+
+      break
+  }
 }

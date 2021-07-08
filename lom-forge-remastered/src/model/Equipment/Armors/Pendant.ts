@@ -1,4 +1,4 @@
-import { FertilityGoddess, GoddessOfLove, OceanGod, Phoenix } from 'model/Cards'
+import { FertilityGoddess, GoddessOfLove, OceanGod, Phoenix, Spring, Unicorn, Volcano } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Darkness, Flameburst, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BlackenedBat, PineOClock, Rhinoloupe, StinkyBreath, ZombieClaw } from 'model/Items'
@@ -20,7 +20,7 @@ export const Pendant: ArmorEquipment = {
   relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive],
   relatedItems: () => [PineOClock, ZombieClaw, Rhinoloupe, StinkyBreath, BlackenedBat],
   relatedImmunities: () => [Poison, Sleep, Paralysis, Confusion, Darkness, Petrification, Flameburst],
-  relatedCards: () => [Phoenix, GoddessOfLove, FertilityGoddess, OceanGod]
+  relatedCards: () => [Phoenix, GoddessOfLove, FertilityGoddess, OceanGod, Volcano, Unicorn, Spring]
 }
 
 /**

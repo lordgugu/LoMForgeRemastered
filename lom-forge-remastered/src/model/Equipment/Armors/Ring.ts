@@ -1,4 +1,4 @@
-import { FertilityGoddess, OceanGod, Phoenix } from 'model/Cards'
+import { FertilityGoddess, OceanGod, Phoenix, Spring, Unicorn, Volcano } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
@@ -20,7 +20,7 @@ export const Ring: ArmorEquipment = {
   relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive, ShareExperience],
   relatedItems: () => [PineOClock, CherryBombs, Rhinoloupe, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [Phoenix, FertilityGoddess, OceanGod]
+  relatedCards: () => [Phoenix, FertilityGoddess, OceanGod, Volcano, Unicorn, Spring]
 }
 
 /**
