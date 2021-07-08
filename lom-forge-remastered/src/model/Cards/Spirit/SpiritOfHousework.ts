@@ -1,10 +1,41 @@
-import { Card, Spirit } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
+import { Mantle, Ring } from 'model/Equipment'
+import { addImmunity, Sleep } from 'model/Immunities'
 import { Hairball } from 'model/Items'
+import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { ExtraLucre } from 'model/Specials'
+import { incrementStat, Luck } from 'model/Stats'
 
-export const SpiritOfHousework: Card = {
+export const SpiritOfHousework: ActiveCard = {
   id: 'SpiritOfHousework',
   name: 'Spirit (of Housework)',
   category: Spirit,
   price: 800,
-  relatedItems: () => [Hairball]
+  activate: activateSpiritOfHousework,
+  relatedItems: () => [Hairball],
+  relatedStats: () => [Luck],
+  relatedArmors: () => [Mantle, Ring],
+  relatedImmunities: () => [Sleep],
+  relatedSpecials: () => [ExtraLucre]
+}
+
+function activateSpiritOfHousework(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      incrementStat(project, Luck)
+
+      if (project.type === ArmorProjectType) {
+        switch (project.equipment) {
+          case Mantle:
+            addImmunity(project, Sleep)
+            break
+          case Ring:
+            project.special = ExtraLucre
+            break
+        }
+      }
+      break
+  }
 }

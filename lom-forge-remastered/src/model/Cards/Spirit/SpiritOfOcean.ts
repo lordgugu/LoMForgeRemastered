@@ -1,10 +1,32 @@
-import { Card, Spirit } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
+import { Hat } from 'model/Equipment'
+import { addImmunity, Confusion } from 'model/Immunities'
 import { Conchurnip } from 'model/Items'
+import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { Charm, incrementStat } from 'model/Stats'
 
-export const SpiritOfOcean: Card = {
+export const SpiritOfOcean: ActiveCard = {
   id: 'SpiritOfOcean',
   name: 'Spirit (of Ocean)',
   category: Spirit,
   price: 800,
-  relatedItems: () => [Conchurnip]
+  activate: activateSpiritOfOcean,
+  relatedItems: () => [Conchurnip],
+  relatedStats: () => [Charm],
+  relatedArmors: () => [Hat],
+  relatedImmunities: () => [Confusion]
+}
+
+function activateSpiritOfOcean(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      incrementStat(project, Charm)
+
+      if (project.type === ArmorProjectType && project.equipment === Hat) {
+        addImmunity(project, Confusion)
+      }
+      break
+  }
 }

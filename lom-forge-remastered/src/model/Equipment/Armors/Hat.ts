@@ -1,4 +1,4 @@
-import { FertilityGoddess, OceanGod } from 'model/Cards'
+import { FertilityGoddess, OceanGod, SpiritOfOcean } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath, SweetMoai } from 'model/Items'
@@ -16,5 +16,5 @@ export const Hat: ArmorEquipment = {
   priceCoefficient: 15,
   relatedItems: () => [PineOClock, Rhinoloupe, SweetMoai, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [FertilityGoddess, OceanGod]
+  relatedCards: () => [FertilityGoddess, OceanGod, SpiritOfOcean]
 }
