@@ -1,5 +1,5 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { Glove } from 'model/Equipment'
+import { Glove } from 'model/Equipment/Weapons'
 import { Garlicrown } from 'model/Items'
 import { HandOfMidas } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

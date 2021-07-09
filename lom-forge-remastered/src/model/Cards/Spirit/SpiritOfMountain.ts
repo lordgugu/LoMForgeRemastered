@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
-import { Hammer } from 'model/Equipment'
+import { Hammer } from 'model/Equipment/Weapons'
 import { Ether } from 'model/Items'
 import { QuakeHammer } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

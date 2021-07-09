@@ -10,7 +10,8 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Sword } from 'model/Equipment'
+import { AllArmors } from 'model/Equipment'
+import { Sword } from 'model/Equipment/Weapons'
 import { addImmunity, Freeze } from 'model/Immunities'
 import { SharpClaw } from 'model/Items'
 import { FlameTongue } from 'model/MasterMoves/MiddleSlot'
@@ -31,6 +32,7 @@ export const GodOfDestruction: ActiveCard = {
   relatedMasterMoves: {
     middle: () => [FlameTongue]
   },
+  relatedArmors: () => AllArmors,
   relatedImmunities: () => [Freeze]
 }
 

@@ -10,7 +10,7 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Knife } from 'model/Equipment'
+import { Knife } from 'model/Equipment/Weapons'
 import { PoisonFang } from 'model/Items'
 import { PoisonBlade } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

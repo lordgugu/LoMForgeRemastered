@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Bow, Sword } from 'model/Equipment'
+import { Bow, Sword } from 'model/Equipment/Weapons'
 import { SunCrystal } from 'model/Items'
 import { Sunlight } from 'model/MasterMoves/MiddleSlot'
 import { SolarFlare } from 'model/MasterMoves/TopSlot'

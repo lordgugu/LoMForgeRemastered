@@ -1,5 +1,5 @@
 import { WindGod } from 'model/Cards'
-import { Staff } from 'model/Equipment'
+import { Staff } from 'model/Equipment/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Caduceus: MasterMove = {

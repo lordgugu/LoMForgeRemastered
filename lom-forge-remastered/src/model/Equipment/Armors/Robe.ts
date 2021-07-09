@@ -1,6 +1,6 @@
-import { BedOfThorn, FertilityGoddess, HeavensScale, Metropolis, OceanGod, Spring } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, Metropolis, OceanGod, Spring } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BakedRoach, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
@@ -16,7 +16,7 @@ export const Robe: ArmorEquipment = {
   markerThreshold: 2,
   priceCoefficient: 30,
   relatedItems: () => [PineOClock, Rhinoloupe, StinkyBreath, BakedRoach],
-  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [FertilityGoddess, OceanGod, HeavensScale, BedOfThorn, Metropolis, Spring],
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst, Freeze],
+  relatedCards: () => [FertilityGoddess, OceanGod, HeavensScale, BedOfThorn, Metropolis, Spring, GodOfDestruction],
   relatedSpecials: () => [NoReviveMoveHpRegeneration, NoHpRegeneration]
 }

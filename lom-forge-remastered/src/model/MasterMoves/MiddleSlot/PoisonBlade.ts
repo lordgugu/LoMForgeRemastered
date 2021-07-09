@@ -1,5 +1,5 @@
 import { BeastHeadedGod } from 'model/Cards'
-import { Knife } from 'model/Equipment'
+import { Knife } from 'model/Equipment/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const PoisonBlade: MasterMove = {

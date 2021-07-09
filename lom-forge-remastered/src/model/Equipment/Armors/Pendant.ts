@@ -2,6 +2,7 @@ import {
   BedOfThorn,
   FertilityGoddess,
   GoddessOfLove,
+  GodOfDestruction,
   HeavensScale,
   OceanGod,
   Phoenix,
@@ -11,7 +12,7 @@ import {
   Volcano
 } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Darkness, Flameburst, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Darkness, Flameburst, Freeze, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BlackenedBat, PineOClock, Rhinoloupe, StinkyBreath, ZombieClaw } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
 import { AutoRevive, ExtraLucre, FastRevive, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
@@ -30,7 +31,7 @@ export const Pendant: ArmorEquipment = {
   activate: activatePendant,
   relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive, NoReviveMoveHpRegeneration, NoHpRegeneration],
   relatedItems: () => [PineOClock, ZombieClaw, Rhinoloupe, StinkyBreath, BlackenedBat],
-  relatedImmunities: () => [Poison, Sleep, Paralysis, Confusion, Darkness, Petrification, Flameburst],
+  relatedImmunities: () => [Poison, Sleep, Paralysis, Confusion, Darkness, Petrification, Flameburst, Freeze],
   relatedCards: () => [
     Phoenix,
     GoddessOfLove,
@@ -41,7 +42,8 @@ export const Pendant: ArmorEquipment = {
     Spring,
     HeavensScale,
     BedOfThorn,
-    SacrificedNymph
+    SacrificedNymph,
+    GodOfDestruction
   ]
 }
 

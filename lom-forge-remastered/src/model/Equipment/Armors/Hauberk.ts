@@ -1,4 +1,4 @@
-import { BedOfThorn, FertilityGoddess, HeavensScale, OceanGod, Volcano } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod, Volcano } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
@@ -17,6 +17,6 @@ export const Hauberk: ArmorEquipment = {
   priceCoefficient: 60,
   relatedItems: () => [Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst, Freeze],
-  relatedCards: () => [FertilityGoddess, OceanGod, HeavensScale, BedOfThorn, Volcano],
+  relatedCards: () => [FertilityGoddess, OceanGod, HeavensScale, BedOfThorn, Volcano, GodOfDestruction],
   relatedSpecials: () => [NoReviveMoveHpRegeneration, NoHpRegeneration]
 }

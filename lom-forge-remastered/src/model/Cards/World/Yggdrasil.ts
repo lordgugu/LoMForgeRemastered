@@ -13,7 +13,7 @@ import {
   Top,
   World
 } from 'model/Cards'
-import { Staff } from 'model/Equipment'
+import { Staff } from 'model/Equipment/Weapons'
 import { SpinySeed } from 'model/Items'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, incrementStat, widenStatRange } from 'model/Stats'

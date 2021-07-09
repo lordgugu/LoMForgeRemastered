@@ -1,5 +1,6 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { Heavy, Knife, minus50Percent, Pierce, plus50Percent, Sharp, Strike } from 'model/Equipment'
+import { minus50Percent, Pierce, plus50Percent, Strike } from 'model/Equipment'
+import { Heavy, Knife, Sharp } from 'model/Equipment/Weapons'
 import { Bumpkin } from 'model/Items'
 import { QuickBlade } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

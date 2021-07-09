@@ -10,7 +10,7 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { TwoHandedSword } from 'model/Equipment'
+import { TwoHandedSword } from 'model/Equipment/Weapons'
 import { AngelFeather } from 'model/Items'
 import { ChaoticAvenger } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

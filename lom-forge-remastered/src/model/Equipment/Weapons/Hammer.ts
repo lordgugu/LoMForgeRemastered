@@ -1,10 +1,10 @@
 import { BlacksmithGod, SpiritOfMountain, ThunderGod, Volcano } from 'model/Cards'
-import { WeaponEquipment } from 'model/Equipment'
+import { Weapon } from 'model/Equipment/Weapons'
 import { Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'
 import { Thrust } from 'model/MasterMoves/TopSlot'
 
-export const Hammer: WeaponEquipment = {
+export const Hammer: Weapon = {
   id: 'Hammer',
   name: 'Hammer',
   attributes: {

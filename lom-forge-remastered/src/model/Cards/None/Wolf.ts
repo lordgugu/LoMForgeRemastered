@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
-import { Bow } from 'model/Equipment'
+import { Bow } from 'model/Equipment/Weapons'
 import { PeachPuppy } from 'model/Items'
 import { MagicalShot } from 'model/MasterMoves/TopSlot'
 import { TemperingProject } from 'model/Projects'

@@ -10,7 +10,7 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Knife } from 'model/Equipment'
+import { Knife } from 'model/Equipment/Weapons'
 import { ClearFeather } from 'model/Items'
 import { SinisterBlade } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

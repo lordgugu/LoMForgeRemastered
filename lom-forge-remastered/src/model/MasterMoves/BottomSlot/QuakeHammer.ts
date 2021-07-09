@@ -1,5 +1,5 @@
 import { SpiritOfMountain } from 'model/Cards'
-import { Hammer } from 'model/Equipment'
+import { Hammer } from 'model/Equipment/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const QuakeHammer: MasterMove = {

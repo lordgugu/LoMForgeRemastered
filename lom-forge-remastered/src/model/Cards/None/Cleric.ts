@@ -1,5 +1,6 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { Heavy, minus50Percent, plus50Percent, Sharp, Slash, Staff, Strike } from 'model/Equipment'
+import { minus50Percent, plus50Percent, Slash, Strike } from 'model/Equipment'
+import { Heavy, Sharp, Staff } from 'model/Equipment/Weapons'
 import { HolyWater } from 'model/Items'
 import { Demonicide } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

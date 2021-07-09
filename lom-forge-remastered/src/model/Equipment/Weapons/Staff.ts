@@ -1,10 +1,10 @@
 import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness, Yggdrasil } from 'model/Cards'
-import { WeaponEquipment } from 'model/Equipment'
+import { Weapon } from 'model/Equipment/Weapons'
 import { Demonicide, Electrosceptre, GoldenTouch, Jump } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'
 import { Caduceus, Thrust } from 'model/MasterMoves/TopSlot'
 
-export const Staff: WeaponEquipment = {
+export const Staff: Weapon = {
   id: 'Staff',
   name: 'Staff',
   attributes: {

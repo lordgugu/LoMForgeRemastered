@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
-import { Axe } from 'model/Equipment'
+import { Axe } from 'model/Equipment/Weapons'
 import { WadOfWool } from 'model/Items'
 import { Woodchopper } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

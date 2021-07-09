@@ -1,5 +1,5 @@
 import { Wanderer } from 'model/Cards'
-import { Axe } from 'model/Equipment'
+import { Axe } from 'model/Equipment/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Woodchopper: MasterMove = {

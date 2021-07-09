@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
-import { Spear } from 'model/Equipment'
+import { Spear } from 'model/Equipment/Weapons'
 import { DragonsBreath } from 'model/Items'
 import { SpearOfLight } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

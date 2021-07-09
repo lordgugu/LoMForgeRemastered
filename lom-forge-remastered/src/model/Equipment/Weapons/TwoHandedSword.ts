@@ -1,10 +1,10 @@
 import { FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
-import { WeaponEquipment } from 'model/Equipment'
+import { Weapon } from 'model/Equipment/Weapons'
 import { Jump, Ragnarok } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'
 import { ChaoticAvenger, Thrust } from 'model/MasterMoves/TopSlot'
 
-export const TwoHandedSword: WeaponEquipment = {
+export const TwoHandedSword: Weapon = {
   id: 'TwoHandedSword',
   name: '2H Sword',
   attributes: {

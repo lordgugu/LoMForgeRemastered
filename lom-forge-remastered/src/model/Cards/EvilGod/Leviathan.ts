@@ -10,7 +10,7 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { TwoHandedAxe } from 'model/Equipment'
+import { TwoHandedAxe } from 'model/Equipment/Weapons'
 import { GiantsHorn, OrangeOpus } from 'model/Items'
 import { Treefeller } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

@@ -14,24 +14,25 @@ import { TwoHandedAxe } from './TwoHandedAxe'
 import { TwoHandedSword } from './TwoHandedSword'
 
 export type WeaponAttribute = 'sharp' | 'heavy' | 'force' | 'tech'
+
 export const Sharp: WeaponAttribute = 'sharp'
 export const Heavy: WeaponAttribute = 'heavy'
 export const Force: WeaponAttribute = 'force'
 export const Tech: WeaponAttribute = 'tech'
 
-export type WeaponAttributes = {
-  [attribute in WeaponAttribute]: number
+export type WeaponContext = {
+  attributes: { [attribute in WeaponAttribute]: number }
 }
 
-export type WeaponEquipment = Entity &
+export type Weapon = Entity &
+  WeaponContext &
   MasterMovesContext & {
-    readonly attributes: WeaponAttributes
     readonly markerThreshold: number
     readonly priceCoefficient: number
     readonly activate?: (project: WeaponProject) => void
   }
 
-export const AllWeapons: WeaponEquipment[] = [
+export const AllWeapons: Weapon[] = [
   Knife,
   Sword,
   Axe,
@@ -44,6 +45,24 @@ export const AllWeapons: WeaponEquipment[] = [
   Flail,
   Bow
 ]
+
+export const AllWeaponsByForgeCode: { [code: string]: Weapon } = {
+  '1': Knife,
+  '2': Sword,
+  '3': Axe,
+  '4': TwoHandedSword,
+  '5': TwoHandedAxe,
+  '6': Hammer,
+  '7': Spear,
+  '8': Staff,
+  '9': Glove,
+  '10': Flail,
+  '11': Bow
+}
+
+export const AllWeaponsById: { [id: string]: Weapon } = Object.fromEntries(
+  AllWeapons.map((weapon) => [weapon.id, weapon])
+)
 
 export * from './Axe'
 export * from './Bow'

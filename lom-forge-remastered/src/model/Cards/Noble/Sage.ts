@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
-import { Bow } from 'model/Equipment'
+import { Bow } from 'model/Equipment/Weapons'
 import { MessyScroll } from 'model/Items'
 import { PhoenixFalling } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

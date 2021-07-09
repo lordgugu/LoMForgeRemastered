@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Axe } from 'model/Equipment'
+import { Axe } from 'model/Equipment/Weapons'
 import { DragonBlood } from 'model/Items'
 import { DragonSlayer } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

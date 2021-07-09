@@ -1,6 +1,7 @@
 import {
   BedOfThorn,
   FertilityGoddess,
+  GodOfDestruction,
   HeavensScale,
   NymphOfOrchards,
   OceanGod,
@@ -11,7 +12,7 @@ import {
   Volcano
 } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
-import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
+import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
 import {
@@ -44,7 +45,7 @@ export const Ring: ArmorEquipment = {
     NoHpRegeneration
   ],
   relatedItems: () => [PineOClock, CherryBombs, Rhinoloupe, StinkyBreath],
-  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
+  relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst, Freeze],
   relatedCards: () => [
     Phoenix,
     FertilityGoddess,
@@ -55,7 +56,8 @@ export const Ring: ArmorEquipment = {
     SpiritOfHousework,
     HeavensScale,
     BedOfThorn,
-    NymphOfOrchards
+    NymphOfOrchards,
+    GodOfDestruction
   ]
 }
 

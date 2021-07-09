@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Hammer } from 'model/Equipment'
+import { Hammer } from 'model/Equipment/Weapons'
 import { Electricity } from 'model/Items'
 import { Mjolnir } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

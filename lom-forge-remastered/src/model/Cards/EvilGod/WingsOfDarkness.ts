@@ -10,7 +10,7 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Staff } from 'model/Equipment'
+import { Staff } from 'model/Equipment/Weapons'
 import { BlackenedBat } from 'model/Items'
 import { GoldenTouch } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

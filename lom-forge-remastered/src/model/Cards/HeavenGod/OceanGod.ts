@@ -1,5 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { AllArmors, Spear } from 'model/Equipment'
+import { AllArmors } from 'model/Equipment'
+import { Spear } from 'model/Equipment/Weapons'
 import { addImmunity, Flameburst } from 'model/Immunities'
 import { Orcaplant, Squalphin } from 'model/Items'
 import { Trident } from 'model/MasterMoves/TopSlot'

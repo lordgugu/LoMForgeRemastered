@@ -1,5 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Magic, Pierce, Shoes, Slash, Staff, Strike } from 'model/Equipment'
+import { Magic, Pierce, Shoes, Slash, Strike } from 'model/Equipment'
+import { Staff } from 'model/Equipment/Weapons'
 import { addImmunity, Paralysis } from 'model/Immunities'
 import { Diceberry } from 'model/Items'
 import { Caduceus } from 'model/MasterMoves/TopSlot'

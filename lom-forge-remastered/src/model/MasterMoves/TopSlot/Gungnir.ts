@@ -1,5 +1,5 @@
 import { RulerOfTheSky } from 'model/Cards'
-import { Spear } from 'model/Equipment'
+import { Spear } from 'model/Equipment/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Gungnir: MasterMove = {

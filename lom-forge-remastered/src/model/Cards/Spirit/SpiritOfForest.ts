@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
-import { Bow } from 'model/Equipment'
+import { Bow } from 'model/Equipment/Weapons'
 import { MothWing } from 'model/Items'
 import { ElvenArcher } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

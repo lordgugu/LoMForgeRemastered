@@ -1,5 +1,6 @@
 import { Bottom, Card, CardSlot, Middle, Phoenix, Stage, Top } from 'model/Cards'
-import { Force, Hammer, Hauberk, minus50Percent, Pendant, plus50Percent, Ring, Tech } from 'model/Equipment'
+import { Hauberk, minus50Percent, Pendant, plus50Percent, Ring } from 'model/Equipment'
+import { Force, Hammer, Tech } from 'model/Equipment/Weapons'
 import { addImmunity, Freeze } from 'model/Immunities'
 import { Ash } from 'model/Items'
 import { MagmaHammer } from 'model/MasterMoves/BottomSlot'

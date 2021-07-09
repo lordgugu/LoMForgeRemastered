@@ -1,4 +1,15 @@
-import { Axe, Flail, Glove, Hammer, Knife, Spear, Staff, Sword, TwoHandedAxe, TwoHandedSword } from 'model/Equipment'
+import {
+  Axe,
+  Flail,
+  Glove,
+  Hammer,
+  Knife,
+  Spear,
+  Staff,
+  Sword,
+  TwoHandedAxe,
+  TwoHandedSword
+} from 'model/Equipment/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Thrust: MasterMove = {

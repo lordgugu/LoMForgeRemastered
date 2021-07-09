@@ -10,7 +10,7 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Sword } from 'model/Equipment'
+import { Sword } from 'model/Equipment/Weapons'
 import { VampireFang } from 'model/Items'
 import { Vampsword } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'

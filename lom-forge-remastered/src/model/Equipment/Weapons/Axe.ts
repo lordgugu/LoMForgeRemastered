@@ -1,10 +1,10 @@
 import { GodOfWar, Wanderer } from 'model/Cards'
-import { WeaponEquipment } from 'model/Equipment'
+import { Weapon } from 'model/Equipment/Weapons'
 import { Jump, Woodchopper } from 'model/MasterMoves/BottomSlot'
-import { Uppercut, DragonSlayer } from 'model/MasterMoves/MiddleSlot'
+import { DragonSlayer, Uppercut } from 'model/MasterMoves/MiddleSlot'
 import { Thrust } from 'model/MasterMoves/TopSlot'
 
-export const Axe: WeaponEquipment = {
+export const Axe: Weapon = {
   id: 'Axe',
   name: 'Axe',
   attributes: {
