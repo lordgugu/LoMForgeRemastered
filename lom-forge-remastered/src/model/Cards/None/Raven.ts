@@ -1,10 +1,30 @@
-import { Card, None } from 'model/Cards'
+import { Bottom, Card, CardSlot, Middle, None, Top } from 'model/Cards'
 import { RavenFeather } from 'model/Items'
+import { TemperingProject } from 'model/Projects'
+import { Charm, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const Raven: Card = {
   id: 'Raven',
   name: 'Raven',
   category: None,
   price: 300,
-  relatedItems: () => [RavenFeather]
+  activate: activateRaven,
+  relatedItems: () => [RavenFeather],
+  relatedStats: () => [Magic, Charm],
+  relatedStatRanges: () => [Magic, Charm]
+}
+
+function activateRaven(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      widenStatRange(project, Magic, -3, 5)
+      widenStatRange(project, Charm, -3, 5)
+
+      setMinimumStatValue(project, Magic, 3)
+      setMinimumStatValue(project, Charm, 3)
+
+      break
+  }
 }

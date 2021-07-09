@@ -1,10 +1,39 @@
-import { Card, Noble } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
+import { Axe } from 'model/Equipment'
 import { WadOfWool } from 'model/Items'
+import { Woodchopper } from 'model/MasterMoves'
+import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { AllStats, incrementStat, Skill, Spirit, widenStatRange } from 'model/Stats'
 
-export const Wanderer: Card = {
+export const Wanderer: ActiveCard = {
   id: 'Wanderer',
   name: 'Wanderer',
   category: Noble,
   price: 1000,
-  relatedItems: () => [WadOfWool]
+  activate: activateWanderer,
+  relatedItems: () => [WadOfWool],
+  relatedStatRanges: () => AllStats,
+  relatedStats: () => [Skill, Spirit],
+  relatedWeapons: () => [Axe],
+  relatedMasterMoves: {
+    bottom: () => [Woodchopper]
+  }
+}
+
+function activateWanderer(project: TemperingProject, slot: CardSlot) {
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      AllStats.forEach((stat) => widenStatRange(project, stat, -3, 5))
+
+      incrementStat(project, Skill)
+      incrementStat(project, Spirit)
+
+      if (project.type == WeaponProjectType && project.equipment === Axe) {
+        project.masterMoves.bottom = Woodchopper
+      }
+
+      break
+  }
 }
