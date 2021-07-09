@@ -1,10 +1,10 @@
 import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod, SpiritOfShoes } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { LoquatShoe, PearOHeels, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Boots: ArmorEquipment = {
+export const Boots: Equipment = {
   id: 'Boots',
   name: 'Boots',
   attributes: {

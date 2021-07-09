@@ -10,10 +10,10 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Knife } from 'model/Equipment/Weapons'
+import { Knife } from 'model/Gear/Weapons'
 import { ClearFeather } from 'model/Items'
 import { SinisterBlade } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
 export const LordOfFlies: ActiveCard = {
@@ -41,7 +41,7 @@ function activateLordOfFlies(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Skill, 15)
       AllStats.forEach((stat) => decrementStat(project, stat))
 
-      if (project.type === WeaponProjectType && project.equipment == Knife) {
+      if (project.type === WeaponProject && project.equipment == Knife) {
         project.masterMoves.bottom = SinisterBlade
       }
 

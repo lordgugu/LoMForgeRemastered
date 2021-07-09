@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
-import { Spear } from 'model/Equipment/Weapons'
+import { Spear } from 'model/Gear/Weapons'
 import { DragonsBreath } from 'model/Items'
 import { SpearOfLight } from 'model/MasterMoves/TopSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, HP, incrementStat, Power, widenStatRange } from 'model/Stats'
 
 export const ManOfValor: ActiveCard = {
@@ -30,7 +30,7 @@ function activateManOfValor(project: TemperingProject, slot: CardSlot) {
       incrementStat(project, Power)
       incrementStat(project, HP)
 
-      if (project.type == WeaponProjectType && project.equipment === Spear) {
+      if (project.type == WeaponProject && project.equipment === Spear) {
         project.masterMoves.top = SpearOfLight
       }
 

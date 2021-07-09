@@ -1,4 +1,5 @@
-import { Force, minus25Percent, plus25Percent, Tech } from 'model/Equipment'
+import { minus25Percent, plus25Percent } from 'model/Gear'
+import { Force, Tech } from 'model/Gear/Weapons'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 

@@ -11,7 +11,7 @@ export const Orihalcon: Material = {
     force: 28,
     tech: 28
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 28,
     slash: 28,
     pierce: 28,

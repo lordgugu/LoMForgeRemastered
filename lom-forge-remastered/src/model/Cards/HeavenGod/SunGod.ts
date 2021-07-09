@@ -1,9 +1,9 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Bow, Sword } from 'model/Equipment/Weapons'
+import { Bow, Sword } from 'model/Gear/Weapons'
 import { SunCrystal } from 'model/Items'
 import { Sunlight } from 'model/MasterMoves/MiddleSlot'
 import { SolarFlare } from 'model/MasterMoves/TopSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Charm, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const SunGod: ActiveCard = {
@@ -30,7 +30,7 @@ function activateSunGod(project: TemperingProject, slot: CardSlot) {
       widenStatRange(project, Charm, -5, 10)
       setMinimumStatValue(project, Charm, 10)
 
-      if (project.type === WeaponProjectType) {
+      if (project.type === WeaponProject) {
         switch (project.equipment) {
           case Sword:
             project.masterMoves.middle = Sunlight

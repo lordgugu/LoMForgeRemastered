@@ -1,5 +1,5 @@
 import { MotherOfGods } from 'model/Cards'
-import { Flail } from 'model/Equipment/Weapons'
+import { Flail } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const GameOfDeath: MasterMove = {

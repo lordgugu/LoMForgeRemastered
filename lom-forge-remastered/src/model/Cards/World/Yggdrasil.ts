@@ -13,9 +13,9 @@ import {
   Top,
   World
 } from 'model/Cards'
-import { Staff } from 'model/Equipment/Weapons'
+import { Staff } from 'model/Gear/Weapons'
 import { SpinySeed } from 'model/Items'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, incrementStat, widenStatRange } from 'model/Stats'
 
 export const Yggdrasil: ActiveCard = {
@@ -43,7 +43,7 @@ function activateYggdrasil(project: TemperingProject, slot: CardSlot) {
     case Top:
     case Middle:
     case Bottom:
-      if (project.type === WeaponProjectType && project.equipment === Staff) {
+      if (project.type === WeaponProject && project.equipment === Staff) {
         AllStats.forEach((stat) => widenStatRange(project, stat, -3, 9))
       } else {
         AllStats.forEach((stat) => widenStatRange(project, stat, -5, 10))

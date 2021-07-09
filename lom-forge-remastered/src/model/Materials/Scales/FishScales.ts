@@ -11,7 +11,7 @@ export const FishScales: Material = {
     force: 7,
     tech: 7
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 9,
     slash: 9,
     pierce: 8,

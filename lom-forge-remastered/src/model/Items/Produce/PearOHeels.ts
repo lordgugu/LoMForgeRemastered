@@ -1,7 +1,8 @@
 import { SpiritOfShoes } from 'model/Cards'
-import { Boots, Pierce, plus25Percent, Shoes, Slash, Strike } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Boots, Pierce, Shoes, Slash, Strike } from 'model/Gear/Equipment'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const PearOHeels: Item = {
   id: 'PearOHeels',
@@ -10,13 +11,13 @@ export const PearOHeels: Item = {
   energy: 32,
   activate: activatePearOHeels,
   relatedCards: () => [SpiritOfShoes],
-  relatedArmors: () => [Boots, Shoes]
+  relatedEquipment: () => [Boots, Shoes]
 }
 
 function activatePearOHeels(project: TemperingProject) {
   const { energy, equipment } = project
 
-  if (project.type === ArmorProjectType) {
+  if (project.type === EquipmentProject) {
     switch (equipment) {
       case Boots:
       case Shoes:

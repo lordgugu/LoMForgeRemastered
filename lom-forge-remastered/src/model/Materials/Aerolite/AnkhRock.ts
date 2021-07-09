@@ -12,7 +12,7 @@ export const AnkhRock: Material = {
     force: 37,
     tech: 40
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 25,
     slash: 22,
     pierce: 30,

@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
-import { Bow } from 'model/Equipment/Weapons'
+import { Bow } from 'model/Gear/Weapons'
 import { MessyScroll } from 'model/Items'
 import { PhoenixFalling } from 'model/MasterMoves/TopSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, Defense, incrementStat, Magic, widenStatRange } from 'model/Stats'
 
 export const Sage: ActiveCard = {
@@ -30,7 +30,7 @@ function activateSage(project: TemperingProject, slot: CardSlot) {
       incrementStat(project, Magic)
       incrementStat(project, Defense)
 
-      if (project.type == WeaponProjectType && project.equipment === Bow) {
+      if (project.type == WeaponProject && project.equipment === Bow) {
         project.masterMoves.top = PhoenixFalling
       }
 

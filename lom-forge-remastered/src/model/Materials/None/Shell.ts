@@ -11,7 +11,7 @@ export const Shell: Material = {
     force: 16,
     tech: 14
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 26,
     slash: 10,
     pierce: 36,

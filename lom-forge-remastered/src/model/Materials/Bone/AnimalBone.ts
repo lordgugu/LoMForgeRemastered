@@ -11,7 +11,7 @@ export const AnimalBone: Material = {
     force: 12,
     tech: 12
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 9,
     slash: 15,
     pierce: 6,

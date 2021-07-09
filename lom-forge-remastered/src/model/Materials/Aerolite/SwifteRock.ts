@@ -12,7 +12,7 @@ export const SwifteRock: Material = {
     force: 75,
     tech: 80
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 50,
     slash: 45,
     pierce: 60,

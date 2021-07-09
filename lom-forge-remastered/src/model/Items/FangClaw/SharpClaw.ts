@@ -1,6 +1,7 @@
 import { GodOfDestruction } from 'model/Cards'
-import { Heavy, minus50Percent, plus50Percent, Sharp } from 'model/Equipment'
 import { Salamander, Undine } from 'model/Essences'
+import { minus50Percent, plus50Percent } from 'model/Gear'
+import { Heavy, Sharp } from 'model/Gear/Weapons'
 import { FangClaw, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 

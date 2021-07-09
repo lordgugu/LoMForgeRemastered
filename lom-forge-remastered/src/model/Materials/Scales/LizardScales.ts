@@ -11,7 +11,7 @@ export const LizardScales: Material = {
     force: 14,
     tech: 14
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 19,
     slash: 19,
     pierce: 16,

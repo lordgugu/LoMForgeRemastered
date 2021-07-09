@@ -1,5 +1,5 @@
 import { King } from 'model/Cards'
-import { Glove } from 'model/Equipment/Weapons'
+import { Glove } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const HandOfMidas: MasterMove = {

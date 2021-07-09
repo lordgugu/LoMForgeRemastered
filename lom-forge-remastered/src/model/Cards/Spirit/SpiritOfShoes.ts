@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
-import { Boots, Shoes } from 'model/Equipment'
+import { Boots, Shoes } from 'model/Gear/Equipment'
 import { addImmunity, Paralysis } from 'model/Immunities'
 import { LoquatShoe, PearOHeels } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ExtraExperience } from 'model/Specials'
 import { incrementStat, Skill } from 'model/Stats'
 
@@ -14,7 +14,7 @@ export const SpiritOfShoes: ActiveCard = {
   activate: activateSpiritOfShoes,
   relatedItems: () => [LoquatShoe, PearOHeels],
   relatedStats: () => [Skill],
-  relatedArmors: () => [Boots, Shoes],
+  relatedEquipment: () => [Boots, Shoes],
   relatedImmunities: () => [Paralysis],
   relatedSpecials: () => [ExtraExperience]
 }
@@ -26,7 +26,7 @@ function activateSpiritOfShoes(project: TemperingProject, slot: CardSlot) {
     case Bottom:
       incrementStat(project, Skill)
 
-      if (project.type === ArmorProjectType) {
+      if (project.type === EquipmentProject) {
         switch (project.equipment) {
           case Boots:
             addImmunity(project, Paralysis)

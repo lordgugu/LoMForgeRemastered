@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Pendant } from 'model/Equipment'
+import { Pendant } from 'model/Gear/Equipment'
 import { DamselsSigh } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ExtraLucre } from 'model/Specials'
 import { Charm, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 
@@ -14,7 +14,7 @@ export const GoddessOfLove: ActiveCard = {
   relatedItems: () => [DamselsSigh],
   relatedStats: () => [Spirit, Charm],
   relatedStatRanges: () => [Spirit, Charm],
-  relatedArmors: () => [Pendant],
+  relatedEquipment: () => [Pendant],
   relatedSpecials: () => [ExtraLucre]
 }
 
@@ -29,7 +29,7 @@ function activateGoddessOfLove(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Spirit, 7)
       setMinimumStatValue(project, Charm, 7)
 
-      if (project.type === ArmorProjectType && project.equipment === Pendant) {
+      if (project.type === EquipmentProject && project.equipment === Pendant) {
         project.special = ExtraLucre
       }
 

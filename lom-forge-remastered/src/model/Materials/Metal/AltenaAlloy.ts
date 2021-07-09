@@ -11,7 +11,7 @@ export const AltenaAlloy: Material = {
     force: 50,
     tech: 50
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 50,
     slash: 50,
     pierce: 50,

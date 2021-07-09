@@ -11,7 +11,7 @@ export const PedanStone: Material = {
     force: 64,
     tech: 50
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 21,
     slash: 27,
     pierce: 36,

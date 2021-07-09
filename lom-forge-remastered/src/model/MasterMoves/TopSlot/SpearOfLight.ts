@@ -1,5 +1,5 @@
 import { ManOfValor } from 'model/Cards'
-import { Spear } from 'model/Equipment/Weapons'
+import { Spear } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const SpearOfLight: MasterMove = {

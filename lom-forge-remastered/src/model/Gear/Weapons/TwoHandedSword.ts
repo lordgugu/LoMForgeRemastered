@@ -1,5 +1,5 @@
 import { FallenAngel, Ragnarok as RagnarokCard } from 'model/Cards'
-import { Weapon } from 'model/Equipment/Weapons'
+import { Weapon } from 'model/Gear/Weapons'
 import { Jump, Ragnarok } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'
 import { ChaoticAvenger, Thrust } from 'model/MasterMoves/TopSlot'

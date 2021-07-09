@@ -11,7 +11,7 @@ export const Fullmetal: Material = {
     force: 68,
     tech: 66
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 44,
     slash: 27,
     pierce: 99,

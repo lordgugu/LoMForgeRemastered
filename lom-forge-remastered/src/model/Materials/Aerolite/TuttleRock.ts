@@ -12,7 +12,7 @@ export const TuttleRock: Material = {
     force: 52,
     tech: 56
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 35,
     slash: 31,
     pierce: 42,

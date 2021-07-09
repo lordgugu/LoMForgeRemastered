@@ -1,10 +1,10 @@
 import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod, Volcano } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { Cabbadillo, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Hauberk: ArmorEquipment = {
+export const Hauberk: Equipment = {
   id: 'Hauberk',
   name: 'Hauberk',
   attributes: {

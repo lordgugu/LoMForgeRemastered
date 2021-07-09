@@ -27,10 +27,10 @@ import {
   World,
   Yggdrasil
 } from 'model/Cards'
-import { TwoHandedSword } from 'model/Equipment/Weapons'
+import { TwoHandedSword } from 'model/Gear/Weapons'
 import { PineOClock } from 'model/Items'
 import { Ragnarok as RagnarokMasterMove } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 
 export const Ragnarok: ActiveCard = {
   id: 'Ragnarok',
@@ -80,7 +80,7 @@ function activateRagnarok(project: TemperingProject, slot: CardSlot) {
     case Top:
     case Middle:
     case Bottom:
-      if (project.type === WeaponProjectType && project.equipment === TwoHandedSword) {
+      if (project.type === WeaponProject && project.equipment === TwoHandedSword) {
         project.masterMoves.bottom = RagnarokMasterMove
       }
 

@@ -1,6 +1,7 @@
 import { RulerOfTheSky } from 'model/Cards'
-import { plus25Percent, Sharp } from 'model/Equipment'
 import { totalLevels, Wisp } from 'model/Essences'
+import { plus25Percent } from 'model/Gear'
+import { Sharp } from 'model/Gear/Weapons'
 import { Item, Produce } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 

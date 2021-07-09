@@ -12,7 +12,7 @@ export const FossilWood: Material = {
     force: 56,
     tech: 16
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 64,
     slash: 20,
     pierce: 28,

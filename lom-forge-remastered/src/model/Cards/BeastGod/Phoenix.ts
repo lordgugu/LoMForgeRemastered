@@ -1,7 +1,7 @@
 import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Top, Volcano } from 'model/Cards'
-import { Pendant, Ring } from 'model/Equipment'
+import { Pendant, Ring } from 'model/Gear/Equipment'
 import { FlamingQuill } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { AutoRevive } from 'model/Specials'
 import { Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
@@ -15,7 +15,7 @@ export const Phoenix: ActiveCard = {
   relatedCards: () => [Volcano],
   relatedStats: () => [Power, Skill],
   relatedStatRanges: () => [Power, Skill],
-  relatedArmors: () => [Ring, Pendant]
+  relatedEquipment: () => [Ring, Pendant]
 }
 
 function activatePhoenix(project: TemperingProject, slot: CardSlot) {
@@ -29,7 +29,7 @@ function activatePhoenix(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Power, 3)
       setMinimumStatValue(project, Skill, 3)
 
-      if (project.type === ArmorProjectType) {
+      if (project.type === EquipmentProject) {
         switch (project.equipment) {
           case Ring:
           case Pendant:

@@ -7,12 +7,12 @@ import {
   SpiritOfShoes,
   WindGod
 } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { LoquatShoe, PearOHeels, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { ExtraExperience, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Shoes: ArmorEquipment = {
+export const Shoes: Equipment = {
   id: 'Shoes',
   name: 'Shoes',
   attributes: {

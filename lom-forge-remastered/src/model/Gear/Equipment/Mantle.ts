@@ -7,12 +7,12 @@ import {
   OceanGod,
   SpiritOfHousework
 } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { MoveHpRegeneration, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Mantle: ArmorEquipment = {
+export const Mantle: Equipment = {
   id: 'Mantle',
   name: 'Mantle',
   attributes: {

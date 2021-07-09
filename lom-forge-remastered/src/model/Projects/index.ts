@@ -1,6 +1,7 @@
 import { activateCards, CardContext, pushCards, resetVolatileCards, setWorldCard } from 'model/Cards'
-import { ArmorAttributes, ArmorEquipment, WeaponAttributes, WeaponEquipment } from 'model/Equipment'
 import { EssencesContext, increaseRemainingEssences } from 'model/Essences'
+import { Equipment, EquipmentAttributes } from 'model/Gear/Equipment'
+import { Weapon, WeaponAttributes } from 'model/Gear/Weapons'
 import { ImmunitiesContext } from 'model/Immunities'
 import { Item } from 'model/Items'
 import { MasterMovesContext } from 'model/MasterMoves'
@@ -8,41 +9,42 @@ import { Material } from 'model/Materials'
 import { Special } from 'model/Specials'
 import { calculateFinalStats, resetStatLimits, StatsContext } from 'model/Stats'
 
-type Project = StatsContext &
+type ProjectContext = StatsContext &
   EssencesContext &
   CardContext & {
     material: Material
     price: number
   }
 
-export const WeaponProjectType = 'Weapon'
-export const ArmorProjectType = 'Armor'
+export const WeaponProject = 'Weapon'
+export const EquipmentProject = 'Equipment'
 
-export type WeaponProject = Project &
+export type TemperedWeapon = ProjectContext &
   MasterMovesContext & {
     type: 'Weapon'
-    equipment: WeaponEquipment
+    equipment: Weapon
     attributes: WeaponAttributes
     power: number
   }
 
-export type ArmorProject = Project &
+export type AlteredArmor = ProjectContext &
   ImmunitiesContext & {
-    type: 'Armor'
-    equipment: ArmorEquipment
-    attributes: ArmorAttributes
+    type: 'Equipment'
+    equipment: Equipment
+    attributes: EquipmentAttributes
     special?: Special
   }
 
-export type TemperingProject = WeaponProject | ArmorProject
+export type TemperingProject = TemperedWeapon | AlteredArmor
 
 function resetAttributes(project: TemperingProject) {
   switch (project.type) {
-    case WeaponProjectType:
+    case WeaponProject:
       project.attributes = { ...project.material.weaponAttributes }
+
       break
-    case ArmorProjectType:
-      project.attributes = { ...project.material.armorAttributes }
+    case EquipmentProject:
+      project.attributes = { ...project.material.equipmentAttributes }
       break
   }
 }
@@ -54,10 +56,10 @@ function resetResistances(project: TemperingProject) {
 function activateEquipment(project: TemperingProject) {
   if (project.equipment.activate) {
     switch (project.type) {
-      case WeaponProjectType:
+      case WeaponProject:
         project.equipment.activate(project)
         break
-      case ArmorProjectType:
+      case EquipmentProject:
         project.equipment.activate(project)
         break
     }

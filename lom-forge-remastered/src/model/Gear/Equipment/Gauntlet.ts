@@ -1,10 +1,10 @@
 import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Gauntlet: ArmorEquipment = {
+export const Gauntlet: Equipment = {
   id: 'Gauntlet',
   name: 'Gauntlet',
   attributes: {

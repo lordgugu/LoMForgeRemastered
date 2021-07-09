@@ -13,10 +13,10 @@ import {
   WingsOfDarkness,
   WitchOfMoon
 } from 'model/Cards'
-import { Pendant } from 'model/Equipment'
+import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Petrification } from 'model/Immunities'
 import { GhostsHowl } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const SacrificedNymph: ActiveCard = {
   id: 'SacrificedNymph',
@@ -34,7 +34,7 @@ export const SacrificedNymph: ActiveCard = {
     BeastHeadedGod,
     Leviathan
   ],
-  relatedArmors: () => [Pendant],
+  relatedEquipment: () => [Pendant],
   relatedImmunities: () => [Petrification]
 }
 
@@ -43,7 +43,7 @@ function activateSacrificedNymph(project: TemperingProject, slot: CardSlot) {
     case Top:
     case Middle:
     case Bottom:
-      if (project.type === ArmorProjectType && project.equipment === Pendant) {
+      if (project.type === EquipmentProject && project.equipment === Pendant) {
         addImmunity(project, Petrification)
       }
 

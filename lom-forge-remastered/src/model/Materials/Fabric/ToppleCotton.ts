@@ -11,7 +11,7 @@ export const ToppleCotton: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 9,
     slash: 9,
     pierce: 9,

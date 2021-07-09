@@ -12,7 +12,7 @@ export const BeiserGold: Material = {
     force: 35,
     tech: 35
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 35,
     slash: 35,
     pierce: 35,

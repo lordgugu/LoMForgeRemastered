@@ -11,7 +11,7 @@ export const TortoiseShell: Material = {
     force: 20,
     tech: 18
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 33,
     slash: 13,
     pierce: 46,

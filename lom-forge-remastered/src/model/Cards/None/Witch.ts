@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Middle, None, Top, Tower } from 'model/Cards'
-import { Bow } from 'model/Equipment/Weapons'
+import { Bow } from 'model/Gear/Weapons'
 import { Aura, Jinn, resistance50, resistance75, Shade, Undine } from 'model/Essences'
 import { Mercury } from 'model/Items'
 import { MagicalShot } from 'model/MasterMoves/TopSlot'

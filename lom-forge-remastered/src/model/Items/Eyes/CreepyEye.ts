@@ -1,5 +1,6 @@
 import { PixieOfLust } from 'model/Cards'
-import { Magic, plus25Percent } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Magic } from 'model/Gear/Equipment'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -10,7 +11,7 @@ export const CreepyEye: Item = {
   energy: 32,
   activate: activateCreepyEye,
   relatedCards: () => [PixieOfLust],
-  relatedArmorAttributes: () => [Magic]
+  relatedEquipmentAttributes: () => [Magic]
 }
 
 function activateCreepyEye(project: TemperingProject) {

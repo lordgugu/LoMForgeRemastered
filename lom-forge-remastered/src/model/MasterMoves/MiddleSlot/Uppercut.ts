@@ -9,7 +9,7 @@ import {
   Sword,
   TwoHandedAxe,
   TwoHandedSword
-} from 'model/Equipment/Weapons'
+} from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Uppercut: MasterMove = {

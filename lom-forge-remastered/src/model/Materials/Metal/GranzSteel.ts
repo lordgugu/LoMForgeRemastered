@@ -11,7 +11,7 @@ export const GranzSteel: Material = {
     force: 20,
     tech: 20
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 20,
     slash: 20,
     pierce: 20,

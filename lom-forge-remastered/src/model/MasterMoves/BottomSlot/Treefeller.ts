@@ -1,5 +1,5 @@
 import { Leviathan } from 'model/Cards'
-import { TwoHandedAxe } from 'model/Equipment/Weapons'
+import { TwoHandedAxe } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Treefeller: MasterMove = {

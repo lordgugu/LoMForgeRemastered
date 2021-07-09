@@ -1,6 +1,7 @@
-import { Hauberk, Magic, minus25Percent, Pierce, plus25Percent, Slash, Strike } from 'model/Equipment'
+import { minus25Percent, plus25Percent } from 'model/Gear'
+import { Hauberk, Magic, Pierce, Slash, Strike } from 'model/Gear/Equipment'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const Cabbadillo: Item = {
   id: 'Cabbadillo',
@@ -8,11 +9,11 @@ export const Cabbadillo: Item = {
   category: Produce,
   energy: 8,
   activate: activateCabadillo,
-  relatedArmors: () => [Hauberk]
+  relatedEquipment: () => [Hauberk]
 }
 
 function activateCabadillo(project: TemperingProject) {
-  if (project.type === ArmorProjectType && project.equipment === Hauberk) {
+  if (project.type === EquipmentProject && project.equipment === Hauberk) {
     plus25Percent(project, Strike)
     plus25Percent(project, Slash)
     plus25Percent(project, Pierce)

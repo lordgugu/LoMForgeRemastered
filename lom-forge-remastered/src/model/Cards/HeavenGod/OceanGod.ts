@@ -1,10 +1,10 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { AllArmors } from 'model/Equipment'
-import { Spear } from 'model/Equipment/Weapons'
+import { AllEquipment } from 'model/Gear/Equipment'
+import { Spear } from 'model/Gear/Weapons'
 import { addImmunity, Flameburst } from 'model/Immunities'
 import { Orcaplant, Squalphin } from 'model/Items'
 import { Trident } from 'model/MasterMoves/TopSlot'
-import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
+import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
 export const OceanGod: ActiveCard = {
@@ -17,7 +17,7 @@ export const OceanGod: ActiveCard = {
   relatedStats: () => [Power, Skill],
   relatedStatRanges: () => [Power, Skill],
   relatedWeapons: () => [Spear],
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedMasterMoves: {
     middle: () => [Trident]
   },
@@ -36,12 +36,12 @@ function activateOceanGod(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Skill, 7)
 
       switch (project.type) {
-        case WeaponProjectType:
+        case WeaponProject:
           if (project.equipment === Spear) {
             project.masterMoves.top = Trident
           }
           break
-        case ArmorProjectType:
+        case EquipmentProject:
           addImmunity(project, Flameburst)
           break
       }

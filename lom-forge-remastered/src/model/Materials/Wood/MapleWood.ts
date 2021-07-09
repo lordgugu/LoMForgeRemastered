@@ -12,7 +12,7 @@ export const MapleWood: Material = {
     force: 49,
     tech: 14
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 56,
     slash: 17,
     pierce: 24,

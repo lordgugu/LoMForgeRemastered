@@ -11,7 +11,7 @@ export const Marble: Material = {
     force: 21,
     tech: 16
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 7,
     slash: 9,
     pierce: 12,

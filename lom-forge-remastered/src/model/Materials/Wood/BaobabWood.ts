@@ -12,7 +12,7 @@ export const BaobabWood: Material = {
     force: 28,
     tech: 8
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 32,
     slash: 10,
     pierce: 14,

@@ -1,9 +1,10 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { minus50Percent, Pierce, plus50Percent, Strike } from 'model/Equipment'
-import { Heavy, Knife, Sharp } from 'model/Equipment/Weapons'
+import { minus50Percent, plus50Percent } from 'model/Gear'
+import { Pierce, Strike } from 'model/Gear/Equipment'
+import { Heavy, Knife, Sharp } from 'model/Gear/Weapons'
 import { Bumpkin } from 'model/Items'
 import { QuickBlade } from 'model/MasterMoves/MiddleSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, widenStatRange } from 'model/Stats'
 
 export const Clown: ActiveCard = {
@@ -17,7 +18,7 @@ export const Clown: ActiveCard = {
   relatedStatRanges: () => AllStats,
   relatedWeapons: () => [Knife],
   relatedWeaponAttributes: () => [Sharp, Heavy],
-  relatedArmorAttributes: () => [Pierce, Strike],
+  relatedEquipmentAttributes: () => [Pierce, Strike],
   relatedMasterMoves: {
     middle: () => [QuickBlade]
   }
@@ -32,7 +33,7 @@ function activateClown(project: TemperingProject, slot: CardSlot) {
     AllStats.forEach((stat) => widenStatRange(project, stat, -3, 9))
   }
 
-  if (project.type === WeaponProjectType && project.equipment === Knife) {
+  if (project.type === WeaponProject && project.equipment === Knife) {
     project.masterMoves.middle = QuickBlade
   }
 

@@ -12,7 +12,7 @@ export const GaiasTears: Material = {
     force: 86,
     tech: 67
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 28,
     slash: 36,
     pierce: 48,

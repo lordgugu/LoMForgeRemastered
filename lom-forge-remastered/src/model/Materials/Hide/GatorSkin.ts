@@ -12,7 +12,7 @@ export const GatorSkin: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 36,
     slash: 14,
     pierce: 21,

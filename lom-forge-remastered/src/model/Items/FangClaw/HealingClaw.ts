@@ -1,9 +1,9 @@
 import { Tower } from 'model/Cards'
-import { Shield } from 'model/Equipment'
+import { Shield } from 'model/Gear/Equipment'
 import { Salamander, Wisp } from 'model/Essences'
 import { addImmunity, Poison } from 'model/Immunities'
 import { FangClaw, Item } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const HealingClaw: Item = {
   id: 'HealingClaw',
@@ -13,7 +13,7 @@ export const HealingClaw: Item = {
   activate: activateHealingClaw,
   relatedCards: () => [Tower],
   relatedImmunities: () => [Poison],
-  relatedArmors: () => [Shield],
+  relatedEquipment: () => [Shield],
   relatedEssences: () => [Wisp, Salamander]
 }
 
@@ -21,7 +21,7 @@ function activateHealingClaw(project: TemperingProject) {
   const { energy } = project
   const { wisp, salamander } = project.levels
 
-  if (project.type === ArmorProjectType && project.equipment === Shield) {
+  if (project.type === EquipmentProject && project.equipment === Shield) {
     addImmunity(project, Poison)
   }
 

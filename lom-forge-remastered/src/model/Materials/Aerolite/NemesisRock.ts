@@ -12,7 +12,7 @@ export const NemesisRock: Material = {
     force: 60,
     tech: 64
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 40,
     slash: 36,
     pierce: 48,

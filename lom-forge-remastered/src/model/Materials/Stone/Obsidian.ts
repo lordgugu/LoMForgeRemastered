@@ -11,7 +11,7 @@ export const Obsidian: Material = {
     force: 43,
     tech: 33
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 14,
     slash: 18,
     pierce: 24,

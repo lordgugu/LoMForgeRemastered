@@ -10,10 +10,10 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Sword } from 'model/Equipment/Weapons'
+import { Sword } from 'model/Gear/Weapons'
 import { VampireFang } from 'model/Items'
 import { Vampsword } from 'model/MasterMoves/MiddleSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const WitchOfMoon: ActiveCard = {
@@ -41,7 +41,7 @@ function activateWitchOfMoon(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Magic, 15)
       AllStats.forEach((stat) => decrementStat(project, stat))
 
-      if (project.type === WeaponProjectType && project.equipment == Sword) {
+      if (project.type === WeaponProject && project.equipment == Sword) {
         project.masterMoves.middle = Vampsword
       }
 

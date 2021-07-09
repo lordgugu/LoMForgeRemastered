@@ -12,7 +12,7 @@ export const DragonSkin: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 70,
     slash: 28,
     pierce: 42,

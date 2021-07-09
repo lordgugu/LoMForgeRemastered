@@ -11,7 +11,7 @@ export const IshePlatinum: Material = {
     force: 40,
     tech: 40
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 40,
     slash: 40,
     pierce: 40,

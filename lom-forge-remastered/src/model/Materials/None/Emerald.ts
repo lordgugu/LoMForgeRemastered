@@ -11,7 +11,7 @@ export const Emerald: Material = {
     force: 2,
     tech: 2
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 1,
     slash: 1,
     pierce: 1,

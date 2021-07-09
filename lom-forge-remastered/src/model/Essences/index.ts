@@ -38,12 +38,14 @@ const PowerOfTwo: { [exponent in Level]: number } = {
   15: 32768
 }
 
+export type Resistances = { [element in Essence]: number }
+
 export type EssencesContext = {
   energy: number
   levels: { [element in Essence]: Level }
   markers: { [element in Essence]: boolean }
   potential: { [element in PotentialEssence]: number }
-  resistances: { [element in Essence]: number }
+  resistances: Resistances
 }
 
 export function increaseEssence(context: EssencesContext, element: Essence) {

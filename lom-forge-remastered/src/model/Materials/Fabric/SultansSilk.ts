@@ -11,7 +11,7 @@ export const SultansSilk: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 14,
     slash: 14,
     pierce: 14,

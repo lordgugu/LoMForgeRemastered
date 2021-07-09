@@ -1,9 +1,9 @@
 import { Ragnarok } from 'model/Cards'
-import { AllArmors } from 'model/Equipment'
 import { Gnome, Jinn, Salamander, Undine } from 'model/Essences'
+import { AllEquipment } from 'model/Gear/Equipment'
 import { setImmunities, Sleep } from 'model/Immunities'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const PineOClock: Item = {
   id: 'PineOClock',
@@ -11,7 +11,7 @@ export const PineOClock: Item = {
   category: Produce,
   energy: 24,
   activate: activatePineOClock,
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedImmunities: () => [Sleep],
   relatedCards: () => [Ragnarok],
   relatedEssences: () => [Salamander, Gnome, Jinn, Undine]
@@ -21,7 +21,7 @@ function activatePineOClock(project: TemperingProject) {
   const { energy } = project
   const { salamander, gnome, jinn, undine } = project.levels
 
-  if (project.type === ArmorProjectType) {
+  if (project.type === EquipmentProject) {
     setImmunities(project, Sleep)
   }
 

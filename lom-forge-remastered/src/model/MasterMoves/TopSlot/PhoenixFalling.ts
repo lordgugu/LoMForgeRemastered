@@ -1,5 +1,5 @@
 import { Sage } from 'model/Cards'
-import { Bow } from 'model/Equipment/Weapons'
+import { Bow } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const PhoenixFalling: MasterMove = {

@@ -10,12 +10,12 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { AllArmors } from 'model/Equipment'
-import { Sword } from 'model/Equipment/Weapons'
+import { AllEquipment } from 'model/Gear/Equipment'
+import { Sword } from 'model/Gear/Weapons'
 import { addImmunity, Freeze } from 'model/Immunities'
 import { SharpClaw } from 'model/Items'
 import { FlameTongue } from 'model/MasterMoves/MiddleSlot'
-import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
+import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, Power, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const GodOfDestruction: ActiveCard = {
@@ -32,7 +32,7 @@ export const GodOfDestruction: ActiveCard = {
   relatedMasterMoves: {
     middle: () => [FlameTongue]
   },
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedImmunities: () => [Freeze]
 }
 
@@ -46,12 +46,12 @@ function activateGodOfDestruction(project: TemperingProject, slot: CardSlot) {
       AllStats.forEach((stat) => decrementStat(project, stat))
 
       switch (project.type) {
-        case WeaponProjectType:
+        case WeaponProject:
           if (project.equipment == Sword) {
             project.masterMoves.middle = FlameTongue
           }
           break
-        case ArmorProjectType:
+        case EquipmentProject:
           addImmunity(project, Freeze)
           break
       }

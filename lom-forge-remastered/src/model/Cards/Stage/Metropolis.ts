@@ -1,8 +1,9 @@
 import { ActiveCard, Bottom, CardSlot, Cleric, Clown, King, Middle, Princess, Stage, Top } from 'model/Cards'
-import { Magic, plus25Percent, plus50Percent, Robe } from 'model/Equipment'
+import { plus25Percent, plus50Percent } from 'model/Gear'
+import { Magic, Robe } from 'model/Gear/Equipment'
 import { addImmunity, Confusion } from 'model/Immunities'
 import { Dialaurel } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const Metropolis: ActiveCard = {
   id: 'Metropolis',
@@ -12,9 +13,9 @@ export const Metropolis: ActiveCard = {
   activate: activateMetropolis,
   relatedItems: () => [Dialaurel],
   relatedCards: () => [King, Princess, Clown, Cleric],
-  relatedArmors: () => [Robe],
+  relatedEquipment: () => [Robe],
   relatedImmunities: () => [Confusion],
-  relatedArmorAttributes: () => [Magic]
+  relatedEquipmentAttributes: () => [Magic]
 }
 
 function activateMetropolis(project: TemperingProject, slot: CardSlot) {
@@ -22,7 +23,7 @@ function activateMetropolis(project: TemperingProject, slot: CardSlot) {
     case Top:
     case Middle:
     case Bottom:
-      if (project.type === ArmorProjectType && project.equipment === Robe) {
+      if (project.type === EquipmentProject && project.equipment === Robe) {
         plus50Percent(project, Magic)
         addImmunity(project, Confusion)
       } else {

@@ -1,8 +1,8 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { Glove } from 'model/Equipment/Weapons'
+import { Glove } from 'model/Gear/Weapons'
 import { Garlicrown } from 'model/Items'
 import { HandOfMidas } from 'model/MasterMoves/MiddleSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, incrementStat, Power, widenStatRange } from 'model/Stats'
 
 export const King: ActiveCard = {
@@ -32,7 +32,7 @@ function activateKing(project: TemperingProject, slot: CardSlot) {
 
   incrementStat(project, Power)
 
-  if (project.type === WeaponProjectType && project.equipment === Glove) {
+  if (project.type === WeaponProject && project.equipment === Glove) {
     project.masterMoves.middle = HandOfMidas
   }
 }

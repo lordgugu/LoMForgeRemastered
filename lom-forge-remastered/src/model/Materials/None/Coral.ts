@@ -11,7 +11,7 @@ export const Coral: Material = {
     force: 14,
     tech: 12
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 23,
     slash: 9,
     pierce: 32,

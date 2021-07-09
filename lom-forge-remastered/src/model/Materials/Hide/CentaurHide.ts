@@ -12,7 +12,7 @@ export const CentaurHide: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 42,
     slash: 20,
     pierce: 31,

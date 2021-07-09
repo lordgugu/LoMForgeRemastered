@@ -1,5 +1,5 @@
 import { WingsOfDarkness } from 'model/Cards'
-import { Staff } from 'model/Equipment/Weapons'
+import { Staff } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const GoldenTouch: MasterMove = {

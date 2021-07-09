@@ -11,7 +11,7 @@ export const WendelSilver: Material = {
     force: 30,
     tech: 30
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 30,
     slash: 30,
     pierce: 30,

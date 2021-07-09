@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
-import { Hammer } from 'model/Equipment/Weapons'
+import { Hammer } from 'model/Gear/Weapons'
 import { Ether } from 'model/Items'
 import { QuakeHammer } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Defense, HP, incrementStat } from 'model/Stats'
 
 export const SpiritOfMountain: ActiveCard = {
@@ -27,7 +27,7 @@ function activateSpiritOfMountain(project: TemperingProject, slot: CardSlot) {
       incrementStat(project, Defense)
       incrementStat(project, HP)
 
-      if (project.type === WeaponProjectType && project.equipment === Hammer) {
+      if (project.type === WeaponProject && project.equipment === Hammer) {
         project.masterMoves.bottom = QuakeHammer
       }
       break

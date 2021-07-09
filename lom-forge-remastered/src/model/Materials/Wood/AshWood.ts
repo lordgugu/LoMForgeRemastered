@@ -12,7 +12,7 @@ export const AshWood: Material = {
     force: 42,
     tech: 12
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 48,
     slash: 15,
     pierce: 21,

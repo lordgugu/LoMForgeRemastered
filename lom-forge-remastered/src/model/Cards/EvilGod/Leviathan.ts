@@ -10,10 +10,10 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { TwoHandedAxe } from 'model/Equipment/Weapons'
+import { TwoHandedAxe } from 'model/Gear/Weapons'
 import { GiantsHorn, OrangeOpus } from 'model/Items'
 import { Treefeller } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, Defense, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const Leviathan: ActiveCard = {
@@ -41,7 +41,7 @@ function activateLeviathan(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Defense, 15)
       AllStats.forEach((stat) => decrementStat(project, stat))
 
-      if (project.type === WeaponProjectType && project.equipment == TwoHandedAxe) {
+      if (project.type === WeaponProject && project.equipment == TwoHandedAxe) {
         project.masterMoves.bottom = Treefeller
       }
 

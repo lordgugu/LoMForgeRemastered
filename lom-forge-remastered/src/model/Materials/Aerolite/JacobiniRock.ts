@@ -12,7 +12,7 @@ export const JacobiniRock: Material = {
     force: 22,
     tech: 24
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 15,
     slash: 13,
     pierce: 18,

@@ -1,7 +1,7 @@
 import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Spring, Top } from 'model/Cards'
-import { Pendant, Ring } from 'model/Equipment'
+import { Pendant, Ring } from 'model/Gear/Equipment'
 import { Whalamato } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { FastRevive } from 'model/Specials'
 import { Defense, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
@@ -15,7 +15,7 @@ export const Unicorn: ActiveCard = {
   relatedCards: () => [Spring],
   relatedStats: () => [Defense, Magic],
   relatedStatRanges: () => [Defense, Magic],
-  relatedArmors: () => [Ring, Pendant]
+  relatedEquipment: () => [Ring, Pendant]
 }
 
 function activateUnicorn(project: TemperingProject, slot: CardSlot) {
@@ -29,7 +29,7 @@ function activateUnicorn(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Defense, 3)
       setMinimumStatValue(project, Magic, 3)
 
-      if (project.type === ArmorProjectType) {
+      if (project.type === EquipmentProject) {
         switch (project.equipment) {
           case Ring:
           case Pendant:

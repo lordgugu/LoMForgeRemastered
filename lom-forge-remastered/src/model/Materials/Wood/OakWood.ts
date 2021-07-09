@@ -12,7 +12,7 @@ export const OakWood: Material = {
     force: 14,
     tech: 4
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 16,
     slash: 5,
     pierce: 7,

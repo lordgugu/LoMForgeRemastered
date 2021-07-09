@@ -1,7 +1,7 @@
-import { Helm } from 'model/Equipment'
+import { Helm } from 'model/Gear/Equipment'
 import { addImmunity, Darkness } from 'model/Immunities'
 import { Item, Urns } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const Moss: Item = {
   id: 'Moss',
@@ -9,12 +9,12 @@ export const Moss: Item = {
   category: Urns,
   energy: 32,
   activate: activateMoss,
-  relatedArmors: () => [Helm],
+  relatedEquipment: () => [Helm],
   relatedImmunities: () => [Darkness]
 }
 
 function activateMoss(project: TemperingProject) {
-  if (project.type === ArmorProjectType && project.equipment === Helm) {
+  if (project.type === EquipmentProject && project.equipment === Helm) {
     addImmunity(project, Darkness)
   }
 }

@@ -1,4 +1,4 @@
-import { AllWeapons } from 'model/Equipment/Weapons'
+import { AllWeapons } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Jump: MasterMove = {

@@ -1,5 +1,6 @@
 import { PixieOfSloth } from 'model/Cards'
-import { Pierce, plus25Percent } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Pierce } from 'model/Gear/Equipment'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -10,7 +11,7 @@ export const SleepyEye: Item = {
   energy: 32,
   activate: activateSleepyEye,
   relatedCards: () => [PixieOfSloth],
-  relatedArmorAttributes: () => [Pierce]
+  relatedEquipmentAttributes: () => [Pierce]
 }
 
 function activateSleepyEye(project: TemperingProject) {

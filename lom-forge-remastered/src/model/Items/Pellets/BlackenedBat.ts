@@ -1,9 +1,9 @@
 import { WingsOfDarkness } from 'model/Cards'
-import { Pendant } from 'model/Equipment'
 import { Shade, Wisp } from 'model/Essences'
+import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Darkness } from 'model/Immunities'
 import { Item, Pellets } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const BlackenedBat: Item = {
   id: 'BlackenedBat',
@@ -12,7 +12,7 @@ export const BlackenedBat: Item = {
   energy: 48,
   activate: activateBlackenedBat,
   relatedCards: () => [WingsOfDarkness],
-  relatedArmors: () => [Pendant],
+  relatedEquipment: () => [Pendant],
   relatedImmunities: () => [Darkness],
   relatedEssences: () => [Wisp, Shade]
 }
@@ -21,7 +21,7 @@ function activateBlackenedBat(project: TemperingProject) {
   const { energy } = project
   const { wisp, shade } = project.levels
 
-  if (project.type === ArmorProjectType && project.equipment === Pendant) {
+  if (project.type === EquipmentProject && project.equipment === Pendant) {
     addImmunity(project, Darkness)
   }
 

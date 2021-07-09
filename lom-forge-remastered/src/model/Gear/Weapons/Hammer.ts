@@ -1,5 +1,5 @@
 import { BlacksmithGod, SpiritOfMountain, ThunderGod, Volcano } from 'model/Cards'
-import { Weapon } from 'model/Equipment/Weapons'
+import { Weapon } from 'model/Gear/Weapons'
 import { Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'
 import { Thrust } from 'model/MasterMoves/TopSlot'

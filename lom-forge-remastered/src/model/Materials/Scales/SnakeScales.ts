@@ -11,7 +11,7 @@ export const SnakeScales: Material = {
     force: 21,
     tech: 21
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 28,
     slash: 28,
     pierce: 24,

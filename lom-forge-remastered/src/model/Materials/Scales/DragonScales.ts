@@ -11,7 +11,7 @@ export const DragonScales: Material = {
     force: 54,
     tech: 54
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 72,
     slash: 72,
     pierce: 60,

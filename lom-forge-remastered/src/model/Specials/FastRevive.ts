@@ -1,5 +1,5 @@
 import { NymphOfOrchards, Spring, Unicorn } from 'model/Cards'
-import { Pendant, Ring } from 'model/Equipment'
+import { Pendant, Ring } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 
 export const FastRevive: Special = {
@@ -9,6 +9,6 @@ export const FastRevive: Special = {
   notes: [
     'When this ability is acquired through the Unicorn card, requires that the Unicorn card be the top-most visible card granting a special ability'
   ],
-  relatedArmors: () => [Ring, Pendant],
+  relatedEquipment: () => [Ring, Pendant],
   relatedCards: () => [NymphOfOrchards, Unicorn, Spring]
 }

@@ -10,10 +10,10 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Knife } from 'model/Equipment/Weapons'
+import { Knife } from 'model/Gear/Weapons'
 import { PoisonFang } from 'model/Items'
 import { PoisonBlade } from 'model/MasterMoves/MiddleSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, HP, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const BeastHeadedGod: ActiveCard = {
@@ -41,7 +41,7 @@ function activateBeastHeadedGod(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, HP, 15)
       AllStats.forEach((stat) => decrementStat(project, stat))
 
-      if (project.type === WeaponProjectType && project.equipment == Knife) {
+      if (project.type === WeaponProject && project.equipment == Knife) {
         project.masterMoves.middle = PoisonBlade
       }
 

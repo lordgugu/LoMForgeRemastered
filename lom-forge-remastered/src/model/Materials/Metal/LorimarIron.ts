@@ -11,7 +11,7 @@ export const LorimarIron: Material = {
     force: 45,
     tech: 45
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 45,
     slash: 45,
     pierce: 45,

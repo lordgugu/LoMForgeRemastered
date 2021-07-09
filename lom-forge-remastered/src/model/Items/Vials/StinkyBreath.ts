@@ -1,8 +1,8 @@
 import { PixieOfLust } from 'model/Cards'
-import { AllArmors } from 'model/Equipment'
+import { AllEquipment } from 'model/Gear/Equipment'
 import { Confusion, Poison, setImmunities } from 'model/Immunities'
 import { Item, Vials } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const StinkyBreath: Item = {
   id: 'StinkyBreath',
@@ -11,14 +11,14 @@ export const StinkyBreath: Item = {
   energy: 16,
   activate: activateStinkyBreath,
   relatedCards: () => [PixieOfLust],
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedImmunities: () => [Poison, Confusion]
 }
 
 function activateStinkyBreath(project: TemperingProject) {
   const { energy } = project
 
-  if (project.type === ArmorProjectType) {
+  if (project.type === EquipmentProject) {
     setImmunities(project, Poison, Confusion)
   }
 

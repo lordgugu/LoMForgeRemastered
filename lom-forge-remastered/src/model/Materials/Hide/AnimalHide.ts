@@ -12,7 +12,7 @@ export const AnimalHide: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 20,
     slash: 8,
     pierce: 12,

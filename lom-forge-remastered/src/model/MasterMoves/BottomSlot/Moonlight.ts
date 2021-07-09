@@ -1,5 +1,5 @@
 import { MoonGoddess } from 'model/Cards'
-import { Sword } from 'model/Equipment/Weapons'
+import { Sword } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
 export const Moonlight: MasterMove = {

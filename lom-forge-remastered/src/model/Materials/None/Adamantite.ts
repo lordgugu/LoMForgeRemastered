@@ -11,7 +11,7 @@ export const Adamantite: Material = {
     force: 93,
     tech: 99
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 62,
     slash: 31,
     pierce: 93,

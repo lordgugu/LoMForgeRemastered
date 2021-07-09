@@ -1,9 +1,10 @@
 import { Card } from 'model/Cards'
-import { ArmorAttribute, ArmorEquipment, MasterMoveSlot, WeaponAttribute, WeaponEquipment } from 'model/Equipment'
 import { Essence } from 'model/Essences'
+import { Equipment, EquipmentAttribute } from 'model/Gear/Equipment'
+import { Weapon, WeaponAttribute } from 'model/Gear/Weapons'
 import { Immunity } from 'model/Immunities'
 import { Item } from 'model/Items'
-import { MasterMove } from 'model/MasterMoves'
+import { MasterMove, MasterMoveSlot } from 'model/MasterMoves'
 import { Material } from 'model/Materials'
 import { Special } from 'model/Specials'
 import { Stat } from 'model/Stats'
@@ -21,10 +22,10 @@ type ID = Name & {
 
 type RelatedEntities = {
   readonly relatedCards?: () => Card[]
-  readonly relatedWeapons?: () => WeaponEquipment[]
+  readonly relatedWeapons?: () => Weapon[]
   readonly relatedWeaponAttributes?: () => WeaponAttribute[]
-  readonly relatedArmors?: () => ArmorEquipment[]
-  readonly relatedArmorAttributes?: () => ArmorAttribute[]
+  readonly relatedEquipment?: () => Equipment[]
+  readonly relatedEquipmentAttributes?: () => EquipmentAttribute[]
   readonly relatedEssences?: () => Essence[]
   readonly relatedImmunities?: () => Immunity[]
   readonly relatedItems?: () => Item[]

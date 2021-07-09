@@ -1,9 +1,9 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Spear, Staff } from 'model/Equipment/Weapons'
+import { Spear, Staff } from 'model/Gear/Weapons'
 import { SpadeBasil } from 'model/Items'
 import { Electrosceptre } from 'model/MasterMoves/BottomSlot'
 import { Gungnir } from 'model/MasterMoves/TopSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Magic, Power, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const RulerOfTheSky: ActiveCard = {
@@ -33,7 +33,7 @@ function activateRulerOfTheSky(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Power, 9)
       setMinimumStatValue(project, Magic, 9)
 
-      if (project.type === WeaponProjectType) {
+      if (project.type === WeaponProject) {
         switch (project.equipment) {
           case Spear:
             project.masterMoves.top = Gungnir

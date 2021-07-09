@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
-import { Axe } from 'model/Equipment/Weapons'
+import { Axe } from 'model/Gear/Weapons'
 import { WadOfWool } from 'model/Items'
 import { Woodchopper } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, incrementStat, Skill, Spirit, widenStatRange } from 'model/Stats'
 
 export const Wanderer: ActiveCard = {
@@ -30,7 +30,7 @@ function activateWanderer(project: TemperingProject, slot: CardSlot) {
       incrementStat(project, Skill)
       incrementStat(project, Spirit)
 
-      if (project.type == WeaponProjectType && project.equipment === Axe) {
+      if (project.type == WeaponProject && project.equipment === Axe) {
         project.masterMoves.bottom = Woodchopper
       }
 

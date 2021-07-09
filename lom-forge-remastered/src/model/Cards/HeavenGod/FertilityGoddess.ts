@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { AllArmors, Ring } from 'model/Equipment'
+import { AllEquipment, Ring } from 'model/Gear/Equipment'
 import { addImmunity, Petrification } from 'model/Immunities'
 import { EarOfWheat } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ShareExperience } from 'model/Specials'
 import { HP, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
@@ -15,7 +15,7 @@ export const FertilityGoddess: ActiveCard = {
   relatedItems: () => [EarOfWheat],
   relatedStats: () => [HP],
   relatedStatRanges: () => [HP],
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedImmunities: () => [Petrification],
   relatedSpecials: () => [ShareExperience]
 }
@@ -28,7 +28,7 @@ function activateFertilityGoddess(project: TemperingProject, slot: CardSlot) {
       widenStatRange(project, HP, -5, 10)
       setMinimumStatValue(project, HP, 10)
 
-      if (project.type === ArmorProjectType) {
+      if (project.type === EquipmentProject) {
         addImmunity(project, Petrification)
 
         if (project.equipment === Ring) {

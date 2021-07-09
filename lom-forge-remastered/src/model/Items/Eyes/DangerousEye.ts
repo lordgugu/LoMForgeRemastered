@@ -1,5 +1,6 @@
 import { PixieOfGreed } from 'model/Cards'
-import { plus25Percent, Strike } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Strike } from 'model/Gear/Equipment'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 
@@ -10,7 +11,7 @@ export const DangerousEye: Item = {
   energy: 32,
   activate: activateDangerousEye,
   relatedCards: () => [PixieOfGreed],
-  relatedArmorAttributes: () => [Strike]
+  relatedEquipmentAttributes: () => [Strike]
 }
 
 function activateDangerousEye(project: TemperingProject) {

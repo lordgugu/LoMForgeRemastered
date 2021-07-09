@@ -12,7 +12,7 @@ export const VinekRock: Material = {
     force: 45,
     tech: 48
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 30,
     slash: 27,
     pierce: 36,

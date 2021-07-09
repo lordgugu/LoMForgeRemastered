@@ -1,10 +1,10 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Magic, Pierce, Shoes, Slash, Strike } from 'model/Equipment'
-import { Staff } from 'model/Equipment/Weapons'
+import { Magic, Pierce, Shoes, Slash, Strike } from 'model/Gear/Equipment'
+import { Staff } from 'model/Gear/Weapons'
 import { addImmunity, Paralysis } from 'model/Immunities'
 import { Diceberry } from 'model/Items'
 import { Caduceus } from 'model/MasterMoves/TopSlot'
-import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
+import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
 export const WindGod: ActiveCard = {
@@ -17,12 +17,12 @@ export const WindGod: ActiveCard = {
   relatedStats: () => [Skill],
   relatedStatRanges: () => [Skill],
   relatedWeapons: () => [Staff],
-  relatedArmors: () => [Shoes],
+  relatedEquipment: () => [Shoes],
   relatedMasterMoves: {
     top: () => [Caduceus]
   },
   relatedImmunities: () => [Paralysis],
-  relatedArmorAttributes: () => [Slash, Strike, Pierce, Magic]
+  relatedEquipmentAttributes: () => [Slash, Strike, Pierce, Magic]
 }
 
 function activateWindGod(project: TemperingProject, slot: CardSlot) {
@@ -34,12 +34,12 @@ function activateWindGod(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Skill, 10)
 
       switch (project.type) {
-        case WeaponProjectType:
+        case WeaponProject:
           if (project.equipment === Staff) {
             project.masterMoves.top = Caduceus
           }
           break
-        case ArmorProjectType:
+        case EquipmentProject:
           if (project.equipment === Shoes) {
             project.attributes.strike += 10
             project.attributes.slash += 10

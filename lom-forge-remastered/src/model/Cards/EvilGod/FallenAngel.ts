@@ -10,10 +10,10 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { TwoHandedSword } from 'model/Equipment/Weapons'
+import { TwoHandedSword } from 'model/Gear/Weapons'
 import { AngelFeather } from 'model/Items'
 import { ChaoticAvenger } from 'model/MasterMoves/TopSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, Charm, decrementStat, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const FallenAngel: ActiveCard = {
@@ -41,7 +41,7 @@ function activateFallenAngel(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Charm, 15)
       AllStats.forEach((stat) => decrementStat(project, stat))
 
-      if (project.type === WeaponProjectType && project.equipment == TwoHandedSword) {
+      if (project.type === WeaponProject && project.equipment == TwoHandedSword) {
         project.masterMoves.top = ChaoticAvenger
       }
 

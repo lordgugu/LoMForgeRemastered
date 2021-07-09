@@ -1,5 +1,6 @@
 import { PixieOfGluttony } from 'model/Cards'
-import { Heavy, plus25Percent } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Heavy } from 'model/Gear/Weapons'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 

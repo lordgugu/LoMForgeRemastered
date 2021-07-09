@@ -1,5 +1,5 @@
 import { Phoenix, Volcano } from 'model/Cards'
-import { Pendant, Ring } from 'model/Equipment'
+import { Pendant, Ring } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 
 export const AutoRevive: Special = {
@@ -11,6 +11,6 @@ export const AutoRevive: Special = {
     'If no visible Phoenix cards remain, the ability is lost',
     'Requires that the Phoenix card be the top-most visible card granting a special ability'
   ],
-  relatedArmors: () => [Ring, Pendant],
+  relatedEquipment: () => [Ring, Pendant],
   relatedCards: () => [Phoenix, Volcano]
 }

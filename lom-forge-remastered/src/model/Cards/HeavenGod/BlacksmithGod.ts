@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Hammer } from 'model/Equipment/Weapons'
+import { Hammer } from 'model/Gear/Weapons'
 import { Ether } from 'model/Items'
 import { SledgeHammer } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Defense, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
 export const BlacksmithGod: ActiveCard = {
@@ -28,7 +28,7 @@ function activateBlacksmithGod(project: TemperingProject, slot: CardSlot) {
       widenStatRange(project, Defense, -5, 10)
       setMinimumStatValue(project, Defense, 10)
 
-      if (project.type === WeaponProjectType && project.equipment === Hammer) {
+      if (project.type === WeaponProject && project.equipment === Hammer) {
         project.masterMoves.bottom = SledgeHammer
       }
 

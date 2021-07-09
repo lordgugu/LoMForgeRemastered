@@ -1,9 +1,9 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Bow, Sword } from 'model/Equipment/Weapons'
+import { Bow, Sword } from 'model/Gear/Weapons'
 import { MoonCrystal } from 'model/Items'
 import { Moonlight } from 'model/MasterMoves/BottomSlot'
 import { LunarShot } from 'model/MasterMoves/MiddleSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 
 export const MoonGoddess: ActiveCard = {
@@ -30,7 +30,7 @@ function activateMoonGoddess(project: TemperingProject, slot: CardSlot) {
       widenStatRange(project, Spirit, -5, 10)
       setMinimumStatValue(project, Spirit, 10)
 
-      if (project.type === WeaponProjectType) {
+      if (project.type === WeaponProject) {
         switch (project.equipment) {
           case Sword:
             project.masterMoves.bottom = Moonlight

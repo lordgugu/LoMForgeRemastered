@@ -1,10 +1,11 @@
 import { Bottom, Card, CardSlot, Middle, Phoenix, Stage, Top } from 'model/Cards'
-import { Hauberk, minus50Percent, Pendant, plus50Percent, Ring } from 'model/Equipment'
-import { Force, Hammer, Tech } from 'model/Equipment/Weapons'
+import { minus50Percent, plus50Percent } from 'model/Gear'
+import { Hauberk, Pendant, Ring } from 'model/Gear/Equipment'
+import { Force, Hammer, Tech } from 'model/Gear/Weapons'
 import { addImmunity, Freeze } from 'model/Immunities'
 import { Ash } from 'model/Items'
 import { MagmaHammer } from 'model/MasterMoves/BottomSlot'
-import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
+import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { AutoRevive } from 'model/Specials'
 
 export const Volcano: Card = {
@@ -15,7 +16,7 @@ export const Volcano: Card = {
   activate: activateVolcano,
   relatedItems: () => [Ash],
   relatedCards: () => [Phoenix],
-  relatedArmors: () => [Ring, Pendant, Hauberk],
+  relatedEquipment: () => [Ring, Pendant, Hauberk],
   relatedSpecials: () => [AutoRevive],
   relatedWeaponAttributes: () => [Force, Tech],
   relatedWeapons: () => [Hammer],
@@ -34,13 +35,13 @@ function activateVolcano(project: TemperingProject, slot: CardSlot) {
       minus50Percent(project, Tech)
 
       switch (project.type) {
-        case WeaponProjectType:
+        case WeaponProject:
           if (project.equipment === Hammer) {
             project.masterMoves.bottom = MagmaHammer
           }
 
           break
-        case ArmorProjectType:
+        case EquipmentProject:
           if (project.equipment === Hauberk) {
             addImmunity(project, Freeze)
           }

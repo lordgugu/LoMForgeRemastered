@@ -11,7 +11,7 @@ export const Ivory: Material = {
     force: 24,
     tech: 24
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 18,
     slash: 30,
     pierce: 12,

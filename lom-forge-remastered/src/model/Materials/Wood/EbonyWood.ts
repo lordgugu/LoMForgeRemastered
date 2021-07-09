@@ -12,7 +12,7 @@ export const EbonyWood: Material = {
     force: 35,
     tech: 10
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 40,
     slash: 12,
     pierce: 17,

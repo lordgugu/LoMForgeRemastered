@@ -1,7 +1,7 @@
-import { Robe } from 'model/Equipment'
+import { Robe } from 'model/Gear/Equipment'
 import { addImmunity, Poison } from 'model/Immunities'
 import { Item, Pellets } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const BakedRoach: Item = {
   id: 'BakedRoach',
@@ -9,12 +9,12 @@ export const BakedRoach: Item = {
   category: Pellets,
   energy: 24,
   activate: activateBakedRoach,
-  relatedArmors: () => [Robe],
+  relatedEquipment: () => [Robe],
   relatedImmunities: () => [Poison]
 }
 
 function activateBakedRoach(project: TemperingProject) {
-  if (project.type === ArmorProjectType && project.equipment === Robe) {
+  if (project.type === EquipmentProject && project.equipment === Robe) {
     addImmunity(project, Poison)
   }
 }

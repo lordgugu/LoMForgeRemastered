@@ -1,17 +1,19 @@
 import { Entity } from 'model/Common'
+import {
+  Axe,
+  Bow,
+  Flail,
+  Glove,
+  Hammer,
+  Knife,
+  Spear,
+  Staff,
+  Sword,
+  TwoHandedAxe,
+  TwoHandedSword
+} from 'model/Gear/Weapons'
 import { MasterMovesContext } from 'model/MasterMoves'
-import { WeaponProject } from 'model/Projects'
-import { Axe } from './Axe'
-import { Bow } from './Bow'
-import { Flail } from './Flail'
-import { Glove } from './Glove'
-import { Hammer } from './Hammer'
-import { Knife } from './Knife'
-import { Spear } from './Spear'
-import { Staff } from './Staff'
-import { Sword } from './Sword'
-import { TwoHandedAxe } from './TwoHandedAxe'
-import { TwoHandedSword } from './TwoHandedSword'
+import { TemperedWeapon } from 'model/Projects'
 
 export type WeaponAttribute = 'sharp' | 'heavy' | 'force' | 'tech'
 
@@ -20,16 +22,14 @@ export const Heavy: WeaponAttribute = 'heavy'
 export const Force: WeaponAttribute = 'force'
 export const Tech: WeaponAttribute = 'tech'
 
-export type WeaponContext = {
-  attributes: { [attribute in WeaponAttribute]: number }
-}
+export type WeaponAttributes = { [attribute in WeaponAttribute]: number }
 
 export type Weapon = Entity &
-  WeaponContext &
   MasterMovesContext & {
+    readonly attributes: WeaponAttributes
     readonly markerThreshold: number
     readonly priceCoefficient: number
-    readonly activate?: (project: WeaponProject) => void
+    readonly activate?: (project: TemperedWeapon) => void
   }
 
 export const AllWeapons: Weapon[] = [

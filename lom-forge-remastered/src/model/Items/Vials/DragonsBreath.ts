@@ -1,5 +1,5 @@
 import { ManOfValor } from 'model/Cards'
-import { Force, plus25Percent, Tech } from 'model/Equipment'
+import { Force, plus25Percent, Tech } from 'model/Gear'
 import { Salamander, totalLevels, Wisp } from 'model/Essences'
 import { Item, Vials } from 'model/Items'
 import { TemperingProject } from 'model/Projects'

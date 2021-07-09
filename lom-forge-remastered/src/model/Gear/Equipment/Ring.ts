@@ -11,10 +11,10 @@ import {
   Unicorn,
   Volcano
 } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
-import { ArmorProject } from 'model/Projects'
+import { AlteredArmor } from 'model/Projects'
 import {
   AutoRevive,
   ExtraLucre,
@@ -24,7 +24,7 @@ import {
   ShareExperience
 } from 'model/Specials'
 
-export const Ring: ArmorEquipment = {
+export const Ring: Equipment = {
   id: 'Ring',
   name: 'Ring',
   attributes: {
@@ -67,7 +67,7 @@ export const Ring: ArmorEquipment = {
  *
  * @param project tempering project
  */
-function activateRing(project: ArmorProject): void {
+function activateRing(project: AlteredArmor): void {
   const { special } = project
   const { hidden, top, middle, bottom } = project.cards
 

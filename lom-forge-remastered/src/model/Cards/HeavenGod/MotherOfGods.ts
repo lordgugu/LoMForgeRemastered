@@ -1,10 +1,10 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Flail } from 'model/Equipment/Weapons'
+import { Flail } from 'model/Gear/Weapons'
 import { HeartMint } from 'model/Items'
 import { RedDream } from 'model/MasterMoves/BottomSlot'
 import { GameOfDeath } from 'model/MasterMoves/MiddleSlot'
 import { GreenPrincess } from 'model/MasterMoves/TopSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Charm, Magic, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 
 export const MotherOfGods: ActiveCard = {
@@ -37,7 +37,7 @@ function activateMotherOfGods(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Spirit, 5)
       setMinimumStatValue(project, Charm, 5)
 
-      if (project.type === WeaponProjectType && project.equipment === Flail) {
+      if (project.type === WeaponProject && project.equipment === Flail) {
         project.masterMoves.top = GreenPrincess
         project.masterMoves.middle = GameOfDeath
         project.masterMoves.bottom = RedDream

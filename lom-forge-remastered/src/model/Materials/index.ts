@@ -1,6 +1,7 @@
 import { Entity } from 'model/Common'
-import { ArmorAttributes, WeaponAttributes } from 'model/Equipment'
 import { Resistances } from 'model/Essences'
+import { EquipmentAttributes } from 'model/Gear/Equipment'
+import { WeaponAttributes } from 'model/Gear/Weapons'
 import {
   Adamantite,
   AltenaAlloy,
@@ -85,7 +86,7 @@ export type Material = Entity & {
   readonly category: MaterialCategory
   readonly growthControl: number
   readonly weaponAttributes: WeaponAttributes
-  readonly armorAttributes: ArmorAttributes
+  readonly equipmentAttributes: EquipmentAttributes
   readonly resistances: Resistances
   readonly priceCoefficient: number
   readonly activate?: (project: TemperingProject) => void

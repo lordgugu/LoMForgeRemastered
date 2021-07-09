@@ -1,5 +1,5 @@
 import { MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
-import { Weapon } from 'model/Equipment/Weapons'
+import { Weapon } from 'model/Gear/Weapons'
 import { Jump } from 'model/MasterMoves/BottomSlot'
 import { DoubleShot, ElvenArcher, LunarShot } from 'model/MasterMoves/MiddleSlot'
 import {
@@ -11,7 +11,7 @@ import {
   Shot,
   SolarFlare
 } from 'model/MasterMoves/TopSlot'
-import { WeaponProject } from 'model/Projects'
+import { TemperedWeapon } from 'model/Projects'
 
 export const Bow: Weapon = {
   id: 'Bow',
@@ -44,7 +44,7 @@ export const Bow: Weapon = {
  *
  * @param project tempering project
  */
-function activateBow(project: WeaponProject) {
+function activateBow(project: TemperedWeapon) {
   const { top, middle, bottom } = project.cards
 
   let witch = false

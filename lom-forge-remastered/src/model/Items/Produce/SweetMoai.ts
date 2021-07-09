@@ -1,6 +1,7 @@
-import { Hat, Helm, Pierce, plus25Percent, plus50Percent, Slash, Strike } from 'model/Equipment'
+import { plus25Percent, plus50Percent } from 'model/Gear'
+import { Hat, Helm, Pierce, Slash, Strike } from 'model/Gear/Equipment'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const SweetMoai: Item = {
   id: 'SweetMoai',
@@ -8,11 +9,11 @@ export const SweetMoai: Item = {
   category: Produce,
   energy: 32,
   activate: activateSweetMoai,
-  relatedArmors: () => [Helm, Hat]
+  relatedEquipment: () => [Helm, Hat]
 }
 
 function activateSweetMoai(project: TemperingProject) {
-  if (project.type === ArmorProjectType) {
+  if (project.type === EquipmentProject) {
     switch (project.equipment) {
       case Helm:
         plus25Percent(project, Strike)

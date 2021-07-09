@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Shield } from 'model/Equipment'
+import { Shield } from 'model/Gear/Equipment'
 import { AromaOil } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { StareImmunity } from 'model/Specials'
 import { Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
@@ -14,7 +14,7 @@ export const WisdomGoddess: ActiveCard = {
   relatedItems: () => [AromaOil],
   relatedStats: () => [Magic],
   relatedStatRanges: () => [Magic],
-  relatedArmors: () => [Shield],
+  relatedEquipment: () => [Shield],
   relatedSpecials: () => [StareImmunity]
 }
 
@@ -26,7 +26,7 @@ function activateWisdomGoddess(project: TemperingProject, slot: CardSlot) {
       widenStatRange(project, Magic, -5, 10)
       setMinimumStatValue(project, Magic, 10)
 
-      if (project.type === ArmorProjectType && project.equipment === Shield) {
+      if (project.type === EquipmentProject && project.equipment === Shield) {
         project.special = StareImmunity
       }
 

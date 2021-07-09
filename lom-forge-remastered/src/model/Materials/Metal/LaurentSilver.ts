@@ -12,7 +12,7 @@ export const LaurentSilver: Material = {
     force: 25,
     tech: 25
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 25,
     slash: 25,
     pierce: 25,

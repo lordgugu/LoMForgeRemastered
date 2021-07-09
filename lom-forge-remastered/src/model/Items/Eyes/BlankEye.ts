@@ -1,5 +1,6 @@
 import { PixieOfEnvy } from 'model/Cards'
-import { plus25Percent, Tech } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Tech } from 'model/Gear/Weapons'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 

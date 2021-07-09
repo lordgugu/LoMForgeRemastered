@@ -12,7 +12,7 @@ export const HalleyRock: Material = {
     force: 30,
     tech: 32
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 20,
     slash: 18,
     pierce: 24,

@@ -1,8 +1,9 @@
 import { LordOfFlies } from 'model/Cards'
-import { Heavy, minus50Percent, plus50Percent, Tech } from 'model/Equipment'
+import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Gnome, Jinn } from 'model/Essences'
 import { Feathers, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
+import { Heavy, Tech } from 'model/Gear/Weapons'
 
 export const ClearFeather: Item = {
   id: 'ClearFeather',

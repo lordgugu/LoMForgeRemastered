@@ -12,7 +12,7 @@ export const ValsenaIron: Material = {
     force: 15,
     tech: 15
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 15,
     slash: 15,
     pierce: 15,

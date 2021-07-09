@@ -1,9 +1,10 @@
 import { WisdomGoddess } from 'model/Cards'
-import { Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
 import { totalLevels } from 'model/Essences'
+import { plus50Percent } from 'model/Gear'
+import { Pierce, Slash, Strike } from 'model/Gear/Equipment'
 import { Bottles, Item } from 'model/Items'
 import { AnimalHide, CentaurHide, DragonSkin, GatorSkin, Hide } from 'model/Materials'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const AromaOil: Item = {
   id: 'AromaOil',
@@ -13,14 +14,14 @@ export const AromaOil: Item = {
   activate: activateAromaOil,
   relatedCards: () => [WisdomGoddess],
   relatedMaterials: () => [AnimalHide, GatorSkin, CentaurHide, DragonSkin],
-  relatedArmorAttributes: () => [Strike, Slash, Pierce]
+  relatedEquipmentAttributes: () => [Strike, Slash, Pierce]
 }
 
 function activateAromaOil(project: TemperingProject) {
   const { energy } = project
   const total = totalLevels(project)
 
-  if (project.type === ArmorProjectType && project.material.category === Hide) {
+  if (project.type === EquipmentProject && project.material.category === Hide) {
     plus50Percent(project, Strike)
     plus50Percent(project, Slash)
     plus50Percent(project, Pierce)

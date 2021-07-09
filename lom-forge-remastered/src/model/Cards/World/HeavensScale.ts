@@ -13,9 +13,9 @@ import {
   World,
   Yggdrasil
 } from 'model/Cards'
-import { AllArmors } from 'model/Equipment'
+import { AllEquipment } from 'model/Gear/Equipment'
 import { Springanana } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const HeavensScale: ActiveCard = {
@@ -26,7 +26,7 @@ export const HeavensScale: ActiveCard = {
   activate: activateHeavensScale,
   relatedItems: () => [Springanana],
   relatedCards: () => [BedOfThorn, Yggdrasil, DyingEarth, Ragnarok, AncientMoon, MirroredWorld],
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedSpecials: () => [NoReviveMoveHpRegeneration]
 }
 
@@ -43,7 +43,7 @@ function activateHeavensScale(project: TemperingProject, slot: CardSlot) {
     case Top:
     case Middle:
     case Bottom:
-      if (project.type === ArmorProjectType) {
+      if (project.type === EquipmentProject) {
         project.special = NoReviveMoveHpRegeneration
       }
 

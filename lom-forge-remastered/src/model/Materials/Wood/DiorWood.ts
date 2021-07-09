@@ -12,7 +12,7 @@ export const DiorWood: Material = {
     force: 70,
     tech: 20
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 80,
     slash: 25,
     pierce: 35,

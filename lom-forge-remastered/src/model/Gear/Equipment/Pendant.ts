@@ -11,13 +11,13 @@ import {
   Unicorn,
   Volcano
 } from 'model/Cards'
-import { ArmorEquipment } from 'model/Equipment'
+import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Darkness, Flameburst, Freeze, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BlackenedBat, PineOClock, Rhinoloupe, StinkyBreath, ZombieClaw } from 'model/Items'
-import { ArmorProject } from 'model/Projects'
+import { AlteredArmor } from 'model/Projects'
 import { AutoRevive, ExtraLucre, FastRevive, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Pendant: ArmorEquipment = {
+export const Pendant: Equipment = {
   id: 'Pendant',
   name: 'Pendant',
   attributes: {
@@ -53,7 +53,7 @@ export const Pendant: ArmorEquipment = {
  *
  * @param project tempering project
  */
-function activatePendant(project: ArmorProject): void {
+function activatePendant(project: AlteredArmor): void {
   const { special } = project
   const { hidden, top, middle, bottom } = project.cards
 

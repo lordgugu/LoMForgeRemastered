@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
-import { Hammer } from 'model/Equipment/Weapons'
+import { Hammer } from 'model/Gear/Weapons'
 import { Electricity } from 'model/Items'
 import { Mjolnir } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Defense, Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
 export const ThunderGod: ActiveCard = {
@@ -33,7 +33,7 @@ function activateThunderGod(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Skill, 5)
       setMinimumStatValue(project, Defense, 5)
 
-      if (project.type === WeaponProjectType && project.equipment === Hammer) {
+      if (project.type === WeaponProject && project.equipment === Hammer) {
         project.masterMoves.bottom = Mjolnir
       }
       break

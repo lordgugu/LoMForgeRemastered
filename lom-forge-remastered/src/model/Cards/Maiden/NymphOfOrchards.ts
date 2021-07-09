@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Maiden, Middle, Top } from 'model/Cards'
-import { Ring } from 'model/Equipment'
+import { Ring } from 'model/Gear/Equipment'
 import { Applesocks } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { FastRevive } from 'model/Specials'
 
 export const NymphOfOrchards: ActiveCard = {
@@ -11,7 +11,7 @@ export const NymphOfOrchards: ActiveCard = {
   price: 1000,
   activate: activateNymphOfOrchards,
   relatedItems: () => [Applesocks],
-  relatedArmors: () => [Ring],
+  relatedEquipment: () => [Ring],
   relatedSpecials: () => [FastRevive]
 }
 
@@ -20,7 +20,7 @@ function activateNymphOfOrchards(project: TemperingProject, slot: CardSlot) {
     case Top:
     case Middle:
     case Bottom:
-      if (project.type === ArmorProjectType && project.equipment === Ring) {
+      if (project.type === EquipmentProject && project.equipment === Ring) {
         project.special = FastRevive
       }
 

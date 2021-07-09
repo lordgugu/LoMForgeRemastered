@@ -1,9 +1,10 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { minus50Percent, plus50Percent, Slash, Strike } from 'model/Equipment'
-import { Heavy, Sharp, Staff } from 'model/Equipment/Weapons'
+import { minus50Percent, plus50Percent } from 'model/Gear'
+import { Slash, Strike } from 'model/Gear/Equipment'
+import { Heavy, Sharp, Staff } from 'model/Gear/Weapons'
 import { HolyWater } from 'model/Items'
 import { Demonicide } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, Charm, incrementStat, Magic, Spirit, widenStatRange } from 'model/Stats'
 
 export const Cleric: ActiveCard = {
@@ -18,7 +19,7 @@ export const Cleric: ActiveCard = {
   relatedStatRanges: () => AllStats,
   relatedWeapons: () => [Staff],
   relatedWeaponAttributes: () => [Sharp, Heavy],
-  relatedArmorAttributes: () => [Slash, Strike],
+  relatedEquipmentAttributes: () => [Slash, Strike],
   relatedMasterMoves: {
     middle: () => [Demonicide]
   }
@@ -39,7 +40,7 @@ function activateCleric(project: TemperingProject, slot: CardSlot) {
     incrementStat(project, Spirit)
   }
 
-  if (project.type === WeaponProjectType && project.equipment === Staff) {
+  if (project.type === WeaponProject && project.equipment === Staff) {
     project.masterMoves.bottom = Demonicide
   }
 

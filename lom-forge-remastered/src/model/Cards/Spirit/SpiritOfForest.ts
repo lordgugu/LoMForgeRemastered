@@ -1,8 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
-import { Bow } from 'model/Equipment/Weapons'
+import { Bow } from 'model/Gear/Weapons'
 import { MothWing } from 'model/Items'
 import { ElvenArcher } from 'model/MasterMoves/MiddleSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Charm, incrementStat, Spirit as SpiritStat } from 'model/Stats'
 
 export const SpiritOfForest: ActiveCard = {
@@ -27,7 +27,7 @@ function activateSpiritOfForest(project: TemperingProject, slot: CardSlot) {
       incrementStat(project, SpiritStat)
       incrementStat(project, Charm)
 
-      if (project.type === WeaponProjectType && project.equipment === Bow) {
+      if (project.type === WeaponProject && project.equipment === Bow) {
         project.masterMoves.middle = ElvenArcher
       }
       break

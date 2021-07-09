@@ -11,7 +11,7 @@ export const JuddHemp: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 19,
     slash: 19,
     pierce: 19,

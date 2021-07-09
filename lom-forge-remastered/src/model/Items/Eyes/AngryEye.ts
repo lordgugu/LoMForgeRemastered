@@ -1,5 +1,6 @@
 import { PixieOfWrath } from 'model/Cards'
-import { Force, plus25Percent } from 'model/Equipment'
+import { plus25Percent } from 'model/Gear'
+import { Force } from 'model/Gear/Weapons'
 import { Eyes, Item } from 'model/Items'
 import { TemperingProject } from 'model/Projects'
 

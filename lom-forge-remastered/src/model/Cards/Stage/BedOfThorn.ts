@@ -12,9 +12,10 @@ import {
   Top,
   Yggdrasil
 } from 'model/Cards'
-import { AllArmors, Magic, Pierce, plus50Percent, Slash, Strike } from 'model/Equipment'
+import { plus50Percent } from 'model/Gear'
+import { AllEquipment, Magic, Pierce, Slash, Strike } from 'model/Gear/Equipment'
 import { Needle, Needlettuce } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { NoHpRegeneration } from 'model/Specials'
 import { AllStats, widenStatRange } from 'model/Stats'
 
@@ -26,9 +27,9 @@ export const BedOfThorn: Card = {
   activate: activateBedOfThorn,
   relatedItems: () => [Needlettuce, Needle],
   relatedCards: () => [Yggdrasil, HeavensScale, DyingEarth, Ragnarok, AncientMoon, MirroredWorld],
-  relatedArmors: () => AllArmors,
+  relatedEquipment: () => AllEquipment,
   relatedSpecials: () => [NoHpRegeneration],
-  relatedArmorAttributes: () => [Strike, Slash, Pierce, Magic]
+  relatedEquipmentAttributes: () => [Strike, Slash, Pierce, Magic]
 }
 
 function activateBedOfThorn(project: TemperingProject, slot: CardSlot) {
@@ -38,7 +39,7 @@ function activateBedOfThorn(project: TemperingProject, slot: CardSlot) {
     case Bottom:
       AllStats.forEach((stat) => widenStatRange(project, stat, -1, 3))
 
-      if (project.type === ArmorProjectType) {
+      if (project.type === EquipmentProject) {
         project.special = NoHpRegeneration
       }
 

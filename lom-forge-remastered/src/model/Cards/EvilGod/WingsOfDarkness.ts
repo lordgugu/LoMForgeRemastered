@@ -10,10 +10,10 @@ import {
   SacrificedNymph,
   Top
 } from 'model/Cards'
-import { Staff } from 'model/Equipment/Weapons'
+import { Staff } from 'model/Gear/Weapons'
 import { BlackenedBat } from 'model/Items'
 import { GoldenTouch } from 'model/MasterMoves/BottomSlot'
-import { TemperingProject, WeaponProjectType } from 'model/Projects'
+import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 
 export const WingsOfDarkness: ActiveCard = {
@@ -41,7 +41,7 @@ function activateWingsOfDarkness(project: TemperingProject, slot: CardSlot) {
       setMinimumStatValue(project, Spirit, 15)
       AllStats.forEach((stat) => decrementStat(project, stat))
 
-      if (project.type === WeaponProjectType && project.equipment == Staff) {
+      if (project.type === WeaponProject && project.equipment == Staff) {
         project.masterMoves.bottom = GoldenTouch
       }
 

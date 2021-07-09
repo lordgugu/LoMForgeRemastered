@@ -12,7 +12,7 @@ export const HollyWood: Material = {
     force: 21,
     tech: 6
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 24,
     slash: 7,
     pierce: 10,

@@ -11,7 +11,7 @@ export const Fossil: Material = {
     force: 48,
     tech: 48
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 36,
     slash: 60,
     pierce: 24,

@@ -1,6 +1,6 @@
-import { Ring } from 'model/Equipment'
+import { Ring } from 'model/Gear/Equipment'
 import { Item, Produce } from 'model/Items'
-import { ArmorProjectType, TemperingProject } from 'model/Projects'
+import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { AllStats, widenStatRange } from 'model/Stats'
 
 export const CherryBombs: Item = {
@@ -9,12 +9,12 @@ export const CherryBombs: Item = {
   category: Produce,
   energy: 16,
   activate: activateCherryBombs,
-  relatedArmors: () => [Ring],
+  relatedEquipment: () => [Ring],
   relatedStatRanges: () => AllStats
 }
 
 function activateCherryBombs(project: TemperingProject) {
-  if (project.type === ArmorProjectType && project.equipment === Ring) {
+  if (project.type === EquipmentProject && project.equipment === Ring) {
     AllStats.forEach((stat) => widenStatRange(project, stat, -3, 9))
   }
 }
