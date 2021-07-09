@@ -28,19 +28,19 @@ export const AllImmunities: Immunity[] = [
   Freeze
 ]
 
-export type Immunities = {
-  immunities: { [key in Immunity]: boolean }
+export type ImmunitiesContext = {
+  immunities: { [immunity in Immunity]: boolean }
 }
 
-export function resetImmunities(project: Immunities) {
-  AllImmunities.forEach((immunity) => (project.immunities[immunity] = false))
+export function resetImmunities(context: ImmunitiesContext) {
+  AllImmunities.forEach((immunity) => (context.immunities[immunity] = false))
 }
 
-export function setImmunities(project: Immunities, ...immunities: Immunity[]) {
-  resetImmunities(project)
-  immunities.forEach((immunity) => addImmunity(project, immunity))
+export function setImmunities(context: ImmunitiesContext, ...immunities: Immunity[]) {
+  resetImmunities(context)
+  immunities.forEach((immunity) => addImmunity(context, immunity))
 }
 
-export function addImmunity(project: Immunities, immunity: Immunity) {
-  project.immunities[immunity] = true
+export function addImmunity(context: ImmunitiesContext, immunity: Immunity) {
+  context.immunities[immunity] = true
 }

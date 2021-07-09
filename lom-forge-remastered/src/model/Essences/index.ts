@@ -5,6 +5,7 @@ import { mirroredWorldTaint } from './MirroredWorldTaint'
 import { normalTaint } from './NormalTaint'
 
 type PotentialEssence = 'dryad' | 'aura' | 'salamander' | 'gnome' | 'jinn' | 'undine'
+
 export type Essence = 'wisp' | 'shade' | PotentialEssence
 
 export const Wisp: Essence = 'wisp'
@@ -16,27 +17,7 @@ export const Gnome: Essence & PotentialEssence = 'gnome'
 export const Jinn: Essence & PotentialEssence = 'jinn'
 export const Undine: Essence & PotentialEssence = 'undine'
 
-export type Level = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15
-
-export type Levels = {
-  [key in Essence]: Level
-}
-
-export type Resistances = { [key in Essence]: number }
-
-export type Markers = { [key in Essence]: boolean }
-
-export type PotentialGrowth = {
-  [key in PotentialEssence]: number
-}
-
-export type Essences = {
-  energy: number
-  levels: Levels
-  markers: Markers
-  potential: PotentialGrowth
-  resistances: Resistances
-}
+type Level = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15
 
 const PowerOfTwo: { [exponent in Level]: number } = {
   0: 1,
@@ -57,87 +38,95 @@ const PowerOfTwo: { [exponent in Level]: number } = {
   15: 32768
 }
 
-export function increaseEssence(essences: Essences, essence: Essence) {
-  const level = essences.levels[essence]
+export type EssencesContext = {
+  energy: number
+  levels: { [element in Essence]: Level }
+  markers: { [element in Essence]: boolean }
+  potential: { [element in PotentialEssence]: number }
+  resistances: { [element in Essence]: number }
+}
+
+export function increaseEssence(context: EssencesContext, element: Essence) {
+  const level = context.levels[element]
 
   if (level === 15) {
     return
   }
 
-  const requiredEnergy = essences.resistances[essence] * PowerOfTwo[level]
+  const requiredEnergy = context.resistances[element] * PowerOfTwo[level]
 
-  if (essences.energy >= requiredEnergy) {
-    essences.energy -= requiredEnergy
-    essences.levels[essence]++
+  if (context.energy >= requiredEnergy) {
+    context.energy -= requiredEnergy
+    context.levels[element]++
   }
 }
 
-export function decreaseEssence(essences: Essences, essence: Essence) {
-  if (essences.levels[essence] === 0) {
+export function decreaseEssence(context: EssencesContext, element: Essence) {
+  if (context.levels[element] === 0) {
     return
   }
 
   const decrease = () => {
-    const resistance = essences.resistances[essence]
+    const resistance = context.resistances[element]
 
-    essences.levels[essence]--
-    essences.energy += resistance * PowerOfTwo[essences.levels[essence]]
+    context.levels[element]--
+    context.energy += resistance * PowerOfTwo[context.levels[element]]
   }
 
-  switch (essence) {
+  switch (element) {
     case Wisp:
     case Shade:
       decrease()
       return
     default:
-      if (essences.energy >= 4) {
+      if (context.energy >= 4) {
         decrease()
       }
       return
   }
 }
 
-export function increaseRemainingEssences(essences: Essences) {
-  Array.of(Dryad, Aura, Salamander, Gnome, Jinn, Undine).forEach((essence) => {
-    while (essences.potential[essence] > 0) {
-      essences.potential[essence]--
-      increaseEssence(essences, essence)
+export function increaseRemainingEssences(context: EssencesContext) {
+  Array.of(Dryad, Aura, Salamander, Gnome, Jinn, Undine).forEach((element) => {
+    while (context.potential[element] > 0) {
+      context.potential[element]--
+      increaseEssence(context, element)
     }
   })
 }
 
-export function taint(project: TemperingProject, essence: Essence) {
+export function taint(project: TemperingProject, element: Essence) {
   switch (project.worldCard) {
     case AncientMoon:
-      ancientMoonTaint(project, essence)
+      ancientMoonTaint(project, element)
       break
     case MirroredWorld:
-      mirroredWorldTaint(project, essence)
+      mirroredWorldTaint(project, element)
       break
     default:
-      normalTaint(project, essence)
+      normalTaint(project, element)
       break
   }
 }
 
-export function totalLevels(essences: Essences): number {
-  return Object.values(essences.levels)
+export function totalLevels(context: EssencesContext): number {
+  return Object.values(context.levels)
     .map((level) => level as number)
     .reduce((sum, level) => sum + level, 0)
 }
 
-export function resistance75(essences: Essences, essence: Essence) {
-  let resistance = essences.resistances[essence]
+export function resistance75(context: EssencesContext, element: Essence) {
+  let resistance = context.resistances[element]
 
   resistance = Math.trunc(resistance / 4) * 3
 
-  essences.resistances[essence] = Math.min(resistance, 1)
+  context.resistances[element] = Math.min(resistance, 1)
 }
 
-export function resistance50(essences: Essences, essence: Essence) {
-  let resistance = essences.resistances[essence]
+export function resistance50(context: EssencesContext, element: Essence) {
+  let resistance = context.resistances[element]
 
   resistance = Math.trunc(resistance / 2)
 
-  essences.resistances[essence] = Math.min(resistance, 1)
+  context.resistances[element] = Math.min(resistance, 1)
 }

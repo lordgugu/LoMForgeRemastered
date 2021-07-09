@@ -2,7 +2,7 @@ import {
   Aura,
   Dryad,
   Essence,
-  Essences,
+  EssencesContext,
   Gnome,
   increaseEssence,
   Jinn,
@@ -12,17 +12,17 @@ import {
   Wisp
 } from 'model/Essences'
 
-export function ancientMoonTaint(essences: Essences, essence: Essence): void {
-  const { energy } = essences
+export function ancientMoonTaint(context: EssencesContext, element: Essence): void {
+  const { energy } = context
 
   if (energy < 8) {
     return
   }
 
-  switch (essence) {
+  switch (element) {
     case Wisp:
     case Shade:
-      increaseEssence(essences, essence)
+      increaseEssence(context, element)
       break
     case Dryad:
     case Aura:
@@ -30,7 +30,7 @@ export function ancientMoonTaint(essences: Essences, essence: Essence): void {
     case Gnome:
     case Jinn:
     case Undine:
-      essences.potential[essence]++
+      context.potential[element]++
       break
   }
 }
