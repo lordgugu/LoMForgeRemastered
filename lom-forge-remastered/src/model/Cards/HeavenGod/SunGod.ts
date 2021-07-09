@@ -1,7 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Bow, Sword } from 'model/Equipment'
 import { SunCrystal } from 'model/Items'
-import { SolarFlare, Sunlight } from 'model/MasterMoves'
+import { Sunlight } from 'model/MasterMoves/MiddleSlot'
+import { SolarFlare } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { Charm, setMinimumStatValue, widenStatRange } from 'model/Stats'
 

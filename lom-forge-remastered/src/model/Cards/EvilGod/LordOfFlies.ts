@@ -12,7 +12,7 @@ import {
 } from 'model/Cards'
 import { Knife } from 'model/Equipment'
 import { ClearFeather } from 'model/Items'
-import { SinisterBlade } from 'model/MasterMoves'
+import { SinisterBlade } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, decrementStat, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 

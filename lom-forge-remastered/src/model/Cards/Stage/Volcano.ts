@@ -2,7 +2,7 @@ import { Bottom, Card, CardSlot, Middle, Phoenix, Stage, Top } from 'model/Cards
 import { Force, Hammer, Hauberk, minus50Percent, Pendant, plus50Percent, Ring, Tech } from 'model/Equipment'
 import { addImmunity, Freeze } from 'model/Immunities'
 import { Ash } from 'model/Items'
-import { MagmaHammer } from 'model/MasterMoves'
+import { MagmaHammer } from 'model/MasterMoves/BottomSlot'
 import { ArmorProjectType, TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AutoRevive } from 'model/Specials'
 

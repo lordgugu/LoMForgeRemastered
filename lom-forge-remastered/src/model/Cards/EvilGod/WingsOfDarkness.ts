@@ -12,7 +12,7 @@ import {
 } from 'model/Cards'
 import { Staff } from 'model/Equipment'
 import { BlackenedBat } from 'model/Items'
-import { GoldenTouch } from 'model/MasterMoves'
+import { GoldenTouch } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, decrementStat, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 

@@ -1,6 +1,8 @@
 import { MotherOfGods } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import { GameOfDeath, GreenPrincess, Jump, RedDream, Thrust, Uppercut } from 'model/MasterMoves'
+import { Jump, RedDream } from 'model/MasterMoves/BottomSlot'
+import { GameOfDeath, Uppercut } from 'model/MasterMoves/MiddleSlot'
+import { GreenPrincess, Thrust } from 'model/MasterMoves/TopSlot'
 
 export const Flail: WeaponEquipment = {
   id: 'Flail',

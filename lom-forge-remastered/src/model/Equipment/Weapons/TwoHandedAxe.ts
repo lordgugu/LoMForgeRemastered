@@ -1,6 +1,8 @@
 import { Leviathan } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import { Jump, Thrust, Treefeller, Uppercut } from 'model/MasterMoves'
+import { Jump, Treefeller } from 'model/MasterMoves/BottomSlot'
+import { Uppercut } from 'model/MasterMoves/MiddleSlot'
+import { Thrust } from 'model/MasterMoves/TopSlot'
 
 export const TwoHandedAxe: WeaponEquipment = {
   id: 'TwoHandedAxe',

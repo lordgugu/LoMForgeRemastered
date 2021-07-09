@@ -1,6 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, Middle, None, Top, Tower } from 'model/Cards'
+import { Bow } from 'model/Equipment'
 import { Aura, Jinn, resistance50, resistance75, Shade, Undine } from 'model/Essences'
 import { Mercury } from 'model/Items'
+import { MagicalShot } from 'model/MasterMoves/TopSlot'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, Charm, incrementStat, Magic, Spirit, widenStatRange } from 'model/Stats'
 
@@ -14,7 +16,11 @@ export const Witch: ActiveCard = {
   relatedCards: () => [Tower],
   relatedStats: () => [Magic, Spirit, Charm],
   relatedStatRanges: () => AllStats,
-  relatedEssences: () => [Shade, Aura, Jinn, Undine]
+  relatedEssences: () => [Shade, Aura, Jinn, Undine],
+  relatedWeapons: () => [Bow],
+  relatedMasterMoves: {
+    top: () => [MagicalShot]
+  }
 }
 
 function activateWitch(project: TemperingProject, slot: CardSlot) {

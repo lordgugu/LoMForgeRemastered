@@ -1,5 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Bow } from 'model/Equipment'
 import { PeachPuppy } from 'model/Items'
+import { MagicalShot } from 'model/MasterMoves/TopSlot'
 import { TemperingProject } from 'model/Projects'
 import { HP, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
@@ -11,7 +13,11 @@ export const Wolf: ActiveCard = {
   activate: activateWolf,
   relatedItems: () => [PeachPuppy],
   relatedStats: () => [Skill, HP],
-  relatedStatRanges: () => [Skill, HP]
+  relatedStatRanges: () => [Skill, HP],
+  relatedWeapons: () => [Bow],
+  relatedMasterMoves: {
+    top: () => [MagicalShot]
+  }
 }
 
 function activateWolf(project: TemperingProject, slot: CardSlot) {

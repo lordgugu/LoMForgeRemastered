@@ -1,7 +1,7 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
 import { Heavy, minus50Percent, plus50Percent, Sharp, Slash, Staff, Strike } from 'model/Equipment'
 import { HolyWater } from 'model/Items'
-import { Demonicide } from 'model/MasterMoves'
+import { Demonicide } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, Charm, incrementStat, Magic, Spirit, widenStatRange } from 'model/Stats'
 

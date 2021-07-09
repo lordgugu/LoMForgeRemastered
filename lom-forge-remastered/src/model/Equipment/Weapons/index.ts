@@ -1,5 +1,5 @@
 import { Entity } from 'model/Common'
-import { MasterMove } from 'model/MasterMoves'
+import { MasterMovesContext } from 'model/MasterMoves'
 import { WeaponProject } from 'model/Projects'
 import { Axe } from './Axe'
 import { Bow } from './Bow'
@@ -23,15 +23,13 @@ export type WeaponAttributes = {
   [attribute in WeaponAttribute]: number
 }
 
-export type MasterMoveSlot = 'top' | 'middle' | 'bottom'
-
-export type WeaponEquipment = Entity & {
-  readonly attributes: WeaponAttributes
-  readonly markerThreshold: number
-  readonly priceCoefficient: number
-  readonly masterMoves: { readonly [key in MasterMoveSlot]: MasterMove }
-  readonly activate?: (project: WeaponProject) => void
-}
+export type WeaponEquipment = Entity &
+  MasterMovesContext & {
+    readonly attributes: WeaponAttributes
+    readonly markerThreshold: number
+    readonly priceCoefficient: number
+    readonly activate?: (project: WeaponProject) => void
+  }
 
 export const AllWeapons: WeaponEquipment[] = [
   Knife,

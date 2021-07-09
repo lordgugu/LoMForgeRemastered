@@ -1,5 +1,7 @@
 import { Bottom, Card, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Bow } from 'model/Equipment'
 import { RavenFeather } from 'model/Items'
+import { MagicalShot } from 'model/MasterMoves/TopSlot'
 import { TemperingProject } from 'model/Projects'
 import { Charm, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
@@ -11,7 +13,11 @@ export const Raven: Card = {
   activate: activateRaven,
   relatedItems: () => [RavenFeather],
   relatedStats: () => [Magic, Charm],
-  relatedStatRanges: () => [Magic, Charm]
+  relatedStatRanges: () => [Magic, Charm],
+  relatedWeapons: () => [Bow],
+  relatedMasterMoves: {
+    top: () => [MagicalShot]
+  }
 }
 
 function activateRaven(project: TemperingProject, slot: CardSlot) {

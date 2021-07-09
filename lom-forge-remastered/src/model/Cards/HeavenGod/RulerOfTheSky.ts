@@ -1,7 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Spear, Staff } from 'model/Equipment'
 import { SpadeBasil } from 'model/Items'
-import { Electrosceptre, Gungnir } from 'model/MasterMoves'
+import { Electrosceptre } from 'model/MasterMoves/BottomSlot'
+import { Gungnir } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { Magic, Power, setMinimumStatValue, widenStatRange } from 'model/Stats'
 

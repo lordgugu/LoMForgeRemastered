@@ -1,7 +1,7 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
 import { Glove } from 'model/Equipment'
 import { Garlicrown } from 'model/Items'
-import { HandOfMidas } from 'model/MasterMoves'
+import { HandOfMidas } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, incrementStat, Power, widenStatRange } from 'model/Stats'
 

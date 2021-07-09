@@ -4,6 +4,7 @@ import { MasterMove } from 'model/MasterMoves'
 export const Thrust: MasterMove = {
   id: 'Thrust',
   name: 'Thrust',
+  slot: 'top',
   effects: () => ['Default (Top Slot)'],
   relatedWeapons: () => [Knife, Sword, Axe, TwoHandedSword, TwoHandedAxe, Hammer, Spear, Staff, Glove, Flail]
 }

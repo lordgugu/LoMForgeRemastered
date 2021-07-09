@@ -1,6 +1,8 @@
 import { BeastHeadedGod, Clown, LordOfFlies } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import { Jump, PoisonBlade, QuickBlade, SinisterBlade, Thrust, Uppercut } from 'model/MasterMoves'
+import { Jump, SinisterBlade } from 'model/MasterMoves/BottomSlot'
+import { PoisonBlade, QuickBlade, Uppercut } from 'model/MasterMoves/MiddleSlot'
+import { Thrust } from 'model/MasterMoves/TopSlot'
 
 export const Knife: WeaponEquipment = {
   id: 'Knife',

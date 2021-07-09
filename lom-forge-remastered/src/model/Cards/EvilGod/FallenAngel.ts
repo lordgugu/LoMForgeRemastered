@@ -12,7 +12,7 @@ import {
 } from 'model/Cards'
 import { TwoHandedSword } from 'model/Equipment'
 import { AngelFeather } from 'model/Items'
-import { ChaoticAvenger } from 'model/MasterMoves'
+import { ChaoticAvenger } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, Charm, decrementStat, setMinimumStatValue, widenStatRange } from 'model/Stats'
 

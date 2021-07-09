@@ -1,18 +1,16 @@
 import { MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
+import { Jump } from 'model/MasterMoves/BottomSlot'
+import { DoubleShot, ElvenArcher, LunarShot } from 'model/MasterMoves/MiddleSlot'
 import {
-  DoubleShot,
-  ElvenArcher,
   FlamingArrow,
   Icicle,
-  Jump,
-  LunarShot,
   MagicalShot,
   MedusaArrow,
   PhoenixFalling,
   Shot,
   SolarFlare
-} from 'model/MasterMoves'
+} from 'model/MasterMoves/TopSlot'
 import { WeaponProject } from 'model/Projects'
 
 export const Bow: WeaponEquipment = {

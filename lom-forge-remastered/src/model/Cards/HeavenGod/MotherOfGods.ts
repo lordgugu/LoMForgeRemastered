@@ -1,7 +1,9 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Flail } from 'model/Equipment'
 import { HeartMint } from 'model/Items'
-import { GameOfDeath, GreenPrincess, RedDream } from 'model/MasterMoves'
+import { RedDream } from 'model/MasterMoves/BottomSlot'
+import { GameOfDeath } from 'model/MasterMoves/MiddleSlot'
+import { GreenPrincess } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { Charm, Magic, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 

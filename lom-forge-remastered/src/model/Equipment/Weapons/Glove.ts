@@ -1,6 +1,8 @@
 import { King } from 'model/Cards'
 import { WeaponEquipment } from 'model/Equipment'
-import { HandOfMidas, Jump, Thrust, Uppercut } from 'model/MasterMoves'
+import { Jump } from 'model/MasterMoves/BottomSlot'
+import { Uppercut, HandOfMidas } from 'model/MasterMoves/MiddleSlot'
+import { Thrust } from 'model/MasterMoves/TopSlot'
 
 export const Glove: WeaponEquipment = {
   id: 'Glove',

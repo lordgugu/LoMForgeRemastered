@@ -1,9 +1,9 @@
 import { activateCards, CardContext, pushCards, resetVolatileCards, setWorldCard } from 'model/Cards'
-import { ArmorAttributes, ArmorEquipment, MasterMoveSlot, WeaponAttributes, WeaponEquipment } from 'model/Equipment'
+import { ArmorAttributes, ArmorEquipment, WeaponAttributes, WeaponEquipment } from 'model/Equipment'
 import { EssencesContext, increaseRemainingEssences } from 'model/Essences'
 import { ImmunitiesContext } from 'model/Immunities'
 import { Item } from 'model/Items'
-import { MasterMove } from 'model/MasterMoves'
+import { MasterMovesContext } from 'model/MasterMoves'
 import { Material } from 'model/Materials'
 import { Special } from 'model/Specials'
 import { calculateFinalStats, resetStatLimits, StatsContext } from 'model/Stats'
@@ -18,13 +18,13 @@ type Project = StatsContext &
 export const WeaponProjectType = 'Weapon'
 export const ArmorProjectType = 'Armor'
 
-export type WeaponProject = Project & {
-  type: 'Weapon'
-  equipment: WeaponEquipment
-  attributes: WeaponAttributes
-  power: number
-  masterMoves: { [key in MasterMoveSlot]: MasterMove }
-}
+export type WeaponProject = Project &
+  MasterMovesContext & {
+    type: 'Weapon'
+    equipment: WeaponEquipment
+    attributes: WeaponAttributes
+    power: number
+  }
 
 export type ArmorProject = Project &
   ImmunitiesContext & {

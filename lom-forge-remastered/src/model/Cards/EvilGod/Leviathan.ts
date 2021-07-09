@@ -12,7 +12,7 @@ import {
 } from 'model/Cards'
 import { TwoHandedAxe } from 'model/Equipment'
 import { GiantsHorn, OrangeOpus } from 'model/Items'
-import { Treefeller } from 'model/MasterMoves'
+import { Treefeller } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { AllStats, decrementStat, Defense, setMinimumStatValue, widenStatRange } from 'model/Stats'
 

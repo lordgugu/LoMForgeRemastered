@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Hammer } from 'model/Equipment'
 import { Ether } from 'model/Items'
-import { SledgeHammer } from 'model/MasterMoves'
+import { SledgeHammer } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { Defense, setMinimumStatValue, widenStatRange } from 'model/Stats'
 

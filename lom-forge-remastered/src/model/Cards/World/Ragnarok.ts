@@ -29,7 +29,7 @@ import {
 } from 'model/Cards'
 import { TwoHandedSword } from 'model/Equipment'
 import { PineOClock } from 'model/Items'
-import { Ragnarok as RagnarokMasterMove } from 'model/MasterMoves'
+import { Ragnarok as RagnarokMasterMove } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 
 export const Ragnarok: ActiveCard = {

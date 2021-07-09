@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
 import { Bow } from 'model/Equipment'
 import { MothWing } from 'model/Items'
-import { ElvenArcher } from 'model/MasterMoves'
+import { ElvenArcher } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { Charm, incrementStat, Spirit as SpiritStat } from 'model/Stats'
 

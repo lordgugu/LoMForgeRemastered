@@ -1,7 +1,8 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Bow, Sword } from 'model/Equipment'
 import { MoonCrystal } from 'model/Items'
-import { LunarShot, Moonlight } from 'model/MasterMoves'
+import { Moonlight } from 'model/MasterMoves/BottomSlot'
+import { LunarShot } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProjectType } from 'model/Projects'
 import { setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'
 
