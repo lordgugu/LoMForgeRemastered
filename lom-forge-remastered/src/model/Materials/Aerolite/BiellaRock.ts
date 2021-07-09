@@ -1,5 +1,6 @@
 import { Salamander } from 'model/Essences'
-import { activateAerolite, Aerolite, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { activateAerolite, Aerolite } from 'model/Materials/Aerolite'
 
 export const BiellaRock: Material = {
   id: 'BiellaRock',
@@ -12,7 +13,7 @@ export const BiellaRock: Material = {
     force: 67,
     tech: 72
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 45,
     slash: 40,
     pierce: 54,

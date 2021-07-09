@@ -1,5 +1,6 @@
 import { AromaOil } from 'model/Items'
-import { Hide, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Hide } from 'model/Materials/Hide'
 
 export const GatorSkin: Material = {
   id: 'GatorSkin',

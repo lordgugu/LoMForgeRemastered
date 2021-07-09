@@ -1,4 +1,5 @@
-import { Material, Metal } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Metal } from 'model/Materials/Metal'
 
 export const WendelSilver: Material = {
   id: 'WendelSilver',

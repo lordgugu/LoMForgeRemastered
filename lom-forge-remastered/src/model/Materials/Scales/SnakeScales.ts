@@ -1,4 +1,5 @@
-import { Material, Scales } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Scales } from 'model/Materials/Scales'
 
 export const SnakeScales: Material = {
   id: 'SnakeScales',

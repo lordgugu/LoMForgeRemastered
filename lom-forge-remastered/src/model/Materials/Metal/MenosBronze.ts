@@ -1,4 +1,5 @@
-import { Material, Metal } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Metal } from 'model/Materials/Metal'
 
 export const MenosBronze: Material = {
   id: 'MenosBronze',
@@ -12,7 +13,7 @@ export const MenosBronze: Material = {
     force: 10,
     tech: 10
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 10,
     slash: 10,
     pierce: 10,

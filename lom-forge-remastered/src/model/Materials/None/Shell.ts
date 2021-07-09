@@ -1,4 +1,5 @@
-import { Material, None } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { None } from 'model/Materials/None'
 
 export const Shell: Material = {
   id: 'Shell',

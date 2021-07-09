@@ -1,4 +1,5 @@
-import { Bone, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Bone } from 'model/Materials/Bone'
 
 export const CursedBone: Material = {
   id: 'CursedBone',
@@ -11,7 +12,7 @@ export const CursedBone: Material = {
     force: 36,
     tech: 36
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 27,
     slash: 45,
     pierce: 18,

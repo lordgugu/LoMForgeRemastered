@@ -1,4 +1,5 @@
-import { Fabric, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Fabric } from 'model/Materials/Fabric'
 
 export const AltenaFelt: Material = {
   id: 'AltenaFelt',
@@ -11,7 +12,7 @@ export const AltenaFelt: Material = {
     force: 1,
     tech: 1
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 24,
     slash: 24,
     pierce: 24,

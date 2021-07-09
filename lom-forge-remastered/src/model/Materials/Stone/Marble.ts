@@ -1,4 +1,5 @@
-import { Material, Stone } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Stone } from 'model/Materials/Stone'
 
 export const Marble: Material = {
   id: 'Marble',

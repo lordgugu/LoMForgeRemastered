@@ -1,5 +1,6 @@
 import { Salamander } from 'model/Essences'
-import { activateAerolite, Aerolite, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { activateAerolite, Aerolite } from 'model/Materials/Aerolite'
 
 export const SwifteRock: Material = {
   id: 'SwifteRock',

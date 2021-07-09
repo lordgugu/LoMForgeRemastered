@@ -1,4 +1,5 @@
-import { Fabric, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Fabric } from 'model/Materials/Fabric'
 
 export const ToppleCotton: Material = {
   id: 'ToppleCotton',

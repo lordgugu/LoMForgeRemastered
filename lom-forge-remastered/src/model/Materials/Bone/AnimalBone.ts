@@ -1,4 +1,5 @@
-import { Bone, Material } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Bone } from 'model/Materials/Bone'
 
 export const AnimalBone: Material = {
   id: 'AnimalBone',

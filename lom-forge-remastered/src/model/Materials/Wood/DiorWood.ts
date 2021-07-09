@@ -1,5 +1,6 @@
 import { Dryad } from 'model/Essences'
-import { activateWood, Material, Wood } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { activateWood, Wood } from 'model/Materials/Wood'
 
 export const DiorWood: Material = {
   id: 'DiorWood',

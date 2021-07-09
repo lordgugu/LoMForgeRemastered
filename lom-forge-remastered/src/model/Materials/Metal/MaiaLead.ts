@@ -1,4 +1,5 @@
-import { Material, Metal } from 'model/Materials'
+import { Material } from 'model/Materials'
+import { Metal } from 'model/Materials/Metal'
 
 export const MaiaLead: Material = {
   id: 'MaiaLead',
@@ -11,7 +12,7 @@ export const MaiaLead: Material = {
     force: 68,
     tech: 18
   },
-  armorAttributes: {
+  equipmentAttributes: {
     strike: 3,
     slash: 18,
     pierce: 36,
