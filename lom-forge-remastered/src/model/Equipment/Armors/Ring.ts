@@ -2,6 +2,7 @@ import {
   BedOfThorn,
   FertilityGoddess,
   HeavensScale,
+  NymphOfOrchards,
   OceanGod,
   Phoenix,
   SpiritOfHousework,
@@ -53,7 +54,8 @@ export const Ring: ArmorEquipment = {
     Spring,
     SpiritOfHousework,
     HeavensScale,
-    BedOfThorn
+    BedOfThorn,
+    NymphOfOrchards
   ]
 }
 

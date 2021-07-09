@@ -5,6 +5,7 @@ import {
   HeavensScale,
   OceanGod,
   Phoenix,
+  SacrificedNymph,
   Spring,
   Unicorn,
   Volcano
@@ -39,7 +40,8 @@ export const Pendant: ArmorEquipment = {
     Unicorn,
     Spring,
     HeavensScale,
-    BedOfThorn
+    BedOfThorn,
+    SacrificedNymph
   ]
 }
 
