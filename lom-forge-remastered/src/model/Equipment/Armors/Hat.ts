@@ -1,7 +1,8 @@
-import { FertilityGoddess, OceanGod, SpiritOfOcean } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, HeavensScale, OceanGod, SpiritOfOcean } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath, SweetMoai } from 'model/Items'
+import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Hat: ArmorEquipment = {
   id: 'Hat',
@@ -16,5 +17,5 @@ export const Hat: ArmorEquipment = {
   priceCoefficient: 15,
   relatedItems: () => [PineOClock, Rhinoloupe, SweetMoai, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [FertilityGoddess, OceanGod, SpiritOfOcean]
-}
+  relatedCards: () => [FertilityGoddess, OceanGod, SpiritOfOcean, HeavensScale, BedOfThorn],
+  relatedSpecials: () => [NoReviveMoveHpRegeneration, NoHpRegeneration]

@@ -1,8 +1,8 @@
-import { FertilityGoddess, OceanGod, SpiritOfHousework } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, HeavensScale, OceanGod, SpiritOfHousework } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
-import { MoveHpRegeneration } from 'model/Specials'
+import { MoveHpRegeneration, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Mantle: ArmorEquipment = {
   id: 'Mantle',
@@ -15,8 +15,8 @@ export const Mantle: ArmorEquipment = {
   },
   markerThreshold: 2,
   priceCoefficient: 20,
-  relatedSpecials: () => [MoveHpRegeneration],
+  relatedSpecials: () => [MoveHpRegeneration, NoReviveMoveHpRegeneration, NoHpRegeneration],
   relatedItems: () => [PineOClock, Rhinoloupe, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [FertilityGoddess, OceanGod, SpiritOfHousework]
+  relatedCards: () => [FertilityGoddess, OceanGod, SpiritOfHousework, HeavensScale, BedOfThorn]
 }

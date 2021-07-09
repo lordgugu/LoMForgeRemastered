@@ -1,8 +1,8 @@
-import { FertilityGoddess, OceanGod, WisdomGoddess } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, HeavensScale, OceanGod, WisdomGoddess } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { HealingClaw, PineOClock, StinkyBreath } from 'model/Items'
-import { StareImmunity } from 'model/Specials'
+import { NoHpRegeneration, NoReviveMoveHpRegeneration, StareImmunity } from 'model/Specials'
 
 export const Shield: ArmorEquipment = {
   id: 'Shield',
@@ -15,8 +15,8 @@ export const Shield: ArmorEquipment = {
   },
   markerThreshold: 1,
   priceCoefficient: 10,
-  relatedSpecials: () => [StareImmunity],
+  relatedSpecials: () => [StareImmunity, NoReviveMoveHpRegeneration, NoHpRegeneration],
   relatedItems: () => [PineOClock, HealingClaw, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [FertilityGoddess, OceanGod, WisdomGoddess]
+  relatedCards: () => [FertilityGoddess, OceanGod, WisdomGoddess, HeavensScale, BedOfThorn]
 }

@@ -1,9 +1,19 @@
-import { FertilityGoddess, GoddessOfLove, OceanGod, Phoenix, Spring, Unicorn, Volcano } from 'model/Cards'
+import {
+  BedOfThorn,
+  FertilityGoddess,
+  GoddessOfLove,
+  HeavensScale,
+  OceanGod,
+  Phoenix,
+  Spring,
+  Unicorn,
+  Volcano
+} from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Darkness, Flameburst, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BlackenedBat, PineOClock, Rhinoloupe, StinkyBreath, ZombieClaw } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
-import { AutoRevive, ExtraLucre, FastRevive } from 'model/Specials'
+import { AutoRevive, ExtraLucre, FastRevive, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Pendant: ArmorEquipment = {
   id: 'Pendant',
@@ -17,10 +27,20 @@ export const Pendant: ArmorEquipment = {
   markerThreshold: 1,
   priceCoefficient: 5,
   activate: activatePendant,
-  relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive],
+  relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive, NoReviveMoveHpRegeneration, NoHpRegeneration],
   relatedItems: () => [PineOClock, ZombieClaw, Rhinoloupe, StinkyBreath, BlackenedBat],
   relatedImmunities: () => [Poison, Sleep, Paralysis, Confusion, Darkness, Petrification, Flameburst],
-  relatedCards: () => [Phoenix, GoddessOfLove, FertilityGoddess, OceanGod, Volcano, Unicorn, Spring]
+  relatedCards: () => [
+    Phoenix,
+    GoddessOfLove,
+    FertilityGoddess,
+    OceanGod,
+    Volcano,
+    Unicorn,
+    Spring,
+    HeavensScale,
+    BedOfThorn
+  ]
 }
 
 /**

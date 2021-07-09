@@ -1,7 +1,8 @@
-import { FertilityGoddess, OceanGod } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, HeavensScale, Metropolis, OceanGod, Spring } from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BakedRoach, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
+import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Robe: ArmorEquipment = {
   id: 'Robe',
@@ -16,5 +17,6 @@ export const Robe: ArmorEquipment = {
   priceCoefficient: 30,
   relatedItems: () => [PineOClock, Rhinoloupe, StinkyBreath, BakedRoach],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [FertilityGoddess, OceanGod]
+  relatedCards: () => [FertilityGoddess, OceanGod, HeavensScale, BedOfThorn, Metropolis, Spring],
+  relatedSpecials: () => [NoReviveMoveHpRegeneration, NoHpRegeneration]
 }

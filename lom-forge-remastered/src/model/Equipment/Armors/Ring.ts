@@ -1,9 +1,26 @@
-import { FertilityGoddess, OceanGod, Phoenix, SpiritOfHousework, Spring, Unicorn, Volcano } from 'model/Cards'
+import {
+  BedOfThorn,
+  FertilityGoddess,
+  HeavensScale,
+  OceanGod,
+  Phoenix,
+  SpiritOfHousework,
+  Spring,
+  Unicorn,
+  Volcano
+} from 'model/Cards'
 import { ArmorEquipment } from 'model/Equipment'
 import { Confusion, Flameburst, Petrification, Poison, Sleep } from 'model/Immunities'
 import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
 import { ArmorProject } from 'model/Projects'
-import { AutoRevive, ExtraLucre, FastRevive, ShareExperience } from 'model/Specials'
+import {
+  AutoRevive,
+  ExtraLucre,
+  FastRevive,
+  NoHpRegeneration,
+  NoReviveMoveHpRegeneration,
+  ShareExperience
+} from 'model/Specials'
 
 export const Ring: ArmorEquipment = {
   id: 'Ring',
@@ -17,10 +34,27 @@ export const Ring: ArmorEquipment = {
   markerThreshold: 1,
   priceCoefficient: 5,
   activate: activateRing,
-  relatedSpecials: () => [AutoRevive, ExtraLucre, FastRevive, ShareExperience],
+  relatedSpecials: () => [
+    AutoRevive,
+    ExtraLucre,
+    FastRevive,
+    ShareExperience,
+    NoReviveMoveHpRegeneration,
+    NoHpRegeneration
+  ],
   relatedItems: () => [PineOClock, CherryBombs, Rhinoloupe, StinkyBreath],
   relatedImmunities: () => [Poison, Sleep, Confusion, Petrification, Flameburst],
-  relatedCards: () => [Phoenix, FertilityGoddess, OceanGod, Volcano, Unicorn, Spring, SpiritOfHousework]
+  relatedCards: () => [
+    Phoenix,
+    FertilityGoddess,
+    OceanGod,
+    Volcano,
+    Unicorn,
+    Spring,
+    SpiritOfHousework,
+    HeavensScale,
+    BedOfThorn
+  ]
 }
 
 /**
