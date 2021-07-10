@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Stage, Top, Unicorn } from 'model/Cards'
 import { Pendant, Ring, Robe } from 'model/Gear/Equipment'
 import { addImmunity, Flameburst, Sleep } from 'model/Immunities'
-import { FishyFruit } from 'model/Items'
+import { FishyFruit } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { FastRevive } from 'model/Specials'
 import { AllStats, widenStatRange } from 'model/Stats'

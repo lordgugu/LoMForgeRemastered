@@ -1,9 +1,10 @@
 import { Undine as UndineCard } from 'model/Cards'
 import { taint, Undine } from 'model/Essences'
-import { Item, MagicStones } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicStones } from 'model/Items/MagicStones'
 import { TemperingProject } from 'model/Projects'
 
-export const Waterstone: Item = {
+export const Waterstone: ActiveItem = {
   id: 'Waterstone',
   originalName: 'Water Stone',
   remasteredName: 'Waterstone',

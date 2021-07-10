@@ -2,10 +2,11 @@ import { Ragnarok } from 'model/Cards'
 import { Gnome, Jinn, Salamander, Undine } from 'model/Essences'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { setImmunities, Sleep } from 'model/Immunities'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const PineOClock: Item = {
+export const PineOClock: ActiveItem = {
   id: 'PineOClock',
   name: "Pine o'Clock",
   category: Produce,

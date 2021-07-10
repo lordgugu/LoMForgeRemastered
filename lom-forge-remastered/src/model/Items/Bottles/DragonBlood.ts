@@ -1,10 +1,11 @@
 import { GodOfWar } from 'model/Cards'
 import { Salamander, totalLevels } from 'model/Essences'
-import { Bottles, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Bottles } from 'model/Items/Bottles'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, incrementStat } from 'model/Stats'
 
-export const DragonBlood: Item = {
+export const DragonBlood: ActiveItem = {
   id: 'DragonBlood',
   name: 'Dragon Blood',
   category: Bottles,

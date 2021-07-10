@@ -1,3 +1,38 @@
+import { MasterMove } from 'model/MasterMoves'
+import {
+  Caduceus,
+  ChaoticAvenger,
+  FlamingArrow,
+  GreenPrincess,
+  Gungnir,
+  Icicle,
+  MagicalShot,
+  MedusaArrow,
+  PhoenixFalling,
+  Shot,
+  SolarFlare,
+  SpearOfLight,
+  Thrust,
+  Trident
+} from 'model/MasterMoves/TopSlot'
+
+export const AllTopSlotMasterMoves: MasterMove[] = [
+  Caduceus,
+  ChaoticAvenger,
+  FlamingArrow,
+  GreenPrincess,
+  Gungnir,
+  Icicle,
+  MagicalShot,
+  MedusaArrow,
+  PhoenixFalling,
+  Shot,
+  SolarFlare,
+  SpearOfLight,
+  Thrust,
+  Trident
+]
+
 export * from './Caduceus'
 export * from './ChaoticAvenger'
 export * from './FlamingArrow'

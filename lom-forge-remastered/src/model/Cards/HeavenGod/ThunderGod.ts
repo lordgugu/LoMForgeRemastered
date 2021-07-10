@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Hammer } from 'model/Gear/Weapons'
-import { Electricity } from 'model/Items'
+import { Electricity } from 'model/Items/Urns'
 import { Mjolnir } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Defense, Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'

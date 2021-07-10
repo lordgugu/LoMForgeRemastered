@@ -2,7 +2,7 @@ import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Card
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Spear } from 'model/Gear/Weapons'
 import { addImmunity, Flameburst } from 'model/Immunities'
-import { Orcaplant, Squalphin } from 'model/Items'
+import { Orcaplant, Squalphin } from 'model/Items/Produce'
 import { Trident } from 'model/MasterMoves/TopSlot'
 import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'

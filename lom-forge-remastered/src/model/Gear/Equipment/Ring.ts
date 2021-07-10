@@ -11,9 +11,10 @@ import {
   Unicorn,
   Volcano
 } from 'model/Cards'
-import { Equipment } from 'model/Gear/Equipment'
+import { ActiveEquipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
-import { CherryBombs, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
+import { CherryBombs, PineOClock, Rhinoloupe } from 'model/Items/Produce'
+import { StinkyBreath } from 'model/Items/Vials'
 import { AlteredArmor } from 'model/Projects'
 import {
   AutoRevive,
@@ -24,7 +25,7 @@ import {
   ShareExperience
 } from 'model/Specials'
 
-export const Ring: Equipment = {
+export const Ring: ActiveEquipment = {
   id: 'Ring',
   name: 'Ring',
   attributes: {

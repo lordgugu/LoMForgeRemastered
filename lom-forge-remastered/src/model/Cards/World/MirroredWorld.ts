@@ -10,7 +10,7 @@ import {
   Yggdrasil
 } from 'model/Cards'
 import { Aura, Dryad, Gnome, Jinn, Salamander, Shade, Undine, Wisp } from 'model/Essences'
-import { MirrorPiece } from 'model/Items'
+import { MirrorPiece } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
 
 export const MirroredWorld: ActiveCard = {

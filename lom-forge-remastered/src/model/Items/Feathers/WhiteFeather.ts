@@ -1,10 +1,11 @@
 import { NymphOfTheSky } from 'model/Cards'
 import { totalLevels, Wisp } from 'model/Essences'
-import { Feathers, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Feathers } from 'model/Items/Feathers'
 import { TemperingProject } from 'model/Projects'
 import { setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
 
-export const WhiteFeather: Item = {
+export const WhiteFeather: ActiveItem = {
   id: 'WhiteFeather',
   name: 'White Feather',
   category: Feathers,

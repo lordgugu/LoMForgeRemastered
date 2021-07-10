@@ -1,9 +1,10 @@
 import { BedOfThorn } from 'model/Cards'
 import { Dryad, Salamander } from 'model/Essences'
-import { Item, Pouch } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pouch } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
 
-export const Needle: Item = {
+export const Needle: ActiveItem = {
   id: 'Needle',
   name: 'Needle',
   category: Pouch,

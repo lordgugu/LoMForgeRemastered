@@ -14,7 +14,7 @@ import {
   World
 } from 'model/Cards'
 import { Staff } from 'model/Gear/Weapons'
-import { SpinySeed } from 'model/Items'
+import { SpinySeed } from 'model/Items/Seeds'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, incrementStat, widenStatRange } from 'model/Stats'
 

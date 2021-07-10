@@ -1,9 +1,10 @@
 import { MirroredWorld } from 'model/Cards'
 import { totalLevels } from 'model/Essences'
-import { Item, Pouch } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pouch } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
 
-export const MirrorPiece: Item = {
+export const MirrorPiece: ActiveItem = {
   id: 'MirrorPiece',
   name: 'Mirror Piece',
   category: Pouch,

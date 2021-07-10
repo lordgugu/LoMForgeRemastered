@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Maiden, Middle, Top } from 'model/Cards'
 import { Ring } from 'model/Gear/Equipment'
-import { Applesocks } from 'model/Items'
+import { Applesocks } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { FastRevive } from 'model/Specials'
 

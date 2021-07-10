@@ -1,9 +1,10 @@
 import { Undine as UndineCard } from 'model/Cards'
 import { taint, Undine } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const UndineGold: Item = {
+export const UndineGold: ActiveItem = {
   id: 'UndineGold',
   name: 'Undine Gold',
   category: Coins,

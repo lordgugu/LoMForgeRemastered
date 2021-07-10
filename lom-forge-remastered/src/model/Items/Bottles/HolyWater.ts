@@ -8,10 +8,11 @@ import {
   PixieOfSloth,
   PixieOfWrath
 } from 'model/Cards'
-import { Bottles, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Bottles } from 'model/Items/Bottles'
 import { TemperingProject } from 'model/Projects'
 
-export const HolyWater: Item = {
+export const HolyWater: ActiveItem = {
   id: 'HolyWater',
   name: 'Holy Water',
   category: Bottles,

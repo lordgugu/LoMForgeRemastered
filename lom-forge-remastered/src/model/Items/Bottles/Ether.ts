@@ -1,9 +1,10 @@
 import { BlacksmithGod, SpiritOfMountain } from 'model/Cards'
 import { Aura, Gnome } from 'model/Essences'
-import { Bottles, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Bottles } from 'model/Items/Bottles'
 import { TemperingProject } from 'model/Projects'
 
-export const Ether: Item = {
+export const Ether: ActiveItem = {
   id: 'Ether',
   name: 'Ether',
   category: Bottles,

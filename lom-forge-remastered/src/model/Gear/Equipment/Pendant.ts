@@ -11,13 +11,16 @@ import {
   Unicorn,
   Volcano
 } from 'model/Cards'
-import { Equipment } from 'model/Gear/Equipment'
+import { ActiveEquipment } from 'model/Gear/Equipment'
 import { Confusion, Darkness, Flameburst, Freeze, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
-import { BlackenedBat, PineOClock, Rhinoloupe, StinkyBreath, ZombieClaw } from 'model/Items'
+import { ZombieClaw } from 'model/Items/FangClaw'
+import { BlackenedBat } from 'model/Items/Pellets'
+import { PineOClock, Rhinoloupe } from 'model/Items/Produce'
+import { StinkyBreath } from 'model/Items/Vials'
 import { AlteredArmor } from 'model/Projects'
 import { AutoRevive, ExtraLucre, FastRevive, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
-export const Pendant: Equipment = {
+export const Pendant: ActiveEquipment = {
   id: 'Pendant',
   name: 'Pendant',
   attributes: {

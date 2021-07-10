@@ -1,9 +1,10 @@
 import { ThunderGod } from 'model/Cards'
 import { Jinn, Salamander, Wisp } from 'model/Essences'
-import { Item, Urns } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Urns } from 'model/Items/Urns'
 import { TemperingProject } from 'model/Projects'
 
-export const Electricity: Item = {
+export const Electricity: ActiveItem = {
   id: 'Electricity',
   name: 'Electricity',
   category: Urns,

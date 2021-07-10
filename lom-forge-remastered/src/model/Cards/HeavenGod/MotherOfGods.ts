@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Flail } from 'model/Gear/Weapons'
-import { HeartMint } from 'model/Items'
+import { HeartMint } from 'model/Items/Produce'
 import { RedDream } from 'model/MasterMoves/BottomSlot'
 import { GameOfDeath } from 'model/MasterMoves/MiddleSlot'
 import { GreenPrincess } from 'model/MasterMoves/TopSlot'

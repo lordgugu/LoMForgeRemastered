@@ -1,10 +1,11 @@
 import { SpiritOfShoes } from 'model/Cards'
 import { plus25Percent } from 'model/Gear'
 import { Boots, Pierce, Shoes, Slash, Strike } from 'model/Gear/Equipment'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const LoquatShoe: Item = {
+export const LoquatShoe: ActiveItem = {
   id: 'LoquatShoe',
   originalName: 'Loquat-Shoes',
   remasteredName: 'Loquat-Shoe',

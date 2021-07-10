@@ -1,10 +1,11 @@
 import { Tower } from 'model/Cards'
 import { Jinn, Wisp } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat, widenStatRange } from 'model/Stats'
 
-export const RocketPapaya: Item = {
+export const RocketPapaya: ActiveItem = {
   id: 'RocketPapaya',
   name: 'Rocket Papaya',
   category: Produce,

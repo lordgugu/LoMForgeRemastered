@@ -1,6 +1,6 @@
 import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Spring, Top } from 'model/Cards'
 import { Pendant, Ring } from 'model/Gear/Equipment'
-import { Whalamato } from 'model/Items'
+import { Whalamato } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { FastRevive } from 'model/Specials'
 import { Defense, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'

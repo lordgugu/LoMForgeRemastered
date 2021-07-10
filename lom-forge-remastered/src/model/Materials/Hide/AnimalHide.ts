@@ -1,4 +1,4 @@
-import { AromaOil } from 'model/Items'
+import { AromaOil } from 'model/Items/Bottles'
 import { Material } from 'model/Materials'
 import { Hide } from 'model/Materials/Hide'
 

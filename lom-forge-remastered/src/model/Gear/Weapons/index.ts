@@ -32,6 +32,10 @@ export type Weapon = Entity &
     readonly activate?: (project: TemperedWeapon) => void
   }
 
+export type ActiveWeapon = Weapon & {
+  readonly activate: (project: TemperedWeapon) => void
+}
+
 export const AllWeapons: Weapon[] = [
   Knife,
   Sword,

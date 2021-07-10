@@ -1,11 +1,12 @@
 import { Tower } from 'model/Cards'
-import { Shield } from 'model/Gear/Equipment'
 import { Salamander, Wisp } from 'model/Essences'
+import { Shield } from 'model/Gear/Equipment'
 import { addImmunity, Poison } from 'model/Immunities'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const HealingClaw: Item = {
+export const HealingClaw: ActiveItem = {
   id: 'HealingClaw',
   name: 'Healing Claw',
   category: FangClaw,

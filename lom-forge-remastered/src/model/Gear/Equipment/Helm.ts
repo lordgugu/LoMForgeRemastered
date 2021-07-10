@@ -1,7 +1,9 @@
 import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod } from 'model/Cards'
 import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Darkness, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
-import { Moss, PineOClock, Rhinoloupe, StinkyBreath, SweetMoai } from 'model/Items'
+import { PineOClock, Rhinoloupe, SweetMoai } from 'model/Items/Produce'
+import { Moss } from 'model/Items/Urns'
+import { StinkyBreath } from 'model/Items/Vials'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Helm: Equipment = {

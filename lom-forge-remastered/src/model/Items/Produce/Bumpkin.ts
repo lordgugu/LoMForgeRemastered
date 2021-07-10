@@ -1,9 +1,10 @@
 import { Clown } from 'model/Cards'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { Luck, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
-export const Bumpkin: Item = {
+export const Bumpkin: ActiveItem = {
   id: 'Bumpkin',
   name: 'Bumpkin',
   category: Produce,

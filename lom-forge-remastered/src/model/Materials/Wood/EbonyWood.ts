@@ -1,8 +1,8 @@
 import { Dryad } from 'model/Essences'
-import { Material } from 'model/Materials'
+import { ActiveMaterial } from 'model/Materials'
 import { activateWood, Wood } from 'model/Materials/Wood'
 
-export const EbonyWood: Material = {
+export const EbonyWood: ActiveMaterial = {
   id: 'EbonyWood',
   name: 'EbonyWood',
   category: Wood,

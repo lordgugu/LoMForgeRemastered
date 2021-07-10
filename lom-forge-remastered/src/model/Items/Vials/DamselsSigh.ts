@@ -1,9 +1,10 @@
 import { GoddessOfLove } from 'model/Cards'
 import { Dryad, Shade } from 'model/Essences'
-import { Item, Vials } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Vials } from 'model/Items/Vials'
 import { TemperingProject } from 'model/Projects'
 
-export const DamselsSigh: Item = {
+export const DamselsSigh: ActiveItem = {
   id: 'DamselsSigh',
   originalName: "Virgin's Sigh",
   remasteredName: "Damsel's Sigh",

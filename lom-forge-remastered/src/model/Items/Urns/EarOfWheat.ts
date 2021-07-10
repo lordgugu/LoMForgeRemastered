@@ -1,9 +1,10 @@
 import { FertilityGoddess } from 'model/Cards'
 import { Dryad, totalLevels } from 'model/Essences'
-import { Item, Urns } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Urns } from 'model/Items/Urns'
 import { TemperingProject } from 'model/Projects'
 
-export const EarOfWheat: Item = {
+export const EarOfWheat: ActiveItem = {
   id: 'EarOfWheat',
   name: 'Ear of Wheat',
   category: Urns,

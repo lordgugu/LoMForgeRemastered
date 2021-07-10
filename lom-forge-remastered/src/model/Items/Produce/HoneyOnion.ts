@@ -1,9 +1,10 @@
 import { Princess } from 'model/Cards'
 import { Dryad, taint } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const HoneyOnion: Item = {
+export const HoneyOnion: ActiveItem = {
   id: 'HoneyOnion',
   name: 'Honey Onion',
   category: Produce,

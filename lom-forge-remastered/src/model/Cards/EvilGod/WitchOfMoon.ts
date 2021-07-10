@@ -11,7 +11,7 @@ import {
   Top
 } from 'model/Cards'
 import { Sword } from 'model/Gear/Weapons'
-import { VampireFang } from 'model/Items'
+import { VampireFang } from 'model/Items/FangClaw'
 import { Vampsword } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'

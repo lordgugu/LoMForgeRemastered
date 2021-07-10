@@ -2,10 +2,11 @@ import { RulerOfTheSky } from 'model/Cards'
 import { totalLevels, Wisp } from 'model/Essences'
 import { plus25Percent } from 'model/Gear'
 import { Sharp } from 'model/Gear/Weapons'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const SpadeBasil: Item = {
+export const SpadeBasil: ActiveItem = {
   id: 'SpadeBasil',
   name: 'Spade Basil',
   category: Produce,

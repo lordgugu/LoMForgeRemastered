@@ -1,6 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Jinn as JinnEssence, taint } from 'model/Essences'
-import { JinnGold, JinnSilver } from 'model/Items'
+import { JinnGold, JinnSilver } from 'model/Items/Coins'
+import { Windstone } from 'model/Items/MagicStones'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Skill } from 'model/Stats'
 
@@ -10,7 +11,7 @@ export const Jinn: ActiveCard = {
   category: Element,
   price: 250,
   activate: activateJinn,
-  relatedItems: () => [JinnGold, JinnSilver],
+  relatedItems: () => [JinnGold, JinnSilver, Windstone],
   relatedStats: () => [Skill],
   relatedEssences: () => [JinnEssence]
 }

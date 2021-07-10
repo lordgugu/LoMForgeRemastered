@@ -11,7 +11,7 @@ import {
   Top
 } from 'model/Cards'
 import { Knife } from 'model/Gear/Weapons'
-import { ClearFeather } from 'model/Items'
+import { ClearFeather } from 'model/Items/Feathers'
 import { SinisterBlade } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'

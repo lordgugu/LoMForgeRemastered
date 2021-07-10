@@ -1,8 +1,8 @@
 import { Salamander } from 'model/Essences'
-import { Material } from 'model/Materials'
+import { ActiveMaterial } from 'model/Materials'
 import { activateAerolite, Aerolite } from 'model/Materials/Aerolite'
 
-export const HalleyRock: Material = {
+export const HalleyRock: ActiveMaterial = {
   id: 'HalleyRock',
   name: 'HalleyRock',
   category: Aerolite,

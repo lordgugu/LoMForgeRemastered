@@ -2,10 +2,11 @@ import { GodOfDestruction } from 'model/Cards'
 import { Salamander, Undine } from 'model/Essences'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Heavy, Sharp } from 'model/Gear/Weapons'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { TemperingProject } from 'model/Projects'
 
-export const SharpClaw: Item = {
+export const SharpClaw: ActiveItem = {
   id: 'SharpClaw',
   name: 'Sharp Claw',
   category: FangClaw,

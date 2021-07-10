@@ -1,10 +1,12 @@
 import { ManOfValor } from 'model/Cards'
-import { Force, plus25Percent, Tech } from 'model/Gear'
 import { Salamander, totalLevels, Wisp } from 'model/Essences'
-import { Item, Vials } from 'model/Items'
+import { plus25Percent } from 'model/Gear'
+import { Force, Tech } from 'model/Gear/Weapons'
+import { ActiveItem } from 'model/Items'
+import { Vials } from 'model/Items/Vials'
 import { TemperingProject } from 'model/Projects'
 
-export const DragonsBreath: Item = {
+export const DragonsBreath: ActiveItem = {
   id: 'DragonsBreath',
   name: "Dragon's Breath",
   category: Vials,

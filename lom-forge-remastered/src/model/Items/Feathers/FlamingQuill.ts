@@ -1,10 +1,11 @@
 import { Phoenix } from 'model/Cards'
 import { Jinn, Salamander } from 'model/Essences'
-import { Feathers, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Feathers } from 'model/Items/Feathers'
 import { TemperingProject } from 'model/Projects'
 import { Power, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
-export const FlamingQuill: Item = {
+export const FlamingQuill: ActiveItem = {
   id: 'FlamingQuill',
   name: 'Flaming Quill',
   category: Feathers,

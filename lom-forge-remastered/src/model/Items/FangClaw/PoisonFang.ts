@@ -2,10 +2,11 @@ import { BeastHeadedGod } from 'model/Cards'
 import { Aura, Dryad } from 'model/Essences'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Force, Tech } from 'model/Gear/Weapons'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { TemperingProject } from 'model/Projects'
 
-export const PoisonFang: Item = {
+export const PoisonFang: ActiveItem = {
   id: 'PoisonFang',
   name: 'Poison Fang',
   category: FangClaw,

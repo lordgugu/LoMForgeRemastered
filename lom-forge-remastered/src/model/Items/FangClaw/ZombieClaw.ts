@@ -1,9 +1,10 @@
 import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Paralysis } from 'model/Immunities'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const ZombieClaw: Item = {
+export const ZombieClaw: ActiveItem = {
   id: 'ZombieClaw',
   name: 'Zombie Claw',
   category: FangClaw,

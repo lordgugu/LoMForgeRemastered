@@ -1,9 +1,10 @@
 import { Metropolis } from 'model/Cards'
 import { Salamander, Shade } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const Dialaurel: Item = {
+export const Dialaurel: ActiveItem = {
   id: 'Dialaurel',
   name: 'Dialaurel',
   category: Produce,

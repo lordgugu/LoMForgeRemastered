@@ -1,70 +1,11 @@
-import { Card, CardContent, Divider, List, ListItem, ListItemText, Typography } from '@material-ui/core'
-import {
-  Caduceus,
-  ChaoticAvenger,
-  FlamingArrow,
-  GreenPrincess,
-  Gungnir,
-  Icicle,
-  MagicalShot,
-  MedusaArrow,
-  PhoenixFalling,
-  MasterMove,
-  Shot,
-  SolarFlare,
-  SpearOfLight,
-  Thrust,
-  Trident
-} from 'model/MasterMoves'
+import { Divider, Typography } from '@material-ui/core'
+import { AllTopSlotMasterMoves } from 'model/MasterMoves/TopSlot'
 import React from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 import './PlungeAttacksPage.scss'
 
-const PlungeAttackCard: React.FC<MasterMove> = plungeAttack => {
-  return (
-    <Card>
-      <CardContent>
-        <Typography variant="h6" component="span" gutterBottom>
-          {plungeAttack.originalName}
-        </Typography>
-        <Typography
-          color="textSecondary"
-          component="span"
-          style={{
-            float: 'right'
-          }}
-        >
-          {plungeAttack.weapons().map((attack) => attack.originalName).join(', ')}
-        </Typography>
-        <List>
-          {plungeAttack.effects().map((effect, index) => (
-            <ListItem key={index}>
-              <ListItemText>• {effect}</ListItemText>
-            </ListItem>
-          ))}
-        </List>
-      </CardContent>
-    </Card>
-  )
-}
-
-export const PlungeAttacksPage: React.FC<PlungeAttacksPageProps> = props => {
-  const topSlotPlungeAttacks = [
-    Thrust,
-    Shot,
-    Caduceus,
-    ChaoticAvenger,
-    FlamingArrow,
-    GreenPrincess,
-    Gungnir,
-    Icicle,
-    MagicalShot,
-    MedusaArrow,
-    PhoenixFalling,
-    SolarFlare,
-    SpearOfLight,
-    Trident
-  ]
+export const PlungeAttacksPage: React.FC<PlungeAttacksPageProps> = (props) => {
+  const topSlotPlungeAttacks = AllTopSlotMasterMoves
 
   return (
     <>
@@ -85,9 +26,6 @@ export const PlungeAttacksPage: React.FC<PlungeAttacksPageProps> = props => {
       </ul>
       <Divider />
       <Typography variant="h5">Top Slot</Typography>
-      {topSlotPlungeAttacks.map((plungeAttack, index) => (
-        <PlungeAttackCard key={index} {...plungeAttack} />
-      ))}
       <Divider />
       <Typography variant="h5">Middle Slot</Typography>
       <Divider />

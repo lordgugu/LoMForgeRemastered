@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Spear, Staff } from 'model/Gear/Weapons'
-import { SpadeBasil } from 'model/Items'
+import { SpadeBasil } from 'model/Items/Produce'
 import { Electrosceptre } from 'model/MasterMoves/BottomSlot'
 import { Gungnir } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'

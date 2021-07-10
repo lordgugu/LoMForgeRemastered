@@ -2,10 +2,11 @@ import { WingsOfDarkness } from 'model/Cards'
 import { Shade, Wisp } from 'model/Essences'
 import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Darkness } from 'model/Immunities'
-import { Item, Pellets } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pellets } from 'model/Items/Pellets'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const BlackenedBat: Item = {
+export const BlackenedBat: ActiveItem = {
   id: 'BlackenedBat',
   name: 'Blackened Bat',
   category: Pellets,

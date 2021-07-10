@@ -1,8 +1,9 @@
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { HP, incrementStat, widenStatRange } from 'model/Stats'
 
-export const Mangoelephant: Item = {
+export const Mangoelephant: ActiveItem = {
   id: 'Mangoelephant',
   name: 'Mangoelephant',
   category: Produce,

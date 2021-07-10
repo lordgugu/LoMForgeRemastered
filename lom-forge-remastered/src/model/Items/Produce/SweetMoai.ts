@@ -1,9 +1,10 @@
 import { plus25Percent, plus50Percent } from 'model/Gear'
 import { Hat, Helm, Pierce, Slash, Strike } from 'model/Gear/Equipment'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const SweetMoai: Item = {
+export const SweetMoai: ActiveItem = {
   id: 'SweetMoai',
   name: 'Sweet Moai',
   category: Produce,

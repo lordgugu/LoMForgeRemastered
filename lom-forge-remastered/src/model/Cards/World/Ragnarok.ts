@@ -28,7 +28,7 @@ import {
   Yggdrasil
 } from 'model/Cards'
 import { TwoHandedSword } from 'model/Gear/Weapons'
-import { PineOClock } from 'model/Items'
+import { PineOClock } from 'model/Items/Produce'
 import { Ragnarok as RagnarokMasterMove } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 

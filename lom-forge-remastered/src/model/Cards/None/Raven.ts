@@ -1,6 +1,6 @@
 import { Bottom, Card, CardSlot, Middle, None, Top } from 'model/Cards'
 import { Bow } from 'model/Gear/Weapons'
-import { RavenFeather } from 'model/Items'
+import { RavenFeather } from 'model/Items/Feathers'
 import { MagicalShot } from 'model/MasterMoves/TopSlot'
 import { TemperingProject } from 'model/Projects'
 import { Charm, Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'

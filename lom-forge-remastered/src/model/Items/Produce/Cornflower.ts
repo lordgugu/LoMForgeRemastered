@@ -1,8 +1,9 @@
 import { taint, Wisp } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const Cornflower: Item = {
+export const Cornflower: ActiveItem = {
   id: 'Cornflower',
   name: 'Cornflower',
   category: Produce,

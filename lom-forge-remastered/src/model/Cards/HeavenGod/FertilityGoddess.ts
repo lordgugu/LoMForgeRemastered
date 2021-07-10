@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { AllEquipment, Ring } from 'model/Gear/Equipment'
 import { addImmunity, Petrification } from 'model/Immunities'
-import { EarOfWheat } from 'model/Items'
+import { EarOfWheat } from 'model/Items/Urns'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ShareExperience } from 'model/Specials'
 import { HP, setMinimumStatValue, widenStatRange } from 'model/Stats'

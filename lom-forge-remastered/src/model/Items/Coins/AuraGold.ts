@@ -1,9 +1,10 @@
 import { Aura as AuraCard } from 'model/Cards'
 import { Aura, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const AuraGold: Item = {
+export const AuraGold: ActiveItem = {
   id: 'AuraGold',
   name: 'Aura Gold',
   category: Coins,

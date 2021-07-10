@@ -1,9 +1,10 @@
 import { Salamander as SalamanderCard } from 'model/Cards'
 import { Salamander, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const SalamanderGold: Item = {
+export const SalamanderGold: ActiveItem = {
   id: 'SalamanderGold',
   originalName: 'Sala Gold',
   remasteredName: 'Salamander Gold',

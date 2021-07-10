@@ -1,9 +1,10 @@
 import { Gnome as GnomeCard } from 'model/Cards'
 import { Gnome, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const GnomeGold: Item = {
+export const GnomeGold: ActiveItem = {
   id: 'GnomeGold',
   name: 'Gnome Gold',
   category: Coins,

@@ -13,7 +13,7 @@ import {
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Sword } from 'model/Gear/Weapons'
 import { addImmunity, Freeze } from 'model/Immunities'
-import { SharpClaw } from 'model/Items'
+import { SharpClaw } from 'model/Items/FangClaw'
 import { FlameTongue } from 'model/MasterMoves/MiddleSlot'
 import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, Power, setMinimumStatValue, widenStatRange } from 'model/Stats'

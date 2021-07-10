@@ -1,8 +1,9 @@
 import { HeavensScale } from 'model/Cards'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const Springanana: Item = {
+export const Springanana: ActiveItem = {
   id: 'Springanana',
   name: 'Springanana',
   category: Produce,

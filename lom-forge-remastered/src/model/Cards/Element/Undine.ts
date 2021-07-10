@@ -1,6 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { taint, Undine as UndineEssence } from 'model/Essences'
-import { UndineGold, UndineSilver } from 'model/Items'
+import { UndineGold, UndineSilver } from 'model/Items/Coins'
+import { Waterstone } from 'model/Items/MagicStones'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Magic } from 'model/Stats'
 
@@ -10,7 +11,7 @@ export const Undine: ActiveCard = {
   category: Element,
   price: 250,
   activate: activateUndine,
-  relatedItems: () => [UndineGold, UndineSilver],
+  relatedItems: () => [UndineGold, UndineSilver, Waterstone],
   relatedStats: () => [Magic],
   relatedEssences: () => [UndineEssence]
 }

@@ -2,10 +2,11 @@ import { plus25Percent } from 'model/Gear'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Sharp } from 'model/Gear/Weapons'
 import { Poison, setImmunities } from 'model/Immunities'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const Rhinoloupe: Item = {
+export const Rhinoloupe: ActiveItem = {
   id: 'Rhinoloupe',
   name: 'Rhinoloupe',
   category: Produce,

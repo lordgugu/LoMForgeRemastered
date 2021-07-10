@@ -1,9 +1,10 @@
 import { Wanderer } from 'model/Cards'
 import { Dryad, Shade, totalLevels } from 'model/Essences'
-import { Item, Pouch } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pouch } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
 
-export const WadOfWool: Item = {
+export const WadOfWool: ActiveItem = {
   id: 'WadOfWool',
   name: 'Wad of Wool',
   category: Pouch,

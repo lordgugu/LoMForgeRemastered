@@ -1,10 +1,11 @@
 import { PixieOfGluttony } from 'model/Cards'
 import { plus25Percent } from 'model/Gear'
 import { Heavy } from 'model/Gear/Weapons'
-import { Eyes, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Eyes } from 'model/Items/Eyes'
 import { TemperingProject } from 'model/Projects'
 
-export const SillyEye: Item = {
+export const SillyEye: ActiveItem = {
   id: 'SillyEye',
   name: 'Silly Eye',
   category: Eyes,

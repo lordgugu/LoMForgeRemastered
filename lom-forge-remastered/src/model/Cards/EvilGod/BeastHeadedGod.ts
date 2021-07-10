@@ -11,7 +11,7 @@ import {
   Top
 } from 'model/Cards'
 import { Knife } from 'model/Gear/Weapons'
-import { PoisonFang } from 'model/Items'
+import { PoisonFang } from 'model/Items/FangClaw'
 import { PoisonBlade } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, HP, setMinimumStatValue, widenStatRange } from 'model/Stats'

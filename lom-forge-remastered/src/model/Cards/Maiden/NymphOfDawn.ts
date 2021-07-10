@@ -1,5 +1,5 @@
 import { ActiveCard, Bottom, CardSlot, Leaving, Maiden, Middle } from 'model/Cards'
-import { GlowCrystal } from 'model/Items'
+import { GlowCrystal } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 
 export const NymphOfDawn: ActiveCard = {

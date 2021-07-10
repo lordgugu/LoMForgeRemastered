@@ -1,9 +1,10 @@
 import { Ring } from 'model/Gear/Equipment'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { AllStats, widenStatRange } from 'model/Stats'
 
-export const CherryBombs: Item = {
+export const CherryBombs: ActiveItem = {
   id: 'CherryBombs',
   name: 'Cherry Bombs',
   category: Produce,

@@ -1,9 +1,10 @@
 import { Jinn as JinnCard } from 'model/Cards'
 import { Jinn, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const JinnGold: Item = {
+export const JinnGold: ActiveItem = {
   id: 'JinnGold',
   name: 'Jinn Gold',
   category: Coins,

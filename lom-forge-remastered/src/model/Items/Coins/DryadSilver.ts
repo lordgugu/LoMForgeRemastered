@@ -1,9 +1,10 @@
 import { Dryad as DryadCard } from 'model/Cards'
 import { Dryad, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const DryadSilver: Item = {
+export const DryadSilver: ActiveItem = {
   id: 'DryadSilver',
   name: 'Dryad Silver',
   category: Coins,

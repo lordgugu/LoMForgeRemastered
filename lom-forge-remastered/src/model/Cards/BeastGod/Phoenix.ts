@@ -1,6 +1,6 @@
 import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Top, Volcano } from 'model/Cards'
 import { Pendant, Ring } from 'model/Gear/Equipment'
-import { FlamingQuill } from 'model/Items'
+import { FlamingQuill } from 'model/Items/Feathers'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { AutoRevive } from 'model/Specials'
 import { Power, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'

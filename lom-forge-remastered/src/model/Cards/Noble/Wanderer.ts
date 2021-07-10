@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
 import { Axe } from 'model/Gear/Weapons'
-import { WadOfWool } from 'model/Items'
+import { WadOfWool } from 'model/Items/Pouch'
 import { Woodchopper } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, incrementStat, Skill, Spirit, widenStatRange } from 'model/Stats'

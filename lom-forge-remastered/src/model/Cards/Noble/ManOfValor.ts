@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
 import { Spear } from 'model/Gear/Weapons'
-import { DragonsBreath } from 'model/Items'
+import { DragonsBreath } from 'model/Items/Vials'
 import { SpearOfLight } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, HP, incrementStat, Power, widenStatRange } from 'model/Stats'

@@ -1,10 +1,11 @@
 import { FallenAngel } from 'model/Cards'
 import { Shade, taint, Wisp } from 'model/Essences'
-import { Feathers, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Feathers } from 'model/Items/Feathers'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat, widenStatRange } from 'model/Stats'
 
-export const AngelFeather: Item = {
+export const AngelFeather: ActiveItem = {
   id: 'AngelFeather',
   name: 'Angel Feather',
   category: Feathers,

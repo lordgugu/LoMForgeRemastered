@@ -1,9 +1,10 @@
 import { plus25Percent } from 'model/Gear'
 import { Sharp } from 'model/Gear/Weapons'
-import { Eyes, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Eyes } from 'model/Items/Eyes'
 import { TemperingProject } from 'model/Projects'
 
-export const WickedEye: Item = {
+export const WickedEye: ActiveItem = {
   id: 'WickedEye',
   name: 'Wicked Eye',
   category: Eyes,

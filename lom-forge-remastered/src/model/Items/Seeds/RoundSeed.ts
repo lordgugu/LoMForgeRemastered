@@ -1,9 +1,10 @@
 import { Dryad as DryadCard } from 'model/Cards'
 import { Dryad, taint } from 'model/Essences'
-import { Item, Seeds } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Seeds } from 'model/Items/Seeds'
 import { TemperingProject } from 'model/Projects'
 
-export const RoundSeed: Item = {
+export const RoundSeed: ActiveItem = {
   id: 'RoundSeed',
   name: 'Round Seed',
   category: Seeds,

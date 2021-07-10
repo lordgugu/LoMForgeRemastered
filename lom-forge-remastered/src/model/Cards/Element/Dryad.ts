@@ -1,6 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Dryad as DryadEssence, taint } from 'model/Essences'
-import { DryadGold, DryadSilver } from 'model/Items'
+import { DryadGold, DryadSilver } from 'model/Items/Coins'
+import { BigSeed, CrookedSeed, FlatSeed, LongSeed, OblongSeed, RoundSeed, SmallSeed } from 'model/Items/Seeds'
 import { TemperingProject } from 'model/Projects'
 import { HP, incrementStat } from 'model/Stats'
 
@@ -10,7 +11,17 @@ export const Dryad: ActiveCard = {
   category: Element,
   price: 250,
   activate: activateDryad,
-  relatedItems: () => [DryadGold, DryadSilver],
+  relatedItems: () => [
+    DryadGold,
+    DryadSilver,
+    RoundSeed,
+    OblongSeed,
+    CrookedSeed,
+    BigSeed,
+    SmallSeed,
+    LongSeed,
+    FlatSeed
+  ],
   relatedStats: () => [HP],
   relatedEssences: () => [DryadEssence]
 }

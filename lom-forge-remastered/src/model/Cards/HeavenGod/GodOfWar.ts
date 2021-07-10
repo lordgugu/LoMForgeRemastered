@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Axe } from 'model/Gear/Weapons'
-import { DragonBlood } from 'model/Items'
+import { DragonBlood } from 'model/Items/Bottles'
 import { DragonSlayer } from 'model/MasterMoves/MiddleSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { Power, setMinimumStatValue, widenStatRange } from 'model/Stats'

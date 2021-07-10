@@ -1,8 +1,9 @@
 import { AncientMoon } from 'model/Cards'
-import { Item, MagicCrystals } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicCrystals } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 
-export const ChaosCrystal: Item = {
+export const ChaosCrystal: ActiveItem = {
   id: 'ChaosCrystal',
   name: 'Chaos Crystal',
   category: MagicCrystals,

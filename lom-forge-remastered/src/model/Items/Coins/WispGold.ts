@@ -1,9 +1,10 @@
 import { Wisp as WispCard } from 'model/Cards'
 import { taint, Wisp } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const WispGold: Item = {
+export const WispGold: ActiveItem = {
   id: 'WispGold',
   name: 'Wisp Gold',
   category: Coins,

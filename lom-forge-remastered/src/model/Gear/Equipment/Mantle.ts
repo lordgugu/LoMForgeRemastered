@@ -9,7 +9,8 @@ import {
 } from 'model/Cards'
 import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
-import { PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
+import { PineOClock, Rhinoloupe } from 'model/Items/Produce'
+import { StinkyBreath } from 'model/Items/Vials'
 import { MoveHpRegeneration, NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Mantle: Equipment = {

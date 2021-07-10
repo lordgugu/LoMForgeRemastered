@@ -34,7 +34,11 @@ export type Material = Entity & {
   readonly activate?: (project: TemperingProject) => void
 }
 
-export const AllMaterials: { readonly [key: string]: Material } = {
+export type ActiveMaterial = Material & {
+  readonly activate: (project: TemperingProject) => void
+}
+
+export const AllMaterialsByForgeCode: { readonly [key: string]: Material } = {
   ...AllMetalsByForgeCode,
   ...AllWoodsByForgeCode,
   ...AllStonesByForgeCode,

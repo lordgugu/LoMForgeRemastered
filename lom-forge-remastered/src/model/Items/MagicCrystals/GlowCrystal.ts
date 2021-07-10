@@ -1,8 +1,9 @@
 import { NymphOfDawn } from 'model/Cards'
-import { Item, MagicCrystals } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicCrystals } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 
-export const GlowCrystal: Item = {
+export const GlowCrystal: ActiveItem = {
   id: 'GlowCrystal',
   name: 'Glow Crystal',
   category: MagicCrystals,

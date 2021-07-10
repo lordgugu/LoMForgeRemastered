@@ -1,9 +1,10 @@
 import { plus25Percent } from 'model/Gear'
 import { Heavy } from 'model/Gear/Weapons'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const GoldClover: Item = {
+export const GoldClover: ActiveItem = {
   id: 'GoldClover',
   name: 'Gold Clover',
   category: Produce,

@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Pendant } from 'model/Gear/Equipment'
-import { DamselsSigh } from 'model/Items'
+import { DamselsSigh } from 'model/Items/Vials'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ExtraLucre } from 'model/Specials'
 import { Charm, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'

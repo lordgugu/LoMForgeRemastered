@@ -1,9 +1,10 @@
 import { SpiritOfOcean } from 'model/Cards'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { Defense, incrementStat, widenStatRange } from 'model/Stats'
 
-export const Conchurnip: Item = {
+export const Conchurnip: ActiveItem = {
   id: 'Conchurnip',
   name: 'Conchurnip',
   category: Produce,

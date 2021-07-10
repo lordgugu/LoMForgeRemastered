@@ -1,3 +1,38 @@
+import { MasterMove } from 'model/MasterMoves'
+import {
+  Demonicide,
+  Electrosceptre,
+  GoldenTouch,
+  Jump,
+  MagmaHammer,
+  Mjolnir,
+  Moonlight,
+  QuakeHammer,
+  Ragnarok,
+  RedDream,
+  SinisterBlade,
+  SledgeHammer,
+  Treefeller,
+  Woodchopper
+} from 'model/MasterMoves/BottomSlot'
+
+export const AllBottomSlotMasterMoves: MasterMove[] = [
+  Demonicide,
+  Electrosceptre,
+  GoldenTouch,
+  Jump,
+  MagmaHammer,
+  Mjolnir,
+  Moonlight,
+  QuakeHammer,
+  Ragnarok,
+  RedDream,
+  SinisterBlade,
+  SledgeHammer,
+  Treefeller,
+  Woodchopper
+]
+
 export * from './Demonicide'
 export * from './Electrosceptre'
 export * from './GoldenTouch'

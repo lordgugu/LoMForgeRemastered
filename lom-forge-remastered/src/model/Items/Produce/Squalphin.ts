@@ -1,9 +1,10 @@
 import { OceanGod } from 'model/Cards'
 import { taint, totalLevels, Undine } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const Squalphin: Item = {
+export const Squalphin: ActiveItem = {
   id: 'Squalphin',
   name: 'Squalphin',
   category: Produce,

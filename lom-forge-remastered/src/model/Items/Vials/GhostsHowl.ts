@@ -1,8 +1,9 @@
 import { SacrificedNymph } from 'model/Cards'
-import { Item, Vials } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Vials } from 'model/Items/Vials'
 import { TemperingProject } from 'model/Projects'
 
-export const GhostsHowl: Item = {
+export const GhostsHowl: ActiveItem = {
   id: 'GhostsHowl',
   name: "Ghost's Howl",
   category: Vials,

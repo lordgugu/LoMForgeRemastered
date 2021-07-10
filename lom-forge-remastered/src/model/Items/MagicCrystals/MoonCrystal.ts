@@ -1,9 +1,10 @@
 import { MoonGoddess } from 'model/Cards'
 import { Shade, taint, totalLevels } from 'model/Essences'
-import { Item, MagicCrystals } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicCrystals } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 
-export const MoonCrystal: Item = {
+export const MoonCrystal: ActiveItem = {
   id: 'MoonCrystal',
   name: 'Moon Crystal',
   category: MagicCrystals,

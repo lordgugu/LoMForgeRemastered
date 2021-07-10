@@ -1,20 +1,9 @@
 import { ActiveCard, Bottom, CardSlot, FallenAngel, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
-import { Garlicrown, HolyWater, LittleEye } from 'model/Items'
+import { HolyWater } from 'model/Items/Bottles'
+import { LittleEye } from 'model/Items/Eyes'
+import { Garlicrown } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
-import {
-  AllStats,
-  Charm,
-  decrementStat,
-  Defense,
-  HP,
-  incrementStat,
-  Luck,
-  Magic,
-  Power,
-  Skill,
-  Spirit,
-  widenStatRange
-} from 'model/Stats'
+import { AllStats, Charm, decrementStat, incrementStat, widenStatRange } from 'model/Stats'
 
 export const PixieOfPride: ActiveCard = {
   id: 'PixieOfPride',
@@ -24,7 +13,7 @@ export const PixieOfPride: ActiveCard = {
   activate: activatePixieOfPride,
   relatedItems: () => [Garlicrown, LittleEye, HolyWater],
   relatedCards: () => [Ragnarok, FallenAngel],
-  relatedStats: () => [Power, Skill, Defense, Magic, HP, Spirit, Luck],
+  relatedStats: () => AllStats,
   relatedStatRanges: () => AllStats
 }
 

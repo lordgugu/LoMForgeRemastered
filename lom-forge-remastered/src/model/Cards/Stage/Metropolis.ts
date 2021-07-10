@@ -2,7 +2,7 @@ import { ActiveCard, Bottom, CardSlot, Cleric, Clown, King, Middle, Princess, St
 import { plus25Percent, plus50Percent } from 'model/Gear'
 import { Magic, Robe } from 'model/Gear/Equipment'
 import { addImmunity, Confusion } from 'model/Immunities'
-import { Dialaurel } from 'model/Items'
+import { Dialaurel } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const Metropolis: ActiveCard = {

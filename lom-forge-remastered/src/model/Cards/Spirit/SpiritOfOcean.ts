@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
 import { Hat } from 'model/Gear/Equipment'
 import { addImmunity, Confusion } from 'model/Immunities'
-import { Conchurnip } from 'model/Items'
+import { Conchurnip } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { Charm, incrementStat } from 'model/Stats'
 

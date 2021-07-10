@@ -1,7 +1,9 @@
 import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, Metropolis, OceanGod, Spring } from 'model/Cards'
 import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
-import { BakedRoach, PineOClock, Rhinoloupe, StinkyBreath } from 'model/Items'
+import { BakedRoach } from 'model/Items/Pellets'
+import { PineOClock, Rhinoloupe } from 'model/Items/Produce'
+import { StinkyBreath } from 'model/Items/Vials'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration } from 'model/Specials'
 
 export const Robe: Equipment = {

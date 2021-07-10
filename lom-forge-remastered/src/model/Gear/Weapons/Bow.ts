@@ -1,5 +1,5 @@
 import { MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
-import { Weapon } from 'model/Gear/Weapons'
+import { ActiveWeapon } from 'model/Gear/Weapons'
 import { Jump } from 'model/MasterMoves/BottomSlot'
 import { DoubleShot, ElvenArcher, LunarShot } from 'model/MasterMoves/MiddleSlot'
 import {
@@ -13,7 +13,7 @@ import {
 } from 'model/MasterMoves/TopSlot'
 import { TemperedWeapon } from 'model/Projects'
 
-export const Bow: Weapon = {
+export const Bow: ActiveWeapon = {
   id: 'Bow',
   name: 'Bow',
   attributes: {

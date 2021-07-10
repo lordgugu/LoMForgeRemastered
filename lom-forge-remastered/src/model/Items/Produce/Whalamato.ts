@@ -1,10 +1,11 @@
 import { Unicorn } from 'model/Cards'
 import { Gnome, Undine } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { HP, setMinimumStatValue, widenStatRange } from 'model/Stats'
 
-export const Whalamato: Item = {
+export const Whalamato: ActiveItem = {
   id: 'Whalamato',
   name: 'Whalamato',
   category: Produce,

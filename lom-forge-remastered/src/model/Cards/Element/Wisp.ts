@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { taint, Wisp as WispEssence } from 'model/Essences'
-import { WispGold, WispSilver } from 'model/Items'
+import { WispGold, WispSilver } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat } from 'model/Stats'
 

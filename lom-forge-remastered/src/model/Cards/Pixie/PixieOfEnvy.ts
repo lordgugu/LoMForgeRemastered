@@ -1,20 +1,10 @@
 import { ActiveCard, Bottom, CardSlot, LordOfFlies, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
-import { BlankEye, Garlicrown, HolyWater, SleepyPowder } from 'model/Items'
+import { HolyWater } from 'model/Items/Bottles'
+import { BlankEye } from 'model/Items/Eyes'
+import { SleepyPowder } from 'model/Items/Powders'
+import { Garlicrown } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
-import {
-  AllStats,
-  Charm,
-  decrementStat,
-  Defense,
-  HP,
-  incrementStat,
-  Luck,
-  Magic,
-  Power,
-  Skill,
-  Spirit,
-  widenStatRange
-} from 'model/Stats'
+import { AllStats, decrementStat, incrementStat, Skill, widenStatRange } from 'model/Stats'
 
 export const PixieOfEnvy: ActiveCard = {
   id: 'PixieOfEnvy',
@@ -24,7 +14,7 @@ export const PixieOfEnvy: ActiveCard = {
   activate: activatePixieOfEnvy,
   relatedItems: () => [Garlicrown, BlankEye, HolyWater, SleepyPowder],
   relatedCards: () => [LordOfFlies, Ragnarok],
-  relatedStats: () => [Power, Defense, Magic, HP, Spirit, Charm, Luck],
+  relatedStats: () => AllStats,
   relatedStatRanges: () => AllStats
 }
 

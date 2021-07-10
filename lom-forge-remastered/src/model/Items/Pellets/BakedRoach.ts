@@ -1,9 +1,10 @@
 import { Robe } from 'model/Gear/Equipment'
 import { addImmunity, Poison } from 'model/Immunities'
-import { Item, Pellets } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pellets } from 'model/Items/Pellets'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
-export const BakedRoach: Item = {
+export const BakedRoach: ActiveItem = {
   id: 'BakedRoach',
   name: 'Baked Roach',
   category: Pellets,

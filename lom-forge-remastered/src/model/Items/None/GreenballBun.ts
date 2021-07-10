@@ -1,8 +1,9 @@
-import { Item, None } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { None } from 'model/Items/None'
 import { TemperingProject } from 'model/Projects'
 import { HP, incrementStat } from 'model/Stats'
 
-export const GreenballBun: Item = {
+export const GreenballBun: ActiveItem = {
   id: 'GreenballBun',
   name: 'Greenball Bun',
   category: None,

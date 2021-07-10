@@ -1,8 +1,9 @@
-import { Item, None } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { None } from 'model/Items/None'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat } from 'model/Stats'
 
-export const TakoBug: Item = {
+export const TakoBug: ActiveItem = {
   id: 'TakoBug',
   name: 'Tako Bug',
   category: None,

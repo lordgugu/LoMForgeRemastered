@@ -1,9 +1,10 @@
 import { Gnome as GnomeCard } from 'model/Cards'
 import { Gnome, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const GnomeSilver: Item = {
+export const GnomeSilver: ActiveItem = {
   id: 'GnomeSilver',
   name: 'Gnome Silver',
   category: Coins,
@@ -17,7 +18,7 @@ function activateGnomeSilver(project: TemperingProject) {
   taint(project, Gnome)
 
   const { energy } = project
-  
+
   if (energy >= 8) {
     project.cards.pending = GnomeCard
   }

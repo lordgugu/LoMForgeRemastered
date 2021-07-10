@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Middle, None, Top, Tower } from 'model/Cards'
 import { Dryad, Gnome, resistance50, resistance75, Salamander, Wisp } from 'model/Essences'
-import { Sulfur } from 'model/Items'
+import { Sulfur } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, Charm, incrementStat, Magic, Spirit, widenStatRange } from 'model/Stats'
 

@@ -1,9 +1,10 @@
 import { Shade as ShadeCard } from 'model/Cards'
 import { Shade, taint } from 'model/Essences'
-import { Coins, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Coins } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 
-export const ShadeGold: Item = {
+export const ShadeGold: ActiveItem = {
   id: 'ShadeGold',
   name: 'Shade Gold',
   category: Coins,

@@ -1,8 +1,9 @@
 import { PixieOfGluttony } from 'model/Cards'
-import { Item, Powders } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Powders } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'
 
-export const KnockoutDust: Item = {
+export const KnockoutDust: ActiveItem = {
   id: 'KnockoutDust',
   name: 'Knockout Dust',
   category: Powders,

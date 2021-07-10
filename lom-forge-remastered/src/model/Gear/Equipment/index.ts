@@ -31,6 +31,10 @@ export type Equipment = Entity & {
   readonly activate?: (project: AlteredArmor) => void
 }
 
+export type ActiveEquipment = Equipment & {
+  readonly activate: (project: AlteredArmor) => void
+}
+
 export const AllEquipment: Equipment[] = [
   Shield,
   Helm,

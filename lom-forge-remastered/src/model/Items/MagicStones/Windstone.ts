@@ -1,9 +1,10 @@
 import { Jinn as JinnCard } from 'model/Cards'
 import { Jinn, taint } from 'model/Essences'
-import { Item, MagicStones } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicStones } from 'model/Items/MagicStones'
 import { TemperingProject } from 'model/Projects'
 
-export const Windstone: Item = {
+export const Windstone: ActiveItem = {
   id: 'Windstone',
   originalName: 'Wind Stone',
   remasteredName: 'Windstone',

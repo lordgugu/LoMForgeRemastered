@@ -1,9 +1,10 @@
 import { Salamander as SalamanderCard } from 'model/Cards'
 import { Salamander, taint } from 'model/Essences'
-import { Item, MagicStones } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicStones } from 'model/Items/MagicStones'
 import { TemperingProject } from 'model/Projects'
 
-export const Firestone: Item = {
+export const Firestone: ActiveItem = {
   id: 'Firestone',
   originalName: 'Fire Stone',
   remasteredName: 'Firestone',

@@ -1,10 +1,11 @@
 import { WitchOfMoon } from 'model/Cards'
 import { Jinn, Undine } from 'model/Essences'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat, Spirit, widenStatRange } from 'model/Stats'
 
-export const VampireFang: Item = {
+export const VampireFang: ActiveItem = {
   id: 'VampireFang',
   name: 'Vampire Fang',
   category: FangClaw,

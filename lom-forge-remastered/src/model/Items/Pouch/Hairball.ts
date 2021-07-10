@@ -1,8 +1,9 @@
 import { SpiritOfHousework } from 'model/Cards'
-import { Item, Pouch } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pouch } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
 
-export const Hairball: Item = {
+export const Hairball: ActiveItem = {
   id: 'Hairball',
   name: 'Hairball',
   category: Pouch,

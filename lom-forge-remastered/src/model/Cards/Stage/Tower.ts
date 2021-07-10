@@ -1,5 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Sorcerer, Stage, Top, Witch } from 'model/Cards'
-import { HealingClaw, RocketPapaya } from 'model/Items'
+import { HealingClaw } from 'model/Items/FangClaw'
+import { RocketPapaya } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, widenStatRange } from 'model/Stats'
 

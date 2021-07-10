@@ -1,10 +1,11 @@
 import { Raven } from 'model/Cards'
 import { Shade, taint } from 'model/Essences'
-import { Feathers, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Feathers } from 'model/Items/Feathers'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Spirit, widenStatRange } from 'model/Stats'
 
-export const RavenFeather: Item = {
+export const RavenFeather: ActiveItem = {
   id: 'RavenFeather',
   name: 'Raven Feather',
   category: Feathers,

@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Bow, Sword } from 'model/Gear/Weapons'
-import { SunCrystal } from 'model/Items'
+import { SunCrystal } from 'model/Items/MagicCrystals'
 import { Sunlight } from 'model/MasterMoves/MiddleSlot'
 import { SolarFlare } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'

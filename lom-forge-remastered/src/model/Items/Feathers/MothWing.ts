@@ -1,10 +1,11 @@
 import { SpiritOfForest } from 'model/Cards'
 import { minus25Percent, plus50Percent } from 'model/Gear'
 import { Magic, Pierce, Slash, Strike } from 'model/Gear/Equipment'
-import { Feathers, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Feathers } from 'model/Items/Feathers'
 import { TemperingProject } from 'model/Projects'
 
-export const MothWing: Item = {
+export const MothWing: ActiveItem = {
   id: 'MothWing',
   name: 'Moth Wing',
   category: Feathers,

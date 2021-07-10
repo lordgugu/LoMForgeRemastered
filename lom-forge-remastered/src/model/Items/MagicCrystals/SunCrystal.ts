@@ -1,9 +1,10 @@
 import { SunGod } from 'model/Cards'
 import { taint, totalLevels, Wisp } from 'model/Essences'
-import { Item, MagicCrystals } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicCrystals } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 
-export const SunCrystal: Item = {
+export const SunCrystal: ActiveItem = {
   id: 'SunCrystal',
   name: 'Sun Crystal',
   category: MagicCrystals,

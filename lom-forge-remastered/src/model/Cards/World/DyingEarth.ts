@@ -14,7 +14,7 @@ import {
   World,
   Yggdrasil
 } from 'model/Cards'
-import { GraveDirt } from 'model/Items'
+import { GraveDirt } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, decrementStat, widenStatRange } from 'model/Stats'
 

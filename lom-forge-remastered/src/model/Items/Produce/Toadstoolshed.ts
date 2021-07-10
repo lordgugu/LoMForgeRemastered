@@ -1,9 +1,10 @@
 import { Shade, taint } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, incrementStat } from 'model/Stats'
 
-export const Toadstoolshed: Item = {
+export const Toadstoolshed: ActiveItem = {
   id: 'Toadstoolshed',
   name: 'Toadstoolshed',
   category: Produce,

@@ -1,5 +1,5 @@
 import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
-import { HoneyOnion } from 'model/Items'
+import { HoneyOnion } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, Defense, incrementStat, widenStatRange } from 'model/Stats'
 

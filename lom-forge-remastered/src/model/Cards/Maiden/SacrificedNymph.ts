@@ -15,7 +15,7 @@ import {
 } from 'model/Cards'
 import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Petrification } from 'model/Immunities'
-import { GhostsHowl } from 'model/Items'
+import { GhostsHowl } from 'model/Items/Vials'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 
 export const SacrificedNymph: ActiveCard = {

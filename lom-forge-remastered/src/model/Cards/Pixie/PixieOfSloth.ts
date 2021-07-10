@@ -1,20 +1,10 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Pixie, Ragnarok, Top, WitchOfMoon } from 'model/Cards'
-import { Garlicrown, HolyWater, Rust, SleepyEye } from 'model/Items'
+import { HolyWater } from 'model/Items/Bottles'
+import { SleepyEye } from 'model/Items/Eyes'
+import { Rust } from 'model/Items/Powders'
+import { Garlicrown } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
-import {
-  AllStats,
-  Charm,
-  decrementStat,
-  Defense,
-  HP,
-  incrementStat,
-  Luck,
-  Magic,
-  Power,
-  Skill,
-  Spirit,
-  widenStatRange
-} from 'model/Stats'
+import { AllStats, decrementStat, incrementStat, Magic, widenStatRange } from 'model/Stats'
 
 export const PixieOfSloth: ActiveCard = {
   id: 'PixieOfSloth',
@@ -24,7 +14,7 @@ export const PixieOfSloth: ActiveCard = {
   activate: activatePixieOfSloth,
   relatedItems: () => [Garlicrown, SleepyEye, HolyWater, Rust],
   relatedCards: () => [WitchOfMoon, Ragnarok],
-  relatedStats: () => [Power, Skill, Defense, HP, Spirit, Charm, Luck],
+  relatedStats: () => AllStats,
   relatedStatRanges: () => AllStats
 }
 

@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
 import { Mantle, Ring } from 'model/Gear/Equipment'
 import { addImmunity, Sleep } from 'model/Immunities'
-import { Hairball } from 'model/Items'
+import { Hairball } from 'model/Items/Pouch'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ExtraLucre } from 'model/Specials'
 import { incrementStat, Luck } from 'model/Stats'

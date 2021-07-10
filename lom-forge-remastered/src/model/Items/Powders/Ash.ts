@@ -1,8 +1,9 @@
 import { Volcano } from 'model/Cards'
-import { Item, Powders } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Powders } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'
 
-export const Ash: Item = {
+export const Ash: ActiveItem = {
   id: 'Ash',
   name: 'Ash',
   category: Powders,

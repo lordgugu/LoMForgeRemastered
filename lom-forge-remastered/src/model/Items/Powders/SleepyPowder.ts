@@ -1,8 +1,9 @@
 import { PixieOfEnvy } from 'model/Cards'
-import { Item, Powders } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Powders } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'
 
-export const SleepyPowder: Item = {
+export const SleepyPowder: ActiveItem = {
   id: 'SleepyPowder',
   name: 'Sleepy Powder',
   category: Powders,

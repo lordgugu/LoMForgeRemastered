@@ -11,7 +11,8 @@ import {
   Top
 } from 'model/Cards'
 import { TwoHandedAxe } from 'model/Gear/Weapons'
-import { GiantsHorn, OrangeOpus } from 'model/Items'
+import { GiantsHorn } from 'model/Items/FangClaw'
+import { OrangeOpus } from 'model/Items/Produce'
 import { Treefeller } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, Defense, setMinimumStatValue, widenStatRange } from 'model/Stats'

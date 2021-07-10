@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Maiden, Middle, Top } from 'model/Cards'
 import { Mantle } from 'model/Gear/Equipment'
-import { WhiteFeather } from 'model/Items'
+import { WhiteFeather } from 'model/Items/Feathers'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { MoveHpRegeneration } from 'model/Specials'
 

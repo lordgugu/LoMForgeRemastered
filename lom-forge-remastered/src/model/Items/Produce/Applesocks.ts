@@ -1,10 +1,11 @@
 import { NymphOfOrchards } from 'model/Cards'
 import { totalLevels } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Skill, widenStatRange } from 'model/Stats'
 
-export const Applesocks: Item = {
+export const Applesocks: ActiveItem = {
   id: 'Applesocks',
   name: 'Applesocks',
   category: Produce,

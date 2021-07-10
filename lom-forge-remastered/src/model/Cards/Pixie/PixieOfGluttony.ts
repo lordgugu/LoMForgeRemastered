@@ -1,20 +1,10 @@
 import { ActiveCard, Bottom, CardSlot, Leviathan, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
-import { Garlicrown, HolyWater, KnockoutDust, SillyEye } from 'model/Items'
+import { HolyWater } from 'model/Items/Bottles'
+import { SillyEye } from 'model/Items/Eyes'
+import { KnockoutDust } from 'model/Items/Powders'
+import { Garlicrown } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
-import {
-  AllStats,
-  Charm,
-  decrementStat,
-  Defense,
-  HP,
-  incrementStat,
-  Luck,
-  Magic,
-  Power,
-  Skill,
-  Spirit,
-  widenStatRange
-} from 'model/Stats'
+import { AllStats, decrementStat, HP, incrementStat, widenStatRange } from 'model/Stats'
 
 export const PixieOfGluttony: ActiveCard = {
   id: 'PixieOfGluttony',
@@ -24,13 +14,13 @@ export const PixieOfGluttony: ActiveCard = {
   activate: activatePixieOfGluttony,
   relatedItems: () => [Garlicrown, SillyEye, HolyWater, KnockoutDust],
   relatedCards: () => [Leviathan, Ragnarok],
-  relatedStats: () => [Power, Skill, Defense, Magic, Spirit, Charm, Luck],
+  relatedStats: () => AllStats,
   relatedStatRanges: () => AllStats
 }
 
 function activatePixieOfGluttony(project: TemperingProject, slot: CardSlot) {
   const { energy, worldCard } = project
-  
+
   switch (slot) {
     case Top:
     case Middle:

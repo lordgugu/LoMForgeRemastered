@@ -1,6 +1,6 @@
-import { ActiveCard, Bottom, Card, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
 import { Aura as AuraEssence, taint } from 'model/Essences'
-import { AuraGold, AuraSilver } from 'model/Items'
+import { AuraGold, AuraSilver } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'
 import { incrementStat, Luck } from 'model/Stats'
 

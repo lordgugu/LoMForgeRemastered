@@ -1,10 +1,11 @@
 import { MotherOfGods } from 'model/Cards'
 import { Gnome, Shade, Undine } from 'model/Essences'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { Charm, incrementStat, widenStatRange } from 'model/Stats'
 
-export const HeartMint: Item = {
+export const HeartMint: ActiveItem = {
   id: 'HeartMint',
   name: 'Heart Mint',
   category: Produce,

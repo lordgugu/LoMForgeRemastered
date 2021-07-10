@@ -14,7 +14,7 @@ import {
   Yggdrasil
 } from 'model/Cards'
 import { AllEquipment } from 'model/Gear/Equipment'
-import { Springanana } from 'model/Items'
+import { Springanana } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { NoReviveMoveHpRegeneration } from 'model/Specials'
 

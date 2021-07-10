@@ -11,7 +11,7 @@ import {
   Yggdrasil
 } from 'model/Cards'
 import { Aura, Dryad, Gnome, Jinn, Salamander, Shade, Undine, Wisp } from 'model/Essences'
-import { ChaosCrystal } from 'model/Items'
+import { ChaosCrystal } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 
 export const AncientMoon: ActiveCard = {

@@ -2,10 +2,11 @@ import { Leviathan } from 'model/Cards'
 import { Gnome, Salamander } from 'model/Essences'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Heavy, Sharp } from 'model/Gear/Weapons'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { TemperingProject } from 'model/Projects'
 
-export const GiantsHorn: Item = {
+export const GiantsHorn: ActiveItem = {
   id: 'GiantsHorn',
   name: "Giant's Horn",
   category: FangClaw,

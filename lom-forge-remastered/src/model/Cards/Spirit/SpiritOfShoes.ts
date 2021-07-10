@@ -1,7 +1,7 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
 import { Boots, Shoes } from 'model/Gear/Equipment'
 import { addImmunity, Paralysis } from 'model/Immunities'
-import { LoquatShoe, PearOHeels } from 'model/Items'
+import { LoquatShoe, PearOHeels } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { ExtraExperience } from 'model/Specials'
 import { incrementStat, Skill } from 'model/Stats'

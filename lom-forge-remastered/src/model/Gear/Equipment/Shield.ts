@@ -1,7 +1,9 @@
 import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod, WisdomGoddess } from 'model/Cards'
 import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
-import { HealingClaw, PineOClock, StinkyBreath } from 'model/Items'
+import { HealingClaw } from 'model/Items/FangClaw'
+import { PineOClock } from 'model/Items/Produce'
+import { StinkyBreath } from 'model/Items/Vials'
 import { NoHpRegeneration, NoReviveMoveHpRegeneration, StareImmunity } from 'model/Specials'
 
 export const Shield: Equipment = {

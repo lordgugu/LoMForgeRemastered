@@ -1,10 +1,11 @@
 import { PixieOfPride } from 'model/Cards'
 import { plus25Percent } from 'model/Gear'
 import { Slash } from 'model/Gear/Equipment'
-import { Eyes, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Eyes } from 'model/Items/Eyes'
 import { TemperingProject } from 'model/Projects'
 
-export const LittleEye: Item = {
+export const LittleEye: ActiveItem = {
   id: 'LittleEye',
   name: 'Little Eye',
   category: Eyes,

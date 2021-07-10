@@ -1,9 +1,10 @@
 import { Sage } from 'model/Cards'
 import { Jinn, totalLevels, Undine } from 'model/Essences'
-import { Item, Pouch } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Pouch } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
 
-export const MessyScroll: Item = {
+export const MessyScroll: ActiveItem = {
   id: 'MessyScroll',
   name: 'Messy Scroll',
   category: Pouch,

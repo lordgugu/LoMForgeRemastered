@@ -1,9 +1,10 @@
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Force, Tech } from 'model/Gear/Weapons'
-import { FangClaw, Item } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { FangClaw } from 'model/Items/FangClaw'
 import { TemperingProject } from 'model/Projects'
 
-export const Scissors: Item = {
+export const Scissors: ActiveItem = {
   id: 'Scissors',
   name: 'Scissors',
   category: FangClaw,

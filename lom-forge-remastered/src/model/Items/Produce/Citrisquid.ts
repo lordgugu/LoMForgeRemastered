@@ -1,10 +1,11 @@
 import { minus25Percent, plus25Percent } from 'model/Gear'
 import { Slash, Strike } from 'model/Gear/Equipment'
 import { Sharp, Heavy } from 'model/Gear/Weapons'
-import { Item, Produce } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 
-export const Citrisquid: Item = {
+export const Citrisquid: ActiveItem = {
   id: 'Citrisquid',
   name: 'Citrisquid',
   category: Produce,

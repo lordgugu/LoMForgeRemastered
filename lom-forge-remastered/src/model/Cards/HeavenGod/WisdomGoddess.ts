@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
 import { Shield } from 'model/Gear/Equipment'
-import { AromaOil } from 'model/Items'
+import { AromaOil } from 'model/Items/Bottles'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { StareImmunity } from 'model/Specials'
 import { Magic, setMinimumStatValue, widenStatRange } from 'model/Stats'

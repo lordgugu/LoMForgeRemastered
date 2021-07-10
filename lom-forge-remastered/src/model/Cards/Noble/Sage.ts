@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
 import { Bow } from 'model/Gear/Weapons'
-import { MessyScroll } from 'model/Items'
+import { MessyScroll } from 'model/Items/Pouch'
 import { PhoenixFalling } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, Defense, incrementStat, Magic, widenStatRange } from 'model/Stats'

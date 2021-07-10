@@ -11,7 +11,7 @@ import {
   Top
 } from 'model/Cards'
 import { Staff } from 'model/Gear/Weapons'
-import { BlackenedBat } from 'model/Items'
+import { BlackenedBat } from 'model/Items/Pellets'
 import { GoldenTouch } from 'model/MasterMoves/BottomSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, decrementStat, setMinimumStatValue, Spirit, widenStatRange } from 'model/Stats'

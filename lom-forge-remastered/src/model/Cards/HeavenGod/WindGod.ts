@@ -2,7 +2,7 @@ import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Card
 import { Magic, Pierce, Shoes, Slash, Strike } from 'model/Gear/Equipment'
 import { Staff } from 'model/Gear/Weapons'
 import { addImmunity, Paralysis } from 'model/Immunities'
-import { Diceberry } from 'model/Items'
+import { Diceberry } from 'model/Items/Produce'
 import { Caduceus } from 'model/MasterMoves/TopSlot'
 import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'

@@ -1,9 +1,10 @@
 import { Gnome as GnomeCard } from 'model/Cards'
 import { Gnome, taint } from 'model/Essences'
-import { Item, MagicStones } from 'model/Items'
+import { ActiveItem } from 'model/Items'
+import { MagicStones } from 'model/Items/MagicStones'
 import { TemperingProject } from 'model/Projects'
 
-export const Earthstone: Item = {
+export const Earthstone: ActiveItem = {
   id: 'Earthstone',
   originalName: 'Earth Stone',
   remasteredName: 'Earthstone',

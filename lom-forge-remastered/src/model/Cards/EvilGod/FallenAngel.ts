@@ -11,7 +11,7 @@ import {
   Top
 } from 'model/Cards'
 import { TwoHandedSword } from 'model/Gear/Weapons'
-import { AngelFeather } from 'model/Items'
+import { AngelFeather } from 'model/Items/Feathers'
 import { ChaoticAvenger } from 'model/MasterMoves/TopSlot'
 import { TemperingProject, WeaponProject } from 'model/Projects'
 import { AllStats, Charm, decrementStat, setMinimumStatValue, widenStatRange } from 'model/Stats'

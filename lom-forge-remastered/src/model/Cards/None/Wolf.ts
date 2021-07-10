@@ -1,6 +1,6 @@
 import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
 import { Bow } from 'model/Gear/Weapons'
-import { PeachPuppy } from 'model/Items'
+import { PeachPuppy } from 'model/Items/Produce'
 import { MagicalShot } from 'model/MasterMoves/TopSlot'
 import { TemperingProject } from 'model/Projects'
 import { HP, setMinimumStatValue, Skill, widenStatRange } from 'model/Stats'
