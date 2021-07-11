@@ -1,4 +1,5 @@
-import { Bottom, Card, CardSlot, Middle, Phoenix, Stage, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Phoenix, Top } from 'model/Cards'
+import { Stage } from 'model/Cards/Stage'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Hauberk, Pendant, Ring } from 'model/Gear/Equipment'
 import { Force, Hammer, Tech } from 'model/Gear/Weapons'
@@ -8,7 +9,7 @@ import { MagmaHammer } from 'model/MasterMoves/BottomSlot'
 import { EquipmentProject, TemperingProject, WeaponProject } from 'model/Projects'
 import { AutoRevive } from 'model/Specials'
 
-export const Volcano: Card = {
+export const Volcano: ActiveCard = {
   id: 'Volcano',
   name: 'Volcano',
   category: Stage,

@@ -1,4 +1,5 @@
-import { NymphOfOrchards, Spring, Unicorn } from 'model/Cards'
+import { NymphOfOrchards, Unicorn } from 'model/Cards'
+import { Spring } from 'model/Cards/Stage'
 import { Pendant, Ring } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 

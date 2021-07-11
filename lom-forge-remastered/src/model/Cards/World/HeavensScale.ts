@@ -1,4 +1,5 @@
-import { ActiveCard, BedOfThorn, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { AncientMoon, DyingEarth, MirroredWorld, Ragnarok, World, Yggdrasil } from 'model/Cards/World'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Springanana } from 'model/Items/Produce'

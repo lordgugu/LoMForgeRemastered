@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Cleric, Clown, King, Middle, Princess, Stage, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Cleric, Clown, King, Middle, Princess, Top } from 'model/Cards'
+import { Stage } from 'model/Cards/Stage'
 import { plus25Percent, plus50Percent } from 'model/Gear'
 import { Magic, Robe } from 'model/Gear/Equipment'
 import { addImmunity, Confusion } from 'model/Immunities'

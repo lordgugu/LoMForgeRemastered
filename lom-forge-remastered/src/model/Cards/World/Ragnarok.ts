@@ -1,7 +1,6 @@
 import {
   ActiveCard,
   BeastHeadedGod,
-  BedOfThorn,
   Bottom,
   CardSlot,
   FallenAngel,
@@ -21,6 +20,7 @@ import {
   WingsOfDarkness,
   WitchOfMoon
 } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, World, Yggdrasil } from 'model/Cards/World'
 import { TwoHandedSword } from 'model/Gear/Weapons'
 import { PineOClock } from 'model/Items/Produce'

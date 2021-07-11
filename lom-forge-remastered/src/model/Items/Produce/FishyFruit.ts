@@ -1,4 +1,4 @@
-import { Spring } from 'model/Cards'
+import { Spring } from 'model/Cards/Stage'
 import { taint, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

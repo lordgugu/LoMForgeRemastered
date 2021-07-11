@@ -1,4 +1,5 @@
-import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Top, Volcano } from 'model/Cards'
+import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Volcano } from 'model/Cards/Stage'
 import { Pendant, Ring } from 'model/Gear/Equipment'
 import { FlamingQuill } from 'model/Items/Feathers'
 import { EquipmentProject, TemperingProject } from 'model/Projects'

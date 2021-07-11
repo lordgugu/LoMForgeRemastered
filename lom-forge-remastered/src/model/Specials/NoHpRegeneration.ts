@@ -1,4 +1,4 @@
-import { BedOfThorn } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 

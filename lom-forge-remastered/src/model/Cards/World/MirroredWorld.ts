@@ -1,4 +1,5 @@
-import { ActiveCard, BedOfThorn, CardSlot, Hidden } from 'model/Cards'
+import { ActiveCard, CardSlot, Hidden } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { AncientMoon, DyingEarth, HeavensScale, Ragnarok, World, Yggdrasil } from 'model/Cards/World'
 import { Aura, Dryad, Gnome, Jinn, Salamander, Shade, Undine, Wisp } from 'model/Essences'
 import { MirrorPiece } from 'model/Items/Pouch'

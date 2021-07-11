@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Stage, Top, Unicorn } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top, Unicorn } from 'model/Cards'
+import { Stage } from 'model/Cards/Stage'
 import { Pendant, Ring, Robe } from 'model/Gear/Equipment'
 import { addImmunity, Flameburst, Sleep } from 'model/Immunities'
 import { FishyFruit } from 'model/Items/Produce'

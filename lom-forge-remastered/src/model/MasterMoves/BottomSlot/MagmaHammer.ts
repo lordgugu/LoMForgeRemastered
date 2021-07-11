@@ -1,4 +1,4 @@
-import { Volcano } from 'model/Cards'
+import { Volcano } from 'model/Cards/Stage'
 import { Hammer } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

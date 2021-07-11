@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, None, Top, Tower } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Tower } from 'model/Cards/Stage'
 import { Dryad, Gnome, resistance50, resistance75, Salamander, Wisp } from 'model/Essences'
 import { Sulfur } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'

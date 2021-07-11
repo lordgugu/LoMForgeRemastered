@@ -1,4 +1,4 @@
-import { Tower } from 'model/Cards'
+import { Tower } from 'model/Cards/Stage'
 import { Salamander, Wisp } from 'model/Essences'
 import { Shield } from 'model/Gear/Equipment'
 import { addImmunity, Poison } from 'model/Immunities'

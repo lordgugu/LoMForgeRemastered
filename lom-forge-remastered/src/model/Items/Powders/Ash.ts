@@ -1,4 +1,4 @@
-import { Volcano } from 'model/Cards'
+import { Volcano } from 'model/Cards/Stage'
 import { ActiveItem } from 'model/Items'
 import { Powders } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'

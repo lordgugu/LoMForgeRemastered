@@ -1,15 +1,13 @@
 import {
-  BedOfThorn,
   FertilityGoddess,
   GodOfDestruction,
   NymphOfOrchards,
   OceanGod,
   Phoenix,
   SpiritOfHousework,
-  Spring,
-  Unicorn,
-  Volcano
+  Unicorn
 } from 'model/Cards'
+import { BedOfThorn, Spring, Volcano } from 'model/Cards/Stage'
 import { HeavensScale } from 'model/Cards/World'
 import { ActiveEquipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'

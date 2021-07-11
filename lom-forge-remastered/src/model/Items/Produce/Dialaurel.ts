@@ -1,4 +1,4 @@
-import { Metropolis } from 'model/Cards'
+import { Metropolis } from 'model/Cards/Stage'
 import { Salamander, Shade } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

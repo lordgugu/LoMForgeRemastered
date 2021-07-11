@@ -1,4 +1,4 @@
-import { Tower } from 'model/Cards'
+import { Tower } from 'model/Cards/Stage'
 import { Jinn, Wisp } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

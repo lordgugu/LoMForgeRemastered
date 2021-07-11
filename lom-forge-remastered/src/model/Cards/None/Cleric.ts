@@ -1,4 +1,5 @@
-import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Metropolis } from 'model/Cards/Stage'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Slash, Strike } from 'model/Gear/Equipment'
 import { Heavy, Sharp, Staff } from 'model/Gear/Weapons'
@@ -26,27 +27,33 @@ export const Cleric: ActiveCard = {
 }
 
 function activateCleric(project: TemperingProject, slot: CardSlot) {
-  const { top, middle, bottom } = project.cards
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      const { top, middle, bottom } = project.cards
 
-  if (Array.of(top, middle, bottom).includes(Metropolis)) {
-    AllStats.forEach((stat) => widenStatRange(project, stat, -3, 5))
+      if (Array.of(top, middle, bottom).includes(Metropolis)) {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -3, 5))
 
-    incrementStat(project, Magic)
-    incrementStat(project, Spirit)
-    incrementStat(project, Charm)
-  } else {
-    AllStats.forEach((stat) => widenStatRange(project, stat, -1, 3))
+        incrementStat(project, Magic)
+        incrementStat(project, Spirit)
+        incrementStat(project, Charm)
+      } else {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -1, 3))
 
-    incrementStat(project, Spirit)
+        incrementStat(project, Spirit)
+      }
+
+      if (project.type === WeaponProject && project.equipment === Staff) {
+        project.masterMoves.bottom = Demonicide
+      }
+
+      minus50Percent(project, Sharp)
+      plus50Percent(project, Heavy)
+
+      minus50Percent(project, Slash)
+      plus50Percent(project, Strike)
+      break
   }
-
-  if (project.type === WeaponProject && project.equipment === Staff) {
-    project.masterMoves.bottom = Demonicide
-  }
-
-  minus50Percent(project, Sharp)
-  plus50Percent(project, Heavy)
-
-  minus50Percent(project, Slash)
-  plus50Percent(project, Strike)
 }

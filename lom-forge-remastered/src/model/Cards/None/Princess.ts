@@ -1,4 +1,5 @@
-import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Metropolis } from 'model/Cards/Stage'
 import { HoneyOnion } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, Defense, incrementStat, widenStatRange } from 'model/Stats'
@@ -16,13 +17,19 @@ export const Princess: ActiveCard = {
 }
 
 function activatePrincess(project: TemperingProject, slot: CardSlot) {
-  const { top, middle, bottom } = project.cards
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      const { top, middle, bottom } = project.cards
 
-  if (Array.of(top, middle, bottom).includes(Metropolis)) {
-    AllStats.forEach((stat) => widenStatRange(project, stat, -3, 5))
-  } else {
-    AllStats.forEach((stat) => widenStatRange(project, stat, -1, 3))
+      if (Array.of(top, middle, bottom).includes(Metropolis)) {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -3, 5))
+      } else {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -1, 3))
+      }
+
+      incrementStat(project, Defense)
+      break
   }
-
-  incrementStat(project, Defense)
 }

@@ -1,4 +1,4 @@
-import { BedOfThorn } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { Dryad, Salamander } from 'model/Essences'
 import { minus25Percent, plus25Percent } from 'model/Gear'
 import { Heavy, Sharp } from 'model/Gear/Weapons'

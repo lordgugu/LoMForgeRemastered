@@ -1,4 +1,5 @@
-import { ActiveCard, BedOfThorn, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, Ragnarok, World } from 'model/Cards/World'
 import { Staff } from 'model/Gear/Weapons'
 import { SpinySeed } from 'model/Items/Seeds'

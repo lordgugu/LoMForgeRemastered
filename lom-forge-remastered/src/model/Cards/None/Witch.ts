@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, None, Top, Tower } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Tower } from 'model/Cards/Stage'
 import { Aura, Jinn, resistance50, resistance75, Shade, Undine } from 'model/Essences'
 import { Bow } from 'model/Gear/Weapons'
 import { Mercury } from 'model/Items/Vials'

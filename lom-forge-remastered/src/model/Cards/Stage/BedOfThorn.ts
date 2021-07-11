@@ -1,4 +1,5 @@
-import { Bottom, Card, CardSlot, Middle, Stage, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Stage } from 'model/Cards/Stage'
 import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, Ragnarok, Yggdrasil } from 'model/Cards/World'
 import { plus50Percent } from 'model/Gear'
 import { AllEquipment, Magic, Pierce, Slash, Strike } from 'model/Gear/Equipment'
@@ -8,7 +9,7 @@ import { EquipmentProject, TemperingProject } from 'model/Projects'
 import { NoHpRegeneration } from 'model/Specials'
 import { AllStats, widenStatRange } from 'model/Stats'
 
-export const BedOfThorn: Card = {
+export const BedOfThorn: ActiveCard = {
   id: 'BedOfThorn',
   name: 'Bed of Thorn',
   category: Stage,

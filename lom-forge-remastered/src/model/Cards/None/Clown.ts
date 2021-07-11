@@ -1,4 +1,5 @@
-import { ActiveCard, CardSlot, Metropolis, None } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Metropolis } from 'model/Cards/Stage'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Pierce, Strike } from 'model/Gear/Equipment'
 import { Heavy, Knife, Sharp } from 'model/Gear/Weapons'
@@ -25,21 +26,27 @@ export const Clown: ActiveCard = {
 }
 
 function activateClown(project: TemperingProject, slot: CardSlot) {
-  const { top, middle, bottom } = project.cards
+  switch (slot) {
+    case Top:
+    case Middle:
+    case Bottom:
+      const { top, middle, bottom } = project.cards
 
-  if (Array.of(top, middle, bottom).includes(Metropolis)) {
-    AllStats.forEach((stat) => widenStatRange(project, stat, -5, 12))
-  } else {
-    AllStats.forEach((stat) => widenStatRange(project, stat, -3, 9))
+      if (Array.of(top, middle, bottom).includes(Metropolis)) {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -5, 12))
+      } else {
+        AllStats.forEach((stat) => widenStatRange(project, stat, -3, 9))
+      }
+
+      if (project.type === WeaponProject && project.equipment === Knife) {
+        project.masterMoves.middle = QuickBlade
+      }
+
+      plus50Percent(project, Sharp)
+      minus50Percent(project, Heavy)
+
+      plus50Percent(project, Pierce)
+      minus50Percent(project, Strike)
+      break
   }
-
-  if (project.type === WeaponProject && project.equipment === Knife) {
-    project.masterMoves.middle = QuickBlade
-  }
-
-  plus50Percent(project, Sharp)
-  minus50Percent(project, Heavy)
-
-  plus50Percent(project, Pierce)
-  minus50Percent(project, Strike)
 }

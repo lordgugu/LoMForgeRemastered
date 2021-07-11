@@ -1,4 +1,4 @@
-import { BedOfThorn } from 'model/Cards'
+import { BedOfThorn } from 'model/Cards/Stage'
 import { Dryad, Salamander } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Pouch } from 'model/Items/Pouch'
