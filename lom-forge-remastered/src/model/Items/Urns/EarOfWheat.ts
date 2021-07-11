@@ -1,4 +1,4 @@
-import { FertilityGoddess } from 'model/Cards'
+import { FertilityGoddess } from 'model/Cards/HeavenGod'
 import { Dryad, totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Urns } from 'model/Items/Urns'

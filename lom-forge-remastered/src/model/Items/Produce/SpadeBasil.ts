@@ -1,4 +1,4 @@
-import { RulerOfTheSky } from 'model/Cards'
+import { RulerOfTheSky } from 'model/Cards/HeavenGod'
 import { totalLevels, Wisp } from 'model/Essences'
 import { plus25Percent } from 'model/Gear'
 import { Sharp } from 'model/Gear/Weapons'

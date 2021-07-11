@@ -1,4 +1,4 @@
-import { WisdomGoddess } from 'model/Cards'
+import { WisdomGoddess } from 'model/Cards/HeavenGod'
 import { Shield } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 

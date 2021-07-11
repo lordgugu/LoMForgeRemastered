@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { Bow, Sword } from 'model/Gear/Weapons'
 import { SunCrystal } from 'model/Items/MagicCrystals'
 import { Sunlight } from 'model/MasterMoves/MiddleSlot'

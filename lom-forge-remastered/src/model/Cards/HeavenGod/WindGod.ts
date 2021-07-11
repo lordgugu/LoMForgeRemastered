@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { Magic, Pierce, Shoes, Slash, Strike } from 'model/Gear/Equipment'
 import { Staff } from 'model/Gear/Weapons'
 import { addImmunity, Paralysis } from 'model/Immunities'

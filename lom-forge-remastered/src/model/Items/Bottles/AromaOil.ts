@@ -1,4 +1,4 @@
-import { WisdomGoddess } from 'model/Cards'
+import { WisdomGoddess } from 'model/Cards/HeavenGod'
 import { totalLevels } from 'model/Essences'
 import { plus50Percent } from 'model/Gear'
 import { Pierce, Slash, Strike } from 'model/Gear/Equipment'

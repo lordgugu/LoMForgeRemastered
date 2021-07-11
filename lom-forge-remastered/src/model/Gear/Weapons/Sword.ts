@@ -1,7 +1,8 @@
-import { GodOfDestruction, MoonGoddess, SunGod, WitchOfMoon } from 'model/Cards'
+import { GodOfDestruction, WitchOfMoon } from 'model/Cards'
+import { MoonGoddess, SunGod } from 'model/Cards/HeavenGod'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, Moonlight } from 'model/MasterMoves/BottomSlot'
-import { Uppercut, FlameTongue, Sunlight, Vampsword } from 'model/MasterMoves/MiddleSlot'
+import { FlameTongue, Sunlight, Uppercut, Vampsword } from 'model/MasterMoves/MiddleSlot'
 import { Thrust } from 'model/MasterMoves/TopSlot'
 
 export const Sword: Weapon = {

@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { Spear, Staff } from 'model/Gear/Weapons'
 import { SpadeBasil } from 'model/Items/Produce'
 import { Electrosceptre } from 'model/MasterMoves/BottomSlot'

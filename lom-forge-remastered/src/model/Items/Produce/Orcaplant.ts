@@ -1,4 +1,4 @@
-import { OceanGod } from 'model/Cards'
+import { OceanGod } from 'model/Cards/HeavenGod'
 import { totalLevels, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

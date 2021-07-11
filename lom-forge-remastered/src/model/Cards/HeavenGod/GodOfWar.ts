@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { Axe } from 'model/Gear/Weapons'
 import { DragonBlood } from 'model/Items/Bottles'
 import { DragonSlayer } from 'model/MasterMoves/MiddleSlot'

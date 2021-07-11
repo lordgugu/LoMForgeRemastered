@@ -1,4 +1,4 @@
-import { ThunderGod } from 'model/Cards'
+import { ThunderGod } from 'model/Cards/HeavenGod'
 import { Jinn, Salamander, Wisp } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Urns } from 'model/Items/Urns'

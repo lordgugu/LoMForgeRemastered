@@ -1,4 +1,5 @@
-import { BlacksmithGod, SpiritOfMountain } from 'model/Cards'
+import { SpiritOfMountain } from 'model/Cards'
+import { BlacksmithGod } from 'model/Cards/HeavenGod'
 import { Aura, Gnome } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Bottles } from 'model/Items/Bottles'

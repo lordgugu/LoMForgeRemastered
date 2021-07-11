@@ -1,4 +1,4 @@
-import { SunGod } from 'model/Cards'
+import { SunGod } from 'model/Cards/HeavenGod'
 import { taint, totalLevels, Wisp } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { MagicCrystals } from 'model/Items/MagicCrystals'

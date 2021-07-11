@@ -1,4 +1,4 @@
-import { GodOfWar } from 'model/Cards'
+import { GodOfWar } from 'model/Cards/HeavenGod'
 import { Axe } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

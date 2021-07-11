@@ -1,4 +1,4 @@
-import { OceanGod } from 'model/Cards'
+import { OceanGod } from 'model/Cards/HeavenGod'
 import { Spear } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { Flail } from 'model/Gear/Weapons'
 import { HeartMint } from 'model/Items/Produce'
 import { RedDream } from 'model/MasterMoves/BottomSlot'

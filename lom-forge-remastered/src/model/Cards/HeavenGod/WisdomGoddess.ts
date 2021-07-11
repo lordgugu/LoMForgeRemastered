@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { Shield } from 'model/Gear/Equipment'
 import { AromaOil } from 'model/Items/Bottles'
 import { EquipmentProject, TemperingProject } from 'model/Projects'

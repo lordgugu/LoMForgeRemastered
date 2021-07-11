@@ -1,12 +1,5 @@
-import {
-  FertilityGoddess,
-  GoddessOfLove,
-  GodOfDestruction,
-  OceanGod,
-  Phoenix,
-  SacrificedNymph,
-  Unicorn
-} from 'model/Cards'
+import { GodOfDestruction, Phoenix, SacrificedNymph, Unicorn } from 'model/Cards'
+import { FertilityGoddess, GoddessOfLove, OceanGod } from 'model/Cards/HeavenGod'
 import { BedOfThorn, Spring, Volcano } from 'model/Cards/Stage'
 import { HeavensScale } from 'model/Cards/World'
 import { ActiveEquipment } from 'model/Gear/Equipment'

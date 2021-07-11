@@ -1,4 +1,4 @@
-import { GodOfWar } from 'model/Cards'
+import { GodOfWar } from 'model/Cards/HeavenGod'
 import { Salamander, totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Bottles } from 'model/Items/Bottles'

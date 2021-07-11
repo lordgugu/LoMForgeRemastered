@@ -1,4 +1,4 @@
-import { MoonGoddess } from 'model/Cards'
+import { MoonGoddess } from 'model/Cards/HeavenGod'
 import { Shade, taint, totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { MagicCrystals } from 'model/Items/MagicCrystals'

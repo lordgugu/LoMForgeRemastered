@@ -1,4 +1,4 @@
-import { MotherOfGods } from 'model/Cards'
+import { MotherOfGods } from 'model/Cards/HeavenGod'
 import { Gnome, Shade, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

@@ -1,4 +1,4 @@
-import { WindGod } from 'model/Cards'
+import { WindGod } from 'model/Cards/HeavenGod'
 import { Jinn, totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

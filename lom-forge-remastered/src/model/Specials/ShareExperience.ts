@@ -1,4 +1,4 @@
-import { FertilityGoddess } from 'model/Cards'
+import { FertilityGoddess } from 'model/Cards/HeavenGod'
 import { Ring } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 

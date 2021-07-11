@@ -1,4 +1,4 @@
-import { MotherOfGods } from 'model/Cards'
+import { MotherOfGods } from 'model/Cards/HeavenGod'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, RedDream } from 'model/MasterMoves/BottomSlot'
 import { GameOfDeath, Uppercut } from 'model/MasterMoves/MiddleSlot'

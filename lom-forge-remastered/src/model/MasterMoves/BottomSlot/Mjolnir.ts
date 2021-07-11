@@ -1,4 +1,4 @@
-import { ThunderGod } from 'model/Cards'
+import { ThunderGod } from 'model/Cards/HeavenGod'
 import { Hammer } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

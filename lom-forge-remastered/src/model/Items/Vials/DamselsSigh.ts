@@ -1,4 +1,4 @@
-import { GoddessOfLove } from 'model/Cards'
+import { GoddessOfLove } from 'model/Cards/HeavenGod'
 import { Dryad, Shade } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Vials } from 'model/Items/Vials'

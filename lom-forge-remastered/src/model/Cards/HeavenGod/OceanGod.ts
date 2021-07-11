@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, HeavenGod, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { HeavenGod } from 'model/Cards/HeavenGod'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Spear } from 'model/Gear/Weapons'
 import { addImmunity, Flameburst } from 'model/Immunities'

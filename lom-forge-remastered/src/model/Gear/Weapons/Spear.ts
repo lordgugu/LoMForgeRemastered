@@ -1,8 +1,9 @@
-import { ManOfValor, OceanGod, RulerOfTheSky } from 'model/Cards'
+import { ManOfValor } from 'model/Cards'
+import { OceanGod, RulerOfTheSky } from 'model/Cards/HeavenGod'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'
-import { Thrust, Gungnir, SpearOfLight, Trident } from 'model/MasterMoves/TopSlot'
+import { Gungnir, SpearOfLight, Thrust, Trident } from 'model/MasterMoves/TopSlot'
 
 export const Spear: Weapon = {
   id: 'Spear',

@@ -1,4 +1,4 @@
-import { MotherOfGods } from 'model/Cards'
+import { MotherOfGods } from 'model/Cards/HeavenGod'
 import { Flail } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

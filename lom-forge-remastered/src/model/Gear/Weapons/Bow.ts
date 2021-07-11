@@ -1,4 +1,5 @@
-import { MoonGoddess, Raven, Sage, SpiritOfForest, SunGod, Witch, Wolf } from 'model/Cards'
+import { Raven, Sage, SpiritOfForest, Witch, Wolf } from 'model/Cards'
+import { MoonGoddess, SunGod } from 'model/Cards/HeavenGod'
 import { ActiveWeapon } from 'model/Gear/Weapons'
 import { Jump } from 'model/MasterMoves/BottomSlot'
 import { DoubleShot, ElvenArcher, LunarShot } from 'model/MasterMoves/MiddleSlot'

@@ -1,4 +1,4 @@
-import { RulerOfTheSky } from 'model/Cards'
+import { RulerOfTheSky } from 'model/Cards/HeavenGod'
 import { Spear } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
