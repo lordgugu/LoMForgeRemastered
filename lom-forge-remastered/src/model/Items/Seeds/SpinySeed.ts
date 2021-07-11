@@ -16,8 +16,9 @@ export const SpinySeed: ActiveItem = {
 
 function activateSpinySeed(project: TemperingProject) {
   const { energy } = project
+  const { dryad } = project.levels
 
-  if (energy >= 8) {
+  if (dryad >= 5 && energy >= 8) {
     project.cards.pending = Yggdrasil
   }
 
