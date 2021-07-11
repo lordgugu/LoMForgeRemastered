@@ -1,15 +1,5 @@
-import {
-  ActiveCard,
-  BedOfThorn,
-  CardSlot,
-  DyingEarth,
-  HeavensScale,
-  Hidden,
-  MirroredWorld,
-  Ragnarok,
-  World,
-  Yggdrasil
-} from 'model/Cards'
+import { ActiveCard, BedOfThorn, CardSlot, Hidden } from 'model/Cards'
+import { DyingEarth, HeavensScale, MirroredWorld, Ragnarok, World, Yggdrasil } from 'model/Cards/World'
 import { Aura, Dryad, Gnome, Jinn, Salamander, Shade, Undine, Wisp } from 'model/Essences'
 import { ChaosCrystal } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'

@@ -1,4 +1,4 @@
-import { AncientMoon, MirroredWorld } from 'model/Cards'
+import { AncientMoon, MirroredWorld } from 'model/Cards/World'
 import { TemperingProject } from 'model/Projects'
 import { ancientMoonTaint } from './AncientMoonTaint'
 import { mirroredWorldTaint } from './MirroredWorldTaint'

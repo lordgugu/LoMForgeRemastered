@@ -2,7 +2,6 @@ import {
   BedOfThorn,
   FertilityGoddess,
   GodOfDestruction,
-  HeavensScale,
   NymphOfOrchards,
   OceanGod,
   Phoenix,
@@ -11,6 +10,7 @@ import {
   Unicorn,
   Volcano
 } from 'model/Cards'
+import { HeavensScale } from 'model/Cards/World'
 import { ActiveEquipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { CherryBombs, PineOClock, Rhinoloupe } from 'model/Items/Produce'

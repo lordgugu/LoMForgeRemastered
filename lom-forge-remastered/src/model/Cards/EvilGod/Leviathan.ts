@@ -6,10 +6,10 @@ import {
   Leaving,
   Middle,
   PixieOfGluttony,
-  Ragnarok,
   SacrificedNymph,
   Top
 } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { TwoHandedAxe } from 'model/Gear/Weapons'
 import { GiantsHorn } from 'model/Items/FangClaw'
 import { OrangeOpus } from 'model/Items/Produce'

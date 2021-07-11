@@ -1,4 +1,4 @@
-import { Ragnarok } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { Gnome, Jinn, Salamander, Undine } from 'model/Essences'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { setImmunities, Sleep } from 'model/Immunities'

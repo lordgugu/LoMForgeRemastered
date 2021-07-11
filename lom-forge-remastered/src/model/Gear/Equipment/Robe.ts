@@ -1,4 +1,5 @@
-import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, Metropolis, OceanGod, Spring } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, GodOfDestruction, Metropolis, OceanGod, Spring } from 'model/Cards'
+import { HeavensScale } from 'model/Cards/World'
 import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { BakedRoach } from 'model/Items/Pellets'

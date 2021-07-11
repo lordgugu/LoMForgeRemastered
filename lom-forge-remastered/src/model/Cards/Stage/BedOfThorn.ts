@@ -1,17 +1,5 @@
-import {
-  AncientMoon,
-  Bottom,
-  Card,
-  CardSlot,
-  DyingEarth,
-  HeavensScale,
-  Middle,
-  MirroredWorld,
-  Ragnarok,
-  Stage,
-  Top,
-  Yggdrasil
-} from 'model/Cards'
+import { Bottom, Card, CardSlot, Middle, Stage, Top } from 'model/Cards'
+import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, Ragnarok, Yggdrasil } from 'model/Cards/World'
 import { plus50Percent } from 'model/Gear'
 import { AllEquipment, Magic, Pierce, Slash, Strike } from 'model/Gear/Equipment'
 import { Needle } from 'model/Items/Pouch'

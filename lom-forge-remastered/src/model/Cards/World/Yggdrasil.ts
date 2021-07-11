@@ -1,18 +1,5 @@
-import {
-  ActiveCard,
-  AncientMoon,
-  BedOfThorn,
-  Bottom,
-  CardSlot,
-  DyingEarth,
-  HeavensScale,
-  Hidden,
-  Middle,
-  MirroredWorld,
-  Ragnarok,
-  Top,
-  World
-} from 'model/Cards'
+import { ActiveCard, BedOfThorn, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
+import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, Ragnarok, World } from 'model/Cards/World'
 import { Staff } from 'model/Gear/Weapons'
 import { SpinySeed } from 'model/Items/Seeds'
 import { TemperingProject, WeaponProject } from 'model/Projects'

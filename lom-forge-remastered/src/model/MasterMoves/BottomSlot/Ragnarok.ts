@@ -1,4 +1,4 @@
-import { Ragnarok as RagnarokCard } from 'model/Cards'
+import { Ragnarok as RagnarokCard } from 'model/Cards/World'
 import { TwoHandedSword } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

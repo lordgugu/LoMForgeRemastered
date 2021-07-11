@@ -1,15 +1,5 @@
-import {
-  ActiveCard,
-  Bottom,
-  CardSlot,
-  EvilGod,
-  Leaving,
-  Middle,
-  PixieOfLust,
-  Ragnarok,
-  SacrificedNymph,
-  Top
-} from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, EvilGod, Leaving, Middle, PixieOfLust, SacrificedNymph, Top } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { Staff } from 'model/Gear/Weapons'
 import { BlackenedBat } from 'model/Items/Pellets'
 import { GoldenTouch } from 'model/MasterMoves/BottomSlot'

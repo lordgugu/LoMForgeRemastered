@@ -1,4 +1,5 @@
 import { BedOfThorn } from 'model/Cards'
+import { AllWorldCards, AllWorldCardsById, World } from 'model/Cards/World'
 import { Entity } from 'model/Common'
 import { TemperingProject } from 'model/Projects'
 
@@ -15,7 +16,6 @@ export type CardCategory =
   | 'Element'
   | undefined
 
-export const World: CardCategory = 'World'
 export const Stage: CardCategory = 'Stage'
 export const HeavenGod: CardCategory = 'Heaven God'
 export const EvilGod: CardCategory = 'Evil God'
@@ -50,6 +50,10 @@ export type CardContext = {
   cards: { [slot in CardSlot]?: Card }
   worldCard?: Card
 }
+
+export const AllCards: Card[] = [...AllWorldCards]
+
+export const AllCardsById: { [id in string]: Card } = { ...AllWorldCardsById }
 
 export function resetVolatileCards(context: CardContext) {
   context.sticky = true
@@ -202,4 +206,3 @@ export * from './None'
 export * from './Pixie'
 export * from './Spirit'
 export * from './Stage'
-export * from './World'

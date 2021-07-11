@@ -1,4 +1,4 @@
-import { Yggdrasil } from 'model/Cards'
+import { Yggdrasil } from 'model/Cards/World'
 import { Dryad, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Seeds } from 'model/Items/Seeds'

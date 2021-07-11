@@ -1,4 +1,5 @@
-import { Card, DyingEarth, Maiden } from 'model/Cards'
+import { Card, Maiden } from 'model/Cards'
+import { DyingEarth } from 'model/Cards/World'
 import { Lilipods } from 'model/Items/Produce'
 
 export const EnticedNymph: Card = {

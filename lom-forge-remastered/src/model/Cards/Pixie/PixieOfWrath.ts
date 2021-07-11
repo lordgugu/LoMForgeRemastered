@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, GodOfDestruction, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, GodOfDestruction, Middle, Pixie, Top } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { HolyWater } from 'model/Items/Bottles'
 import { AngryEye } from 'model/Items/Eyes'
 import { PoisonPowder } from 'model/Items/Powders'

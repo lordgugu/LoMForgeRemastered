@@ -1,15 +1,5 @@
-import {
-  ActiveCard,
-  Bottom,
-  CardSlot,
-  EvilGod,
-  Leaving,
-  Middle,
-  PixieOfSloth,
-  Ragnarok,
-  SacrificedNymph,
-  Top
-} from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, EvilGod, Leaving, Middle, PixieOfSloth, SacrificedNymph, Top } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { Sword } from 'model/Gear/Weapons'
 import { VampireFang } from 'model/Items/FangClaw'
 import { Vampsword } from 'model/MasterMoves/MiddleSlot'

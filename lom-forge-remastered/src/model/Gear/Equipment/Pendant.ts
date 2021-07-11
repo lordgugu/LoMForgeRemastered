@@ -3,7 +3,6 @@ import {
   FertilityGoddess,
   GoddessOfLove,
   GodOfDestruction,
-  HeavensScale,
   OceanGod,
   Phoenix,
   SacrificedNymph,
@@ -11,6 +10,7 @@ import {
   Unicorn,
   Volcano
 } from 'model/Cards'
+import { HeavensScale } from 'model/Cards/World'
 import { ActiveEquipment } from 'model/Gear/Equipment'
 import { Confusion, Darkness, Flameburst, Freeze, Paralysis, Petrification, Poison, Sleep } from 'model/Immunities'
 import { ZombieClaw } from 'model/Items/FangClaw'

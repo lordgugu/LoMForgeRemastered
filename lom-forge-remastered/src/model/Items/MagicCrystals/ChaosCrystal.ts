@@ -1,4 +1,4 @@
-import { AncientMoon } from 'model/Cards'
+import { AncientMoon } from 'model/Cards/World'
 import { ActiveItem } from 'model/Items'
 import { MagicCrystals } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'

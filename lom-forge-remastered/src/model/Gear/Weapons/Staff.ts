@@ -1,4 +1,5 @@
-import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness, Yggdrasil } from 'model/Cards'
+import { Cleric, RulerOfTheSky, WindGod, WingsOfDarkness } from 'model/Cards'
+import { Yggdrasil } from 'model/Cards/World'
 import { Weapon } from 'model/Gear/Weapons'
 import { Demonicide, Electrosceptre, GoldenTouch, Jump } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'

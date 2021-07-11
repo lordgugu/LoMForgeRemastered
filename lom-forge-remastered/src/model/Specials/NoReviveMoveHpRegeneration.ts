@@ -1,4 +1,4 @@
-import { HeavensScale } from 'model/Cards'
+import { HeavensScale } from 'model/Cards/World'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 

@@ -1,14 +1,5 @@
-import {
-  ActiveCard,
-  BedOfThorn,
-  CardSlot,
-  DyingEarth,
-  HeavensScale,
-  Hidden,
-  Ragnarok,
-  World,
-  Yggdrasil
-} from 'model/Cards'
+import { ActiveCard, BedOfThorn, CardSlot, Hidden } from 'model/Cards'
+import { AncientMoon, DyingEarth, HeavensScale, Ragnarok, World, Yggdrasil } from 'model/Cards/World'
 import { Aura, Dryad, Gnome, Jinn, Salamander, Shade, Undine, Wisp } from 'model/Essences'
 import { MirrorPiece } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'
@@ -21,7 +12,7 @@ export const MirroredWorld: ActiveCard = {
   activate: activateMirroredWorld,
   relatedItems: () => [MirrorPiece],
   relatedEssences: () => [Wisp, Shade, Dryad, Aura, Salamander, Gnome, Jinn, Undine],
-  relatedCards: () => [BedOfThorn, Yggdrasil, HeavensScale, DyingEarth, Ragnarok, MirroredWorld]
+  relatedCards: () => [BedOfThorn, Yggdrasil, HeavensScale, DyingEarth, Ragnarok, AncientMoon]
 }
 
 function activateMirroredWorld(project: TemperingProject, slot: CardSlot) {

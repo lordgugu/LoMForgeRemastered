@@ -1,19 +1,15 @@
 import {
   ActiveCard,
-  AncientMoon,
   BeastHeadedGod,
   BedOfThorn,
   Bottom,
   CardSlot,
-  DyingEarth,
   FallenAngel,
   GodOfDestruction,
-  HeavensScale,
   Hidden,
   Leviathan,
   LordOfFlies,
   Middle,
-  MirroredWorld,
   PixieOfEnvy,
   PixieOfGluttony,
   PixieOfGreed,
@@ -23,10 +19,9 @@ import {
   PixieOfWrath,
   Top,
   WingsOfDarkness,
-  WitchOfMoon,
-  World,
-  Yggdrasil
+  WitchOfMoon
 } from 'model/Cards'
+import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, World, Yggdrasil } from 'model/Cards/World'
 import { TwoHandedSword } from 'model/Gear/Weapons'
 import { PineOClock } from 'model/Items/Produce'
 import { Ragnarok as RagnarokMasterMove } from 'model/MasterMoves/BottomSlot'

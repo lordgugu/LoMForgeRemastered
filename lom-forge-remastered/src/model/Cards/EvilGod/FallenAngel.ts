@@ -1,15 +1,5 @@
-import {
-  ActiveCard,
-  Bottom,
-  CardSlot,
-  EvilGod,
-  Leaving,
-  Middle,
-  PixieOfPride,
-  Ragnarok,
-  SacrificedNymph,
-  Top
-} from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, EvilGod, Leaving, Middle, PixieOfPride, SacrificedNymph, Top } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { TwoHandedSword } from 'model/Gear/Weapons'
 import { AngelFeather } from 'model/Items/Feathers'
 import { ChaoticAvenger } from 'model/MasterMoves/TopSlot'

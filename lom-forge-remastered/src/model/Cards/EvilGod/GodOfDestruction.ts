@@ -1,15 +1,5 @@
-import {
-  ActiveCard,
-  Bottom,
-  CardSlot,
-  EvilGod,
-  Leaving,
-  Middle,
-  PixieOfWrath,
-  Ragnarok,
-  SacrificedNymph,
-  Top
-} from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, EvilGod, Leaving, Middle, PixieOfWrath, SacrificedNymph, Top } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Sword } from 'model/Gear/Weapons'
 import { addImmunity, Freeze } from 'model/Immunities'

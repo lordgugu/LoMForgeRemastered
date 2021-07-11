@@ -1,4 +1,4 @@
-import { MirroredWorld } from 'model/Cards'
+import { MirroredWorld } from 'model/Cards/World'
 import { totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Pouch } from 'model/Items/Pouch'

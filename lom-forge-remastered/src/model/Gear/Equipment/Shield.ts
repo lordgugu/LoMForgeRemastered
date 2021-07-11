@@ -1,4 +1,5 @@
-import { BedOfThorn, FertilityGoddess, GodOfDestruction, HeavensScale, OceanGod, WisdomGoddess } from 'model/Cards'
+import { BedOfThorn, FertilityGoddess, GodOfDestruction, OceanGod, WisdomGoddess } from 'model/Cards'
+import { HeavensScale } from 'model/Cards/World'
 import { Equipment } from 'model/Gear/Equipment'
 import { Confusion, Flameburst, Freeze, Petrification, Poison, Sleep } from 'model/Immunities'
 import { HealingClaw } from 'model/Items/FangClaw'

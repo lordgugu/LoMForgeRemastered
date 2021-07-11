@@ -1,19 +1,5 @@
-import {
-  ActiveCard,
-  AncientMoon,
-  BedOfThorn,
-  Bottom,
-  CardSlot,
-  EnticedNymph,
-  HeavensScale,
-  Hidden,
-  Middle,
-  MirroredWorld,
-  Ragnarok,
-  Top,
-  World,
-  Yggdrasil
-} from 'model/Cards'
+import { ActiveCard, BedOfThorn, Bottom, CardSlot, EnticedNymph, Hidden, Middle, Top } from 'model/Cards'
+import { AncientMoon, HeavensScale, MirroredWorld, Ragnarok, World, Yggdrasil } from 'model/Cards/World'
 import { GraveDirt } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'
 import { AllStats, decrementStat, widenStatRange } from 'model/Stats'

@@ -1,4 +1,4 @@
-import { HeavensScale } from 'model/Cards'
+import { HeavensScale } from 'model/Cards/World'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'

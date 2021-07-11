@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, FallenAngel, Middle, Pixie, Ragnarok, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, FallenAngel, Middle, Pixie, Top } from 'model/Cards'
+import { Ragnarok } from 'model/Cards/World'
 import { HolyWater } from 'model/Items/Bottles'
 import { LittleEye } from 'model/Items/Eyes'
 import { Garlicrown } from 'model/Items/Produce'
