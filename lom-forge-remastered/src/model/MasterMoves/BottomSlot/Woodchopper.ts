@@ -1,4 +1,4 @@
-import { Wanderer } from 'model/Cards'
+import { Wanderer } from 'model/Cards/Noble'
 import { Axe } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

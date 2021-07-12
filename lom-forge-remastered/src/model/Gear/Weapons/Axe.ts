@@ -1,5 +1,5 @@
-import { Wanderer } from 'model/Cards'
 import { GodOfWar } from 'model/Cards/HeavenGod'
+import { Wanderer } from 'model/Cards/Noble'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, Woodchopper } from 'model/MasterMoves/BottomSlot'
 import { DragonSlayer, Uppercut } from 'model/MasterMoves/MiddleSlot'

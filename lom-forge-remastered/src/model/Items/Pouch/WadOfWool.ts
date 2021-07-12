@@ -1,4 +1,4 @@
-import { Wanderer } from 'model/Cards'
+import { Wanderer } from 'model/Cards/Noble'
 import { Dryad, Shade, totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Pouch } from 'model/Items/Pouch'

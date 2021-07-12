@@ -1,4 +1,4 @@
-import { ManOfValor } from 'model/Cards'
+import { ManOfValor } from 'model/Cards/Noble'
 import { Salamander, totalLevels, Wisp } from 'model/Essences'
 import { plus25Percent } from 'model/Gear'
 import { Force, Tech } from 'model/Gear/Weapons'

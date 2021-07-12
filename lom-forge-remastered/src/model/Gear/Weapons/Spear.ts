@@ -1,5 +1,5 @@
-import { ManOfValor } from 'model/Cards'
 import { OceanGod, RulerOfTheSky } from 'model/Cards/HeavenGod'
+import { ManOfValor } from 'model/Cards/Noble'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'

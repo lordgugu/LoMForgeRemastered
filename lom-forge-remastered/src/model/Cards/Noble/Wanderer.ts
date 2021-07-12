@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Noble } from 'model/Cards/Noble'
 import { Axe } from 'model/Gear/Weapons'
 import { WadOfWool } from 'model/Items/Pouch'
 import { Woodchopper } from 'model/MasterMoves/BottomSlot'

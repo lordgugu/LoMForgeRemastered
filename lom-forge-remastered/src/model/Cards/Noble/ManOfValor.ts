@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Noble } from 'model/Cards/Noble'
 import { Spear } from 'model/Gear/Weapons'
 import { DragonsBreath } from 'model/Items/Vials'
 import { SpearOfLight } from 'model/MasterMoves/TopSlot'

@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Noble, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Noble } from 'model/Cards/Noble'
 import { Bow } from 'model/Gear/Weapons'
 import { MessyScroll } from 'model/Items/Pouch'
 import { PhoenixFalling } from 'model/MasterMoves/TopSlot'

@@ -1,4 +1,4 @@
-import { ManOfValor } from 'model/Cards'
+import { ManOfValor } from 'model/Cards/Noble'
 import { Spear } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

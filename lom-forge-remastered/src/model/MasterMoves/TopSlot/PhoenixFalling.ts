@@ -1,4 +1,4 @@
-import { Sage } from 'model/Cards'
+import { Sage } from 'model/Cards/Noble'
 import { Bow } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

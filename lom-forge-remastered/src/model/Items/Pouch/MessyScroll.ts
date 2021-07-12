@@ -1,4 +1,4 @@
-import { Sage } from 'model/Cards'
+import { Sage } from 'model/Cards/Noble'
 import { Jinn, totalLevels, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Pouch } from 'model/Items/Pouch'
