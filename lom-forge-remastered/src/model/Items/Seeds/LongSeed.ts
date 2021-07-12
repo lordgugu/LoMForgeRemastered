@@ -1,4 +1,4 @@
-import { Dryad as DryadCard } from 'model/Cards'
+import { Dryad as DryadCard } from 'model/Cards/Element'
 import { Dryad, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Seeds } from 'model/Items/Seeds'

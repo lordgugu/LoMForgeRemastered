@@ -1,4 +1,4 @@
-import { Undine as UndineCard } from 'model/Cards'
+import { Undine as UndineCard } from 'model/Cards/Element'
 import { taint, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Coins } from 'model/Items/Coins'

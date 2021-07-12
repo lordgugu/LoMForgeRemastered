@@ -1,4 +1,4 @@
-import { Salamander as SalamanderCard } from 'model/Cards'
+import { Salamander as SalamanderCard } from 'model/Cards/Element'
 import { Salamander, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Coins } from 'model/Items/Coins'

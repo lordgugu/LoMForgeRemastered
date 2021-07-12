@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { Salamander as SalamanderEssence, taint } from 'model/Essences'
 import { SalamanderGold, SalamanderSilver } from 'model/Items/Coins'
 import { Firestone } from 'model/Items/MagicStones'

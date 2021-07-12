@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { Shade as ShadeEssence, taint } from 'model/Essences'
 import { ShadeGold, ShadeSilver } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'

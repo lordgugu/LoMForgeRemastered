@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { taint, Wisp as WispEssence } from 'model/Essences'
 import { WispGold, WispSilver } from 'model/Items/Coins'
 import { TemperingProject } from 'model/Projects'

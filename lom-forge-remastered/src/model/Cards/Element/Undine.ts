@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { taint, Undine as UndineEssence } from 'model/Essences'
 import { UndineGold, UndineSilver } from 'model/Items/Coins'
 import { Waterstone } from 'model/Items/MagicStones'

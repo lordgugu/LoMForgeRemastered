@@ -1,4 +1,5 @@
 import { AllBeastGodCards, AllBeastGodCardsById } from 'model/Cards/BeastGod'
+import { AllElementCards, AllElementCardsById } from 'model/Cards/Element'
 import { AllEvilGodCards, AllEvilGodCardsById } from 'model/Cards/EvilGod'
 import { AllHeavenGodCards, AllHeavenGodCardsById } from 'model/Cards/HeavenGod'
 import { AllMaidenCards, AllMaidenCardsById } from 'model/Cards/Maiden'
@@ -23,7 +24,6 @@ export type CardCategory =
   | 'Element'
   | undefined
 
-export const Element: CardCategory = 'Element'
 export const None: CardCategory = undefined
 
 export type Card = Entity & {
@@ -59,7 +59,8 @@ export const AllCards: Card[] = [
   ...AllMaidenCards,
   ...AllSpiritCards,
   ...AllPixieCards,
-  ...AllBeastGodCards
+  ...AllBeastGodCards,
+  ...AllElementCards
 ]
 
 export const AllCardsById: { [id in string]: Card } = {
@@ -71,7 +72,8 @@ export const AllCardsById: { [id in string]: Card } = {
   ...AllMaidenCardsById,
   ...AllSpiritCardsById,
   ...AllPixieCardsById,
-  ...AllBeastGodCardsById
+  ...AllBeastGodCardsById,
+  ...AllElementCardsById
 }
 
 export function resetVolatileCards(context: CardContext) {
@@ -215,5 +217,4 @@ export function activateCards(project: TemperingProject) {
   })
 }
 
-export * from './Element'
 export * from './None'

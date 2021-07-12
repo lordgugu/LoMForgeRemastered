@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { Gnome as GnomeEssence, taint } from 'model/Essences'
 import { GnomeGold, GnomeSilver } from 'model/Items/Coins'
 import { Earthstone } from 'model/Items/MagicStones'

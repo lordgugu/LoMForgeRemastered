@@ -1,4 +1,4 @@
-import { Jinn as JinnCard } from 'model/Cards'
+import { Jinn as JinnCard } from 'model/Cards/Element'
 import { Jinn, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { MagicStones } from 'model/Items/MagicStones'

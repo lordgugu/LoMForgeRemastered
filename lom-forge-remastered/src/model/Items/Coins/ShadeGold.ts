@@ -1,4 +1,4 @@
-import { Shade as ShadeCard } from 'model/Cards'
+import { Shade as ShadeCard } from 'model/Cards/Element'
 import { Shade, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Coins } from 'model/Items/Coins'

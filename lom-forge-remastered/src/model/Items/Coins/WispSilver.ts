@@ -1,4 +1,4 @@
-import { Wisp as WispCard } from 'model/Cards'
+import { Wisp as WispCard } from 'model/Cards/Element'
 import { taint, Wisp } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Coins } from 'model/Items/Coins'

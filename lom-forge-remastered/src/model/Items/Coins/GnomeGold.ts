@@ -1,4 +1,4 @@
-import { Gnome as GnomeCard } from 'model/Cards'
+import { Gnome as GnomeCard } from 'model/Cards/Element'
 import { Gnome, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Coins } from 'model/Items/Coins'

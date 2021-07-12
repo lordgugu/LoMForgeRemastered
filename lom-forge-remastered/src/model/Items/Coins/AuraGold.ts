@@ -1,4 +1,4 @@
-import { Aura as AuraCard } from 'model/Cards'
+import { Aura as AuraCard } from 'model/Cards/Element'
 import { Aura, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Coins } from 'model/Items/Coins'

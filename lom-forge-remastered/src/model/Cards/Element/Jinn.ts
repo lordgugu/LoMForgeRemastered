@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { Jinn as JinnEssence, taint } from 'model/Essences'
 import { JinnGold, JinnSilver } from 'model/Items/Coins'
 import { Windstone } from 'model/Items/MagicStones'

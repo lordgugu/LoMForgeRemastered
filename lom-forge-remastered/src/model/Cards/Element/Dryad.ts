@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Element, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Element } from 'model/Cards/Element'
 import { Dryad as DryadEssence, taint } from 'model/Essences'
 import { DryadGold, DryadSilver } from 'model/Items/Coins'
 import { BigSeed, CrookedSeed, FlatSeed, LongSeed, OblongSeed, RoundSeed, SmallSeed } from 'model/Items/Seeds'
