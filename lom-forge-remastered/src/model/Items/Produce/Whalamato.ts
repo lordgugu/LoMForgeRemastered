@@ -1,4 +1,4 @@
-import { Unicorn } from 'model/Cards'
+import { Unicorn } from 'model/Cards/BeastGod'
 import { Gnome, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

@@ -1,4 +1,4 @@
-import { Phoenix } from 'model/Cards'
+import { Phoenix } from 'model/Cards/BeastGod'
 import { Jinn, Salamander } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Feathers } from 'model/Items/Feathers'

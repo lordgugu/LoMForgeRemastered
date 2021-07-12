@@ -1,4 +1,4 @@
-import { Phoenix, Unicorn } from 'model/Cards'
+import { Phoenix, Unicorn } from 'model/Cards/BeastGod'
 import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { FertilityGoddess, OceanGod } from 'model/Cards/HeavenGod'
 import { NymphOfOrchards } from 'model/Cards/Maiden'

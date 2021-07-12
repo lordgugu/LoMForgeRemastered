@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Phoenix, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Phoenix } from 'model/Cards/BeastGod'
 import { Stage } from 'model/Cards/Stage'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Hauberk, Pendant, Ring } from 'model/Gear/Equipment'

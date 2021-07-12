@@ -1,4 +1,5 @@
-import { ActiveCard, BeastGod, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { BeastGod } from 'model/Cards/BeastGod'
 import { Spring } from 'model/Cards/Stage'
 import { Pendant, Ring } from 'model/Gear/Equipment'
 import { Whalamato } from 'model/Items/Produce'
