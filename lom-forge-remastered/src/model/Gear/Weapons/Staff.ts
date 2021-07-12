@@ -1,4 +1,5 @@
-import { Cleric, WingsOfDarkness } from 'model/Cards'
+import { Cleric } from 'model/Cards'
+import { WingsOfDarkness } from 'model/Cards/EvilGod'
 import { RulerOfTheSky, WindGod } from 'model/Cards/HeavenGod'
 import { Yggdrasil } from 'model/Cards/World'
 import { Weapon } from 'model/Gear/Weapons'

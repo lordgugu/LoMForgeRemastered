@@ -1,4 +1,4 @@
-import { GodOfDestruction } from 'model/Cards'
+import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { Sword } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

@@ -1,4 +1,4 @@
-import { WingsOfDarkness } from 'model/Cards'
+import { WingsOfDarkness } from 'model/Cards/EvilGod'
 import { Staff } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

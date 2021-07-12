@@ -1,4 +1,4 @@
-import { FallenAngel } from 'model/Cards'
+import { FallenAngel } from 'model/Cards/EvilGod'
 import { TwoHandedSword } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

@@ -1,4 +1,4 @@
-import { Leviathan } from 'model/Cards'
+import { Leviathan } from 'model/Cards/EvilGod'
 import { Gnome, Salamander } from 'model/Essences'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Heavy, Sharp } from 'model/Gear/Weapons'

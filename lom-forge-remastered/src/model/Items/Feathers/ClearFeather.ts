@@ -1,4 +1,4 @@
-import { LordOfFlies } from 'model/Cards'
+import { LordOfFlies } from 'model/Cards/EvilGod'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Gnome, Jinn } from 'model/Essences'
 import { ActiveItem } from 'model/Items'

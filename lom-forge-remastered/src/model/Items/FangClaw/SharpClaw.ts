@@ -1,4 +1,4 @@
-import { GodOfDestruction } from 'model/Cards'
+import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { Salamander, Undine } from 'model/Essences'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Heavy, Sharp } from 'model/Gear/Weapons'

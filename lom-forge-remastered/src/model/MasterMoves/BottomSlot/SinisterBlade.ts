@@ -1,4 +1,4 @@
-import { LordOfFlies } from 'model/Cards'
+import { LordOfFlies } from 'model/Cards/EvilGod'
 import { Knife } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

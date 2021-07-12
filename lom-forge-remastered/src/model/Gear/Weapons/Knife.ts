@@ -1,4 +1,5 @@
-import { BeastHeadedGod, Clown, LordOfFlies } from 'model/Cards'
+import { Clown } from 'model/Cards'
+import { BeastHeadedGod, LordOfFlies } from 'model/Cards/EvilGod'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, SinisterBlade } from 'model/MasterMoves/BottomSlot'
 import { PoisonBlade, QuickBlade, Uppercut } from 'model/MasterMoves/MiddleSlot'

@@ -1,4 +1,4 @@
-import { GodOfDestruction } from 'model/Cards'
+import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { FertilityGoddess, OceanGod, WisdomGoddess } from 'model/Cards/HeavenGod'
 import { BedOfThorn } from 'model/Cards/Stage'
 import { HeavensScale } from 'model/Cards/World'

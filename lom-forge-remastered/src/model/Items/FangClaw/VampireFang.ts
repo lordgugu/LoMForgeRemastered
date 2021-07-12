@@ -1,4 +1,4 @@
-import { WitchOfMoon } from 'model/Cards'
+import { WitchOfMoon } from 'model/Cards/EvilGod'
 import { Jinn, Undine } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { FangClaw } from 'model/Items/FangClaw'

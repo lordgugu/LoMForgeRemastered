@@ -1,4 +1,4 @@
-import { FallenAngel } from 'model/Cards'
+import { FallenAngel } from 'model/Cards/EvilGod'
 import { Ragnarok as RagnarokCard } from 'model/Cards/World'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, Ragnarok } from 'model/MasterMoves/BottomSlot'

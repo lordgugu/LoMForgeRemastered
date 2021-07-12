@@ -1,4 +1,4 @@
-import { BeastHeadedGod } from 'model/Cards'
+import { BeastHeadedGod } from 'model/Cards/EvilGod'
 import { Aura, Dryad } from 'model/Essences'
 import { minus50Percent, plus50Percent } from 'model/Gear'
 import { Force, Tech } from 'model/Gear/Weapons'

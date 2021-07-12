@@ -1,4 +1,4 @@
-import { Leviathan } from 'model/Cards'
+import { Leviathan } from 'model/Cards/EvilGod'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, Treefeller } from 'model/MasterMoves/BottomSlot'
 import { Uppercut } from 'model/MasterMoves/MiddleSlot'

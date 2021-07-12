@@ -1,4 +1,4 @@
-import { GodOfDestruction, WitchOfMoon } from 'model/Cards'
+import { GodOfDestruction, WitchOfMoon } from 'model/Cards/EvilGod'
 import { MoonGoddess, SunGod } from 'model/Cards/HeavenGod'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, Moonlight } from 'model/MasterMoves/BottomSlot'

@@ -1,4 +1,4 @@
-import { FallenAngel } from 'model/Cards'
+import { FallenAngel } from 'model/Cards/EvilGod'
 import { Shade, taint, Wisp } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Feathers } from 'model/Items/Feathers'

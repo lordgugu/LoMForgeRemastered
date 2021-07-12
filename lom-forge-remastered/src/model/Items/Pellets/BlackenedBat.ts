@@ -1,4 +1,4 @@
-import { WingsOfDarkness } from 'model/Cards'
+import { WingsOfDarkness } from 'model/Cards/EvilGod'
 import { Shade, Wisp } from 'model/Essences'
 import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Darkness } from 'model/Immunities'

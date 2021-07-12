@@ -1,4 +1,4 @@
-import { Leviathan } from 'model/Cards'
+import { Leviathan } from 'model/Cards/EvilGod'
 import { Gnome, Salamander } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

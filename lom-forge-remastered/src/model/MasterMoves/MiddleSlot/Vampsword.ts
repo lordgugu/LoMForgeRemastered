@@ -1,4 +1,4 @@
-import { WitchOfMoon } from 'model/Cards'
+import { WitchOfMoon } from 'model/Cards/EvilGod'
 import { Sword } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 
