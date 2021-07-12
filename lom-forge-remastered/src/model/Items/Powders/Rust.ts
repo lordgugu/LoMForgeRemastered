@@ -1,4 +1,4 @@
-import { PixieOfSloth } from 'model/Cards'
+import { PixieOfSloth } from 'model/Cards/Pixie'
 import { ActiveItem } from 'model/Items'
 import { Powders } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'

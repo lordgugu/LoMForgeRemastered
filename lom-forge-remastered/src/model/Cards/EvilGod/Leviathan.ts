@@ -1,6 +1,7 @@
-import { ActiveCard, Bottom, CardSlot, Leaving, Middle, PixieOfGluttony, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Leaving, Middle, Top } from 'model/Cards'
 import { EvilGod } from 'model/Cards/EvilGod'
 import { SacrificedNymph } from 'model/Cards/Maiden'
+import { PixieOfGluttony } from 'model/Cards/Pixie'
 import { Ragnarok } from 'model/Cards/World'
 import { TwoHandedAxe } from 'model/Gear/Weapons'
 import { GiantsHorn } from 'model/Items/FangClaw'

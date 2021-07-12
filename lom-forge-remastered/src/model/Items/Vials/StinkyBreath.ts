@@ -1,4 +1,4 @@
-import { PixieOfLust } from 'model/Cards'
+import { PixieOfLust } from 'model/Cards/Pixie'
 import { AllEquipment } from 'model/Gear/Equipment'
 import { Confusion, Poison, setImmunities } from 'model/Immunities'
 import { ActiveItem } from 'model/Items'

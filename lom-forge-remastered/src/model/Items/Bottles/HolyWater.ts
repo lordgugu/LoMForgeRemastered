@@ -1,5 +1,5 @@
+import { Cleric } from 'model/Cards'
 import {
-  Cleric,
   PixieOfEnvy,
   PixieOfGluttony,
   PixieOfGreed,
@@ -7,7 +7,7 @@ import {
   PixieOfPride,
   PixieOfSloth,
   PixieOfWrath
-} from 'model/Cards'
+} from 'model/Cards/Pixie'
 import { ActiveItem } from 'model/Items'
 import { Bottles } from 'model/Items/Bottles'
 import { TemperingProject } from 'model/Projects'

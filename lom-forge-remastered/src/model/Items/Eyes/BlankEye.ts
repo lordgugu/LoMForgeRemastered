@@ -1,4 +1,4 @@
-import { PixieOfEnvy } from 'model/Cards'
+import { PixieOfEnvy } from 'model/Cards/Pixie'
 import { plus25Percent } from 'model/Gear'
 import { Tech } from 'model/Gear/Weapons'
 import { ActiveItem } from 'model/Items'

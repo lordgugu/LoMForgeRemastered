@@ -1,4 +1,4 @@
-import { PixieOfWrath } from 'model/Cards'
+import { PixieOfWrath } from 'model/Cards/Pixie'
 import { plus25Percent } from 'model/Gear'
 import { Force } from 'model/Gear/Weapons'
 import { ActiveItem } from 'model/Items'

@@ -1,4 +1,4 @@
-import { PixieOfGluttony } from 'model/Cards'
+import { PixieOfGluttony } from 'model/Cards/Pixie'
 import { plus25Percent } from 'model/Gear'
 import { Heavy } from 'model/Gear/Weapons'
 import { ActiveItem } from 'model/Items'

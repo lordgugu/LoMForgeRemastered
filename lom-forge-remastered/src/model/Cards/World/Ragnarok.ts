@@ -1,18 +1,4 @@
-import {
-  ActiveCard,
-  Bottom,
-  CardSlot,
-  Hidden,
-  Middle,
-  PixieOfEnvy,
-  PixieOfGluttony,
-  PixieOfGreed,
-  PixieOfLust,
-  PixieOfPride,
-  PixieOfSloth,
-  PixieOfWrath,
-  Top
-} from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
 import {
   BeastHeadedGod,
   FallenAngel,
@@ -22,6 +8,15 @@ import {
   WingsOfDarkness,
   WitchOfMoon
 } from 'model/Cards/EvilGod'
+import {
+  PixieOfEnvy,
+  PixieOfGluttony,
+  PixieOfGreed,
+  PixieOfLust,
+  PixieOfPride,
+  PixieOfSloth,
+  PixieOfWrath
+} from 'model/Cards/Pixie'
 import { BedOfThorn } from 'model/Cards/Stage'
 import { AncientMoon, DyingEarth, HeavensScale, MirroredWorld, World, Yggdrasil } from 'model/Cards/World'
 import { TwoHandedSword } from 'model/Gear/Weapons'

@@ -1,5 +1,5 @@
+import { King } from 'model/Cards'
 import {
-  King,
   PixieOfEnvy,
   PixieOfGluttony,
   PixieOfGreed,
@@ -7,7 +7,7 @@ import {
   PixieOfPride,
   PixieOfSloth,
   PixieOfWrath
-} from 'model/Cards'
+} from 'model/Cards/Pixie'
 import { Aura, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'
