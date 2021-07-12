@@ -1,4 +1,4 @@
-import { NymphOfTheSky } from 'model/Cards'
+import { NymphOfTheSky } from 'model/Cards/Maiden'
 import { totalLevels, Wisp } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Feathers } from 'model/Items/Feathers'

@@ -1,6 +1,7 @@
-import { NymphOfOrchards, Phoenix, SpiritOfHousework, Unicorn } from 'model/Cards'
+import { Phoenix, SpiritOfHousework, Unicorn } from 'model/Cards'
 import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { FertilityGoddess, OceanGod } from 'model/Cards/HeavenGod'
+import { NymphOfOrchards } from 'model/Cards/Maiden'
 import { BedOfThorn, Spring, Volcano } from 'model/Cards/Stage'
 import { HeavensScale } from 'model/Cards/World'
 import { ActiveEquipment } from 'model/Gear/Equipment'

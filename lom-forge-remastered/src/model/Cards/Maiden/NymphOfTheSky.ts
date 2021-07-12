@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Maiden, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Maiden } from 'model/Cards/Maiden'
 import { Mantle } from 'model/Gear/Equipment'
 import { WhiteFeather } from 'model/Items/Feathers'
 import { EquipmentProject, TemperingProject } from 'model/Projects'

@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, EnticedNymph, Hidden, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Hidden, Middle, Top } from 'model/Cards'
+import { EnticedNymph } from 'model/Cards/Maiden'
 import { BedOfThorn } from 'model/Cards/Stage'
 import { AncientMoon, HeavensScale, MirroredWorld, Ragnarok, World, Yggdrasil } from 'model/Cards/World'
 import { GraveDirt } from 'model/Items/Powders'

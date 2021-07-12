@@ -1,4 +1,5 @@
-import { Card, Maiden } from 'model/Cards'
+import { Card } from 'model/Cards'
+import { Maiden } from 'model/Cards/Maiden'
 import { DyingEarth } from 'model/Cards/World'
 import { Lilipods } from 'model/Items/Produce'
 

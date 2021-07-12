@@ -1,5 +1,6 @@
-import { ActiveCard, Bottom, CardSlot, Leaving, Middle, PixieOfLust, SacrificedNymph, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Leaving, Middle, PixieOfLust, Top } from 'model/Cards'
 import { EvilGod } from 'model/Cards/EvilGod'
+import { SacrificedNymph } from 'model/Cards/Maiden'
 import { Ragnarok } from 'model/Cards/World'
 import { Staff } from 'model/Gear/Weapons'
 import { BlackenedBat } from 'model/Items/Pellets'

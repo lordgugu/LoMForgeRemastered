@@ -1,4 +1,4 @@
-import { NymphOfTheSky } from 'model/Cards'
+import { NymphOfTheSky } from 'model/Cards/Maiden'
 import { Mantle } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'
 

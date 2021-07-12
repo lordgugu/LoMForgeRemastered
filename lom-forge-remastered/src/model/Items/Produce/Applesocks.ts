@@ -1,4 +1,4 @@
-import { NymphOfOrchards } from 'model/Cards'
+import { NymphOfOrchards } from 'model/Cards/Maiden'
 import { totalLevels } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

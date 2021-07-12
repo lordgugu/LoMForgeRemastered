@@ -1,4 +1,4 @@
-import { NymphOfDawn } from 'model/Cards'
+import { NymphOfDawn } from 'model/Cards/Maiden'
 import { ActiveItem } from 'model/Items'
 import { MagicCrystals } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'

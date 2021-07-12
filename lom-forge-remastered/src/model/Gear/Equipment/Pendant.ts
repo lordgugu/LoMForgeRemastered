@@ -1,6 +1,7 @@
-import { Phoenix, SacrificedNymph, Unicorn } from 'model/Cards'
+import { Phoenix, Unicorn } from 'model/Cards'
 import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { FertilityGoddess, GoddessOfLove, OceanGod } from 'model/Cards/HeavenGod'
+import { SacrificedNymph } from 'model/Cards/Maiden'
 import { BedOfThorn, Spring, Volcano } from 'model/Cards/Stage'
 import { HeavensScale } from 'model/Cards/World'
 import { ActiveEquipment } from 'model/Gear/Equipment'

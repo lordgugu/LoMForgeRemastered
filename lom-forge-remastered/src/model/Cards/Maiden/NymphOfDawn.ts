@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Leaving, Maiden, Middle } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Leaving, Middle } from 'model/Cards'
+import { Maiden } from 'model/Cards/Maiden'
 import { GlowCrystal } from 'model/Items/MagicCrystals'
 import { TemperingProject } from 'model/Projects'
 

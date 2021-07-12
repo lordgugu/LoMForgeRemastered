@@ -1,4 +1,4 @@
-import { ActiveCard, Bottom, CardSlot, Maiden, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
 import {
   BeastHeadedGod,
   FallenAngel,
@@ -8,6 +8,7 @@ import {
   WingsOfDarkness,
   WitchOfMoon
 } from 'model/Cards/EvilGod'
+import { Maiden } from 'model/Cards/Maiden'
 import { Pendant } from 'model/Gear/Equipment'
 import { addImmunity, Petrification } from 'model/Immunities'
 import { GhostsHowl } from 'model/Items/Vials'

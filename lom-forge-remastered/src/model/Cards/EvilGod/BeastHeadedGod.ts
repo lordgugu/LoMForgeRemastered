@@ -1,5 +1,6 @@
-import { ActiveCard, Bottom, CardSlot, Leaving, Middle, PixieOfGreed, SacrificedNymph, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Leaving, Middle, PixieOfGreed, Top } from 'model/Cards'
 import { EvilGod } from 'model/Cards/EvilGod'
+import { SacrificedNymph } from 'model/Cards/Maiden'
 import { Ragnarok } from 'model/Cards/World'
 import { Knife } from 'model/Gear/Weapons'
 import { PoisonFang } from 'model/Items/FangClaw'

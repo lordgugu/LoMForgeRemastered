@@ -1,4 +1,4 @@
-import { EnticedNymph } from 'model/Cards'
+import { EnticedNymph } from 'model/Cards/Maiden'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'

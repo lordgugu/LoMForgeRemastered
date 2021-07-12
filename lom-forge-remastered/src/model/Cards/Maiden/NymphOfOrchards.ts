@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Maiden, Middle, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Maiden } from 'model/Cards/Maiden'
 import { Ring } from 'model/Gear/Equipment'
 import { Applesocks } from 'model/Items/Produce'
 import { EquipmentProject, TemperingProject } from 'model/Projects'
