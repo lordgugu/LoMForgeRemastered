@@ -2,6 +2,7 @@ import { AllEvilGodCards, AllEvilGodCardsById } from 'model/Cards/EvilGod'
 import { AllHeavenGodCards, AllHeavenGodCardsById } from 'model/Cards/HeavenGod'
 import { AllMaidenCards, AllMaidenCardsById } from 'model/Cards/Maiden'
 import { AllNobleCards, AllNobleCardsById } from 'model/Cards/Noble'
+import { AllSpiritCards, AllSpiritCardsById } from 'model/Cards/Spirit'
 import { AllStageCards, AllStageCardsById, BedOfThorn } from 'model/Cards/Stage'
 import { AllWorldCards, AllWorldCardsById, World } from 'model/Cards/World'
 import { Entity } from 'model/Common'
@@ -20,7 +21,6 @@ export type CardCategory =
   | 'Element'
   | undefined
 
-export const Spirit: CardCategory = 'Spirit'
 export const Pixie: CardCategory = 'Pixie'
 export const BeastGod: CardCategory = 'Beast God'
 export const Element: CardCategory = 'Element'
@@ -56,7 +56,8 @@ export const AllCards: Card[] = [
   ...AllHeavenGodCards,
   ...AllEvilGodCards,
   ...AllNobleCards,
-  ...AllMaidenCards
+  ...AllMaidenCards,
+  ...AllSpiritCards
 ]
 
 export const AllCardsById: { [id in string]: Card } = {
@@ -65,7 +66,8 @@ export const AllCardsById: { [id in string]: Card } = {
   ...AllHeavenGodCardsById,
   ...AllEvilGodCardsById,
   ...AllNobleCardsById,
-  ...AllMaidenCardsById
+  ...AllMaidenCardsById,
+  ...AllSpiritCardsById
 }
 
 export function resetVolatileCards(context: CardContext) {
@@ -213,4 +215,3 @@ export * from './BeastGod'
 export * from './Element'
 export * from './None'
 export * from './Pixie'
-export * from './Spirit'

@@ -1,7 +1,7 @@
-import { SpiritOfHousework } from 'model/Cards'
 import { GodOfDestruction } from 'model/Cards/EvilGod'
 import { FertilityGoddess, OceanGod } from 'model/Cards/HeavenGod'
 import { NymphOfTheSky } from 'model/Cards/Maiden'
+import { SpiritOfHousework } from 'model/Cards/Spirit'
 import { BedOfThorn } from 'model/Cards/Stage'
 import { HeavensScale } from 'model/Cards/World'
 import { Equipment } from 'model/Gear/Equipment'

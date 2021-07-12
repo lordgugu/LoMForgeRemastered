@@ -1,5 +1,5 @@
-import { SpiritOfMountain } from 'model/Cards'
 import { BlacksmithGod, ThunderGod } from 'model/Cards/HeavenGod'
+import { SpiritOfMountain } from 'model/Cards/Spirit'
 import { Volcano } from 'model/Cards/Stage'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump, MagmaHammer, Mjolnir, QuakeHammer, SledgeHammer } from 'model/MasterMoves/BottomSlot'

@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Spirit } from 'model/Cards/Spirit'
 import { Hat } from 'model/Gear/Equipment'
 import { addImmunity, Confusion } from 'model/Immunities'
 import { Conchurnip } from 'model/Items/Produce'

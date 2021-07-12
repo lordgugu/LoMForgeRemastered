@@ -1,4 +1,4 @@
-import { SpiritOfForest } from 'model/Cards'
+import { SpiritOfForest } from 'model/Cards/Spirit'
 import { Bow } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

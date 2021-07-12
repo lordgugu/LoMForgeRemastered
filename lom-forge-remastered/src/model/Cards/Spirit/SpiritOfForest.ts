@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Spirit } from 'model/Cards/Spirit'
 import { Bow } from 'model/Gear/Weapons'
 import { MothWing } from 'model/Items/Feathers'
 import { ElvenArcher } from 'model/MasterMoves/MiddleSlot'

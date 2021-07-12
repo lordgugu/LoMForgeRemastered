@@ -1,4 +1,4 @@
-import { SpiritOfHousework } from 'model/Cards'
+import { SpiritOfHousework } from 'model/Cards/Spirit'
 import { ActiveItem } from 'model/Items'
 import { Pouch } from 'model/Items/Pouch'
 import { TemperingProject } from 'model/Projects'

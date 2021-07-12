@@ -1,4 +1,4 @@
-import { SpiritOfForest } from 'model/Cards'
+import { SpiritOfForest } from 'model/Cards/Spirit'
 import { minus25Percent, plus50Percent } from 'model/Gear'
 import { Magic, Pierce, Slash, Strike } from 'model/Gear/Equipment'
 import { ActiveItem } from 'model/Items'

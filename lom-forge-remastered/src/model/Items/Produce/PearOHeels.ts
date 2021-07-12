@@ -1,4 +1,4 @@
-import { SpiritOfShoes } from 'model/Cards'
+import { SpiritOfShoes } from 'model/Cards/Spirit'
 import { plus25Percent } from 'model/Gear'
 import { Boots, Pierce, Shoes, Slash, Strike } from 'model/Gear/Equipment'
 import { ActiveItem } from 'model/Items'

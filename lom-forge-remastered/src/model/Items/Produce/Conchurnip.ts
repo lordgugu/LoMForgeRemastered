@@ -1,4 +1,4 @@
-import { SpiritOfOcean } from 'model/Cards'
+import { SpiritOfOcean } from 'model/Cards/Spirit'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'

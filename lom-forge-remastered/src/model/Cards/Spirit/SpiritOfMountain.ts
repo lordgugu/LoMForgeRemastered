@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Spirit } from 'model/Cards/Spirit'
 import { Hammer } from 'model/Gear/Weapons'
 import { Ether } from 'model/Items/Bottles'
 import { QuakeHammer } from 'model/MasterMoves/BottomSlot'

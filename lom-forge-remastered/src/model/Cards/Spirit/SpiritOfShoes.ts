@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, Spirit, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { Spirit } from 'model/Cards/Spirit'
 import { Boots, Shoes } from 'model/Gear/Equipment'
 import { addImmunity, Paralysis } from 'model/Immunities'
 import { LoquatShoe, PearOHeels } from 'model/Items/Produce'
