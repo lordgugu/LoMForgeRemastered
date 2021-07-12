@@ -1,4 +1,4 @@
-import { Cleric } from 'model/Cards'
+import { Cleric } from 'model/Cards/None'
 import {
   PixieOfEnvy,
   PixieOfGluttony,

@@ -1,4 +1,4 @@
-import { Sorcerer } from 'model/Cards'
+import { Sorcerer } from 'model/Cards/None'
 import { ActiveItem } from 'model/Items'
 import { Powders } from 'model/Items/Powders'
 import { TemperingProject } from 'model/Projects'

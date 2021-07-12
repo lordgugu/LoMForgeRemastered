@@ -1,4 +1,4 @@
-import { Princess } from 'model/Cards'
+import { Princess } from 'model/Cards/None'
 import { Dryad, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'

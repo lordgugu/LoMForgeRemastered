@@ -1,4 +1,4 @@
-import { King } from 'model/Cards'
+import { King } from 'model/Cards/None'
 import { Weapon } from 'model/Gear/Weapons'
 import { Jump } from 'model/MasterMoves/BottomSlot'
 import { Uppercut, HandOfMidas } from 'model/MasterMoves/MiddleSlot'

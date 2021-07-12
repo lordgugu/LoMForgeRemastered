@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { None } from 'model/Cards/None'
 import { Bow } from 'model/Gear/Weapons'
 import { PeachPuppy } from 'model/Items/Produce'
 import { MagicalShot } from 'model/MasterMoves/TopSlot'

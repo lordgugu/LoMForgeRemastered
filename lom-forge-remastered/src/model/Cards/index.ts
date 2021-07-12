@@ -4,6 +4,7 @@ import { AllEvilGodCards, AllEvilGodCardsById } from 'model/Cards/EvilGod'
 import { AllHeavenGodCards, AllHeavenGodCardsById } from 'model/Cards/HeavenGod'
 import { AllMaidenCards, AllMaidenCardsById } from 'model/Cards/Maiden'
 import { AllNobleCards, AllNobleCardsById } from 'model/Cards/Noble'
+import { AllNoneCards, AllNoneCardsById } from 'model/Cards/None'
 import { AllPixieCards, AllPixieCardsById, Pixie } from 'model/Cards/Pixie'
 import { AllSpiritCards, AllSpiritCardsById } from 'model/Cards/Spirit'
 import { AllStageCards, AllStageCardsById, BedOfThorn } from 'model/Cards/Stage'
@@ -23,8 +24,6 @@ export type CardCategory =
   | 'Beast God'
   | 'Element'
   | undefined
-
-export const None: CardCategory = undefined
 
 export type Card = Entity & {
   readonly category: CardCategory
@@ -60,7 +59,8 @@ export const AllCards: Card[] = [
   ...AllSpiritCards,
   ...AllPixieCards,
   ...AllBeastGodCards,
-  ...AllElementCards
+  ...AllElementCards,
+  ...AllNoneCards
 ]
 
 export const AllCardsById: { [id in string]: Card } = {
@@ -73,7 +73,8 @@ export const AllCardsById: { [id in string]: Card } = {
   ...AllSpiritCardsById,
   ...AllPixieCardsById,
   ...AllBeastGodCardsById,
-  ...AllElementCardsById
+  ...AllElementCardsById,
+  ...AllNoneCardsById
 }
 
 export function resetVolatileCards(context: CardContext) {
@@ -216,5 +217,3 @@ export function activateCards(project: TemperingProject) {
     }
   })
 }
-
-export * from './None'

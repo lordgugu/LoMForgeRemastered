@@ -17,7 +17,8 @@ export const Unicorn: ActiveCard = {
   relatedCards: () => [Spring],
   relatedStats: () => [Defense, Magic],
   relatedStatRanges: () => [Defense, Magic],
-  relatedEquipment: () => [Ring, Pendant]
+  relatedEquipment: () => [Ring, Pendant],
+  relatedSpecials: () => [FastRevive]
 }
 
 function activateUnicorn(project: TemperingProject, slot: CardSlot) {

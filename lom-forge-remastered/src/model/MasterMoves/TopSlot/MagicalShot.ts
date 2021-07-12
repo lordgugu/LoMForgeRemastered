@@ -1,4 +1,4 @@
-import { Raven, Witch, Wolf } from 'model/Cards'
+import { Raven, Witch, Wolf } from 'model/Cards/None'
 import { Bow } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

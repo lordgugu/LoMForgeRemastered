@@ -1,4 +1,4 @@
-import { Witch } from 'model/Cards'
+import { Witch } from 'model/Cards/None'
 import { ActiveItem } from 'model/Items'
 import { Vials } from 'model/Items/Vials'
 import { TemperingProject } from 'model/Projects'

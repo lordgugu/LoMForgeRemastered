@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { None } from 'model/Cards/None'
 import { Metropolis } from 'model/Cards/Stage'
 import { HoneyOnion } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'

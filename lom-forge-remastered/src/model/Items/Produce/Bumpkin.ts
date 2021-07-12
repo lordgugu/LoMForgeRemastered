@@ -1,4 +1,4 @@
-import { Clown } from 'model/Cards'
+import { Clown } from 'model/Cards/None'
 import { ActiveItem } from 'model/Items'
 import { Produce } from 'model/Items/Produce'
 import { TemperingProject } from 'model/Projects'

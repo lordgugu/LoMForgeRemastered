@@ -1,4 +1,4 @@
-import { Raven } from 'model/Cards'
+import { Raven } from 'model/Cards/None'
 import { Shade, taint } from 'model/Essences'
 import { ActiveItem } from 'model/Items'
 import { Feathers } from 'model/Items/Feathers'

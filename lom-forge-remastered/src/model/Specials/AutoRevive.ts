@@ -1,4 +1,4 @@
-import { Phoenix } from 'model/Cards'
+import { Phoenix } from 'model/Cards/BeastGod'
 import { Volcano } from 'model/Cards/Stage'
 import { Pendant, Ring } from 'model/Gear/Equipment'
 import { Special } from 'model/Specials'

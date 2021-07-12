@@ -1,4 +1,4 @@
-import { King } from 'model/Cards'
+import { King } from 'model/Cards/None'
 import { Glove } from 'model/Gear/Weapons'
 import { MasterMove } from 'model/MasterMoves'
 

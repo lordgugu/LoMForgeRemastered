@@ -1,4 +1,5 @@
-import { ActiveCard, Bottom, CardSlot, Middle, None, Top } from 'model/Cards'
+import { ActiveCard, Bottom, CardSlot, Middle, Top } from 'model/Cards'
+import { None } from 'model/Cards/None'
 import { Metropolis } from 'model/Cards/Stage'
 import { Glove } from 'model/Gear/Weapons'
 import { Garlicrown } from 'model/Items/Produce'

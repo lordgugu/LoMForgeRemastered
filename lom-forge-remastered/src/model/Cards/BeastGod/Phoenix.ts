@@ -17,7 +17,8 @@ export const Phoenix: ActiveCard = {
   relatedCards: () => [Volcano],
   relatedStats: () => [Power, Skill],
   relatedStatRanges: () => [Power, Skill],
-  relatedEquipment: () => [Ring, Pendant]
+  relatedEquipment: () => [Ring, Pendant],
+  relatedSpecials: () => [AutoRevive]
 }
 
 function activatePhoenix(project: TemperingProject, slot: CardSlot) {

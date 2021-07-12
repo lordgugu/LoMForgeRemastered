@@ -1,4 +1,5 @@
-import { Bottom, Card, CardSlot, Middle, None, Top } from 'model/Cards'
+import { Bottom, Card, CardSlot, Middle, Top } from 'model/Cards'
+import { None } from 'model/Cards/None'
 import { Bow } from 'model/Gear/Weapons'
 import { RavenFeather } from 'model/Items/Feathers'
 import { MagicalShot } from 'model/MasterMoves/TopSlot'

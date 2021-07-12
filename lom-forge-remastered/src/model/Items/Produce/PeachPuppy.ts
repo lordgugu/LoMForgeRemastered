@@ -1,4 +1,4 @@
-import { Wolf } from 'model/Cards'
+import { Wolf } from 'model/Cards/None'
 import { minus25Percent, plus25Percent } from 'model/Gear'
 import { Heavy, Sharp } from 'model/Gear/Weapons'
 import { ActiveItem } from 'model/Items'
