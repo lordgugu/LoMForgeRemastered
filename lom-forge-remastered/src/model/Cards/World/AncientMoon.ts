@@ -19,9 +19,9 @@ export const AncientMoon: ActiveCard = {
 function activateAncientMoon(project: TemperingProject, slot: CardSlot) {
   switch (slot) {
     case Hidden:
-      const { worldCard } = project
+      const { worldPower } = project
 
-      if (worldCard !== undefined && worldCard !== BedOfThorn) {
+      if (worldPower !== undefined && worldPower !== BedOfThorn) {
         project.cards.hidden = undefined
       }
 

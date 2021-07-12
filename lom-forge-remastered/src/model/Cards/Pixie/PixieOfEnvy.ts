@@ -22,13 +22,13 @@ export const PixieOfEnvy: ActiveCard = {
 }
 
 function activatePixieOfEnvy(project: TemperingProject, slot: CardSlot) {
-  const { energy, worldCard } = project
+  const { energy, worldPower } = project
 
   switch (slot) {
     case Top:
     case Middle:
     case Bottom:
-      if (worldCard === Ragnarok) {
+      if (worldPower === Ragnarok) {
         if (energy >= 8) {
           project.cards[slot] = LordOfFlies
         }

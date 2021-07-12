@@ -46,7 +46,7 @@ export const Leaving: CardSlot = 'leaving'
 export type CardContext = {
   sticky: boolean
   cards: { [slot in CardSlot]?: Card }
-  worldCard?: Card
+  worldPower?: Card
 }
 
 export const AllCards: Card[] = [
@@ -83,10 +83,10 @@ export function resetVolatileCards(context: CardContext) {
   context.cards.leaving = undefined
 }
 
-export function setWorldCard(context: CardContext) {
+export function resolveWorldPower(context: CardContext) {
   const { bottom, middle, top, hidden } = context.cards
 
-  context.worldCard = Array.of(bottom, middle, top, hidden).find(
+  context.worldPower = Array.of(bottom, middle, top, hidden).find(
     (card) => card === BedOfThorn || card?.category === World
   )
 }
@@ -206,14 +206,4 @@ export function pushCards(context: CardContext) {
   // leaving: [?????] => [CardB]
   context.cards.leaving = hidden
   context.cards.hidden = pending
-}
-
-export function activateCards(project: TemperingProject) {
-  Array.of(Leaving, Bottom, Middle, Top, Hidden).forEach((slot) => {
-    const card = project.cards[slot]
-
-    if (card && card.activate) {
-      card.activate(project, slot)
-    }
-  })
 }

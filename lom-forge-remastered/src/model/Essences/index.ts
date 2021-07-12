@@ -40,10 +40,11 @@ const PowerOfTwo: { [exponent in Level]: number } = {
 
 export type Resistances = { [element in Essence]: number }
 
+export type Markers = { [element in Essence]: boolean }
+
 export type EssencesContext = {
   energy: number
   levels: { [element in Essence]: Level }
-  markers: { [element in Essence]: boolean }
   potential: { [element in PotentialEssence]: number }
   resistances: Resistances
 }
@@ -98,7 +99,7 @@ export function increaseRemainingEssences(context: EssencesContext) {
 }
 
 export function taint(project: TemperingProject, element: Essence) {
-  switch (project.worldCard) {
+  switch (project.worldPower) {
     case AncientMoon:
       ancientMoonTaint(project, element)
       break

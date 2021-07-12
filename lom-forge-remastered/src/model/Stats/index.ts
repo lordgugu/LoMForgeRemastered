@@ -128,7 +128,7 @@ export function setMinimumStatValue(context: StatsContext, stat: Stat, minValue:
  * @param context tempering project
  * @param stat stat to calculate
  */
-function calculateFinalStat(context: StatsContext, stat: Stat): void {
+function setFinalStat(context: StatsContext, stat: Stat): void {
   let mod = context.modifiers[stat]
 
   if (mod < context.rangeMin[stat]) {
@@ -144,6 +144,6 @@ function calculateFinalStat(context: StatsContext, stat: Stat): void {
   context.modifiers[stat] = mod
 }
 
-export function calculateFinalStats(context: StatsContext): void {
-  AllStats.forEach((stat) => calculateFinalStat(context, stat))
+export function setFinalStats(context: StatsContext): void {
+  AllStats.forEach((stat) => setFinalStat(context, stat))
 }
